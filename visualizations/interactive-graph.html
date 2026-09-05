@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AISTEC 知识图谱可视化</title>
+    <title>AISTEC 知识图谱可视化 (121 节点)</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,7 +24,7 @@
             stroke: rgba(255,255,255,0.3);
         }
         .node-label {
-            font-size: 11px;
+            font-size: 10px;
             fill: #fff;
             text-anchor: middle;
             pointer-events: none;
@@ -32,7 +32,7 @@
         }
         .link {
             stroke-opacity: 0.4;
-            stroke-width: 1.5px;
+            stroke-width: 1px;
         }
         .link.highlighted {
             stroke-opacity: 1;
@@ -117,28 +117,39 @@
             width: 200px;
         }
         #search-input::placeholder { color: #8892b0; }
+        #stats {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(16, 20, 40, 0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 12px;
+            color: #8892b0;
+        }
     </style>
 </head>
 <body>
     <div id="graph"></div>
     
     <div id="controls">
-        <h3>学科分类</h3>
+        <h3>学科分类 (共 121 节点)</h3>
         <div class="legend-item">
             <div class="legend-color" style="background: #4caf50;"></div>
-            <span>小学科学</span>
+            <span>小学科学 (32)</span>
         </div>
         <div class="legend-item">
             <div class="legend-color" style="background: #2196f3;"></div>
-            <span>初中物理</span>
+            <span>初中物理 (49)</span>
         </div>
         <div class="legend-item">
             <div class="legend-color" style="background: #ff9800;"></div>
-            <span>初中化学</span>
+            <span>初中化学 (19)</span>
         </div>
         <div class="legend-item">
             <div class="legend-color" style="background: #e91e63;"></div>
-            <span>初中生物</span>
+            <span>初中生物 (21)</span>
         </div>
     </div>
     
@@ -160,112 +171,29 @@
             <div class="field-label">前置知识</div>
             <div class="field-value" id="info-prereq"></div>
         </div>
-        <div class="field">
-            <div class="field-label">常见误解</div>
-            <div class="field-value" id="info-misconceptions"></div>
-        </div>
     </div>
     
     <div id="search-box">
         <input type="text" id="search-input" placeholder="搜索知识点...">
     </div>
+    
+    <div id="stats">
+        节点: 121 | 连接: 114
+    </div>
 
     <script>
-        // 知识图谱数据
         const graphData = {
-            nodes: [
-                // 小学科学
-                { id: "SCI-MOT-001", name: "运动与力", subject: "小学科学", grade: "小学四年级", group: 1 },
-                { id: "SCI-MAT-001", name: "物体的特征", subject: "小学科学", grade: "小学一年级", group: 1 },
-                { id: "SCI-MAT-004", name: "物体的运动", subject: "小学科学", grade: "小学四年级", group: 1 },
-                { id: "SCI-FORCE-001", name: "声音的产生", subject: "小学科学", grade: "小学四年级", group: 1 },
-                { id: "SCI-HEAT-001", name: "热与物态", subject: "小学科学", grade: "小学三年级", group: 1 },
-                { id: "SCI-LIGHT-001", name: "光的传播", subject: "小学科学", grade: "小学五年级", group: 1 },
-                { id: "SCI-MAG-001", name: "磁铁", subject: "小学科学", grade: "小学二年级", group: 1 },
-                
-                // 初中物理 - 八年级上
-                { id: "PHYS-MOTION-001", name: "机械运动", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-MOTION-002", name: "速度", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-SOUND-001", name: "声音的传播", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-THERMO-001", name: "温度与物态", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-OPTICS-001", name: "光的直线传播", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-OPTICS-002", name: "光的反射", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-OPTICS-004", name: "光的折射", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-MATTER-001", name: "质量", subject: "物理", grade: "初中八年级上", group: 2 },
-                { id: "PHYS-MATTER-002", name: "密度", subject: "物理", grade: "初中八年级上", group: 2 },
-                
-                // 初中物理 - 八年级下（力学核心）
-                { id: "PHYS-FORCE-001", name: "力的概念", subject: "物理", grade: "初中八年级下", group: 2, isCore: true },
-                { id: "PHYS-FORCE-002", name: "重力", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-FORCE-003", name: "弹力", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-FORCE-004", name: "摩擦力", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-NEWTON-001", name: "牛顿第一定律", subject: "物理", grade: "初中八年级下", group: 2, isCore: true },
-                { id: "PHYS-NEWTON-002", name: "二力平衡", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-PRESSURE-001", name: "压强", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-BUOY-001", name: "浮力", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-WORK-001", name: "功", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-ENERGY-001", name: "动能和势能", subject: "物理", grade: "初中八年级下", group: 2 },
-                { id: "PHYS-SIMPLE-001", name: "杠杆", subject: "物理", grade: "初中八年级下", group: 2 },
-                
-                // 初中化学
-                { id: "CHEM-MAT-001", name: "物质的构成", subject: "化学", grade: "初中九年级", group: 3 },
-                { id: "CHEM-MAT-002", name: "元素", subject: "化学", grade: "初中九年级", group: 3 },
-                { id: "CHEM-REACT-001", name: "化学变化", subject: "化学", grade: "初中九年级", group: 3 },
-                
-                // 初中生物
-                { id: "BIO-CELL-001", name: "细胞", subject: "生物", grade: "初中七年级", group: 4 },
-                { id: "BIO-PLANT-001", name: "光合作用", subject: "生物", grade: "初中七年级", group: 4 },
-            ],
-            links: [
-                // 小学到初中衔接
-                { source: "SCI-MAT-004", target: "SCI-MOT-001" },
-                { source: "SCI-MOT-001", target: "PHYS-FORCE-001" },
-                { source: "SCI-MAT-001", target: "PHYS-MATTER-001" },
-                { source: "SCI-LIGHT-001", target: "PHYS-OPTICS-001" },
-                { source: "SCI-FORCE-001", target: "PHYS-SOUND-001" },
-                { source: "SCI-HEAT-001", target: "PHYS-THERMO-001" },
-                { source: "SCI-MAG-001", target: "PHYS-ELEC-001" },
-                
-                // 八年级上内部
-                { source: "PHYS-MOTION-001", target: "PHYS-MOTION-002" },
-                { source: "PHYS-MATTER-001", target: "PHYS-MATTER-002" },
-                { source: "PHYS-OPTICS-001", target: "PHYS-OPTICS-002" },
-                { source: "PHYS-OPTICS-001", target: "PHYS-OPTICS-004" },
-                
-                // 八年级下力学核心
-                { source: "PHYS-MATTER-001", target: "PHYS-FORCE-001" },
-                { source: "PHYS-FORCE-001", target: "PHYS-FORCE-002" },
-                { source: "PHYS-FORCE-001", target: "PHYS-FORCE-003" },
-                { source: "PHYS-FORCE-001", target: "PHYS-FORCE-004" },
-                { source: "PHYS-FORCE-001", target: "PHYS-NEWTON-002" },
-                { source: "PHYS-FORCE-001", target: "PHYS-PRESSURE-001" },
-                { source: "PHYS-FORCE-001", target: "PHYS-SIMPLE-001" },
-                { source: "PHYS-FORCE-004", target: "PHYS-NEWTON-001" },
-                { source: "PHYS-FORCE-001", target: "PHYS-NEWTON-001" },
-                { source: "PHYS-PRESSURE-001", target: "PHYS-BUOY-001" },
-                { source: "PHYS-MOTION-002", target: "PHYS-WORK-001" },
-                { source: "PHYS-WORK-001", target: "PHYS-ENERGY-001" },
-                
-                // 化学
-                { source: "SCI-MAT-001", target: "CHEM-MAT-001" },
-                { source: "CHEM-MAT-001", target: "CHEM-MAT-002" },
-                { source: "SCI-HEAT-001", target: "CHEM-REACT-001" },
-                
-                // 生物
-                { source: "SCI-LIFE-001", target: "BIO-CELL-001" },
-                { source: "BIO-CELL-001", target: "BIO-PLANT-001" },
-            ]
+            nodes: [{"id": "BIO-ANIMAL-001", "name": "动物的运动", "subject": "生物", "grade": "初中八年级上", "group": 4, "isCore": false}, {"id": "BIO-BODY-002", "name": "人体的营养", "subject": "生物", "grade": "初中七年级下", "group": 4, "isCore": false}, {"id": "BIO-BODY-003", "name": "人体的呼吸", "subject": "生物", "grade": "初中七年级下", "group": 4, "isCore": false}, {"id": "BIO-BODY-004", "name": "人体内物质的运输", "subject": "生物", "grade": "初中七年级下", "group": 4, "isCore": false}, {"id": "BIO-CELL-001", "name": "细胞是生命活动的基本单位", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-CELL-002", "name": "细胞的结构与功能", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-CELL-003", "name": "细胞的生活", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-DIV-001", "name": "生物的分类", "subject": "生物", "grade": "初中八年级上", "group": 4, "isCore": false}, {"id": "BIO-DIV-002", "name": "生物的多样性", "subject": "生物", "grade": "初中八年级上", "group": 4, "isCore": false}, {"id": "BIO-ECO-002", "name": "生态系统", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-ENDO-001", "name": "内分泌系统", "subject": "生物", "grade": "初中七年级下", "group": 4, "isCore": false}, {"id": "BIO-EVO-001", "name": "生物的进化", "subject": "生物", "grade": "初中八年级下", "group": 4, "isCore": false}, {"id": "BIO-IMMUN-001", "name": "免疫", "subject": "生物", "grade": "初中八年级下", "group": 4, "isCore": false}, {"id": "BIO-MICRO-001", "name": "微生物", "subject": "生物", "grade": "初中八年级上", "group": 4, "isCore": false}, {"id": "BIO-MICRO-002", "name": "传染病与免疫", "subject": "生物", "grade": "初中八年级下", "group": 4, "isCore": false}, {"id": "BIO-NERVE-001", "name": "神经系统", "subject": "生物", "grade": "初中七年级下", "group": 4, "isCore": false}, {"id": "BIO-PLANT-001", "name": "植物的光合作用", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-PLANT-002", "name": "植物的呼吸作用", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-PLANT-003", "name": "植物的结构层次", "subject": "生物", "grade": "初中七年级上", "group": 4, "isCore": false}, {"id": "BIO-REPRO-001", "name": "生物的生殖", "subject": "生物", "grade": "初中八年级下", "group": 4, "isCore": false}, {"id": "BIO-REPRO-002", "name": "生物的遗传与变异", "subject": "生物", "grade": "初中八年级下", "group": 4, "isCore": false}, {"id": "CHEM-ACID-001", "name": "常见的酸和碱", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-ACID-002", "name": "中和反应", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-FERT-001", "name": "化学肥料", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-GAS-001", "name": "空气的组成", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-MAT-001", "name": "物质的构成", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-MAT-002", "name": "元素", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-MAT-003", "name": "化学式与化合价", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-METAL-001", "name": "金属", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-METAL-002", "name": "金属的化学性质", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-ORG-001", "name": "有机化合物", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-OXY-001", "name": "氧气", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-OXY-002", "name": "制取氧气", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-REACT-001", "name": "化学变化与物理变化", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-REACT-002", "name": "质量守恒定律", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-REACT-003", "name": "化学方程式", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-SALT-001", "name": "盐", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-SOL-001", "name": "溶液", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-SOL-002", "name": "溶解度", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "CHEM-WATER-001", "name": "水的组成", "subject": "化学", "grade": "初中九年级", "group": 3, "isCore": false}, {"id": "PHYS-ELEC-001", "name": "电荷与摩擦起电", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-002", "name": "电路", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-003", "name": "电流与电流表", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-004", "name": "电压与电压表", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-005", "name": "电阻", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-006", "name": "欧姆定律", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-007", "name": "电功率", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-008", "name": "串联与并联电路", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-009", "name": "家庭电路", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ELEC-010", "name": "焦耳定律", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-MAG-002", "name": "电流的磁场", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-MAG-003", "name": "电动机", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-MAG-004", "name": "发电机", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-ENERGY-003", "name": "能源与可持续发展", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-INFO-001", "name": "电磁波", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-NUC-001", "name": "核能", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-BUOY-001", "name": "浮力", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-BUOY-002", "name": "阿基米德原理", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-BUOY-003", "name": "物体的浮沉条件", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-ENERGY-001", "name": "动能和势能", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-ENERGY-002", "name": "机械能及其转化", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-FORCE-001", "name": "力的概念", "subject": "物理", "grade": "初中八年级", "group": 2, "isCore": true}, {"id": "PHYS-FORCE-002", "name": "重力", "subject": "物理", "grade": "初中八年级", "group": 2, "isCore": false}, {"id": "PHYS-FORCE-003", "name": "弹力", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-FORCE-004", "name": "摩擦力", "subject": "物理", "grade": "初中八年级", "group": 2, "isCore": false}, {"id": "PHYS-LENS-001", "name": "凸透镜成像规律", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-MATTER-001", "name": "质量", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-MATTER-002", "name": "密度", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-MOTION-001", "name": "机械运动", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-MOTION-002", "name": "速度", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-NEWTON-001", "name": "牛顿第一定律", "subject": "物理", "grade": "初中八年级", "group": 2, "isCore": true}, {"id": "PHYS-NEWTON-002", "name": "二力平衡", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-OPTICS-001", "name": "光的直线传播", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-OPTICS-002", "name": "光的反射", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-OPTICS-003", "name": "平面镜成像", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-OPTICS-004", "name": "光的折射", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-PRESSURE-001", "name": "压强", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-PRESSURE-002", "name": "液体压强", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-PRESSURE-003", "name": "大气压强", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-SIMPLE-001", "name": "杠杆", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-SIMPLE-002", "name": "滑轮", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-SOUND-001", "name": "声音的产生与传播", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-SOUND-002", "name": "声音的特性", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-THERMO-001", "name": "温度与物态变化", "subject": "物理", "grade": "初中八年级上", "group": 2, "isCore": false}, {"id": "PHYS-WORK-001", "name": "功", "subject": "物理", "grade": "初中八年级下", "group": 2, "isCore": false}, {"id": "PHYS-HEAT-001", "name": "内能", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-HEAT-002", "name": "比热容", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-HEAT-003", "name": "热机", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "PHYS-HEAT-004", "name": "热机效率", "subject": "物理", "grade": "初中九年级", "group": 2, "isCore": false}, {"id": "SCI-BODY-001", "name": "人体由多个系统组成", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-COND-001", "name": "导体与绝缘体", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-DISS-001", "name": "溶解与溶液", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-EARTH-001", "name": "在太阳系中，地球、月球和其他星球有规律地运动着", "subject": "小学科学", "grade": "小学六年级", "group": 1, "isCore": false}, {"id": "SCI-EARTH-002", "name": "地球上有大气、水、生物、土壤和岩石", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-EARTH-003", "name": "地球是人类生存的家园", "subject": "小学科学", "grade": "小学二年级", "group": 1, "isCore": false}, {"id": "SCI-ECO-001", "name": "生物之间、生物与环境之间相互依存", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-ELEC-001", "name": "电路是包括电源在内的闭合回路", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-FORCE-001", "name": "声音因物体振动而产生", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-HEAT-001", "name": "热可以改变物质的状态", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-LIFE-001", "name": "生物体具有一定的结构层次", "subject": "小学科学", "grade": "小学二年级", "group": 1, "isCore": false}, {"id": "SCI-LIFE-002", "name": "生物能适应其生存环境", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-LIFE-003", "name": "生物能生长、发育和繁殖后代", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-LIFE-004", "name": "动物和植物都有基本生存需要", "subject": "小学科学", "grade": "小学一年级", "group": 1, "isCore": false}, {"id": "SCI-LIGHT-001", "name": "光在空气中沿直线传播", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-MAG-001", "name": "磁铁能对某些物体产生作用", "subject": "小学科学", "grade": "小学二年级", "group": 1, "isCore": false}, {"id": "SCI-MAT-001", "name": "物体具有一定的特征，材料具有一定的性能", "subject": "小学科学", "grade": "小学一年级", "group": 1, "isCore": false}, {"id": "SCI-MAT-002", "name": "水是一种常见而重要的单一物质", "subject": "小学科学", "grade": "小学二年级", "group": 1, "isCore": false}, {"id": "SCI-MAT-003", "name": "空气是一种常见而重要的混合物质", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-MAT-004", "name": "物体的运动可以用位置、快慢和方向来描述", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-MAT-005", "name": "物质的状态变化与温度", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-MIX-001", "name": "混合物与分离", "subject": "小学科学", "grade": "小学三年级", "group": 1, "isCore": false}, {"id": "SCI-MOON-001", "name": "月相变化", "subject": "小学科学", "grade": "小学六年级", "group": 1, "isCore": false}, {"id": "SCI-MOT-001", "name": "力作用于物体，可以改变物体的形状和运动状态", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": true}, {"id": "SCI-ROCK-001", "name": "岩石与土壤", "subject": "小学科学", "grade": "小学四年级", "group": 1, "isCore": false}, {"id": "SCI-SEAS-001", "name": "季节变化与地球公转", "subject": "小学科学", "grade": "小学六年级", "group": 1, "isCore": false}, {"id": "SCI-STARS-001", "name": "星座与星系", "subject": "小学科学", "grade": "小学六年级", "group": 1, "isCore": false}, {"id": "SCI-TECH-001", "name": "工程设计过程", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-TECH-002", "name": "简单机械的应用", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-TECH-003", "name": "技术与生活", "subject": "小学科学", "grade": "小学六年级", "group": 1, "isCore": false}, {"id": "SCI-WATER-001", "name": "水在自然界的循环", "subject": "小学科学", "grade": "小学五年级", "group": 1, "isCore": false}, {"id": "SCI-WEATHER-001", "name": "天气现象有阴、晴、雨、雪、风等", "subject": "小学科学", "grade": "小学二年级", "group": 1, "isCore": false}],
+            links: [{"source": "BIO-BODY-004", "target": "BIO-ANIMAL-001"}, {"source": "BIO-CELL-003", "target": "BIO-BODY-002"}, {"source": "BIO-BODY-002", "target": "BIO-BODY-003"}, {"source": "BIO-BODY-003", "target": "BIO-BODY-004"}, {"source": "SCI-LIFE-001", "target": "BIO-CELL-001"}, {"source": "BIO-CELL-001", "target": "BIO-CELL-002"}, {"source": "BIO-CELL-002", "target": "BIO-CELL-003"}, {"source": "BIO-DIV-001", "target": "BIO-DIV-002"}, {"source": "SCI-ECO-001", "target": "BIO-ECO-002"}, {"source": "BIO-BODY-004", "target": "BIO-ENDO-001"}, {"source": "BIO-REPRO-002", "target": "BIO-EVO-001"}, {"source": "BIO-BODY-003", "target": "BIO-IMMUN-001"}, {"source": "BIO-MICRO-001", "target": "BIO-MICRO-002"}, {"source": "BIO-BODY-004", "target": "BIO-NERVE-001"}, {"source": "BIO-CELL-002", "target": "BIO-PLANT-001"}, {"source": "BIO-PLANT-001", "target": "BIO-PLANT-002"}, {"source": "BIO-CELL-002", "target": "BIO-PLANT-003"}, {"source": "SCI-LIFE-003", "target": "BIO-REPRO-001"}, {"source": "BIO-REPRO-001", "target": "BIO-REPRO-002"}, {"source": "CHEM-MAT-003", "target": "CHEM-ACID-001"}, {"source": "CHEM-ACID-001", "target": "CHEM-ACID-002"}, {"source": "CHEM-SALT-001", "target": "CHEM-FERT-001"}, {"source": "SCI-MAT-003", "target": "CHEM-GAS-001"}, {"source": "SCI-MAT-001", "target": "CHEM-MAT-001"}, {"source": "CHEM-MAT-001", "target": "CHEM-MAT-002"}, {"source": "CHEM-MAT-002", "target": "CHEM-MAT-003"}, {"source": "CHEM-REACT-001", "target": "CHEM-METAL-001"}, {"source": "CHEM-METAL-001", "target": "CHEM-METAL-002"}, {"source": "CHEM-MAT-002", "target": "CHEM-ORG-001"}, {"source": "CHEM-GAS-001", "target": "CHEM-OXY-001"}, {"source": "CHEM-OXY-001", "target": "CHEM-OXY-002"}, {"source": "SCI-HEAT-001", "target": "CHEM-REACT-001"}, {"source": "CHEM-REACT-001", "target": "CHEM-REACT-002"}, {"source": "CHEM-REACT-002", "target": "CHEM-REACT-003"}, {"source": "CHEM-MAT-003", "target": "CHEM-REACT-003"}, {"source": "CHEM-ACID-001", "target": "CHEM-SALT-001"}, {"source": "CHEM-MAT-001", "target": "CHEM-SOL-001"}, {"source": "CHEM-SOL-001", "target": "CHEM-SOL-002"}, {"source": "SCI-MAT-002", "target": "CHEM-WATER-001"}, {"source": "SCI-ELEC-001", "target": "PHYS-ELEC-001"}, {"source": "PHYS-ELEC-001", "target": "PHYS-ELEC-002"}, {"source": "PHYS-ELEC-002", "target": "PHYS-ELEC-003"}, {"source": "PHYS-ELEC-002", "target": "PHYS-ELEC-004"}, {"source": "PHYS-ELEC-003", "target": "PHYS-ELEC-005"}, {"source": "PHYS-ELEC-004", "target": "PHYS-ELEC-005"}, {"source": "PHYS-ELEC-005", "target": "PHYS-ELEC-006"}, {"source": "PHYS-ELEC-006", "target": "PHYS-ELEC-007"}, {"source": "PHYS-ELEC-002", "target": "PHYS-ELEC-008"}, {"source": "PHYS-ELEC-008", "target": "PHYS-ELEC-009"}, {"source": "PHYS-ELEC-007", "target": "PHYS-ELEC-010"}, {"source": "PHYS-ELEC-003", "target": "PHYS-MAG-002"}, {"source": "PHYS-MAG-002", "target": "PHYS-MAG-003"}, {"source": "PHYS-MAG-002", "target": "PHYS-MAG-004"}, {"source": "PHYS-ENERGY-002", "target": "PHYS-ENERGY-003"}, {"source": "PHYS-PRESSURE-002", "target": "PHYS-BUOY-001"}, {"source": "PHYS-BUOY-001", "target": "PHYS-BUOY-002"}, {"source": "PHYS-BUOY-002", "target": "PHYS-BUOY-003"}, {"source": "PHYS-WORK-001", "target": "PHYS-ENERGY-001"}, {"source": "PHYS-ENERGY-001", "target": "PHYS-ENERGY-002"}, {"source": "SCI-MOT-001", "target": "PHYS-FORCE-001"}, {"source": "MATH-VEC-001", "target": "PHYS-FORCE-001"}, {"source": "PHYS-FORCE-001", "target": "PHYS-FORCE-002"}, {"source": "MATH-ALG-002", "target": "PHYS-FORCE-002"}, {"source": "PHYS-FORCE-001", "target": "PHYS-FORCE-003"}, {"source": "PHYS-FORCE-001", "target": "PHYS-FORCE-004"}, {"source": "PHYS-OPTICS-004", "target": "PHYS-LENS-001"}, {"source": "PHYS-MATTER-001", "target": "PHYS-MATTER-002"}, {"source": "SCI-MOT-001", "target": "PHYS-MOTION-001"}, {"source": "PHYS-MOTION-001", "target": "PHYS-MOTION-002"}, {"source": "PHYS-FORCE-001", "target": "PHYS-NEWTON-001"}, {"source": "PHYS-FORCE-004", "target": "PHYS-NEWTON-001"}, {"source": "MATH-ALG-003", "target": "PHYS-NEWTON-001"}, {"source": "PHYS-FORCE-001", "target": "PHYS-NEWTON-002"}, {"source": "SCI-LIGHT-001", "target": "PHYS-OPTICS-001"}, {"source": "PHYS-OPTICS-001", "target": "PHYS-OPTICS-002"}, {"source": "PHYS-OPTICS-002", "target": "PHYS-OPTICS-003"}, {"source": "PHYS-OPTICS-001", "target": "PHYS-OPTICS-004"}, {"source": "PHYS-FORCE-001", "target": "PHYS-PRESSURE-001"}, {"source": "PHYS-MATTER-002", "target": "PHYS-PRESSURE-001"}, {"source": "PHYS-PRESSURE-001", "target": "PHYS-PRESSURE-002"}, {"source": "PHYS-PRESSURE-001", "target": "PHYS-PRESSURE-003"}, {"source": "PHYS-FORCE-001", "target": "PHYS-SIMPLE-001"}, {"source": "PHYS-SIMPLE-001", "target": "PHYS-SIMPLE-002"}, {"source": "SCI-FORCE-001", "target": "PHYS-SOUND-001"}, {"source": "PHYS-SOUND-001", "target": "PHYS-SOUND-002"}, {"source": "SCI-HEAT-001", "target": "PHYS-THERMO-001"}, {"source": "PHYS-FORCE-001", "target": "PHYS-WORK-001"}, {"source": "PHYS-MOTION-002", "target": "PHYS-WORK-001"}, {"source": "PHYS-THERMO-001", "target": "PHYS-HEAT-001"}, {"source": "PHYS-HEAT-001", "target": "PHYS-HEAT-002"}, {"source": "PHYS-HEAT-002", "target": "PHYS-HEAT-003"}, {"source": "PHYS-HEAT-003", "target": "PHYS-HEAT-004"}, {"source": "SCI-LIFE-001", "target": "SCI-BODY-001"}, {"source": "SCI-ELEC-001", "target": "SCI-COND-001"}, {"source": "SCI-MAT-002", "target": "SCI-DISS-001"}, {"source": "SCI-EARTH-002", "target": "SCI-EARTH-003"}, {"source": "SCI-LIFE-002", "target": "SCI-ECO-001"}, {"source": "SCI-MAG-001", "target": "SCI-ELEC-001"}, {"source": "SCI-MAT-002", "target": "SCI-HEAT-001"}, {"source": "SCI-LIFE-001", "target": "SCI-LIFE-002"}, {"source": "SCI-LIFE-001", "target": "SCI-LIFE-003"}, {"source": "SCI-MAT-001", "target": "SCI-MAT-002"}, {"source": "SCI-MAT-002", "target": "SCI-MAT-003"}, {"source": "SCI-MAT-001", "target": "SCI-MAT-004"}, {"source": "SCI-HEAT-001", "target": "SCI-MAT-005"}, {"source": "SCI-MAT-002", "target": "SCI-MIX-001"}, {"source": "SCI-EARTH-001", "target": "SCI-MOON-001"}, {"source": "SCI-MAT-004", "target": "SCI-MOT-001"}, {"source": "SCI-EARTH-002", "target": "SCI-ROCK-001"}, {"source": "SCI-EARTH-001", "target": "SCI-SEAS-001"}, {"source": "SCI-EARTH-001", "target": "SCI-STARS-001"}, {"source": "SCI-MOT-001", "target": "SCI-TECH-002"}, {"source": "SCI-MAT-002", "target": "SCI-WATER-001"}, {"source": "SCI-HEAT-001", "target": "SCI-WATER-001"}]
         };
 
-        // 颜色映射
         const colorMap = {
-            1: '#4caf50',  // 小学科学
-            2: '#2196f3',  // 初中物理
-            3: '#ff9800',  // 初中化学
-            4: '#e91e63'   // 初中生物
+            1: '#4caf50',
+            2: '#2196f3',
+            3: '#ff9800',
+            4: '#e91e63'
         };
 
-        // 设置画布
         const width = window.innerWidth;
         const height = window.innerHeight;
         
@@ -274,24 +202,21 @@
             .attr("width", width)
             .attr("height", height);
         
-        // 添加缩放行为
         const g = svg.append("g");
         
         svg.call(d3.zoom()
             .extent([[0, 0], [width, height]])
-            .scaleExtent([0.1, 4])
+            .scaleExtent([0.05, 4])
             .on("zoom", ({transform}) => {
                 g.attr("transform", transform);
             }));
         
-        // 力导向模拟
         const simulation = d3.forceSimulation(graphData.nodes)
-            .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(100))
-            .force("charge", d3.forceManyBody().strength(-300))
+            .force("link", d3.forceLink(graphData.links).id(d => d.id).distance(80))
+            .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("collision", d3.forceCollide().radius(40));
+            .force("collision", d3.forceCollide().radius(30));
         
-        // 绘制连线
         const link = g.append("g")
             .selectAll("line")
             .data(graphData.links)
@@ -299,7 +224,6 @@
             .attr("class", "link")
             .attr("stroke", "#64b5f6");
         
-        // 绘制节点组
         const node = g.append("g")
             .selectAll("g")
             .data(graphData.nodes)
@@ -310,27 +234,23 @@
                 .on("drag", dragged)
                 .on("end", dragended));
         
-        // 节点圆圈
         node.append("circle")
             .attr("class", "node-circle")
-            .attr("r", d => d.isCore ? 25 : 18)
+            .attr("r", d => d.isCore ? 20 : 12)
             .attr("fill", d => colorMap[d.group])
             .attr("stroke", d => d.isCore ? "#ff5252" : "rgba(255,255,255,0.3)")
             .attr("stroke-width", d => d.isCore ? 3 : 2);
         
-        // 节点标签
         node.append("text")
             .attr("class", "node-label")
-            .attr("dy", d => d.isCore ? 35 : 28)
+            .attr("dy", d => d.isCore ? 30 : 22)
             .text(d => d.name);
         
-        // 点击事件
         node.on("click", (event, d) => {
             showInfo(d);
             highlightPath(d);
         });
         
-        // 模拟更新位置
         simulation.on("tick", () => {
             link
                 .attr("x1", d => d.source.x)
@@ -341,7 +261,6 @@
             node.attr("transform", d => `translate(${d.x},${d.y})`);
         });
         
-        // 拖拽函数
         function dragstarted(event, d) {
             if (!event.active) simulation.alphaTarget(0.3).restart();
             d.fx = d.x;
@@ -359,7 +278,6 @@
             d.fy = null;
         }
         
-        // 显示信息面板
         function showInfo(d) {
             document.getElementById('info-panel').style.display = 'block';
             document.getElementById('info-title').textContent = d.name;
@@ -367,23 +285,16 @@
             document.getElementById('info-subject').textContent = d.subject;
             document.getElementById('info-grade').textContent = d.grade;
             
-            // 查找前置知识
             const prereqs = graphData.links
                 .filter(l => l.target.id === d.id)
                 .map(l => l.source.name);
             document.getElementById('info-prereq').textContent = 
                 prereqs.length > 0 ? prereqs.join('、') : '无';
-            
-            document.getElementById('info-misconceptions').textContent = 
-                '点击查看详情...';
         }
         
-        // 高亮路径
         function highlightPath(selectedNode) {
-            // 重置所有连线
             link.classed('highlighted', false);
             
-            // 查找与选中节点相关的连线
             const connectedLinks = graphData.links.filter(
                 l => l.source.id === selectedNode.id || l.target.id === selectedNode.id
             );
@@ -392,7 +303,6 @@
                 .classed('highlighted', true);
         }
         
-        // 搜索功能
         document.getElementById('search-input').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
             if (!term) {
@@ -410,7 +320,6 @@
             link.style('opacity', 0.05);
         });
         
-        // 点击空白处关闭面板
         svg.on("click", (event) => {
             if (event.target.tagName === 'svg') {
                 document.getElementById('info-panel').style.display = 'none';
