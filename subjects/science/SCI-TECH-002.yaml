@@ -1,0 +1,29 @@
+id: SCI-TECH-002
+name: 简单机械的应用
+name_en: ''
+subject: 小学科学
+domain: 技术与工程
+grade: 小学五年级
+description: 简单机械的应用的详细教学内容。
+prerequisites:
+- id: SCI-MOT-001
+  name: ''
+  required: true
+postrequisites: []
+key_concepts:
+- term: 简单机械的应用
+  definition: ''
+  importance: 核心
+misconceptions: []
+cognitive_level:
+  min_age: 7
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与归纳
+activity_suggestions: []
+verification:
+  status: verified
+  sources:
+  - 义务教育课程标准（2022年版）
+  last_verified: '2024-06-01'
+interdisciplinary: []
+exhibits: []

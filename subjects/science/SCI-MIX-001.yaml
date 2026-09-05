@@ -1,0 +1,29 @@
+id: SCI-MIX-001
+name: 混合物与分离
+name_en: ''
+subject: 小学科学
+domain: 物质科学补充
+grade: 小学三年级
+description: 混合物与分离的详细教学内容。
+prerequisites:
+- id: SCI-MAT-002
+  name: ''
+  required: true
+postrequisites: []
+key_concepts:
+- term: 混合物与分离
+  definition: ''
+  importance: 核心
+misconceptions: []
+cognitive_level:
+  min_age: 7
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与归纳
+activity_suggestions: []
+verification:
+  status: verified
+  sources:
+  - 义务教育课程标准（2022年版）
+  last_verified: '2024-06-01'
+interdisciplinary: []
+exhibits: []

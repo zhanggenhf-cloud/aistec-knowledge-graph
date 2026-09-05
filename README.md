@@ -138,29 +138,27 @@ topics:
 aistec-knowledge-graph/
 ├── README.md                 # 本文档
 ├── SCHEMA.md                 # 完整数据 schema 规范
-├── subjects/                 # 知识点节点
-│   ├── physics/              # 物理
+├── template.yaml             # 知识点模板
+├── subjects/                 # 知识点节点（83个）
+│   ├── science/              # 小学科学（20个）
+│   ├── physics/              # 初中物理（41个）
 │   │   ├── mechanics/        # 力学
-│   │   ├── thermodynamics/   # 热学
-│   │   └── electromagnetism/ # 电磁学
-│   ├── chemistry/            # 化学
-│   ├── biology/              # 生物
-│   ├── earth-science/        # 地球科学
-│   └── astronomy/            # 天文学
+│   │   └── electricity/      # 电磁学
+│   ├── chemistry/            # 初中化学（12个）
+│   └── biology/              # 初中生物（10个）
 ├── relations/                # 关系定义
-│   ├── physics-chains.yaml
-│   └── cross-subject.yaml
+│   └── physics-mechanics.yaml
 ├── grade-maps/               # 年级课程映射
-│   ├── primary-3-science.yaml
-│   ├── primary-6-science.yaml
-│   ├── junior-8-physics.yaml
-│   └── senior-1-physics.yaml
+│   └── junior-8-physics.yaml
 ├── examples/                 # 使用示例
-│   ├── query-examples.md
 │   └── aistec-integration.md
+├── visualizations/           # 可视化
+│   ├── mermaid-diagrams.md   # Mermaid 图表
+│   └── interactive-graph.html # D3.js 交互式图谱
 └── tools/                    # 工具脚本
     ├── validate.py           # 数据校验
-    └── query.py              # 依赖查询
+    ├── query.py              # 依赖查询
+    └── batch_generate.py     # 批量生成
 ```
 
 ## 与 AISTEC 技能集成
@@ -214,13 +212,46 @@ SCI-MOT-001 → PHYS-FORCE-001 → PHYS-FORCE-002
 衔接建议：从"推箱子"日常经验过渡到"力的三要素"科学概念
 ```
 
-## 贡献指南
+## 可视化
 
-1. 新增知识点：复制 `template.yaml` 填写，提交 PR
-2. 修改关系：在 `relations/` 中更新边定义
-3. 验证数据：运行 `python tools/validate.py`
+### Mermaid 图表
 
-## 数据来源
+查看 `visualizations/mermaid-diagrams.md` 获取静态图表：
+- 力学知识依赖链（完整 DAG）
+- 小学科学核心概念思维导图
+- 物理力学概念层级图
+- 跨学科连接示例
+
+### 交互式图谱
+
+打开 `visualizations/interactive-graph.html` 在浏览器中查看：
+
+**功能**：
+- 🖱️ **拖拽节点**：调整布局
+- 🔍 **滚轮缩放**：查看局部细节
+- 🔎 **搜索框**：快速定位知识点
+- 👆 **点击节点**：显示详细信息面板
+- ✨ **路径高亮**：自动高亮相关依赖
+
+**颜色编码**：
+- 🟢 绿色：小学科学
+- 🔵 蓝色：初中物理
+- 🟠 橙色：初中化学
+- 🔴 红色：初中生物
+
+![知识图谱预览](https://raw.githubusercontent.com/zhanggenhf-cloud/aistec-knowledge-graph/main/visualizations/preview.png)
+
+## 当前数据概览
+
+| 学段 | 学科 | 知识点数量 |
+|------|------|-----------|
+| 小学 | 科学 | 20 |
+| 初中 | 物理 | 41 |
+| 初中 | 化学 | 12 |
+| 初中 | 生物 | 10 |
+| **总计** | | **83** |
+
+覆盖 2022 版义务教育课程标准核心概念。
 
 - 2022 版义务教育科学/物理课程标准
 - 人教版、苏教版、北师大版教材目录

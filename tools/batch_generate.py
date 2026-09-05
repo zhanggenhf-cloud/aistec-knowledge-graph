@@ -111,6 +111,95 @@ PRIMARY_SCIENCE = {
     },
 }
 
+# ============ 小学科学补充知识点 ==========
+PRIMARY_SCIENCE_EXTRA = {
+    "物质科学补充": {
+        "grade_range": "1-6年级",
+        "concepts": [
+            {"id": "SCI-MAT-005", "name": "物质的状态变化与温度", "grade": "小学三年级", "prereq": ["SCI-HEAT-001"]},
+            {"id": "SCI-MIX-001", "name": "混合物与分离", "grade": "小学三年级", "prereq": ["SCI-MAT-002"]},
+            {"id": "SCI-DISS-001", "name": "溶解与溶液", "grade": "小学四年级", "prereq": ["SCI-MAT-002"]},
+            {"id": "SCI-COND-001", "name": "导体与绝缘体", "grade": "小学四年级", "prereq": ["SCI-ELEC-001"]},
+        ]
+    },
+    "地球与宇宙补充": {
+        "grade_range": "1-6年级",
+        "concepts": [
+            {"id": "SCI-WATER-001", "name": "水在自然界的循环", "grade": "小学五年级", "prereq": ["SCI-MAT-002", "SCI-HEAT-001"]},
+            {"id": "SCI-ROCK-001", "name": "岩石与土壤", "grade": "小学四年级", "prereq": ["SCI-EARTH-002"]},
+            {"id": "SCI-SEAS-001", "name": "季节变化与地球公转", "grade": "小学六年级", "prereq": ["SCI-EARTH-001"]},
+            {"id": "SCI-MOON-001", "name": "月相变化", "grade": "小学六年级", "prereq": ["SCI-EARTH-001"]},
+            {"id": "SCI-STARS-001", "name": "星座与星系", "grade": "小学六年级", "prereq": ["SCI-EARTH-001"]},
+        ]
+    },
+    "技术与工程": {
+        "grade_range": "1-6年级",
+        "concepts": [
+            {"id": "SCI-TECH-001", "name": "工程设计过程", "grade": "小学五年级"},
+            {"id": "SCI-TECH-002", "name": "简单机械的应用", "grade": "小学五年级", "prereq": ["SCI-MOT-001"]},
+            {"id": "SCI-TECH-003", "name": "技术与生活", "grade": "小学六年级"},
+        ]
+    },
+}
+
+# ============ 初中物理补充知识点 (九年级) ==========
+JUNIOR_PHYSICS_EXTRA = {
+    "热学": {
+        "concepts": [
+            {"id": "PHYS-HEAT-001", "name": "内能", "grade": "初中九年级", "prereq": ["PHYS-THERMO-001"]},
+            {"id": "PHYS-HEAT-002", "name": "比热容", "grade": "初中九年级", "prereq": ["PHYS-HEAT-001"]},
+            {"id": "PHYS-HEAT-003", "name": "热机", "grade": "初中九年级", "prereq": ["PHYS-HEAT-002"]},
+            {"id": "PHYS-HEAT-004", "name": "热机效率", "grade": "初中九年级", "prereq": ["PHYS-HEAT-003"]},
+        ]
+    },
+    "电学补充": {
+        "concepts": [
+            {"id": "PHYS-ELEC-008", "name": "串联与并联电路", "grade": "初中九年级", "prereq": ["PHYS-ELEC-002"]},
+            {"id": "PHYS-ELEC-009", "name": "家庭电路", "grade": "初中九年级", "prereq": ["PHYS-ELEC-008"]},
+            {"id": "PHYS-ELEC-010", "name": "焦耳定律", "grade": "初中九年级", "prereq": ["PHYS-ELEC-007"]},
+        ]
+    },
+    "信息与能源": {
+        "concepts": [
+            {"id": "PHYS-INFO-001", "name": "电磁波", "grade": "初中九年级"},
+            {"id": "PHYS-ENERGY-003", "name": "能源与可持续发展", "grade": "初中九年级", "prereq": ["PHYS-ENERGY-002"]},
+            {"id": "PHYS-NUC-001", "name": "核能", "grade": "初中九年级"},
+        ]
+    },
+}
+
+# ============ 初中化学补充知识点 ==========
+JUNIOR_CHEMISTRY_EXTRA = {
+    "补充": {
+        "concepts": [
+            {"id": "CHEM-METAL-001", "name": "金属", "grade": "初中九年级", "prereq": ["CHEM-REACT-001"]},
+            {"id": "CHEM-METAL-002", "name": "金属的化学性质", "grade": "初中九年级", "prereq": ["CHEM-METAL-001"]},
+            {"id": "CHEM-SOL-001", "name": "溶液", "grade": "初中九年级", "prereq": ["CHEM-MAT-001"]},
+            {"id": "CHEM-SOL-002", "name": "溶解度", "grade": "初中九年级", "prereq": ["CHEM-SOL-001"]},
+            {"id": "CHEM-ACID-002", "name": "中和反应", "grade": "初中九年级", "prereq": ["CHEM-ACID-001"]},
+            {"id": "CHEM-FERT-001", "name": "化学肥料", "grade": "初中九年级", "prereq": ["CHEM-SALT-001"]},
+            {"id": "CHEM-ORG-001", "name": "有机化合物", "grade": "初中九年级", "prereq": ["CHEM-MAT-002"]},
+        ]
+    }
+}
+
+# ============ 初中生物补充知识点 ==========
+JUNIOR_BIOLOGY_EXTRA = {
+    "补充": {
+        "concepts": [
+            {"id": "BIO-PLANT-003", "name": "植物的结构层次", "grade": "初中七年级上", "prereq": ["BIO-CELL-002"]},
+            {"id": "BIO-ANIMAL-001", "name": "动物的运动", "grade": "初中八年级上", "prereq": ["BIO-BODY-004"]},
+            {"id": "BIO-NERVE-001", "name": "神经系统", "grade": "初中七年级下", "prereq": ["BIO-BODY-004"]},
+            {"id": "BIO-ENDO-001", "name": "内分泌系统", "grade": "初中七年级下", "prereq": ["BIO-BODY-004"]},
+            {"id": "BIO-IMMUN-001", "name": "免疫", "grade": "初中八年级下", "prereq": ["BIO-BODY-003"]},
+            {"id": "BIO-MICRO-001", "name": "微生物", "grade": "初中八年级上"},
+            {"id": "BIO-MICRO-002", "name": "传染病与免疫", "grade": "初中八年级下", "prereq": ["BIO-MICRO-001"]},
+            {"id": "BIO-DIV-001", "name": "生物的分类", "grade": "初中八年级上"},
+            {"id": "BIO-DIV-002", "name": "生物的多样性", "grade": "初中八年级上", "prereq": ["BIO-DIV-001"]},
+        ]
+    }
+}
+
 # ============ 初中物理知识点 (2022版课标) ============
 JUNIOR_PHYSICS = {
     "力学": {
@@ -268,14 +357,28 @@ def batch_generate():
     
     all_data = [
         ("science", "小学科学", "", PRIMARY_SCIENCE),
+        ("science", "小学科学", "", PRIMARY_SCIENCE_EXTRA),
         ("physics/mechanics", "物理", "力学", {"力学": JUNIOR_PHYSICS["力学"]}),
         ("physics/electricity", "物理", "电磁学", {"电学": JUNIOR_PHYSICS["电学"]}),
+        ("physics/thermodynamics", "物理", "热学", JUNIOR_PHYSICS_EXTRA["热学"]),
+        ("physics/electricity", "物理", "电学补充", JUNIOR_PHYSICS_EXTRA["电学补充"]),
+        ("physics/energy", "物理", "信息与能源", JUNIOR_PHYSICS_EXTRA["信息与能源"]),
         ("chemistry", "化学", "基础化学", JUNIOR_CHEMISTRY),
+        ("chemistry", "化学", "补充", JUNIOR_CHEMISTRY_EXTRA),
         ("biology", "生物", "生命科学", JUNIOR_BIOLOGY),
+        ("biology", "生物", "补充", JUNIOR_BIOLOGY_EXTRA),
     ]
     
     for subdir, subject, default_domain, data in all_data:
-        for domain_name, domain_data in data.items():
+        # 处理不同的数据结构
+        if isinstance(data, dict) and "concepts" in data:
+            # 直接是 {concepts: [...]} 结构
+            domains = {"": data}
+        else:
+            # 外层有 domain 的结构
+            domains = data
+        
+        for domain_name, domain_data in domains.items():
             domain = default_domain or domain_name
             for concept in domain_data["concepts"]:
                 if concept.get("done"):
