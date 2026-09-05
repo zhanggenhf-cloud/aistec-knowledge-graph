@@ -1,0 +1,56 @@
+# 知识点模板
+# 复制此文件，修改内容后重命名为 {subject}/{concept-id}.yaml
+
+id: SUBJ-TOPIC-000
+name: 概念名称
+name_en: English Name
+subject: 物理
+domain: 力学
+grade: 初中八年级
+
+description: |
+  在此用1-2段话描述核心概念。
+  注意：描述应准确但不过于学术化，适合教师理解。
+
+prerequisites:
+  - id: PREREQ-001
+    name: 前置概念名称
+    required: true
+
+postrequisites:
+  - id: POSTREQ-001
+    name: 后续概念名称
+
+key_concepts:
+  - term: 核心术语1
+    definition: 定义
+    importance: 核心  # 核心/重要/拓展
+  - term: 核心术语2
+    definition: 定义
+    importance: 核心
+
+misconceptions:
+  - statement: "常见误解1"
+    correction: "正确理解"
+    source: 可选文献来源
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维
+
+activity_suggestions:
+  - framework: POE
+    brief: 简短的activity建议
+  - framework: 5E
+    brief: 简短的activity建议
+
+verification:
+  status: verified
+  sources:
+    - "权威来源"
+  last_verified: 2024-01-01
+
+interdisciplinary: []
+
+exhibits: []

@@ -1,0 +1,109 @@
+grade: 初中八年级
+subject: 物理
+semester: 上学期
+topics:
+  - chapter: 机械运动
+    concepts:
+      - id: PHYS-MOTION-001
+        name: 机械运动
+      - id: PHYS-MOTION-002
+        name: 速度
+      - id: PHYS-MOTION-003
+        name: 平均速度与瞬时速度
+
+  - chapter: 声现象
+    concepts:
+      - id: PHYS-SOUND-001
+        name: 声音的产生与传播
+      - id: PHYS-SOUND-002
+        name: 声音的特性（音调、响度、音色）
+
+  - chapter: 物态变化
+    concepts:
+      - id: PHYS-THERMO-001
+        name: 温度与物态变化
+      - id: PHYS-THERMO-002
+        name: 熔化与凝固
+      - id: PHYS-THERMO-003
+        name: 汽化与液化
+
+  - chapter: 光现象
+    concepts:
+      - id: PHYS-OPTICS-001
+        name: 光的直线传播
+      - id: PHYS-OPTICS-002
+        name: 光的反射
+      - id: PHYS-OPTICS-003
+        name: 平面镜成像
+
+  - chapter: 透镜及其应用
+    concepts:
+      - id: PHYS-OPTICS-004
+        name: 凸透镜成像规律
+      - id: PHYS-OPTICS-005
+        name: 眼睛和眼镜
+
+  - chapter: 质量与密度
+    concepts:
+      - id: PHYS-MATTER-001
+        name: 质量
+      - id: PHYS-MATTER-002
+        name: 密度
+
+grade: 初中八年级
+subject: 物理
+semester: 下学期
+topics:
+  - chapter: 力
+    concepts:
+      - id: PHYS-FORCE-001
+        name: 力的概念
+      - id: PHYS-FORCE-002
+        name: 重力
+      - id: PHYS-FORCE-003
+        name: 弹力
+      - id: PHYS-FORCE-004
+        name: 摩擦力
+
+  - chapter: 运动和力
+    concepts:
+      - id: PHYS-NEWTON-001
+        name: 牛顿第一定律
+      - id: PHYS-NEWTON-002
+        name: 二力平衡
+
+  - chapter: 压强
+    concepts:
+      - id: PHYS-PRESSURE-001
+        name: 压强
+      - id: PHYS-PRESSURE-002
+        name: 液体压强
+      - id: PHYS-PRESSURE-003
+        name: 大气压强
+
+  - chapter: 浮力
+    concepts:
+      - id: PHYS-BUOY-001
+        name: 浮力
+      - id: PHYS-BUOY-002
+        name: 阿基米德原理
+      - id: PHYS-BUOY-003
+        name: 物体的浮沉条件
+
+  - chapter: 功和机械能
+    concepts:
+      - id: PHYS-WORK-001
+        name: 功
+      - id: PHYS-ENERGY-001
+        name: 动能和势能
+      - id: PHYS-ENERGY-002
+        name: 机械能及其转化
+
+  - chapter: 简单机械
+    concepts:
+      - id: PHYS-SIMPLE-001
+        name: 杠杆
+      - id: PHYS-SIMPLE-002
+        name: 滑轮
+      - id: PHYS-SIMPLE-003
+        name: 机械效率

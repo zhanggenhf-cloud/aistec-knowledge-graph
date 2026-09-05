@@ -1,0 +1,67 @@
+id: PHYS-NEWTON-001
+name: 牛顿第一定律
+name_en: Newton's First Law
+subject: 物理
+domain: 力学
+grade: 初中八年级
+
+description: |
+  一切物体在没有受到力的作用时，总保持静止状态或匀速直线运动状态。
+  理解惯性的概念：物体保持原有运动状态的性质。
+  惯性只与质量有关，与速度无关。
+
+prerequisites:
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: PHYS-FORCE-004
+    name: 摩擦力
+    required: true
+  - id: MATH-ALG-003
+    name: 比值与比例
+    required: false
+
+postrequisites:
+  - id: PHYS-NEWTON-002
+    name: 牛顿第二定律
+  - id: PHYS-NEWTON-003
+    name: 牛顿第三定律
+
+key_concepts:
+  - term: 牛顿第一定律
+    definition: 不受力时，物体保持静止或匀速直线运动
+    importance: 核心
+  - term: 惯性
+    definition: 物体保持原有运动状态的性质
+    importance: 核心
+  - term: 惯性的量度
+    definition: 质量是惯性大小的唯一量度
+    importance: 核心
+
+misconceptions:
+  - statement: "速度大的物体惯性大"
+    correction: "惯性只与质量有关，与速度无关"
+  - statement: "运动的物体不受力会慢慢停下来"
+    correction: "停下来是因为有摩擦力等阻力；不受力会永远运动下去"
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 理想化抽象思维
+
+activity_suggestions:
+  - framework: POE
+    brief: 预测抽走桌布时杯子的运动，体验惯性
+  - framework: 5E
+    brief: Engage用汽车安全带视频 → Explore气垫导轨实验 → Explain伽利略理想实验
+
+verification:
+  status: verified
+  sources:
+    - "Newton, I. Philosophiæ Naturalis Principia Mathematica. 1687"
+  last_verified: 2024-06-01
+
+interdisciplinary:
+  - subject: 历史
+    concept: 科学革命
+    relation: 背景知识

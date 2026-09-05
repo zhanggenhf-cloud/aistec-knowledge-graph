@@ -1,0 +1,33 @@
+# 物理力学知识依赖链
+relation_chain: 力的概念 → 重力 → 弹力 → 摩擦力 → 牛顿定律
+
+edges:
+  # 前置关系
+  - from: SCI-MOT-001
+    to: PHYS-FORCE-001
+    type: prerequisite
+    strength: strong
+    note: 小学"运动与力"是初中"力的概念"的先备经验
+
+  - from: PHYS-FORCE-001
+    to: PHYS-FORCE-002
+    type: prerequisite
+    strength: strong
+    note: 理解力的概念是学习重力的基础
+
+  - from: PHYS-FORCE-001
+    to: PHYS-FORCE-004
+    type: prerequisite
+    strength: strong
+
+  - from: PHYS-FORCE-001
+    to: PHYS-NEWTON-001
+    type: prerequisite
+    strength: strong
+    note: 理解力与运动的关系是牛顿定律的基础
+
+  - from: PHYS-FORCE-004
+    to: PHYS-NEWTON-001
+    type: prerequisite
+    strength: moderate
+    note: 理解摩擦力有助于理解"不受力时物体会怎样"

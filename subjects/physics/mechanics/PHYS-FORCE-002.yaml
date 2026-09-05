@@ -1,0 +1,66 @@
+id: PHYS-FORCE-002
+name: 重力
+name_en: Gravity
+subject: 物理
+domain: 力学
+grade: 初中八年级
+
+description: |
+  由于地球的吸引而使物体受到的力。理解重力的大小 G=mg，
+  方向竖直向下，作用点在物体重心。
+  区分重力与质量的物理意义。
+
+prerequisites:
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: MATH-ALG-002
+    name: 代数方程
+    required: true
+
+postrequisites:
+  - id: PHYS-ENERGY-001
+    name: 重力势能
+  - id: PHYS-NEWTON-002
+    name: 牛顿第二定律
+
+key_concepts:
+  - term: 重力定义
+    definition: 由于地球吸引而使物体受到的力
+    importance: 核心
+  - term: 重力公式
+    definition: G = mg，其中 g ≈ 9.8 N/kg
+    importance: 核心
+  - term: 重心
+    definition: 物体各部分所受重力的等效作用点
+    importance: 重要
+
+misconceptions:
+  - statement: "重力就是地球的吸引力"
+    correction: "重力是地球吸引力的一个分力（考虑自转），但初中阶段可简化为相等"
+  - statement: "物体的重心一定在物体上"
+    correction: "重心可以在物体外部，如圆环的重心在圆心"
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与数学运算
+
+activity_suggestions:
+  - framework: POE
+    brief: 预测不同质量物体下落速度，用真空管演示
+  - framework: 5E
+    brief: Engage用宇航员视频 → Explore弹簧测力计测量重力 → Explain G=mg
+
+verification:
+  status: verified
+  sources:
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-06-01
+
+interdisciplinary: []
+
+exhibits:
+  - venue: 中国科技馆
+    name: 月球漫步
+    relation: 不同重力环境下的体重变化

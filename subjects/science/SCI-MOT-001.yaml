@@ -1,0 +1,61 @@
+id: SCI-MOT-001
+name: 运动与力（小学）
+name_en: Motion and Force (Elementary)
+subject: 小学科学
+domain: 物质科学
+grade: 小学四年级
+
+description: |
+  通过日常经验理解运动和力的关系：推、拉可以让物体运动或停止。
+  知道力可以改变物体的运动状态（启动、停止、转向）。
+  了解生活中常见的力：推力、拉力、重力、摩擦力。
+
+prerequisites:
+  - id: SCI-MAT-001
+    name: 物体的位置与运动
+    required: true
+
+postrequisites:
+  - id: SCI-FORCE-001
+    name: 常见的力
+  - id: PHYS-FORCE-001
+    name: 力的概念
+
+key_concepts:
+  - term: 运动
+    definition: 物体位置的变化
+    importance: 核心
+  - term: 力
+    definition: 推或拉的作用
+    importance: 核心
+  - term: 运动状态改变
+    definition: 物体从静止到运动、从运动到静止、速度大小或方向改变
+    importance: 重要
+
+misconceptions:
+  - statement: "不推不动，力是维持运动的原因"
+    correction: "力改变运动状态，运动的物体停下来是因为摩擦力"
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 具体操作与观察归纳
+
+activity_suggestions:
+  - framework: Guided Play
+    brief: 用各种小车在不同表面滑行的游戏，感受摩擦力的存在
+  - framework: 4-Stage
+    brief: Hook用滑冰视频→Explore不同地面推箱子→Discuss为什么有的容易推→Apply设计"最滑的地板"
+
+verification:
+  status: verified
+  sources:
+    - "小学科学课程标准（2022年版）"
+  last_verified: 2024-06-01
+
+interdisciplinary: []
+
+exhibits:
+  - venue: 中国科技馆
+    name: 摩擦力展品
+    relation: 不同材质表面的滑行对比

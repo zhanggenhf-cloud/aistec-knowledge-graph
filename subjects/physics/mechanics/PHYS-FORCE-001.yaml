@@ -1,0 +1,80 @@
+id: PHYS-FORCE-001
+name: 力的概念
+name_en: Concept of Force
+subject: 物理
+domain: 力学
+grade: 初中八年级
+
+description: |
+  力是物体对物体的作用。理解力的三要素（大小、方向、作用点）
+  以及力的相互性（作用力与反作用力）。
+  能正确画力的示意图。
+
+prerequisites:
+  - id: SCI-MOT-001
+    name: 运动与力（小学）
+    required: true
+  - id: MATH-VEC-001
+    name: 向量的基本概念
+    required: true
+
+postrequisites:
+  - id: PHYS-FORCE-002
+    name: 重力
+  - id: PHYS-FORCE-003
+    name: 弹力
+  - id: PHYS-FORCE-004
+    name: 摩擦力
+  - id: PHYS-NEWTON-001
+    name: 牛顿第一定律
+
+key_concepts:
+  - term: 力的定义
+    definition: 力是物体对物体的作用
+    importance: 核心
+  - term: 力的三要素
+    definition: 大小、方向、作用点
+    importance: 核心
+  - term: 力的相互性
+    definition: 物体间力的作用是相互的（作用力与反作用力）
+    importance: 核心
+  - term: 力的示意图
+    definition: 用带箭头的线段表示力的三要素
+    importance: 重要
+
+misconceptions:
+  - statement: "力是维持物体运动的原因"
+    correction: "力是改变物体运动状态的原因，不是维持"
+    source: "Clement, 1982"
+  - statement: "只有接触的物体之间才有力的作用"
+    correction: "非接触力（重力、磁力）不需要接触"
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与数学建模
+
+activity_suggestions:
+  - framework: POE
+    brief: 预测不同表面推箱子的感受，体验力的相互性
+  - framework: 5E
+    brief: Engage用磁铁隔空吸引（非接触力）→ Explore测量不同拉力 → Explain归纳三要素
+
+verification:
+  status: verified
+  sources:
+    - "Halliday, Resnick & Walker. Fundamentals of Physics. 10th ed."
+  last_verified: 2024-06-01
+
+interdisciplinary:
+  - subject: 数学
+    concept: 向量运算
+    relation: 工具支撑
+  - subject: 生物
+    concept: 肌肉收缩
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 万有引力展品
+    relation: 演示重力的非接触性

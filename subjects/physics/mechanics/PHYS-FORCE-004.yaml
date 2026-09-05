@@ -1,0 +1,65 @@
+id: PHYS-FORCE-004
+name: 摩擦力
+name_en: Friction
+subject: 物理
+domain: 力学
+grade: 初中八年级
+
+description: |
+  两个相互接触的物体发生相对运动或有相对运动趋势时，
+  在接触面上产生的阻碍相对运动的力。
+  理解滑动摩擦力、静摩擦力、滚动摩擦力的区别。
+  知道增大和减小摩擦的方法。
+
+prerequisites:
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+
+postrequisites:
+  - id: PHYS-NEWTON-001
+    name: 牛顿第一定律
+  - id: PHYS-ENERGY-002
+    name: 机械能转化
+
+key_concepts:
+  - term: 摩擦力定义
+    definition: 阻碍物体相对运动（或相对运动趋势）的力
+    importance: 核心
+  - term: 滑动摩擦力
+    definition: 物体滑动时受到的摩擦力
+    importance: 核心
+  - term: 静摩擦力
+    definition: 物体有相对运动趋势但未动时的摩擦力
+    importance: 核心
+  - term: 滚动摩擦
+    definition: 物体滚动时受到的阻力，远小于滑动摩擦
+    importance: 重要
+
+misconceptions:
+  - statement: "摩擦力总是阻碍运动的"
+    correction: "摩擦力阻碍相对运动，但可以是动力（如走路时的静摩擦力）"
+  - statement: "接触面越光滑摩擦力越小"
+    correction: "过于光滑可能产生分子间粘附，极端情况下摩擦力反而增大"
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与辩证分析
+
+activity_suggestions:
+  - framework: POE
+    brief: 预测同一木块在不同表面滑行的距离
+  - framework: IBL
+    brief: 探究影响滑动摩擦力大小的因素（接触面粗糙程度、正压力）
+
+verification:
+  status: verified
+  sources:
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-06-01
+
+exhibits:
+  - venue: 中国科技馆
+    name: 摩擦力展品
+    relation: 不同材质表面的滑行对比
