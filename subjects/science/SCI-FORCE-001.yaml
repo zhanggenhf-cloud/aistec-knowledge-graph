@@ -1,22 +1,17 @@
-id: SCI-MOT-001
-name: 力作用于物体，可以改变物体的形状和运动状态
+id: SCI-FORCE-001
+name: 声音因物体振动而产生
 name_en: ''
 subject: 小学科学
 domain: 物质科学
 grade: 小学四年级
-description: 力作用于物体，可以改变物体的形状和运动状态的详细教学内容。
-prerequisites:
-- id: SCI-MAT-004
-  name: ''
-  required: true
+description: 声音因物体振动而产生的详细教学内容。
+prerequisites: []
 postrequisites: []
 key_concepts:
-- term: 力作用于物体，可以改变物体的形状和运动状态
+- term: 声音因物体振动而产生
   definition: ''
   importance: 核心
-misconceptions:
-- statement: 力是维持物体运动的原因
-  correction: ''
+misconceptions: []
 cognitive_level:
   min_age: 7
   piaget_stage: 具体运算阶段

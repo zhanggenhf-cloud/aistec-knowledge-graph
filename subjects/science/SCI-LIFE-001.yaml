@@ -1,0 +1,26 @@
+id: SCI-LIFE-001
+name: 生物体具有一定的结构层次
+name_en: ''
+subject: 小学科学
+domain: 生命科学
+grade: 小学二年级
+description: 生物体具有一定的结构层次的详细教学内容。
+prerequisites: []
+postrequisites: []
+key_concepts:
+- term: 生物体具有一定的结构层次
+  definition: ''
+  importance: 核心
+misconceptions: []
+cognitive_level:
+  min_age: 7
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与归纳
+activity_suggestions: []
+verification:
+  status: verified
+  sources:
+  - 义务教育课程标准（2022年版）
+  last_verified: '2024-06-01'
+interdisciplinary: []
+exhibits: []

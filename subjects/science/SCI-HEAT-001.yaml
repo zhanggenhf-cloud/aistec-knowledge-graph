@@ -1,22 +1,20 @@
-id: SCI-MOT-001
-name: 力作用于物体，可以改变物体的形状和运动状态
+id: SCI-HEAT-001
+name: 热可以改变物质的状态
 name_en: ''
 subject: 小学科学
 domain: 物质科学
-grade: 小学四年级
-description: 力作用于物体，可以改变物体的形状和运动状态的详细教学内容。
+grade: 小学三年级
+description: 热可以改变物质的状态的详细教学内容。
 prerequisites:
-- id: SCI-MAT-004
+- id: SCI-MAT-002
   name: ''
   required: true
 postrequisites: []
 key_concepts:
-- term: 力作用于物体，可以改变物体的形状和运动状态
+- term: 热可以改变物质的状态
   definition: ''
   importance: 核心
-misconceptions:
-- statement: 力是维持物体运动的原因
-  correction: ''
+misconceptions: []
 cognitive_level:
   min_age: 7
   piaget_stage: 具体运算阶段

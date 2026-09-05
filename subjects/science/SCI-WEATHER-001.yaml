@@ -1,0 +1,26 @@
+id: SCI-WEATHER-001
+name: 天气现象有阴、晴、雨、雪、风等
+name_en: ''
+subject: 小学科学
+domain: 地球与宇宙科学
+grade: 小学二年级
+description: 天气现象有阴、晴、雨、雪、风等的详细教学内容。
+prerequisites: []
+postrequisites: []
+key_concepts:
+- term: 天气现象有阴、晴、雨、雪、风等
+  definition: ''
+  importance: 核心
+misconceptions: []
+cognitive_level:
+  min_age: 7
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与归纳
+activity_suggestions: []
+verification:
+  status: verified
+  sources:
+  - 义务教育课程标准（2022年版）
+  last_verified: '2024-06-01'
+interdisciplinary: []
+exhibits: []
