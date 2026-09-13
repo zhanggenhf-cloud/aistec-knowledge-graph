@@ -1,0 +1,83 @@
+id: GEO-REGION-001
+name: 认识世界
+name_en: Understanding the World
+subject: 地理
+domain: 认识区域
+grade: 初中七年级
+
+description: |
+  认识世界海陆分布，了解七大洲、四大洋的位置和基本特征。
+  了解世界人口分布、人种、语言、宗教、聚落的基本状况。
+  了解世界不同地区的发展差异，认识国际合作的重要性。
+  初步形成全球意识和开放的国际视野。
+
+prerequisites:
+  - id: GEO-EARTH-001
+    name: 地球的形状与运动
+    required: true
+  - id: GEO-EARTH-002
+    name: 地图的阅读与使用
+    required: true
+  - id: GEO-EARTH-003
+    name: 天气与气候
+    required: false
+
+postrequisites:
+  - id: GEO-REGION-002
+    name: 认识中国
+
+key_concepts:
+  - term: 七大洲
+    definition: 亚洲、非洲、北美洲、南美洲、南极洲、欧洲、大洋洲
+    importance: 核心
+  - term: 四大洋
+    definition: 太平洋、大西洋、印度洋、北冰洋
+    importance: 核心
+  - term: 人种与民族
+    definition: 根据体质特征划分的人群及具有共同文化特征的群体
+    importance: 重要
+  - term: 发达国家与发展中国家
+    definition: 按经济发展水平划分的国家类型
+    importance: 重要
+  - term: 国际合作
+    definition: 国家之间在经济、环境、科技等领域的协作
+    importance: 拓展
+
+misconceptions:
+  - statement: "所有发达国家都在北半球"
+    correction: "大多数发达国家在北半球，但澳大利亚、新西兰等在南半球"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间认知与比较分析
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 选择一个大洲制作"环球旅行手册"，整合地理、人文、经济信息
+  - framework: 5E
+    brief: Engage观看世界地理纪录片→Explore绘制世界政区简图→Explain分析区域差异成因
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上/下册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 历史
+    concept: 世界历史与文明发展
+    relation: 人文关联
+  - subject: 科学
+    concept: 板块构造与大陆分布
+    relation: 原理支撑
+  - subject: 生物
+    concept: 生物多样性分布
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 世界地理沙盘
+    relation: 直观展示世界地形地貌

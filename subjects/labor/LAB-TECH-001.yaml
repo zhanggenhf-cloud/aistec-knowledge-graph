@@ -1,0 +1,91 @@
+id: LAB-TECH-001
+name: 新技术体验与应用
+name_en: New Technology Experience and Application
+subject: 劳动
+domain: 生产劳动
+grade: 跨学段
+
+description: |
+  了解新技术（3D打印、激光切割、编程控制、物联网等）的基本原理和应用场景。
+  体验使用新技术工具完成创意设计和制作的过程。
+  理解技术与工程的基本流程：设计→制作→测试→改进。
+  培养工程思维和创新能力，认识技术在劳动中的赋能作用。
+
+prerequisites:
+  - id: IT-ALGO-001
+    name: 算法基础
+    required: false
+  - id: SCI-TECH-002
+    name: 技术与工程（小学）
+    required: false
+
+postrequisites:
+  - id: IT-AI-001
+    name: 人工智能初探
+
+key_concepts:
+  - term: 3D打印
+    definition: 通过逐层堆积材料制造三维物体的技术
+    importance: 核心
+  - term: 激光切割
+    definition: 利用高能量激光束切割材料的技术
+    importance: 重要
+  - term: 编程控制
+    definition: 通过编写程序控制硬件设备执行特定任务
+    importance: 核心
+  - term: 工程迭代
+    definition: 设计→制作→测试→改进的循环优化过程
+    importance: 核心
+  - term: 数字制造
+    definition: 利用数字化技术进行设计和制造的新型生产方式
+    importance: 重要
+
+misconceptions:
+  - statement: "3D打印什么都能做"
+    correction: "3D打印适合小批量、复杂结构的制造，大批量生产传统制造更有优势"
+    source: 义务教育劳动课程标准（2022年版）
+  - statement: "技术会取代所有劳动"
+    correction: "技术改变劳动方式，但创造性劳动、情感性劳动等仍需要人的参与"
+    source: 义务教育劳动课程标准（2022年版）
+
+cognitive_level:
+  min_age: 10
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 动手操作与问题解决
+
+activity_suggestions:
+  - framework: 工程设计
+    brief: 设计→制作→测试→改进：用3D打印或激光切割制作一个实用物品
+  - framework: 项目式学习
+    brief: 用开源硬件（如Arduino/micro:bit）设计一个智能装置，如自动浇花系统
+
+verification:
+  status: verified
+  sources:
+    - "义务教育劳动课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 信息科技
+    concept: 编程与硬件控制
+    relation: 技术应用
+  - subject: 科学
+    concept: 材料科学与机械原理
+    relation: 原理支撑
+  - subject: 数学
+    concept: 几何建模与测量
+    relation: 工具支撑
+  - subject: 物理
+    concept: 电路与传感器
+    relation: 原理支撑
+  - subject: 艺术
+    concept: 产品设计与美学
+    relation: 设计支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 创客空间
+    relation: 展示数字制造技术
+  - venue: 各地青少年科技馆
+    name: 创客工坊
+    relation: 提供新技术体验与制作

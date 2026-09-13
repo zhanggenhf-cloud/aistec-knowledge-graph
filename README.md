@@ -139,17 +139,31 @@ aistec-knowledge-graph/
 ├── README.md                 # 本文档
 ├── SCHEMA.md                 # 完整数据 schema 规范
 ├── template.yaml             # 知识点模板
-├── subjects/                 # 知识点节点（83个）
+├── docs/                     # 文档
+│   └── 2022-curriculum-overview.md  # 2022版课程方案总览
+├── subjects/                 # 知识点节点
 │   ├── science/              # 小学科学（20个）
 │   ├── physics/              # 初中物理（41个）
 │   │   ├── mechanics/        # 力学
-│   │   └── electricity/      # 电磁学
+│   │   ├── electricity/      # 电磁学
+│   │   ├── thermodynamics/   # 热学
+│   │   └── energy/           # 能量与信息
 │   ├── chemistry/            # 初中化学（12个）
-│   └── biology/              # 初中生物（10个）
+│   ├── biology/              # 初中生物（10个）
+│   ├── geography/            # 地理（6个）⭐新增
+│   ├── information-technology/ # 信息科技（6个）⭐新增
+│   ├── math/                 # 数学（4个）⭐新增
+│   ├── art/                  # 艺术（2个）⭐新增
+│   ├── labor/                # 劳动（2个）⭐新增
+│   └── comprehensive-practice/ # 综合实践活动（1个）⭐新增
 ├── relations/                # 关系定义
 │   └── physics-mechanics.yaml
 ├── grade-maps/               # 年级课程映射
-│   └── junior-8-physics.yaml
+│   ├── junior-8-physics.yaml
+│   ├── junior-7-geography.yaml      # ⭐新增
+│   ├── junior-8-geography.yaml      # ⭐新增
+│   ├── elementary-4-6-it.yaml       # ⭐新增
+│   └── junior-7-8-it.yaml           # ⭐新增
 ├── examples/                 # 使用示例
 │   └── aistec-integration.md
 ├── visualizations/           # 可视化
@@ -238,20 +252,42 @@ SCI-MOT-001 → PHYS-FORCE-001 → PHYS-FORCE-002
 - 🔵 蓝色：初中物理
 - 🟠 橙色：初中化学
 - 🔴 红色：初中生物
+- 🟣 紫色：地理
+- ⚫ 黑色：信息科技
+- 🟡 黄色：数学
+- 🩷 粉色：艺术
+- 🩶 灰色：劳动
+- 🤍 白色：综合实践活动
 
 ![知识图谱预览](https://raw.githubusercontent.com/zhanggenhf-cloud/aistec-knowledge-graph/main/visualizations/preview.png)
 
 ## 当前数据概览
 
-| 学段 | 学科 | 知识点数量 |
-|------|------|-----------|
-| 小学 | 科学 | 20 |
-| 初中 | 物理 | 41 |
-| 初中 | 化学 | 12 |
-| 初中 | 生物 | 10 |
-| **总计** | | **83** |
+| 学段 | 学科 | 知识点数量 | 状态 |
+|------|------|-----------|------|
+| 小学 | 科学 | 20 | ✅ |
+| 小学 | 信息科技 | 4 | ✅ 新增 |
+| 小学 | 数学 | 2 | ✅ 新增 |
+| 小学 | 艺术 | 2 | ✅ 新增 |
+| 小学 | 劳动 | 1 | ✅ 新增 |
+| 小学 | 综合实践活动 | 1 | ✅ 新增 |
+| 初中 | 物理 | 41 | ✅ |
+| 初中 | 化学 | 12 | ✅ |
+| 初中 | 生物 | 10 | ✅ |
+| 初中 | 地理 | 6 | ✅ 新增 |
+| 初中 | 信息科技 | 2 | ✅ 新增 |
+| 初中 | 数学 | 2 | ✅ 新增 |
+| 初中 | 艺术 | 2 | ✅ 新增 |
+| 初中 | 劳动 | 1 | ✅ 新增 |
+| **总计** | **14个学科** | **~106个** | |
 
-覆盖 2022 版义务教育课程标准核心概念。
+### 2022版课标覆盖情况
+
+基于《义务教育课程方案（2022年版）》，16门国家课程中：
+- **已覆盖**（14门）：科学、物理、化学、生物、地理、数学、信息科技、艺术、劳动、综合实践活动
+- **待补充**（6门）：道德与法治、语文、外语、历史、体育与健康
+
+详见 [`docs/2022-curriculum-overview.md`](docs/2022-curriculum-overview.md)
 
 - 2022 版义务教育科学/物理课程标准
 - 人教版、苏教版、北师大版教材目录

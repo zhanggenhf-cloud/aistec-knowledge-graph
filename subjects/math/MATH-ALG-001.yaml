@@ -1,0 +1,84 @@
+id: MATH-ALG-001
+name: 代数基础与数学建模
+name_en: Algebra Fundamentals and Mathematical Modeling
+subject: 数学
+domain: 数与代数
+grade: 初中七至九年级
+
+description: |
+  理解用字母表示数的意义，掌握代数式的运算规则。
+  能够建立一元一次方程、二元一次方程组解决实际问题。
+  理解函数概念，能够用函数描述变量之间的关系。
+  初步体验数学建模过程：从实际问题抽象出数学模型，求解并验证。
+
+prerequisites:
+  - id: MATH-NUM-001
+    name: 数与运算
+    required: true
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: false
+
+postrequisites:
+  - id: PHYS-MOTION-002
+    name: 速度公式应用
+  - id: CHEM-REACT-002
+    name: 化学方程式计算
+
+key_concepts:
+  - term: 代数式
+    definition: 用运算符号把数或表示数的字母连接而成的式子
+    importance: 核心
+  - term: 方程
+    definition: 含有未知数的等式
+    importance: 核心
+  - term: 函数
+    definition: 两个变量之间的一种对应关系，一个变量的值确定后另一个变量的值随之确定
+    importance: 核心
+  - term: 数学建模
+    definition: 用数学语言描述现实问题并求解的过程
+    importance: 重要
+  - term: 模型意识
+    definition: 有意识地用数学概念、方法解释现实世界中的现象与规律
+    importance: 重要
+
+misconceptions:
+  - statement: "字母只能表示未知数"
+    correction: "字母可以表示未知数、变量、常量、公式等多种数学对象"
+    source: 义务教育数学课程标准（2022年版）
+  - statement: "函数就是公式"
+    correction: "函数是一种对应关系，可以用公式、图像、表格等多种方式表示"
+    source: 义务教育数学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与符号运算
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用手机套餐计费引入→Explore建立函数模型→Explain分析不同方案的优劣
+  - framework: 项目式学习
+    brief: 设计"最优上学路线"，用数学建模比较时间、距离、费用
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 物理公式与变量关系
+    relation: 应用支撑
+  - subject: 化学
+    concept: 化学方程式与定量计算
+    relation: 应用支撑
+  - subject: 信息科技
+    concept: 算法中的变量与函数
+    relation: 概念衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数学之美展厅
+    relation: 展示数学模型在现实中的应用

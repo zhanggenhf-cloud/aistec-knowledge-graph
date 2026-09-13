@@ -1,0 +1,78 @@
+id: IT-DATA-001
+name: 数据与信息
+name_en: Data and Information
+subject: 信息科技
+domain: 数据
+grade: 小学四年级
+
+description: |
+  认识数据与信息的关系，理解信息是加工后的数据。
+  了解数据的多种表现形式（文字、图像、音频、视频等）。
+  体验从生活情境中收集数据、提取信息的过程。
+  初步树立信息意识，能够辨别信息真伪。
+
+prerequisites:
+  - id: SCI-TECH-001
+    name: 技术与生活（小学）
+    required: false
+
+postrequisites:
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+  - id: IT-ALGO-001
+    name: 算法基础
+
+key_concepts:
+  - term: 数据
+    definition: 对客观事物记录的、可以鉴别的符号
+    importance: 核心
+  - term: 信息
+    definition: 经过加工处理后对人们有用的数据
+    importance: 核心
+  - term: 信息来源
+    definition: 信息的出处，影响信息的可靠性和真实性
+    importance: 重要
+  - term: 数字化
+    definition: 将各类信息转换为计算机可以处理的数字形式
+    importance: 重要
+
+misconceptions:
+  - statement: "数据就是信息"
+    correction: "数据是原始记录，信息是经过处理后有意义的、对决策有用的数据"
+    source: 义务教育信息科技课程标准（2022年版）
+  - statement: "网上看到的信息都是真的"
+    correction: "网络信息良莠不齐，需要通过权威来源、交叉验证等方法辨别真伪"
+    source: 义务教育信息科技课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与分类
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示同一事件的不同报道→Explore收集多来源信息对比→Explain讨论信息真伪辨别方法
+  - framework: POE
+    brief: 预测某条网络信息的可信度，然后通过多渠道验证
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 数据收集与整理
+    relation: 工具支撑
+  - subject: 科学
+    concept: 观察与记录
+    relation: 方法衔接
+  - subject: 语文
+    concept: 信息提取与概括
+    relation: 能力关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 大数据展厅
+    relation: 展示数据如何转化为有用信息

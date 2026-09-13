@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>AISTEC 知识图谱架构</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #fff;
+  font-family: "SimSun", "Songti SC", serif;
+  display: flex; justify-content: center; padding: 30px 20px;
+}
+.wrap {
+  width: 800px;
+  position: relative;
+}
+
+/* 标题 */
+.title {
+  text-align: center; margin-bottom: 22px;
+}
+.title h1 {
+  font-size: 15px; font-weight: bold; color: #000;
+  letter-spacing: 1px;
+}
+
+/* 层 */
+.layer {
+  margin-bottom: 12px;
+}
+.layer-label {
+  font-size: 10.5px; font-weight: bold; color: #000;
+  margin-bottom: 5px;
+  border-left: 2px solid #333; padding-left: 5px;
+}
+.layer-box {
+  border: 1px solid #333;
+  padding: 10px 12px;
+  background: #fafafa;
+}
+
+/* 网格 */
+.grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+
+.block {
+  border: 1px solid #555;
+  background: #fff;
+  padding: 6px 8px;
+  text-align: center;
+}
+.block-title {
+  font-size: 9.5px; font-weight: bold; color: #000;
+  line-height: 1.3;
+}
+.block-desc {
+  font-size: 8.5px; color: #444; margin-top: 2px;
+  line-height: 1.35;
+}
+
+/* 箭头 */
+.arrow-wrap {
+  display: flex; justify-content: center; margin: 3px 0;
+}
+.arrow-down {
+  width: 0; height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #333;
+}
+
+/* 底部 */
+.footer {
+  margin-top: 14px; text-align: center;
+  font-size: 8.5px; color: #555;
+}
+.footer table {
+  margin: 0 auto; border-collapse: collapse;
+}
+.footer td {
+  padding: 1px 10px; font-size: 8.5px;
+  border-right: 1px solid #bbb;
+}
+.footer td:last-child { border-right: none; }
+.footer .num { font-weight: bold; color: #000; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="title">
+    <h1>图 1  AISTEC 科学知识图谱系统架构</h1>
+  </div>
+
+  <!-- 数据层 -->
+  <div class="layer">
+    <div class="layer-label">数据层</div>
+    <div class="layer-box">
+      <div class="grid-5">
+        <div class="block">
+          <div class="block-title">课程标准</div>
+          <div class="block-desc">2022版义务教育课标<br/>多版本教材目录</div>
+        </div>
+        <div class="block">
+          <div class="block-title">国际基准</div>
+          <div class="block-desc">NGSS跨学科概念<br/>科学教育研究文献</div>
+        </div>
+        <div class="block">
+          <div class="block-title">知识点节点</div>
+          <div class="block-desc">83个概念节点<br/>物理 / 化学 / 生物 / 科学</div>
+        </div>
+        <div class="block">
+          <div class="block-title">关系定义</div>
+          <div class="block-desc">5种关系类型<br/>3级强度分级</div>
+        </div>
+        <div class="block">
+          <div class="block-title">Schema规范</div>
+          <div class="block-desc">知识点结构定义<br/>认知发展层级标注</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-wrap"><div class="arrow-down"></div></div>
+
+  <!-- 处理层 -->
+  <div class="layer">
+    <div class="layer-label">处理层</div>
+    <div class="layer-box">
+      <div class="grid-4">
+        <div class="block">
+          <div class="block-title">年级课程映射</div>
+          <div class="block-desc">年级→章节→知识点<br/>学期课程覆盖映射</div>
+        </div>
+        <div class="block">
+          <div class="block-title">数据校验</div>
+          <div class="block-desc">ID唯一性 / 无环检测<br/>关系完整性校验</div>
+        </div>
+        <div class="block">
+          <div class="block-title">依赖查询</div>
+          <div class="block-desc">前置知识递归查询<br/>最短路径 / 全面路径搜索</div>
+        </div>
+        <div class="block">
+          <div class="block-title">批量生成</div>
+          <div class="block-desc">基于模板批量生成<br/>可视化数据导出</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-wrap"><div class="arrow-down"></div></div>
+
+  <!-- 服务层 -->
+  <div class="layer">
+    <div class="layer-label">服务层</div>
+    <div class="layer-box">
+      <div class="grid-4">
+        <div class="block">
+          <div class="block-title">前置知识诊断</div>
+          <div class="block-desc">自动识别缺失先备概念<br/>支持深度递归查询</div>
+        </div>
+        <div class="block">
+          <div class="block-title">学习路径规划</div>
+          <div class="block-desc">基于依赖生成最优序列<br/>最短路径 / 全面路径双模式</div>
+        </div>
+        <div class="block">
+          <div class="block-title">跨年级衔接</div>
+          <div class="block-desc">学段概念断层打通<br/>低龄适配自动推荐</div>
+        </div>
+        <div class="block">
+          <div class="block-title">活动设计支撑</div>
+          <div class="block-desc">知识解构自动提取<br/>POE / 5E 教学法匹配</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-wrap"><div class="arrow-down"></div></div>
+
+  <!-- 应用输出层 -->
+  <div class="layer">
+    <div class="layer-label">应用输出层</div>
+    <div class="layer-box">
+      <div class="grid-4">
+        <div class="block">
+          <div class="block-title">AISTEC技能集成</div>
+          <div class="block-desc">教育活动方案生成<br/>知识解构与教学支撑</div>
+        </div>
+        <div class="block">
+          <div class="block-title">交互式知识图谱</div>
+          <div class="block-desc">可视化图谱展示<br/>拖拽 / 搜索 / 路径高亮</div>
+        </div>
+        <div class="block">
+          <div class="block-title">学习诊断报告</div>
+          <div class="block-desc">缺失概念清单<br/>推荐路径 / 认知适配分析</div>
+        </div>
+        <div class="block">
+          <div class="block-title">科技馆场景适配</div>
+          <div class="block-desc">展品自动匹配<br/>场馆活动方案生成</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部统计 -->
+  <div class="footer">
+    <table>
+      <tr>
+        <td><span class="num">83</span> 知识点节点</td>
+        <td><span class="num">4</span> 学科覆盖</td>
+        <td><span class="num">5</span> 关系类型</td>
+        <td><span class="num">4</span> 核心服务</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

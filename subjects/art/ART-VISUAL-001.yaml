@@ -1,0 +1,89 @@
+id: ART-VISUAL-001
+name: 光与色彩
+name_en: Light and Color
+subject: 艺术
+domain: 美术
+grade: 跨学段
+
+description: |
+  了解光与色的物理基础：可见光谱、色光三原色（RGB）、颜料三原色（CMY）。
+  理解光的反射、折射、吸收与物体颜色的关系。
+  认识色彩的心理效应和文化意义。
+  探索光学原理在绘画、摄影、设计中的应用。
+
+prerequisites:
+  - id: PHYS-OPTICS-001
+    name: 光的直线传播
+    required: false
+  - id: SCI-LIGHT-001
+    name: 光与颜色（小学）
+    required: false
+
+postrequisites:
+  - id: ART-DIGI-001
+    name: 数字媒体艺术
+
+key_concepts:
+  - term: 色光三原色
+    definition: 红(R)、绿(G)、蓝(B)，三色光叠加产生白光
+    importance: 核心
+  - term: 颜料三原色
+    definition: 品红、黄、青，三色颜料混合理论上产生黑色
+    importance: 核心
+  - term: 互补色
+    definition: 色环上相对位置的颜色，混合后趋向灰/白
+    importance: 重要
+  - term: 明度与纯度
+    definition: 明度指明暗程度，纯度指色彩鲜艳程度
+    importance: 重要
+  - term: 色彩心理学
+    definition: 颜色对人的情绪和行为产生影响的规律
+    importance: 拓展
+
+misconceptions:
+  - statement: "颜料混合和色光混合原理相同"
+    correction: "颜料混合是减色法（吸收光线），色光混合是加色法（叠加光线），原理相反"
+    source: 义务教育艺术课程标准（2022年版）
+  - statement: "物体的颜色是它本身具有的"
+    correction: "物体的颜色取决于它反射的光的波长，在白光下才呈现其固有颜色"
+    source: 义务教育物理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore用三棱镜分解白光→Explain理解光谱→Elaborate用RGB灯混合出不同颜色
+  - framework: STEAM
+    brief: 创作"光学艺术作品"，利用光的折射、反射原理设计视觉效果
+
+verification:
+  status: verified
+  sources:
+    - "义务教育艺术课程标准（2022年版）"
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 光学
+    relation: 原理支撑
+  - subject: 科学
+    concept: 光与视觉
+    relation: 知识衔接
+  - subject: 信息科技
+    concept: 数字图像与色彩模型
+    relation: 技术应用
+  - subject: 生物
+    concept: 人眼视觉原理
+    relation: 原理支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 光学展厅
+    relation: 展示光的性质与现象
+  - venue: 各地美术馆
+    name: 色彩与绘画展
+    relation: 展示色彩在艺术中的应用

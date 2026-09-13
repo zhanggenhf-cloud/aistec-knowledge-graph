@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AISTEC 知识图谱架构框架图</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0d1117;
+  font-family: "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+  display: flex; justify-content: center; align-items: flex-start;
+  min-height: 100vh; padding: 40px 20px;
+}
+.container {
+  width: 1400px;
+  background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+  border-radius: 16px;
+  border: 1px solid #30363d;
+  padding: 48px 56px;
+  position: relative;
+}
+
+/* 标题 */
+.header {
+  text-align: center; margin-bottom: 44px;
+}
+.header h1 {
+  font-size: 32px; font-weight: 700;
+  background: linear-gradient(90deg, #58a6ff, #a371f7, #f778ba);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; letter-spacing: 1px;
+}
+.header .subtitle {
+  font-size: 14px; color: #8b949e; margin-top: 8px;
+  letter-spacing: 2px;
+}
+.header .badge {
+  display: inline-block; margin-top: 12px;
+  background: rgba(88, 166, 255, 0.1); color: #58a6ff;
+  font-size: 12px; padding: 4px 14px; border-radius: 20px;
+  border: 1px solid rgba(88, 166, 255, 0.25);
+}
+
+/* 层级容器 */
+.layer {
+  margin-bottom: 28px;
+  position: relative;
+}
+.layer-header {
+  display: flex; align-items: center; margin-bottom: 16px;
+}
+.layer-num {
+  width: 28px; height: 28px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; margin-right: 12px;
+  flex-shrink: 0;
+}
+.layer-title {
+  font-size: 16px; font-weight: 600; color: #c9d1d9;
+}
+.layer-title .en {
+  font-size: 12px; color: #6e7681; font-weight: 400;
+  margin-left: 8px;
+}
+.layer-body {
+  background: rgba(22, 27, 34, 0.6);
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 20px 24px;
+  position: relative;
+}
+
+/* 输入输出层特殊处理 */
+.io-layer { display: flex; gap: 20px; }
+.io-block {
+  flex: 1;
+  background: rgba(22, 27, 34, 0.6);
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+.io-block .io-title {
+  font-size: 14px; font-weight: 600; color: #c9d1d9;
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+}
+.io-block .io-title .arrow { font-size: 16px; }
+
+/* 卡片网格 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid-5 { grid-template-columns: repeat(5, 1fr); }
+
+.card {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: all 0.2s ease;
+}
+.card:hover { border-color: #58a6ff; transform: translateY(-1px); }
+.card-title {
+  font-size: 13px; font-weight: 600; color: #e6edf3;
+  margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
+}
+.card-desc {
+  font-size: 11px; color: #8b949e; line-height: 1.5;
+}
+.card-meta {
+  font-size: 10px; color: #484f58; margin-top: 6px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+.card-tag {
+  display: inline-block; font-size: 10px;
+  padding: 1px 6px; border-radius: 4px; margin-top: 6px;
+}
+
+/* 颜色主题 */
+.blue .layer-num { background: rgba(88, 166, 255, 0.15); color: #58a6ff; }
+.blue .card { border-left: 3px solid #58a6ff; }
+.blue .card-tag { background: rgba(88, 166, 255, 0.1); color: #58a6ff; }
+
+.green .layer-num { background: rgba(46, 160, 67, 0.15); color: #3fb950; }
+.green .card { border-left: 3px solid #3fb950; }
+.green .card-tag { background: rgba(46, 160, 67, 0.1); color: #3fb950; }
+
+.orange .layer-num { background: rgba(210, 153, 34, 0.15); color: #d29922; }
+.orange .card { border-left: 3px solid #d29922; }
+.orange .card-tag { background: rgba(210, 153, 34, 0.1); color: #d29922; }
+
+.purple .layer-num { background: rgba(163, 113, 247, 0.15); color: #a371f7; }
+.purple .card { border-left: 3px solid #a371f7; }
+.purple .card-tag { background: rgba(163, 113, 247, 0.1); color: #a371f7; }
+
+.pink .layer-num { background: rgba(247, 120, 186, 0.15); color: #f778ba; }
+.pink .card { border-left: 3px solid #f778ba; }
+.pink .card-tag { background: rgba(247, 120, 186, 0.1); color: #f778ba; }
+
+.cyan .layer-num { background: rgba(34, 211, 238, 0.15); color: #22d3ee; }
+.cyan .card { border-left: 3px solid #22d3ee; }
+.cyan .card-tag { background: rgba(34, 211, 238, 0.1); color: #22d3ee; }
+
+/* 输入输出 */
+.in .io-block { border-left: 3px solid #f85149; }
+.in .layer-num { background: rgba(248, 81, 73, 0.15); color: #f85149; }
+.out .io-block { border-left: 3px solid #3fb950; }
+.out .layer-num { background: rgba(46, 160, 67, 0.15); color: #3fb950; }
+
+/* 连接线 */
+.connector {
+  display: flex; justify-content: center; margin: 4px 0;
+}
+.connector svg { display: block; }
+
+/* 底部统计 */
+.footer-stats {
+  display: flex; justify-content: center; gap: 40px;
+  margin-top: 36px; padding-top: 24px;
+  border-top: 1px solid #21262d;
+}
+.stat {
+  text-align: center;
+}
+.stat-num {
+  font-size: 28px; font-weight: 700; color: #58a6ff;
+  font-family: "SF Mono", monospace;
+}
+.stat-label {
+  font-size: 12px; color: #8b949e; margin-top: 4px;
+}
+
+/* 右侧图例 */
+.legend {
+  position: absolute; top: 48px; right: 56px;
+  background: rgba(13, 17, 23, 0.9);
+  border: 1px solid #30363d; border-radius: 10px;
+  padding: 14px 18px;
+}
+.legend-title { font-size: 11px; color: #8b949e; margin-bottom: 10px; font-weight: 600; }
+.legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 11px; color: #c9d1d9; }
+.legend-dot { width: 8px; height: 8px; border-radius: 3px; }
+
+/* 图标 */
+.icon { width: 14px; height: 14px; display: inline-block; }
+.icon::before { font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 标题 -->
+  <div class="header">
+    <h1>AISTEC 知识图谱架构框架</h1>
+    <div class="subtitle">SCIENCE EDUCATION KNOWLEDGE GRAPH FRAMEWORK</div>
+    <div class="badge">v1.0.0 | 83 知识点节点 | 覆盖 2022 版课标</div>
+  </div>
+
+  <!-- 图例 -->
+  <div class="legend">
+    <div class="legend-title">学科色标</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#3fb950;"></div>小学科学</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#58a6ff;"></div>初中物理</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d29922;"></div>初中化学</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f778ba;"></div>初中生物</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#a371f7;"></div>年级映射</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#22d3ee;"></div>工具脚本</div>
+  </div>
+
+  <!-- 输入层 -->
+  <div class="layer in">
+    <div class="layer-header">
+      <div class="layer-num">IN</div>
+      <div class="layer-title">数据源与输入 <span class="en">Data Sources</span></div>
+    </div>
+    <div class="io-layer">
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↓</span> 教材与标准</div>
+        <div class="card-grid card-grid-2">
+          <div class="card">
+            <div class="card-title">📚 2022 版义务教育课标</div>
+            <div class="card-desc">科学/物理/化学/生物课程标准核心概念映射</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📖 多版本教材目录</div>
+            <div class="card-desc">人教版 · 苏教版 · 北师大版知识点对齐</div>
+          </div>
+        </div>
+      </div>
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↓</span> 外部基准</div>
+        <div class="card-grid card-grid-2">
+          <div class="card">
+            <div class="card-title">🌍 NGSS 跨学科概念</div>
+            <div class="card-desc">Next Generation Science Standards 映射</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🔬 科学教育研究文献</div>
+            <div class="card-desc">前概念 · 认知发展 · 概念转变研究</div>
+          </div>
+        </div>
+      </div>
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↓</span> 专家贡献</div>
+        <div class="card-grid card-grid-2">
+          <div class="card">
+            <div class="card-title">✍️ 教师/专家提交</div>
+            <div class="card-desc">PR Review → 合并到主分支 → 自动拉取更新</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🏛️ 科技馆展品关联</div>
+            <div class="card-desc">中国科技馆等场馆展品与知识点映射</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 数据层 -->
+  <div class="layer blue">
+    <div class="layer-header">
+      <div class="layer-num">01</div>
+      <div class="layer-title">数据层 <span class="en">Data Layer</span></div>
+    </div>
+    <div class="layer-body">
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-title">📁 subjects/science/</div>
+          <div class="card-desc">小学科学核心概念<br/>20 个知识点节点</div>
+          <div class="card-tag">SCI-***</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📁 subjects/physics/</div>
+          <div class="card-desc">初中物理<br/>力学 · 电磁学 · 热学 · 光学 · 能量</div>
+          <div class="card-tag">PHYS-*** · 41 节点</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📁 subjects/chemistry/</div>
+          <div class="card-desc">初中化学<br/>物质 · 反应 · 酸碱盐 · 金属</div>
+          <div class="card-tag">CHEM-*** · 12 节点</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📁 subjects/biology/</div>
+          <div class="card-desc">初中生物<br/>细胞 · 人体 · 生态 · 进化</div>
+          <div class="card-tag">BIO-*** · 10 节点</div>
+        </div>
+      </div>
+      <div style="margin-top:14px; display:grid; grid-template-columns: 1fr 1fr; gap:14px;">
+        <div class="card">
+          <div class="card-title">🔗 relations/</div>
+          <div class="card-desc">知识依赖关系定义 · prerequisite / postrequisite / related / analogous / application<br/>支持 strong / moderate / weak 强度分级</div>
+          <div class="card-tag">DAG 有向无环图</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📐 SCHEMA.md + template.yaml</div>
+          <div class="card-desc">知识点 Schema 规范 · ID 编码规范 · 认知发展层级 · 数据校验规则<br/>确保全局唯一 / 关系完整 / 无环 / 年级递增</div>
+          <div class="card-tag">Schema v1.0.0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 映射层 -->
+  <div class="layer purple">
+    <div class="layer-header">
+      <div class="layer-num">02</div>
+      <div class="layer-title">映射层 <span class="en">Mapping Layer</span></div>
+    </div>
+    <div class="layer-body">
+      <div class="card-grid card-grid-3">
+        <div class="card">
+          <div class="card-title">📋 grade-maps/</div>
+          <div class="card-desc">年级 → 章节 → 知识点映射<br/>学期课程覆盖一览</div>
+          <div class="card-tag">junior-8-physics.yaml</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🧠 cognitive_level</div>
+          <div class="card-desc">皮亚杰阶段 · 最小认知年龄<br/>所需思维类型标注</div>
+          <div class="card-tag">感知运动 → 形式运算</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🌐 interdisciplinary</div>
+          <div class="card-desc">跨学科连接 · 数学/生物/地球科学<br/>工具支撑 / 应用实例 / 概念类比</div>
+          <div class="card-tag">学科融合</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 工具层 -->
+  <div class="layer cyan">
+    <div class="layer-header">
+      <div class="layer-num">03</div>
+      <div class="layer-title">工具层 <span class="en">Tool Layer</span></div>
+    </div>
+    <div class="layer-body">
+      <div class="card-grid card-grid-4">
+        <div class="card">
+          <div class="card-title">✅ validate.py</div>
+          <div class="card-desc">ID 唯一性 · 关系完整性<br/>无环图检测 · 必填字段校验</div>
+          <div class="card-tag">数据校验</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔍 query.py</div>
+          <div class="card-desc">前置知识递归查询<br/>最短/全面路径搜索</div>
+          <div class="card-tag">依赖查询</div>
+        </div>
+        <div class="card">
+          <div class="card-title">⚡ batch_generate.py</div>
+          <div class="card-desc">基于模板批量生成知识点 YAML<br/>学科/年级批量扩展</div>
+          <div class="card-tag">批量生成</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📊 generate_visualization.py</div>
+          <div class="card-desc">生成 Mermaid 图表<br/>D3.js 交互式图谱数据</div>
+          <div class="card-tag">可视化生成</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 服务层 -->
+  <div class="layer orange">
+    <div class="layer-header">
+      <div class="layer-num">04</div>
+      <div class="layer-title">服务层 <span class="en">Service Layer</span></div>
+    </div>
+    <div class="layer-body">
+      <div class="card-grid card-grid-4">
+        <div class="card">
+          <div class="card-title">🩺 前置知识诊断</div>
+          <div class="card-desc">自动识别学习者缺失的先备概念<br/>支持 depth=2 递归查询</div>
+          <div class="card-tag">Prerequisite Diagnosis</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🛤️ 学习路径规划</div>
+          <div class="card-desc">基于依赖关系生成最优学习序列<br/>shortest / comprehensive 两种模式</div>
+          <div class="card-tag">Learning Path</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🔄 跨年级衔接</div>
+          <div class="card-desc">小学→初中→高中概念断层打通<br/>低龄适配版本自动推荐</div>
+          <div class="card-tag">Grade Transition</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🎯 活动设计支撑</div>
+          <div class="card-desc">key_concepts → 知识解构<br/>misconceptions → 教学难点预警</div>
+          <div class="card-tag">Activity Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 应用层 -->
+  <div class="layer pink">
+    <div class="layer-header">
+      <div class="layer-num">05</div>
+      <div class="layer-title">应用层 <span class="en">Application Layer</span></div>
+    </div>
+    <div class="layer-body">
+      <div class="card-grid card-grid-4">
+        <div class="card">
+          <div class="card-title">🤖 AISTEC 技能集成</div>
+          <div class="card-desc">Phase 2 知识解构自动提取<br/>POE / 5E 教学法框架匹配</div>
+          <div class="card-tag">science-edu-activity</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🌐 交互式知识图谱</div>
+          <div class="card-desc">D3.js 拖拽 · 缩放 · 搜索<br/>路径高亮 · 节点详情面板</div>
+          <div class="card-tag">interactive-graph.html</div>
+        </div>
+        <div class="card">
+          <div class="card-title">🏛️ 科技馆展品关联</div>
+          <div class="card-desc">知识点 → 展品自动匹配<br/>venue_adaptation 场景适配</div>
+          <div class="card-tag">Exhibit Mapping</div>
+        </div>
+        <div class="card">
+          <div class="card-title">📝 可视化图表</div>
+          <div class="card-desc">Mermaid 静态依赖图<br/>力学 DAG · 概念层级 · 跨学科连接</div>
+          <div class="card-tag">mermaid-diagrams.md</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 连接线 -->
+  <div class="connector">
+    <svg width="24" height="28" viewBox="0 0 24 28">
+      <line x1="12" y1="0" x2="12" y2="20" stroke="#30363d" stroke-width="2" stroke-dasharray="4 3"/>
+      <polygon points="12,28 6,18 18,18" fill="#30363d"/>
+    </svg>
+  </div>
+
+  <!-- 输出层 -->
+  <div class="layer out">
+    <div class="layer-header">
+      <div class="layer-num">OUT</div>
+      <div class="layer-title">输出与交付 <span class="en">Outputs</span></div>
+    </div>
+    <div class="io-layer">
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↑</span> 教育活动方案</div>
+        <div class="card-grid card-grid-1">
+          <div class="card">
+            <div class="card-desc">带前置知识提示的活动设计 · 跨年级适配建议 · 科技馆场景方案</div>
+          </div>
+        </div>
+      </div>
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↑</span> 学习诊断报告</div>
+        <div class="card-grid card-grid-1">
+          <div class="card">
+            <div class="card-desc">缺失概念清单 · 推荐学习路径 · 预计课时 · 认知适配分析</div>
+          </div>
+        </div>
+      </div>
+      <div class="io-block">
+        <div class="io-title"><span class="arrow">↑</span> 知识图谱资产</div>
+        <div class="card-grid card-grid-1">
+          <div class="card">
+            <div class="card-desc">可交互 D3.js 图谱 · Mermaid 静态图 · YAML 结构化数据 · Schema 规范</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部统计 -->
+  <div class="footer-stats">
+    <div class="stat"><div class="stat-num">83</div><div class="stat-label">知识点节点</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">学科覆盖</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">关系类型</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">强度等级</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">核心服务</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">工具脚本</div></div>
+  </div>
+
+</div>
+</body>
+</html>

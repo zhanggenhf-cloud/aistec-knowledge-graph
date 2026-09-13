@@ -1,0 +1,85 @@
+id: GEO-EARTH-002
+name: 地图的阅读与使用
+name_en: Map Reading and Usage
+subject: 地理
+domain: 地理工具
+grade: 初中七年级
+
+description: |
+  掌握地图的基本要素：比例尺、方向、图例和注记。
+  能够阅读和使用不同类型的地图（政区图、地形图、气候图等）。
+  理解等高线地形图的判读方法，能够识别山地、盆地、山脊、山谷等地形部位。
+  了解电子地图和遥感影像在生活中的应用。
+
+prerequisites:
+  - id: GEO-EARTH-001
+    name: 地球的形状与运动
+    required: true
+  - id: MATH-MEAS-001
+    name: 测量与比例
+    required: false
+
+postrequisites:
+  - id: GEO-REGION-001
+    name: 认识世界
+  - id: GEO-REGION-002
+    name: 认识中国
+
+key_concepts:
+  - term: 比例尺
+    definition: 图上距离与实地距离之比
+    importance: 核心
+  - term: 方向判读
+    definition: 一般定向法、指向标定向法、经纬网定向法
+    importance: 核心
+  - term: 等高线
+    definition: 把海拔相同的点连接成线，用于表示地形起伏
+    importance: 核心
+  - term: 图例与注记
+    definition: 地图上表示地理事物的符号和文字说明
+    importance: 重要
+  - term: 电子地图
+    definition: 基于数字技术的地图，支持导航、搜索等功能
+    importance: 拓展
+
+misconceptions:
+  - statement: "比例尺越大表示的范围越大"
+    correction: "比例尺越大表示的范围越小，内容越详细"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "等高线密集表示坡度缓"
+    correction: "等高线密集表示坡度陡，稀疏表示坡度缓"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间思维与符号转换
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore用橡皮泥制作地形模型并绘制等高线→Explain分析等高线与地形关系
+  - framework: 项目式学习
+    brief: 设计校园导览图，综合运用比例尺、方向、图例等要素
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 比例与缩放
+    relation: 工具支撑
+  - subject: 信息科技
+    concept: GIS与电子地图技术
+    relation: 技术应用
+  - subject: 科学
+    concept: 地形与地貌
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数字地球
+    relation: 展示电子地图与遥感技术

@@ -1,0 +1,35 @@
+grade: 初中七年级
+subject: 地理
+semester: 上学期
+topics:
+  - chapter: 地球与地图
+    concepts:
+      - id: GEO-EARTH-001
+        name: 地球的形状与运动
+      - id: GEO-EARTH-002
+        name: 地图的阅读与使用
+
+  - chapter: 陆地与海洋
+    concepts:
+      - id: GEO-EARTH-003
+        name: 天气与气候
+
+  - chapter: 居民与聚落
+    concepts:
+      - id: GEO-REGION-001
+        name: 认识世界
+
+---
+grade: 初中七年级
+subject: 地理
+semester: 下学期
+topics:
+  - chapter: 认识世界
+    concepts:
+      - id: GEO-REGION-001
+        name: 认识世界
+
+  - chapter: 地理实践
+    concepts:
+      - id: GEO-EARTH-002
+        name: 地图的阅读与使用

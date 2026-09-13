@@ -1,0 +1,90 @@
+id: GEO-REGION-002
+name: 认识中国
+name_en: Understanding China
+subject: 地理
+domain: 认识区域
+grade: 初中八年级
+
+description: |
+  从位置与疆域、自然环境、自然资源、经济发展等方面全面认识中国。
+  理解中国地理位置的优越性，了解行政区划和人口分布。
+  分析中国地形、气候、河流等自然环境的特征及相互关系。
+  认识中国自然资源的基本国情，树立可持续发展观念。
+  了解中国农业、工业、交通的分布特点及发展变化。
+
+prerequisites:
+  - id: GEO-REGION-001
+    name: 认识世界
+    required: true
+  - id: GEO-EARTH-003
+    name: 天气与气候
+    required: true
+
+postrequisites:
+  - id: GEO-REGION-003
+    name: 认识家乡
+
+key_concepts:
+  - term: 地理位置
+    definition: 中国位于亚欧大陆东部、太平洋西岸，海陆兼备
+    importance: 核心
+  - term: 地形地势
+    definition: 西高东低，呈三级阶梯状分布
+    importance: 核心
+  - term: 气候特征
+    definition: 气候复杂多样，季风气候显著
+    importance: 核心
+  - term: 自然资源
+    definition: 总量丰富、人均不足的基本国情
+    importance: 重要
+  - term: 区域经济差异
+    definition: 东部沿海发达、西部内陆相对落后的空间格局
+    importance: 重要
+
+misconceptions:
+  - statement: "中国所有地方都是季风气候"
+    correction: "中国气候复杂多样，除季风气候外还有温带大陆性气候、高原山地气候等"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "自然资源取之不尽"
+    correction: "多数自然资源不可再生，人均占有量远低于世界平均水平"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合分析与区域比较
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: "设计'中国地理名片'，选取一个省级行政区进行深度调研"
+  - framework: 5E
+    brief: Explore对比分析不同地区的气候数据→Explain归纳中国气候分布规律
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理八年级上/下册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 历史
+    concept: 中国历史与地理环境的相互作用
+    relation: 人文关联
+  - subject: 生物
+    concept: 中国生物多样性
+    relation: 知识衔接
+  - subject: 科学
+    concept: 中国的自然资源与能源
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 国家安全与领土完整
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 中国地形沙盘
+    relation: 直观展示中国地形三级阶梯
+  - venue: 各地自然博物馆
+    name: 中国自然资源展
+    relation: 展示矿产、生物、水资源等

@@ -1,0 +1,85 @@
+id: MATH-GEO-001
+name: 图形与几何
+name_en: Geometry
+subject: 数学
+domain: 图形与几何
+grade: 跨学段
+
+description: |
+  认识基本几何图形（点、线、面、体）及其性质。
+  理解平行、垂直、相交等位置关系。
+  掌握三角形、四边形、圆等基本图形的性质和判定方法。
+  培养几何直观和空间观念，能够进行简单的几何推理。
+  了解几何图形在自然界和人造物品中的广泛应用。
+
+prerequisites:
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: false
+
+postrequisites:
+  - id: PHYS-OPTICS-001
+    name: 光的直线传播
+  - id: PHYS-BUOY-001
+    name: 浮力（涉及体积计算）
+
+key_concepts:
+  - term: 几何直观
+    definition: 利用图表描述和分析问题的意识与习惯
+    importance: 核心
+  - term: 空间观念
+    definition: 对空间物体或图形的形状、大小、位置关系的认识
+    importance: 核心
+  - term: 三角形稳定性
+    definition: 三角形具有固定形状的特性，广泛应用于建筑结构
+    importance: 重要
+  - term: 圆的性质
+    definition: 圆是到定点距离等于定长的点的集合
+    importance: 重要
+  - term: 尺规作图
+    definition: 用无刻度直尺和圆规进行几何作图
+    importance: 重要
+
+misconceptions:
+  - statement: "面积大的图形周长一定长"
+    correction: "面积和周长没有必然的对应关系，如细长的长方形面积小但周长可以很大"
+    source: 义务教育数学课程标准（2022年版）
+  - statement: "所有三角形都是稳定的"
+    correction: "三角形结构稳定是指形状不易改变，但材料本身可能变形"
+    source: 义务教育数学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 空间想象与逻辑推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore用纸条搭建不同多边形→Explain发现三角形稳定性→Elaborate设计最稳固的桥梁结构
+  - framework: 项目式学习
+    brief: 设计并制作几何模型，探索几何在建筑和工程设计中的应用
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 光学与镜面反射
+    relation: 应用实例
+  - subject: 科学
+    concept: 晶体结构与分子几何
+    relation: 知识衔接
+  - subject: 艺术
+    concept: 构图与透视
+    relation: 应用实例
+  - subject: 工程/劳动
+    concept: 结构设计与稳定性
+    relation: 应用支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 几何与建筑展厅
+    relation: 展示几何原理在建筑中的应用

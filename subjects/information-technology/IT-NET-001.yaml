@@ -1,0 +1,72 @@
+id: IT-NET-001
+name: 网络基础
+name_en: Network Fundamentals
+subject: 信息科技
+domain: 网络
+grade: 小学六年级
+
+description: |
+  了解计算机网络的基本概念和分类（局域网、广域网、互联网）。
+  理解IP地址、域名的作用，了解网络通信的基本原理。
+  认识互联网在学习、生活中的应用，学会安全、文明上网。
+  了解网络对信息社会的重要意义。
+
+prerequisites:
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+    required: true
+
+postrequisites:
+  - id: IT-NET-002
+    name: 物联网与万物互联
+  - id: IT-SEC-001
+    name: 信息安全与隐私保护
+
+key_concepts:
+  - term: 计算机网络
+    definition: 将多台计算机通过通信线路连接起来的系统
+    importance: 核心
+  - term: 互联网
+    definition: 全球最大的计算机网络，实现全球信息互联
+    importance: 核心
+  - term: IP地址与域名
+    definition: 用于标识网络设备的数字地址和便于记忆的字符名称
+    importance: 重要
+  - term: 网络协议
+    definition: 网络中设备之间通信需要遵循的规则
+    importance: 重要
+
+misconceptions:
+  - statement: "互联网和万维网是一回事"
+    correction: "互联网是物理网络基础设施，万维网是基于互联网的信息服务系统"
+    source: 义务教育信息科技课程标准（2022年版）
+
+cognitive_level:
+  min_age: 11
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 系统思维与类比
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore模拟邮局寄信过程类比网络数据传输→Explain理解分组交换原理
+  - framework: 项目式学习
+    brief: 调查家庭网络拓扑结构，绘制网络连接图
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 通信技术与电磁波
+    relation: 原理支撑
+  - subject: 物理
+    concept: 电信号传输
+    relation: 原理支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 通信技术展厅
+    relation: 展示网络通信原理与发展

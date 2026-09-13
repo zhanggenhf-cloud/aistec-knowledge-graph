@@ -1,0 +1,176 @@
+# 2022版课标新增学科跨学科关系图谱
+# 基于义务教育课程方案（2022年版）跨学科主题学习要求构建
+
+relation_chain: 跨学科主题学习网络
+edges:
+  # 地理 ↔ 科学
+  - from: GEO-EARTH-001
+    to: SCI-EARTH-001
+    type: related
+    strength: strong
+    note: 地球运动知识的学段衔接
+
+  - from: GEO-EARTH-003
+    to: SCI-WEATHER-001
+    type: related
+    strength: strong
+    note: 天气与气候概念衔接
+
+  - from: GEO-ENV-001
+    to: SCI-ECO-001
+    type: related
+    strength: strong
+    note: 环境保护与生态系统
+
+  # 地理 ↔ 物理
+  - from: GEO-EARTH-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 光的传播与昼夜现象
+
+  # 地理 ↔ 化学
+  - from: GEO-ENV-001
+    to: CHEM-OXY-001
+    type: related
+    strength: moderate
+    note: 大气污染与化学反应
+
+  # 地理 ↔ 生物
+  - from: GEO-ENV-001
+    to: BIO-ECO-002
+    type: related
+    strength: strong
+    note: 生态环境与生物多样性
+
+  # 信息科技 ↔ 数学
+  - from: IT-DATA-002
+    to: MATH-NUM-001
+    type: prerequisite
+    strength: moderate
+    note: 二进制与数制转换
+
+  - from: IT-ALGO-001
+    to: MATH-ALG-001
+    type: related
+    strength: strong
+    note: 算法思维与数学建模
+
+  # 信息科技 ↔ 科学
+  - from: IT-AI-001
+    to: SCI-TECH-003
+    type: related
+    strength: moderate
+    note: 人工智能与工程设计
+
+  # 信息科技 ↔ 物理
+  - from: IT-NET-001
+    to: PHYS-ELEC-001
+    type: related
+    strength: moderate
+    note: 网络通信与电信号
+
+  # 数学 ↔ 物理
+  - from: MATH-MEAS-001
+    to: PHYS-MOTION-002
+    type: prerequisite
+    strength: strong
+    note: 测量是物理实验的基础
+
+  - from: MATH-ALG-001
+    to: PHYS-NEWTON-001
+    type: prerequisite
+    strength: strong
+    note: 代数是物理公式推导的工具
+
+  - from: MATH-GEO-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 几何光学中的图形分析
+
+  # 数学 ↔ 化学
+  - from: MATH-ALG-001
+    to: CHEM-REACT-002
+    type: prerequisite
+    strength: strong
+    note: 化学方程式计算需要代数运算
+
+  # 数学 ↔ 生物
+  - from: MATH-STAT-001
+    to: BIO-DIV-001
+    type: related
+    strength: strong
+    note: 生物多样性调查需要统计分析
+
+  # 艺术 ↔ 物理
+  - from: ART-SOUND-001
+    to: PHYS-SOUND-001
+    type: related
+    strength: strong
+    note: 音乐中的声学原理
+
+  - from: ART-VISUAL-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: strong
+    note: 色彩与光学原理
+
+  # 艺术 ↔ 科学
+  - from: ART-SOUND-001
+    to: SCI-FORCE-001
+    type: related
+    strength: strong
+    note: 声音产生与振动
+
+  - from: ART-VISUAL-001
+    to: SCI-LIGHT-001
+    type: related
+    strength: strong
+    note: 光与颜色（小学科学衔接）
+
+  # 劳动 ↔ 信息科技
+  - from: LAB-TECH-001
+    to: IT-ALGO-001
+    type: prerequisite
+    strength: moderate
+    note: 新技术应用需要编程基础
+
+  # 劳动 ↔ 科学
+  - from: LAB-DAILY-001
+    to: CHEM-MAT-001
+    type: related
+    strength: moderate
+    note: 清洁剂去污的化学原理
+
+  - from: LAB-DAILY-001
+    to: BIO-BODY-002
+    type: related
+    strength: moderate
+    note: 烹饪与营养学
+
+  # 综合实践活动 ↔ 所有学科
+  - from: COMP-PROJ-001
+    to: SCI-TECH-003
+    type: related
+    strength: strong
+    note: 项目式学习的科学探究方法
+
+  # 跨学科主题学习（课程方案要求≥10%课时）
+  - from: COMP-PROJ-001
+    to: GEO-ENV-001
+    type: application
+    strength: strong
+    note: 碳中和项目整合地理、化学、生物
+
+  - from: COMP-PROJ-001
+    to: IT-AI-001
+    type: application
+    strength: strong
+    note: 智能农业项目整合信息科技、生物、数学
+
+  - from: COMP-PROJ-001
+    to: ART-SOUND-001
+    type: application
+    strength: moderate
+    note: STEAM项目整合艺术与科学

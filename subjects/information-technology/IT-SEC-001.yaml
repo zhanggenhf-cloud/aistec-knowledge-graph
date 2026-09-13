@@ -1,0 +1,77 @@
+id: IT-SEC-001
+name: 信息安全与隐私保护
+name_en: Information Security and Privacy Protection
+subject: 信息科技
+domain: 信息安全
+grade: 初中八年级
+
+description: |
+  认识信息安全的重要性，了解常见的网络安全威胁（病毒、木马、钓鱼等）。
+  掌握个人信息保护的基本方法，树立隐私保护意识。
+  了解密码学基本概念，理解加密技术在信息保护中的作用。
+  认识信息社会责任，遵守网络法律法规，文明上网。
+
+prerequisites:
+  - id: IT-NET-001
+    name: 网络基础
+    required: true
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 信息安全
+    definition: 保护信息不被未经授权的访问、使用、泄露、破坏
+    importance: 核心
+  - term: 个人隐私
+    definition: 个人不愿意公开的个人信息和生活信息
+    importance: 核心
+  - term: 密码安全
+    definition: 使用强密码、定期更换、不重复使用等安全习惯
+    importance: 重要
+  - term: 加密技术
+    definition: 将信息转换为无法直接阅读的形式，只有授权者能解密
+    importance: 重要
+  - term: 信息社会责任
+    definition: 在信息社会中应遵守的道德规范和法律责任
+    importance: 核心
+
+misconceptions:
+  - statement: "只要不浏览不良网站就不会中毒"
+    correction: "恶意软件可通过多种途径传播，包括邮件附件、U盘、虚假链接等"
+    source: 义务教育信息科技课程标准（2022年版）
+  - statement: "设置简单密码方便记忆没关系"
+    correction: "简单密码容易被破解，应使用包含大小写字母、数字、符号的复杂密码"
+    source: 义务教育信息科技课程标准（2022年版）
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 风险评估与价值判断
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage分析真实网络安全事件→Explore设计安全策略→Explain讨论技术与法律的平衡
+  - framework: 角色扮演
+    brief: 模拟"黑客与防御者"对抗，理解攻防原理
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 网络安全法与个人信息保护法
+    relation: 法律支撑
+  - subject: 数学
+    concept: 加密算法与数论
+    relation: 原理支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 网络安全展厅
+    relation: 展示信息安全技术与案例

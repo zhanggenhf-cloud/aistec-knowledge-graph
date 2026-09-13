@@ -1,0 +1,89 @@
+id: ART-SOUND-001
+name: 声音与音乐
+name_en: Sound and Music
+subject: 艺术
+domain: 音乐
+grade: 跨学段
+
+description: |
+  了解声音的基本物理属性：音高（频率）、响度（振幅）、音色（波形）。
+  认识声音的产生与传播原理，理解乐器发声的物理机制。
+  体验用科学方法分析音乐元素（节奏、旋律、和声）。
+  探索声音艺术在科学传播中的应用。
+
+prerequisites:
+  - id: PHYS-SOUND-001
+    name: 声音的产生与传播
+    required: false
+  - id: SCI-FORCE-001
+    name: 声音因物体振动而产生
+    required: false
+
+postrequisites:
+  - id: ART-DIGI-001
+    name: 数字媒体艺术
+
+key_concepts:
+  - term: 音高与频率
+    definition: 音高由声源振动频率决定，频率越高音越高
+    importance: 核心
+  - term: 响度与振幅
+    definition: 响度由声波振幅决定，振幅越大声音越响
+    importance: 核心
+  - term: 音色
+    definition: 不同声源发出的声音具有独特的波形特征
+    importance: 核心
+  - term: 共鸣
+    definition: 物体在特定频率下振动幅度增大的现象
+    importance: 重要
+  - term: 声学设计
+    definition: 利用声学原理设计音乐厅、录音棚等空间
+    importance: 拓展
+
+misconceptions:
+  - statement: "音量大就是音高高"
+    correction: "音量（响度）和音高是两个独立的物理属性，分别由振幅和频率决定"
+    source: 义务教育艺术课程标准（2022年版）
+  - statement: "所有乐器发声原理相同"
+    correction: "不同乐器发声原理不同：弦振动、空气柱振动、膜振动、打击体振动等"
+    source: 义务教育艺术课程标准（2022年版）
+
+cognitive_level:
+  min_age: 8
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 观察与联觉
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage聆听不同乐器音色→Explore用示波器观察声波→Explain分析乐器发声原理
+  - framework: STEAM
+    brief: 用日常材料制作简易乐器，探究音高与振动频率的关系
+
+verification:
+  status: verified
+  sources:
+    - "义务教育艺术课程标准（2022年版）"
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 声学
+    relation: 原理支撑
+  - subject: 科学
+    concept: 振动与波
+    relation: 知识衔接
+  - subject: 数学
+    concept: 频率与周期
+    relation: 工具支撑
+  - subject: 信息科技
+    concept: 音频数字化
+    relation: 技术应用
+
+exhibits:
+  - venue: 中国科技馆
+    name: 声音体验厅
+    relation: 展示声波的物理特性
+  - venue: 各地音乐厅
+    name: 声学建筑
+    relation: 展示声学设计原理

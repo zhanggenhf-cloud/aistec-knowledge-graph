@@ -1,0 +1,90 @@
+id: GEO-ENV-001
+name: 自然资源与环境保护
+name_en: Natural Resources and Environmental Protection
+subject: 地理
+domain: 人地协调
+grade: 初中八年级
+
+description: |
+  认识自然资源的类型（可再生资源与不可再生资源）及其利用。
+  了解中国土地资源、水资源、能源资源的基本状况和面临的挑战。
+  理解人类活动对地理环境的影响，认识环境问题的全球性。
+  树立人地协调观和可持续发展理念，培养绿色生活方式。
+
+prerequisites:
+  - id: GEO-REGION-002
+    name: 认识中国
+    required: true
+  - id: SCI-ECO-001
+    name: 生态系统与环境保护（小学）
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 可再生资源
+    definition: 可以在较短时间内更新、再生，或者能够循环使用的资源
+    importance: 核心
+  - term: 不可再生资源
+    definition: 形成、再生过程非常缓慢，相对人类历史而言几乎不可再生的资源
+    importance: 核心
+  - term: 人地协调观
+    definition: 对人类活动与地理环境之间关系秉持的正确价值观
+    importance: 核心
+  - term: 可持续发展
+    definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
+    importance: 核心
+  - term: 碳中和
+    definition: 通过植树造林、节能减排等方式，抵消自身产生的二氧化碳排放量
+    importance: 拓展
+
+misconceptions:
+  - statement: "可再生能源完全无污染"
+    correction: "可再生能源污染较小，但设备制造、土地利用等方面仍有环境影响"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "环境保护只是政府的事"
+    correction: "环境保护需要全社会参与，每个人都可以从日常生活做起"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 价值判断与系统思维
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 调查校园/家庭的资源消耗和碳排放，提出节能减排方案
+  - framework: 5E
+    brief: Engage展示环境退化案例→Explore分析资源利用数据→Explain讨论可持续发展路径
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理八年级上/下册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 生态系统与生物多样性
+    relation: 知识衔接
+  - subject: 化学
+    concept: 能源转化与环境保护
+    relation: 原理支撑
+  - subject: 物理
+    concept: 新能源技术（太阳能、风能）
+    relation: 技术应用
+  - subject: 生物
+    concept: 生态平衡与物种保护
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 生态文明与法治保障
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 能源世界展厅
+    relation: 展示传统能源与新能源技术
+  - venue: 各地环保科普馆
+    name: 生态环境展览
+    relation: 展示环境问题和保护措施

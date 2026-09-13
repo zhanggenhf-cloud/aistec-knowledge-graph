@@ -1,0 +1,92 @@
+id: GEO-EARTH-003
+name: 天气与气候
+name_en: Weather and Climate
+subject: 地理
+domain: 认识全球
+grade: 初中七年级
+
+description: |
+  区分天气与气候的概念。
+  识别常见的天气符号，能够阅读简单的天气预报图。
+  理解气温、降水的分布规律及其影响因素（纬度、海陆、地形）。
+  了解世界主要气候类型的分布、特征及成因。
+  认识人类活动对气候的影响，树立环境保护意识。
+
+prerequisites:
+  - id: SCI-WEATHER-001
+    name: 天气与气候（小学）
+    required: true
+  - id: GEO-EARTH-001
+    name: 地球的形状与运动
+    required: false
+
+postrequisites:
+  - id: GEO-ENV-001
+    name: 自然资源与环境保护
+  - id: SCI-EARTH-003
+    name: 地球上的水
+
+key_concepts:
+  - term: 天气
+    definition: 一个地区短时间内的大气状况
+    importance: 核心
+  - term: 气候
+    definition: 一个地区多年的天气平均状况
+    importance: 核心
+  - term: 气温分布
+    definition: 受纬度、海陆、地形等因素影响的气温空间变化规律
+    importance: 核心
+  - term: 降水分布
+    definition: 受纬度、海陆、地形、洋流等因素影响的降水空间变化规律
+    importance: 核心
+  - term: 气候类型
+    definition: 根据气温和降水组合特征划分的气候分类
+    importance: 重要
+
+misconceptions:
+  - statement: "天气和气候是一回事"
+    correction: "天气是短时间的，气候是长时间的平均状况"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "全球变暖就是所有地方都变热"
+    correction: "全球变暖指全球平均气温上升，但不同地区变化不同，还可能引发极端天气"
+    source: IPCC报告
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 系统思维与因果分析
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察一周天气变化→Explore分析气温降水数据→Explain归纳气候类型特征
+  - framework: 项目式学习
+    brief: 设计"家乡气候档案"，收集数据、绘制图表、分析成因
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 热传递与物态变化
+    relation: 原理支撑
+  - subject: 科学
+    concept: 水循环与大气科学
+    relation: 知识衔接
+  - subject: 化学
+    concept: 温室气体与化学反应
+    relation: 拓展关联
+  - subject: 数学
+    concept: 统计图表与数据分析
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 气象观测设备
+    relation: 展示天气要素观测方法
+  - venue: 各地气象馆
+    name: 气候模拟装置
+    relation: 演示不同气候类型成因

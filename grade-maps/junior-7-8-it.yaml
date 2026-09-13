@@ -1,0 +1,20 @@
+grade: 初中七至八年级
+subject: 信息科技
+semester: 全学年
+topics:
+  - chapter: 物联网与人工智能
+    concepts:
+      - id: IT-NET-002
+        name: 物联网与万物互联
+      - id: IT-AI-001
+        name: 人工智能初探
+
+  - chapter: 信息安全
+    concepts:
+      - id: IT-SEC-001
+        name: 信息安全与隐私保护
+
+  - chapter: 跨学科主题
+    concepts:
+      - id: COMP-PROJ-001
+        name: 跨学科项目式学习

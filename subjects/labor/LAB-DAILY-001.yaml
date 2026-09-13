@@ -1,0 +1,82 @@
+id: LAB-DAILY-001
+name: 日常生活劳动
+name_en: Daily Life Labor
+subject: 劳动
+domain: 日常生活劳动
+grade: 一至九年级
+
+description: |
+  掌握基本生活技能：清洁与卫生、整理与收纳、烹饪与营养、家用器具使用与维护。
+  理解劳动对个人成长和家庭和谐的意义。
+  认识日常用品背后的科学原理（如清洁剂的去污原理、电器的能量转换）。
+  培养劳动习惯和品质，树立劳动创造美好生活的观念。
+
+prerequisites: []
+
+postrequisites:
+  - id: LAB-TECH-001
+    name: 新技术体验与应用
+
+key_concepts:
+  - term: 清洁与卫生
+    definition: 保持个人和环境清洁的劳动技能
+    importance: 核心
+  - term: 整理与收纳
+    definition: 有序管理物品、优化空间利用的能力
+    importance: 核心
+  - term: 烹饪与营养
+    definition: 食物制备技能和合理膳食知识
+    importance: 核心
+  - term: 器具维护
+    definition: 正确使用和保养家用器具的技能
+    importance: 重要
+  - term: 劳动观念
+    definition: 对劳动本质、价值和意义的认识
+    importance: 核心
+
+misconceptions:
+  - statement: "做家务是浪费时间"
+    correction: "家务劳动培养生活自理能力、责任感和时间管理能力，是全面发展的重要组成部分"
+    source: 义务教育劳动课程标准（2022年版）
+  - statement: "清洁剂越多越好"
+    correction: "过量使用清洁剂会造成环境污染和健康危害，应按说明适量使用"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 6
+  piaget_stage: 前运算/具体运算阶段
+  prerequisite_reasoning: 模仿与实践
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察家庭清洁需求→Explore尝试不同清洁方法→Explain分析清洁背后的化学原理
+  - framework: 项目式学习
+    brief: 设计"一周营养食谱"，结合营养学知识和烹饪实践
+
+verification:
+  status: verified
+  sources:
+    - "义务教育劳动课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 物质变化与能量转换
+    relation: 原理支撑
+  - subject: 化学
+    concept: 清洁剂的去污原理
+    relation: 原理支撑
+  - subject: 生物
+    concept: 营养与健康
+    relation: 知识衔接
+  - subject: 物理
+    concept: 简单机械与电器原理
+    relation: 原理支撑
+  - subject: 数学
+    concept: 计量与配比
+    relation: 工具支撑
+
+exhibits:
+  - venue: 各地科技馆
+    name: 生活科学展厅
+    relation: 展示日常生活中的科学原理

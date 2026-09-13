@@ -1,0 +1,87 @@
+id: COMP-PROJ-001
+name: 跨学科项目式学习
+name_en: Interdisciplinary Project-Based Learning
+subject: 综合实践活动
+domain: 跨学科主题学习
+grade: 一至九年级
+
+description: |
+  理解跨学科主题学习的意义：围绕真实问题整合多学科知识进行探究。
+  掌握项目式学习的基本流程：提出问题→设计方案→收集证据→分析解释→交流反思。
+  体验综合运用科学、数学、语文、艺术等学科知识解决复杂问题。
+  2022版课程方案要求各门课程用不少于10%课时设计跨学科主题学习。
+
+prerequisites:
+  - id: SCI-TECH-003
+    name: 工程设计与制作（小学）
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科主题学习
+    definition: 围绕特定主题，整合两门及以上学科的知识和方法进行学习
+    importance: 核心
+  - term: 项目式学习
+    definition: 以完成真实项目为目标，在实践过程中学习知识和技能
+    importance: 核心
+  - term: 真实情境
+    definition: 来自现实生活、具有真实意义和挑战性的学习情境
+    importance: 核心
+  - term: 探究循环
+    definition: 提出问题→猜想假设→设计方案→收集证据→分析解释→交流反思的完整过程
+    importance: 核心
+  - term: 学习共同体
+    definition: 学习者之间协作互助、共同成长的团队
+    importance: 重要
+
+misconceptions:
+  - statement: "跨学科学习就是多学科的简单叠加"
+    correction: "跨学科学习强调学科之间的有机融合，围绕真实问题形成整体理解"
+    source: 义务教育课程方案（2022年版）
+  - statement: "项目式学习就是让学生自由活动"
+    correction: "项目式学习需要教师精心设计支架、提供资源和过程指导，不是放任自流"
+    source: 义务教育课程方案（2022年版）
+
+cognitive_level:
+  min_age: 6
+  piaget_stage: 前运算/具体运算/形式运算阶段
+  prerequisite_reasoning: 综合思维与协作能力
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 设计"校园生态农场"项目，整合科学（植物生长）、数学（面积计算）、语文（记录报告）、艺术（景观设计）等学科
+  - framework: 5E
+    brief: 以"城市交通拥堵"为主题，Engage观察现象→Explore调研数据→Explain分析原因→Elaborate设计解决方案→Evaluate评估可行性
+
+verification:
+  status: verified
+  sources:
+    - "义务教育课程方案（2022年版）"
+    - "义务教育课程方案与课程标准（2022年版）解读"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 科学探究方法
+    relation: 方法支撑
+  - subject: 数学
+    concept: 数据分析与建模
+    relation: 工具支撑
+  - subject: 语文
+    concept: 信息收集与表达
+    relation: 能力支撑
+  - subject: 艺术
+    concept: 创意表达与设计
+    relation: 表达支撑
+  - subject: 信息科技
+    concept: 信息检索与数字展示
+    relation: 技术支撑
+  - subject: 劳动
+    concept: 动手实践与制作
+    relation: 实践支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示跨学科解决重大问题的案例

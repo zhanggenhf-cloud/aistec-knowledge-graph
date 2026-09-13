@@ -1,0 +1,90 @@
+id: GEO-EARTH-001
+name: 地球的形状与运动
+name_en: Earth's Shape and Motion
+subject: 地理
+domain: 认识全球
+grade: 初中七年级
+
+description: |
+  认识地球是一个两极稍扁、赤道略鼓的不规则球体。
+  理解地球自转产生的昼夜交替、时间差异现象，
+  理解地球公转产生的四季变化、五带划分现象。
+  掌握经纬线的基本概念和定位方法。
+
+prerequisites:
+  - id: SCI-EARTH-001
+    name: 地球的形状与大小（小学）
+    required: true
+  - id: SCI-EARTH-002
+    name: 地球的运动（小学）
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-002
+    name: 地图的阅读与使用
+  - id: GEO-EARTH-003
+    name: 天气与气候
+  - id: GEO-REGION-001
+    name: 认识世界
+
+key_concepts:
+  - term: 地球形状
+    definition: 两极稍扁、赤道略鼓的不规则球体
+    importance: 核心
+  - term: 地球自转
+    definition: 地球绕地轴自西向东旋转，周期约24小时
+    importance: 核心
+  - term: 地球公转
+    definition: 地球绕太阳自西向东运动，周期约365天
+    importance: 核心
+  - term: 经纬线
+    definition: 经线连接南北两极，纬线与赤道平行，用于定位
+    importance: 核心
+  - term: 五带划分
+    definition: 根据太阳热量分布，将地球表面划分为热带、南北温带、南北寒带
+    importance: 重要
+
+misconceptions:
+  - statement: "地球是平的"
+    correction: "地球是一个球体，可通过船只远去、月食影子、环球航行等证据证明"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "季节变化是因为地球离太阳远近不同"
+    correction: "季节变化主要由地球公转时地轴倾斜导致太阳直射点变化引起"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象与抽象思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用地球仪演示昼夜交替→Explore观察影子变化→Explain分析自转公转原理
+  - framework: POE
+    brief: 预测不同季节太阳高度角变化，用光源和地球仪验证
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 光的直线传播与影子形成
+    relation: 原理支撑
+  - subject: 科学
+    concept: 地球在宇宙中的位置
+    relation: 前置衔接
+  - subject: 数学
+    concept: 角度与圆周运动
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球仪与天体运行模型
+    relation: 演示地球自转公转及季节变化
+  - venue: 北京天文馆
+    name: 天象厅
+    relation: 沉浸式体验天体运动

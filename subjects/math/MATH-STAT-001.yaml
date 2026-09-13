@@ -1,0 +1,87 @@
+id: MATH-STAT-001
+name: 统计与数据分析
+name_en: Statistics and Data Analysis
+subject: 数学
+domain: 统计与概率
+grade: 跨学段
+
+description: |
+  了解数据收集、整理、描述、分析的全过程。
+  掌握常见统计图表（条形图、折线图、扇形图、直方图）的制作与解读。
+  理解平均数、中位数、众数等统计量的意义和适用场景。
+  培养数据意识，能够基于数据做出合理推断和决策。
+
+prerequisites:
+  - id: IT-DATA-001
+    name: 数据与信息
+    required: false
+  - id: MATH-NUM-001
+    name: 数与运算
+    required: false
+
+postrequisites:
+  - id: IT-AI-001
+    name: 人工智能初探
+  - id: BIO-DIV-001
+    name: 生物多样性调查
+
+key_concepts:
+  - term: 数据意识
+    definition: 对数据的意义和随机性的感悟
+    importance: 核心
+  - term: 平均数
+    definition: 一组数据的总和除以数据个数，反映数据的集中趋势
+    importance: 核心
+  - term: 中位数与众数
+    definition: 中位数是按顺序排列后的中间值，众数是出现次数最多的值
+    importance: 核心
+  - term: 统计图表
+    definition: 用图形直观展示数据特征的工具
+    importance: 核心
+  - term: 样本与总体
+    definition: 总体是研究对象的全体，样本是从总体中抽取的部分
+    importance: 重要
+
+misconceptions:
+  - statement: "平均数一定能代表数据的一般水平"
+    correction: "当数据中存在极端值时，中位数比平均数更能代表一般水平"
+    source: 义务教育数学课程标准（2022年版）
+  - statement: "统计图表可以随意选择"
+    correction: "不同图表适用于不同类型的数据，选择不当会误导读者"
+    source: 义务教育数学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 10
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 归纳推理与数据分析
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage提出真实问题→Explore收集数据→Explain分析数据并制作图表→Elaborate基于数据提出建议
+  - framework: 项目式学习
+    brief: 调查班级同学的运动习惯，用统计方法分析并撰写调查报告
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 信息科技
+    concept: 数据处理与可视化
+    relation: 技术应用
+  - subject: 科学
+    concept: 实验数据的记录与分析
+    relation: 方法衔接
+  - subject: 地理
+    concept: 人口、气候等地理数据的统计
+    relation: 应用实例
+  - subject: 生物
+    concept: 生态调查数据的统计分析
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数据可视化装置
+    relation: 展示大数据分析与可视化

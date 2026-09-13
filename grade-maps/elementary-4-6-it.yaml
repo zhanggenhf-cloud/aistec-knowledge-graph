@@ -1,0 +1,20 @@
+grade: 小学四至六年级
+subject: 信息科技
+semester: 全学年
+topics:
+  - chapter: 数据与信息
+    concepts:
+      - id: IT-DATA-001
+        name: 数据与信息
+      - id: IT-DATA-002
+        name: 数据的组织与编码
+
+  - chapter: 算法与程序
+    concepts:
+      - id: IT-ALGO-001
+        name: 算法基础
+
+  - chapter: 网络基础
+    concepts:
+      - id: IT-NET-001
+        name: 网络基础

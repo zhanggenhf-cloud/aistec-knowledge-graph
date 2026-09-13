@@ -1,0 +1,75 @@
+id: IT-DATA-002
+name: 数据的组织与编码
+name_en: Data Organization and Encoding
+subject: 信息科技
+domain: 数据
+grade: 小学五年级
+
+description: |
+  了解编码的基本概念，认识二进制编码在计算机中的应用。
+  体验使用编码对信息进行组织和传输的过程。
+  理解条形码、二维码等常见编码方式的工作原理。
+  了解数据组织的基本方法（排序、分类、索引等）。
+
+prerequisites:
+  - id: IT-DATA-001
+    name: 数据与信息
+    required: true
+  - id: MATH-NUM-001
+    name: 数与运算
+    required: false
+
+postrequisites:
+  - id: IT-NET-001
+    name: 网络基础
+  - id: IT-AI-001
+    name: 人工智能初探
+
+key_concepts:
+  - term: 编码
+    definition: 用预先规定的方法将信息转换为特定格式的过程
+    importance: 核心
+  - term: 二进制
+    definition: 用0和1两个数码表示信息的数制，计算机的基础语言
+    importance: 核心
+  - term: 条形码/二维码
+    definition: 用黑白条纹或方块矩阵编码信息的图形标识
+    importance: 重要
+  - term: 数据组织
+    definition: 按照一定规则对数据进行排列、分类和存储
+    importance: 重要
+
+misconceptions:
+  - statement: "计算机直接处理文字和图像"
+    correction: "计算机底层只能处理二进制数字，所有信息都需要编码转换"
+    source: 义务教育信息科技课程标准（2022年版）
+
+cognitive_level:
+  min_age: 10
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 模式识别与逻辑推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore设计一套班级图书编码系统→Explain讨论编码的唯一性和可读性
+  - framework: 项目式学习
+    brief: 用二进制编码设计秘密通信系统，体验信息加密与解密
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 数制转换与位值原理
+    relation: 原理支撑
+  - subject: 科学
+    concept: 信息传递与通信原理
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 计算机基础展厅
+    relation: 展示二进制工作原理
