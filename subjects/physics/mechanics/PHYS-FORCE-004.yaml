@@ -57,9 +57,26 @@ verification:
   status: verified
   sources:
     - "义务教育物理课程标准（2022年版）"
-  last_verified: 2024-06-01
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 生物
+    concept: 动物运动中的摩擦适应（蛇鳞、壁虎脚）
+    relation: 应用实例
+  - subject: 工程
+    concept: 防滑设计与摩擦控制
+    relation: 应用实例
+  - subject: 体育
+    concept: 运动鞋底的摩擦设计
+    relation: 应用实例
+  - subject: 化学
+    concept: 润滑剂与摩擦减小
+    relation: 知识衔接
 
 exhibits:
   - venue: 中国科技馆
     name: 摩擦力展品
     relation: 不同材质表面的滑行对比
+  - venue: 中国科技馆
+    name: 磁悬浮列车模型
+    relation: 展示减小摩擦的先进技术

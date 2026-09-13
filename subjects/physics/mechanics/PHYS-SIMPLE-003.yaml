@@ -1,0 +1,88 @@
+id: PHYS-SIMPLE-003
+name: 机械效率
+name_en: Mechanical Efficiency
+subject: 物理
+domain: 力学
+grade: 初中八年级下
+
+description: |
+  知道机械效率。了解有用功、额外功和总功的概念。
+  知道机械效率是有用功跟总功的比值（η = W有/W总 × 100%）。
+  了解提高机械效率的意义和途径（减小摩擦、减小机械自重、优化机械结构等）。
+  能测量某种简单机械的机械效率，如滑轮组、斜面等。
+  了解机械的使用对社会发展的作用。
+
+prerequisites:
+  - id: PHYS-WORK-001
+    name: 功与功率
+    required: true
+  - id: PHYS-SIMPLE-001
+    name: 杠杆
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 有用功
+    definition: 为了达到目的必须做的功，即对人们有用的功
+    importance: 核心
+  - term: 额外功
+    definition: 并非需要但又不得不做的功，如克服摩擦、提升机械自重所做的功
+    importance: 核心
+  - term: 总功
+    definition: 有用功与额外功之和，即动力所做的功
+    importance: 核心
+  - term: 机械效率
+    definition: 有用功跟总功的比值，η = W有/W总 × 100%
+    importance: 核心
+  - term: 提高机械效率的方法
+    definition: 减小摩擦、减小机械自重、优化机械结构、保持良好的润滑等
+    importance: 重要
+
+misconceptions:
+  - statement: "机械效率可以大于100%"
+    correction: "由于额外功的存在，机械效率总是小于100%，不可能大于100%"
+  - statement: "做功越多的机械效率越高"
+    correction: "机械效率取决于有用功与总功的比值，与做功多少无关"
+  - statement: "越省力的机械效率越高"
+    correction: "省力程度与机械效率没有直接关系，有时越省力的机械效率反而越低"
+  - statement: "使用机械可以省功"
+    correction: "使用任何机械都不省功，机械效率反映的是有用功在总功中所占的比例"
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合分析与比例推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用“为什么使用机械不能省功”引入 → Explore测量滑轮组的机械效率 → Explain归纳影响机械效率的因素
+  - framework: IBL
+    brief: 测量某种简单机械（滑轮组或斜面）的机械效率，探究提高效率的方法
+  - framework: POE
+    brief: 预测：同一滑轮组提升不同重物，机械效率是否相同？
+
+verification:
+  status: verified
+  sources:
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 百分比与比值计算
+    relation: 工具支撑
+  - subject: 工程
+    concept: 机械设计与能效优化
+    relation: 应用实例
+  - subject: 劳动
+    concept: 工具维护与效率提升
+    relation: 实践衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 机械效率演示装置
+    relation: 演示不同简单机械的机械效率对比
+  - venue: 中国科技馆
+    name: 古代机械模型
+    relation: 展示中国古代水磨、水碓等机械的能效设计

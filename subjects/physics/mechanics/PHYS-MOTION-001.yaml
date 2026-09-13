@@ -1,29 +1,89 @@
 id: PHYS-MOTION-001
 name: 机械运动
-name_en: ''
+name_en: Mechanical Motion
 subject: 物理
 domain: 力学
 grade: 初中八年级上
-description: 机械运动的详细教学内容。
+
+description: |
+  知道机械运动是物体位置随时间的变化。能根据所选参照物判断物体的运动状态，
+  举例说明机械运动的相对性：同一物体选择不同的参照物，运动状态的描述可能不同。
+  会选用适当的工具（刻度尺、秒表等）测量长度和时间，会根据生活经验估测长度和时间。
+  了解我国古代测量长度和时间的工具，体会古人解决问题的智慧。
+
 prerequisites:
-- id: SCI-MOT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MOT-001
+    name: 运动与力（小学）
+    required: true
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: true
+
+postrequisites:
+  - id: PHYS-MOTION-002
+    name: 速度
+  - id: PHYS-FORCE-001
+    name: 力的概念
+
 key_concepts:
-- term: 机械运动
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 机械运动
+    definition: 物体位置随时间的变化
+    importance: 核心
+  - term: 参照物
+    definition: 判断物体运动状态时选作标准的物体
+    importance: 核心
+  - term: 运动的相对性
+    definition: 同一物体相对于不同参照物，运动状态的描述可能不同
+    importance: 核心
+  - term: 长度测量
+    definition: 使用刻度尺等工具测量物体的长度，注意估读
+    importance: 重要
+  - term: 时间测量
+    definition: 使用秒表等工具测量时间间隔
+    importance: 重要
+
+misconceptions:
+  - statement: "运动的物体不能作为参照物"
+    correction: "任何物体都可以作为参照物，包括运动的物体"
+  - statement: "物体的运动状态是绝对的"
+    correction: "运动是绝对的，但对运动状态的描述是相对的，依赖于参照物的选择"
+  - statement: "只有静止的物体才能被选为参照物"
+    correction: "参照物的选择是任意的，通常选地面或相对地面静止的物体为方便"
+
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与空间想象
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用“坐地日行八万里”引入运动的相对性 → Explore观察生活中机械运动现象 → Explain归纳参照物与运动描述的关系
+  - framework: POE
+    brief: 预测并观察：坐在行驶的汽车中，看路边树木和车内乘客的运动状态有何不同
+  - framework: IBL
+    brief: 查阅资料，了解我国高速列车的运行速度，以及铁路交通的发展进程
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 长度与时间的单位换算
+    relation: 工具支撑
+  - subject: 历史
+    concept: 古代计时工具与测量技术
+    relation: 文化背景
+  - subject: 地理
+    concept: 地球自转与公转
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 运动的相对性展品
+    relation: 演示参照物选择对运动描述的影响
+  - venue: 中国科技馆
+    name: 古代计时器
+    relation: 展示中国古代测量时间的智慧

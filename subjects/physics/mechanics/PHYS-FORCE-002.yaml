@@ -58,9 +58,24 @@ verification:
     - "义务教育物理课程标准（2022年版）"
   last_verified: 2024-06-01
 
-interdisciplinary: []
+interdisciplinary:
+  - subject: 地理
+    concept: 地球引力与重力加速度
+    relation: 知识衔接
+  - subject: 生物
+    concept: 骨骼与重力适应
+    relation: 应用实例
+  - subject: 航天
+    concept: 失重与超重现象
+    relation: 应用实例
+  - subject: 历史
+    concept: 古代秤砣与重力测量
+    relation: 文化背景
 
 exhibits:
   - venue: 中国科技馆
     name: 月球漫步
     relation: 不同重力环境下的体重变化
+  - venue: 中国科技馆
+    name: 万有引力展品
+    relation: 演示重力与质量的关系

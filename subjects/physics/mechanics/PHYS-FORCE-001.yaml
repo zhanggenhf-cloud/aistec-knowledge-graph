@@ -64,7 +64,8 @@ verification:
   status: verified
   sources:
     - "Halliday, Resnick & Walker. Fundamentals of Physics. 10th ed."
-  last_verified: 2024-06-01
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
 
 interdisciplinary:
   - subject: 数学
@@ -73,8 +74,17 @@ interdisciplinary:
   - subject: 生物
     concept: 肌肉收缩
     relation: 应用实例
+  - subject: 体育
+    concept: 力的作用效果（推、拉、投）
+    relation: 应用实例
+  - subject: 工程
+    concept: 结构设计中的力的分析
+    relation: 应用实例
 
 exhibits:
   - venue: 中国科技馆
     name: 万有引力展品
     relation: 演示重力的非接触性
+  - venue: 中国科技馆
+    name: 力的相互作用装置
+    relation: 演示作用力与反作用力

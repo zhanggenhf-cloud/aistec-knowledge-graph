@@ -1,29 +1,86 @@
 id: PHYS-PRESSURE-003
-name: 大气压强
-name_en: ''
+name: 大气压强与流体压强
+name_en: Atmospheric Pressure and Fluid Pressure
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 大气压强的详细教学内容。
+
+description: |
+  知道大气压强及其与人类生活的关系。了解证明大气压强存在的经典实验（如马德堡半球实验）。
+  知道标准大气压的数值（约1.01×10⁵ Pa）。了解流体压强与流速的关系：
+  流体流速越大的位置，压强越小。了解其在生产生活中的应用，
+  如飞机升力、火车站安全线、喷雾器等。
+
 prerequisites:
-- id: PHYS-PRESSURE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-PRESSURE-001
+    name: 压强
+    required: true
+  - id: PHYS-PRESSURE-002
+    name: 液体压强
+    required: false
+
+postrequisites:
+  - id: PHYS-BUOY-001
+    name: 浮力
+
 key_concepts:
-- term: 大气压强
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 大气压强
+    definition: 大气层中的空气由于重力作用对浸在其中的物体产生的压强
+    importance: 核心
+  - term: 标准大气压
+    definition: 相当于760mm高水银柱产生的压强，约1.01×10⁵ Pa
+    importance: 核心
+  - term: 流体压强与流速的关系
+    definition: 流体流速越大的位置，压强越小（伯努利原理的定性表述）
+    importance: 核心
+  - term: 升力
+    definition: 飞机机翼上下表面因空气流速不同产生的压强差形成的向上托力
+    importance: 重要
+
+misconceptions:
+  - statement: "吸饮料是靠嘴的吸力"
+    correction: "吸饮料是大气压将饮料压入嘴中，并非嘴产生吸力"
+  - statement: "大气压强随高度增加而增大"
+    correction: "大气压强随高度增加而减小，因为上方空气柱高度减小"
+  - statement: "流体流速越大压强越大"
+    correction: "流体流速越大的位置压强越小"
+  - statement: "飞机升力是因为机翼下方空气把飞机托起来"
+    correction: "升力是由于机翼上方空气流速大、压强小，下方流速小、压强大，产生向上的压强差"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与现象解释
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用覆杯实验、吸盘挂钩引入大气压 → Explore吹纸条实验体验流体压强与流速的关系 → Explain归纳伯努利原理
+  - framework: POE
+    brief: 预测：向两张平行下垂的纸中间吹气，纸张会分开还是靠拢？
+  - framework: IBL
+    brief: 查阅资料，了解铁路站台上设置安全线的必要性，分析其物理原理
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 地理
+    concept: 大气层结构与气象
+    relation: 知识衔接
+  - subject: 工程
+    concept: 飞机设计、通风系统
+    relation: 应用实例
+  - subject: 历史
+    concept: 马德堡半球实验与科学革命
+    relation: 文化背景
+
+exhibits:
+  - venue: 中国科技馆
+    name: 大气压强体验装置
+    relation: 演示大气压强的存在与大小
+  - venue: 中国科技馆
+    name: 伯努利原理演示器
+    relation: 演示流体压强与流速的关系

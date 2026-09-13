@@ -59,9 +59,19 @@ verification:
   status: verified
   sources:
     - "Newton, I. Philosophiæ Naturalis Principia Mathematica. 1687"
-  last_verified: 2024-06-01
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
 
 interdisciplinary:
   - subject: 历史
     concept: 科学革命
     relation: 背景知识
+  - subject: 体育
+    concept: 运动中的惯性现象
+    relation: 应用实例
+  - subject: 交通
+    concept: 安全带与安全气囊原理
+    relation: 应用实例
+  - subject: 工程
+    concept: 惯性导航与航天器控制
+    relation: 应用实例

@@ -1,5 +1,5 @@
 # 物理力学知识依赖链
-relation_chain: 力的概念 → 重力 → 弹力 → 摩擦力 → 牛顿定律
+relation_chain: 机械运动 → 速度 → 力的概念 → 重力/弹力/摩擦力 → 二力平衡 → 牛顿定律 → 压强 → 浮力 → 功与功率 → 机械能 → 简单机械
 
 edges:
   # 前置关系
@@ -9,6 +9,18 @@ edges:
     strength: strong
     note: 小学"运动与力"是初中"力的概念"的先备经验
 
+  - from: SCI-MOT-001
+    to: PHYS-MOTION-001
+    type: prerequisite
+    strength: strong
+    note: 小学"运动与力"是初中"机械运动"的先备经验
+
+  - from: PHYS-MOTION-001
+    to: PHYS-MOTION-002
+    type: prerequisite
+    strength: strong
+    note: 理解机械运动是学习速度的基础
+
   - from: PHYS-FORCE-001
     to: PHYS-FORCE-002
     type: prerequisite
@@ -16,9 +28,16 @@ edges:
     note: 理解力的概念是学习重力的基础
 
   - from: PHYS-FORCE-001
+    to: PHYS-FORCE-003
+    type: prerequisite
+    strength: strong
+    note: 理解力的概念是学习弹力的基础
+
+  - from: PHYS-FORCE-001
     to: PHYS-FORCE-004
     type: prerequisite
     strength: strong
+    note: 理解力的概念是学习摩擦力的基础
 
   - from: PHYS-FORCE-001
     to: PHYS-NEWTON-001
@@ -26,8 +45,146 @@ edges:
     strength: strong
     note: 理解力与运动的关系是牛顿定律的基础
 
+  - from: PHYS-FORCE-001
+    to: PHYS-NEWTON-002
+    type: prerequisite
+    strength: strong
+    note: 理解力的概念是学习二力平衡的基础
+
+  - from: PHYS-FORCE-002
+    to: PHYS-NEWTON-002
+    type: prerequisite
+    strength: moderate
+    note: 理解重力有助于分析平衡问题
+
+  - from: PHYS-FORCE-003
+    to: PHYS-NEWTON-002
+    type: prerequisite
+    strength: moderate
+    note: 理解弹力有助于分析支持力与平衡
+
   - from: PHYS-FORCE-004
     to: PHYS-NEWTON-001
     type: prerequisite
     strength: moderate
     note: 理解摩擦力有助于理解"不受力时物体会怎样"
+
+  - from: PHYS-NEWTON-002
+    to: PHYS-PRESSURE-001
+    type: prerequisite
+    strength: moderate
+    note: 二力平衡有助于理解压力与支持力的关系
+
+  - from: PHYS-FORCE-002
+    to: PHYS-PRESSURE-001
+    type: prerequisite
+    strength: moderate
+    note: 重力是产生压力的原因之一
+
+  - from: PHYS-MATTER-002
+    to: PHYS-PRESSURE-001
+    type: prerequisite
+    strength: moderate
+    note: 密度概念有助于理解压强问题
+
+  - from: PHYS-PRESSURE-001
+    to: PHYS-PRESSURE-002
+    type: prerequisite
+    strength: strong
+    note: 理解压强是学习液体压强的基础
+
+  - from: PHYS-PRESSURE-001
+    to: PHYS-PRESSURE-003
+    type: prerequisite
+    strength: strong
+    note: 理解压强是学习大气压强的基础
+
+  - from: PHYS-PRESSURE-002
+    to: PHYS-BUOY-001
+    type: prerequisite
+    strength: strong
+    note: 液体压强是理解浮力产生原因的基础
+
+  - from: PHYS-FORCE-001
+    to: PHYS-BUOY-001
+    type: prerequisite
+    strength: strong
+    note: 力的概念是理解浮力的基础
+
+  - from: PHYS-BUOY-001
+    to: PHYS-BUOY-002
+    type: prerequisite
+    strength: strong
+    note: 理解浮力是学习阿基米德原理的基础
+
+  - from: PHYS-BUOY-002
+    to: PHYS-BUOY-003
+    type: prerequisite
+    strength: strong
+    note: 阿基米德原理是理解浮沉条件的基础
+
+  - from: PHYS-FORCE-002
+    to: PHYS-BUOY-003
+    type: prerequisite
+    strength: moderate
+    note: 重力与浮力的比较决定浮沉状态
+
+  - from: PHYS-FORCE-001
+    to: PHYS-WORK-001
+    type: prerequisite
+    strength: strong
+    note: 理解力的概念是学习功的基础
+
+  - from: PHYS-MOTION-002
+    to: PHYS-WORK-001
+    type: prerequisite
+    strength: strong
+    note: 位移概念是理解做功条件的基础
+
+  - from: PHYS-WORK-001
+    to: PHYS-ENERGY-001
+    type: prerequisite
+    strength: strong
+    note: 功的概念是理解能量的基础
+
+  - from: PHYS-ENERGY-001
+    to: PHYS-ENERGY-002
+    type: prerequisite
+    strength: strong
+    note: 理解动能和势能是学习机械能转化的基础
+
+  - from: PHYS-FORCE-001
+    to: PHYS-SIMPLE-001
+    type: prerequisite
+    strength: strong
+    note: 理解力的概念是学习杠杆的基础
+
+  - from: PHYS-NEWTON-002
+    to: PHYS-SIMPLE-001
+    type: prerequisite
+    strength: moderate
+    note: 二力平衡有助于理解杠杆平衡条件
+
+  - from: PHYS-SIMPLE-001
+    to: PHYS-SIMPLE-002
+    type: prerequisite
+    strength: strong
+    note: 理解杠杆是学习滑轮的基础
+
+  - from: PHYS-WORK-001
+    to: PHYS-SIMPLE-003
+    type: prerequisite
+    strength: strong
+    note: 功的概念是理解机械效率的基础
+
+  - from: PHYS-SIMPLE-001
+    to: PHYS-SIMPLE-003
+    type: prerequisite
+    strength: moderate
+    note: 理解简单机械是分析机械效率的前提
+
+  - from: PHYS-SIMPLE-002
+    to: PHYS-SIMPLE-003
+    type: prerequisite
+    strength: moderate
+    note: 理解滑轮是测量滑轮组机械效率的前提

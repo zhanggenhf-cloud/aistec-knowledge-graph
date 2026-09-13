@@ -1,32 +1,91 @@
 id: PHYS-WORK-001
-name: 功
-name_en: ''
+name: 功与功率
+name_en: Work and Power
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 功的详细教学内容。
+
+description: |
+  结合实例，认识功的概念。知道做功的过程就是能量转化或转移的过程。
+  知道功的两个必要因素：作用在物体上的力和物体在力的方向上移动的距离（W = Fs）。
+  知道机械功和功率。用生活中的实例说明机械功和功率的含义。
+  知道功率是表示做功快慢的物理量，定义为单位时间内所做的功（P = W/t）。
+
 prerequisites:
-- id: PHYS-FORCE-001
-  name: ''
-  required: true
-- id: PHYS-MOTION-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: PHYS-MOTION-002
+    name: 速度
+    required: true
+  - id: MATH-ALG-002
+    name: 代数方程
+    required: true
+
+postrequisites:
+  - id: PHYS-ENERGY-001
+    name: 动能和势能
+  - id: PHYS-SIMPLE-003
+    name: 机械效率
+
 key_concepts:
-- term: 功
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 功
+    definition: 力与物体在力的方向上移动距离的乘积，W = Fs
+    importance: 核心
+  - term: 做功的两个必要因素
+    definition: 作用在物体上的力；物体在力的方向上移动的距离
+    importance: 核心
+  - term: 功率
+    definition: 单位时间内所做的功，P = W/t，表示做功的快慢
+    importance: 核心
+  - term: 功的原理
+    definition: 使用任何机械都不省功（拓展）
+    importance: 拓展
+
+misconceptions:
+  - statement: "用力推桌子但没推动，力对桌子做了功"
+    correction: "做功需要力和在力的方向上的位移两个条件，没有位移则不做功"
+  - statement: "物体移动的距离越大，力做的功越多"
+    correction: "功取决于力和在力的方向上的位移，如果力与位移方向垂直，则不做功"
+  - statement: "做功多的物体功率一定大"
+    correction: "功率还与时间有关，做功多但时间长，功率可能很小"
+  - statement: "功率大的机械一定省力"
+    correction: "功率表示做功快慢，与是否省力没有直接关系"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与数学运算
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用搬运工人搬货上楼引入 → Explore分析不同情境中力是否做功 → Explain归纳功的概念和计算公式
+  - framework: POE
+    brief: 预测：提着水桶水平行走，手的提力对水桶做功吗？
+  - framework: IBL
+    brief: 调查常见机械的功率铭牌，比较它们的做功能力
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 乘法运算与单位换算
+    relation: 工具支撑
+  - subject: 体育
+    concept: 运动员的功率输出
+    relation: 应用实例
+  - subject: 生物
+    concept: 人体肌肉做功与能量消耗
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 功与功率体验装置
+    relation: 演示不同方式做功的效率与功率
+  - venue: 中国科技馆
+    name: 人体功率测量
+    relation: 测量人体做功的功率

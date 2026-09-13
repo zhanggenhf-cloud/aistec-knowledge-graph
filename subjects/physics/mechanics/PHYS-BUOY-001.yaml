@@ -1,29 +1,89 @@
 id: PHYS-BUOY-001
 name: 浮力
-name_en: ''
+name_en: Buoyancy
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 浮力的详细教学内容。
+
+description: |
+  通过实验，认识浮力。知道浸在液体（或气体）中的物体受到向上的力叫浮力，
+  了解浮力产生的原因（液体对物体上下表面的压力差）。
+  探究并了解浮力大小与哪些因素有关（液体的密度、物体排开液体的体积）。
+  能运用弹簧测力计测量浮力的大小（称重法）。
+
 prerequisites:
-- id: PHYS-PRESSURE-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-PRESSURE-001
+    name: 压强
+    required: true
+  - id: PHYS-PRESSURE-002
+    name: 液体压强
+    required: true
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+
+postrequisites:
+  - id: PHYS-BUOY-002
+    name: 阿基米德原理
+  - id: PHYS-BUOY-003
+    name: 物体的浮沉条件
+
 key_concepts:
-- term: 浮力
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 浮力
+    definition: 浸在液体（或气体）中的物体受到向上的托力
+    importance: 核心
+  - term: 浮力产生的原因
+    definition: 液体对物体上下表面的压力差
+    importance: 核心
+  - term: 称重法测浮力
+    definition: F浮 = G - F拉，利用弹簧测力计在空气和液体中读数之差测量浮力
+    importance: 重要
+  - term: 影响浮力的因素
+    definition: 液体的密度和物体排开液体的体积
+    importance: 核心
+
+misconceptions:
+  - statement: "浮在水面上的物体会受到浮力，沉底的物体不受浮力"
+    correction: "浸在液体中的物体无论浮沉都会受到浮力，沉底的物体同样受到浮力"
+  - statement: "物体浸入液体越深，受到的浮力越大"
+    correction: "浮力大小取决于液体密度和排开液体的体积，与深度无关（完全浸没后）"
+  - statement: "浮力就是水对物体的向上托力"
+    correction: "浮力是液体（或气体）对物体上下表面的压力差，不限于水"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与实验探究
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用潜水艇、热气球引入 → Explore用弹簧测力计测量物体在水中受到的浮力 → Explain分析浮力产生的原因
+  - framework: IBL
+    brief: 探究浮力大小与哪些因素有关（液体密度、排开液体体积、深度），运用控制变量法
+  - framework: POE
+    brief: 预测：同一物体分别浸没在水和盐水中的浮力哪个更大？
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 生物
+    concept: 鱼类的鳔与浮沉调节
+    relation: 应用实例
+  - subject: 地理
+    concept: 船舶航行与海洋运输
+    relation: 应用实例
+  - subject: 化学
+    concept: 溶液密度与物质溶解
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 浮力与密度互动装置
+    relation: 演示不同液体中的浮力差异
+  - venue: 中国科技馆
+    name: 潜水艇模型
+    relation: 展示浮力原理在工程中的应用

@@ -1,29 +1,84 @@
 id: PHYS-ENERGY-002
 name: 机械能及其转化
-name_en: ''
+name_en: Mechanical Energy and Its Transformation
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 机械能及其转化的详细教学内容。
+
+description: |
+  知道动能和势能可以相互转化。通过实验，了解动能和势能的相互转化过程。
+  举例说明机械能和其他形式能量的相互转化（如机械能与内能、电能的转化）。
+  了解在只有动能和势能相互转化的情况下，机械能的总量保持不变（机械能守恒的定性表述）。
+  能分析荡秋千、跳水、蹦极等生活实例中的能量转化过程。
+
 prerequisites:
-- id: PHYS-ENERGY-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ENERGY-001
+    name: 动能和势能
+    required: true
+  - id: PHYS-WORK-001
+    name: 功与功率
+    required: true
+
+postrequisites:
+  - id: PHYS-SIMPLE-003
+    name: 机械效率
+
 key_concepts:
-- term: 机械能及其转化
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 动能与势能的转化
+    definition: 动能可以转化为势能，势能也可以转化为动能
+    importance: 核心
+  - term: 机械能守恒
+    definition: 在只有重力或弹力做功的情况下，动能和势能相互转化，机械能总量保持不变
+    importance: 核心
+  - term: 机械能与其他形式能量的转化
+    definition: 机械能可以与内能、电能、光能等其他形式的能量相互转化
+    importance: 重要
+  - term: 能量转化中的损耗
+    definition: 实际过程中由于摩擦等因素，部分机械能会转化为内能
+    importance: 重要
+
+misconceptions:
+  - statement: "机械能守恒就是能量守恒"
+    correction: "机械能守恒是能量守恒的一种特殊情况，只适用于动能和势能的相互转化；能量守恒适用于所有形式能量的转化"
+  - statement: "物体上升时动能全部转化为重力势能"
+    correction: "实际上升过程中由于空气阻力等因素，部分机械能会转化为内能"
+  - statement: "机械能不变意味着物体一定静止"
+    correction: "机械能不变可能是动能和势能相互转化，物体仍在运动"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 综合分析与系统思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用荡秋千、过山车引入能量转化 → Explore用滚摆实验观察动能与势能的相互转化 → Explain归纳机械能守恒条件
+  - framework: POE
+    brief: 预测：单摆从高处释放，是否能摆到同样的高度？如果考虑空气阻力呢？
+  - framework: IBL
+    brief: 分析《天工开物》中汲水装置工作时能量的相互转化，了解中国古代科技成就
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 历史
+    concept: 中国古代机械与能量利用（水磨、水碓）
+    relation: 文化背景
+  - subject: 体育
+    concept: 蹦极、跳水中的能量转化
+    relation: 应用实例
+  - subject: 地理
+    concept: 水力发电、风力发电
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 滚摆与单摆装置
+    relation: 演示动能与重力势能的相互转化
+  - venue: 中国科技馆
+    name: 古代水磨模型
+    relation: 展示中国古代机械能的利用

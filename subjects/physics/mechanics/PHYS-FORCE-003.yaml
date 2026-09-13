@@ -1,29 +1,82 @@
 id: PHYS-FORCE-003
 name: 弹力
-name_en: ''
+name_en: Elastic Force
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 弹力的详细教学内容。
+
+description: |
+  通过常见事例或实验，了解弹力。知道物体由于发生弹性形变而产生的力叫弹力，
+  认识力的作用效果（力可以改变物体的形状）。了解弹簧测力计的工作原理，
+  会测量力的大小。知道在弹性限度内，弹簧的伸长量与所受拉力成正比（胡克定律的定性表述）。
+
 prerequisites:
-- id: PHYS-FORCE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: true
+
+postrequisites:
+  - id: PHYS-FORCE-004
+    name: 摩擦力
+  - id: PHYS-NEWTON-002
+    name: 二力平衡
+
 key_concepts:
-- term: 弹力
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 弹性形变
+    definition: 物体受力发生形变，撤去外力后能恢复原状的形变
+    importance: 核心
+  - term: 弹力
+    definition: 物体由于发生弹性形变而产生的力
+    importance: 核心
+  - term: 弹簧测力计
+    definition: 利用弹簧伸长量与拉力成正比的原理测量力的大小的工具
+    importance: 核心
+  - term: 弹性限度
+    definition: 弹簧能够恢复原状的最大形变范围，超过弹性限度弹簧将发生塑性形变
+    importance: 重要
+
+misconceptions:
+  - statement: "只有弹簧才能产生弹力"
+    correction: "任何发生弹性形变的物体都能产生弹力，如支持力、压力、拉力等本质上都是弹力"
+  - statement: "弹簧被压缩时不会产生弹力"
+    correction: "弹簧被压缩时同样发生弹性形变，也会产生弹力"
+  - statement: "弹簧的长度与拉力成正比"
+    correction: "是弹簧的伸长量（或压缩量）与拉力成正比，而非总长度"
+
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与实验观察
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用蹦床、弓箭等生活实例引入 → Explore用手按压弹簧、橡皮筋感受弹力 → Explain归纳弹力产生的条件
+  - framework: POE
+    brief: 预测并验证：不同质量的物体挂在同一弹簧上，弹簧的伸长量是否相同
+  - framework: IBL
+    brief: 设计实验，探究弹簧伸长量与拉力的关系，体验控制变量法的应用
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 生物
+    concept: 骨骼肌收缩与弹性
+    relation: 应用实例
+  - subject: 数学
+    concept: 正比例关系
+    relation: 工具支撑
+  - subject: 体育
+    concept: 弹跳、射箭中的弹力应用
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 弹力与形变互动装置
+    relation: 演示不同材料的弹性形变与弹力

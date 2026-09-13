@@ -1,29 +1,90 @@
 id: PHYS-ENERGY-001
 name: 动能和势能
-name_en: ''
+name_en: Kinetic Energy and Potential Energy
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 动能和势能的详细教学内容。
+
+description: |
+  知道动能、势能和机械能。了解动能与物体的质量和速度有关（Ek = ½mv²，定性理解）。
+  了解重力势能与物体的质量和高度有关（Ep = mgh，定性理解）。
+  了解弹性势能与物体弹性形变程度有关。通过实验，了解动能和势能的相互转化。
+  能举例说明动能和势能在生活中的应用。
+
 prerequisites:
-- id: PHYS-WORK-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-WORK-001
+    name: 功与功率
+    required: true
+  - id: PHYS-FORCE-002
+    name: 重力
+    required: true
+  - id: PHYS-MOTION-002
+    name: 速度
+    required: true
+
+postrequisites:
+  - id: PHYS-ENERGY-002
+    name: 机械能及其转化
+
 key_concepts:
-- term: 动能和势能
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 动能
+    definition: 物体由于运动而具有的能量，与质量和速度有关
+    importance: 核心
+  - term: 重力势能
+    definition: 物体由于被举高而具有的能量，与质量和高度有关
+    importance: 核心
+  - term: 弹性势能
+    definition: 物体由于发生弹性形变而具有的能量
+    importance: 核心
+  - term: 机械能
+    definition: 动能和势能（重力势能、弹性势能）的总和
+    importance: 核心
+  - term: 影响动能的因素
+    definition: 质量和速度，速度对动能的影响更大
+    importance: 重要
+
+misconceptions:
+  - statement: "速度大的物体动能一定大"
+    correction: "动能与质量和速度都有关，速度大但质量很小的物体动能可能不大"
+  - statement: "被举得越高的物体重力势能一定越大"
+    correction: "重力势能与质量和高度都有关，高度大但质量很小的物体重力势能可能不大"
+  - statement: "静止的物体没有能量"
+    correction: "静止的物体可能具有重力势能或弹性势能"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与实验探究
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用过山车引入动能和势能 → Explore用斜面和小球实验探究动能与速度的关系 → Explain归纳动能和势能的影响因素
+  - framework: IBL
+    brief: 探究动能大小与哪些因素有关（质量、速度），运用控制变量法
+  - framework: POE
+    brief: 预测：相同速度的大卡车和小汽车，哪个动能更大？
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 正比例与平方关系
+    relation: 工具支撑
+  - subject: 体育
+    concept: 跳跃、投掷中的能量转化
+    relation: 应用实例
+  - subject: 地理
+    concept: 水力发电与重力势能
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 动能与势能转化装置
+    relation: 演示滚摆、单摆等动能与势能的相互转化
+  - venue: 中国科技馆
+    name: 过山车模型
+    relation: 展示动能与重力势能的转化

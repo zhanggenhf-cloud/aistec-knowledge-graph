@@ -773,3 +773,93 @@ edges:
     type: application
     strength: strong
     note: 数学综合实践与项目式学习整合
+
+  # 物理力学 ↔ 生物
+  - from: PHYS-SIMPLE-001
+    to: BIO-STRUCT-001
+    type: related
+    strength: strong
+    note: 人体中的杠杆（骨骼、关节、肌肉）
+
+  - from: PHYS-PRESSURE-001
+    to: BIO-STRUCT-001
+    type: related
+    strength: moderate
+    note: 动物身体结构中的压强适应（骆驼脚掌、啄木鸟喙）
+
+  - from: PHYS-BUOY-001
+    to: BIO-STRUCT-001
+    type: related
+    strength: moderate
+    note: 鱼类的鳔与浮沉调节
+
+  # 物理力学 ↔ 地理
+  - from: PHYS-PRESSURE-003
+    to: GEO-EARTH-003
+    type: related
+    strength: moderate
+    note: 大气压强与天气气候
+
+  - from: PHYS-BUOY-003
+    to: GEO-EARTH-005
+    type: related
+    strength: moderate
+    note: 船舶航行与海洋运输中的浮力应用
+
+  # 物理力学 ↔ 化学
+  - from: PHYS-BUOY-002
+    to: CHEM-SOL-001
+    type: related
+    strength: weak
+    note: 溶液密度与浮力测量
+
+  - from: PHYS-FORCE-004
+    to: CHEM-MAT-001
+    type: related
+    strength: weak
+    note: 润滑剂与摩擦减小
+
+  # 物理力学 ↔ 历史
+  - from: PHYS-SIMPLE-001
+    to: HIS-ANC-002
+    type: related
+    strength: moderate
+    note: 中国古代杠杆应用（杆秤、桔槔）
+
+  - from: PHYS-ENERGY-002
+    to: HIS-ANC-002
+    type: related
+    strength: moderate
+    note: 中国古代水磨、水碓等机械能利用
+
+  - from: PHYS-NEWTON-001
+    to: HIS-WLD-002
+    type: related
+    strength: moderate
+    note: 科学革命与经典力学的发展
+
+  # 物理力学 ↔ 工程/劳动
+  - from: PHYS-SIMPLE-001
+    to: LAB-TECH-001
+    type: application
+    strength: strong
+    note: 杠杆原理在工具设计与制作中的应用
+
+  - from: PHYS-SIMPLE-002
+    to: LAB-TECH-001
+    type: application
+    strength: strong
+    note: 滑轮在起重与建筑中的应用
+
+  # 物理力学 ↔ 体育
+  - from: PHYS-ENERGY-001
+    to: LAB-TECH-001
+    type: related
+    strength: moderate
+    note: 运动中的动能与势能转化
+
+  - from: PHYS-NEWTON-001
+    to: LAB-TECH-001
+    type: related
+    strength: moderate
+    note: 惯性在体育运动中的应用

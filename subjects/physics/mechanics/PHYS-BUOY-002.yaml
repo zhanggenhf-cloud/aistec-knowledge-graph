@@ -1,29 +1,86 @@
 id: PHYS-BUOY-002
 name: 阿基米德原理
-name_en: ''
+name_en: Archimedes' Principle
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 阿基米德原理的详细教学内容。
+
+description: |
+  知道阿基米德原理：浸在液体中的物体受到向上的浮力，浮力的大小等于物体排开的液体所受的重力
+  （F浮 = G排 = ρ液gV排）。能运用阿基米德原理进行简单的浮力计算。
+  了解阿基米德发现浮力定律的历史故事，体会科学探究的过程和科学家的智慧。
+
 prerequisites:
-- id: PHYS-BUOY-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-BUOY-001
+    name: 浮力
+    required: true
+  - id: PHYS-MATTER-002
+    name: 密度
+    required: true
+  - id: MATH-ALG-002
+    name: 代数方程
+    required: true
+
+postrequisites:
+  - id: PHYS-BUOY-003
+    name: 物体的浮沉条件
+
 key_concepts:
-- term: 阿基米德原理
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 阿基米德原理
+    definition: 浸在液体中的物体受到的浮力等于它排开的液体所受的重力
+    importance: 核心
+  - term: 阿基米德原理公式
+    definition: F浮 = G排 = ρ液gV排
+    importance: 核心
+  - term: 排开液体的体积
+    definition: 物体浸入液体中的体积，等于物体所占据的液体空间
+    importance: 核心
+  - term: 溢水杯
+    definition: 用于测量物体排开液体体积的实验装置
+    importance: 重要
+
+misconceptions:
+  - statement: "浮力大小等于物体的重力"
+    correction: "浮力大小等于物体排开液体的重力，不是物体自身的重力"
+  - statement: "物体浸没得越深，排开液体的体积越大"
+    correction: "物体完全浸没后，排开液体的体积等于物体体积，与深度无关"
+  - statement: "阿基米德原理只适用于液体"
+    correction: "阿基米德原理同样适用于气体"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与数学运算
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage讲述阿基米德鉴别王冠的故事 → Explore用溢水杯和弹簧测力计验证阿基米德原理 → Explain推导F浮 = ρ液gV排
+  - framework: IBL
+    brief: 设计实验验证阿基米德原理，测量物体受到的浮力与排开液体重力的关系
+  - framework: POE
+    brief: 预测：体积相同的铁块和铝块浸没在水中，受到的浮力是否相同？
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 体积计算与公式变形
+    relation: 工具支撑
+  - subject: 历史
+    concept: 阿基米德与古希腊科学
+    relation: 文化背景
+  - subject: 化学
+    concept: 溶液密度与浓度
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 阿基米德原理互动装置
+    relation: 演示浮力与排开液体重力的关系
+  - venue: 中国科技馆
+    name: 古代浮力应用
+    relation: 展示中国古代造船与浮力利用

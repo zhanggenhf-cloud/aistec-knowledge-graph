@@ -1,32 +1,91 @@
 id: PHYS-PRESSURE-001
 name: 压强
-name_en: ''
+name_en: Pressure
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 压强的详细教学内容。
+
+description: |
+  通过实验，理解压强。知道压强是表示压力作用效果的物理量，
+  定义为压力与受力面积的比值（p = F/S）。知道增大和减小压强的方法，
+  并了解其在生产生活中的应用。能估测自己站立时对地面的压强，
+  体会压强概念与日常生活的密切联系。
+
 prerequisites:
-- id: PHYS-FORCE-001
-  name: ''
-  required: true
-- id: PHYS-MATTER-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: PHYS-FORCE-002
+    name: 重力
+    required: true
+  - id: MATH-ALG-002
+    name: 代数方程
+    required: true
+
+postrequisites:
+  - id: PHYS-PRESSURE-002
+    name: 液体压强
+  - id: PHYS-PRESSURE-003
+    name: 大气压强
+  - id: PHYS-BUOY-001
+    name: 浮力
+
 key_concepts:
-- term: 压强
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 压力
+    definition: 垂直作用在物体表面上的力
+    importance: 核心
+  - term: 压强
+    definition: 物体所受压力的大小与受力面积之比，p = F/S
+    importance: 核心
+  - term: 增大压强的方法
+    definition: 增大压力或减小受力面积
+    importance: 重要
+  - term: 减小压强的方法
+    definition: 减小压力或增大受力面积
+    importance: 重要
+
+misconceptions:
+  - statement: "压力就是重力"
+    correction: "压力是垂直作用于接触面的力，重力是地球对物体的吸引力；只有当物体静止在水平面上时，压力大小才等于重力"
+  - statement: "受力面积越大压强越大"
+    correction: "在压力一定时，受力面积越大，压强越小"
+  - statement: "压强与压力成正比，与面积成反比"
+    correction: "这个说法只在另一个量不变时才成立，要注意控制变量的前提"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与比例推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用骆驼为什么不会陷入沙中引入 → Explore用砖块的不同侧面演示压力的作用效果 → Explain归纳压强概念
+  - framework: POE
+    brief: 预测：同样重的铁钉和铁块，哪个更容易刺穿纸板？为什么？
+  - framework: IBL
+    brief: 估测自己站立时对地面的压强，调查生活中增大和减小压强的实例
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 比例与单位换算
+    relation: 工具支撑
+  - subject: 生物
+    concept: 动物身体结构中的压强适应（骆驼脚掌、啄木鸟喙）
+    relation: 应用实例
+  - subject: 工程
+    concept: 建筑基础设计中的压强控制
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 压强体验装置
+    relation: 演示压力作用效果与受力面积的关系
+  - venue: 中国科技馆
+    name: 钉床
+    relation: 演示压强与受力面积的关系

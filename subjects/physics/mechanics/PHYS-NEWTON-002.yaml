@@ -1,29 +1,86 @@
 id: PHYS-NEWTON-002
 name: 二力平衡
-name_en: ''
+name_en: Two-Force Equilibrium
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 二力平衡的详细教学内容。
+
+description: |
+  能用示意图描述力。了解同一直线上的二力合成。知道二力平衡条件：
+  作用在同一物体上的两个力，如果大小相等、方向相反，并且在同一直线上，
+  这两个力就彼此平衡。能分析静止在水平桌面上杯子的受力情况，
+  能运用二力平衡条件分析简单的受力问题。
+
 prerequisites:
-- id: PHYS-FORCE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: PHYS-FORCE-002
+    name: 重力
+    required: true
+  - id: PHYS-FORCE-003
+    name: 弹力
+    required: true
+
+postrequisites:
+  - id: PHYS-PRESSURE-001
+    name: 压强
+  - id: PHYS-FRICTION-001
+    name: 摩擦力应用
+
 key_concepts:
-- term: 二力平衡
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 二力平衡
+    definition: 作用在同一物体上的两个力大小相等、方向相反、作用在同一直线上
+    importance: 核心
+  - term: 平衡状态
+    definition: 物体保持静止状态或匀速直线运动状态
+    importance: 核心
+  - term: 同一直线上的二力合成
+    definition: 方向相同的两个力合力等于两力之和，方向相反的两个力合力等于两力之差
+    importance: 重要
+  - term: 力的示意图
+    definition: 用带箭头的线段表示力的三要素（大小、方向、作用点）
+    importance: 重要
+
+misconceptions:
+  - statement: "两个力大小相等、方向相反就一定平衡"
+    correction: "二力平衡必须满足四个条件：同体、等大、反向、共线，缺少任一条件都不能平衡"
+  - statement: "静止的物体一定不受力"
+    correction: "静止的物体可能不受力，也可能受平衡力作用"
+  - statement: "平衡力与相互作用力是一回事"
+    correction: "平衡力作用在同一物体上，相互作用力作用在两个不同物体上"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与逻辑推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage分析静止在桌面上的杯子受力 → Explore用弹簧测力计测量物体重力与支持力的关系 → Explain归纳二力平衡条件
+  - framework: POE
+    brief: 预测：用两个弹簧测力计水平拉同一物体，什么情况下物体保持静止
+  - framework: IBL
+    brief: 设计实验探究二力平衡的条件，体验控制变量法
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 数学
+    concept: 力的矢量合成
+    relation: 工具支撑
+  - subject: 体育
+    concept: 平衡木、体操中的平衡
+    relation: 应用实例
+  - subject: 工程
+    concept: 结构平衡与稳定性
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 力的平衡互动装置
+    relation: 演示二力平衡与多力平衡

@@ -1,29 +1,84 @@
 id: PHYS-SIMPLE-002
 name: 滑轮
-name_en: ''
+name_en: Pulley
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 滑轮的详细教学内容。
+
+description: |
+  知道滑轮是简单机械的一种。了解定滑轮、动滑轮和滑轮组的结构特点和工作原理。
+  知道定滑轮可以改变力的方向但不省力，动滑轮可以省力但不能改变力的方向。
+  了解滑轮组既可以省力又可以改变力的方向，能分析简单滑轮组的省力情况。
+  了解滑轮在生产生活中的应用，如起重机、升降机、旗杆等。
+
 prerequisites:
-- id: PHYS-SIMPLE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-SIMPLE-001
+    name: 杠杆
+    required: true
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+
+postrequisites:
+  - id: PHYS-SIMPLE-003
+    name: 机械效率
+
 key_concepts:
-- term: 滑轮
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 定滑轮
+    definition: 轴固定不动的滑轮，实质是等臂杠杆，可以改变力的方向但不省力
+    importance: 核心
+  - term: 动滑轮
+    definition: 轴随物体一起运动的滑轮，实质是动力臂为阻力臂二倍的杠杆，可以省一半力
+    importance: 核心
+  - term: 滑轮组
+    definition: 定滑轮和动滑轮组合在一起的装置，既可以省力又可以改变力的方向
+    importance: 核心
+  - term: 承担物重的绳子段数
+    definition: 与动滑轮直接相连的绳子段数，决定滑轮组的省力倍数
+    importance: 重要
+
+misconceptions:
+  - statement: "定滑轮可以省力"
+    correction: "定滑轮不省力，但可以改变力的方向，使操作更方便"
+  - statement: "动滑轮一定能省一半力"
+    correction: "在不考虑动滑轮自重和摩擦的情况下可以省一半力，实际中要考虑额外因素"
+  - statement: "滑轮组越省力，机械效率越高"
+    correction: "滑轮组的省力程度与机械效率没有直接关系，越复杂的滑轮组机械效率可能越低"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与模型分析
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用起重机、旗杆引入 → Explore组装定滑轮、动滑轮和滑轮组，比较省力情况 → Explain归纳滑轮的工作原理
+  - framework: POE
+    brief: 预测：用滑轮组提升重物，承担物重的绳子段数越多，拉力越小吗？
+  - framework: 项目式学习
+    brief: 设计并制作一个简易升降装置，运用滑轮组原理解决实际问题
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 工程
+    concept: 起重机械与升降设备
+    relation: 应用实例
+  - subject: 历史
+    concept: 中国古代滑轮与起重技术
+    relation: 文化背景
+  - subject: 劳动
+    concept: 建筑施工中滑轮的应用
+    relation: 实践衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 滑轮组互动装置
+    relation: 演示定滑轮、动滑轮和滑轮组的省力原理
+  - venue: 中国科技馆
+    name: 起重机模型
+    relation: 展示滑轮在工程中的应用

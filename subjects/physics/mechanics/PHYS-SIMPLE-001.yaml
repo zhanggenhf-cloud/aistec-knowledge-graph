@@ -1,29 +1,89 @@
 id: PHYS-SIMPLE-001
 name: 杠杆
-name_en: ''
+name_en: Lever
 subject: 物理
 domain: 力学
 grade: 初中八年级下
-description: 杠杆的详细教学内容。
+
+description: |
+  知道简单机械。知道杠杆是在力的作用下能绕固定点转动的硬棒。
+  探究并了解杠杆的平衡条件：动力×动力臂 = 阻力×阻力臂（F₁l₁ = F₂l₂）。
+  认识生活中的杠杆，能区分省力杠杆、费力杠杆和等臂杠杆。
+  了解杠杆在我国古代和现代科技中的应用，体会中华民族的智慧。
+
 prerequisites:
-- id: PHYS-FORCE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: true
+  - id: PHYS-NEWTON-002
+    name: 二力平衡
+    required: true
+
+postrequisites:
+  - id: PHYS-SIMPLE-002
+    name: 滑轮
+  - id: PHYS-SIMPLE-003
+    name: 机械效率
+
 key_concepts:
-- term: 杠杆
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 杠杆
+    definition: 在力的作用下能绕固定点转动的硬棒
+    importance: 核心
+  - term: 支点
+    definition: 杠杆绕着转动的固定点
+    importance: 核心
+  - term: 动力与阻力
+    definition: 使杠杆转动的力叫动力，阻碍杠杆转动的力叫阻力
+    importance: 核心
+  - term: 动力臂与阻力臂
+    definition: 从支点到动力作用线的距离叫动力臂，从支点到阻力作用线的距离叫阻力臂
+    importance: 核心
+  - term: 杠杆平衡条件
+    definition: 动力×动力臂 = 阻力×阻力臂，即F₁l₁ = F₂l₂
+    importance: 核心
+
+misconceptions:
+  - statement: "杠杆一定是直的"
+    correction: "杠杆可以是直的也可以是弯的，只要是能绕固定点转动的硬棒即可"
+  - statement: "省力杠杆一定比费力杠杆好"
+    correction: "省力杠杆虽然省力但费距离，费力杠杆虽然费力但省距离，各有适用场景"
+  - statement: "力臂就是支点到力的作用点的距离"
+    correction: "力臂是支点到力的作用线的垂直距离，不是到力的作用点的距离"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与实验探究
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用撬石头、剪刀等生活实例引入 → Explore探究杠杆的平衡条件实验 → Explain归纳杠杆分类与应用
+  - framework: IBL
+    brief: 完成"探究杠杆的平衡条件"学生实验，运用控制变量法归纳平衡条件
+  - framework: 项目式学习
+    brief: 设计并制作一个利用杠杆原理的工具或装置，分析其省力或省距离的特点
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: 2024-09-14
+
+interdisciplinary:
+  - subject: 生物
+    concept: 人体中的杠杆（骨骼、关节、肌肉）
+    relation: 应用实例
+  - subject: 历史
+    concept: 中国古代杠杆应用（杆秤、桔槔）
+    relation: 文化背景
+  - subject: 劳动
+    concept: 工具使用与省力设计
+    relation: 实践衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 杠杆原理互动装置
+    relation: 演示杠杆平衡条件与省力原理
+  - venue: 中国科技馆
+    name: 人体杠杆模型
+    relation: 展示人体运动中的杠杆结构
