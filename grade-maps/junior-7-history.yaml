@@ -1,0 +1,25 @@
+grade: 初中七年级
+subject: 历史
+semester:
+  - name: 上学期
+    topics:
+      - id: HIS-ANC-001
+        name: 史前时期与中华文明的起源
+        period: 1-4周
+      - id: HIS-ANC-002
+        name: 统一多民族国家的建立与发展（先秦至秦汉）
+        period: 5-12周
+      - id: HIS-ANC-003
+        name: 民族交融与中华文明的延续（三国两晋南北朝至隋唐）
+        period: 13-18周
+  - name: 下学期
+    topics:
+      - id: HIS-ANC-003
+        name: 民族交融与中华文明的延续（辽宋夏金元至明清）
+        period: 1-10周
+      - id: HIS-CROSS-001
+        name: 历史跨学科主题学习
+        period: 11-14周
+      - id: HIS-ANC-001
+        name: 复习与学业评价
+        period: 15-18周

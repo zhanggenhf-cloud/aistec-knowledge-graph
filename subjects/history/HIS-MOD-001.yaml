@@ -1,0 +1,92 @@
+id: HIS-MOD-001
+name: 中国近代化的探索与民族独立
+name_en: Exploration of Modernization and National Independence in Modern China
+subject: 历史
+domain: 中国近代史
+grade: 初中八年级
+
+description: |
+  认识列强侵华对中国社会的影响，概述晚清时期中国人民反抗外来侵略的斗争事迹，理解其性质和意义。
+  认识社会各阶级为挽救危局所作的努力及存在的局限性。
+  通过了解孙中山等民主革命先行者早年的革命活动，认识辛亥革命的历史意义和局限性。
+  通过了解北洋军阀的统治、新文化运动、五四运动、中国共产党的诞生等史事，认识新民主主义革命的兴起。
+  通过了解九一八事变、七七事变、南京大屠杀等史事，认识日本侵华的暴行；通过了解正面战场和敌后战场的抗战史事，认识抗日战争胜利的历史意义。
+  通过了解解放区的土地改革、三大战役等史事，认识人民解放战争胜利的原因。
+
+prerequisites:
+  - id: HIS-ANC-003
+    name: 民族交融与中华文明的延续
+    required: false
+
+postrequisites:
+  - id: HIS-MOD-002
+    name: 社会主义现代化建设
+
+key_concepts:
+  - term: 近代化
+    definition: 中国社会从传统农业社会向现代工业社会转变的历史过程
+    importance: 核心
+  - term: 民族独立
+    definition: 中华民族摆脱外来侵略和压迫，实现独立自主的历史目标
+    importance: 核心
+  - term: 辛亥革命
+    definition: 1911年爆发的推翻清朝统治、建立共和政体的资产阶级民主革命
+    importance: 核心
+  - term: 新民主主义革命
+    definition: 无产阶级领导的、人民大众的、反对帝国主义、封建主义和官僚资本主义的革命
+    importance: 核心
+  - term: 抗日战争
+    definition: 1931-1945年中国人民反抗日本侵略的民族解放战争
+    importance: 核心
+  - term: 人民解放战争
+    definition: 1946-1949年中国共产党领导的人民军队推翻国民党反动统治的战争
+    importance: 核心
+
+misconceptions:
+  - statement: "辛亥革命完全失败了"
+    correction: "辛亥革命推翻了封建帝制，建立了共和政体，具有重大历史意义，但也存在局限性"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "抗日战争只是共产党领导的"
+    correction: "抗日战争是在抗日民族统一战线旗帜下，正面战场和敌后战场相互配合取得的胜利"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 历史解释与唯物史观
+
+activity_suggestions:
+  - framework: 史料研读
+    brief: 阅读《南京条约》《马关条约》等史料，分析列强侵华的影响
+  - framework: 项目式学习
+    brief: 制作近代中国探索救国道路的历史年表，分析各阶级探索的成败得失
+  - framework: 跨学科主题
+    brief: 考察当地近代历史遗迹，制作口述史记录
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 爱国主义与革命传统
+    relation: 价值引领
+  - subject: 语文
+    concept: 近代文学作品阅读
+    relation: 知识衔接
+  - subject: 地理
+    concept: 近代列强侵略与领土变迁
+    relation: 知识衔接
+  - subject: 科学
+    concept: 近代中国科技发展
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国国家博物馆
+    name: 复兴之路基本陈列
+    relation: 展示近代中国探索救亡图存的历史
+  - venue: 中国人民抗日战争纪念馆
+    name: 全民族抗战展厅
+    relation: 展示抗日战争历史

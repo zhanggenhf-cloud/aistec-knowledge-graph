@@ -150,8 +150,9 @@ aistec-knowledge-graph/
 │   │   └── energy/           # 能量与信息
 │   ├── chemistry/            # 初中化学（12个）
 │   ├── biology/              # 初中生物（10个）
-│   ├── geography/            # 地理（6个）⭐新增
-│   ├── information-technology/ # 信息科技（6个）⭐新增
+│   ├── geography/            # 地理（12个）
+│   ├── history/              # 历史（8个）⭐新增
+│   ├── information-technology/ # 信息科技（6个）
 │   ├── math/                 # 数学（4个）⭐新增
 │   ├── art/                  # 艺术（2个）⭐新增
 │   ├── labor/                # 劳动（2个）⭐新增
@@ -162,6 +163,9 @@ aistec-knowledge-graph/
 │   ├── junior-8-physics.yaml
 │   ├── junior-7-geography.yaml      # ⭐新增
 │   ├── junior-8-geography.yaml      # ⭐新增
+│   ├── junior-7-history.yaml        # ⭐新增
+│   ├── junior-8-history.yaml        # ⭐新增
+│   ├── junior-9-history.yaml        # ⭐新增
 │   ├── elementary-4-6-it.yaml       # ⭐新增
 │   └── junior-7-8-it.yaml           # ⭐新增
 ├── examples/                 # 使用示例
@@ -253,6 +257,7 @@ SCI-MOT-001 → PHYS-FORCE-001 → PHYS-FORCE-002
 - 🟠 橙色：初中化学
 - 🔴 红色：初中生物
 - 🟣 紫色：地理
+- 🟤 棕色：历史
 - ⚫ 黑色：信息科技
 - 🟡 黄色：数学
 - 🩷 粉色：艺术
@@ -279,13 +284,14 @@ SCI-MOT-001 → PHYS-FORCE-001 → PHYS-FORCE-002
 | 初中 | 数学 | 2 | ✅ 新增 |
 | 初中 | 艺术 | 2 | ✅ 新增 |
 | 初中 | 劳动 | 1 | ✅ 新增 |
-| **总计** | **14个学科** | **~133个** | |
+| 初中 | 历史 | 8 | ✅ 基于真实课标PDF |
+| **总计** | **15个学科** | **~141个** | |
 
 ### 2022版课标覆盖情况
 
 基于《义务教育课程方案（2022年版）》，16门国家课程中：
-- **已覆盖**（14门）：科学、物理、化学、生物、地理、数学、信息科技、艺术、劳动、综合实践活动
-- **待补充**（6门）：道德与法治、语文、外语、历史、体育与健康
+- **已覆盖**（15门）：科学、物理、化学、生物、地理、数学、信息科技、艺术、劳动、综合实践活动、历史
+- **待补充**（5门）：道德与法治、语文、外语、体育与健康
 
 详见 [`docs/2022-curriculum-overview.md`](docs/2022-curriculum-overview.md)
 

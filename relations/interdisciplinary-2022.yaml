@@ -309,3 +309,112 @@ edges:
     type: related
     strength: moderate
     note: 二十四节气主题涉及农业生产劳动
+
+  # 历史 ↔ 地理
+  - from: HIS-ANC-001
+    to: GEO-EARTH-005
+    type: related
+    strength: moderate
+    note: 史前人类活动与地理环境
+
+  - from: HIS-ANC-002
+    to: GEO-REGION-002
+    type: related
+    strength: strong
+    note: 统一多民族国家与疆域变迁
+
+  - from: HIS-ANC-003
+    to: GEO-EARTH-006
+    type: related
+    strength: moderate
+    note: 人口迁徙与区域开发
+
+  # 历史 ↔ 科学（科技史）
+  - from: HIS-ANC-003
+    to: CHEM-MAT-001
+    type: related
+    strength: strong
+    note: 四大发明与化学工艺
+
+  - from: HIS-ANC-003
+    to: PHYS-MAG-001
+    type: related
+    strength: strong
+    note: 指南针与磁学
+
+  - from: HIS-WLD-002
+    to: CHEM-REACT-001
+    type: related
+    strength: moderate
+    note: 工业革命中的化学工业
+
+  - from: HIS-WLD-003
+    to: IT-AI-001
+    type: related
+    strength: strong
+    note: 第三次科技革命与信息技术
+
+  # 历史 ↔ 语文
+  - from: HIS-ANC-002
+    to: SCI-TECH-003
+    type: related
+    strength: moderate
+    note: 古代文献与历史研究
+
+  # 历史 ↔ 道德与法治
+  - from: HIS-MOD-001
+    to: SCI-ENV-001
+    type: related
+    strength: moderate
+    note: 爱国主义教育与历史认知
+
+  # 历史 ↔ 艺术
+  - from: HIS-ANC-002
+    to: ART-VISUAL-001
+    type: related
+    strength: moderate
+    note: 古代艺术成就与历史文化
+
+  # 历史 ↔ 综合实践活动
+  - from: HIS-CROSS-001
+    to: COMP-PROJ-001
+    type: application
+    strength: strong
+    note: 历史跨学科主题学习与项目式学习整合
+
+  # 历史内部关系
+  - from: HIS-ANC-001
+    to: HIS-ANC-002
+    type: prerequisite
+    strength: strong
+    note: 史前文明是统一国家建立的基础
+
+  - from: HIS-ANC-002
+    to: HIS-ANC-003
+    type: prerequisite
+    strength: strong
+    note: 秦汉统一是民族交融的前提
+
+  - from: HIS-ANC-003
+    to: HIS-MOD-001
+    type: prerequisite
+    strength: strong
+    note: 明清时期的社会危机是近代探索的背景
+
+  - from: HIS-MOD-001
+    to: HIS-MOD-002
+    type: prerequisite
+    strength: strong
+    note: 民族独立是社会主义现代化建设的前提
+
+  - from: HIS-WLD-001
+    to: HIS-WLD-002
+    type: prerequisite
+    strength: strong
+    note: 古代文明是近代世界格局演变的基础
+
+  - from: HIS-WLD-002
+    to: HIS-WLD-003
+    type: prerequisite
+    strength: strong
+    note: 近代世界格局是现代世界发展的基础

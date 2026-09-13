@@ -1,0 +1,28 @@
+grade: 初中八年级
+subject: 历史
+semester:
+  - name: 上学期
+    topics:
+      - id: HIS-MOD-001
+        name: 晚清时期的内忧外患与救亡图存
+        period: 1-6周
+      - id: HIS-MOD-001
+        name: 辛亥革命与中华民国的建立
+        period: 7-10周
+      - id: HIS-MOD-001
+        name: 中国共产党成立与新民主主义革命的兴起
+        period: 11-14周
+  - name: 下学期
+    topics:
+      - id: HIS-MOD-001
+        name: 中华民族的抗日战争
+        period: 1-6周
+      - id: HIS-MOD-001
+        name: 人民解放战争与新中国成立
+        period: 7-10周
+      - id: HIS-MOD-002
+        name: 社会主义现代化建设
+        period: 11-16周
+      - id: HIS-CROSS-001
+        name: 历史跨学科主题学习
+        period: 17-18周

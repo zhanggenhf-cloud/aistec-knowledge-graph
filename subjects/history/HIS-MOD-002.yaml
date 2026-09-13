@@ -1,0 +1,90 @@
+id: HIS-MOD-002
+name: 社会主义现代化建设
+name_en: Socialist Modernization Construction
+subject: 历史
+domain: 中国现代史
+grade: 初中八年级
+
+description: |
+  通过了解开国大典、土地改革、抗美援朝等史事，认识中华人民共和国成立及向社会主义过渡的历史意义。
+  通过了解"一五"计划、三大改造等史事，认识社会主义制度的建立和社会主义建设的探索。
+  通过了解"大跃进"、人民公社化运动等史事，认识社会主义建设道路的曲折探索。
+  通过了解十一届三中全会、家庭联产承包责任制、经济特区等史事，认识改革开放的历史意义。
+  通过了解中国特色社会主义理论体系的形成和发展，认识改革开放以来中国取得的巨大成就。
+  通过了解新时代中国的发展成就，认识中国特色社会主义进入新时代的历史意义。
+
+prerequisites:
+  - id: HIS-MOD-001
+    name: 中国近代化的探索与民族独立
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 社会主义制度
+    definition: 以生产资料公有制为基础的社会制度
+    importance: 核心
+  - term: 三大改造
+    definition: 1953-1956年对农业、手工业和资本主义工商业的社会主义改造
+    importance: 核心
+  - term: 改革开放
+    definition: 1978年十一届三中全会后中国实行的对内改革、对外开放的政策
+    importance: 核心
+  - term: 中国特色社会主义
+    definition: 在中国共产党领导下，根据中国国情建设的社会主义
+    importance: 核心
+  - term: 新时代
+    definition: 中国特色社会主义进入新的历史发展阶段
+    importance: 核心
+  - term: 社会主义现代化
+    definition: 把我国建设成为富强民主文明和谐美丽的社会主义现代化强国
+    importance: 核心
+
+misconceptions:
+  - statement: "改革开放就是全盘西化"
+    correction: "改革开放是坚持社会主义制度前提下的自我完善和发展"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "社会主义建设一帆风顺"
+    correction: "社会主义建设经历了曲折探索，在总结经验教训中不断发展"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 唯物史观与历史解释
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 分析改革开放前后中国社会生活的变化
+  - framework: 项目式学习
+    brief: 采访家中长辈，制作家庭生活变迁史
+  - framework: 跨学科主题
+    brief: 对比不同时期的中国地图，分析城市化进程
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 中国特色社会主义
+    relation: 价值引领
+  - subject: 地理
+    concept: 经济地理与区域发展
+    relation: 知识衔接
+  - subject: 科学
+    concept: 新中国科技成就
+    relation: 知识衔接
+  - subject: 数学
+    concept: 数据图表分析
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国国家博物馆
+    name: 复兴之路基本陈列
+    relation: 展示新中国建设成就
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示新中国科技成就

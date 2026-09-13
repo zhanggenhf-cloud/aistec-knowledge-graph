@@ -1,0 +1,80 @@
+id: HIS-WLD-001
+name: 古代文明的多元发展
+name_en: Diverse Development of Ancient Civilizations
+subject: 历史
+domain: 世界古代史
+grade: 初中九年级
+
+description: |
+  通过了解金字塔、《汉谟拉比法典》等史事，认识古代埃及、古代两河流域的文明成就。
+  通过了解种姓制度、佛教创立等史事，认识古代印度的社会与文化。
+  通过了解希腊城邦、亚历山大帝国、罗马帝国等史事，认识古代欧洲的政治文明。
+  通过了解阿拉伯帝国的兴起、丝绸之路上的文化交流等史事，认识古代文明的交流与互鉴。
+  认识世界古代文明具有多元发展的特征，不同文明之间相互影响、交流互鉴。
+
+prerequisites: []
+
+postrequisites:
+  - id: HIS-WLD-002
+    name: 近代世界格局的演变
+
+key_concepts:
+  - term: 大河文明
+    definition: 发源于大河流域的古代文明，如古埃及、古巴比伦、古印度、古中国
+    importance: 核心
+  - term: 海洋文明
+    definition: 以海洋为依托发展的古代文明，如古希腊
+    importance: 核心
+  - term: 城邦制度
+    definition: 古希腊以城市为中心、独立自主的政治共同体
+    importance: 核心
+  - term: 罗马帝国
+    definition: 公元前27年至公元476年地跨欧亚非三洲的庞大帝国
+    importance: 核心
+  - term: 文明交流
+    definition: 不同文明之间在经济、文化、技术等方面的相互传播和影响
+    importance: 核心
+
+misconceptions:
+  - statement: "古代文明都是孤立发展的"
+    correction: "古代文明之间通过贸易、战争、迁徙等方式进行交流互鉴"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "西方文明是最优秀的文明"
+    correction: "各文明都有其独特价值和贡献，文明之间没有优劣之分"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 时空观念与比较分析
+
+activity_suggestions:
+  - framework: 比较学习
+    brief: 比较古埃及、古巴比伦、古印度、古中国四大文明的异同
+  - framework: 项目式学习
+    brief: 制作世界古代文明分布图，分析文明与自然环境的关系
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 自然环境与文明起源
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 文明多样性与人类命运共同体
+    relation: 价值引领
+  - subject: 艺术
+    concept: 古代艺术成就
+    relation: 知识衔接
+  - subject: 科学
+    concept: 古代科技成就
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国国家博物馆
+    name: 古代世界文明展
+    relation: 展示世界古代文明成就

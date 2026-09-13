@@ -1,0 +1,88 @@
+id: HIS-WLD-002
+name: 近代世界格局的演变
+name_en: Evolution of the Modern World Pattern
+subject: 历史
+domain: 世界近代史
+grade: 初中九年级
+
+description: |
+  通过了解新航路的开辟、早期殖民掠夺等史事，认识世界从分散走向整体的历史进程。
+  通过了解英国资产阶级革命、美国独立战争、法国大革命等史事，认识资产阶级革命的历史作用。
+  通过了解第一次工业革命、第二次工业革命等史事，认识工业革命对人类社会发展的深远影响。
+  通过了解马克思主义的诞生、国际工人运动的发展，认识社会主义从理论到实践的历史进程。
+  通过了解殖民地人民的反抗斗争，认识民族解放运动的历史意义。
+
+prerequisites:
+  - id: HIS-WLD-001
+    name: 古代文明的多元发展
+    required: false
+
+postrequisites:
+  - id: HIS-WLD-003
+    name: 现代世界的发展与全球化
+
+key_concepts:
+  - term: 新航路开辟
+    definition: 15-16世纪欧洲航海家开辟通往印度和美洲新航线的历史事件
+    importance: 核心
+  - term: 工业革命
+    definition: 18世纪60年代开始于英国，以机器生产代替手工劳动的技术革命
+    importance: 核心
+  - term: 资产阶级革命
+    definition: 资产阶级推翻封建专制统治、建立资产阶级政权的革命
+    importance: 核心
+  - term: 马克思主义
+    definition: 马克思和恩格斯创立的科学社会主义理论体系
+    importance: 核心
+  - term: 殖民扩张
+    definition: 西方国家向亚非拉地区进行侵略扩张、建立殖民地的历史过程
+    importance: 核心
+  - term: 民族解放运动
+    definition: 殖民地半殖民地人民反抗殖民统治、争取民族独立的运动
+    importance: 重要
+
+misconceptions:
+  - statement: "工业革命只带来了进步，没有负面影响"
+    correction: "工业革命在推动生产力发展的同时，也带来了环境污染、社会分化等问题"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "殖民扩张促进了殖民地的现代化"
+    correction: "殖民扩张给殖民地人民带来了深重灾难，殖民地的发展是人民反抗和斗争的结果"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 唯物史观与历史解释
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 分析工业革命对社会结构、生活方式的影响
+  - framework: 比较学习
+    brief: 比较英、美、法三国资产阶级革命的异同
+  - framework: 项目式学习
+    brief: 制作世界近代化进程时间轴，分析重大历史事件的因果关系
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 近代科学技术发展
+    relation: 知识衔接
+  - subject: 地理
+    concept: 全球贸易与殖民体系
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 人类命运共同体
+    relation: 价值引领
+  - subject: 化学
+    concept: 工业革命中的化学工业
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 探索与发现展厅
+    relation: 展示近代科技发展

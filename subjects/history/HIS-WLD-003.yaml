@@ -1,0 +1,87 @@
+id: HIS-WLD-003
+name: 现代世界的发展与全球化
+name_en: Development of the Modern World and Globalization
+subject: 历史
+domain: 世界现代史
+grade: 初中九年级
+
+description: |
+  通过了解第一次世界大战、俄国十月革命等史事，认识战争与革命对20世纪世界格局的影响。
+  通过了解凡尔赛—华盛顿体系、经济大危机、罗斯福新政等史事，认识两次世界大战之间世界格局的演变。
+  通过了解第二次世界大战、联合国的成立等史事，认识反法西斯战争胜利的历史意义。
+  通过了解冷战、美苏争霸、两极格局瓦解等史事，认识二战后世界格局的变化。
+  通过了解第三次科技革命、经济全球化等史事，认识当代世界发展的趋势。
+  通过了解发展中国家的崛起、区域集团化等史事，认识世界多极化趋势的发展。
+
+prerequisites:
+  - id: HIS-WLD-002
+    name: 近代世界格局的演变
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 第一次世界大战
+    definition: 1914-1918年主要发生在欧洲的世界大战
+    importance: 核心
+  - term: 十月革命
+    definition: 1917年俄国布尔什维克党领导的社会主义革命
+    importance: 核心
+  - term: 第二次世界大战
+    definition: 1939-1945年全球性反法西斯战争
+    importance: 核心
+  - term: 冷战
+    definition: 二战后以美苏为首的两大阵营之间的政治、经济、军事对抗
+    importance: 核心
+  - term: 经济全球化
+    definition: 世界经济活动超越国界，形成全球有机经济整体的过程
+    importance: 核心
+  - term: 世界多极化
+    definition: 国际力量对比趋向相对均衡，多个力量中心并存发展的趋势
+    importance: 核心
+
+misconceptions:
+  - statement: "冷战就是军事战争"
+    correction: "冷战是以美苏为首的两大阵营之间的政治、经济、军事对抗，但不是直接的军事战争"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "全球化只有好处没有坏处"
+    correction: "全球化在促进经济发展的同时，也带来了贫富差距扩大、文化冲突等问题"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 历史解释与时空观念
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 分析冷战对世界格局的影响
+  - framework: 项目式学习
+    brief: 制作20世纪重大历史事件年表，分析世界格局的演变
+  - framework: 跨学科主题
+    brief: 探讨经济全球化对当代中国的影响
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 人类命运共同体
+    relation: 价值引领
+  - subject: 地理
+    concept: 世界经济地理
+    relation: 知识衔接
+  - subject: 科学
+    concept: 第三次科技革命
+    relation: 知识衔接
+  - subject: 信息科技
+    concept: 信息技术与全球化
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示现代科技与未来发展

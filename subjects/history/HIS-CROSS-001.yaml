@@ -1,0 +1,91 @@
+id: HIS-CROSS-001
+name: 历史跨学科主题学习
+name_en: Interdisciplinary Thematic Learning in History
+subject: 历史
+domain: 跨学科主题学习
+grade: 初中七至九年级
+
+description: |
+  围绕"中华英雄谱"主题，搜集、整理中国历史上不同时期的英雄人物事迹，认识英雄人物的精神品质及其历史贡献。
+  围绕"小钱币，大历史"主题，通过了解中国古代货币演变，认识经济发展与社会变迁的关系。
+  围绕"历史上的中外文化交流"主题，通过了解丝绸之路、郑和下西洋等史事，认识文明交流互鉴的意义。
+  围绕"历史地图上的世界格局"主题，通过绘制历史地图，认识地理空间与历史发展的关系。
+  围绕"生态环境与社会发展"主题，通过了解人类历史上生态环境变化的影响，认识可持续发展的意义。
+  围绕"看电影，学历史"主题，通过观看历史题材影视作品，辨析历史真实与艺术虚构。
+  围绕"我身边的历史故事"主题，通过采访长辈、考察当地历史遗迹，认识历史与生活的联系。
+
+prerequisites: []
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科主题学习
+    definition: 围绕某一研究主题，将历史课程与其他课程的知识、技能、方法结合起来进行综合探究
+    importance: 核心
+  - term: 史料实证
+    definition: 依靠可信史料了解和认识历史的方法
+    importance: 核心
+  - term: 口述史
+    definition: 通过采访亲历者收集历史资料的研究方法
+    importance: 重要
+  - term: 历史地图
+    definition: 反映历史时期地理环境、疆域变迁、重大事件分布等的专题地图
+    importance: 重要
+  - term: 历史遗迹
+    definition: 古代人类活动遗留下来的具有历史价值的遗址、遗物等
+    importance: 重要
+
+misconceptions:
+  - statement: "历史影视作品就是真实历史"
+    correction: "历史影视作品有艺术虚构成分，需要与史料相互印证"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "历史离我们很遥远"
+    correction: "历史就在我们身边，家乡的一砖一瓦都可能承载着历史记忆"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合探究与实践创新
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 开展"家乡的历史"主题调查，收集口述史资料
+  - framework: 跨学科主题
+    brief: 结合地理、语文、艺术等学科，开展历史主题综合探究
+  - framework: 实地考察
+    brief: 参观当地博物馆、历史遗迹，撰写考察报告
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 语文
+    concept: 历史文献阅读与写作
+    relation: 方法共享
+  - subject: 地理
+    concept: 历史地图与空间分析
+    relation: 方法共享
+  - subject: 艺术
+    concept: 历史题材艺术创作
+    relation: 方法共享
+  - subject: 科学
+    concept: 科技史研究
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 爱国主义教育
+    relation: 价值引领
+  - subject: 信息科技
+    concept: 数字历史资源利用
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 华夏之光展厅
+    relation: 展示中国古代科技成就，支持"小钱币，大历史"等主题
+  - venue: 中国国家博物馆
+    name: 古代中国基本陈列
+    relation: 展示中华文明发展历程

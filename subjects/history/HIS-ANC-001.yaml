@@ -1,0 +1,86 @@
+id: HIS-ANC-001
+name: 史前时期与中华文明的起源
+name_en: Prehistoric Period and the Origin of Chinese Civilization
+subject: 历史
+domain: 中国古代史
+grade: 初中七年级
+
+description: |
+  通过了解元谋人、蓝田人、北京人等旧石器时代的人类及其文化遗存，知道中国境内原始社会时期的人类活动。
+  通过了解河姆渡、半坡、良渚、陶寺等新石器时代的文化遗存，知道中国的原始农耕生活。
+  了解私有制、阶级和早期国家的产生；知道考古发现是了解原始社会的重要依据。
+  通过古代文献中记述的黄帝、炎帝等神话传说，了解其中蕴含的历史信息。
+  认识中华文明的起源具有多元一体的特征。
+
+prerequisites: []
+
+postrequisites:
+  - id: HIS-ANC-002
+    name: 统一多民族国家的建立与发展
+
+key_concepts:
+  - term: 旧石器时代
+    definition: 以打制石器为主要工具的人类社会发展阶段
+    importance: 核心
+  - term: 新石器时代
+    definition: 以磨制石器为主要工具、出现原始农业和畜牧业的社会发展阶段
+    importance: 核心
+  - term: 原始农耕
+    definition: 人类从采集渔猎向定居农业转变的生产方式
+    importance: 核心
+  - term: 考古发现
+    definition: 通过发掘古代遗迹、遗物等实物资料来研究历史的方法
+    importance: 核心
+  - term: 神话传说
+    definition: 古代文献中记述的关于远古英雄和部落的故事，蕴含一定的历史信息
+    importance: 重要
+  - term: 多元一体
+    definition: 中华文明起源的多元性和发展中的融合统一趋势
+    importance: 核心
+
+misconceptions:
+  - statement: "神话传说都是虚构的，没有历史价值"
+    correction: "神话传说蕴含一定的历史信息，是研究远古历史的重要参考"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "中华文明只有一个发源地"
+    correction: "中华文明的起源具有多元性，各区域文化相互影响、融合"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 时空观念与史料实证
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 观察考古文物图片或实物，分析史前人类的生活方式
+  - framework: 项目式学习
+    brief: 制作史前文化遗址分布图，分析中华文明起源的多元性
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 聚落与自然环境
+    relation: 知识衔接
+  - subject: 科学
+    concept: 人类进化与工具发展
+    relation: 知识衔接
+  - subject: 艺术
+    concept: 原始艺术（彩陶、玉器）
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 中华民族共同体意识
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国国家博物馆
+    name: 古代中国基本陈列
+    relation: 展示史前文化遗存
+  - venue: 中国科技馆
+    name: 华夏之光展厅
+    relation: 展示古代科技文明起源

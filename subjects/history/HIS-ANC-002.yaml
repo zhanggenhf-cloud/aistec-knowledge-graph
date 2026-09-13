@@ -1,0 +1,99 @@
+id: HIS-ANC-002
+name: 统一多民族国家的建立与发展
+name_en: Establishment and Development of a Unified Multi-ethnic State
+subject: 历史
+domain: 中国古代史
+grade: 初中七年级
+
+description: |
+  知道甲骨文是已知最早的汉字；通过了解甲骨文、青铜铭文、其他文献记载和典型器物，了解夏、商、西周的建立与发展，了解西周分封制等重要制度。
+  通过了解春秋战国时期的生产力水平和社会关系的变化，初步理解春秋时期诸侯争霸局面的形成、战国时期的变法运动和"百家争鸣"局面的产生。
+  通过了解秦朝统一、秦末农民起义、西汉"削藩"和尊崇儒术，知道统一多民族封建国家建立和早期发展的过程。
+  通过了解"文景之治"、张骞通西域、"丝绸之路"开辟等，了解西汉从凋敝到国力强盛的变化及原因。
+  了解隋唐时期科举制度创建、大运河开通、民族交融与中外交流，认识隋唐王朝在世界历史上的重要地位。
+  通过了解辽宋夏金元时期的经济繁荣、科技创新和民族交融，认识宋元时期在中国历史上的重要地位。
+  通过了解明清时期统一全国和经略边疆的相关举措，认识统一多民族国家版图奠定的重要意义。
+
+prerequisites:
+  - id: HIS-ANC-001
+    name: 史前时期与中华文明的起源
+    required: false
+
+postrequisites:
+  - id: HIS-ANC-003
+    name: 民族交融与中华文明的延续
+
+key_concepts:
+  - term: 统一多民族国家
+    definition: 由多个民族共同组成、在统一政权下共同发展的国家形态
+    importance: 核心
+  - term: 中央集权
+    definition: 国家权力集中于中央政府的政治体制
+    importance: 核心
+  - term: 分封制
+    definition: 西周时期将土地和人民分封给诸侯的政治制度
+    importance: 重要
+  - term: 百家争鸣
+    definition: 春秋战国时期各种思想流派相互争鸣的文化繁荣局面
+    importance: 核心
+  - term: 丝绸之路
+    definition: 古代连接中国与中亚、西亚、欧洲的重要商贸通道
+    importance: 核心
+  - term: 科举制度
+    definition: 隋唐至清末通过考试选拔官员的制度
+    importance: 核心
+  - term: 行省制度
+    definition: 元朝开始在地方设置行中书省的管理制度
+    importance: 重要
+
+misconceptions:
+  - statement: "秦始皇统一中国后，中国就一直保持统一"
+    correction: "中国历史上有分有合，统一是主流趋势，但也经历了多次分裂时期"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "少数民族政权对统一多民族国家的发展没有贡献"
+    correction: "少数民族政权在统一多民族国家发展中发挥了重要作用，如元朝、清朝"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 因果分析与历史解释
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 分析秦朝统一措施及其对中国历史的影响
+  - framework: 项目式学习
+    brief: 绘制中国古代统一王朝疆域变化图，分析统一多民族国家的发展脉络
+  - framework: 史料研读
+    brief: 阅读《史记》相关篇章，了解汉代历史
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 疆域与行政区划
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 国家统一与民族团结
+    relation: 价值引领
+  - subject: 语文
+    concept: 古代文献阅读
+    relation: 方法共享
+  - subject: 科学
+    concept: 中国古代科技成就（造纸术、印刷术、指南针、火药）
+    relation: 知识衔接
+  - subject: 艺术
+    concept: 中国古代艺术成就
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国国家博物馆
+    name: 古代中国基本陈列
+    relation: 展示统一多民族国家发展历程
+  - venue: 中国科技馆
+    name: 华夏之光展厅
+    relation: 展示中国古代四大发明等科技成就

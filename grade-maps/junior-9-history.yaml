@@ -1,0 +1,22 @@
+grade: 初中九年级
+subject: 历史
+semester:
+  - name: 上学期
+    topics:
+      - id: HIS-WLD-001
+        name: 古代文明的多元发展
+        period: 1-8周
+      - id: HIS-WLD-002
+        name: 近代世界格局的演变
+        period: 9-16周
+  - name: 下学期
+    topics:
+      - id: HIS-WLD-003
+        name: 现代世界的发展与全球化
+        period: 1-10周
+      - id: HIS-CROSS-001
+        name: 历史跨学科主题学习
+        period: 11-14周
+      - id: HIS-WLD-001
+        name: 复习与学业评价
+        period: 15-18周

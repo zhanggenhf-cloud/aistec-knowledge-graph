@@ -1,0 +1,90 @@
+id: HIS-ANC-003
+name: 民族交融与中华文明的延续
+name_en: Ethnic Integration and Continuation of Chinese Civilization
+subject: 历史
+domain: 中国古代史
+grade: 初中七年级
+
+description: |
+  通过了解三国两晋南北朝时期的政权更迭、北魏孝文帝改革、人口迁徙和区域开发，认识民族交往交流交融的历史特点及其对中华民族发展的意义。
+  了解祖冲之的数学成就、王羲之的书法艺术等，认识传统文化的继承与创新。
+  通过了解辽宋夏金元时期的城市和商业发展、科技创新、文学艺术成就和对外交流，认识宋元时期繁荣的经济、文化在中国历史上的重要地位。
+  通过印刷术、指南针、火药的应用和外传，认识中国古代的重要发明对世界文明发展的贡献。
+  通过了解岳飞、文天祥等人的英雄事迹，体会中华民族英勇不屈的精神。
+  通过了解明清时期的社会经济、思想文化的重要变化，认识当时中国社会面临的危机。
+  通过《本草纲目》《天工开物》《农政全书》，认识明朝的科技成就及其影响。
+
+prerequisites:
+  - id: HIS-ANC-002
+    name: 统一多民族国家的建立与发展
+    required: false
+
+postrequisites:
+  - id: HIS-MOD-001
+    name: 中国近代化的探索与民族独立
+
+key_concepts:
+  - term: 民族交融
+    definition: 不同民族之间在政治、经济、文化等方面的交流融合
+    importance: 核心
+  - term: 孝文帝改革
+    definition: 北魏孝文帝推行的一系列汉化改革措施
+    importance: 核心
+  - term: 四大发明
+    definition: 造纸术、印刷术、指南针、火药，中国古代对世界文明的重大贡献
+    importance: 核心
+  - term: 经济重心南移
+    definition: 中国古代经济重心从北方逐渐转移到南方的历史过程
+    importance: 重要
+  - term: 传统文化
+    definition: 中华民族在长期历史发展中形成的思想、艺术、科技等文化遗产
+    importance: 核心
+
+misconceptions:
+  - statement: "民族交融就是汉族同化其他民族"
+    correction: "民族交融是各民族相互学习、相互影响、共同发展的过程"
+    source: 义务教育历史课程标准（2022年版）
+  - statement: "中国古代科技成就只有四大发明"
+    correction: "中国古代科技成就丰富多样，四大发明只是其中最著名的代表"
+    source: 义务教育历史课程标准（2022年版）
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 历史解释与家国情怀
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 分析北魏孝文帝改革对民族交融的影响
+  - framework: 项目式学习
+    brief: 制作中国古代科技成就展，展示四大发明的历史贡献
+  - framework: 跨学科主题
+    brief: 探讨中国古代科技成就对世界文明的影响
+
+verification:
+  status: verified
+  sources:
+    - "义务教育历史课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 中国古代科技史
+    relation: 知识衔接
+  - subject: 地理
+    concept: 人口迁徙与区域开发
+    relation: 知识衔接
+  - subject: 艺术
+    concept: 中国传统艺术
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 中华民族共同体意识
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 华夏之光展厅
+    relation: 展示中国古代四大发明
+  - venue: 中国国家博物馆
+    name: 古代中国基本陈列
+    relation: 展示民族交融的历史见证
