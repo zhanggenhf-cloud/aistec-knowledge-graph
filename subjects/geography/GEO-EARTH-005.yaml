@@ -1,0 +1,85 @@
+id: GEO-EARTH-005
+name: 陆地和海洋
+name_en: Land and Ocean
+subject: 地理
+domain: 认识全球
+subdomain: 地球的表层
+grade: 初中七年级
+
+description: |
+  阅读世界地图，描述世界海陆分布状况，说出七大洲、四大洋的分布。
+  通过阅读地形图、图像，区别山地、丘陵、高原、平原、盆地的形态特征。
+  在世界地形图上指出陆地主要地形和海底主要地形的分布，观察地形分布大势。
+  结合实例，说明海洋和陆地处于不断的运动变化之中；说出板块构造学说的基本观点，并解释世界火山、地震带的分布与板块运动的关系。
+  结合实例，说出海洋对人们生产生活的影响。
+
+prerequisites:
+  - id: GEO-EARTH-001
+    name: 地球在宇宙中
+    required: false
+
+postrequisites:
+  - id: GEO-REGION-001
+    name: 认识世界
+
+key_concepts:
+  - term: 七大洲四大洋
+    definition: 亚洲、非洲、北美洲、南美洲、南极洲、欧洲、大洋洲；太平洋、大西洋、印度洋、北冰洋
+    importance: 核心
+  - term: 地形类型
+    definition: 山地、丘陵、高原、平原、盆地五种基本地形形态
+    importance: 核心
+  - term: 板块构造学说
+    definition: 地球岩石圈由若干板块组成，板块在不断运动
+    importance: 核心
+  - term: 火山地震带
+    definition: 板块交界地带地壳活动频繁，多火山、地震
+    importance: 重要
+  - term: 海陆变迁
+    definition: 海洋和陆地的位置在地质历史时期发生过变化，并仍在变化
+    importance: 重要
+
+misconceptions:
+  - statement: "海陆分布是固定不变的"
+    correction: "地球表面的海陆分布在不断变化，板块运动导致大陆漂移、海底扩张"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "地震只发生在山区"
+    correction: "地震主要发生在板块交界地带，不限于山区"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间认知与因果推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察世界地形图→Explain归纳地形分布规律→Elaborate用板块构造解释火山地震分布
+  - framework: 项目式学习
+    brief: 制作"世界地形探秘"小报，收集不同地形的景观图片和形成原因
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 岩石与矿物、地壳运动
+    relation: 知识衔接
+  - subject: 物理
+    concept: 地震波
+    relation: 原理支撑
+  - subject: 化学
+    concept: 火山喷发物质
+    relation: 拓展关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示板块运动与地形演变
+  - venue: 各地地质博物馆
+    name: 地震模拟体验
+    relation: 演示地震成因与避险

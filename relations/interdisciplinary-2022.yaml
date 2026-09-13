@@ -8,13 +8,25 @@ edges:
     to: SCI-EARTH-001
     type: related
     strength: strong
-    note: 地球运动知识的学段衔接
+    note: 地球形状与宇宙环境
+
+  - from: GEO-EARTH-004
+    to: SCI-EARTH-002
+    type: related
+    strength: strong
+    note: 地球运动
+
+  - from: GEO-EARTH-005
+    to: SCI-EARTH-003
+    type: related
+    strength: strong
+    note: 陆地海洋与地壳运动
 
   - from: GEO-EARTH-003
     to: SCI-WEATHER-001
     type: related
     strength: strong
-    note: 天气与气候概念衔接
+    note: 天气与气候
 
   - from: GEO-ENV-001
     to: SCI-ECO-001
@@ -27,7 +39,19 @@ edges:
     to: PHYS-OPTICS-001
     type: related
     strength: moderate
-    note: 光的传播与昼夜现象
+    note: 光的传播与天体观测
+
+  - from: GEO-EARTH-004
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 光的直线传播与影子形成
+
+  - from: GEO-TOOL-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: weak
+    note: 遥感技术
 
   # 地理 ↔ 化学
   - from: GEO-ENV-001
@@ -43,10 +67,77 @@ edges:
     strength: strong
     note: 生态环境与生物多样性
 
+  - from: GEO-EARTH-006
+    to: BIO-DIV-001
+    type: related
+    strength: moderate
+    note: 人口分布与生物多样性
+
+  # 地理内部关系
+  - from: GEO-EARTH-001
+    to: GEO-EARTH-004
+    type: prerequisite
+    strength: strong
+    note: 认识地球在宇宙中的位置是理解地球运动的基础
+
+  - from: GEO-EARTH-004
+    to: GEO-EARTH-003
+    type: prerequisite
+    strength: moderate
+    note: 地球运动影响气候形成
+
+  - from: GEO-EARTH-005
+    to: GEO-REGION-001
+    type: prerequisite
+    strength: strong
+    note: 陆地海洋分布是认识世界的基础
+
+  - from: GEO-EARTH-003
+    to: GEO-REGION-001
+    type: prerequisite
+    strength: strong
+    note: 气候知识是认识区域的基础
+
+  - from: GEO-TOOL-001
+    to: GEO-REGION-001
+    type: prerequisite
+    strength: strong
+    note: 地图工具是认识区域的基础
+
+  - from: GEO-TOOL-001
+    to: GEO-REGION-002
+    type: prerequisite
+    strength: strong
+    note: 地图工具是认识中国的基础
+
+  - from: GEO-REGION-001
+    to: GEO-REGION-002
+    type: prerequisite
+    strength: strong
+    note: 认识世界是认识中国的基础
+
+  - from: GEO-REGION-002
+    to: GEO-ENV-001
+    type: prerequisite
+    strength: strong
+    note: 认识中国是理解资源环境问题的基础
+
+  - from: GEO-TOOL-001
+    to: GEO-PRAC-001
+    type: prerequisite
+    strength: strong
+    note: 地理工具是地理实践的基础
+
+  - from: GEO-PRAC-001
+    to: GEO-CROSS-001
+    type: prerequisite
+    strength: strong
+    note: 地理实践是跨学科主题学习的基础
+
   # 信息科技 ↔ 数学
   - from: IT-DATA-002
     to: MATH-NUM-001
-    type: prerequisite
+    type: related
     strength: moderate
     note: 二进制与数制转换
 
@@ -102,6 +193,25 @@ edges:
     type: related
     strength: strong
     note: 生物多样性调查需要统计分析
+
+  # 数学 ↔ 地理
+  - from: MATH-STAT-001
+    to: GEO-EARTH-003
+    type: related
+    strength: strong
+    note: 气候数据统计与分析
+
+  - from: MATH-STAT-001
+    to: GEO-EARTH-006
+    type: related
+    strength: strong
+    note: 人口数据统计与分析
+
+  - from: MATH-MEAS-001
+    to: GEO-TOOL-001
+    type: related
+    strength: strong
+    note: 地图测量与比例尺计算
 
   # 艺术 ↔ 物理
   - from: ART-SOUND-001
@@ -174,3 +284,28 @@ edges:
     type: application
     strength: moderate
     note: STEAM项目整合艺术与科学
+
+  # 地理跨学科主题学习示例
+  - from: GEO-CROSS-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 探索太空主题涉及天体物理
+
+  - from: GEO-CROSS-001
+    to: ART-VISUAL-001
+    type: related
+    strength: moderate
+    note: 太空主题艺术创作
+
+  - from: GEO-CROSS-001
+    to: BIO-ECO-002
+    type: related
+    strength: strong
+    note: 应对气候变化主题涉及生态系统
+
+  - from: GEO-CROSS-001
+    to: LAB-DAILY-001
+    type: related
+    strength: moderate
+    note: 二十四节气主题涉及农业生产劳动

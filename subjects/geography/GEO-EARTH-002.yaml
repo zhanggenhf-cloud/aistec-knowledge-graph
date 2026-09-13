@@ -10,14 +10,12 @@ description: |
   能够阅读和使用不同类型的地图（政区图、地形图、气候图等）。
   理解等高线地形图的判读方法，能够识别山地、盆地、山脊、山谷等地形部位。
   了解电子地图和遥感影像在生活中的应用。
+  该知识点已整合到 GEO-TOOL-001 地理工具中，保留此文件用于兼容。
 
 prerequisites:
   - id: GEO-EARTH-001
-    name: 地球的形状与运动
+    name: 地球在宇宙中
     required: true
-  - id: MATH-MEAS-001
-    name: 测量与比例
-    required: false
 
 postrequisites:
   - id: GEO-REGION-001
@@ -66,7 +64,7 @@ verification:
   sources:
     - "义务教育地理课程标准（2022年版）"
     - "人教版初中地理七年级上册"
-  last_verified: '2024-09-13'
+  last_verified: '2026-09-13'
 
 interdisciplinary:
   - subject: 数学

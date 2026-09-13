@@ -1,0 +1,95 @@
+id: GEO-CROSS-001
+name: 地理跨学科主题学习
+name_en: Interdisciplinary Thematic Learning in Geography
+subject: 地理
+domain: 跨学科主题学习
+grade: 跨学段
+
+description: |
+  2022版地理课程标准规划不少于地理课程总课时10%的课时进行跨学科主题学习。
+  围绕真实情境，整合地理与其他学科知识，设计探究性问题、学习任务和实践活动。
+  将课堂学习与社会调查、野外考察、设计制作等实践过程相联系。
+  促进学生开展自主学习，引导学生在真实情境下综合运用不同学科的知识和方法解决实际问题。
+
+  课标提供的跨学科主题学习示例包括：
+  1. 探索太空，逐梦航天（地理、物理、历史、语文、美术）
+  2. 二十四节气与我们的生活（地理、历史、语文、生物学、劳动、美术）
+  3. 应对全球气候变化（地理、生物学、道德与法治）
+  4. 区域发展（地理、历史、道德与法治）
+  5. 美化校园（地理、数学、劳动、美术）
+
+prerequisites:
+  - id: GEO-PRAC-001
+    name: 地理实践
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科主题学习
+    definition: 围绕特定主题，整合两门及以上学科知识进行的综合学习活动
+    importance: 核心
+  - term: 真实情境
+    definition: 来自现实生活、具有真实意义和挑战性的学习情境
+    importance: 核心
+  - term: 探究性学习
+    definition: 学生围绕问题主动收集、分析和处理信息，发现知识的学习方式
+    importance: 核心
+  - term: 项目成果展示
+    definition: 以手抄报、模型、戏剧、视频、提案等形式展示学习成果
+    importance: 重要
+
+misconceptions:
+  - statement: "跨学科学习就是多学科的简单叠加"
+    correction: "跨学科学习强调学科之间的有机融合，围绕真实问题形成整体理解"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合思维与协作能力
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 组织"太空探索"科技节，整合地理、物理、历史、语文、美术等学科知识
+  - framework: 5E
+    brief: 围绕"二十四节气"主题，探究节气与自然、农业、文化、健康的关系
+  - framework: 角色扮演
+    brief: 模拟"联合国气候变化大会"，从各国代表角度讨论全球环境问题
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 天体运动与万有引力
+    relation: 原理支撑
+  - subject: 历史
+    concept: 人类探索太空的历史
+    relation: 人文关联
+  - subject: 语文
+    concept: 科普写作与科幻创作
+    relation: 表达支撑
+  - subject: 美术
+    concept: 太空主题艺术创作
+    relation: 表达支撑
+  - subject: 生物学
+    concept: 气候变化对生物的影响
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 人类命运共同体
+    relation: 价值引领
+  - subject: 劳动
+    concept: 节气与农业生产
+    relation: 应用实例
+  - subject: 数学
+    concept: 校园测量与规划
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示跨学科解决重大问题的案例

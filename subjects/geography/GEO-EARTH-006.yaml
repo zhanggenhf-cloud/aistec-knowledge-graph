@@ -1,0 +1,79 @@
+id: GEO-EARTH-006
+name: 居民与文化
+name_en: Population and Culture
+subject: 地理
+domain: 认识全球
+subdomain: 地球的表层
+grade: 初中七年级
+
+description: |
+  运用地图和相关资料，描述并简要归纳世界人口数量变化和人口空间分布特点。
+  通过阅读图像、观看视频或实地考察等，描述城镇与乡村的景观特征及其变化。
+  运用反映人种、语言、宗教、习俗等内容的图文资料，描述世界文化的丰富多彩，树立尊重世界文化多样性的意识。
+  以某发达国家和某发展中国家为例，描述不同国家发展水平的差异。
+  结合实例，说明交通运输在全球经济发展中的重要作用，以及加强国际合作的重要意义。
+
+prerequisites:
+  - id: GEO-EARTH-005
+    name: 陆地和海洋
+    required: false
+
+postrequisites:
+  - id: GEO-REGION-001
+    name: 认识世界
+
+key_concepts:
+  - term: 世界人口分布
+    definition: 人口分布不均，主要集中在北半球中低纬度的沿海平原地区
+    importance: 核心
+  - term: 城镇化
+    definition: 人口由乡村向城镇迁移，城镇人口比重上升的过程
+    importance: 重要
+  - term: 文化多样性
+    definition: 不同地区、民族在语言、宗教、习俗等方面的差异
+    importance: 重要
+  - term: 发达国家与发展中国家
+    definition: 按经济发展水平划分的国家类型
+    importance: 重要
+  - term: 国际合作
+    definition: 国家之间在经济、环境、科技等领域的协作
+    importance: 重要
+
+misconceptions:
+  - statement: "人口越多越好"
+    correction: "人口数量应与资源环境承载力相适应，过多或过少都不利于发展"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 数据分析与比较思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示世界人口分布图→Explore分析人口分布与自然环境的关系→Explain讨论人口问题
+  - framework: 项目式学习
+    brief: 选择一个国家进行"国家名片"制作，综合展示其地理、人文、经济特征
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上/下册"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 历史
+    concept: 世界文明与文化交流
+    relation: 人文关联
+  - subject: 道德与法治
+    concept: 人类命运共同体
+    relation: 价值引领
+  - subject: 数学
+    concept: 人口数据统计与分析
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 世界地理沙盘
+    relation: 直观展示世界人口分布

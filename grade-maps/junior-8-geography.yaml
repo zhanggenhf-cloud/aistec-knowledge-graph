@@ -2,37 +2,32 @@ grade: 初中八年级
 subject: 地理
 semester: 上学期
 topics:
-  - chapter: 从世界看中国
+  - chapter: 认识中国全貌
     concepts:
       - id: GEO-REGION-002
         name: 认识中国
 
-  - chapter: 中国的自然环境
+  - chapter: 地理工具
     concepts:
-      - id: GEO-EARTH-003
-        name: 天气与气候
+      - id: GEO-TOOL-001
+        name: 地理工具
 
-  - chapter: 中国的自然资源
+  - chapter: 地理实践
     concepts:
-      - id: GEO-ENV-001
-        name: 自然资源与环境保护
+      - id: GEO-PRAC-001
+        name: 地理实践
+
+  - chapter: 跨学科主题学习
+    concepts:
+      - id: GEO-CROSS-001
+        name: 地理跨学科主题学习
 
 ---
 grade: 初中八年级
 subject: 地理
 semester: 下学期
 topics:
-  - chapter: 中国的经济发展
-    concepts:
-      - id: GEO-REGION-002
-        name: 认识中国
-
-  - chapter: 中国地理差异
-    concepts:
-      - id: GEO-REGION-003
-        name: 认识家乡
-
-  - chapter: 走向世界的中国
+  - chapter: 自然资源与环境保护
     concepts:
       - id: GEO-ENV-001
         name: 自然资源与环境保护

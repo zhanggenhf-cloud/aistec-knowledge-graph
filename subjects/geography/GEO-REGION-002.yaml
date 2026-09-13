@@ -3,14 +3,21 @@ name: 认识中国
 name_en: Understanding China
 subject: 地理
 domain: 认识区域
+subdomain: 认识中国
 grade: 初中八年级
 
 description: |
-  从位置与疆域、自然环境、自然资源、经济发展等方面全面认识中国。
-  理解中国地理位置的优越性，了解行政区划和人口分布。
-  分析中国地形、气候、河流等自然环境的特征及相互关系。
-  认识中国自然资源的基本国情，树立可持续发展观念。
-  了解中国农业、工业、交通的分布特点及发展变化。
+  运用地图，描述中国的地理位置与疆域特征，说明南海诸岛是中国领土的组成部分，钓鱼岛及其附属岛屿是中国固有领土，增强国家版图意识与海洋权益意识。
+  运用中国行政区划图，识别34个省级行政区，记住它们的简称和行政中心。
+  运用地图和相关资料，简要归纳中国地形、气候、河湖等的特征；简要分析影响中国气候的主要因素。
+  运用地图和相关资料，描述长江、黄河的特点，举例说明其对经济发展和人们生活的影响。
+  运用地图和相关资料，描述中国人口的基本状况和变化，简要归纳中国的民族分布特点。
+  描述中国水资源、土地资源、矿产资源和海洋资源等自然资源的主要特征，举例说明自然资源与人们生产生活的关系。
+  借助地图和相关资料，举例描述中国农业、工业等生产活动的分布，并用实例说明科学技术在产业发展中的重要作用。
+  说明中国交通运输线的分布特征，描述中国主要的自然灾害和环境问题；针对某一自然灾害或环境问题提出合理的防治建议。
+  运用地图、图像等资料，说明秦岭—淮河等重要自然地理界线在地理分区中的意义。
+  进行野外考察或运用相关资料，说明自然环境与地方文化景观之间的关系。
+  观察、描述、解释家乡生产生活中的地理事物和现象，尝试用绿色发展理念对家乡的发展规划提出合理建议。
 
 prerequisites:
   - id: GEO-REGION-001
@@ -19,14 +26,20 @@ prerequisites:
   - id: GEO-EARTH-003
     name: 天气与气候
     required: true
+  - id: GEO-TOOL-001
+    name: 地理工具
+    required: true
 
 postrequisites:
-  - id: GEO-REGION-003
-    name: 认识家乡
+  - id: GEO-ENV-001
+    name: 自然资源与环境保护
 
 key_concepts:
   - term: 地理位置
     definition: 中国位于亚欧大陆东部、太平洋西岸，海陆兼备
+    importance: 核心
+  - term: 行政区划
+    definition: 中国划分为34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区
     importance: 核心
   - term: 地形地势
     definition: 西高东低，呈三级阶梯状分布
@@ -34,11 +47,14 @@ key_concepts:
   - term: 气候特征
     definition: 气候复杂多样，季风气候显著
     importance: 核心
+  - term: 长江黄河
+    definition: 中国第一、第二大河，对经济发展和人们生活有重要影响
+    importance: 重要
   - term: 自然资源
     definition: 总量丰富、人均不足的基本国情
     importance: 重要
-  - term: 区域经济差异
-    definition: 东部沿海发达、西部内陆相对落后的空间格局
+  - term: 秦岭—淮河线
+    definition: 中国重要的自然地理分界线，划分南北方的地理界线
     importance: 重要
 
 misconceptions:
@@ -59,13 +75,15 @@ activity_suggestions:
     brief: "设计'中国地理名片'，选取一个省级行政区进行深度调研"
   - framework: 5E
     brief: Explore对比分析不同地区的气候数据→Explain归纳中国气候分布规律
+  - framework: 角色扮演
+    brief: 模拟"区域发展论证会"，为某一区域的发展建言献策
 
 verification:
   status: verified
   sources:
     - "义务教育地理课程标准（2022年版）"
     - "人教版初中地理八年级上/下册"
-  last_verified: '2024-09-13'
+  last_verified: '2026-09-13'
 
 interdisciplinary:
   - subject: 历史
@@ -80,6 +98,9 @@ interdisciplinary:
   - subject: 道德与法治
     concept: 国家安全与领土完整
     relation: 价值引领
+  - subject: 信息科技
+    concept: 数字地图与遥感技术
+    relation: 技术应用
 
 exhibits:
   - venue: 中国科技馆

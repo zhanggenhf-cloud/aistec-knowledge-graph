@@ -3,21 +3,25 @@ name: 天气与气候
 name_en: Weather and Climate
 subject: 地理
 domain: 认识全球
+subdomain: 地球的表层
 grade: 初中七年级
 
 description: |
   区分天气与气候的概念。
-  识别常见的天气符号，能够阅读简单的天气预报图。
-  理解气温、降水的分布规律及其影响因素（纬度、海陆、地形）。
-  了解世界主要气候类型的分布、特征及成因。
+  识别常见的天气符号，能够阅读简单的天气预报图，模拟播报天气。
+  阅读世界年平均气温和1月、7月平均气温分布图，描述和简要归纳世界气温分布特点。
+  阅读世界年降水量分布图，描述和简要归纳世界降水分布特点。
+  阅读某地区气温、降水数据资料，绘制气温曲线图和降水量柱状图，说出气温与降水量随时间变化的特点。
+  阅读世界气候类型分布图，描述世界主要气候类型的分布特征；结合实例，说明纬度位置、海陆分布、地形等对气候的影响。
+  结合实例，说明天气和气候对人们生产生活的影响。
   认识人类活动对气候的影响，树立环境保护意识。
 
 prerequisites:
   - id: SCI-WEATHER-001
     name: 天气与气候（小学）
     required: true
-  - id: GEO-EARTH-001
-    name: 地球的形状与运动
+  - id: GEO-EARTH-004
+    name: 地球的运动
     required: false
 
 postrequisites:
@@ -42,6 +46,9 @@ key_concepts:
   - term: 气候类型
     definition: 根据气温和降水组合特征划分的气候分类
     importance: 重要
+  - term: 影响气候的因素
+    definition: 纬度位置、海陆分布、地形等因素对气候的影响
+    importance: 核心
 
 misconceptions:
   - statement: "天气和气候是一回事"
@@ -67,7 +74,7 @@ verification:
   sources:
     - "义务教育地理课程标准（2022年版）"
     - "人教版初中地理七年级上册"
-  last_verified: '2024-09-13'
+  last_verified: '2026-09-13'
 
 interdisciplinary:
   - subject: 物理
@@ -82,6 +89,9 @@ interdisciplinary:
   - subject: 数学
     concept: 统计图表与数据分析
     relation: 工具支撑
+  - subject: 生物
+    concept: 气候与生物多样性
+    relation: 知识衔接
 
 exhibits:
   - venue: 中国科技馆

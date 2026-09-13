@@ -1,0 +1,95 @@
+id: GEO-EARTH-004
+name: 地球的运动
+name_en: Earth's Motion
+subject: 地理
+domain: 认识全球
+subdomain: 地球的运动
+grade: 初中七年级
+
+description: |
+  运用地球仪或软件演示地球的自转和公转运动，说出方向和周期。
+  结合实例，说出地球自转产生的主要自然现象（昼夜交替、时间差异）及其对人们生产生活的影响。
+  结合实例，说出地球公转产生的主要自然现象（四季变化、昼夜长短变化、五带划分）及其对人们生产生活的影响。
+  归纳地球运动规律，树立尊重自然、顺应自然的观念。
+
+prerequisites:
+  - id: GEO-EARTH-001
+    name: 地球在宇宙中
+    required: true
+
+postrequisites:
+  - id: GEO-EARTH-002
+    name: 地图的阅读与使用
+  - id: GEO-EARTH-003
+    name: 天气与气候
+
+key_concepts:
+  - term: 地球自转
+    definition: 地球绕地轴自西向东旋转，周期约24小时
+    importance: 核心
+  - term: 地球公转
+    definition: 地球绕太阳自西向东运动，周期约365天
+    importance: 核心
+  - term: 昼夜交替
+    definition: 地球自转导致地表不同地区交替面对太阳和背对太阳
+    importance: 核心
+  - term: 时差
+    definition: 不同经度地区因地球自转产生的时间差异
+    importance: 核心
+  - term: 四季更替
+    definition: 地球公转时地轴倾斜导致太阳直射点变化，形成四季
+    importance: 核心
+  - term: 五带划分
+    definition: 根据太阳热量分布，将地球表面划分为热带、南北温带、南北寒带
+    importance: 重要
+
+misconceptions:
+  - statement: "季节变化是因为地球离太阳远近不同"
+    correction: "季节变化主要由地球公转时地轴倾斜导致太阳直射点变化引起，而非日地距离"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "昼夜交替是因为太阳绕地球转"
+    correction: "昼夜交替是因为地球自转，而非太阳绕地球运动"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象与抽象思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用地球仪演示昼夜交替→Explore观察影子变化→Explain分析自转公转原理
+  - framework: POE
+    brief: 预测不同季节太阳高度角变化，用光源和地球仪验证
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 光的直线传播与影子形成
+    relation: 原理支撑
+  - subject: 科学
+    concept: 地球在宇宙中的位置
+    relation: 前置衔接
+  - subject: 数学
+    concept: 角度与圆周运动
+    relation: 工具支撑
+  - subject: 历史
+    concept: 二十四节气与农业生产
+    relation: 人文关联
+  - subject: 劳动
+    concept: 节气与农业生产活动
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球仪与天体运行模型
+    relation: 演示地球自转公转及季节变化
+  - venue: 北京天文馆
+    name: 天象厅
+    relation: 沉浸式体验天体运动

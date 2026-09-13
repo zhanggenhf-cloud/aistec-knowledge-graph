@@ -3,45 +3,53 @@ name: 认识世界
 name_en: Understanding the World
 subject: 地理
 domain: 认识区域
+subdomain: 认识世界
 grade: 初中七年级
 
 description: |
-  认识世界海陆分布，了解七大洲、四大洋的位置和基本特征。
-  了解世界人口分布、人种、语言、宗教、聚落的基本状况。
-  了解世界不同地区的发展差异，认识国际合作的重要性。
-  初步形成全球意识和开放的国际视野。
+  运用地图和相关资料，描述某大洲的地理位置，并依据大洲地理位置特点，判断大洲所处热量带和降水的空间分布概况。
+  运用地图和相关资料，简要归纳某大洲的地形、气候、人口、经济等地理特征。
+  运用地图和相关资料，描述某地区的地理位置，简要归纳自然地理特征，说明该特征对当地人们生产生活的影响。
+  以某地区的一种自然资源为例，说出该资源在当地的分布状况、对外输出地区以及对当地乃至世界的重要意义。
+  根据南极、北极地区自然地理环境的特殊性，说明开展极地科学考察和保护极地环境的重要性。
+  运用地图和相关资料，说出某国家的地理位置、范围、领土构成和首都；描述某国家突出的自然地理特征和人文地理主要特点。
+  联系某国家的自然地理环境特点，结合实例简要分析该国因地制宜发展经济的途径。
+  初步掌握认识区域地理特征的基本方法。
 
 prerequisites:
   - id: GEO-EARTH-001
-    name: 地球的形状与运动
+    name: 地球在宇宙中
     required: true
-  - id: GEO-EARTH-002
-    name: 地图的阅读与使用
+  - id: GEO-EARTH-005
+    name: 陆地和海洋
     required: true
   - id: GEO-EARTH-003
     name: 天气与气候
-    required: false
+    required: true
+  - id: GEO-TOOL-001
+    name: 地理工具
+    required: true
 
 postrequisites:
   - id: GEO-REGION-002
     name: 认识中国
 
 key_concepts:
-  - term: 七大洲
-    definition: 亚洲、非洲、北美洲、南美洲、南极洲、欧洲、大洋洲
+  - term: 大洲
+    definition: 大陆及其附近岛屿的总称，全球分为七大洲
     importance: 核心
-  - term: 四大洋
-    definition: 太平洋、大西洋、印度洋、北冰洋
+  - term: 地区
+    definition: 按照一定标准划分的地理区域，如东南亚、中东等
     importance: 核心
-  - term: 人种与民族
-    definition: 根据体质特征划分的人群及具有共同文化特征的群体
+  - term: 国家
+    definition: 拥有主权、领土、人口的独立政治实体
+    importance: 核心
+  - term: 区域地理特征
+    definition: 一个区域在位置、地形、气候、资源、经济等方面的综合特点
+    importance: 核心
+  - term: 因地制宜
+    definition: 根据当地的自然条件和社会经济条件，合理安排生产活动
     importance: 重要
-  - term: 发达国家与发展中国家
-    definition: 按经济发展水平划分的国家类型
-    importance: 重要
-  - term: 国际合作
-    definition: 国家之间在经济、环境、科技等领域的协作
-    importance: 拓展
 
 misconceptions:
   - statement: "所有发达国家都在北半球"
@@ -58,13 +66,15 @@ activity_suggestions:
     brief: 选择一个大洲制作"环球旅行手册"，整合地理、人文、经济信息
   - framework: 5E
     brief: Engage观看世界地理纪录片→Explore绘制世界政区简图→Explain分析区域差异成因
+  - framework: 角色扮演
+    brief: 模拟"联合国气候变化大会"，从不同国家代表角度讨论全球环境问题
 
 verification:
   status: verified
   sources:
     - "义务教育地理课程标准（2022年版）"
-    - "人教版初中地理七年级上/下册"
-  last_verified: '2024-09-13'
+    - "人教版初中地理七年级下册"
+  last_verified: '2026-09-13'
 
 interdisciplinary:
   - subject: 历史
@@ -76,6 +86,9 @@ interdisciplinary:
   - subject: 生物
     concept: 生物多样性分布
     relation: 知识衔接
+  - subject: 道德与法治
+    concept: 人类命运共同体
+    relation: 价值引领
 
 exhibits:
   - venue: 中国科技馆

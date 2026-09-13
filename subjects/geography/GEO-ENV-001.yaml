@@ -2,14 +2,18 @@ id: GEO-ENV-001
 name: 自然资源与环境保护
 name_en: Natural Resources and Environmental Protection
 subject: 地理
-domain: 人地协调
+domain: 认识区域
+subdomain: 人地协调
 grade: 初中八年级
 
 description: |
   认识自然资源的类型（可再生资源与不可再生资源）及其利用。
   了解中国土地资源、水资源、能源资源的基本状况和面临的挑战。
+  描述中国主要的自然灾害和环境问题；针对某一自然灾害或环境问题提出合理的防治建议；掌握一定的气象灾害和地质灾害的安全防护技能。
   理解人类活动对地理环境的影响，认识环境问题的全球性。
+  结合实例，说明全球气候变化和碳达峰与碳中和的关系。
   树立人地协调观和可持续发展理念，培养绿色生活方式。
+  初步形成人类命运共同体意识。
 
 prerequisites:
   - id: GEO-REGION-002
@@ -34,9 +38,12 @@ key_concepts:
   - term: 可持续发展
     definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
     importance: 核心
-  - term: 碳中和
-    definition: 通过植树造林、节能减排等方式，抵消自身产生的二氧化碳排放量
-    importance: 拓展
+  - term: 碳达峰与碳中和
+    definition: 碳达峰指二氧化碳排放达到峰值后逐步下降；碳中和指通过植树造林、节能减排等方式抵消自身碳排放
+    importance: 重要
+  - term: 人类命运共同体
+    definition: 全球各国人民在共同利益基础上形成的命运共同体意识
+    importance: 重要
 
 misconceptions:
   - statement: "可再生能源完全无污染"
@@ -56,13 +63,15 @@ activity_suggestions:
     brief: 调查校园/家庭的资源消耗和碳排放，提出节能减排方案
   - framework: 5E
     brief: Engage展示环境退化案例→Explore分析资源利用数据→Explain讨论可持续发展路径
+  - framework: 角色扮演
+    brief: 模拟"联合国世界气候变化大会"，从各国代表角度拟定联合声明
 
 verification:
   status: verified
   sources:
     - "义务教育地理课程标准（2022年版）"
     - "人教版初中地理八年级上/下册"
-  last_verified: '2024-09-13'
+  last_verified: '2026-09-13'
 
 interdisciplinary:
   - subject: 科学
@@ -80,6 +89,9 @@ interdisciplinary:
   - subject: 道德与法治
     concept: 生态文明与法治保障
     relation: 价值引领
+  - subject: 信息科技
+    concept: 环境监测与数据分析
+    relation: 技术应用
 
 exhibits:
   - venue: 中国科技馆

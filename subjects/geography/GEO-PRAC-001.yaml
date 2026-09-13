@@ -1,0 +1,83 @@
+id: GEO-PRAC-001
+name: 地理实践
+name_en: Geographic Practice
+subject: 地理
+domain: 地理实践
+grade: 跨学段
+
+description: |
+  设计简单的实验方案，利用模拟、虚拟等方式开展地理实验。
+  设计简单的调查方案，利用问卷、访谈等形式进行社会调查。
+  设计简单的考察方案，利用工具进行观察、观测等野外考察。
+  地理实践贯穿全部课程内容，是地理课程的重要组成部分。
+  2022版课标规划不少于地理课程总课时10%的课时进行跨学科主题学习。
+
+prerequisites:
+  - id: GEO-TOOL-001
+    name: 地理工具
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 地理实验
+    definition: 利用模拟、虚拟等方式开展的地理科学实验
+    importance: 核心
+  - term: 社会调查
+    definition: 利用问卷、访谈等形式收集地理信息的实践活动
+    importance: 核心
+  - term: 野外考察
+    definition: 利用工具进行观察、观测的实地地理调查活动
+    importance: 核心
+  - term: 跨学科主题学习
+    definition: 围绕特定主题，整合两门及以上学科知识进行的综合学习活动
+    importance: 核心
+  - term: 地理信息技术
+    definition: 遥感、GIS、GPS等技术在地理实践中的应用
+    importance: 重要
+
+misconceptions:
+  - statement: "地理学习只需要记忆"
+    correction: "地理是实践性很强的学科，需要通过实验、调查、考察等活动主动探究"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 科学探究与问题解决
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 设计"校园环境调查"方案，综合运用测量、观察、问卷等方法
+  - framework: 5E
+    brief: Engage提出真实地理问题→Explore设计调查/实验方案→Explain分析数据→Elaborate提出解决方案
+  - framework: 角色扮演
+    brief: 模拟"联合国气候变化大会"，从各国代表角度讨论全球环境问题
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 科学探究方法
+    relation: 方法支撑
+  - subject: 数学
+    concept: 数据处理与分析
+    relation: 工具支撑
+  - subject: 信息科技
+    concept: 数据采集与可视化
+    relation: 技术应用
+  - subject: 劳动
+    concept: 动手制作与劳动实践
+    relation: 实践支撑
+  - subject: 道德与法治
+    concept: 社会责任感与公民意识
+    relation: 价值引领
+
+exhibits:
+  - venue: 各地科技馆
+    name: 地理实验室
+    relation: 提供地理实验与调查工具

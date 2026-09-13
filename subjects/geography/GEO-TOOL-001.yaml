@@ -1,0 +1,93 @@
+id: GEO-TOOL-001
+name: 地理工具
+name_en: Geographic Tools
+subject: 地理
+domain: 地理工具
+grade: 初中七年级
+
+description: |
+  观察地球仪，并用简易材料制作地球仪模型。
+  在地球仪上识别经线和纬线，说出经度和纬度的分布规律；用经纬度描述某一地理事物或现象所在地的位置。
+  在地图上辨别方向，判读经度和纬度，量算距离，识别图例所表示的地理事物或现象。
+  结合地形观察，说出等高线地形图、分层设色地形图表示地形的方法；在地形图上识别基本地形。
+  结合生活实例，描述数字地图和卫星导航系统给人们生活带来的便捷，以及数字地图在城市管理、资源调查、灾害监测等方面的应用。
+  根据需要选择适用的地图，查找所需要的地理信息，养成使用地图的习惯。
+
+prerequisites:
+  - id: GEO-EARTH-001
+    name: 地球在宇宙中
+    required: true
+
+postrequisites:
+  - id: GEO-REGION-001
+    name: 认识世界
+  - id: GEO-REGION-002
+    name: 认识中国
+
+key_concepts:
+  - term: 经纬线
+    definition: 经线连接南北两极，纬线与赤道平行，用于定位
+    importance: 核心
+  - term: 经纬度定位
+    definition: 用经度和纬度确定地球表面任意一点的位置
+    importance: 核心
+  - term: 地图三要素
+    definition: 比例尺、方向、图例和注记
+    importance: 核心
+  - term: 等高线地形图
+    definition: 把海拔相同的点连接成线，用于表示地形起伏
+    importance: 核心
+  - term: 数字地图
+    definition: 基于数字技术的地图，支持导航、搜索、分析等功能
+    importance: 重要
+  - term: 卫星导航
+    definition: 利用人造地球卫星进行定位、导航的技术
+    importance: 重要
+
+misconceptions:
+  - statement: "比例尺越大表示的范围越大"
+    correction: "比例尺越大表示的范围越小，内容越详细"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "等高线密集表示坡度缓"
+    correction: "等高线密集表示坡度陡，稀疏表示坡度缓"
+    source: 义务教育地理课程标准（2022年版）
+  - statement: "数字地图只能用来导航"
+    correction: "数字地图还可用于城市管理、资源调查、灾害监测等多种领域"
+    source: 义务教育地理课程标准（2022年版）
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间思维与符号转换
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore用橡皮泥制作地形模型并绘制等高线→Explain分析等高线与地形关系
+  - framework: 项目式学习
+    brief: 设计校园导览图，综合运用比例尺、方向、图例等要素；或使用数字地图规划出行路线
+
+verification:
+  status: verified
+  sources:
+    - "义务教育地理课程标准（2022年版）"
+    - "人教版初中地理七年级上册"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 比例与缩放
+    relation: 工具支撑
+  - subject: 信息科技
+    concept: GIS与数字地图技术
+    relation: 技术应用
+  - subject: 科学
+    concept: 地形与地貌
+    relation: 知识衔接
+  - subject: 劳动
+    concept: 地球仪模型制作
+    relation: 动手实践
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数字地球
+    relation: 展示电子地图与遥感技术
