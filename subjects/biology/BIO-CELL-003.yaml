@@ -1,29 +1,112 @@
 id: BIO-CELL-003
 name: 细胞的生活
-name_en: ''
+name_en: Life Activities of the Cell
 subject: 生物
 domain: 生命科学
 grade: 初中七年级上
-description: 细胞的生活的详细教学内容。
+description: |
+  细胞不仅是生物体结构的基本单位，也是生命活动的基本单位。细胞的生活需要物质和能量，细胞内的各种生命活动都是在细胞质的基质和细胞器中完成的。根据2022版义务教育生物学课程标准，学生需要理解细胞的生活需要物质和能量，认识细胞的生活过程，理解细胞的分裂与分化是生物体生长发育的基础。
+
+  细胞的生活包括物质运输、能量转换和信息传递等过程。细胞膜具有选择透过性，能够控制物质的进出，让细胞需要的物质进入，把细胞产生的废物排出。细胞通过呼吸作用分解有机物释放能量，供生命活动利用；植物细胞还能通过光合作用将光能转化为化学能储存在有机物中。
+
+  细胞分裂是生物体生长、发育和繁殖的基础。一个细胞分裂为两个细胞，使细胞数目增多。细胞分化是指分裂后的细胞在形态、结构和功能上发生差异性变化的过程，细胞分化的结果是形成不同的组织。学生应理解细胞分裂和分化对生物体生长发育的重要意义，建立"物质与能量观"和"结构与功能观"等生命观念。
 prerequisites:
-- id: BIO-CELL-002
-  name: ''
+- id: BIO-CELL-001
+  name: 细胞是生命活动的基本单位
   required: true
-postrequisites: []
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
+  required: true
+postrequisites:
+- id: BIO-PLANT-001
+  name: 植物的光合作用
+  required: false
+- id: BIO-PLANT-002
+  name: 植物的呼吸作用
+  required: false
 key_concepts:
 - term: 细胞的生活
-  definition: ''
+  definition: 细胞内发生的各种生命活动，包括物质运输、能量转换和信息传递
   importance: 核心
-misconceptions: []
+- term: 物质运输
+  definition: 细胞通过细胞膜控制物质进出，维持细胞内环境的相对稳定
+  importance: 核心
+- term: 能量转换
+  definition: 细胞通过光合作用或呼吸作用将一种形式的能量转化为另一种形式
+  importance: 核心
+- term: 细胞分裂
+  definition: 一个细胞分裂为两个细胞的过程，是生物体生长、发育和繁殖的基础
+  importance: 核心
+- term: 细胞分化
+  definition: 分裂后的细胞在形态、结构和功能上发生差异性变化的过程
+  importance: 核心
+- term: 组织
+  definition: 由形态相似、结构和功能相同的细胞联合在一起形成的细胞群
+  importance: 核心
+misconceptions:
+- misconception: 细胞分裂就是细胞长大
+  correction: 细胞分裂是细胞数目增多的过程，而细胞生长是细胞体积增大的过程，两者是不同的
+- misconception: 细胞分化后遗传物质会发生改变
+  correction: 细胞分化过程中遗传物质不发生改变，只是基因的选择性表达导致细胞形态和功能不同
+- misconception: 所有细胞都能进行光合作用
+  correction: 只有含有叶绿体的植物细胞才能进行光合作用，动物细胞不能进行光合作用
+- misconception: 细胞不需要能量就能维持生命活动
+  correction: 细胞的一切生命活动都需要能量，能量主要来自细胞呼吸对有机物的分解
+activity_suggestions:
+- title: 探究细胞的生活需要物质和能量
+  type: 探究实验
+  description: 通过酵母菌发酵实验，观察细胞生活需要有机物和适宜条件
+  duration: 50分钟
+  materials:
+  - 酵母菌
+  - 葡萄糖溶液
+  - 温水
+  - 气球
+  - 锥形瓶
+- title: 观察细胞分裂
+  type: 观察实验
+  description: 观察洋葱根尖细胞有丝分裂永久装片，认识细胞分裂的不同时期
+  duration: 40分钟
+  materials:
+  - 显微镜
+  - 洋葱根尖细胞分裂永久装片
+- title: 细胞分化与组织形成
+  type: 模型建构
+  description: 利用黏土或卡片模拟细胞分裂和分化过程，理解组织形成的过程
+  duration: 35分钟
+  materials:
+  - 彩色黏土
+  - 白纸
+  - 彩色笔
+- title: 比较不同组织的细胞
+  type: 观察活动
+  description: 观察人体上皮组织、肌肉组织、神经组织的永久装片，比较细胞形态差异
+  duration: 40分钟
+  materials:
+  - 显微镜
+  - 人体组织永久装片
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 能量转换涉及能量的形式与守恒
+- subject: 化学
+  connection: 细胞内的物质变化涉及化学反应；有机物的氧化分解
+- subject: 数学
+  connection: 细胞分裂的指数增长规律
+- subject: 地理
+  connection: 生态系统中的能量流动以细胞代谢为基础
+exhibits:
+- name: 细胞分裂动态模型
+  location: 中国科技馆
+  relevance: 动态展示细胞有丝分裂的完整过程
+- name: 人体组织切片
+  location: 上海自然博物馆
+  relevance: 展示不同组织的细胞形态差异

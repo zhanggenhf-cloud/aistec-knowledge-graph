@@ -1,26 +1,116 @@
 id: BIO-MICRO-001
 name: 微生物
-name_en: ''
+name_en: Microorganisms
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级上
-description: 微生物的详细教学内容。
-prerequisites: []
-postrequisites: []
+description: |
+  微生物是一类形体微小、结构简单的生物，主要包括细菌、真菌和病毒等。根据2022版义务教育生物学课程标准，学生需要认识微生物的主要类群，了解细菌、真菌和病毒的结构特点、生活方式和与人类的关系，理解微生物在自然界物质循环中的重要作用。
+
+  细菌是单细胞原核生物，个体微小，结构简单，没有成形的细胞核，靠分裂生殖繁殖后代。细菌在自然界中分布广泛，有些细菌对人类有益，如乳酸菌用于制作酸奶，醋酸菌用于酿醋；有些细菌会引起疾病，如结核杆菌引起结核病。真菌有单细胞的（如酵母菌），也有多细胞的（如霉菌、蘑菇），具有成形的细胞核，靠孢子繁殖。酵母菌可用于发酵制作面包和酿酒，青霉菌可产生青霉素。
+
+  病毒没有细胞结构，仅由蛋白质外壳和内部的遗传物质组成，必须寄生在活细胞内才能生活和繁殖。病毒对人类既有害又有益，如流感病毒引起流感，但某些病毒可用于基因治疗或制作疫苗。学生应认识到微生物与人类生活密切相关，在食品制作、医药生产和环境治理等方面发挥重要作用，同时也要了解微生物引起的疾病及其预防措施，形成正确的卫生观念。
+prerequisites:
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
+  required: true
+- id: BIO-DIV-001
+  name: 生物的分类
+  required: false
+postrequisites:
+- id: BIO-MICRO-002
+  name: 传染病与免疫
+  required: false
 key_concepts:
 - term: 微生物
-  definition: ''
+  definition: 形体微小、结构简单的生物，包括细菌、真菌、病毒等
   importance: 核心
-misconceptions: []
+- term: 细菌
+  definition: 单细胞原核生物，没有成形的细胞核，靠分裂生殖繁殖
+  importance: 核心
+- term: 真菌
+  definition: 具有成形细胞核的真核生物，有单细胞和多细胞类型，靠孢子繁殖
+  importance: 核心
+- term: 病毒
+  definition: 没有细胞结构，由蛋白质外壳和内部遗传物质组成，必须寄生在活细胞内才能繁殖
+  importance: 核心
+- term: 孢子
+  definition: 真菌和某些植物产生的生殖细胞，在适宜条件下能发育成新个体
+  importance: 重要
+- term: 寄生
+  definition: 一种生物生活在另一种生物体内或体表，从中获取营养并对宿主造成损害的生活方式
+  importance: 重要
+- term: 腐生
+  definition: 从已死亡的动植物遗体或有机物中获取营养的生活方式
+  importance: 重要
+misconceptions:
+- misconception: 所有微生物都对人体有害
+  correction: 许多微生物对人类有益，如乳酸菌、酵母菌等用于食品制作，肠道益生菌有助于消化
+- misconception: 病毒是细胞的一种
+  correction: 病毒没有细胞结构，不属于细胞生物，必须寄生在活细胞内才能繁殖
+- misconception: 细菌和真菌是同一种生物
+  correction: 细菌是原核生物，没有成形细胞核；真菌是真核生物，有成形细胞核
+- misconception: 抗生素可以杀死病毒
+  correction: 抗生素只能杀死或抑制细菌，对病毒无效。病毒感染需要使用抗病毒药物或疫苗预防
+activity_suggestions:
+- title: 观察酵母菌和霉菌
+  type: 观察实验
+  description: 在显微镜下观察酵母菌和霉菌的形态结构，比较两者的差异
+  duration: 40分钟
+  materials:
+  - 显微镜
+  - 酵母菌培养液
+  - 霉菌培养物
+  - 载玻片、盖玻片
+- title: 探究细菌分布
+  type: 探究实验
+  description: 采集不同环境（空气、桌面、手、口腔等）的样本，培养后比较细菌菌落的数量和形态
+  duration: 3天（含培养时间）
+  materials:
+  - 培养基平板
+  - 无菌棉签
+  - 恒温箱
+  - 记号笔
+- title: 制作发酵食品
+  type: 实践活动
+  description: 利用酵母菌制作馒头或面包，观察发酵过程中面团的变化
+  duration: 90分钟
+  materials:
+  - 面粉
+  - 酵母粉
+  - 温水
+  - 糖
+  - 容器
+- title: 调查微生物与人类生活的关系
+  type: 调查活动
+  description: 调查生活中利用微生物制作的食品、药品和微生物引起的疾病案例
+  duration: 45分钟
+  materials:
+  - 调查问卷
+  - 记录本
+  - 网络资源
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 微生物的代谢过程涉及有机物分解和发酵反应
+- subject: 物理
+  connection: 显微镜的使用与光学原理
+- subject: 道德与法治
+  connection: 食品安全与公共卫生法规
+- subject: 劳动教育
+  connection: 传统发酵食品的制作工艺
+exhibits:
+- name: 微观世界
+  location: 中国科技馆
+  relevance: 展示微生物的形态和与人类的关系
+- name: 微生物实验室
+  location: 上海科技馆
+  relevance: 通过互动展项了解微生物的培养和应用

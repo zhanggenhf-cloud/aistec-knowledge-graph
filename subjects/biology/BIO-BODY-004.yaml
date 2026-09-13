@@ -1,29 +1,141 @@
 id: BIO-BODY-004
 name: 人体内物质的运输
-name_en: ''
+name_en: Transport of Substances in the Human Body
 subject: 生物
 domain: 生命科学
 grade: 初中七年级下
-description: 人体内物质的运输的详细教学内容。
+description: |
+  人体内物质的运输主要依靠循环系统完成。循环系统由血液、血管和心脏组成，负责将消化系统吸收的营养物质、呼吸系统获得的氧气运输到全身各处的组织细胞，同时将细胞产生的二氧化碳等废物运走。根据2022版义务教育生物学课程标准，学生需要理解血液循环系统的组成和功能，了解血液的组成和各成分的功能，认识三种血管的结构特点和功能，理解血液循环的途径和意义。
+
+  血液由血浆和血细胞组成。血浆的主要功能是运载血细胞、运输营养物质和废物。血细胞包括红细胞、白细胞和血小板。红细胞含有血红蛋白，主要功能是运输氧气；白细胞能吞噬病菌，具有防御和保护作用；血小板有止血和加速凝血的作用。学生应通过观察人血永久涂片，认识三种血细胞的形态特点。
+
+  血管分为动脉、静脉和毛细血管三种。动脉将血液从心脏输送到全身，管壁厚、弹性大；静脉将血液从全身送回心脏，管壁较薄、弹性小，内有静脉瓣；毛细血管连通最小动脉和最小静脉，管壁极薄、管腔极小，是物质交换的场所。心脏是血液循环的动力器官，由心肌构成，有四个腔室：左心房、左心室、右心房、右心室。血液循环包括体循环和肺循环两条途径，两条循环途径在心脏处汇合，同时进行，组成完整的循环系统。
 prerequisites:
-- id: BIO-BODY-003
-  name: ''
+- id: BIO-BODY-002
+  name: 人体的营养
   required: true
-postrequisites: []
+- id: BIO-BODY-003
+  name: 人体的呼吸
+  required: true
+postrequisites:
+- id: BIO-NERVE-001
+  name: 神经系统
+  required: false
+- id: BIO-ENDO-001
+  name: 内分泌系统
+  required: false
 key_concepts:
-- term: 人体内物质的运输
-  definition: ''
+- term: 血液循环系统
+  definition: 由血液、血管和心脏组成，负责体内物质运输的系统
   importance: 核心
-misconceptions: []
+- term: 血液
+  definition: 由血浆和血细胞组成的结缔组织，具有运输、防御、调节体温等功能
+  importance: 核心
+- term: 血浆
+  definition: 血液中的液体成分，主要功能是运载血细胞、运输营养物质和废物
+  importance: 核心
+- term: 红细胞
+  definition: 含有血红蛋白的血细胞，主要功能是运输氧气
+  importance: 核心
+- term: 白细胞
+  definition: 能吞噬病菌、具有防御和保护作用的血细胞
+  importance: 核心
+- term: 血小板
+  definition: 具有止血和加速凝血作用的血细胞碎片
+  importance: 核心
+- term: 动脉
+  definition: 将血液从心脏输送到全身各处的血管，管壁厚、弹性大
+  importance: 核心
+- term: 静脉
+  definition: 将血液从全身各处送回心脏的血管，管壁较薄、内有静脉瓣
+  importance: 核心
+- term: 毛细血管
+  definition: 连通最小动脉和最小静脉的血管，管壁极薄，是物质交换的场所
+  importance: 核心
+- term: 心脏
+  definition: 由心肌构成的中空器官，是血液循环的动力器官
+  importance: 核心
+- term: 体循环
+  definition: 血液从左心室出发，流经全身各处，回到右心房的循环途径
+  importance: 核心
+- term: 肺循环
+  definition: 血液从右心室出发，流经肺部，回到左心房的循环途径
+  importance: 核心
+misconceptions:
+- misconception: 动脉里流的都是动脉血，静脉里流的都是静脉血
+  correction: 肺动脉中流的是静脉血，肺静脉中流的是动脉血，不能简单以血管名称判断血液类型
+- misconception: 心脏是被动跳动的
+  correction: 心脏由心肌构成，能自动节律性收缩舒张，是自主跳动的
+- misconception: 献血会损害身体健康
+  correction: 健康成年人每次献血200-400毫升不会影响健康，适量献血还能促进血液新陈代谢
+- misconception: 白细胞越多越好
+  correction: 白细胞数量异常增多通常提示体内有炎症或感染，并非越多越好
+activity_suggestions:
+- title: 观察人血永久涂片
+  type: 观察实验
+  description: 在显微镜下观察人血涂片，识别红细胞、白细胞和血小板，比较形态和数量差异
+  duration: 40分钟
+  materials:
+  - 显微镜
+  - 人血永久涂片
+- title: 观察小鱼尾鳍内血液流动
+  type: 观察实验
+  description: 用显微镜观察小鱼尾鳍内不同血管的血液流动情况，区分动脉、静脉和毛细血管
+  duration: 35分钟
+  materials:
+  - 显微镜
+  - 小鱼
+  - 湿棉絮
+  - 培养皿
+- title: 观察哺乳动物心脏结构
+  type: 观察实验
+  description: 解剖猪心或羊心，观察心脏的四个腔室、瓣膜和连接的大血管
+  duration: 50分钟
+  materials:
+  - 猪心或羊心
+  - 解剖剪
+  - 解剖刀
+  - 镊子
+  - 托盘
+- title: 模拟血型鉴定
+  type: 模拟实验
+  description: 用模拟血清和血样进行ABO血型鉴定，了解输血原则和血型遗传
+  duration: 40分钟
+  materials:
+  - 模拟血清A、B
+  - 模拟血样
+  - 载玻片
+  - 牙签
+- title: 绘制血液循环路线图
+  type: 模型建构
+  description: 绘制体循环和肺循环路线图，标注血液成分变化，理解两条循环途径的联系
+  duration: 35分钟
+  materials:
+  - 白纸
+  - 彩色笔
+  - 教材
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 血压与压强概念；心脏做功与能量转化
+- subject: 化学
+  connection: 血红蛋白与氧气的结合和分离；血液pH调节
+- subject: 体育与健康
+  connection: 运动对心血管系统的影响；健康生活方式
+- subject: 道德与法治
+  connection: 无偿献血制度与法律规定
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示心脏结构和血液循环过程
+- name: 血液循环模拟
+  location: 上海科技馆
+  relevance: 通过动态模型展示体循环和肺循环

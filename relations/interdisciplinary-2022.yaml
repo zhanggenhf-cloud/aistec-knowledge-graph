@@ -418,3 +418,198 @@ edges:
     type: prerequisite
     strength: strong
     note: 近代世界格局是现代世界发展的基础
+
+  # 生物 ↔ 化学
+  - from: BIO-CELL-003
+    to: CHEM-REACT-001
+    type: related
+    strength: strong
+    note: 细胞内的化学反应与新陈代谢
+
+  - from: BIO-PLANT-001
+    to: CHEM-REACT-001
+    type: related
+    strength: strong
+    note: 光合作用涉及复杂的化学反应
+
+  - from: BIO-MICRO-001
+    to: CHEM-MAT-001
+    type: related
+    strength: moderate
+    note: 微生物代谢与物质多样性
+
+  # 生物 ↔ 物理
+  - from: BIO-CELL-002
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 显微镜的光学原理
+
+  - from: BIO-PLANT-001
+    to: PHYS-ENERGY-001
+    type: related
+    strength: strong
+    note: 光合作用中的能量转化
+
+  - from: BIO-BODY-003
+    to: PHYS-ENERGY-001
+    type: related
+    strength: moderate
+    note: 呼吸作用中的能量转换
+
+  # 生物 ↔ 地理
+  - from: BIO-ECO-002
+    to: GEO-ENV-001
+    type: related
+    strength: strong
+    note: 生态系统与环境保护
+
+  - from: BIO-DIV-002
+    to: GEO-EARTH-006
+    type: related
+    strength: moderate
+    note: 生物多样性与人类活动
+
+  # 生物 ↔ 信息科技
+  - from: BIO-CELL-001
+    to: IT-AI-001
+    type: related
+    strength: moderate
+    note: 人工智能在生物图像识别中的应用
+
+  - from: BIO-DIV-001
+    to: IT-DATA-001
+    type: related
+    strength: moderate
+    note: 生物信息学与数据处理
+
+  # 生物 ↔ 历史
+  - from: BIO-EVO-001
+    to: HIS-ANC-001
+    type: related
+    strength: strong
+    note: 生物进化理论与人类起源
+
+  - from: BIO-MICRO-002
+    to: HIS-WLD-003
+    type: related
+    strength: moderate
+    note: 传染病与公共卫生史
+
+  # 生物 ↔ 艺术
+  - from: BIO-PLANT-003
+    to: ART-VISUAL-001
+    type: related
+    strength: moderate
+    note: 植物形态与美术创作
+
+  # 生物 ↔ 劳动
+  - from: BIO-PLANT-001
+    to: LAB-DAILY-001
+    type: related
+    strength: strong
+    note: 植物栽培与农业生产劳动
+
+  - from: BIO-MICRO-001
+    to: LAB-DAILY-001
+    type: related
+    strength: strong
+    note: 发酵食品制作中的微生物应用
+
+  # 生物 ↔ 综合实践活动
+  - from: BIO-CROSS-001
+    to: COMP-PROJ-001
+    type: application
+    strength: strong
+    note: 生物学跨学科实践与项目式学习整合
+
+  # 生物内部关系
+  - from: BIO-CELL-001
+    to: BIO-CELL-002
+    type: prerequisite
+    strength: strong
+    note: 认识细胞基本单位是理解细胞结构的基础
+
+  - from: BIO-CELL-002
+    to: BIO-CELL-003
+    type: prerequisite
+    strength: strong
+    note: 理解细胞结构是认识细胞功能的基础
+
+  - from: BIO-CELL-002
+    to: BIO-PLANT-003
+    type: prerequisite
+    strength: strong
+    note: 细胞结构是理解植物结构层次的基础
+
+  - from: BIO-PLANT-003
+    to: BIO-PLANT-001
+    type: prerequisite
+    strength: strong
+    note: 植物结构层次是理解光合作用的基础
+
+  - from: BIO-PLANT-001
+    to: BIO-PLANT-002
+    type: prerequisite
+    strength: strong
+    note: 光合作用与呼吸作用是植物代谢的核心
+
+  - from: BIO-CELL-002
+    to: BIO-BODY-002
+    type: prerequisite
+    strength: strong
+    note: 细胞结构是理解人体营养吸收的基础
+
+  - from: BIO-BODY-002
+    to: BIO-BODY-003
+    type: prerequisite
+    strength: strong
+    note: 营养与呼吸是能量代谢的连续过程
+
+  - from: BIO-BODY-003
+    to: BIO-BODY-004
+    type: prerequisite
+    strength: strong
+    note: 呼吸与物质运输是气体交换的连续过程
+
+  - from: BIO-BODY-004
+    to: BIO-NERVE-001
+    type: prerequisite
+    strength: moderate
+    note: 物质运输支持神经系统的功能
+
+  - from: BIO-NERVE-001
+    to: BIO-ENDO-001
+    type: prerequisite
+    strength: moderate
+    note: 神经系统与内分泌系统共同调节生命活动
+
+  - from: BIO-BODY-004
+    to: BIO-MICRO-002
+    type: prerequisite
+    strength: moderate
+    note: 循环系统与免疫系统密切相关
+
+  - from: BIO-DIV-001
+    to: BIO-DIV-002
+    type: prerequisite
+    strength: strong
+    note: 生物分类是认识生物多样性的基础
+
+  - from: BIO-DIV-002
+    to: BIO-ECO-002
+    type: prerequisite
+    strength: strong
+    note: 生物多样性是生态系统功能的基础
+
+  - from: BIO-REPRO-001
+    to: BIO-REPRO-002
+    type: prerequisite
+    strength: strong
+    note: 生殖是遗传的基础
+
+  - from: BIO-REPRO-002
+    to: BIO-EVO-001
+    type: prerequisite
+    strength: strong
+    note: 遗传变异是生物进化的基础

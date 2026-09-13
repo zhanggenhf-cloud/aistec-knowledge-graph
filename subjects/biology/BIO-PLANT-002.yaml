@@ -1,29 +1,113 @@
 id: BIO-PLANT-002
 name: 植物的呼吸作用
-name_en: ''
+name_en: Respiration in Plants
 subject: 生物
 domain: 生命科学
 grade: 初中七年级上
-description: 植物的呼吸作用的详细教学内容。
+description: |
+  呼吸作用是生物的共同特征，是细胞内的有机物在氧的参与下被分解成二氧化碳和水，同时释放出能量的过程。根据2022版义务教育生物学课程标准，学生需要理解呼吸作用的概念和意义，认识呼吸作用与光合作用的区别和联系，了解呼吸作用在生物生命活动中的重要作用。
+
+  呼吸作用主要在细胞的线粒体中进行。有机物（如葡萄糖）在氧的参与下被分解，生成二氧化碳和水，同时释放出能量供生命活动利用。呼吸作用的实质是分解有机物、释放能量。无论有光还是无光，活的细胞都在进行呼吸作用。光合作用只在含有叶绿体的细胞中进行，而呼吸作用在所有活细胞中都能进行。
+
+  学生应通过实验验证植物的呼吸作用消耗氧气、产生二氧化碳，理解呼吸作用与光合作用的相互关系。光合作用制造有机物、储存能量，呼吸作用分解有机物、释放能量，两者相互依存、相互对立，共同维持植物的生命活动。通过学习，学生应深化"物质与能量观"，认识到光合作用和呼吸作用是生物圈中物质循环和能量流动的重要环节，理解植物在维持碳-氧平衡中的双重作用。
 prerequisites:
 - id: BIO-PLANT-001
-  name: ''
+  name: 植物的光合作用
   required: true
-postrequisites: []
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
+  required: true
+postrequisites:
+- id: BIO-ECO-002
+  name: 生态系统
+  required: false
 key_concepts:
-- term: 植物的呼吸作用
-  definition: ''
+- term: 呼吸作用
+  definition: 细胞内的有机物在氧的参与下被分解成二氧化碳和水，同时释放出能量的过程
   importance: 核心
-misconceptions: []
+- term: 线粒体
+  definition: 细胞进行呼吸作用的主要场所，被称为"细胞的动力车间"
+  importance: 核心
+- term: 有机物氧化分解
+  definition: 呼吸作用中有机物被逐步分解的过程，释放其中储存的化学能
+  importance: 核心
+- term: 有氧呼吸
+  definition: 有机物在氧的参与下被彻底分解，释放大量能量的呼吸方式
+  importance: 核心
+- term: 无氧呼吸
+  definition: 有机物在无氧条件下被不彻底分解，释放少量能量的呼吸方式
+  importance: 重要
+- term: 光合作用与呼吸作用的联系
+  definition: 光合作用制造的有机物和氧气是呼吸作用的原料，呼吸作用产生的二氧化碳是光合作用的原料
+  importance: 核心
+misconceptions:
+- misconception: 植物只进行光合作用，不进行呼吸作用
+  correction: 植物和其他生物一样，活细胞时刻都在进行呼吸作用，无论白天黑夜
+- misconception: 呼吸作用只在夜间进行
+  correction: 呼吸作用在所有活细胞中时刻进行，与光照无关
+- misconception: 光合作用释放能量，呼吸作用储存能量
+  correction: 恰恰相反，光合作用储存能量，呼吸作用释放能量
+- misconception: 呼吸作用就是呼吸运动
+  correction: 呼吸运动是肺与外界进行气体交换的过程，呼吸作用是细胞内分解有机物释放能量的过程，两者不同
+activity_suggestions:
+- title: 探究植物的呼吸作用产生二氧化碳
+  type: 探究实验
+  description: 将萌发的种子放入密闭容器中，用澄清石灰水检验产生的气体
+  duration: 45分钟
+  materials:
+  - 萌发的种子
+  - 澄清石灰水
+  - 广口瓶
+  - 橡皮塞
+  - 导管
+- title: 探究植物的呼吸作用消耗氧气
+  type: 探究实验
+  description: 将萌发的种子放入密闭的广口瓶中，观察燃烧的蜡烛放入后熄灭的现象
+  duration: 40分钟
+  materials:
+  - 萌发的种子
+  - 广口瓶
+  - 燃烧的蜡烛
+  - 火柴
+- title: 比较光合作用与呼吸作用
+  type: 对比分析
+  description: 列表比较光合作用与呼吸作用的场所、条件、原料、产物和能量变化
+  duration: 30分钟
+  materials:
+  - 白纸
+  - 彩色笔
+  - 教材
+- title: 探究温度对呼吸作用的影响
+  type: 探究实验
+  description: 将等量萌发种子分别置于不同温度环境中，比较呼吸作用的强度差异
+  duration: 60分钟
+  materials:
+  - 萌发的种子
+  - 温度计
+  - 保温装置
+  - 澄清石灰水
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 有机物氧化分解涉及化学反应方程式；二氧化碳的检验方法
+- subject: 物理
+  connection: 能量转化与守恒定律在呼吸作用中的体现
+- subject: 数学
+  connection: 呼吸作用速率的数据记录和曲线绘制
+- subject: 地理
+  connection: 不同气候条件下植物呼吸作用的差异
+exhibits:
+- name: 植物生理过程展示
+  location: 中国科技馆
+  relevance: 动态展示植物光合作用和呼吸作用的过程
+- name: 微观生命
+  location: 上海科技馆
+  relevance: 展示细胞内线粒体的结构和呼吸作用机制

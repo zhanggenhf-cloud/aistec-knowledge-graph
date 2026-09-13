@@ -1,29 +1,117 @@
 id: BIO-REPRO-001
 name: 生物的生殖
-name_en: ''
+name_en: Biological Reproduction
 subject: 生物
 domain: 生命科学
 grade: 初中八年级下
-description: 生物的生殖的详细教学内容。
+description: |
+  生殖是生物产生后代、延续种族的重要生命活动。根据2022版义务教育生物学课程标准，学生需要了解生物的有性生殖和无性生殖方式，认识植物的生殖方式，理解昆虫和两栖动物、鸟类的生殖和发育过程，了解人类生殖系统的基本结构和功能，形成正确的生殖健康观念。
+
+  生物的生殖方式分为有性生殖和无性生殖两大类。有性生殖是指由亲体产生生殖细胞，两性生殖细胞结合形成受精卵，由受精卵发育成新个体的生殖方式，后代具有双亲的遗传特性，变异较大。无性生殖是指不经过两性生殖细胞的结合，由母体直接产生新个体的生殖方式，后代只具有母体的遗传特性，变异较小。植物的无性生殖方式包括扦插、嫁接、压条和组织培养等。
+
+  昆虫的生殖方式为有性生殖、卵生，发育过程分为完全变态发育（经历卵、幼虫、蛹、成虫四个时期，如蝴蝶、蜜蜂）和不完全变态发育（经历卵、若虫、成虫三个时期，如蝗虫、蟋蟀）。两栖动物的生殖和发育离不开水，为体外受精、变态发育。鸟类的生殖方式为有性生殖、卵生，具有筑巢、求偶、交配、产卵、孵卵和育雏等复杂行为。学生应通过学习认识到生殖对生物种族延续的重要意义，了解人类的生殖过程，形成珍爱生命、尊重生命的态度责任意识。
 prerequisites:
-- id: SCI-LIFE-003
-  name: ''
+- id: BIO-CELL-003
+  name: 细胞的生活
   required: true
-postrequisites: []
+- id: BIO-IMMUN-001
+  name: 免疫
+  required: false
+postrequisites:
+- id: BIO-REPRO-002
+  name: 生物的遗传与变异
+  required: true
 key_concepts:
-- term: 生物的生殖
-  definition: ''
+- term: 有性生殖
+  definition: 由两性生殖细胞结合形成受精卵，再由受精卵发育成新个体的生殖方式
   importance: 核心
-misconceptions: []
+- term: 无性生殖
+  definition: 不经过两性生殖细胞的结合，由母体直接产生新个体的生殖方式
+  importance: 核心
+- term: 受精卵
+  definition: 精子和卵细胞结合形成的细胞，是新生命发育的起点
+  importance: 核心
+- term: 变态发育
+  definition: 动物在胚后发育过程中，形态结构和生活习性发生显著变化的发育方式
+  importance: 核心
+- term: 完全变态发育
+  definition: 昆虫发育经历卵、幼虫、蛹、成虫四个时期的变态发育方式
+  importance: 核心
+- term: 不完全变态发育
+  definition: 昆虫发育经历卵、若虫、成虫三个时期的变态发育方式
+  importance: 核心
+- term: 扦插
+  definition: 剪取植物的茎、叶、根等，插入土中或水中，使其生根发芽长成新植株的无性繁殖方法
+  importance: 重要
+- term: 嫁接
+  definition: 把一种植物的枝或芽接在另一种植物的茎或根上，使两者长成一个完整植株的无性繁殖方法
+  importance: 重要
+misconceptions:
+- misconception: 无性生殖产生的后代一定比有性生殖差
+  correction: 无性生殖能快速繁殖并保持母体优良性状，在农业和园艺上有重要应用价值
+- misconception: 所有昆虫都经历完全变态发育
+  correction: 昆虫的发育分为完全变态和不完全变态两种类型，并非所有昆虫都有蛹期
+- misconception: 试管婴儿是在试管中长大的
+  correction: 试管婴儿是指体外受精后在实验室培养早期胚胎，再移植回母体子宫发育，并非在试管中长大
+- misconception: 植物只能进行无性生殖
+  correction: 大多数植物既能进行有性生殖（开花结果产生种子），也能进行无性生殖（扦插、嫁接等）
+activity_suggestions:
+- title: 观察昆虫的变态发育
+  type: 观察活动
+  description: 观察家蚕或蝴蝶的完全变态发育标本，或蝗虫的不完全变态发育标本
+  duration: 30分钟
+  materials:
+  - 昆虫发育标本
+  - 放大镜
+  - 图片资料
+- title: 植物的扦插繁殖
+  type: 实践活动
+  description: 选择适宜的植物枝条进行扦插，观察生根和发芽过程
+  duration: 2周（长期观察）
+  materials:
+  - 扦插枝条
+  - 花盆
+  - 培养土
+  - 水壶
+- title: 观察鸟卵的结构
+  type: 观察实验
+  description: 观察鸡蛋的结构，认识卵壳、卵壳膜、卵白、卵黄、胚盘等结构
+  duration: 30分钟
+  materials:
+  - 新鲜鸡蛋
+  - 培养皿
+  - 镊子
+  - 放大镜
+- title: 分析有性生殖和无性生殖的优缺点
+  type: 讨论活动
+  description: 小组讨论有性生殖和无性生殖在生物进化、农业生产和日常生活中的优缺点
+  duration: 30分钟
+  materials:
+  - 白纸
+  - 彩色笔
+  - 案例资料
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 生殖细胞的化学成分；胚胎发育中的生化变化
+- subject: 道德与法治
+  connection: 生殖健康权利；未成年人保护法
+- subject: 劳动教育
+  connection: 植物扦插和嫁接的农业技术
+- subject: 美术
+  connection: 生物绘图中对生殖结构的观察和描绘
+exhibits:
+- name: 生命奥秘
+  location: 中国科技馆
+  relevance: 展示生物生殖和发育的过程
+- name: 昆虫世界
+  location: 上海自然博物馆
+  relevance: 展示昆虫变态发育的完整过程

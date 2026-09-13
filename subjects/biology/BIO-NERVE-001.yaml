@@ -1,29 +1,123 @@
 id: BIO-NERVE-001
 name: 神经系统
-name_en: ''
+name_en: Nervous System
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中七年级下
-description: 神经系统的详细教学内容。
+description: |
+  神经系统是人体内起主导作用的调节系统，它通过反射活动快速、准确地调节人体各器官系统的活动，使人体成为一个协调统一的整体。根据2022版义务教育生物学课程标准，学生需要理解神经系统的组成和功能，认识神经调节的基本方式——反射，了解反射弧的结构，理解简单反射和复杂反射的区别，形成保护神经系统健康的意识。
+
+  神经系统由中枢神经系统和周围神经系统两部分组成。中枢神经系统包括脑和脊髓，周围神经系统包括脑神经和脊神经。脑位于颅腔内，包括大脑、小脑和脑干三部分。大脑皮层是调节人体生理活动的最高级中枢，具有感觉、运动、语言等多种神经中枢；小脑主要协调运动，维持身体平衡；脑干有调节心跳、呼吸、血压等基本生命活动的中枢。脊髓能完成一些简单的反射活动，同时也是脑与躯干、内脏之间的联系通路。
+
+  神经调节的基本方式是反射。反射是指在神经系统的参与下，人体对内外环境刺激所作出的有规律反应。完成反射的结构基础是反射弧，包括感受器、传入神经、神经中枢、传出神经和效应器五个部分，任何一个环节受损，反射都不能完成。反射分为简单反射（生来就有，如膝跳反射、缩手反射）和复杂反射（后天形成，如望梅止渴、谈虎色变）。学生应通过学习认识到神经系统对人体生命活动的调节作用，了解保证充足睡眠、科学用脑等保护神经系统的方法。
 prerequisites:
 - id: BIO-BODY-004
-  name: ''
+  name: 人体内物质的运输
+  required: false
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-ENDO-001
+  name: 内分泌系统
+  required: false
+- id: BIO-ANIMAL-001
+  name: 动物的运动
+  required: false
 key_concepts:
 - term: 神经系统
-  definition: ''
+  definition: 由脑、脊髓和它们发出的神经组成，是人体内起主导作用的调节系统
   importance: 核心
-misconceptions: []
+- term: 中枢神经系统
+  definition: 由脑和脊髓组成，是神经系统的核心部分
+  importance: 核心
+- term: 周围神经系统
+  definition: 由脑神经和脊神经组成，负责中枢神经系统与身体各部分之间的信息传递
+  importance: 核心
+- term: 神经元
+  definition: 神经系统结构和功能的基本单位，由细胞体和突起组成
+  importance: 核心
+- term: 反射
+  definition: 在神经系统的参与下，人体对内外环境刺激所作出的有规律反应
+  importance: 核心
+- term: 反射弧
+  definition: 完成反射的结构基础，包括感受器、传入神经、神经中枢、传出神经和效应器
+  importance: 核心
+- term: 简单反射
+  definition: 生来就有的、由大脑皮层以下的神经中枢参与即可完成的反射
+  importance: 核心
+- term: 复杂反射
+  definition: 在生活过程中通过学习和经验逐渐形成的、需要大脑皮层参与的反射
+  importance: 核心
+misconceptions:
+- misconception: 反射就是反应
+  correction: 反射必须通过神经系统完成，有完整的反射弧参与；而反应可以是任何生物对外界刺激的应答，不一定需要神经系统
+- misconception: 反射弧可以缺少某个环节
+  correction: 反射弧的五个环节缺一不可，任何一个环节受损，反射都不能完成
+- misconception: 简单反射低级无用，复杂反射高级有用
+  correction: 简单反射和复杂反射对人体都有重要意义，简单反射使人体能快速应对危险，是生存的基础
+- misconception: 脑干受损不会影响高级神经活动
+  correction: 脑干受损会危及生命，因为脑干中有调节心跳、呼吸等基本生命活动的中枢
+activity_suggestions:
+- title: 观察膝跳反射
+  type: 探究实验
+  description: 两人合作，一人坐姿放松，另一人用橡皮锤轻叩膝盖下方韧带，观察小腿反应
+  duration: 20分钟
+  materials:
+  - 橡皮锤
+  - 椅子
+- title: 探究反射弧的完整性
+  type: 探究实验
+  description: 用麻醉剂分别处理手指皮肤（感受器）和手臂不同部位，测试缩手反射是否发生
+  duration: 40分钟
+  materials:
+  - 麻醉剂
+  - 牙签
+  - 记录表
+- title: 分析复杂反射的形成
+  type: 资料分析
+  description: 分析"望梅止渴""谈虎色变"等实例，讨论复杂反射与简单反射的区别和联系
+  duration: 30分钟
+  materials:
+  - 案例资料
+  - 白纸
+  - 彩色笔
+- title: 测定反应速度
+  type: 实践活动
+  description: 用直尺自由落体法测定个人反应速度，比较不同人的差异并分析影响因素
+  duration: 30分钟
+  materials:
+  - 直尺
+  - 记录表
+- title: 脑的模型认识
+  type: 观察活动
+  description: 观察脑的结构模型或图片，识别大脑、小脑和脑干，了解各部分功能
+  duration: 25分钟
+  materials:
+  - 脑模型
+  - 图片资料
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 神经冲动的传导涉及电信号；反应速度测定涉及自由落体运动
+- subject: 信息技术
+  connection: 神经网络的原理与人工智能
+- subject: 体育与健康
+  connection: 运动技能的神经调节；脑保健与科学用脑
+- subject: 道德与法治
+  connection: 交通安全与神经反应速度
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示神经系统的结构和反射活动原理
+- name: 大脑探索
+  location: 上海科技馆
+  relevance: 通过互动展项了解大脑各区域的功能

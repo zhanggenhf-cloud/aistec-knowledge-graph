@@ -1,29 +1,122 @@
 id: BIO-REPRO-002
 name: 生物的遗传与变异
-name_en: ''
+name_en: Heredity and Variation
 subject: 生物
 domain: 生命科学
 grade: 初中八年级下
-description: 生物的遗传与变异的详细教学内容。
+description: |
+  遗传和变异是生物界普遍存在的生命现象，是生物进化的基础。根据2022版义务教育生物学课程标准，学生需要理解生物的性状、基因、DNA和染色体之间的关系，了解基因在亲子代之间传递的过程，认识生物的变异现象，理解遗传和变异在生物进化中的意义。
+
+  生物体的形态特征、生理特性和行为方式统称为性状。生物的性状由基因控制，基因是有遗传效应的DNA片段。DNA是主要的遗传物质，主要存在于细胞核中，与蛋白质结合形成染色体。在生物的体细胞中，染色体是成对存在的，基因也是成对存在的。在形成生殖细胞时，成对的染色体分开，每对染色体中的一条进入精子或卵细胞，基因也随着染色体的分离而进入不同的生殖细胞。
+
+  生物的变异是指亲子间和子代个体间的差异。变异分为可遗传的变异（由遗传物质改变引起，能遗传给后代）和不可遗传的变异（仅由环境因素引起，遗传物质没有改变，不能遗传给后代）。基因控制生物的性状，但性状的表现也受环境的影响。学生应通过分析亲子代性状的关系，理解基因的传递规律，认识到遗传和变异是生物界普遍存在的现象，是生物进化和育种工作的基础。
 prerequisites:
 - id: BIO-REPRO-001
-  name: ''
+  name: 生物的生殖
   required: true
-postrequisites: []
+- id: BIO-CELL-003
+  name: 细胞的生活
+  required: true
+postrequisites:
+- id: BIO-EVO-001
+  name: 生物的进化
+  required: true
 key_concepts:
-- term: 生物的遗传与变异
-  definition: ''
+- term: 遗传
+  definition: 亲子间的相似性，即生物性状由亲代传给子代的现象
   importance: 核心
-misconceptions: []
+- term: 变异
+  definition: 亲子间和子代个体间的差异
+  importance: 核心
+- term: 性状
+  definition: 生物体形态结构、生理和行为等特征的统称
+  importance: 核心
+- term: 基因
+  definition: 有遗传效应的DNA片段，是控制生物性状的基本遗传单位
+  importance: 核心
+- term: DNA
+  definition: 脱氧核糖核酸，是主要的遗传物质，携带遗传信息
+  importance: 核心
+- term: 染色体
+  definition: 细胞核中由DNA和蛋白质组成的结构，是遗传物质的主要载体
+  importance: 核心
+- term: 显性基因
+  definition: 控制显性性状的基因，用大写字母表示
+  importance: 核心
+- term: 隐性基因
+  definition: 控制隐性性状的基因，用小写字母表示
+  importance: 核心
+- term: 可遗传的变异
+  definition: 由遗传物质发生改变而引起的变异，能够遗传给后代
+  importance: 核心
+- term: 不可遗传的变异
+  definition: 单纯由环境因素引起的、遗传物质没有发生改变的变异，不能遗传给后代
+  importance: 核心
+misconceptions:
+- misconception: 性状相同，基因组成一定相同
+  correction: 显性性状的个体可能是纯合体（AA）或杂合体（Aa），基因组成不一定相同
+- misconception: 变异都是有害的
+  correction: 变异是不定向的，有的有利，有的有害，有的中性。可遗传的有利变异是生物进化的原材料
+- misconception: 基因只存在于生殖细胞中
+  correction: 基因存在于所有有细胞核的细胞中，生殖细胞中的基因是成单存在的
+- misconception: 环境引起的变异都能遗传
+  correction: 只有遗传物质发生改变引起的变异才能遗传，单纯环境因素引起的变异不能遗传
+activity_suggestions:
+- title: 调查自己和家人的性状
+  type: 调查活动
+  description: 调查自己和父母的眼睑、耳垂、卷舌等性状，分析亲子间的遗传关系
+  duration: 30分钟
+  materials:
+  - 性状调查表
+  - 镜子
+- title: 模拟基因在亲子代间的传递
+  type: 模拟实验
+  description: 用不同颜色的小球模拟基因，通过随机抽取模拟生殖过程中基因的分离和组合
+  duration: 35分钟
+  materials:
+  - 不透明袋子
+  - 两种颜色的小球
+  - 记录表
+- title: 分析人类常见遗传病
+  type: 资料分析
+  description: 收集资料，了解色盲、血友病等常见遗传病的遗传方式和预防措施
+  duration: 40分钟
+  materials:
+  - 网络资源
+  - 遗传系谱图
+  - 记录纸
+- title: 探究环境对生物性状的影响
+  type: 探究实验
+  description: 用同一品种的种子在不同光照或温度条件下培养，观察植株高度等性状的差异
+  duration: 2周
+  materials:
+  - 同品种种子
+  - 花盆
+  - 培养土
+  - 温度计
+  - 遮光材料
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 逻辑思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: DNA的化学组成和结构；遗传信息的分子基础
+- subject: 数学
+  connection: 遗传概率的计算
+- subject: 道德与法治
+  connection: 禁止近亲结婚的法律规定；遗传病患者的权益保护
+- subject: 信息技术
+  connection: 基因测序技术和生物信息学
+exhibits:
+- name: 生命奥秘
+  location: 中国科技馆
+  relevance: 展示DNA双螺旋结构和遗传信息的传递
+- name: 基因世界
+  location: 上海科技馆
+  relevance: 通过互动展项了解基因与性状的关系

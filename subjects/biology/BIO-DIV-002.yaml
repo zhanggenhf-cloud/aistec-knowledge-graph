@@ -1,29 +1,117 @@
 id: BIO-DIV-002
 name: 生物的多样性
-name_en: ''
+name_en: Biological Diversity
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级上
-description: 生物的多样性的详细教学内容。
+description: |
+  生物多样性是地球生命经过几十亿年发展进化的结果，是人类赖以生存和持续发展的物质基础。根据2022版义务教育生物学课程标准，学生需要认识生物多样性的三个层次：生物种类的多样性、基因的多样性和生态系统的多样性，了解我国生物多样性的丰富性和独特性，以及保护生物多样性的重要意义。
+
+  生物种类的多样性指一定区域内生物种类（包括动物、植物、微生物）的丰富程度。基因的多样性是指物种的种内个体或种群间的基因变化，不同物种之间基因组成差别很大，同种生物之间基因也有差异。生态系统的多样性是指生物群落及其生态过程的多样性，以及生态系统的环境差异和生态过程变化的多样性。
+
+  学生应了解生物多样性与人类生活的密切关系，认识到生物多样性的价值包括直接使用价值、间接使用价值和潜在使用价值。同时，学生应关注生物多样性面临的威胁及其原因，如栖息地丧失、过度开发利用、环境污染和外来物种入侵等，理解保护生物多样性的主要措施，包括就地保护（建立自然保护区）、迁地保护、建立种质库和加强法制教育与管理等，形成保护生物多样性的态度责任意识。
 prerequisites:
 - id: BIO-DIV-001
-  name: ''
-  required: true
-postrequisites: []
+  name: 生物的分类
+  required: false
+- id: BIO-ECO-002
+  name: 生态系统
+  required: false
+postrequisites:
+- id: BIO-EVO-001
+  name: 生物的进化
+  required: false
 key_concepts:
-- term: 生物的多样性
-  definition: ''
+- term: 生物多样性
+  definition: 生物及其生存环境的多样性，包括生物种类多样性、基因多样性和生态系统多样性三个层次
   importance: 核心
-misconceptions: []
+- term: 生物种类的多样性
+  definition: 一定区域内生物种类的丰富程度
+  importance: 核心
+- term: 基因的多样性
+  definition: 物种的种内个体或种群间的基因变化，是生物多样性的内在形式
+  importance: 核心
+- term: 生态系统的多样性
+  definition: 生物群落及其生态过程的多样性，以及生态系统类型的多样性
+  importance: 核心
+- term: 自然保护区
+  definition: 对有代表性的自然生态系统、珍稀濒危野生动植物物种的天然集中分布区进行保护的特定陆地或水域
+  importance: 核心
+- term: 就地保护
+  definition: 在原地对被保护的生态系统或物种建立自然保护区，是保护生物多样性最有效的措施
+  importance: 核心
+- term: 迁地保护
+  definition: 将濒危物种迁出原地，移入动物园、植物园、水族馆和濒危动物繁育中心等进行特殊的保护
+  importance: 重要
+misconceptions:
+- misconception: 生物多样性就是指生物种类多
+  correction: 生物多样性包括三个层次：生物种类的多样性、基因的多样性和生态系统的多样性
+- misconception: 保护生物多样性就是禁止开发利用
+  correction: 保护生物多样性是合理开发和可持续利用，而非完全禁止利用
+- misconception: 生物多样性对人类没什么直接用处
+  correction: 生物多样性为人类提供食物、药物、工业原料等直接价值，还有调节气候、净化环境等间接价值
+- misconception: 建立动物园就是就地保护
+  correction: 动物园属于迁地保护，就地保护是在生物的原生环境中建立自然保护区进行保护
+activity_suggestions:
+- title: 调查校园或社区的生物多样性
+  type: 调查活动
+  description: 小组合作调查校园或附近社区内的植物、动物种类，制作物种名录
+  duration: 90分钟
+  materials:
+  - 记录本
+  - 相机
+  - 放大镜
+  - 物种图鉴
+- title: 生物多样性与人类生活的关系
+  type: 资料分析
+  description: 收集资料，分析生物多样性在食物、药物、工业原料、环境调节等方面的价值
+  duration: 45分钟
+  materials:
+  - 网络资源
+  - 报刊资料
+  - 记录表
+- title: 生物多样性面临的威胁讨论
+  type: 讨论活动
+  description: 结合案例讨论生物多样性面临的主要威胁及其原因，提出保护建议
+  duration: 40分钟
+  materials:
+  - 案例资料
+  - 白板
+  - 马克笔
+- title: 设计保护生物多样性的宣传海报
+  type: 实践活动
+  description: 以小组为单位设计保护生物多样性的宣传海报，在校内展示
+  duration: 60分钟
+  materials:
+  - A3纸
+  - 彩色笔
+  - 图片资料
+  - 胶水
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 地理
+  connection: 不同地理区域的生态系统类型与生物多样性分布
+- subject: 化学
+  connection: 生物多样性与药物开发、天然化合物
+- subject: 道德与法治
+  connection: 环境保护法律法规与生物多样性保护
+- subject: 语文
+  connection: 保护生物多样性的宣传文案写作
+exhibits:
+- name: 生物多样性展厅
+  location: 中国科技馆
+  relevance: 展示我国生物多样性的丰富性和保护成就
+- name: 生命长河
+  location: 上海自然博物馆
+  relevance: 展示各类生物标本，体现生物多样性
+- name: 濒危动物展区
+  location: 各地自然博物馆
+  relevance: 展示濒危物种及其保护现状

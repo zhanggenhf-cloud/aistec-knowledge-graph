@@ -1,29 +1,112 @@
 id: BIO-IMMUN-001
 name: 免疫
-name_en: ''
+name_en: Immunity
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级下
-description: 免疫的详细教学内容。
+description: |
+  免疫是人体的一种生理功能，人体依靠这种功能识别"自己"和"非己"成分，从而破坏和排斥进入体内的抗原物质，以及人体本身所产生的损伤细胞和肿瘤细胞等，以维持人体的健康。根据2022版义务教育生物学课程标准，学生需要理解免疫的概念，认识人体的三道防线，了解特异性免疫和非特异性免疫的区别，理解计划免疫的意义，形成关注健康、预防疾病的意识。
+
+  人体的第一道防线由皮肤和黏膜组成，能阻挡大多数病原体侵入人体，其分泌物（如胃酸、溶菌酶）还有杀菌作用。第二道防线由体液中的杀菌物质（如溶菌酶）和吞噬细胞组成，能溶解、吞噬和消灭侵入人体的病原体。这两道防线是人类在进化过程中逐步建立起来的天然防御屏障，不针对某一种特定的病原体，而是对多种病原体都有防御作用，称为非特异性免疫（先天性免疫）。
+
+  第三道防线主要由免疫器官（如胸腺、脾脏、淋巴结）和免疫细胞（如淋巴细胞）组成。当病原体侵入人体后，刺激淋巴细胞产生抗体，抗体能与相应的抗原特异性结合，从而促进吞噬细胞的吞噬作用或使病原体失去致病性。这种免疫是出生后逐渐建立起来的，只针对某一特定的病原体或异物起作用，称为特异性免疫（后天性免疫）。学生应认识到免疫对人体健康的保护作用，同时也要了解免疫功能异常时可能引起过敏、自身免疫病等问题，关注免疫相关的科学研究进展。
 prerequisites:
-- id: BIO-BODY-003
-  name: ''
+- id: BIO-BODY-004
+  name: 人体内物质的运输
   required: true
-postrequisites: []
+- id: BIO-MICRO-002
+  name: 传染病与免疫
+  required: false
+postrequisites:
+- id: BIO-REPRO-001
+  name: 生物的生殖
+  required: false
 key_concepts:
 - term: 免疫
-  definition: ''
+  definition: 人体识别"自己"和"非己"成分，从而破坏和排斥抗原物质的生理功能
   importance: 核心
-misconceptions: []
+- term: 非特异性免疫
+  definition: 人生来就有的，不针对某一种特定病原体，对多种病原体都有防御作用的免疫
+  importance: 核心
+- term: 特异性免疫
+  definition: 出生后逐渐建立起来的，只针对某一特定病原体或异物起作用的免疫
+  importance: 核心
+- term: 抗体
+  definition: 病原体侵入人体后，刺激淋巴细胞产生的一种能与相应抗原特异性结合的特殊蛋白质
+  importance: 核心
+- term: 抗原
+  definition: 能引起人体产生抗体的物质，如病原体、异物、异体器官、疫苗等
+  importance: 核心
+- term: 淋巴细胞
+  definition: 免疫细胞的一种，受抗原刺激后能产生抗体，在特异性免疫中起关键作用
+  importance: 核心
+- term: 免疫器官
+  definition: 实现免疫功能的主要器官，包括胸腺、脾脏、淋巴结等
+  importance: 核心
+- term: 计划免疫
+  definition: 按照科学的免疫程序，有计划地对儿童进行预防接种，以达到预防、控制和消灭相应传染病的目的
+  importance: 核心
+misconceptions:
+- misconception: 免疫越强越好
+  correction: 免疫功能过强会引起过敏反应，免疫功能异常还可能攻击自身组织，免疫需要平衡
+- misconception: 抗体可以永久存在
+  correction: 不同抗体在体内存留时间不同，有些可持续多年，有些仅能存留数周或数月
+- misconception: 免疫就是不会生病
+  correction: 免疫是相对的，当病原体数量多、毒力强或人体免疫力下降时，仍可能患病
+- misconception: 打了疫苗就绝对不会得病
+  correction: 疫苗接种后并非100%免疫，但能显著降低发病风险和重症率
+activity_suggestions:
+- title: 比较非特异性免疫和特异性免疫
+  type: 对比分析
+  description: 列表比较非特异性免疫和特异性免疫的特点，理解两者的区别和联系
+  duration: 25分钟
+  materials:
+  - 白纸
+  - 彩色笔
+- title: 模拟抗原抗体反应
+  type: 模拟实验
+  description: 用不同形状的积木模拟抗原和抗体，理解特异性结合的原理
+  duration: 20分钟
+  materials:
+  - 不同形状的积木
+  - 白纸
+- title: 调查疫苗接种史
+  type: 调查活动
+  description: 调查自己和家人的疫苗接种情况，了解计划免疫的种类和重要性
+  duration: 30分钟
+  materials:
+  - 预防接种证
+  - 记录表
+- title: 分析免疫相关疾病案例
+  type: 资料分析
+  description: 分析过敏、艾滋病等免疫相关疾病的案例，理解免疫功能异常的影响
+  duration: 40分钟
+  materials:
+  - 病例资料
+  - 网络资源
+  - 记录纸
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 抗体的蛋白质本质和抗原抗体反应的化学原理
+- subject: 道德与法治
+  connection: 疫苗管理法；传染病防治中的公民责任
+- subject: 体育与健康
+  connection: 健康生活方式与增强免疫力
+- subject: 历史
+  connection: 疫苗发展史（如琴纳发明牛痘疫苗）
+exhibits:
+- name: 健康生活展厅
+  location: 中国科技馆
+  relevance: 展示人体免疫系统的工作原理
+- name: 微观世界
+  location: 上海科技馆
+  relevance: 展示免疫细胞与病原体的相互作用

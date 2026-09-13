@@ -1,29 +1,118 @@
 id: BIO-BODY-003
 name: 人体的呼吸
-name_en: ''
+name_en: Human Respiration
 subject: 生物
 domain: 生命科学
 grade: 初中七年级下
-description: 人体的呼吸的详细教学内容。
+description: |
+  人体的呼吸包括肺与外界的气体交换（肺通气）、肺泡与血液之间的气体交换、气体在血液中的运输以及血液与组织细胞之间的气体交换四个连续过程。根据2022版义务教育生物学课程标准，学生需要理解呼吸系统的组成和功能，认识呼吸运动与气体交换的原理，了解呼吸作用在细胞中的进行过程，形成呼吸系统保健意识。
+
+  呼吸系统由呼吸道和肺组成。呼吸道包括鼻、咽、喉、气管和支气管，是气体进出肺的通道，对吸入的气体有清洁、温暖和湿润的作用。肺是呼吸系统的主要器官，是气体交换的场所。肺由大量肺泡构成，肺泡外包绕着丰富的毛细血管，肺泡壁和毛细血管壁都很薄，仅由一层上皮细胞构成，这些结构特点有利于气体交换。
+
+  呼吸运动由呼吸肌（主要是膈肌和肋间肌）的收缩和舒张引起。吸气时，膈肌收缩、膈顶下降，肋间肌收缩、肋骨上升外展，胸廓容积增大，肺内气压降低，外界气体进入肺；呼气时相反。学生应通过模拟实验理解呼吸运动的原理，认识到吸烟和空气污染对呼吸系统的危害，养成保护呼吸系统的良好习惯。
 prerequisites:
 - id: BIO-BODY-002
-  name: ''
+  name: 人体的营养
+  required: false
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-BODY-004
+  name: 人体内物质的运输
+  required: false
+- id: BIO-ANIMAL-001
+  name: 动物的运动
+  required: false
 key_concepts:
-- term: 人体的呼吸
-  definition: ''
+- term: 呼吸系统
+  definition: 由呼吸道和肺组成，负责气体交换的系统
   importance: 核心
-misconceptions: []
+- term: 呼吸道
+  definition: 气体进出肺的通道，包括鼻、咽、喉、气管和支气管，对吸入气体有清洁、温暖和湿润作用
+  importance: 核心
+- term: 肺
+  definition: 呼吸系统的主要器官，是气体交换的场所
+  importance: 核心
+- term: 肺泡
+  definition: 肺的基本结构和功能单位，是气体交换的主要部位
+  importance: 核心
+- term: 呼吸运动
+  definition: 由呼吸肌收缩和舒张引起的胸廓节律性扩大和缩小的运动
+  importance: 核心
+- term: 气体交换
+  definition: 肺泡与血液之间、血液与组织细胞之间氧气和二氧化碳的交换过程
+  importance: 核心
+- term: 呼吸作用
+  definition: 细胞内的有机物在氧的参与下被分解，释放能量的过程
+  importance: 核心
+misconceptions:
+- misconception: 呼吸就是呼吸运动
+  correction: 呼吸运动只是肺通气过程，呼吸包括肺通气、气体交换和气体运输等多个过程
+- misconception: 吸入的气体全是氧气，呼出的气体全是二氧化碳
+  correction: 吸入的空气主要是氮气和氧气，呼出的气体中氧气仍占约16%，二氧化碳只占约4%
+- misconception: 痰是在肺里形成的
+  correction: 痰是在气管和支气管黏膜上形成的，通过纤毛摆动送到咽部咳出
+- misconception: 胸围越大肺活量就越大
+  correction: 肺活量取决于肺的扩张能力和呼吸肌的力量，与胸围没有必然的直接关系
+activity_suggestions:
+- title: 模拟呼吸运动
+  type: 模型建构
+  description: 利用气球、塑料瓶等材料制作呼吸运动模型，模拟膈肌运动与肺通气过程
+  duration: 35分钟
+  materials:
+  - 塑料瓶
+  - 气球
+  - 橡皮膜
+  - 胶带
+  - 剪刀
+- title: 比较吸入和呼出气体成分
+  type: 探究实验
+  description: 用澄清石灰水检验呼出气体中二氧化碳的含量，与空气对比
+  duration: 30分钟
+  materials:
+  - 澄清石灰水
+  - 吸管
+  - 试管
+  - 量筒
+- title: 测量肺活量
+  type: 实践活动
+  description: 使用肺活量计测量个人肺活量，比较不同人的数据并分析影响因素
+  duration: 30分钟
+  materials:
+  - 肺活量计
+  - 记录表
+- title: 调查吸烟对呼吸系统的危害
+  type: 调查活动
+  description: 收集资料，了解吸烟对呼吸系统的危害，制作宣传材料
+  duration: 45分钟
+  materials:
+  - 网络资源
+  - 图片资料
+  - 白纸
+  - 彩色笔
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 气体压强与体积的关系（玻意耳定律）在呼吸运动中的体现
+- subject: 化学
+  connection: 氧气和二氧化碳的化学性质；气体检验方法
+- subject: 体育与健康
+  connection: 体育锻炼与肺活量、呼吸功能的关系
+- subject: 道德与法治
+  connection: 公共场所禁烟法规与公民健康权利
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示人体呼吸系统的结构和呼吸运动原理
+- name: 健康生活展厅
+  location: 上海科技馆
+  relevance: 通过互动展项了解呼吸系统保健知识

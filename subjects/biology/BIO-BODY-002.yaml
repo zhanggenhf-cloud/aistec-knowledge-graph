@@ -1,29 +1,123 @@
 id: BIO-BODY-002
 name: 人体的营养
-name_en: ''
+name_en: Human Nutrition
 subject: 生物
 domain: 生命科学
 grade: 初中七年级下
-description: 人体的营养的详细教学内容。
+description: |
+  人体的营养是指人体从外界摄取食物，经过消化吸收，获得维持生命活动所需营养物质的过程。根据2022版义务教育生物学课程标准，学生需要了解人体需要的主要营养物质及其作用，认识消化系统的组成和功能，理解食物消化和营养物质的吸收过程，形成合理营养与食品安全的意识。
+
+  人体需要的主要营养物质包括糖类、脂肪、蛋白质、水、无机盐和维生素六大类。糖类是主要的能源物质，脂肪是重要的储能物质，蛋白质是构成细胞的基本物质，也能提供能量。水是细胞的主要成分，无机盐在人体内含量虽少但作用重要，维生素对人体正常生长发育有调节作用。学生应通过实验鉴定食物中的主要营养成分，如用碘液检验淀粉、用双缩脲试剂检验蛋白质等。
+
+  消化系统由消化道和消化腺组成。消化道包括口腔、咽、食道、胃、小肠、大肠和肛门，消化腺包括唾液腺、胃腺、肠腺、胰腺和肝脏。食物的消化从口腔开始，在胃和小肠中继续，最终在小肠内被彻底消化。小肠是消化和吸收的主要场所，其内壁有环形皱襞和小肠绒毛，大大增加了消化和吸收的面积。学生应通过学习认识到合理膳食和食品安全对健康的重要性，形成健康的生活方式。
 prerequisites:
-- id: BIO-CELL-003
-  name: ''
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-BODY-003
+  name: 人体的呼吸
+  required: false
+- id: BIO-BODY-004
+  name: 人体内物质的运输
+  required: false
 key_concepts:
-- term: 人体的营养
-  definition: ''
+- term: 营养物质
+  definition: 食物中能够被人体消化吸收并利用的化学成分，包括糖类、脂肪、蛋白质、水、无机盐和维生素
   importance: 核心
-misconceptions: []
+- term: 糖类
+  definition: 人体主要的能源物质，包括淀粉、葡萄糖等
+  importance: 核心
+- term: 蛋白质
+  definition: 构成细胞的基本物质，也能为人体提供能量
+  importance: 核心
+- term: 脂肪
+  definition: 人体内重要的储能物质，也参与细胞膜构成
+  importance: 核心
+- term: 维生素
+  definition: 人体需要量很少但对正常生长发育有重要调节作用的有机物
+  importance: 核心
+- term: 消化系统
+  definition: 由消化道和消化腺组成，负责食物的消化和营养物质的吸收
+  importance: 核心
+- term: 消化
+  definition: 食物在消化道内被分解成可吸收的小分子物质的过程
+  importance: 核心
+- term: 吸收
+  definition: 消化后的小分子营养物质通过消化道壁进入循环系统的过程
+  importance: 核心
+- term: 合理营养
+  definition: 全面而平衡的营养，即摄取的营养素种类齐全、数量充足、比例适当
+  importance: 核心
+misconceptions:
+- misconception: 脂肪对人体有害，应该完全不吃
+  correction: 脂肪是人体必需的储能物质，还参与细胞膜构成和维生素吸收，应适量摄入而非完全避免
+- misconception: 维生素吃得越多越好
+  correction: 维生素摄入过量也会对人体造成危害，应遵循合理膳食原则，不盲目补充
+- misconception: 胃是消化和吸收的主要场所
+  correction: 胃主要进行蛋白质的初步消化，小肠才是消化和吸收的主要场所
+- misconception: 只有蔬菜水果才有营养
+  correction: 人体需要多种营养物质，不同食物提供不同营养素，应均衡膳食
+activity_suggestions:
+- title: 鉴定食物中的营养成分
+  type: 探究实验
+  description: 用碘液检验淀粉、用双缩脲试剂检验蛋白质、用苏丹III检验脂肪
+  duration: 50分钟
+  materials:
+  - 碘液
+  - 双缩脲试剂
+  - 苏丹III染液
+  - 各种食物样本
+  - 试管
+  - 酒精灯
+- title: 观察鸡小肠的结构
+  type: 观察实验
+  description: 观察鸡小肠的内表面，认识环形皱襞和小肠绒毛，理解其与吸收功能相适应的结构特点
+  duration: 35分钟
+  materials:
+  - 鸡小肠
+  - 解剖剪
+  - 放大镜
+  - 清水
+- title: 设计一份营养午餐食谱
+  type: 实践活动
+  description: 根据中国居民膳食指南，小组合作设计一份营养均衡的午餐食谱
+  duration: 45分钟
+  materials:
+  - 膳食指南资料
+  - 食物营养成分表
+  - 白纸
+  - 彩色笔
+- title: 调查当地食品安全问题
+  type: 调查活动
+  description: 调查身边的食品安全问题，分析原因并提出改进建议
+  duration: 60分钟
+  materials:
+  - 调查问卷
+  - 记录本
+  - 网络资源
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 营养物质的化学成分和检验方法
+- subject: 道德与法治
+  connection: 食品安全法律法规
+- subject: 体育与健康
+  connection: 合理膳食与运动健康
+- subject: 劳动教育
+  connection: 食物的选择与烹饪
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示人体消化系统的结构和功能
+- name: 健康生活展厅
+  location: 上海科技馆
+  relevance: 通过互动展项了解营养与健康的关系

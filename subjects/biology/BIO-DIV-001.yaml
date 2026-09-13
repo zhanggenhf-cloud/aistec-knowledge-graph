@@ -1,26 +1,112 @@
 id: BIO-DIV-001
 name: 生物的分类
-name_en: ''
+name_en: Biological Classification
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级上
-description: 生物的分类的详细教学内容。
-prerequisites: []
-postrequisites: []
+description: |
+  生物分类是根据生物的相似程度把生物划分为不同的等级，并对每一类群的形态结构和生理功能等特征进行科学的描述。根据2022版义务教育生物学课程标准，学生需要尝试根据生物的某些特征对生物进行分类，认识生物分类的等级和单位，了解生物分类的意义。
+
+  生物分类的基本单位是种，分类等级从高到低依次为：界、门、纲、目、科、属、种。分类等级越高，包含的生物种类越多，生物间的共同特征越少；分类等级越低，包含的生物种类越少，生物间的共同特征越多。分类的主要依据是生物的形态结构、生理功能以及亲缘关系等。
+
+  学生应学会使用检索表对常见生物进行简单的分类，理解生物分类对认识和保护生物多样性的重要意义。通过分类活动，学生可以认识到生物之间的亲缘关系和进化关系，了解人类在生物分类学发展史上的贡献，如林奈创立了双名法，为现代生物分类学奠定了基础。同时，学生应认识到分类学知识是动态的，随着科学研究的深入，生物的分类地位和系统关系也在不断修正和完善。
+prerequisites:
+- id: SCI-LIFE-001
+  name: 生物的基本特征
+  required: true
+- id: BIO-DIV-002
+  name: 生物的多样性
+  required: false
+postrequisites:
+- id: BIO-DIV-002
+  name: 生物的多样性
+  required: false
+- id: BIO-EVO-001
+  name: 生物的进化
+  required: false
 key_concepts:
-- term: 生物的分类
-  definition: ''
+- term: 生物分类
+  definition: 根据生物的相似程度把生物划分为不同等级的科学方法
   importance: 核心
-misconceptions: []
+- term: 分类单位
+  definition: 生物分类的等级，从高到低依次为界、门、纲、目、科、属、种
+  importance: 核心
+- term: 种
+  definition: 生物分类的基本单位，指形态结构和生理功能表现相似、生态分布基本相同的一群生物
+  importance: 核心
+- term: 双名法
+  definition: 由林奈创立的生物命名法，每个物种的学名由属名和种加词组成
+  importance: 重要
+- term: 检索表
+  definition: 根据生物之间的相似和差异编制成的分类工具，用于鉴定生物种类
+  importance: 重要
+- term: 亲缘关系
+  definition: 生物之间在进化上的远近关系，分类等级越近，亲缘关系越近
+  importance: 重要
+misconceptions:
+- misconception: 分类单位越大，生物间的共同特征越多
+  correction: 分类单位越大，包含的生物种类越多，生物间的共同特征越少；分类单位越小，共同特征越多
+- misconception: 同一种生物在不同地方叫不同名字就是不同种
+  correction: 同一种生物可以有多个俗名，但只有一个学名。学名由拉丁文书写，全世界统一
+- misconception: 生物分类只是按照外形来分
+  correction: 生物分类不仅依据形态结构，还依据生理功能、内部构造、遗传物质、发育过程和生态分布等多方面特征
+- misconception: 生物的分类地位是固定不变的
+  correction: 随着科学研究的深入，尤其是分子生物学的发展，许多生物的分类地位在不断调整
+activity_suggestions:
+- title: 尝试对常见生物进行分类
+  type: 探究活动
+  description: 根据教师提供的各种生物图片或标本，尝试按照不同标准对它们进行分类
+  duration: 40分钟
+  materials:
+  - 各种生物图片或标本
+  - 分类记录表
+  - 彩色笔
+- title: 制作生物分类检索表
+  type: 模型建构
+  description: 以校园内常见植物或动物为对象，小组合作编制简单的二歧分类检索表
+  duration: 50分钟
+  materials:
+  - 校园生物调查资料
+  - 白纸
+  - 直尺
+  - 铅笔
+- title: 认识双名法
+  type: 资料分析
+  description: 查阅资料，了解林奈和双名法，认识一些常见生物的学名
+  duration: 30分钟
+  materials:
+  - 生物图鉴
+  - 网络资源
+  - 记录本
+- title: 生物分类等级游戏
+  type: 互动游戏
+  description: 通过卡片游戏，将不同生物归入正确的分类等级，加深对分类系统的理解
+  duration: 30分钟
+  materials:
+  - 生物分类卡片
+  - 分类等级标牌
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 逻辑思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 历史
+  connection: 林奈等分类学家的科学贡献与科学史
+- subject: 数学
+  connection: 分类的层级结构、集合与包含关系
+- subject: 信息技术
+  connection: 生物信息学数据库与物种检索系统
+- subject: 地理
+  connection: 不同地理区域的生物类群分布差异
+exhibits:
+- name: 生物多样性与进化展厅
+  location: 中国科技馆
+  relevance: 展示生物分类系统和进化树
+- name: 生命长河
+  location: 上海自然博物馆
+  relevance: 按进化关系展示各类生物标本

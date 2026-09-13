@@ -1,29 +1,130 @@
 id: BIO-MICRO-002
 name: 传染病与免疫
-name_en: ''
+name_en: Infectious Diseases and Immunity
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级下
-description: 传染病与免疫的详细教学内容。
+description: |
+  传染病是由病原体引起的，能在人与人之间或人与动物之间传播的疾病。根据2022版义务教育生物学课程标准，学生需要了解传染病的病因、传播途径和预防措施，理解人体的三道防线和免疫的概念，认识计划免疫的意义，形成预防传染病和保护健康的意识。
+
+  传染病流行的三个基本环节是传染源、传播途径和易感人群。传染源是指能够散播病原体的人或动物；传播途径是指病原体离开传染源到达健康人所经过的途径，如空气传播、饮食传播、生物媒介传播等；易感人群是指对某种传染病缺乏免疫力而容易感染的人群。预防传染病的措施包括控制传染源、切断传播途径和保护易感人群三个方面。
+
+  人体有三道防线抵御病原体的侵袭。第一道防线是皮肤和黏膜，能阻挡病原体侵入人体，分泌物有杀菌作用；第二道防线是体液中的杀菌物质和吞噬细胞，能溶解、吞噬和消灭病原体。这两道防线是人生来就有的，对多种病原体都有防御作用，属于非特异性免疫。第三道防线由免疫器官和免疫细胞组成，能产生抗体、针对特定病原体起作用，属于特异性免疫。学生应了解计划免疫是根据某些传染病的发生规律，有计划地对儿童进行预防接种，是预防传染病最经济有效的措施。
 prerequisites:
 - id: BIO-MICRO-001
-  name: ''
+  name: 微生物
   required: true
-postrequisites: []
+- id: BIO-BODY-004
+  name: 人体内物质的运输
+  required: false
+postrequisites:
+- id: BIO-IMMUN-001
+  name: 免疫
+  required: false
 key_concepts:
-- term: 传染病与免疫
-  definition: ''
+- term: 传染病
+  definition: 由病原体引起的，能在人与人之间或人与动物之间传播的疾病
   importance: 核心
-misconceptions: []
+- term: 病原体
+  definition: 引起传染病的细菌、病毒、寄生虫等生物
+  importance: 核心
+- term: 传染源
+  definition: 能够散播病原体的人或动物
+  importance: 核心
+- term: 传播途径
+  definition: 病原体离开传染源到达健康人所经过的途径
+  importance: 核心
+- term: 易感人群
+  definition: 对某种传染病缺乏免疫力而容易感染的人群
+  importance: 核心
+- term: 非特异性免疫
+  definition: 人生来就有的，对多种病原体都有防御作用的免疫，包括第一道和第二道防线
+  importance: 核心
+- term: 特异性免疫
+  definition: 出生后逐渐建立起来的，只针对某一特定病原体或异物起作用的免疫
+  importance: 核心
+- term: 抗体
+  definition: 病原体侵入人体后，刺激淋巴细胞产生的一种抵抗该病原体的特殊蛋白质
+  importance: 核心
+- term: 抗原
+  definition: 引起人体产生抗体的物质，如病原体、异物、异体器官等
+  importance: 核心
+- term: 计划免疫
+  definition: 根据某些传染病的发生规律，将安全有效的疫苗按照科学的免疫程序，有计划地对儿童进行预防接种
+  importance: 核心
+misconceptions:
+- misconception: 传染病都是由细菌引起的
+  correction: 传染病可以由细菌、病毒、真菌、寄生虫等多种病原体引起
+- misconception: 得过某种传染病就不会再得
+  correction: 有些传染病（如水痘）痊愈后可获得持久免疫力，但有些（如流感）由于病毒变异，可能多次感染
+- misconception: 疫苗就是抗体
+  correction: 疫苗通常是减毒或灭活的病原微生物或其组分，接种后刺激人体产生抗体，疫苗本身不是抗体
+- misconception: 抗生素可以治所有传染病
+  correction: 抗生素只对细菌引起的传染病有效，对病毒引起的传染病（如流感、新冠肺炎）无效
+activity_suggestions:
+- title: 调查当地常见的传染病
+  type: 调查活动
+  description: 调查当地常见的传染病种类、发病季节和预防措施，制作调查报告
+  duration: 60分钟
+  materials:
+  - 调查问卷
+  - 网络资源
+  - 记录本
+- title: 分析传染病流行的案例
+  type: 资料分析
+  description: 分析流感、新冠肺炎等传染病流行的案例，找出三个基本环节和对应的预防措施
+  duration: 40分钟
+  materials:
+  - 案例资料
+  - 白纸
+  - 彩色笔
+- title: 模拟传染病的传播
+  type: 模拟实验
+  description: 用不同颜色的溶液模拟病原体，通过握手等活动模拟传染病的传播过程
+  duration: 25分钟
+  materials:
+  - 不同颜色的溶液
+  - 一次性杯子
+  - 记录表
+- title: 调查计划免疫接种情况
+  type: 调查活动
+  description: 调查自己和家人的计划免疫接种情况，了解国家免疫规划的种类和程序
+  duration: 30分钟
+  materials:
+  - 预防接种证
+  - 记录表
+  - 网络资源
+- title: 制作预防传染病的宣传材料
+  type: 实践活动
+  description: 制作手抄报或短视频，宣传预防传染病的知识
+  duration: 60分钟
+  materials:
+  - A3纸
+  - 彩色笔
+  - 图片资料
+  - 手机或相机
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 消毒剂的化学原理；疫苗的制备涉及生物化学
+- subject: 道德与法治
+  connection: 传染病防治法；突发公共卫生事件应急条例
+- subject: 体育与健康
+  connection: 健康生活方式与增强免疫力
+- subject: 历史
+  connection: 人类与传染病斗争的历史（如天花灭绝）
+exhibits:
+- name: 健康生活展厅
+  location: 中国科技馆
+  relevance: 展示传染病预防和免疫接种知识
+- name: 微观世界
+  location: 上海科技馆
+  relevance: 展示病原体形态和传播途径

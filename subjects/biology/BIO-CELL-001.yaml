@@ -1,29 +1,106 @@
 id: BIO-CELL-001
 name: 细胞是生命活动的基本单位
-name_en: ''
+name_en: Cell as the Basic Unit of Life
 subject: 生物
 domain: 生命科学
 grade: 初中七年级上
-description: 细胞是生命活动的基本单位的详细教学内容。
+description: |
+  细胞是生命活动的基本单位，这一概念是现代生物学最重要的基石之一。根据2022版义务教育生物学课程标准的要求，学生需要认识到除病毒外，生物体都是由细胞构成的。细胞不仅是生物体结构的基本单位，也是功能的基本单位。所有生命活动——如新陈代谢、生长发育、繁殖、应激性等——都以细胞为基础进行。
+
+  学生应理解生命现象的本质是细胞层面的活动。例如，新陈代谢依赖于细胞内的一系列生化反应，生命体对外界刺激的反应在细胞层面就可以发生，多细胞生物的生长发育源于细胞的分裂与分化。通过学习，学生应逐步建立"结构与功能相适应"的生命观念，认识到细胞虽小，却包含了一个生命体所需的全部生命活动基础。
+
+  显微镜是观察和认识细胞的基本工具。学生应学习显微镜的构造和使用方法，练习制作临时装片，在显微镜下观察洋葱鳞片叶内表皮细胞、人口腔上皮细胞等，从而形成"细胞是基本单位"的直观认识。同时，通过比较不同细胞的形态与功能差异，初步感知细胞的多样性与统一性。
 prerequisites:
 - id: SCI-LIFE-001
-  name: ''
+  name: 生物的基本特征
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
+  required: true
+- id: BIO-CELL-003
+  name: 细胞的生活
+  required: true
 key_concepts:
-- term: 细胞是生命活动的基本单位
-  definition: ''
+- term: 细胞
+  definition: 生物体结构和功能的基本单位，除病毒外所有生物都由细胞构成
   importance: 核心
-misconceptions: []
+- term: 显微镜
+  definition: 用于观察微小物体的光学仪器，是认识细胞形态的基本工具
+  importance: 核心
+- term: 临时装片
+  definition: 在载玻片上制作的临时观察标本，用于显微镜下观察细胞结构
+  importance: 重要
+- term: 细胞学说
+  definition: 认为一切动植物都由细胞发育而来，并由细胞和细胞产物所构成的科学理论
+  importance: 重要
+misconceptions:
+- misconception: 病毒是细胞的一种
+  correction: 病毒没有细胞结构，仅由蛋白质外壳和内部遗传物质组成，必须寄生在活细胞内才能进行生命活动
+- misconception: 所有生物体都由细胞构成
+  correction: 除病毒外，所有生物体都由细胞构成。病毒不具备细胞结构，不属于细胞生物
+- misconception: 细胞都很小，肉眼看不见
+  correction: 大多数细胞确实很小，需要借助显微镜观察，但也有一些细胞较大，如鸵鸟蛋的蛋黄就是一个巨大的细胞
+- misconception: 只有动物才有细胞
+  correction: 动物、植物、细菌、真菌等都是由细胞构成的，只是细胞结构有所不同
+activity_suggestions:
+- title: 显微镜使用练习
+  type: 探究实验
+  description: 学习显微镜的正确使用方法，观察永久装片中的细胞，练习调焦和移动标本
+  duration: 40分钟
+  materials:
+  - 光学显微镜
+  - 永久装片
+  - 擦镜纸
+- title: 制作临时装片观察植物细胞
+  type: 探究实验
+  description: 制作洋葱鳞片叶内表皮细胞临时装片，在显微镜下观察细胞的基本形态
+  duration: 45分钟
+  materials:
+  - 洋葱鳞片叶
+  - 载玻片、盖玻片
+  - 碘液
+  - 显微镜
+- title: 制作临时装片观察动物细胞
+  type: 探究实验
+  description: 制作人口腔上皮细胞临时装片，对比动植物细胞的异同
+  duration: 45分钟
+  materials:
+  - 载玻片、盖玻片
+  - 生理盐水
+  - 稀碘液
+  - 消毒牙签
+  - 显微镜
+- title: 细胞模型的认识
+  type: 模型建构
+  description: 利用图片、视频和模型，认识不同形态细胞的多样性，理解"结构与功能相适应"
+  duration: 35分钟
+  materials:
+  - 细胞模型
+  - 细胞图片集
+  - 多媒体资源
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 显微镜的光学原理涉及光的折射和成像
+- subject: 化学
+  connection: 细胞内的化学反应是新陈代谢的基础
+- subject: 数学
+  connection: 细胞的微小尺寸涉及数量级和测量
+- subject: 信息技术
+  connection: 数码显微镜和图像处理技术
+exhibits:
+- name: 显微镜发展史展品
+  location: 中国科技馆
+  relevance: 展示显微镜从光学到电子的发展历程
+- name: 细胞世界
+  location: 上海科技馆
+  relevance: 通过多媒体展示细胞的微观世界

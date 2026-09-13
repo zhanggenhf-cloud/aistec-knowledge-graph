@@ -1,0 +1,167 @@
+id: BIO-CROSS-001
+name: 生物学与社会·跨学科实践
+name_en: Biology and Society · Interdisciplinary Practice
+subject: 生物
+domain: 生命科学
+grade: 初中七至八年级
+description: |
+  生物学与社会·跨学科实践是2022版义务教育生物学课程标准新增的第七大学习主题，旨在引导学生运用生物学、物理学、化学、数学、技术与工程学等多学科知识和方法，解决真实情境中的生物学问题，培养学生的创新精神和实践能力。根据课程标准，本主题主要包括模型制作、植物栽培和动物饲养、发酵食品制作三类跨学科实践活动。
+
+  模型制作是生物学学习的重要方法，学生应能够根据特定生物学问题，选择合适的材料和工具，设计并制作生物学模型，如细胞结构模型、血液循环模型、生态系统模型等。通过模型制作，学生可以化抽象为具体、化微观为宏观，加深对生物学概念的理解，发展科学思维和工程实践能力。
+
+  植物栽培和动物饲养活动让学生经历完整的生命过程，体验生命的成长与变化。学生可以栽培一种绿色开花植物或饲养一种小动物，观察记录其生长发育过程，探究影响其生长的环境因素，运用光合作用、呼吸作用、营养等知识解释现象，形成尊重生命、热爱自然的情感态度。
+
+  发酵食品制作活动将微生物知识与日常生活紧密结合。学生可以利用酵母菌、乳酸菌等微生物制作馒头、面包、酸奶、泡菜等发酵食品，理解微生物在食品制作中的作用，掌握发酵的基本原理和操作技能，体验传统发酵技术的智慧，形成食品安全意识和传承传统文化的责任感。
+prerequisites:
+- id: BIO-CELL-002
+  name: 细胞的结构与功能
+  required: true
+- id: BIO-PLANT-001
+  name: 植物的光合作用
+  required: false
+- id: BIO-MICRO-001
+  name: 微生物
+  required: false
+postrequisites: []
+key_concepts:
+- term: 跨学科实践
+  definition: 运用多学科知识和方法解决真实情境问题的实践活动
+  importance: 核心
+- term: 模型建构
+  definition: 根据研究目的，选择合适的材料和形式，制作能反映研究对象本质特征的简化表达
+  importance: 核心
+- term: 科学探究
+  definition: 通过观察、提问、假设、实验、分析、结论等步骤获取知识、解决问题的过程
+  importance: 核心
+- term: 发酵技术
+  definition: 利用微生物的代谢活动，将有机物转化为特定产品的传统生物技术
+  importance: 核心
+- term: 变量控制
+  definition: 在实验中控制无关变量，只改变一个自变量，以探究该变量对实验结果的影响
+  importance: 核心
+- term: 工程思维
+  definition: 在设计和制作过程中考虑材料选择、结构设计、功能实现和优化改进的系统思维方式
+  importance: 核心
+- term: 生命伦理
+  definition: 在涉及生命的研究和应用中应遵循的道德准则和价值判断
+  importance: 重要
+misconceptions:
+- misconception: 模型必须和实物一模一样
+  correction: 模型是对研究对象的简化和抽象，突出本质特征即可，不必完全还原所有细节
+- misconception: 跨学科实践就是多个学科知识的简单叠加
+  correction: 跨学科实践是围绕真实问题，有机整合多学科知识和方法，形成整体解决方案
+- misconception: 发酵食品制作中微生物越多越好
+  correction: 发酵需要控制适宜的微生物种类和数量，以及温度、pH等条件，并非越多越好
+- misconception: 植物栽培只需要浇水就行
+  correction: 植物生长需要光、温度、水、无机盐等多种环境条件的协调配合
+activity_suggestions:
+- title: 制作细胞结构模型
+  type: 模型建构
+  description: 选择合适的材料（如橡皮泥、卡纸、废旧材料等），制作植物细胞或动物细胞的立体结构模型
+  duration: 90分钟
+  materials:
+  - 橡皮泥或卡纸
+  - 剪刀
+  - 胶水
+  - 彩色笔
+  - 废旧材料
+- title: 制作血液循环模型
+  type: 模型建构
+  description: 利用透明软管、水泵等材料，制作能演示体循环和肺循环的血液循环模型
+  duration: 2课时
+  materials:
+  - 透明软管
+  - 小型水泵
+  - 彩色水
+  - 纸板
+  - 胶带
+- title: 栽培一种绿色开花植物
+  type: 长期实践
+  description: 选择一种易于栽培的绿色开花植物，从播种到开花进行全程观察和记录，探究光照、水分对生长的影响
+  duration: 2-3个月
+  materials:
+  - 植物种子
+  - 花盆
+  - 培养土
+  - 尺子
+  - 记录本
+- title: 饲养一种小动物
+  type: 长期实践
+  description: 饲养蚕、金鱼或蜗牛等小动物，观察记录其生长发育过程和生活习性
+  duration: 1-2个月
+  materials:
+  - 小动物及饲料
+  - 饲养容器
+  - 记录本
+  - 放大镜
+- title: 制作发酵食品——馒头
+  type: 实践活动
+  description: 利用酵母菌发酵制作馒头，探究温度、酵母用量对发酵效果的影响
+  duration: 90分钟
+  materials:
+  - 面粉
+  - 酵母粉
+  - 温水
+  - 糖
+  - 蒸锅
+- title: 制作发酵食品——酸奶
+  type: 实践活动
+  description: 利用乳酸菌发酵制作酸奶，探究温度对发酵效果的影响，了解酸奶的营养价值
+  duration: 12小时（含发酵时间）
+  materials:
+  - 鲜牛奶
+  - 酸奶发酵剂或市售酸奶
+  - 恒温装置或保温杯
+  - 温度计
+- title: 设计并制作生态瓶
+  type: 跨学科实践
+  description: 综合运用生态学、物理学、化学等知识，设计制作能自我维持的密闭生态瓶
+  duration: 2周
+  materials:
+  - 透明玻璃瓶
+  - 水草
+  - 小鱼或螺
+  - 河沙
+  - 池塘水
+- title: 调查校园生物多样性
+  type: 调查活动
+  description: 综合运用分类学、生态学知识，调查校园内生物的种类和数量，分析生物与环境的关系
+  duration: 2课时
+  materials:
+  - 记录本
+  - 相机
+  - 放大镜
+  - 生物图鉴
+  - 测量工具
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 系统思维
+verification:
+  status: verified
+  sources:
+  - 义务教育生物学课程标准（2022年版）
+  last_verified: '2024-06-01'
+interdisciplinary:
+- subject: 物理
+  connection: 模型制作中的力学和光学原理；生态瓶中的能量流动
+- subject: 化学
+  connection: 发酵过程中的生化反应；生态瓶中的物质循环
+- subject: 数学
+  connection: 实验数据的收集、统计和分析；比例和测量
+- subject: 技术与工程
+  connection: 模型设计、材料选择和制作工艺；发酵装置的设计与优化
+- subject: 语文
+  connection: 实验报告的撰写；科普文章和调查报告的写作
+- subject: 道德与法治
+  connection: 生命伦理；食品安全法规；环境保护责任
+exhibits:
+- name: 动手做科学
+  location: 中国科技馆
+  relevance: 提供跨学科实践活动的互动体验
+- name: 创客空间
+  location: 上海科技馆
+  relevance: 展示科学模型制作和技术创新的过程
+- name: 生物实验室
+  location: 各地科技馆
+  relevance: 提供发酵技术、植物栽培等实践体验

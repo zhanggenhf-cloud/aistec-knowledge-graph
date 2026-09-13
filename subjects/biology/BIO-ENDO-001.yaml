@@ -1,29 +1,114 @@
 id: BIO-ENDO-001
 name: 内分泌系统
-name_en: ''
+name_en: Endocrine System
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中七年级下
-description: 内分泌系统的详细教学内容。
+description: |
+  内分泌系统是人体重要的调节系统之一，它通过分泌激素对生命活动进行调节。激素是由内分泌腺分泌的化学物质，直接进入腺体内的毛细血管，随血液循环运送到全身各处，对人体生长发育、新陈代谢和生殖等生命活动起重要调节作用。根据2022版义务教育生物学课程标准，学生需要了解人体主要的内分泌腺及其分泌的激素，理解激素调节的特点，认识激素分泌异常引起的疾病，形成健康的生活方式。
+
+  人体主要的内分泌腺包括垂体、甲状腺、胸腺、肾上腺、胰岛、卵巢和睾丸等。垂体被称为"内分泌之王"，分泌多种激素调节其他内分泌腺的活动；甲状腺分泌甲状腺激素，促进生长发育和新陈代谢；胰岛分泌胰岛素，调节血糖浓度。激素调节的特点是：通过体液运输，作用速度较缓慢但持续时间较长，作用范围较广泛。
+
+  激素调节与神经调节密切配合，共同调节人体各项生命活动。神经调节快速、准确，作用范围局限；激素调节缓慢、持久，作用范围广泛。两者相互协调，使人体成为一个统一的整体。学生应了解胰岛素分泌不足会导致糖尿病，甲状腺激素分泌异常会引起甲亢或呆小症等疾病，认识到合理膳食、规律作息对维持内分泌平衡的重要性。
 prerequisites:
+- id: BIO-NERVE-001
+  name: 神经系统
+  required: false
 - id: BIO-BODY-004
-  name: ''
+  name: 人体内物质的运输
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-REPRO-001
+  name: 生物的生殖
+  required: false
 key_concepts:
 - term: 内分泌系统
-  definition: ''
+  definition: 由内分泌腺组成，通过分泌激素对生命活动进行调节的系统
   importance: 核心
-misconceptions: []
+- term: 激素
+  definition: 由内分泌腺分泌的、对人体生命活动起调节作用的化学物质
+  importance: 核心
+- term: 内分泌腺
+  definition: 没有导管，分泌物直接进入腺体内毛细血管的腺体
+  importance: 核心
+- term: 垂体
+  definition: 位于脑的底部，分泌多种激素调节其他内分泌腺活动，被称为"内分泌之王"
+  importance: 核心
+- term: 甲状腺
+  definition: 位于颈前部，分泌甲状腺激素，促进新陈代谢和生长发育
+  importance: 核心
+- term: 胰岛
+  definition: 散布在胰腺中的内分泌细胞团，分泌胰岛素调节血糖浓度
+  importance: 核心
+- term: 胰岛素
+  definition: 由胰岛分泌的激素，能降低血糖浓度
+  importance: 核心
+- term: 激素调节
+  definition: 激素通过体液运输对人体生命活动进行的调节
+  importance: 核心
+misconceptions:
+- misconception: 激素和酶是同一种物质
+  correction: 激素是调节生命活动的信号分子，酶是催化化学反应的蛋白质，两者功能和本质不同
+- misconception: 激素分泌越多越好
+  correction: 激素分泌需要保持平衡，过多或过少都会导致疾病，如甲状腺激素过多引起甲亢，过少引起甲减
+- misconception: 所有腺体都是内分泌腺
+  correction: 腺体分为内分泌腺（无导管，分泌物直接进入血液）和外分泌腺（有导管，分泌物通过导管排出），如汗腺、唾液腺是外分泌腺
+- misconception: 激素调节可以完全替代神经调节
+  correction: 神经调节和激素调节相互配合、相互协调，共同调节人体生命活动，不能相互替代
+activity_suggestions:
+- title: 调查糖尿病与生活方式的关系
+  type: 调查活动
+  description: 收集资料，调查糖尿病的成因、症状和预防措施，分析生活方式对内分泌健康的影响
+  duration: 45分钟
+  materials:
+  - 网络资源
+  - 报刊资料
+  - 记录表
+- title: 分析激素分泌异常的案例
+  type: 资料分析
+  description: 分析呆小症、甲亢、巨人症、糖尿病等疾病的案例，理解激素分泌异常的危害
+  duration: 35分钟
+  materials:
+  - 病例资料
+  - 图片
+  - 白纸
+- title: 比较神经调节与激素调节
+  type: 对比分析
+  description: 列表比较神经调节和激素调节的特点，理解两者的区别和联系
+  duration: 25分钟
+  materials:
+  - 白纸
+  - 彩色笔
+- title: 探究胰岛素对血糖的调节作用
+  type: 资料分析
+  description: 分析糖尿病患者血糖变化曲线，理解胰岛素的调节作用
+  duration: 30分钟
+  materials:
+  - 血糖变化曲线图
+  - 记录纸
+  - 彩色笔
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维
-activity_suggestions: []
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 化学
+  connection: 激素的化学本质（蛋白质、固醇类等）
+- subject: 体育与健康
+  connection: 运动、饮食与血糖调节；健康生活方式与内分泌平衡
+- subject: 道德与法治
+  connection: 禁止滥用兴奋剂（含激素类物质）的法律规定
+- subject: 数学
+  connection: 血糖浓度的数据记录和曲线分析
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示内分泌系统的组成和激素调节机制
+- name: 健康生活展厅
+  location: 上海科技馆
+  relevance: 展示激素与健康的关系

@@ -1,29 +1,121 @@
 id: BIO-ANIMAL-001
 name: 动物的运动
-name_en: ''
+name_en: Animal Movement
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中八年级上
-description: 动物的运动的详细教学内容。
+description: |
+  动物的运动是动物适应环境的重要方式，有利于动物获取食物、逃避敌害、迁移栖息地和繁殖后代。根据2022版义务教育生物学课程标准，学生需要理解动物运动系统的组成，认识骨、关节和肌肉在运动中的协调配合，了解动物运动的能量来源，理解动物运动的意义。
+
+  哺乳动物的运动系统由骨、关节和肌肉组成。骨起杠杆作用，关节起支点作用，骨骼肌收缩提供动力。骨骼肌由肌腹和肌腱组成，肌腹能收缩和舒张，肌腱附着在不同的骨上。骨骼肌受神经传来的刺激收缩时，牵动骨绕关节活动，于是躯体产生运动。但骨骼肌只能收缩牵拉骨而不能推开骨，因此一个动作的完成总是由两组或多组肌肉相互配合活动。
+
+  动物运动的完成需要神经系统的调节，需要消化、呼吸、循环等系统的配合，为运动提供能量。运动消耗的能量来自细胞的呼吸作用，呼吸作用分解有机物释放能量，供肌肉收缩等生命活动利用。学生应通过观察、模型制作和体验等活动，理解运动系统的结构和功能，认识到体育锻炼对运动系统健康的促进作用，形成积极参与体育锻炼的意识。
 prerequisites:
 - id: BIO-BODY-004
-  name: ''
-  required: true
-postrequisites: []
+  name: 人体内物质的运输
+  required: false
+- id: BIO-NERVE-001
+  name: 神经系统
+  required: false
+postrequisites:
+- id: BIO-MICRO-002
+  name: 传染病与免疫
+  required: false
 key_concepts:
-- term: 动物的运动
-  definition: ''
+- term: 运动系统
+  definition: 由骨、关节和肌肉组成，是动物完成运动的结构基础
   importance: 核心
-misconceptions: []
+- term: 骨
+  definition: 运动系统中的杠杆，具有支持和保护作用
+  importance: 核心
+- term: 关节
+  definition: 骨与骨之间的连接结构，是运动中的支点，使运动灵活
+  importance: 核心
+- term: 骨骼肌
+  definition: 由肌腹和肌腱组成，收缩时产生动力，牵动骨绕关节活动
+  importance: 核心
+- term: 肌腱
+  definition: 骨骼肌两端较细呈乳白色的部分，附着在骨上，将肌肉的收缩力传递给骨
+  importance: 重要
+- term: 肌腹
+  definition: 骨骼肌中间较粗的部分，由肌细胞组成，具有收缩和舒张的功能
+  importance: 重要
+- term: 运动的协调
+  definition: 一个动作的完成需要骨、关节、肌肉的配合，以及神经系统的调节和多个系统的参与
+  importance: 核心
+misconceptions:
+- misconception: 骨骼肌收缩就能产生运动
+  correction: 骨骼肌收缩只是提供动力，运动的完成还需要骨作为杠杆、关节作为支点，且需要神经系统调节
+- misconception: 一组肌肉就能完成一个动作
+  correction: 骨骼肌只能收缩牵拉骨而不能推开骨，一个动作的完成总是由两组或多组肌肉相互配合完成
+- misconception: 运动只需要运动系统参与
+  correction: 运动的完成需要神经系统调节，消化、呼吸、循环系统配合提供能量，是多个系统协调配合的结果
+- misconception: 关节越灵活越好，不需要保护
+  correction: 关节的灵活性有一定限度，过度运动或不当运动会造成关节损伤，应注意科学运动和自我保护
+activity_suggestions:
+- title: 观察哺乳动物的长骨
+  type: 观察实验
+  description: 观察猪或羊的长骨结构，认识骨膜、骨质和骨髓腔
+  duration: 35分钟
+  materials:
+  - 猪或羊的长骨
+  - 解剖剪
+  - 镊子
+  - 托盘
+- title: 观察关节的结构
+  type: 观察实验
+  description: 观察猪或羊的关节结构，认识关节头、关节窝、关节软骨和关节腔
+  duration: 30分钟
+  materials:
+  - 猪或羊的关节
+  - 解剖剪
+  - 镊子
+  - 托盘
+- title: 制作肘关节运动模型
+  type: 模型建构
+  description: 用木板、橡皮筋和螺丝钉等材料制作肘关节运动模型，模拟屈肘和伸肘动作
+  duration: 45分钟
+  materials:
+  - 木板
+  - 橡皮筋
+  - 螺丝钉
+  - 螺丝刀
+  - 剪刀
+- title: 体验肌肉协作
+  type: 体验活动
+  description: 用手触摸上臂肌肉，做屈肘和伸肘动作，感受肱二头肌和肱三头肌的收缩和舒张
+  duration: 15分钟
+  materials:
+  - 无
+- title: 探究运动对心率的影响
+  type: 探究实验
+  description: 测量安静状态和运动后的心率，分析运动对循环系统的影响
+  duration: 30分钟
+  materials:
+  - 秒表
+  - 记录表
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 物理
+  connection: 杠杆原理在骨运动中的应用；力与运动的关系
+- subject: 体育与健康
+  connection: 科学锻炼与运动系统健康；运动损伤的预防
+- subject: 美术
+  connection: 人体结构与绘画中的比例关系
+- subject: 数学
+  connection: 骨骼的几何结构；运动中的角度变化
+exhibits:
+- name: 人体奥秘
+  location: 中国科技馆
+  relevance: 展示人体运动系统的结构和运动原理
+- name: 骨骼与肌肉
+  location: 上海科技馆
+  relevance: 通过互动模型展示骨、关节和肌肉的协调配合

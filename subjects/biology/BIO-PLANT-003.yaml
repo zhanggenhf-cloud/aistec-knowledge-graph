@@ -1,29 +1,116 @@
 id: BIO-PLANT-003
 name: 植物的结构层次
-name_en: ''
+name_en: Structural Hierarchy of Plants
 subject: 生物
-domain: 补充
+domain: 生命科学
 grade: 初中七年级上
-description: 植物的结构层次的详细教学内容。
+description: |
+  植物体是由多个结构层次有序构成的统一整体。根据2022版义务教育生物学课程标准，学生需要理解植物体的结构层次，认识细胞如何经过分裂和分化形成组织，不同组织如何构成器官，多个器官又如何协调配合构成完整的植物体。
+
+  植物的结构层次从微观到宏观依次为：细胞→组织→器官→植物体。植物细胞经过分裂增加数量，经过分化形成形态、结构和功能不同的细胞群——组织。植物的主要组织包括保护组织、营养组织、输导组织、分生组织和机械组织等。不同的组织按照一定的次序结合在一起构成器官，绿色开花植物有六大器官：根、茎、叶（营养器官）和花、果实、种子（生殖器官）。
+
+  学生应认识到植物体是一个统一的整体，各器官、各组织之间相互联系、相互协调，共同完成植物的生命活动。例如，根吸收的水分和无机盐通过输导组织运输到茎和叶，叶通过光合作用制造的有机物也通过输导组织运输到植物体的各个部分。通过这一内容的学习，学生应深化"结构与功能相适应"和"整体观"等生命观念。
 prerequisites:
-- id: BIO-CELL-002
-  name: ''
+- id: BIO-CELL-003
+  name: 细胞的生活
   required: true
-postrequisites: []
+postrequisites:
+- id: BIO-PLANT-001
+  name: 植物的光合作用
+  required: false
+- id: BIO-ECO-002
+  name: 生态系统
+  required: false
 key_concepts:
-- term: 植物的结构层次
-  definition: ''
+- term: 组织
+  definition: 由形态相似、结构和功能相同的细胞联合在一起形成的细胞群
   importance: 核心
-misconceptions: []
+- term: 保护组织
+  definition: 覆盖在植物体表面，具有保护内部柔嫩部分功能的组织，如表皮
+  importance: 核心
+- term: 营养组织
+  definition: 细胞壁薄、液泡大，具有储存营养物质功能的组织
+  importance: 核心
+- term: 输导组织
+  definition: 由导管和筛管组成，具有运输水、无机盐和有机物功能的组织
+  importance: 核心
+- term: 分生组织
+  definition: 细胞小、细胞壁薄、细胞核大，具有持续分裂能力的组织
+  importance: 核心
+- term: 器官
+  definition: 由不同的组织按照一定的次序结合在一起构成的具有一定功能的结构
+  importance: 核心
+- term: 营养器官
+  definition: 与植物营养生长有关的器官，包括根、茎、叶
+  importance: 核心
+- term: 生殖器官
+  definition: 与植物繁殖后代有关的器官，包括花、果实、种子
+  importance: 核心
+misconceptions:
+- misconception: 植物的六大器官在任何植物中都同时存在
+  correction: 只有绿色开花植物才同时具备六大器官，蕨类、苔藓等植物没有花、果实和种子
+- misconception: 植物的茎都是直立的
+  correction: 茎有多种形态，有直立茎、匍匐茎、缠绕茎和攀援茎等，不同形态与其生活环境相适应
+- misconception: 所有植物都有输导组织
+  correction: 藻类植物没有输导组织，苔藓植物只有简单的输导组织，只有蕨类植物和种子植物才有完善的输导组织
+- misconception: 果实就是种子
+  correction: 果实由果皮和种子组成，种子只是果实的一部分
+activity_suggestions:
+- title: 观察植物体的结构层次
+  type: 观察实验
+  description: 观察绿色开花植物的根、茎、叶、花、果实、种子，认识六大器官
+  duration: 40分钟
+  materials:
+  - 绿色开花植物植株
+  - 放大镜
+  - 解剖工具
+- title: 观察植物组织的永久装片
+  type: 观察实验
+  description: 观察植物保护组织、营养组织和输导组织的永久装片，比较各组织细胞的形态差异
+  duration: 40分钟
+  materials:
+  - 显微镜
+  - 植物组织永久装片
+- title: 植物输导组织功能的探究
+  type: 探究实验
+  description: 将白色康乃馨插入有色水中，观察花瓣变色，探究茎中输导组织的运输功能
+  duration: 60分钟
+  materials:
+  - 白色康乃馨
+  - 红墨水或蓝墨水
+  - 烧杯
+  - 清水
+- title: 构建植物结构层次模型
+  type: 模型建构
+  description: 利用各种材料制作植物结构层次的概念模型，从细胞到植物体
+  duration: 45分钟
+  materials:
+  - 纸板或泡沫板
+  - 彩色笔
+  - 剪刀
+  - 胶水
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 美术
+  connection: 植物结构的观察与生物绘图
+- subject: 数学
+  connection: 结构层次的层级关系与分类学思维
+- subject: 化学
+  connection: 植物组织中有机物和无机物的运输与储存
+- subject: 地理
+  connection: 不同气候区植物器官形态的适应性差异
+exhibits:
+- name: 植物多样性展厅
+  location: 中国科技馆
+  relevance: 展示不同类群植物的形态结构和生活环境
+- name: 植物世界
+  location: 上海科技馆
+  relevance: 展示植物从细胞到个体的结构层次

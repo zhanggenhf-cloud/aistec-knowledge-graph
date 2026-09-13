@@ -1,29 +1,118 @@
 id: BIO-ECO-002
 name: 生态系统
-name_en: ''
+name_en: Ecosystem
 subject: 生物
 domain: 生命科学
 grade: 初中七年级上
-description: 生态系统的详细教学内容。
+description: |
+  生态系统是指在一定的空间范围内，生物与环境所形成的统一的整体。根据2022版义务教育生物学课程标准，学生需要理解生态系统的概念和组成，认识生态系统中生产者、消费者和分解者之间的关系，了解食物链和食物网的构成，理解生态系统的自动调节能力和生态平衡。
+
+  生态系统由生物部分和非生物部分组成。生物部分包括生产者（主要是绿色植物，通过光合作用制造有机物）、消费者（动物，直接或间接以植物为食）和分解者（细菌和真菌等，将有机物分解为无机物）。非生物部分包括阳光、空气、水、土壤、温度等。生产者、消费者和分解者之间通过物质循环和能量流动相互联系，缺一不可。
+
+  食物链反映的是生产者与消费者之间吃与被吃的关系，多条食物链相互交织形成食物网。生态系统中的物质和能量沿着食物链和食物网流动，能量在流动过程中逐级递减。生态系统具有一定的自动调节能力，但这种调节能力是有一定限度的。当外界干扰超过这个限度时，生态系统就会遭到破坏。学生应通过学习建立"生态观"和"物质与能量观"，认识到保护生态系统稳定对人类生存的重要意义。
 prerequisites:
-- id: SCI-ECO-001
-  name: ''
+- id: SCI-LIFE-001
+  name: 生物的基本特征
   required: true
-postrequisites: []
+- id: BIO-PLANT-001
+  name: 植物的光合作用
+  required: false
+postrequisites:
+- id: BIO-DIV-002
+  name: 生物的多样性
+  required: false
 key_concepts:
 - term: 生态系统
-  definition: ''
+  definition: 在一定的空间范围内，生物与环境所形成的统一的整体
   importance: 核心
-misconceptions: []
+- term: 生产者
+  definition: 生态系统中能通过光合作用制造有机物的绿色植物，是生态系统的基础
+  importance: 核心
+- term: 消费者
+  definition: 生态系统中不能自己制造有机物，直接或间接以植物为食的动物
+  importance: 核心
+- term: 分解者
+  definition: 生态系统中将动植物遗体和排泄物中的有机物分解为无机物的细菌和真菌
+  importance: 核心
+- term: 食物链
+  definition: 生态系统中生产者与消费者之间由于吃与被吃的关系而形成的链状结构
+  importance: 核心
+- term: 食物网
+  definition: 生态系统中多条食物链相互交织连接形成的复杂营养关系网络
+  importance: 核心
+- term: 生态平衡
+  definition: 生态系统中各种生物的数量和所占比例维持在相对稳定的状态
+  importance: 核心
+- term: 生物富集
+  definition: 某些难以分解的有毒物质通过食物链在生物体内不断积累，浓度逐级升高的现象
+  importance: 重要
+misconceptions:
+- misconception: 分解者可有可无
+  correction: 分解者将有机物分解为无机物，使物质回归环境供生产者重新利用，是生态系统物质循环不可缺少的一环
+- misconception: 食物链可以无限延长
+  correction: 由于能量在流动过程中逐级递减（约10%-20%传递到下一营养级），食物链通常只有3-5个营养级
+- misconception: 生态系统中生产者数量总是最多的
+  correction: 在多数生态系统中生产者数量或生物量最多，但某些特殊情况下（如寄生生态系统）可能不同
+- misconception: 人类可以控制自然生态系统
+  correction: 生态系统的自动调节能力有限度，人类过度干预会导致生态平衡破坏，应尊重自然规律
+activity_suggestions:
+- title: 设计并制作生态瓶
+  type: 探究实验
+  description: 小组合作设计并制作密闭生态瓶，观察其中生物的生存状况，理解生态系统的组成和平衡
+  duration: 2周（长期观察）
+  materials:
+  - 透明玻璃瓶
+  - 水草
+  - 小鱼或螺
+  - 河沙
+  - 池塘水
+- title: 分析食物链和食物网
+  type: 资料分析
+  description: 根据草原或池塘生态系统的资料，写出其中的食物链，分析食物网中各生物之间的关系
+  duration: 35分钟
+  materials:
+  - 生态系统图片
+  - 记录纸
+  - 彩色笔
+- title: 探究有毒物质在食物链中的富集
+  type: 模拟实验
+  description: 用不同浓度的染色溶液模拟有毒物质，通过角色扮演理解生物富集现象
+  duration: 30分钟
+  materials:
+  - 不同浓度的染色溶液
+  - 量杯
+  - 记录表
+- title: 调查当地生态系统
+  type: 调查活动
+  description: 调查校园或社区附近的生态系统类型、组成和面临的问题
+  duration: 90分钟
+  materials:
+  - 调查记录表
+  - 相机
+  - 放大镜
+  - 图鉴
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 地理
+  connection: 不同地理区域的生态系统类型分布
+- subject: 化学
+  connection: 生态系统中的物质循环涉及化学反应
+- subject: 物理
+  connection: 光合作用中的能量转换；生态系统中能量的流动
+- subject: 道德与法治
+  connection: 环境保护法与生态系统的保护
+exhibits:
+- name: 生态家园
+  location: 中国科技馆
+  relevance: 展示生态系统的组成和物质能量流动
+- name: 生物多样性展厅
+  location: 上海科技馆
+  relevance: 展示不同类型的生态系统及其生物组成

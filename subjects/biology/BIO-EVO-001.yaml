@@ -1,29 +1,127 @@
 id: BIO-EVO-001
 name: 生物的进化
-name_en: ''
+name_en: Biological Evolution
 subject: 生物
 domain: 生命科学
 grade: 初中八年级下
-description: 生物的进化的详细教学内容。
+description: |
+  生物进化是指生物种群在长时间尺度上发生的遗传特征的变化过程，是生物多样性的来源。根据2022版义务教育生物学课程标准，学生需要了解生物进化的主要证据，理解自然选择学说的主要内容，认识生物进化的历程和趋势，了解人类的起源和进化，形成生物进化的观点，建立进化与适应观。
+
+  生物进化的证据主要来自化石记录、比较解剖学、胚胎学和分子生物学等方面。化石是保存在地层中的古代生物的遗体、遗物或生活痕迹，是研究生物进化最直接、最重要的证据。通过对不同地层中化石的研究，可以了解生物进化的历程：从简单到复杂、从低等到高等、从水生到陆生。
+
+  达尔文的自然选择学说是解释生物进化的主要理论。其主要内容是：生物普遍具有过度繁殖的倾向，而生存资源有限，导致生物之间产生生存斗争；生物个体之间普遍存在变异，具有有利变异的个体容易在生存斗争中生存下来并繁殖后代，具有不利变异的个体容易被淘汰，即适者生存、不适者被淘汰。经过长期的自然选择，有利变异逐渐积累，生物朝着适应环境的方向进化。学生应通过学习认识到生物进化是一个漫长的过程，人类是生物进化的产物，与其他生物有着共同的祖先，形成尊重生命、保护生物多样性的态度责任意识。
 prerequisites:
 - id: BIO-REPRO-002
-  name: ''
+  name: 生物的遗传与变异
   required: true
+- id: BIO-DIV-001
+  name: 生物的分类
+  required: false
 postrequisites: []
 key_concepts:
-- term: 生物的进化
-  definition: ''
+- term: 生物进化
+  definition: 生物种群在长时间尺度上发生的遗传特征的变化过程
   importance: 核心
-misconceptions: []
+- term: 化石
+  definition: 保存在地层中的古代生物的遗体、遗物或生活痕迹
+  importance: 核心
+- term: 自然选择
+  definition: 生物在生存斗争中，适者生存、不适者被淘汰的过程
+  importance: 核心
+- term: 过度繁殖
+  definition: 生物普遍具有产生大量后代的能力，超过环境容纳量
+  importance: 核心
+- term: 生存斗争
+  definition: 生物为获取有限生存资源（食物、空间等）而进行的竞争
+  importance: 核心
+- term: 遗传变异
+  definition: 生物个体之间普遍存在的可遗传的差异，是自然选择的基础
+  importance: 核心
+- term: 适者生存
+  definition: 具有有利变异的个体在生存斗争中容易生存和繁殖，不利变异的个体被淘汰
+  importance: 核心
+- term: 共同祖先
+  definition: 不同物种在进化历史上拥有的共同原始祖先
+  importance: 核心
+- term: 适应
+  definition: 生物的形态结构和生理功能与环境相适应的现象，是自然选择的结果
+  importance: 核心
+misconceptions:
+- misconception: 生物进化就是个体变强
+  correction: 生物进化是种群基因频率的改变，不是个体变强，而是种群中适应环境的特征增加
+- misconception: 进化是有方向的，从低级向高级发展
+  correction: 进化是适应环境的过程，没有绝对的"高级"和"低级"之分，只有适应与否
+- misconception: 人类是由现代类人猿进化来的
+  correction: 人类和现代类人猿是由共同的祖先进化而来的不同分支，不是由现代类人猿直接进化而来
+- misconception: 用进废退是进化的主要机制
+  correction: 拉马克的"用进废退"学说已被否定，现代进化论认为自然选择是生物进化的主要机制
+activity_suggestions:
+- title: 模拟自然选择
+  type: 模拟实验
+  description: 用不同颜色的纸片模拟不同体色的"昆虫"，在不同颜色的"环境"中模拟捕食过程，观察"适者生存"现象
+  duration: 35分钟
+  materials:
+  - 彩色纸片
+  - 彩色背景纸
+  - 镊子
+  - 记录表
+- title: 分析化石记录
+  type: 资料分析
+  description: 分析马、鲸等生物的化石记录，了解生物进化的历程
+  duration: 40分钟
+  materials:
+  - 化石图片资料
+  - 进化树图
+  - 记录纸
+- title: 比较不同生物的前肢骨骼
+  type: 比较观察
+  description: 比较人、蝙蝠、鲸、马等动物前肢骨骼的图片，认识同源器官，理解共同祖先
+  duration: 30分钟
+  materials:
+  - 骨骼比较图
+  - 白纸
+  - 彩色笔
+- title: 讨论抗生素耐药性的产生
+  type: 讨论活动
+  description: 结合自然选择学说，讨论细菌抗生素耐药性的产生原因和应对策略
+  duration: 35分钟
+  materials:
+  - 案例资料
+  - 白板
+  - 马克笔
+- title: 绘制生物进化树
+  type: 模型建构
+  description: 根据资料绘制生物进化树，理解生物之间的亲缘关系和进化历程
+  duration: 45分钟
+  materials:
+  - 白纸
+  - 彩色笔
+  - 生物分类资料
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 逻辑思维
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
+  - 义务教育生物学课程标准（2022年版）
   last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+interdisciplinary:
+- subject: 历史
+  connection: 达尔文与进化论的科学发展史
+- subject: 地理
+  connection: 地层与化石的地理分布；大陆漂移与生物地理学
+- subject: 化学
+  connection: 放射性同位素测定化石年代
+- subject: 语文
+  connection: 科学论文的阅读与写作
+exhibits:
+- name: 生命长河
+  location: 中国科技馆
+  relevance: 展示生物进化的历程和化石证据
+- name: 古生物展厅
+  location: 上海自然博物馆
+  relevance: 展示各类化石和生物进化历程
+- name: 人类起源
+  location: 各地自然博物馆
+  relevance: 展示人类进化各阶段的化石和复原模型
