@@ -1,31 +1,73 @@
 id: SCI-MAT-002
 name: 水是一种常见而重要的单一物质
-name_en: ''
+name_en: Water Is a Common and Important Pure Substance
 subject: 小学科学
 domain: 物质科学
-grade: 小学二年级
-description: 水是一种常见而重要的单一物质的详细教学内容。
+grade: 小学一至三年级
+
+description: |
+  知道水是一种常见而重要的物质，是人类生存和生物生长不可缺少的资源。
+  了解水的基本性质：无色、无味、透明、没有固定形状、能流动。
+  知道水有三种状态：固态（冰）、液态（水）、气态（水蒸气）。
+  了解水在日常生活中的用途：饮用、洗涤、灌溉、发电等。
+  知道水是生命之源，地球上所有生物都需要水。
+  初步树立节约用水、保护水资源的意识。
+
 prerequisites:
-- id: SCI-MAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: SCI-WATER-001
+    name: 水在自然界的循环
+
 key_concepts:
-- term: 水是一种常见而重要的单一物质
-  definition: ''
-  importance: 核心
+  - term: 水的性质
+    definition: 无色、无味、透明、没有固定形状、能流动
+    importance: 核心
+  - term: 水的三态
+    definition: 固态（冰）、液态（水）、气态（水蒸气）
+    importance: 核心
+  - term: 水的用途
+    definition: 饮用、洗涤、灌溉、发电、工业生产等
+    importance: 重要
+  - term: 水资源
+    definition: 地球上可供人类利用的淡水资源
+    importance: 核心
+
 misconceptions:
-- statement: 水变成水蒸气后消失了
-  correction: ''
+  - statement: "水只有在液态时才有用"
+    correction: "水的三种状态都有重要作用，如冰可以降温、水蒸气可以发电"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "地球上的水取之不尽"
+    correction: "地球上淡水资源有限，需要节约用水"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
   min_age: 7
-  piaget_stage: 具体运算阶段
+  piaget_stage: 前运算阶段/具体运算阶段
   prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察生活中的水→Explore观察水的性质和三态→Explain交流观察结果→Elaborate讨论水的用途和保护
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 水资源分布
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 节约资源
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示水资源保护

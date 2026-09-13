@@ -1,29 +1,76 @@
 id: SCI-MAT-004
 name: 物体的运动可以用位置、快慢和方向来描述
-name_en: ''
+name_en: Describing Motion with Position, Speed, and Direction
 subject: 小学科学
 domain: 物质科学
-grade: 小学四年级
-description: 物体的运动可以用位置、快慢和方向来描述的详细教学内容。
+grade: 小学三至四年级
+
+description: |
+  知道物质是运动的，物质的运动形式是多样的。
+  知道力可以改变物体的运动状态，如启动、停止、加速、减速、改变方向等。
+  了解物体的运动可以用位置、快慢和方向来描述。
+  了解速度是表示物体运动快慢的物理量。
+  能比较物体运动的快慢。
+  知道常见的运动形式：直线运动、曲线运动、往复运动、旋转运动等。
+
 prerequisites:
-- id: SCI-MAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: SCI-MOT-001
+    name: 力作用于物体，可以改变物体的形状和运动状态
+
 key_concepts:
-- term: 物体的运动可以用位置、快慢和方向来描述
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 位置
+    definition: 物体在空间中的所在地点
+    importance: 核心
+  - term: 运动快慢
+    definition: 物体在单位时间内通过的距离
+    importance: 核心
+  - term: 运动方向
+    definition: 物体运动所指向的方位
+    importance: 核心
+  - term: 速度
+    definition: 表示物体运动快慢的物理量
+    importance: 重要
+  - term: 运动形式
+    definition: 直线运动、曲线运动、往复运动、旋转运动等
+    importance: 重要
+
+misconceptions:
+  - statement: "运动的物体一定受到力的作用"
+    correction: "力是改变物体运动状态的原因，不是维持运动的原因"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "速度大的物体运动的路程一定长"
+    correction: "路程不仅与速度有关，还与运动时间有关"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与比较
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察生活中物体的运动→Explore测量并比较物体运动的快慢→Explain用位置、快慢、方向描述运动→Elaborate分析不同运动形式
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 测量与计算
+    relation: 工具支撑
+  - subject: 体育
+    concept: 运动技能
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 运动与力展厅
+    relation: 展示物体运动的规律

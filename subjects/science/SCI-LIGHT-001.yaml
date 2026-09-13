@@ -1,26 +1,79 @@
 id: SCI-LIGHT-001
 name: 光在空气中沿直线传播
-name_en: ''
+name_en: Light Travels in Straight Lines in Air
 subject: 小学科学
 domain: 物质科学
-grade: 小学五年级
-description: 光在空气中沿直线传播的详细教学内容。
-prerequisites: []
-postrequisites: []
+grade: 小学四至五年级
+
+description: |
+  知道光是一种能量形式，光在空气中沿直线传播。
+  了解光的传播需要介质，光可以在空气、水、玻璃等透明物质中传播。
+  认识光的反射现象：光遇到物体表面会改变传播方向。
+  了解光的折射现象：光从一种介质斜射入另一种介质时传播方向发生改变。
+  知道光可以分解成不同颜色的光（光的色散）。
+  了解人眼能看到物体是因为物体反射的光进入了眼睛。
+  了解光的传播速度非常快，光在真空中的传播速度约为3×10⁸m/s。
+
+prerequisites:
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: PHYS-OPT-001
+    name: 光的传播与反射
+
 key_concepts:
-- term: 光在空气中沿直线传播
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 光源
+    definition: 能自己发光的物体，如太阳、电灯、萤火虫等
+    importance: 核心
+  - term: 光的直线传播
+    definition: 光在同一种均匀介质中沿直线传播
+    importance: 核心
+  - term: 光的反射
+    definition: 光遇到物体表面时改变传播方向的现象
+    importance: 核心
+  - term: 光的折射
+    definition: 光从一种介质斜射入另一种介质时传播方向发生偏折的现象
+    importance: 重要
+  - term: 光的色散
+    definition: 白光分解成七种色光的现象
+    importance: 重要
+
+misconceptions:
+  - statement: "光可以在任何物质中传播"
+    correction: "光只能在透明物质中传播，不能在不透明物质中传播"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "人眼能看到物体是因为眼睛发出了光"
+    correction: "人眼能看到物体是因为物体反射的光进入了眼睛"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察生活中的光现象→Explore探究光的直线传播、反射、折射→Explain归纳光的传播规律→Elaborate解释生活中的光学现象
+  - framework: POE
+    brief: 预测光从空气射入水中传播方向的变化，然后实验验证
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 美术
+    concept: 色彩与光影
+    relation: 知识衔接
+  - subject: 地理
+    concept: 大气光学现象
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 光学展厅
+    relation: 展示光的传播、反射、折射现象

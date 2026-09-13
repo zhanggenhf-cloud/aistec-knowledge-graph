@@ -1,28 +1,74 @@
 id: SCI-MAT-001
 name: 物体具有一定的特征，材料具有一定的性能
-name_en: ''
+name_en: Objects Have Characteristics and Materials Have Properties
 subject: 小学科学
 domain: 物质科学
-grade: 小学一年级
-description: 物体具有一定的特征，材料具有一定的性能的详细教学内容。
+grade: 小学一至二年级
+
+description: |
+  认识物体具有一定的特征，如颜色、形状、大小、轻重、软硬、粗糙与光滑等。
+  知道材料具有一定的性能，如吸水性、导热性、导电性、透明度等。
+  能运用感官和简单工具观察并描述物体的外部特征。
+  能根据物体的特征或材料的性能对物体进行分类。
+  了解常见材料（金属、塑料、木材、纸、玻璃等）在日常生活中的应用。
+  初步形成从材料性能角度选择合适材料的意识。
+
 prerequisites: []
-postrequisites: []
+
+postrequisites:
+  - id: SCI-COND-001
+    name: 导体与绝缘体
+  - id: SCI-MAT-002
+    name: 水是一种常见而重要的单一物质
+
 key_concepts:
-- term: 物体具有一定的特征，材料具有一定的性能
-  definition: ''
-  importance: 核心
+  - term: 物体的特征
+    definition: 物体表现出来的可观察性质，如颜色、形状、大小、轻重、软硬等
+    importance: 核心
+  - term: 材料的性能
+    definition: 材料表现出来的功能特性，如吸水性、导热性、导电性、透明度等
+    importance: 核心
+  - term: 分类
+    definition: 根据物体的共同特征将它们分组
+    importance: 核心
+  - term: 常见材料
+    definition: 金属、塑料、木材、纸、玻璃、陶瓷等日常生活中常用的材料
+    importance: 重要
+
 misconceptions:
-- statement: 所有金属都会生锈
-  correction: ''
+  - statement: "重的物体一定大"
+    correction: "物体的重量和大小没有必然联系，如铁块小而重，棉花大而轻"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "所有金属都会生锈"
+    correction: "不是所有金属都会生锈，如金、银不易生锈"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
   min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  piaget_stage: 前运算阶段/具体运算阶段
+  prerequisite_reasoning: 观察与比较
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示各种物体→Explore用感官观察物体特征→Explain交流观察结果→Elaborate根据特征分类
+  - framework: 观察活动
+    brief: 观察并描述身边物体的颜色、形状、大小、轻重等特征
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 分类与比较
+    relation: 方法共享
+  - subject: 美术
+    concept: 颜色与形状
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物质世界展厅
+    relation: 展示各种材料的特性

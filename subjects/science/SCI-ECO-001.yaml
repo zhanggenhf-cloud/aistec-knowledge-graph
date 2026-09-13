@@ -1,29 +1,81 @@
 id: SCI-ECO-001
 name: 生物之间、生物与环境之间相互依存
-name_en: ''
+name_en: Interdependence Among Organisms and Between Organisms and Environment
 subject: 小学科学
 domain: 生命科学
-grade: 小学五年级
-description: 生物之间、生物与环境之间相互依存的详细教学内容。
+grade: 小学五至六年级
+
+description: |
+  知道生物的生存离不开环境，环境为生物提供生存所需的条件。
+  了解生物对环境的适应：生物的形态结构、生活习性与生活环境相适应。
+  认识生物之间的相互关系：捕食、竞争、合作、寄生、共生等。
+  了解生态系统的概念：由生物群落和非生物环境组成的统一整体。
+  知道生态系统中存在食物链和食物网，能量和物质通过食物链传递。
+  了解生态平衡的概念，知道生态系统具有一定的自我调节能力。
+  认识人类活动对生态系统的影响，树立保护生态环境的意识。
+
 prerequisites:
-- id: SCI-LIFE-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-LIFE-002
+    name: 生物能适应其生存环境
+    required: true
+
+postrequisites:
+  - id: SCI-ENV-001
+    name: 人类活动与环境
+  - id: BIO-ECO-001
+    name: 生态系统
+
 key_concepts:
-- term: 生物之间、生物与环境之间相互依存
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 生态系统
+    definition: 由生物群落和非生物环境相互作用形成的统一整体
+    importance: 核心
+  - term: 食物链
+    definition: 生物之间由于捕食关系而形成的链状结构
+    importance: 核心
+  - term: 食物网
+    definition: 多条食物链相互交错连接形成的网状结构
+    importance: 核心
+  - term: 生态平衡
+    definition: 生态系统中各种生物的数量和比例保持相对稳定的状态
+    importance: 核心
+  - term: 生物对环境的适应
+    definition: 生物在形态结构、生理功能或行为方式上对环境形成的适应性特征
+    importance: 重要
+
+misconceptions:
+  - statement: "食物链中只包括动物"
+    correction: "食物链包括生产者（植物）、消费者（动物）和分解者（细菌、真菌）"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "人类可以脱离生态系统生存"
+    correction: "人类是生态系统的一部分，依赖生态系统提供的资源和服务"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 11
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察校园生态系统→Explore调查生物之间的关系→Explain分析食物链和食物网→Elaborate讨论人类活动对生态的影响
+  - framework: 项目式学习
+    brief: 调查当地生态系统，绘制食物网，分析生态平衡状况
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 自然环境与生物分布
+    relation: 知识衔接
+  - subject: 道德与法治
+    concept: 生态文明
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示生态系统与食物链

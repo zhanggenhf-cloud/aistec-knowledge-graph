@@ -1,29 +1,82 @@
 id: SCI-LIFE-003
 name: 生物能生长、发育和繁殖后代
-name_en: ''
+name_en: Organisms Can Grow, Develop, and Reproduce
 subject: 小学科学
 domain: 生命科学
-grade: 小学三年级
-description: 生物能生长、发育和繁殖后代的详细教学内容。
+grade: 小学三至五年级
+
+description: |
+  知道生物能够生长，生长是指生物体体积增大、体重增加的过程。
+  了解生物的发育：从受精卵开始，经过胚胎发育、幼体、成体等阶段。
+  认识生物的繁殖方式：有性繁殖（需要两性生殖细胞结合）和无性繁殖。
+  了解植物的生命周期：种子→发芽→生长→开花→结果→产生新种子。
+  了解动物的生命周期：出生→生长发育→繁殖→死亡。
+  知道遗传是生物将特征传递给后代的现象，变异是生物个体之间的差异。
+  了解生物的多样性和适应性是进化的结果。
+
 prerequisites:
-- id: SCI-LIFE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-LIFE-001
+    name: 生物体具有一定的结构层次
+    required: false
+
+postrequisites:
+  - id: BIO-REPRO-001
+    name: 生物的生殖与发育
+
 key_concepts:
-- term: 生物能生长、发育和繁殖后代
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 生长
+    definition: 生物体体积增大、体重增加的过程
+    importance: 核心
+  - term: 发育
+    definition: 生物体从受精卵到成体的结构和功能变化过程
+    importance: 核心
+  - term: 繁殖
+    definition: 生物产生后代的过程
+    importance: 核心
+  - term: 生命周期
+    definition: 生物从出生到死亡的完整过程
+    importance: 核心
+  - term: 遗传
+    definition: 生物将特征传递给后代的现象
+    importance: 重要
+  - term: 变异
+    definition: 生物个体之间或子代与亲代之间的差异
+    importance: 重要
+
+misconceptions:
+  - statement: "植物不会繁殖"
+    correction: "植物可以通过种子、孢子、扦插、压条等多种方式繁殖"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "遗传就是和父母长得一模一样"
+    correction: "遗传是传递特征，但子代与亲代之间也存在变异"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与比较
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察动植物的生长→Explore种植植物并观察其生命周期→Explain归纳生长、发育、繁殖的概念→Elaborate讨论遗传和变异现象
+  - framework: 长期观察
+    brief: 种植蚕豆或绿豆，记录从种子到开花结果的全过程
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 语文
+    concept: 观察日记
+    relation: 方法共享
+  - subject: 数学
+    concept: 数据记录与统计
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 生命奥秘展厅
+    relation: 展示生物的生命周期

@@ -1,29 +1,84 @@
 id: SCI-HEAT-001
 name: 热可以改变物质的状态
-name_en: ''
+name_en: Heat Can Change the State of Matter
 subject: 小学科学
 domain: 物质科学
-grade: 小学三年级
-description: 热可以改变物质的状态的详细教学内容。
+grade: 小学三至四年级
+
+description: |
+  知道热是一种能量形式，热可以从温度高的物体传到温度低的物体。
+  认识物质有三种常见状态：固态、液态、气态。
+  了解热可以改变物质的状态：加热可以使冰融化成水、使水汽化成水蒸气；冷却可以使水凝固成冰、使水蒸气液化成水。
+  知道温度是表示物体冷热程度的物理量，可以用温度计测量。
+  了解热胀冷缩现象及其在生活中的应用。
+  初步了解热传递的三种方式：传导、对流、辐射。
+
 prerequisites:
-- id: SCI-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: PHYS-HEAT-001
+    name: 温度与物态变化
+
 key_concepts:
-- term: 热可以改变物质的状态
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 温度
+    definition: 表示物体冷热程度的物理量
+    importance: 核心
+  - term: 物态变化
+    definition: 物质在固态、液态、气态之间的相互转化
+    importance: 核心
+  - term: 熔化
+    definition: 物质从固态变成液态的过程
+    importance: 核心
+  - term: 凝固
+    definition: 物质从液态变成固态的过程
+    importance: 核心
+  - term: 汽化
+    definition: 物质从液态变成气态的过程
+    importance: 核心
+  - term: 液化
+    definition: 物质从气态变成液态的过程
+    importance: 核心
+  - term: 热胀冷缩
+    definition: 物体受热时体积膨胀，遇冷时体积收缩的现象
+    importance: 重要
+
+misconceptions:
+  - statement: "加热只能让物体变热，不能改变状态"
+    correction: "加热不仅可以提高温度，还可以使物质发生状态变化"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "冰融化成水质量会减少"
+    correction: "物态变化过程中，物质的质量保持不变"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
   prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察冰块融化→Explore探究加热和冷却对物质状态的影响→Explain归纳物态变化规律→Elaborate解释生活中的物态变化现象
+  - framework: POE
+    brief: 预测水加热后的变化，然后实验观察
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 温度测量与数据记录
+    relation: 工具支撑
+  - subject: 地理
+    concept: 水循环
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物质之妙展厅
+    relation: 展示物态变化的现象

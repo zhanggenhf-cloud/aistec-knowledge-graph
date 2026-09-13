@@ -1,29 +1,78 @@
 id: SCI-BODY-001
 name: 人体由多个系统组成
-name_en: ''
+name_en: Human Body Consists of Multiple Systems
 subject: 小学科学
 domain: 生命科学
-grade: 小学五年级
-description: 人体由多个系统组成的详细教学内容。
+grade: 小学五至六年级
+
+description: |
+  知道人体由多个系统组成，各系统分工合作，共同维持生命活动。
+  了解人体的主要系统：运动系统、消化系统、呼吸系统、循环系统、神经系统、泌尿系统、生殖系统、内分泌系统、免疫系统。
+  知道人体各系统的基本功能及其相互协调关系。
+  了解感觉器官（眼、耳、鼻、舌、皮肤）的功能和保健方法。
+  知道大脑是人体的"司令部"，负责指挥和协调人体的各种活动。
+  了解健康生活方式对人体各系统的重要性。
+
 prerequisites:
-- id: SCI-LIFE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-LIFE-001
+    name: 生物体具有一定的结构层次
+    required: true
+
+postrequisites:
+  - id: SCI-HOME-001
+    name: 生物体的稳态与调节
+  - id: BIO-PHYS-001
+    name: 人体的内环境与稳态
+
 key_concepts:
-- term: 人体由多个系统组成
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 运动系统
+    definition: 由骨、骨连接和骨骼肌组成，负责身体的运动和支撑
+    importance: 核心
+  - term: 消化系统
+    definition: 由消化道和消化腺组成，负责食物的消化和营养吸收
+    importance: 核心
+  - term: 呼吸系统
+    definition: 由呼吸道和肺组成，负责气体交换
+    importance: 核心
+  - term: 循环系统
+    definition: 由心脏、血管和血液组成，负责运输物质
+    importance: 核心
+  - term: 神经系统
+    definition: 由脑、脊髓和神经组成，负责信息传递和指挥协调
+    importance: 核心
+
+misconceptions:
+  - statement: "人体各系统是独立工作的"
+    correction: "人体各系统分工合作、相互协调，共同维持生命活动"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "大脑只负责思考"
+    correction: "大脑不仅负责思考，还负责指挥和协调人体的各种活动"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 11
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage感受身体各部位的功能→Explore观察人体模型或解剖图→Explain交流各系统的功能→Elaborate讨论如何保护身体健康
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 体育与健康
+    concept: 运动与人体
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 生命教育
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 人体奥秘展厅
+    relation: 展示人体各系统的结构和功能

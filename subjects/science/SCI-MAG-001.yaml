@@ -1,26 +1,73 @@
 id: SCI-MAG-001
 name: 磁铁能对某些物体产生作用
-name_en: ''
+name_en: Magnets Can Act on Certain Objects
 subject: 小学科学
 domain: 物质科学
-grade: 小学二年级
-description: 磁铁能对某些物体产生作用的详细教学内容。
+grade: 小学一至二年级
+
+description: |
+  知道磁铁能吸引铁、钴、镍等物质，这种性质叫磁性。
+  了解磁铁有两个磁极：南极（S）和北极（N）。
+  知道同极相斥、异极相吸的规律。
+  了解磁铁在生活中的应用：指南针、磁悬浮列车、磁卡、扬声器等。
+  知道地球是一个大磁体，指南针能指示方向是因为受到地磁场的作用。
+  能设计简单的实验，探究磁铁的磁极和磁力大小。
+
 prerequisites: []
-postrequisites: []
+
+postrequisites:
+  - id: PHYS-MAG-001
+    name: 磁场与磁感线
+
 key_concepts:
-- term: 磁铁能对某些物体产生作用
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 磁性
+    definition: 磁铁能吸引铁、钴、镍等物质的性质
+    importance: 核心
+  - term: 磁极
+    definition: 磁铁上磁性最强的部分，分为南极（S）和北极（N）
+    importance: 核心
+  - term: 同极相斥、异极相吸
+    definition: 同名磁极相互排斥，异名磁极相互吸引
+    importance: 核心
+  - term: 地磁场
+    definition: 地球周围存在的磁场
+    importance: 重要
+  - term: 指南针
+    definition: 利用磁铁指示南北方向的仪器
+    importance: 重要
+
+misconceptions:
+  - statement: "磁铁能吸引所有金属"
+    correction: "磁铁只能吸引铁、钴、镍等磁性材料，不能吸引铜、铝等"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "磁铁只有一个磁极"
+    correction: "任何磁铁都有两个磁极，即使把磁铁分成小块，每块仍有两个磁极"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
   min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  piaget_stage: 前运算阶段/具体运算阶段
+  prerequisite_reasoning: 观察与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示各种磁铁→Explore探究磁铁能吸引哪些物体→Explain归纳磁性的特征→Elaborate制作简易指南针
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 历史
+    concept: 指南针的发明
+    relation: 人文关联
+  - subject: 地理
+    concept: 地磁场与方向
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电磁之奥展厅
+    relation: 展示磁铁的特性和应用

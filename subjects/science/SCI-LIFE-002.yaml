@@ -1,29 +1,76 @@
 id: SCI-LIFE-002
 name: 生物能适应其生存环境
-name_en: ''
+name_en: Organisms Can Adapt to Their Environment
 subject: 小学科学
 domain: 生命科学
-grade: 小学三年级
-description: 生物能适应其生存环境的详细教学内容。
+grade: 小学三至四年级
+
+description: |
+  知道生物的生存离不开环境，环境为生物提供生存所需的条件（阳光、空气、水、温度、食物等）。
+  了解生物对环境的适应：生物的形态结构、生活习性与生活环境相适应。
+  知道不同环境中的生物有不同的适应方式：沙漠植物、水生生物、极地动物等。
+  了解生物的行为适应：迁徙、冬眠、拟态、保护色等。
+  知道环境变化会影响生物的生存，生物也能改变环境。
+  初步形成保护生物多样性和生态环境的意识。
+
 prerequisites:
-- id: SCI-LIFE-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-LIFE-001
+    name: 生物体具有一定的结构层次
+    required: false
+
+postrequisites:
+  - id: SCI-ECO-001
+    name: 生物之间、生物与环境之间相互依存
+
 key_concepts:
-- term: 生物能适应其生存环境
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 环境
+    definition: 生物周围的一切因素，包括生物因素和非生物因素
+    importance: 核心
+  - term: 适应
+    definition: 生物在形态结构、生理功能或行为方式上对环境形成的适应性特征
+    importance: 核心
+  - term: 保护色
+    definition: 动物体色与周围环境相似，不易被敌害发现
+    importance: 重要
+  - term: 拟态
+    definition: 动物的外形或色泽模拟其他生物或非生物，以保护自己
+    importance: 重要
+  - term: 迁徙
+    definition: 动物周期性地从一个地方移动到另一个地方的行为
+    importance: 重要
+
+misconceptions:
+  - statement: "生物只能被动适应环境"
+    correction: "生物不仅能适应环境，还能通过自身活动改变环境"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "所有生物都能适应任何环境"
+    correction: "每种生物只能适应特定的环境，环境变化过大可能导致生物死亡"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与比较
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察不同环境中的生物→Explore比较生物的形态特征与生活环境的→Explain归纳生物对环境的适应方式→Elaborate讨论环境变化对生物的影响
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 自然环境
+    relation: 知识衔接
+  - subject: 美术
+    concept: 生物形态
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 生命奥秘展厅
+    relation: 展示生物对环境的适应

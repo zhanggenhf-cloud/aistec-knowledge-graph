@@ -1,29 +1,78 @@
 id: SCI-MAT-005
 name: 物质的状态变化与温度
-name_en: ''
+name_en: State Changes of Matter and Temperature
 subject: 小学科学
-domain: 物质科学补充
-grade: 小学三年级
-description: 物质的状态变化与温度的详细教学内容。
+domain: 物质科学
+grade: 小学三至四年级
+
+description: |
+  知道物质有三种常见状态：固态、液态、气态。
+  了解物质状态变化与温度的关系：温度升高可以熔化、汽化；温度降低可以凝固、液化。
+  认识水的三态变化：冰（固态）→水（液态）→水蒸气（气态）。
+  知道温度是表示物体冷热程度的物理量，可以用温度计测量。
+  了解摄氏温标，知道水的冰点是0℃，沸点是100℃（标准大气压下）。
+  了解热胀冷缩现象及其在生活中的应用。
+
 prerequisites:
-- id: SCI-HEAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: SCI-HEAT-001
+    name: 热可以改变物质的状态
+
 key_concepts:
-- term: 物质的状态变化与温度
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 固态
+    definition: 物质分子排列紧密，有固定形状和体积的状态
+    importance: 核心
+  - term: 液态
+    definition: 物质分子排列较松散，有固定体积但没有固定形状的状态
+    importance: 核心
+  - term: 气态
+    definition: 物质分子排列很松散，没有固定形状和体积的状态
+    importance: 核心
+  - term: 温度
+    definition: 表示物体冷热程度的物理量
+    importance: 核心
+  - term: 热胀冷缩
+    definition: 物体受热膨胀、遇冷收缩的现象
+    importance: 重要
+
+misconceptions:
+  - statement: "水的温度可以超过100℃"
+    correction: "在标准大气压下，水的温度最高为100℃，超过会变成水蒸气"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "冰融化成水后体积不变"
+    correction: "冰融化成水后体积会变小，因为冰的密度比水小"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与测量
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察冰、水、水蒸气→Explore测量不同状态水的温度→Explain归纳状态变化与温度的关系→Elaborate解释生活中的状态变化
+  - framework: 实验探究
+    brief: 探究水的沸腾和凝固过程，记录温度变化
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 温度测量与数据记录
+    relation: 工具支撑
+  - subject: 地理
+    concept: 水循环
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物质之妙展厅
+    relation: 展示物质的三态变化

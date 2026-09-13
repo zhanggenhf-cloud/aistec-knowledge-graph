@@ -1,29 +1,81 @@
 id: SCI-SEAS-001
 name: 季节变化与地球公转
-name_en: ''
+name_en: Seasonal Changes and Earth's Revolution
 subject: 小学科学
-domain: 地球与宇宙补充
-grade: 小学六年级
-description: 季节变化与地球公转的详细教学内容。
+domain: 地球与宇宙科学
+grade: 小学五至六年级
+
+description: |
+  知道地球绕太阳公转，公转周期约为365天。
+  了解地球公转时地轴倾斜（约23.5°），导致太阳直射点在南北回归线之间移动。
+  认识四季变化的原因：地球公转+地轴倾斜→太阳直射角度变化→获得热量不同→四季更替。
+  了解昼夜长短变化的原因：地球公转时不同纬度地区昼夜长短不同。
+  知道南北半球季节相反。
+  了解二十四节气与农业生产的关系。
+
 prerequisites:
-- id: SCI-EARTH-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-EARTH-001
+    name: 在太阳系中，地球、月球和其他星球有规律地运动着
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-004
+    name: 地球的运动
+
 key_concepts:
-- term: 季节变化与地球公转
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 地球公转
+    definition: 地球绕太阳运行，周期约365天，方向自西向东
+    importance: 核心
+  - term: 地轴倾斜
+    definition: 地球自转轴与公转轨道平面约成66.5°夹角（或说倾斜23.5°）
+    importance: 核心
+  - term: 太阳直射点
+    definition: 太阳光线垂直照射地球表面的点，在南北回归线之间移动
+    importance: 核心
+  - term: 四季
+    definition: 春、夏、秋、冬，由地球公转和地轴倾斜导致
+    importance: 核心
+  - term: 二十四节气
+    definition: 中国古代根据太阳在黄道上的位置划分的24个时段
+    importance: 重要
+
+misconceptions:
+  - statement: "四季变化是因为地球离太阳远近不同"
+    correction: "四季变化是因为地球公转时地轴倾斜，导致太阳直射角度不同"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "夏天热是因为地球离太阳近"
+    correction: "夏天热是因为太阳直射角度大，获得的热量多"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  min_age: 11
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象与因果推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage感受四季变化→Explore模拟地球公转实验→Explain归纳四季成因→Elaborate解释南北半球季节相反
+  - framework: 模型建构
+    brief: 制作地球公转模型，演示四季变化
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 地球运动
+    relation: 后续衔接
+  - subject: 语文
+    concept: 二十四节气
+    relation: 人文关联
+  - subject: 历史
+    concept: 中国古代天文历法
+    relation: 人文关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 宇宙之奇展厅
+    relation: 展示地球公转与四季变化

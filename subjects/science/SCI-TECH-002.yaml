@@ -1,29 +1,75 @@
 id: SCI-TECH-002
 name: 简单机械的应用
-name_en: ''
+name_en: Applications of Simple Machines
 subject: 小学科学
 domain: 技术与工程
-grade: 小学五年级
-description: 简单机械的应用的详细教学内容。
+grade: 小学五至六年级
+
+description: |
+  知道简单机械是人们常用的工具，可以帮助我们省力或改变力的方向。
+  了解常见的简单机械：杠杆、轮轴、滑轮、斜面、楔、螺旋。
+  知道杠杆的平衡条件：动力×动力臂=阻力×阻力臂。
+  了解杠杆的分类：省力杠杆、费力杠杆、等臂杠杆。
+  知道轮轴可以省力，斜面可以省力。
+  能识别生活中使用的简单机械，并分析其作用。
+  了解简单机械的组合应用：剪刀、自行车、起重机等。
+
 prerequisites:
-- id: SCI-MOT-001
-  name: ''
-  required: true
+  - id: SCI-MOT-001
+    name: 力作用于物体，可以改变物体的形状和运动状态
+    required: false
+
 postrequisites: []
+
 key_concepts:
-- term: 简单机械的应用
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 杠杆
+    definition: 能绕固定点转动的硬棒
+    importance: 核心
+  - term: 轮轴
+    definition: 由轮和轴组成，能绕共同轴线转动的简单机械
+    importance: 核心
+  - term: 斜面
+    definition: 与水平面成一定角度的平面，可以省力
+    importance: 核心
+  - term: 滑轮
+    definition: 周边有槽、能绕轴转动的小轮
+    importance: 重要
+  - term: 省力
+    definition: 用较小的力克服较大的阻力
+    importance: 核心
+
+misconceptions:
+  - statement: "简单机械只能省力"
+    correction: "简单机械可以省力、省距离或改变力的方向，但不能同时省力和省距离"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "杠杆越长越省力"
+    correction: "杠杆是否省力取决于动力臂和阻力臂的比例，不是长度"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 11
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 因果推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察生活中的简单机械→Explore探究杠杆平衡条件→Explain归纳简单机械的原理→Elaborate设计使用简单机械的装置
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 简单机械
+    relation: 后续衔接
+  - subject: 数学
+    concept: 比例与计算
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 运动之律展厅
+    relation: 展示简单机械的原理和应用

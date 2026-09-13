@@ -1,29 +1,73 @@
 id: SCI-COND-001
 name: 导体与绝缘体
-name_en: ''
+name_en: Conductors and Insulators
 subject: 小学科学
-domain: 物质科学补充
-grade: 小学四年级
-description: 导体与绝缘体的详细教学内容。
+domain: 物质科学
+grade: 小学三至四年级
+
+description: |
+  知道容易导电的物体叫导体，不容易导电的物体叫绝缘体。
+  了解常见导体：金属、人体、大地、石墨、酸碱盐溶液等。
+  了解常见绝缘体：塑料、橡胶、玻璃、陶瓷、木材、纯水等。
+  知道导体和绝缘体之间没有绝对的界限，在一定条件下可以相互转化。
+  了解导体和绝缘体在生活中的应用：电线芯用导体，电线外皮用绝缘体。
+  树立安全用电意识，知道不能用湿手触摸电器。
+
 prerequisites:
-- id: SCI-ELEC-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: SCI-ELEC-001
+    name: 电路是包括电源在内的闭合回路
+
 key_concepts:
-- term: 导体与绝缘体
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 导体
+    definition: 容易导电的物体
+    importance: 核心
+  - term: 绝缘体
+    definition: 不容易导电的物体
+    importance: 核心
+  - term: 导电性
+    definition: 物体传导电流的能力
+    importance: 核心
+  - term: 半导体
+    definition: 导电性介于导体和绝缘体之间的材料
+    importance: 拓展
+
+misconceptions:
+  - statement: "所有金属都是导体，所有非金属都是绝缘体"
+    correction: "大多数金属是导体，但石墨（非金属）也是导体；纯净水是不导电的"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "绝缘体永远不能导电"
+    correction: "导体和绝缘体之间没有绝对界限，在一定条件下绝缘体也可以导电"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 分类与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察电线结构→Explore测试各种材料的导电性→Explain归纳导体和绝缘体的特征→Elaborate讨论导体和绝缘体的应用
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 电流与电阻
+    relation: 后续衔接
+  - subject: 劳动
+    concept: 安全用电
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电磁之奥展厅
+    relation: 展示导体和绝缘体的特性

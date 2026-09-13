@@ -1,29 +1,82 @@
 id: SCI-ELEC-001
 name: 电路是包括电源在内的闭合回路
-name_en: ''
+name_en: Electric Circuits Are Closed Loops Including a Power Source
 subject: 小学科学
 domain: 物质科学
-grade: 小学四年级
-description: 电路是包括电源在内的闭合回路的详细教学内容。
+grade: 小学四至五年级
+
+description: |
+  知道电是一种能量形式，电能可以转化为光能、热能、声能、机械能等。
+  了解简单电路的组成：电源、导线、用电器、开关。
+  知道电路是包括电源在内的闭合回路，只有闭合回路中才有电流。
+  能连接简单的串联电路和并联电路。
+  了解导体和绝缘体的概念，知道常见导体和绝缘体。
+  了解安全用电常识，树立安全用电意识。
+  初步了解生活中电的来源（电池、发电厂等）。
+
 prerequisites:
-- id: SCI-MAG-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-COND-001
+    name: 导体与绝缘体
+    required: false
+
+postrequisites:
+  - id: PHYS-ELEC-001
+    name: 电流与电路
+
 key_concepts:
-- term: 电路是包括电源在内的闭合回路
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电路
+    definition: 由电源、导线、用电器、开关等组成的电流路径
+    importance: 核心
+  - term: 电源
+    definition: 提供电能的装置，如电池、发电机等
+    importance: 核心
+  - term: 闭合回路
+    definition: 电流能够流通的完整路径
+    importance: 核心
+  - term: 串联电路
+    definition: 用电器依次连接的电路
+    importance: 重要
+  - term: 并联电路
+    definition: 用电器并列连接的电路
+    importance: 重要
+  - term: 安全用电
+    definition: 遵守用电规则，防止触电和电气火灾
+    importance: 核心
+
+misconceptions:
+  - statement: "开关断开时电路中仍有电流"
+    correction: "开关断开时电路不闭合，没有电流"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "所有金属都是导体，所有非金属都是绝缘体"
+    correction: "大多数金属是导体，但石墨（非金属）也是导体"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 模型建构
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察生活中的电器→Explore连接简单电路→Explain归纳电路的组成和工作条件→Elaborate设计并制作简单电路
+  - framework: 项目式学习
+    brief: 设计并制作一个简易电路装置（如小台灯、门铃等）
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 电流与电压
+    relation: 后续衔接
+  - subject: 技术
+    concept: 电子技术
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电磁之奥展厅
+    relation: 展示电路原理和电的应用

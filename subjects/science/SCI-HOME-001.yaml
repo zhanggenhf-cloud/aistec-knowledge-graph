@@ -1,0 +1,84 @@
+id: SCI-HOME-001
+name: 生物体的稳态与调节
+name_en: Homeostasis and Regulation in Organisms
+subject: 小学科学
+domain: 生命科学
+grade: 小学三至六年级
+
+description: |
+  认识生物体具有一定的结构层次，各结构协调统一共同完成复杂的生命活动。
+  知道植物生命活动受到多种因素的调节，其中最重要的是植物激素的调节。
+  了解人体由多个系统组成，各系统分工合作，共同维持生命活动。
+  初步认识神经系统、内分泌系统、免疫系统等在维持机体稳态中的作用。
+  知道人体通过感觉器官感知外界环境变化，并作出相应反应。
+  了解健康的生活方式对维持人体稳态的重要性。
+
+prerequisites:
+  - id: SCI-LIFE-001
+    name: 生物体具有一定的结构层次
+    required: true
+  - id: SCI-LIFE-004
+    name: 动物和植物都有基本生存需要
+    required: true
+
+postrequisites:
+  - id: BIO-PHYS-001
+    name: 人体的内环境与稳态
+
+key_concepts:
+  - term: 稳态
+    definition: 生物体通过调节机制，使内环境保持相对稳定的状态
+    importance: 核心
+  - term: 神经系统
+    definition: 由脑、脊髓和神经组成，负责感知外界刺激并作出反应
+    importance: 核心
+  - term: 感觉器官
+    definition: 眼、耳、鼻、舌、皮肤等能感知外界环境变化的器官
+    importance: 核心
+  - term: 植物激素
+    definition: 植物体内产生的、对生命活动起调节作用的微量有机物
+    importance: 重要
+  - term: 健康生活方式
+    definition: 合理膳食、适量运动、规律作息、良好心态等有利于健康的行为方式
+    importance: 重要
+
+misconceptions:
+  - statement: "人体各系统是独立工作的"
+    correction: "人体各系统分工合作、相互协调，共同维持生命活动"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "植物没有神经系统，所以无法调节生命活动"
+    correction: "植物虽然没有神经系统，但可以通过植物激素等方式调节生命活动"
+    source: 义务教育科学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 系统思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage讨论生病时的身体变化→Explore观察植物向光性实验→Explain解释生物体的调节机制→Elaborate讨论健康生活方式
+  - framework: POE
+    brief: 预测遮住植物一侧光照后植物的生长方向，然后实验验证
+
+verification:
+  status: verified
+  sources:
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 体育与健康
+    concept: 运动与健康
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 生命教育
+    relation: 价值引领
+  - subject: 生物
+    concept: 人体生理
+    relation: 后续衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 人体奥秘展厅
+    relation: 展示人体各系统协调工作

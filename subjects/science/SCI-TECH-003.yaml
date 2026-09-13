@@ -1,26 +1,70 @@
 id: SCI-TECH-003
 name: 技术与生活
-name_en: ''
+name_en: Technology and Life
 subject: 小学科学
 domain: 技术与工程
-grade: 小学六年级
-description: 技术与生活的详细教学内容。
+grade: 小学一至三年级
+
+description: |
+  知道技术产品是人类为满足需求而设计和制造的。
+  了解常见技术产品在生活中的应用：交通工具、通讯工具、家用电器等。
+  知道技术产品会不断改进和更新。
+  了解使用技术产品时需要遵守安全规则。
+  能正确使用常见的技术产品，并了解其基本工作原理。
+  初步形成对技术产品的评价意识：是否方便、安全、环保等。
+
 prerequisites: []
-postrequisites: []
+
+postrequisites:
+  - id: SCI-TECH-001
+    name: 工程设计过程
+
 key_concepts:
-- term: 技术与生活
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 技术产品
+    definition: 为满足人类需求而设计和制造的物品
+    importance: 核心
+  - term: 功能
+    definition: 技术产品能完成的任务或作用
+    importance: 核心
+  - term: 安全使用
+    definition: 按照正确方法使用技术产品，避免造成伤害
+    importance: 核心
+  - term: 技术改进
+    definition: 对现有技术产品进行优化，使其更好用
+    importance: 重要
+
+misconceptions:
+  - statement: "技术产品都是完美的"
+    correction: "技术产品都有优缺点，需要不断改进"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "技术产品越复杂越好"
+    correction: "技术产品的好坏不在于复杂程度，而在于是否满足需求"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
   min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  piaget_stage: 前运算阶段/具体运算阶段
+  prerequisite_reasoning: 观察与评价
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察身边的技术产品→Explore使用并评价技术产品→Explain交流使用体验→Elaborate提出改进建议
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 劳动
+    concept: 生活技能
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 安全与规则
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 科技与生活展厅
+    relation: 展示技术产品在生活中的应用

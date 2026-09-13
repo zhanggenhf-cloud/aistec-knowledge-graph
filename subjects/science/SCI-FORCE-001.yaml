@@ -1,26 +1,79 @@
 id: SCI-FORCE-001
 name: 声音因物体振动而产生
-name_en: ''
+name_en: Sound Is Produced by Vibrating Objects
 subject: 小学科学
 domain: 物质科学
-grade: 小学四年级
-description: 声音因物体振动而产生的详细教学内容。
-prerequisites: []
-postrequisites: []
+grade: 小学三至四年级
+
+description: |
+  知道声音是由物体振动产生的，振动停止，发声也停止。
+  了解声音的传播需要介质，可以在气体、液体、固体中传播，不能在真空中传播。
+  知道声音有高低（音调）、强弱（响度）、音色三个特性。
+  了解影响音调高低的因素：振动频率（频率越高，音调越高）。
+  了解影响响度大小的因素：振动幅度（幅度越大，响度越大）。
+  知道噪声的危害和控制方法。
+  了解人耳听到声音的过程：声波→外耳道→鼓膜→听小骨→耳蜗→听觉神经→大脑。
+
+prerequisites:
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: PHYS-SOUND-001
+    name: 声音的产生与传播
+
 key_concepts:
-- term: 声音因物体振动而产生
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 振动
+    definition: 物体在平衡位置附近来回往复的运动
+    importance: 核心
+  - term: 音调
+    definition: 声音的高低，由振动频率决定
+    importance: 核心
+  - term: 响度
+    definition: 声音的强弱，由振动幅度决定
+    importance: 核心
+  - term: 音色
+    definition: 声音的品质，由发声体的材料和结构决定
+    importance: 重要
+  - term: 噪声
+    definition: 影响人们正常工作、学习和休息的声音
+    importance: 重要
+
+misconceptions:
+  - statement: "声音能在真空中传播"
+    correction: "声音传播需要介质，不能在真空中传播"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "物体发声时不一定在振动"
+    correction: "所有发声的物体都在振动，振动是声音产生的原因"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
   prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage感受各种声音→Explore探究声音产生的原因和传播条件→Explain归纳声音的特性→Elaborate设计降噪方案
+  - framework: POE
+    brief: 预测真空罩中闹钟声音的变化，然后实验验证
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 音乐
+    concept: 音高与音色
+    relation: 应用实例
+  - subject: 美术
+    concept: 声音的图形化表示
+    relation: 方法共享
+
+exhibits:
+  - venue: 中国科技馆
+    name: 声音之韵展厅
+    relation: 展示声音的产生和传播

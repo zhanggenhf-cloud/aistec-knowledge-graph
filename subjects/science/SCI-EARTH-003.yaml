@@ -1,29 +1,73 @@
 id: SCI-EARTH-003
 name: 地球是人类生存的家园
-name_en: ''
+name_en: Earth Is the Home of Human Survival
 subject: 小学科学
 domain: 地球与宇宙科学
-grade: 小学二年级
-description: 地球是人类生存的家园的详细教学内容。
+grade: 小学五至六年级
+
+description: |
+  知道地球是人类生存的唯一家园，要珍惜和保护地球。
+  了解地球为生命提供的条件：适宜的温度、液态水、大气层、磁场等。
+  知道地球在太阳系中的位置决定了地球有适宜生命存在的条件。
+  了解人类活动对地球环境的影响，包括正面影响和负面影响。
+  知道保护地球环境的重要性，树立可持续发展的观念。
+  了解探索太空的意义，但地球仍是人类唯一的家园。
+
 prerequisites:
-- id: SCI-EARTH-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-EARTH-002
+    name: 地球上有大气、水、生物、土壤和岩石
+    required: false
+
+postrequisites:
+  - id: SCI-ENV-001
+    name: 人类活动与环境
+
 key_concepts:
-- term: 地球是人类生存的家园
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 宜居条件
+    definition: 地球为生命提供的适宜温度、液态水、大气层等条件
+    importance: 核心
+  - term: 地球位置
+    definition: 地球与太阳的距离适中，使地表温度适宜
+    importance: 核心
+  - term: 环境保护
+    definition: 保护地球环境，维持生态平衡，为后代留下宜居家园
+    importance: 核心
+  - term: 可持续发展
+    definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
+    importance: 核心
+
+misconceptions:
+  - statement: "人类可以搬到其他星球生存"
+    correction: "目前地球是人类唯一的家园，其他星球不具备生命生存的条件"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "地球资源取之不尽"
+    correction: "地球资源有限，需要合理利用和保护"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  min_age: 11
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 价值判断
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage讨论地球为什么适合生命存在→Explore比较地球和其他行星→Explain归纳地球的独特性→Elaborate讨论如何保护地球
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 生态文明
+    relation: 价值引领
+  - subject: 地理
+    concept: 人地协调观
+    relation: 后续衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示地球的独特性和保护

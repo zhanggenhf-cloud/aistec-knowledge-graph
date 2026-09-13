@@ -1,26 +1,79 @@
 id: SCI-WEATHER-001
 name: 天气现象有阴、晴、雨、雪、风等
-name_en: ''
+name_en: Weather Phenomena Include Cloudy, Sunny, Rainy, Snowy, Windy, etc.
 subject: 小学科学
 domain: 地球与宇宙科学
-grade: 小学二年级
-description: 天气现象有阴、晴、雨、雪、风等的详细教学内容。
-prerequisites: []
-postrequisites: []
+grade: 小学三至四年级
+
+description: |
+  知道天气是指某一地区短时间内的大气状况，包括气温、降水、风、云等。
+  了解常见的天气现象：阴、晴、雨、雪、风、雾、霜、雷电等。
+  知道天气可以用气温计、风向标、雨量器等工具测量和记录。
+  了解天气预报的制作过程：观测→收集数据→分析→预报。
+  知道天气与人们的生活密切相关，可以根据天气预报安排活动。
+  了解气候是指某一地区多年的天气平均状况。
+  初步了解天气和气候的区别。
+
+prerequisites:
+  - id: SCI-MAT-003
+    name: 空气是一种常见而重要的混合物质
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-003
+    name: 天气与气候
+
 key_concepts:
-- term: 天气现象有阴、晴、雨、雪、风等
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 天气
+    definition: 某一地区短时间内的大气状况
+    importance: 核心
+  - term: 气候
+    definition: 某一地区多年的天气平均状况
+    importance: 核心
+  - term: 气温
+    definition: 表示空气冷热程度的物理量
+    importance: 核心
+  - term: 降水
+    definition: 大气中的水汽凝结后以雨、雪、冰雹等形式降落到地面
+    importance: 核心
+  - term: 风
+    definition: 空气的水平运动
+    importance: 核心
+
+misconceptions:
+  - statement: "天气和气候是一回事"
+    correction: "天气是短时间的大气状况，气候是多年的平均状况"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "今天下雨说明这里气候湿润"
+    correction: "一天下雨不能说明气候特征，需要多年的平均数据"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与记录
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察当天的天气→Explore测量气温、风向、降水量→Explain交流天气数据→Elaborate制作天气预报
+  - framework: 长期观察
+    brief: 记录一个月的天气数据，分析天气变化规律
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 天气与气候
+    relation: 后续衔接
+  - subject: 数学
+    concept: 数据统计
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示天气现象和气象观测

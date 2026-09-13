@@ -1,0 +1,84 @@
+id: SCI-ENV-001
+name: 人类活动与环境
+name_en: Human Activities and Environment
+subject: 小学科学
+domain: 地球与宇宙科学
+grade: 小学三至六年级
+
+description: |
+  认识人类活动对环境的影响，包括正面影响和负面影响。
+  了解人类活动引起的环境问题：空气污染、水污染、土壤污染、噪声污染等。
+  知道自然资源是有限的，树立节约资源和保护环境的意识。
+  了解人类保护环境的措施：垃圾分类、污水处理、植树造林、节能减排等。
+  初步形成可持续发展观念，知道保护环境就是保护人类自己。
+  了解地球是人类生存的家园，形成热爱地球、保护地球的情感。
+
+prerequisites:
+  - id: SCI-ECO-001
+    name: 生物之间、生物与环境之间相互依存
+    required: true
+  - id: SCI-WATER-001
+    name: 水在自然界的循环
+    required: false
+
+postrequisites:
+  - id: GEO-ENV-001
+    name: 自然资源与环境保护
+
+key_concepts:
+  - term: 环境污染
+    definition: 人类活动排放的物质超过环境自净能力，导致环境质量下降
+    importance: 核心
+  - term: 自然资源
+    definition: 自然界中人类可以直接获得并用于生产和生活的物质和能量
+    importance: 核心
+  - term: 可持续发展
+    definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
+    importance: 核心
+  - term: 垃圾分类
+    definition: 按一定规定或标准将垃圾分类储存、投放和搬运，从而转变成公共资源
+    importance: 重要
+  - term: 低碳生活
+    definition: 减少二氧化碳排放，降低对环境影响的生活方式
+    importance: 重要
+
+misconceptions:
+  - statement: "人类可以征服自然"
+    correction: "人类是自然界的一部分，应该尊重自然、顺应自然、保护自然"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "保护环境是成年人的事，与小学生无关"
+    correction: "保护环境人人有责，小学生也可以从身边小事做起"
+    source: 义务教育科学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 因果关系推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage讨论身边的环境问题→Explore调查当地环境状况→Explain分析人类活动与环境的关系→Elaborate设计环保行动方案
+  - framework: 项目式学习
+    brief: 开展校园垃圾分类调查与改进方案设计
+
+verification:
+  status: verified
+  sources:
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 生态文明
+    relation: 价值引领
+  - subject: 化学
+    concept: 环境保护与污染治理
+    relation: 后续衔接
+  - subject: 地理
+    concept: 人地协调观
+    relation: 后续衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示人类活动对环境的影响

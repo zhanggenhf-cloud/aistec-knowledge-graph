@@ -1,31 +1,81 @@
 id: SCI-MOT-001
 name: 力作用于物体，可以改变物体的形状和运动状态
-name_en: ''
+name_en: Forces Change Shape and Motion of Objects
 subject: 小学科学
 domain: 物质科学
-grade: 小学四年级
-description: 力作用于物体，可以改变物体的形状和运动状态的详细教学内容。
+grade: 小学四至五年级
+
+description: |
+  知道力是物体对物体的作用，力不能脱离物体而存在。
+  认识力的作用效果：可以改变物体的形状（使物体发生形变），也可以改变物体的运动状态（使静止的物体运动、使运动的物体静止、改变运动快慢或方向）。
+  了解常见的力：推力、拉力、弹力、摩擦力、重力、磁力等。
+  知道力的大小可以用测力计测量，力的单位是牛顿（N）。
+  能设计简单的实验，探究影响摩擦力大小的因素。
+  了解弹力、摩擦力、重力在生活中的应用。
+
 prerequisites:
-- id: SCI-MAT-004
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-004
+    name: 物体的运动可以用位置、快慢和方向来描述
+    required: true
+
+postrequisites:
+  - id: PHYS-FORCE-001
+    name: 力的概念与测量
+
 key_concepts:
-- term: 力作用于物体，可以改变物体的形状和运动状态
-  definition: ''
-  importance: 核心
+  - term: 力
+    definition: 物体对物体的作用
+    importance: 核心
+  - term: 形变
+    definition: 物体在力的作用下形状或体积发生改变
+    importance: 核心
+  - term: 运动状态改变
+    definition: 物体速度大小或方向发生变化
+    importance: 核心
+  - term: 重力
+    definition: 由于地球吸引而使物体受到的力
+    importance: 重要
+  - term: 弹力
+    definition: 物体发生弹性形变时产生的力
+    importance: 重要
+  - term: 摩擦力
+    definition: 两个相互接触的物体发生相对运动或有相对运动趋势时，在接触面上产生的阻碍相对运动的力
+    importance: 重要
+
 misconceptions:
-- statement: 力是维持物体运动的原因
-  correction: ''
+  - statement: "只有接触的物体之间才有力的作用"
+    correction: "不接触的物体之间也可以有力的作用，如磁力、重力"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "物体运动需要力的维持"
+    correction: "力是改变物体运动状态的原因，不是维持运动的原因"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 因果推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage推和拉的体验活动→Explore探究力对物体形状和运动的影响→Explain归纳力的作用效果→Elaborate分析生活中各种力的应用
+  - framework: POE
+    brief: 预测不同表面摩擦力的大小，然后实验验证
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 测量与数据分析
+    relation: 工具支撑
+  - subject: 体育
+    concept: 运动与力量
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 运动之律展厅
+    relation: 展示力的作用效果

@@ -1,29 +1,78 @@
 id: SCI-MOON-001
 name: 月相变化
-name_en: ''
+name_en: Phases of the Moon
 subject: 小学科学
-domain: 地球与宇宙补充
-grade: 小学六年级
-description: 月相变化的详细教学内容。
+domain: 地球与宇宙科学
+grade: 小学四至五年级
+
+description: |
+  知道月球是地球的卫星，绕地球公转。
+  了解月相变化的原因：月球绕地球公转，太阳照射月球的角度不同，我们在地球上看到月球被照亮的部分发生变化。
+  知道月相变化的周期约为一个月（29.5天）。
+  认识主要的月相：新月、上弦月、满月、下弦月。
+  了解月相变化与人类生活的关系：农历、潮汐等。
+  知道日食和月食的成因。
+
 prerequisites:
-- id: SCI-EARTH-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-EARTH-001
+    name: 在太阳系中，地球、月球和其他星球有规律地运动着
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-004
+    name: 地球的运动
+
 key_concepts:
-- term: 月相变化
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 月相
+    definition: 地球上看到的月球被太阳照亮部分的不同形状
+    importance: 核心
+  - term: 新月
+    definition: 月球位于太阳和地球之间，看不到月球
+    importance: 核心
+  - term: 满月
+    definition: 地球位于太阳和月球之间，看到整个月球被照亮
+    importance: 核心
+  - term: 上弦月
+    definition: 月球绕地球公转约四分之一圈时，看到月球右半边亮
+    importance: 重要
+  - term: 下弦月
+    definition: 月球绕地球公转约四分之三圈时，看到月球左半边亮
+    importance: 重要
+
+misconceptions:
+  - statement: "月相变化是因为地球挡住了太阳光"
+    correction: "月相变化是因为月球绕地球公转，我们看到月球被照亮的部分不同"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "月相变化是由云遮挡造成的"
+    correction: "月相变化是月球公转造成的，与云无关"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 空间想象
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察月相→Explore模拟月相变化实验→Explain归纳月相变化规律→Elaborate预测未来某天的月相
+  - framework: 模型建构
+    brief: 用乒乓球和手电筒模拟月相变化
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 周期
+    relation: 工具支撑
+  - subject: 语文
+    concept: 月相与诗词
+    relation: 人文关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 宇宙之奇展厅
+    relation: 展示月相变化

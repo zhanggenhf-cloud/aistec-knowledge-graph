@@ -1,29 +1,73 @@
 id: SCI-MIX-001
 name: 混合物与分离
-name_en: ''
+name_en: Mixtures and Separation
 subject: 小学科学
-domain: 物质科学补充
-grade: 小学三年级
-description: 混合物与分离的详细教学内容。
+domain: 物质科学
+grade: 小学四至五年级
+
+description: |
+  知道由两种或两种以上物质混合而成的叫混合物，如空气、土壤等。
+  了解混合物的分离方法：过滤、蒸发、磁选、筛分等。
+  知道过滤可以分离不溶性固体和液体。
+  了解蒸发可以分离可溶性固体和液体。
+  知道有些混合物可以用多种方法分离，需要根据混合物性质选择合适的方法。
+  能设计简单的实验，分离混合物。
+
 prerequisites:
-- id: SCI-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-DISS-001
+    name: 溶解与溶液
+    required: false
+
+postrequisites:
+  - id: CHEM-MAT-002
+    name: 纯净物与混合物
+
 key_concepts:
-- term: 混合物与分离
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 混合物
+    definition: 由两种或两种以上物质混合而成的物质
+    importance: 核心
+  - term: 过滤
+    definition: 利用滤纸等多孔材料分离不溶性固体和液体的方法
+    importance: 核心
+  - term: 蒸发
+    definition: 利用加热使溶剂挥发，从而分离可溶性固体和液体的方法
+    importance: 核心
+  - term: 磁选
+    definition: 利用磁铁分离磁性物质和非磁性物质的方法
+    importance: 重要
+
+misconceptions:
+  - statement: "混合物分离后物质就消失了"
+    correction: "分离后各物质仍然存在，只是分开了"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "所有混合物都可以用过滤分离"
+    correction: "过滤只能分离不溶性固体和液体，可溶性物质需要用蒸发等方法"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 分类与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察混合物→Explore尝试用不同方法分离混合物→Explain归纳分离方法的原理→Elaborate设计分离方案
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 化学
+    concept: 混合物的分离
+    relation: 后续衔接
+  - subject: 劳动
+    concept: 生活技能
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物质之妙展厅
+    relation: 展示混合物分离

@@ -1,29 +1,76 @@
 id: SCI-DISS-001
 name: 溶解与溶液
-name_en: ''
+name_en: Dissolution and Solutions
 subject: 小学科学
-domain: 物质科学补充
-grade: 小学四年级
-description: 溶解与溶液的详细教学内容。
+domain: 物质科学
+grade: 小学三至四年级
+
+description: |
+  知道有些物质能在水中溶解，形成均匀稳定的溶液。
+  了解溶解的特征：溶质分散到溶剂中，形成均匀、稳定的混合物。
+  知道影响溶解快慢的因素：温度、搅拌、颗粒大小等。
+  了解饱和溶液的概念：在一定条件下不能再溶解某种溶质的溶液。
+  知道有些物质不能在水中溶解，如油、沙子等。
+  能设计简单的实验，探究影响溶解快慢的因素。
+
 prerequisites:
-- id: SCI-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-002
+    name: 水是一种常见而重要的单一物质
+    required: false
+
+postrequisites:
+  - id: CHEM-SOL-001
+    name: 溶液
+
 key_concepts:
-- term: 溶解与溶液
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 溶解
+    definition: 物质均匀分散到另一种物质中形成溶液的过程
+    importance: 核心
+  - term: 溶质
+    definition: 被溶解的物质
+    importance: 核心
+  - term: 溶剂
+    definition: 能溶解其他物质的物质，如水
+    importance: 核心
+  - term: 溶液
+    definition: 溶质溶解在溶剂中形成的均匀、稳定的混合物
+    importance: 核心
+  - term: 饱和溶液
+    definition: 在一定条件下不能再溶解某种溶质的溶液
+    importance: 重要
+
+misconceptions:
+  - statement: "所有物质都能在水中溶解"
+    correction: "不是所有物质都能在水中溶解，如油、沙子不能溶解"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "溶解后物质就消失了"
+    correction: "溶解后物质分散在水中，用蒸发等方法可以重新得到"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察糖和盐在水中的变化→Explore探究影响溶解快慢的因素→Explain归纳溶解的特征→Elaborate设计加速溶解的方案
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 化学
+    concept: 溶液
+    relation: 后续衔接
+  - subject: 数学
+    concept: 测量与比较
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物质之妙展厅
+    relation: 展示溶解现象

@@ -1,29 +1,80 @@
 id: SCI-STARS-001
 name: 星座与星系
-name_en: ''
+name_en: Constellations and Galaxies
 subject: 小学科学
-domain: 地球与宇宙补充
-grade: 小学六年级
-description: 星座与星系的详细教学内容。
+domain: 地球与宇宙科学
+grade: 小学五至六年级
+
+description: |
+  知道太阳是一颗恒星，能自己发光发热。
+  了解恒星与行星的区别：恒星能自己发光，行星不能自己发光。
+  认识星座：人们把天空中位置相近的恒星联系起来，想象成各种形状，称为星座。
+  了解北斗七星和北极星，知道它们可以帮助辨别方向。
+  知道银河系是由大量恒星、星云等组成的巨大天体系统，太阳是银河系中的一颗恒星。
+  了解宇宙中有无数个像银河系一样的星系。
+  了解人类探索宇宙的历程和成就，激发探索宇宙的兴趣。
+
 prerequisites:
-- id: SCI-EARTH-001
-  name: ''
-  required: true
+  - id: SCI-EARTH-001
+    name: 在太阳系中，地球、月球和其他星球有规律地运动着
+    required: false
+
 postrequisites: []
+
 key_concepts:
-- term: 星座与星系
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 恒星
+    definition: 能自己发光发热的天体，如太阳
+    importance: 核心
+  - term: 行星
+    definition: 围绕恒星运行、不能自己发光的天体，如地球
+    importance: 核心
+  - term: 星座
+    definition: 天空中位置相近的恒星组成的图案
+    importance: 核心
+  - term: 北斗七星
+    definition: 大熊星座中的七颗亮星，形状像勺子
+    importance: 重要
+  - term: 北极星
+    definition: 位于北方天空的一颗亮星，几乎正对地球北极
+    importance: 重要
+  - term: 银河系
+    definition: 由大量恒星、星云等组成的巨大天体系统
+    importance: 核心
+
+misconceptions:
+  - statement: "星座中的星星真的连在一起"
+    correction: "星座中的星星看起来近，实际上距离很远，只是从地球上看在同一方向"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "太阳是宇宙中最大的恒星"
+    correction: "太阳只是银河系中一颗普通的恒星，比太阳大的恒星有很多"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  min_age: 11
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察星空→Explore辨认北斗七星和北极星→Explain了解星座和星系→Elaborate讨论人类探索宇宙的意义
+  - framework: 观察活动
+    brief: 夜晚观察星空，辨认主要星座
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 历史
+    concept: 人类探索宇宙的历史
+    relation: 人文关联
+  - subject: 语文
+    concept: 星空与诗词
+    relation: 人文关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 宇宙之奇展厅
+    relation: 展示恒星、星座和星系

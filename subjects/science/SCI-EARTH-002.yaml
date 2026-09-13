@@ -1,26 +1,77 @@
 id: SCI-EARTH-002
 name: 地球上有大气、水、生物、土壤和岩石
-name_en: ''
+name_en: Earth Has Atmosphere, Water, Life, Soil, and Rocks
 subject: 小学科学
 domain: 地球与宇宙科学
-grade: 小学三年级
-description: 地球上有大气、水、生物、土壤和岩石的详细教学内容。
-prerequisites: []
-postrequisites: []
+grade: 小学四至五年级
+
+description: |
+  知道地球表面覆盖着大气、水、生物、土壤和岩石。
+  了解大气层的作用：保护地球、调节温度、提供氧气等。
+  知道水在地球上分布广泛，以海洋、河流、湖泊、冰川、地下水等形式存在。
+  了解土壤的组成：矿物质、有机质、水、空气等。
+  知道岩石有三种主要类型：岩浆岩、沉积岩、变质岩。
+  了解地球表面的地形地貌：山地、平原、高原、盆地、丘陵等。
+  初步认识地球各圈层（大气圈、水圈、生物圈、岩石圈）之间的相互作用。
+
+prerequisites:
+  - id: SCI-WATER-001
+    name: 水在自然界的循环
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-005
+    name: 陆地和海洋
+
 key_concepts:
-- term: 地球上有大气、水、生物、土壤和岩石
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 大气层
+    definition: 包围地球的气体层，对地球起保护作用
+    importance: 核心
+  - term: 水圈
+    definition: 地球上所有水体的总称，包括海洋、河流、湖泊、冰川等
+    importance: 核心
+  - term: 土壤
+    definition: 地球表面能生长植物的疏松表层，由矿物质、有机质、水、空气组成
+    importance: 核心
+  - term: 岩石
+    definition: 由一种或多种矿物组成的固态集合体
+    importance: 核心
+  - term: 地形地貌
+    definition: 地球表面的各种形态，如山地、平原、高原等
+    importance: 重要
+
+misconceptions:
+  - statement: "地球表面都是土地"
+    correction: "地球表面约71%是海洋，29%是陆地"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "土壤就是泥土"
+    correction: "土壤是由矿物质、有机质、水、空气和生物组成的复杂混合物"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与分类
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察地球仪→Explore观察土壤和岩石样本→Explain交流地球表面的组成→Elaborate讨论各圈层的相互作用
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 地理
+    concept: 地球表层
+    relation: 后续衔接
+  - subject: 化学
+    concept: 物质的组成
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示地球表层系统

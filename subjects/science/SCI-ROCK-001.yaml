@@ -1,29 +1,77 @@
 id: SCI-ROCK-001
 name: 岩石与土壤
-name_en: ''
+name_en: Rocks and Soil
 subject: 小学科学
-domain: 地球与宇宙补充
-grade: 小学四年级
-description: 岩石与土壤的详细教学内容。
+domain: 地球与宇宙科学
+grade: 小学四至五年级
+
+description: |
+  知道岩石有三种主要类型：岩浆岩、沉积岩、变质岩。
+  了解岩浆岩是由岩浆冷却凝固形成的，如花岗岩、玄武岩。
+  了解沉积岩是由沉积物经过压实和胶结形成的，如砂岩、页岩、石灰岩。
+  了解变质岩是由原有岩石在高温高压下变质形成的，如大理岩、板岩。
+  知道土壤是由岩石风化形成的，由矿物质、有机质、水、空气等组成。
+  了解土壤的类型和用途，知道保护土壤的重要性。
+  了解岩石和土壤是地球的重要资源。
+
 prerequisites:
-- id: SCI-EARTH-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-EARTH-002
+    name: 地球上有大气、水、生物、土壤和岩石
+    required: false
+
+postrequisites:
+  - id: GEO-EARTH-005
+    name: 陆地和海洋
+
 key_concepts:
-- term: 岩石与土壤
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 岩浆岩
+    definition: 由岩浆冷却凝固形成的岩石
+    importance: 核心
+  - term: 沉积岩
+    definition: 由沉积物经过压实和胶结形成的岩石
+    importance: 核心
+  - term: 变质岩
+    definition: 由原有岩石在高温高压下变质形成的岩石
+    importance: 核心
+  - term: 岩石风化
+    definition: 岩石在温度、水、生物等作用下破碎分解的过程
+    importance: 重要
+  - term: 土壤
+    definition: 地球表面能生长植物的疏松表层
+    importance: 核心
+
+misconceptions:
+  - statement: "岩石永远不会变化"
+    correction: "岩石会经历风化、侵蚀、沉积等过程，逐渐发生变化"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "土壤就是泥土"
+    correction: "土壤是由矿物质、有机质、水、空气和生物组成的复杂混合物"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与分类
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察各种岩石和土壤→Explore比较不同类型岩石的特征→Explain归纳岩石的分类→Elaborate讨论岩石和土壤的用途与保护
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 化学
+    concept: 物质的组成
+    relation: 知识衔接
+  - subject: 地理
+    concept: 地质与地貌
+    relation: 后续衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示岩石和土壤的形成

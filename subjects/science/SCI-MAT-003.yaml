@@ -1,29 +1,79 @@
 id: SCI-MAT-003
 name: 空气是一种常见而重要的混合物质
-name_en: ''
+name_en: Air Is a Common and Important Mixture
 subject: 小学科学
 domain: 物质科学
-grade: 小学三年级
-description: 空气是一种常见而重要的混合物质的详细教学内容。
+grade: 小学三至四年级
+
+description: |
+  知道空气是一种常见而重要的混合物质，无色、无味、透明、没有固定形状。
+  了解空气的主要成分：氮气（约78%）、氧气（约21%）、二氧化碳、水蒸气等。
+  知道空气占据空间，有质量，可以被压缩。
+  了解空气的作用：供生物呼吸、助燃、传播声音、产生风力等。
+  知道大气压力的存在及其在生活中的应用。
+  初步了解空气污染及其危害，树立保护空气质量的意识。
+
 prerequisites:
-- id: SCI-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-MAT-001
+    name: 物体具有一定的特征，材料具有一定的性能
+    required: false
+
+postrequisites:
+  - id: CHEM-MAT-003
+    name: 单质与化合物
+
 key_concepts:
-- term: 空气是一种常见而重要的混合物质
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 空气的成分
+    definition: 氮气约78%、氧气约21%、稀有气体约0.94%、二氧化碳约0.03%、其他气体和杂质约0.03%
+    importance: 核心
+  - term: 氧气
+    definition: 空气的重要成分，能供生物呼吸、助燃
+    importance: 核心
+  - term: 二氧化碳
+    definition: 空气的成分之一，植物光合作用需要二氧化碳
+    importance: 重要
+  - term: 大气压力
+    definition: 大气层对地球表面物体产生的压力
+    importance: 重要
+  - term: 空气污染
+    definition: 空气中混入有害物质，导致空气质量下降
+    importance: 重要
+
+misconceptions:
+  - statement: "空气没有质量"
+    correction: "空气有质量，可以通过实验证明"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "空气中只有氧气"
+    correction: "空气中氮气约占78%，氧气约占21%，还有其他气体"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 观察与实验
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage感受空气的存在→Explore探究空气的性质和成分→Explain交流实验结果→Elaborate讨论空气污染与保护
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 化学
+    concept: 空气的组成
+    relation: 后续衔接
+  - subject: 生物
+    concept: 呼吸作用
+    relation: 知识衔接
+  - subject: 地理
+    concept: 大气层
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 地球家园展厅
+    relation: 展示空气的性质和大气污染

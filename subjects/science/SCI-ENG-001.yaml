@@ -1,0 +1,80 @@
+id: SCI-ENG-001
+name: 工程设计与物化
+name_en: Engineering Design and Materialization
+subject: 小学科学
+domain: 技术与工程
+grade: 小学三至六年级
+
+description: |
+  了解工程需要经历明确问题、设计方案、实施计划、检验作品、改进完善、发布成果等过程。
+  知道工程设计需要考虑功能、材料、结构、成本、安全等因素。
+  能制作把科学原理转化为技术产品的简单装置。
+  能应用形象的模型演示抽象的科学原理。
+  能基于所学科学原理，对设计方案进行模拟分析和预测。
+  根据实际反馈结果，对实物模型进行迭代改进。
+  具有一定的构思、设计、优化、实施、验证能力。
+
+prerequisites:
+  - id: SCI-TECH-001
+    name: 工程设计过程
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 工程设计流程
+    definition: 明确问题→设计方案→实施计划→检验作品→改进完善→发布成果
+    importance: 核心
+  - term: 迭代改进
+    definition: 根据测试结果和用户反馈，反复修改和优化设计方案
+    importance: 核心
+  - term: 物化
+    definition: 将设计方案转化为实物产品的过程
+    importance: 核心
+  - term: 模型
+    definition: 对真实事物的简化表示，用于理解和测试设计
+    importance: 重要
+  - term: 约束条件
+    definition: 工程设计中需要考虑的局限性因素，如材料、成本、时间等
+    importance: 重要
+
+misconceptions:
+  - statement: "工程设计一次就能成功"
+    correction: "工程设计需要经历多次迭代改进，失败是设计过程中的正常现象"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "工程设计就是画画图"
+    correction: "工程设计包括问题分析、方案设计、制作模型、测试改进等多个环节"
+    source: 义务教育科学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 9
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 系统思维与动手实践
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage提出真实问题→Explore设计并制作解决方案→Explain测试并分析结果→Elaborate改进设计→Evaluate评价作品
+  - framework: 项目式学习
+    brief: 设计并制作一个能解决实际问题的简单装置，经历完整的工程设计流程
+
+verification:
+  status: verified
+  sources:
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 测量与计算
+    relation: 工具支撑
+  - subject: 美术
+    concept: 设计与绘图
+    relation: 方法共享
+  - subject: 劳动
+    concept: 动手制作
+    relation: 技能衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示工程设计的实际案例

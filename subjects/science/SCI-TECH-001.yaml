@@ -1,26 +1,79 @@
 id: SCI-TECH-001
 name: 工程设计过程
-name_en: ''
+name_en: Engineering Design Process
 subject: 小学科学
 domain: 技术与工程
-grade: 小学五年级
-description: 工程设计过程的详细教学内容。
+grade: 小学三至六年级
+
+description: |
+  了解工程设计需要经历明确问题、设计方案、实施计划、检验作品、改进完善、发布成果等过程。
+  知道技术产品是为了满足人类的需求而设计的。
+  了解设计时需要考虑的因素：功能、材料、结构、成本、安全、美观等。
+  能根据需求提出设计问题，并制定简单的设计方案。
+  能使用常见工具和材料制作简单的技术产品。
+  能对自己和他人的作品进行评价，并提出改进建议。
+  了解技术与科学的关系：科学发现推动技术进步，技术应用促进科学发展。
+
 prerequisites: []
-postrequisites: []
+
+postrequisites:
+  - id: SCI-ENG-001
+    name: 工程设计与物化
+
 key_concepts:
-- term: 工程设计过程
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 工程设计
+    definition: 为满足特定需求而创造产品或系统的有目的的活动
+    importance: 核心
+  - term: 需求分析
+    definition: 明确设计要解决的问题和满足的需求
+    importance: 核心
+  - term: 方案设计
+    definition: 提出满足需求的具体设计方案
+    importance: 核心
+  - term: 原型制作
+    definition: 根据设计方案制作产品的初步模型
+    importance: 重要
+  - term: 测试与改进
+    definition: 检验产品是否满足需求，并根据测试结果进行优化
+    importance: 核心
+
+misconceptions:
+  - statement: "工程设计就是画画图"
+    correction: "工程设计包括需求分析、方案设计、制作原型、测试改进等多个环节"
+    source: 义务教育科学课程标准（2022年版）
+  - statement: "设计一次就能成功"
+    correction: "设计需要反复测试和改进，失败是设计过程的正常部分"
+    source: 义务教育科学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 7
+  min_age: 9
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 观察与归纳
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维与创造力
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage提出真实问题→Explore设计并制作解决方案→Explain测试并分析→Elaborate改进设计→Evaluate评价作品
+  - framework: 项目式学习
+    brief: 设计并制作一个能解决实际问题的简单装置
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育科学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 测量与计算
+    relation: 工具支撑
+  - subject: 美术
+    concept: 设计与造型
+    relation: 方法共享
+  - subject: 劳动
+    concept: 动手制作
+    relation: 技能衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示工程设计案例
