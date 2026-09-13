@@ -6,14 +6,17 @@ domain: 数据
 grade: 小学四年级
 
 description: |
-  认识数据与信息的关系，理解信息是加工后的数据。
-  了解数据的多种表现形式（文字、图像、音频、视频等）。
-  体验从生活情境中收集数据、提取信息的过程。
-  初步树立信息意识，能够辨别信息真伪。
+  数据与信息是2022版义务教育信息科技课程标准第二学段「数据与编码」模块的基础内容。学生应理解数据是对客观事物的符号表示，信息是经过加工处理后对人有意义的数据。认识到数据与信息之间的区别和联系：数据是原材料，信息是数据经过处理和解释后的产物。
+
+  在学习过程中，学生应体验从生活情境中收集数据、提取信息的过程。了解数据的多种表现形式，包括数字、文字、图像、音频、视频等。认识到同一信息可以用不同形式的数据表示，如气温可以用数字（25℃）、温度计图像、语音播报等多种形式表达。
+
+  学生应初步树立信息意识，能够辨别信息的真伪，了解信息来源对信息可靠性的影响。体验用数据描述和解释生活现象的过程，如统计班级同学的兴趣爱好、记录一周的天气变化等。理解数字化是将各类信息转换为计算机可以处理的数字形式的过程。
+
+  通过数据与信息的学习，学生应形成初步的数据意识，能够用数据的眼光观察世界，为后续学习数据编码、数据分析和人工智能奠定基础。
 
 prerequisites:
   - id: SCI-TECH-001
-    name: 技术与生活（小学）
+    name: 技术与生活
     required: false
 
 postrequisites:
@@ -21,45 +24,67 @@ postrequisites:
     name: 数据的组织与编码
   - id: IT-ALGO-001
     name: 算法基础
+  - id: MATH-STAT-001
+    name: 统计与数据分析
 
 key_concepts:
   - term: 数据
-    definition: 对客观事物记录的、可以鉴别的符号
+    definition: 对客观事物记录的、可以鉴别的符号，是信息的载体
     importance: 核心
   - term: 信息
-    definition: 经过加工处理后对人们有用的数据
+    definition: 经过加工处理后对人们有用的、能够消除不确定性的数据
+    importance: 核心
+  - term: 数字化
+    definition: 将各类信息转换为计算机可以处理的数字形式的过程
     importance: 核心
   - term: 信息来源
     definition: 信息的出处，影响信息的可靠性和真实性
+    importance: 核心
+  - term: 数据表现形式
+    definition: 数据呈现的方式，包括数字、文字、图像、音频、视频等
     importance: 重要
-  - term: 数字化
-    definition: 将各类信息转换为计算机可以处理的数字形式
+  - term: 数据收集
+    definition: 通过观察、测量、调查等方式获取数据的过程
     importance: 重要
+  - term: 信息辨别
+    definition: 通过来源分析、交叉验证等方法判断信息真伪的能力
+    importance: 重要
+  - term: 信息意识
+    definition: 对信息的敏感度和对信息价值的判断力
+    importance: 核心
 
 misconceptions:
-  - statement: "数据就是信息"
-    correction: "数据是原始记录，信息是经过处理后有意义的、对决策有用的数据"
-    source: 义务教育信息科技课程标准（2022年版）
-  - statement: "网上看到的信息都是真的"
-    correction: "网络信息良莠不齐，需要通过权威来源、交叉验证等方法辨别真伪"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「数据就是信息」
+    correction: 「数据是原始记录，信息是经过处理后有意义的、对决策有用的数据。数据是信息的载体，但不等于信息」
+  - statement: 「网上看到的信息都是真的」
+    correction: 「网络信息良莠不齐，需要通过权威来源、交叉验证、多方比对等方法辨别真伪」
+  - statement: 「只有数字才是数据」
+    correction: 「数据的形式多样，包括文字、图像、音频、视频等，数字只是其中一种形式」
+  - statement: 「信息越多越好」
+    correction: 「信息的价值在于质量和相关性，过多无关信息反而会造成信息过载和决策困难」
+  - statement: 「数字化就是把东西存到电脑里」
+    correction: 「数字化是将信息转换为计算机可处理的数字形式，涉及编码、存储、处理等多个环节」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示同一事件的不同媒体报道→Explore收集多来源信息对比→Explain讨论信息真伪辨别方法→Elaborate设计班级信息可信度评估表
+  - framework: POE
+    brief: 预测某条网络信息的可信度，然后通过多渠道验证，反思预测与结果的差异
+  - framework: 项目式学习
+    brief: 「班级数据小管家」：收集班级同学的身高、体重、爱好等数据，制作信息图表
+  - framework: 探究式学习
+    brief: 探究「同一信息的不同数据表示」：用数字、图表、文字描述同一组气温数据
 
 cognitive_level:
   min_age: 9
   piaget_stage: 具体运算阶段
   prerequisite_reasoning: 观察与分类
 
-activity_suggestions:
-  - framework: 5E
-    brief: Engage展示同一事件的不同报道→Explore收集多来源信息对比→Explain讨论信息真伪辨别方法
-  - framework: POE
-    brief: 预测某条网络信息的可信度，然后通过多渠道验证
-
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 数学
@@ -71,8 +96,23 @@ interdisciplinary:
   - subject: 语文
     concept: 信息提取与概括
     relation: 能力关联
+  - subject: 道德与法治
+    concept: 信息辨别与网络素养
+    relation: 价值引领
+  - subject: 美术
+    concept: 信息可视化与图表设计
+    relation: 应用实例
+  - subject: 综合实践活动
+    concept: 社会调查与数据收集
+    relation: 方法衔接
 
 exhibits:
   - venue: 中国科技馆
     name: 大数据展厅
     relation: 展示数据如何转化为有用信息
+  - venue: 中国科技馆
+    name: 信息科学展厅
+    relation: 展示信息的获取、处理和传递
+  - venue: 学校
+    name: 数字化学习空间
+    relation: 开展数据收集与信息处理实践活动

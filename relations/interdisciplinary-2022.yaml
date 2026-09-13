@@ -863,3 +863,40 @@ edges:
     type: related
     strength: moderate
     note: 惯性在体育运动中的应用
+
+  # 信息科技（新增节点）↔ 其他学科
+  - from: IT-PROC-001
+    to: PHYS-THERMO-001
+    type: application
+    strength: moderate
+    note: 温度传感器在过程与控制中的应用
+
+  - from: IT-PROC-001
+    to: MATH-ALG-001
+    type: application
+    strength: moderate
+    note: 逻辑判断与条件语句在控制系统中的应用
+
+  - from: IT-IOT-001
+    to: GEO-ENV-001
+    type: application
+    strength: strong
+    note: 物联网在环境监测与保护中的应用
+
+  - from: IT-IOT-001
+    to: BIO-ECO-001
+    type: application
+    strength: strong
+    note: 物联网在生态系统监测中的应用
+
+  - from: IT-IOT-001
+    to: PHYS-ELEC-002
+    type: related
+    strength: moderate
+    note: 电路原理在物联网传感器中的应用
+
+  - from: IT-CROSS-001
+    to: COMP-PROJ-001
+    type: related
+    strength: strong
+    note: 信息科技跨学科主题与综合实践活动项目式学习

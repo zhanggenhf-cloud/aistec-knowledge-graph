@@ -1,0 +1,122 @@
+id: IT-CROSS-001
+name: 信息科技跨学科实践
+name_en: Information Technology Interdisciplinary Practice
+subject: 信息科技
+domain: 跨学科实践
+grade: 跨学段
+
+description: |
+  信息科技跨学科实践是2022版义务教育信息科技课程标准的重要组成部分，强调将信息科技知识与其他学科知识相融合，在真实情境中解决复杂问题。课程设计了四个跨学科主题：数字设备体验、数据编码探秘、小型系统模拟、互联智能设计，分别对应四个学段。
+
+  在数字设备体验主题中，学生结合生活实际，了解常见数字设备的功能和使用方法，体验用数字设备进行信息处理和表达的过程，培养数字素养。
+
+  在数据编码探秘主题中，学生探索数据编码在生活中的应用，如条形码、二维码、ISBN编码等，理解编码的唯一性和可读性，体验设计简单编码系统的过程。
+
+  在小型系统模拟主题中，学生综合运用过程与控制知识，设计并搭建简单的控制系统模型，如自动浇花系统、智能垃圾桶等，经历完整的工程设计过程。
+
+  在互联智能设计主题中，学生综合运用物联网和人工智能知识，设计具有一定智能的互联系统，如智能环境监测站、语音控制智能家居等，体验前沿技术的综合应用。
+
+  跨学科实践活动应注重项目式学习，让学生在真实问题的解决过程中，综合运用多学科知识，发展计算思维、创新意识和实践能力。
+
+prerequisites:
+  - id: IT-DATA-001
+    name: 数据与信息
+    required: false
+  - id: IT-PROC-001
+    name: 过程与控制
+    required: false
+  - id: IT-IOT-001
+    name: 物联网实践与探索
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科主题学习
+    definition: 围绕特定主题，综合运用两个或多个学科的知识和方法进行的学习活动
+    importance: 核心
+  - term: 数字设备体验
+    definition: 了解和使用数字设备（计算机、平板、智能手机等）进行信息处理和表达
+    importance: 核心
+  - term: 数据编码探秘
+    definition: 探索生活中数据编码的应用，理解编码规则和意义
+    importance: 核心
+  - term: 小型系统模拟
+    definition: 设计和搭建简单的控制系统模型，模拟真实世界的控制过程
+    importance: 核心
+  - term: 互联智能设计
+    definition: 综合运用物联网和人工智能技术设计智能互联系统
+    importance: 核心
+  - term: 项目式学习
+    definition: 以真实问题为导向，整合多学科知识进行探究的学习方式
+    importance: 核心
+  - term: 数字素养
+    definition: 在数字环境下获取、理解、评估、创造和传递信息的能力
+    importance: 重要
+
+misconceptions:
+  - statement: 「跨学科就是多学几门课」
+    correction: 「跨学科强调知识的综合应用和解决真实问题，不是简单的知识叠加」
+  - statement: 「信息科技跨学科实践可以脱离编程」
+    correction: 「信息科技跨学科实践以信息科技知识和技能为基础，编程是重要的实现手段」
+  - statement: 「跨学科项目越复杂越好」
+    correction: 「跨学科项目应适合学生的认知水平，注重学习过程而非结果复杂程度」
+  - statement: 「数字设备体验就是玩游戏」
+    correction: 「数字设备体验包括信息检索、数据处理、创意设计、编程实践等多种活动」
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 「智能校园」项目：综合运用物联网、编程、设计等知识，为校园设计一个智能化解决方案
+  - framework: 主题式学习
+    brief: 「数据编码探秘」：调查生活中各种编码（快递单号、车牌、ISBN），分析其编码规则
+  - framework: 工程设计
+    brief: 「小型系统模拟」：设计自动浇花系统，经历需求分析、方案设计、原型制作、测试改进
+  - framework: 跨学科实践
+    brief: 「互联智能设计」：结合科学（传感器）、数学（数据分析）、艺术（界面设计）设计智能系统
+  - framework: 探究式学习
+    brief: 探究「数字孪生」概念：用数字模型模拟真实物体或系统，分析其应用价值
+
+cognitive_level:
+  min_age: 10
+  piaget_stage: 具体运算阶段至形式运算阶段
+  prerequisite_reasoning: 综合思维与问题解决
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-14'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 数据分析与逻辑推理
+    relation: 工具支撑
+  - subject: 科学
+    concept: 科学探究与实验方法
+    relation: 方法衔接
+  - subject: 语文
+    concept: 信息表达与报告撰写
+    relation: 能力关联
+  - subject: 美术
+    concept: 界面设计与视觉表达
+    relation: 应用实例
+  - subject: 劳动
+    concept: 工程制作与工具使用
+    relation: 实践衔接
+  - subject: 道德与法治
+    concept: 技术伦理与社会责任
+    relation: 价值引领
+  - subject: 综合实践活动
+    concept: 项目设计与团队协作
+    relation: 方法衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 创客空间
+    relation: 提供跨学科实践活动的场所和设备
+  - venue: 中国科技馆
+    name: 人工智能与机器人展厅
+    relation: 展示前沿技术的综合应用
+  - venue: 学校
+    name: STEM创客实验室
+    relation: 开展信息科技跨学科实践活动

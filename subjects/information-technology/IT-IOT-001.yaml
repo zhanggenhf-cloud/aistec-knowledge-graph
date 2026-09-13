@@ -1,0 +1,129 @@
+id: IT-IOT-001
+name: 物联网实践与探索
+name_en: Internet of Things Practice and Exploration
+subject: 信息科技
+domain: 物联网
+grade: 初中八年级
+
+description: |
+  物联网实践与探索是2022版义务教育信息科技课程标准第四学段的核心模块，旨在帮助学生了解物联网的基本概念、体系架构和典型应用。学生应理解物联网是「万物互联」的信息基础设施，通过传感器、通信网络和数据处理技术，实现物理世界与数字世界的融合。
+
+  在学习物联网架构方面，学生应了解物联网的三个基本层次：感知层（负责数据采集，如温度传感器、摄像头等）、网络层（负责数据传输，如Wi-Fi、蓝牙、5G等通信技术）和应用层（负责数据处理和应用服务，如智能分析、远程控制等）。理解各层之间的关系和协同工作方式。
+
+  在实践方面，学生应体验使用传感器采集环境数据（温度、湿度、光照等），通过网络传输到数据处理平台，并进行简单的数据分析和可视化展示。了解物联网在智能家居、智慧农业、智慧交通、智慧医疗等领域的典型应用案例，认识物联网技术对社会生产生活的深刻影响。
+
+  在安全和伦理方面，学生应认识到物联网带来的隐私和安全挑战。大量设备联网意味着更多数据被采集，需要关注数据安全和用户隐私保护，树立负责任的物联网应用意识。
+
+  通过物联网的学习，学生应形成对信息科技发展前沿的认识，培养运用物联网技术解决实际问题的能力，为高中信息技术课程的学习奠定基础。
+
+prerequisites:
+  - id: IT-NET-001
+    name: 网络基础
+    required: true
+  - id: IT-PROC-001
+    name: 过程与控制
+    required: true
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+    required: false
+
+postrequisites:
+  - id: IT-AI-001
+    name: 人工智能初探
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
+
+key_concepts:
+  - term: 物联网
+    definition: 通过信息传感设备，按约定协议将任何物品与互联网连接，进行信息交换和通信的网络
+    importance: 核心
+  - term: 感知层
+    definition: 物联网的最底层，负责识别物体和采集信息，包括各类传感器和识别设备
+    importance: 核心
+  - term: 网络层
+    definition: 负责将感知层采集的数据可靠传输到应用层，包括各种有线和无线通信技术
+    importance: 核心
+  - term: 应用层
+    definition: 物联网的最上层，负责数据处理和行业应用，实现物联网的价值
+    importance: 核心
+  - term: 传感器
+    definition: 能感受规定的被测量并按照一定规律转换成可用输出信号的器件或装置
+    importance: 核心
+  - term: 数据传输
+    definition: 将数据从源点通过通信网络传送到目的地的过程
+    importance: 核心
+  - term: 云计算
+    definition: 通过网络提供可伸缩的、按需的计算资源和服务
+    importance: 重要
+  - term: 边缘计算
+    definition: 在靠近数据源的边缘侧进行数据处理，减少数据传输延迟
+    importance: 重要
+  - term: 数据可视化
+    definition: 将数据以图形、图表等直观形式展示，便于理解和分析
+    importance: 重要
+
+misconceptions:
+  - statement: 「物联网就是把所有东西连上网」
+    correction: 「物联网不仅是连接，更重要的是实现智能感知、识别、定位、跟踪、监控和管理」
+  - statement: 「物联网和互联网是一回事」
+    correction: 「互联网连接的是人，物联网连接的是物；物联网是互联网的延伸和扩展」
+  - statement: 「物联网设备都很安全」
+    correction: 「物联网设备数量庞大、安全标准不一，存在很多安全隐患，需要重视安全防护」
+  - statement: 「物联网离我们很远」
+    correction: 「智能手环、智能家居、共享单车等都是物联网应用，物联网已经融入日常生活」
+  - statement: 「物联网不需要编程」
+    correction: 「物联网系统的设计、部署和维护都需要编程和系统工程知识」
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 「智慧农业大棚」项目：设计温湿度监测系统，采集环境数据并通过网络传输到平台展示
+  - framework: 5E
+    brief: Engage讨论智能家居场景→Explore搭建简易物联网系统（传感器+网关+云平台）→Explain分析数据流→Elaborate扩展功能（报警、自动控制）
+  - framework: 探究式学习
+    brief: 探究不同通信技术（Wi-Fi/蓝牙/Zigbee）在物联网中的适用场景和优缺点
+  - framework: 角色扮演
+    brief: 模拟「智慧城市」规划会议，分组负责交通、环境、安防等物联网方案设计
+  - framework: 跨学科实践
+    brief: 结合地理（环境数据）、生物（植物生长）、数学（数据分析）设计综合物联网项目
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 系统思维与抽象建模
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-14'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 传感器原理与电信号传输
+    relation: 原理支撑
+  - subject: 数学
+    concept: 数据分析与统计图表
+    relation: 工具支撑
+  - subject: 地理
+    concept: 环境监测与空间数据
+    relation: 应用实例
+  - subject: 生物
+    concept: 生态系统监测
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 数据隐私与网络安全法
+    relation: 价值引领
+  - subject: 科学
+    concept: 科学探究与实验方法
+    relation: 方法衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物联网展厅
+    relation: 展示物联网技术原理与典型应用
+  - venue: 中国科技馆
+    name: 智慧城市沙盘
+    relation: 综合展示物联网在城市管理中的应用
+  - venue: 学校创客空间
+    name: 物联网实验套件
+    relation: 开展物联网编程与传感器实验

@@ -6,10 +6,13 @@ domain: 人工智能
 grade: 初中七年级
 
 description: |
-  了解人工智能的基本概念、发展历程和应用领域。
-  体验语音识别、图像识别、自然语言处理等常见AI应用。
-  理解机器学习的基本思想：从数据中学习规律。
-  认识人工智能的伦理问题和社会影响，培养负责任的技术使用意识。
+  人工智能初探是2022版义务教育信息科技课程标准第四学段「人工智能与智慧社会」模块的核心内容。学生应了解人工智能的基本概念，认识到人工智能是研究如何使机器模拟、延伸和扩展人类智能的技术科学。了解人工智能的发展历程：从早期的符号推理到现代的机器学习、深度学习。
+
+  在学习过程中，学生应体验常见的人工智能应用：语音识别（将语音转换为文字）、图像识别（识别图片中的物体）、自然语言处理（理解和生成人类语言）、推荐系统（根据用户喜好推荐内容）等。理解机器学习的基本思想：计算机从大量数据中学习规律，而不是由人直接编写所有规则。
+
+  学生还应认识人工智能的伦理问题和社会影响。讨论AI技术带来的机遇和挑战：自动驾驶、智能医疗、智能教育等正面应用，以及就业影响、隐私风险、算法偏见等潜在问题。培养负责任的技术使用意识，树立科技向善的价值观。
+
+  通过人工智能的学习，学生应形成对前沿技术的正确认识，理解人工智能不是「万能」的，也不是「威胁」，而是需要人类合理引导和规范使用的工具。激发对信息科技的兴趣，为高中阶段的深入学习奠定基础。
 
 prerequisites:
   - id: IT-ALGO-001
@@ -18,56 +21,83 @@ prerequisites:
   - id: IT-DATA-002
     name: 数据的组织与编码
     required: true
+  - id: IT-NET-001
+    name: 网络基础
+    required: false
 
 postrequisites:
   - id: IT-SEC-001
     name: 信息安全与隐私保护
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
 
 key_concepts:
   - term: 人工智能
-    definition: 使机器模拟、延伸和扩展人类智能的技术
+    definition: 研究如何使机器模拟、延伸和扩展人类智能的技术科学
     importance: 核心
   - term: 机器学习
-    definition: 让计算机从数据中自动学习规律的方法
+    definition: 让计算机从数据中自动学习规律，而不需要人直接编写所有规则的方法
     importance: 核心
+  - term: 深度学习
+    definition: 基于多层神经网络的机器学习方法，能够自动提取数据的层次化特征
+    importance: 核心
+  - term: 语音识别
+    definition: 将人类语音信号转换为文本或指令的技术
+    importance: 重要
   - term: 图像识别
     definition: 让计算机识别和理解图像内容的技术
     importance: 重要
   - term: 自然语言处理
-    definition: 让计算机理解和生成人类语言的技术
+    definition: 让计算机理解和生成人类自然语言的技术
     importance: 重要
+  - term: 神经网络
+    definition: 模仿生物神经系统结构和功能的计算模型，是深度学习的基础
+    importance: 重要
+  - term: 数据训练
+    definition: 用大量数据训练AI模型，使其学会识别模式和做出预测的过程
+    importance: 核心
   - term: AI伦理
-    definition: 人工智能开发和应用中涉及的道德和社会问题
-    importance: 重要
+    definition: 人工智能开发和应用中涉及的道德、法律和社会问题
+    importance: 核心
 
 misconceptions:
-  - statement: "人工智能会像人一样思考"
-    correction: "当前AI是基于数据和算法的模式匹配，不具备人类的意识、情感和真正理解能力"
-    source: 义务教育信息科技课程标准（2022年版）
-  - statement: "人工智能无所不能"
-    correction: "AI在特定任务上表现优异，但在通用智能、创造性思维等方面仍有局限"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「人工智能会像人一样思考」
+    correction: 「当前AI是基于数据和算法的模式匹配和统计学习，不具备人类的意识、情感和真正理解能力」
+  - statement: 「人工智能无所不能」
+    correction: 「AI在特定任务上表现优异，但在通用智能、创造性思维、情感理解等方面仍有明显局限」
+  - statement: 「人工智能会取代所有人类工作」
+    correction: 「AI会替代部分重复性工作，但也会创造新的工作岗位，人类在创意、情感、复杂决策等方面仍有不可替代的优势」
+  - statement: 「AI的判断总是正确的」
+    correction: 「AI系统的判断受训练数据质量、算法设计等因素影响，可能出现错误或偏见，需要人类监督和验证」
+  - statement: 「学习AI需要很高的数学水平」
+    correction: 「理解AI的基本概念和应用不需要高深的数学，编程和逻辑思维更重要，深入的算法研究才需要更多数学知识」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage体验AI语音识别/图像识别→Explore用可视化工具训练简单分类模型→Explain讨论AI决策的透明性和可解释性→Elaborate分析AI应用的伦理问题
+  - framework: 项目式学习
+    brief: 「AI植物识别」项目：用AI工具完成植物分类任务，分析其准确率和局限性
+  - framework: 辩论赛
+    brief: 组织「AI利大于弊还是弊大于利」辩论，培养批判性思维
+  - framework: 案例分析
+    brief: 分析真实AI应用案例（如人脸识别、算法推荐），讨论其社会影响
+  - framework: 角色扮演
+    brief: 模拟「AI伦理委员会」，讨论AI应用中的道德困境和决策
 
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 抽象思维与伦理判断
 
-activity_suggestions:
-  - framework: 5E
-    brief: Engage体验AI语音识别/图像识别→Explore用可视化工具训练简单分类模型→Explain讨论AI决策的透明性
-  - framework: 项目式学习
-    brief: 用AI工具完成一个分类任务（如植物识别），分析其准确率和局限性
-
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 数学
-    concept: 统计与概率
+    concept: 统计与概率、函数与模型
     relation: 原理支撑
   - subject: 科学
     concept: 传感器与数据采集
@@ -75,8 +105,23 @@ interdisciplinary:
   - subject: 道德与法治
     concept: 技术伦理与法律规范
     relation: 价值引领
+  - subject: 生物
+    concept: 神经网络与生物智能
+    relation: 知识衔接
+  - subject: 语文
+    concept: 信息表达与论证写作
+    relation: 能力关联
+  - subject: 美术
+    concept: AI绘画与创意表达
+    relation: 应用实例
 
 exhibits:
   - venue: 中国科技馆
     name: 人工智能展厅
-    relation: 展示AI技术与应用
+    relation: 展示AI技术原理与典型应用
+  - venue: 中国科技馆
+    name: 机器人展厅
+    relation: 展示智能机器人与AI交互
+  - venue: 学校
+    name: AI实验室
+    relation: 开展AI体验和编程实践活动

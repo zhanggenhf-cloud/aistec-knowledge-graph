@@ -6,76 +6,113 @@ domain: 算法
 grade: 小学五年级
 
 description: |
-  理解算法的概念：解决问题的一系列明确步骤。
-  能够用自然语言、流程图等方式描述简单算法。
-  体验顺序、分支、循环三种基本控制结构。
-  培养计算思维，能够分解复杂问题并设计解决步骤。
+  算法基础是2022版义务教育信息科技课程标准第三学段「身边的算法」模块的核心内容。学生应理解算法是解决问题的一系列明确步骤，是计算思维的核心。认识到算法不仅存在于计算机中，也存在于日常生活的各个方面，如烹饪食谱、交通路线规划、游戏规则等。
+
+  在学习过程中，学生应体验用自然语言、流程图等方式描述算法的过程。了解算法的基本特征：有穷性（步骤有限）、确定性（每一步明确）、可行性（每一步可执行）、输入和输出。学习常见的算法结构：顺序结构（按步骤依次执行）、分支结构（根据条件选择不同路径）、循环结构（重复执行某些步骤）。
+
+  学生还应体验用图形化编程工具或简单代码实现算法的过程。通过解决实际问题（如排序一组数字、查找特定物品、计算累加和等），理解不同算法的效率差异。初步认识到算法优化可以提高解决问题的效率。
+
+  通过算法基础的学习，学生应形成计算思维的核心能力——能够将复杂问题分解为可管理的小问题，并用系统化的步骤解决，为后续学习程序设计和人工智能奠定基础。
 
 prerequisites:
   - id: IT-DATA-001
     name: 数据与信息
-    required: true
+    required: false
   - id: MATH-NUM-001
     name: 数与运算
     required: false
 
 postrequisites:
-  - id: IT-ALGO-002
-    name: 程序设计基础
+  - id: IT-PROC-001
+    name: 过程与控制
   - id: IT-AI-001
     name: 人工智能初探
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
 
 key_concepts:
   - term: 算法
-    definition: 解决问题的一系列明确、有限的步骤
+    definition: 解决问题的一系列明确、有序、可执行的步骤
+    importance: 核心
+  - term: 计算思维
+    definition: 运用计算机科学的基础概念进行问题求解、系统设计和人类行为理解的思维活动
     importance: 核心
   - term: 顺序结构
-    definition: 按照先后顺序依次执行的步骤
+    definition: 算法中的步骤按照先后顺序依次执行的结构
     importance: 核心
   - term: 分支结构
-    definition: 根据条件判断选择不同执行路径
+    definition: 根据条件的判断结果，选择执行不同路径的算法结构
     importance: 核心
   - term: 循环结构
-    definition: 重复执行某段步骤直到满足条件
+    definition: 在满足条件的情况下重复执行某段代码的算法结构
     importance: 核心
   - term: 流程图
-    definition: 用图形符号表示算法的工具
+    definition: 用图形符号表示算法步骤和逻辑关系的可视化工具
+    importance: 重要
+  - term: 问题分解
+    definition: 将复杂问题拆分为若干个可独立解决的小问题的思维方法
+    importance: 核心
+  - term: 算法效率
+    definition: 算法解决问题所需的时间和资源，是评价算法优劣的重要指标
     importance: 重要
 
 misconceptions:
-  - statement: "算法就是计算机程序"
-    correction: "算法是解决问题的步骤描述，程序是算法在计算机上的实现"
-    source: 义务教育信息科技课程标准（2022年版）
-  - statement: "算法只能用在计算机里"
-    correction: "算法存在于日常生活各处，如烹饪食谱、路线导航、游戏规则等"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「算法就是计算机程序」
+    correction: 「算法是解决问题的步骤描述，程序是算法在计算机上的具体实现。算法可以用自然语言、流程图等多种方式描述」
+  - statement: 「算法只能用在计算机里」
+    correction: 「算法存在于日常生活各处，如烹饪食谱、路线导航、游戏规则、拼图步骤等都是算法」
+  - statement: 「算法越复杂越好」
+    correction: 「好的算法应在正确性和效率之间取得平衡，简单有效的算法往往更实用」
+  - statement: 「流程图没有用，直接写代码就行」
+    correction: 「流程图是算法设计的可视化工具，有助于理清思路、发现逻辑错误，是编程前的重要步骤」
+  - statement: 「所有问题都有唯一的最优算法」
+    correction: 「同一问题可能有多种算法解决，不同算法在时间、空间、实现难度等方面各有优劣」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用「猜数字」游戏引入→Explore设计查找算法→Explain比较顺序查找和二分查找的效率→Elaborate讨论算法优化的思路
+  - framework: 项目式学习
+    brief: 「最优路线规划」：为校园参观设计最优路线，体验算法在实际问题中的应用
+  - framework: 游戏化学习
+    brief: 「汉诺塔挑战」：通过游戏理解递归思想和问题分解策略
+  - framework: 探究式学习
+    brief: 探究「排序算法大比拼」：比较冒泡排序、选择排序等不同排序算法的效率
 
 cognitive_level:
   min_age: 10
   piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 逻辑推理与步骤分解
-
-activity_suggestions:
-  - framework: 5E
-    brief: Engage用"猜数字"游戏引入→Explore设计查找算法→Explain比较不同算法的效率
-  - framework:  unplugged编程
-    brief: 不插电活动：用身体动作演示排序算法，如冒泡排序
+  prerequisite_reasoning: 逻辑推理与模式识别
 
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 数学
     concept: 逻辑推理与问题求解
-    relation: 思维共享
+    relation: 原理支撑
   - subject: 科学
-    concept: 实验步骤设计
+    concept: 科学探究方法
     relation: 方法衔接
+  - subject: 语文
+    concept: 步骤描述与逻辑表达
+    relation: 能力关联
+  - subject: 综合实践活动
+    concept: 项目设计与方案优化
+    relation: 方法衔接
+  - subject: 劳动
+    concept: 工艺流程与步骤优化
+    relation: 应用实例
 
 exhibits:
   - venue: 中国科技馆
-    name: 编程体验区
-    relation: 可视化展示算法执行过程
+    name: 算法与编程展厅
+    relation: 展示算法思想和编程原理
+  - venue: 中国科技馆
+    name: 数学之美展厅
+    relation: 展示数学逻辑与算法的关系
+  - venue: 学校
+    name: 编程实验室
+    relation: 开展算法设计与编程实践活动

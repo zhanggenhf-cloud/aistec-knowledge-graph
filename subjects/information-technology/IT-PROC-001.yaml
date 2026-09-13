@@ -1,0 +1,119 @@
+id: IT-PROC-001
+name: 过程与控制
+name_en: Process and Control
+subject: 信息科技
+domain: 过程与控制
+grade: 小学六年级
+
+description: |
+  过程与控制是2022版义务教育信息科技课程标准第三学段的核心模块，旨在帮助学生理解控制系统的基本结构和工作原理。学生应认识到一个控制系统由输入、计算和输出三个基本环节组成，理解输入信号经过处理后产生输出结果的完整过程。
+
+  在学习过程中，学生应体验开环控制与闭环控制的区别。开环控制中，输出不影响输入；闭环控制中，系统通过反馈将输出信息返回到输入端，实现自动调节。学生应能够用流程图或自然语言描述简单的控制过程，如自动路灯控制系统、温控风扇系统等。
+
+  学生还应通过编程实践，体验用代码控制硬件设备的过程。使用图形化编程工具或简单的代码，控制LED灯、蜂鸣器、舵机等执行器，理解计算在控制过程中的核心作用。通过设计简单的控制系统，培养学生的计算思维和工程意识，为后续学习物联网和人工智能奠定基础。
+
+  通过过程与控制的学习，学生应形成系统思维，能够从整体上分析和设计简单的控制系统，理解技术背后的科学原理。
+
+prerequisites:
+  - id: IT-ALGO-001
+    name: 算法基础
+    required: true
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+    required: false
+
+postrequisites:
+  - id: IT-IOT-001
+    name: 物联网实践与探索
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
+
+key_concepts:
+  - term: 控制系统
+    definition: 由输入、计算（处理）、输出三个基本环节组成的系统，用于实现对某对象的控制
+    importance: 核心
+  - term: 输入
+    definition: 控制系统接收的外部信号或数据，如传感器采集的温度、光线等
+    importance: 核心
+  - term: 计算/处理
+    definition: 对输入信息进行分析和判断，决定输出什么控制指令
+    importance: 核心
+  - term: 输出
+    definition: 控制系统执行的动作或产生的信号，如点亮LED、驱动电机等
+    importance: 核心
+  - term: 开环控制
+    definition: 输出结果不影响输入信号的控制方式，如定时浇水系统
+    importance: 核心
+  - term: 闭环控制
+    definition: 通过反馈将输出信息返回到输入端，实现自动调节的控制方式
+    importance: 核心
+  - term: 反馈
+    definition: 将系统的输出信息返回到输入端，用于调整后续控制行为
+    importance: 核心
+  - term: 传感器
+    definition: 能够感知外界环境变化并将其转换为电信号的装置
+    importance: 重要
+
+misconceptions:
+  - statement: 「控制系统就是按下开关让灯亮」
+    correction: 「开关控制是最简单的开环控制，但控制系统还包括传感器采集、计算判断、自动调节等更复杂的过程」
+  - statement: 「开环控制和闭环控制效果一样」
+    correction: 「闭环控制通过反馈可以实现自动调节，比开环控制更精确、更稳定」
+  - statement: 「编程只能让电脑做事情」
+    correction: 「编程可以控制各种硬件设备，如机器人、智能家居、工业设备等」
+  - statement: 「传感器越贵越好」
+    correction: 「选择合适的传感器取决于应用场景的需求，并非越贵越好」
+  - statement: 「控制系统不需要人来设计」
+    correction: 「控制系统需要人进行需求分析、方案设计、编程实现和调试优化」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage观察自动门/自动路灯→Explore设计「光线暗时自动开灯」系统→Explain讨论开环与闭环的区别→Elaborate改进系统增加反馈机制
+  - framework: 项目式学习
+    brief: 「智能温控风扇」项目：用温度传感器检测环境温度，当温度超过设定值时自动启动风扇
+  - framework: 探究式学习
+    brief: 探究「反馈」在控制系统中的作用：对比有反馈和无反馈的温控系统效果差异
+  - framework: 工程设计
+    brief: 经历「需求分析→方案设计→原型制作→测试改进」的工程设计过程
+
+cognitive_level:
+  min_age: 11
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 系统思维与逻辑推理
+
+verification:
+  status: verified
+  sources:
+    - "义务教育信息科技课程标准（2022年版）"
+  last_verified: '2024-09-14'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 逻辑判断与条件语句
+    relation: 原理支撑
+  - subject: 科学
+    concept: 传感器原理与物理量测量
+    relation: 原理支撑
+  - subject: 劳动
+    concept: 工具使用与工程制作
+    relation: 实践衔接
+  - subject: 物理
+    concept: 电路与电信号
+    relation: 原理支撑
+  - subject: 美术
+    concept: 产品外观与交互设计
+    relation: 应用实例
+  - subject: 综合实践活动
+    concept: 项目设计与团队协作
+    relation: 方法衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 智能控制展厅
+    relation: 展示各类自动控制系统原理与应用
+  - venue: 中国科技馆
+    name: 机器人展区
+    relation: 展示传感器与执行器在机器人中的应用
+  - venue: 学校创客空间
+    name: 开源硬件实验室
+    relation: 开展过程与控制编程实践活动

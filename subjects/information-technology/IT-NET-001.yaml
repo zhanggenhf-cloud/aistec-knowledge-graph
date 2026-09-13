@@ -6,67 +6,116 @@ domain: 网络
 grade: 小学六年级
 
 description: |
-  了解计算机网络的基本概念和分类（局域网、广域网、互联网）。
-  理解IP地址、域名的作用，了解网络通信的基本原理。
-  认识互联网在学习、生活中的应用，学会安全、文明上网。
-  了解网络对信息社会的重要意义。
+  网络基础是2022版义务教育信息科技课程标准第四学段「互联网应用与创新」模块的基础内容。学生应了解计算机网络的基本概念，理解网络是将多台计算机通过通信线路连接起来的系统，实现资源共享和信息传递。
+
+  在学习过程中，学生应认识计算机网络的分类：局域网（LAN，覆盖范围小，如家庭网络、学校网络）、广域网（WAN，覆盖范围广，如城市间网络）和互联网（Internet，全球最大的计算机网络）。理解IP地址和域名的作用：IP地址是网络设备的数字标识，域名是便于记忆的字符名称，DNS负责将域名解析为IP地址。
+
+  学生还应了解网络通信的基本原理，认识网络协议（如TCP/IP）是网络设备之间通信需要遵循的规则。体验互联网在学习、生活中的应用，学会安全、文明上网。了解网络对信息社会的重要意义，认识网络带来的便利和挑战。
+
+  通过网络基础的学习，学生应形成网络素养，能够合理利用网络资源进行学习和交流，同时注意网络安全和个人信息保护，为后续学习物联网、人工智能等高级内容奠定基础。
 
 prerequisites:
   - id: IT-DATA-002
     name: 数据的组织与编码
     required: true
+  - id: IT-DATA-001
+    name: 数据与信息
+    required: false
 
 postrequisites:
-  - id: IT-NET-002
-    name: 物联网与万物互联
+  - id: IT-IOT-001
+    name: 物联网实践与探索
   - id: IT-SEC-001
     name: 信息安全与隐私保护
+  - id: IT-AI-001
+    name: 人工智能初探
 
 key_concepts:
   - term: 计算机网络
-    definition: 将多台计算机通过通信线路连接起来的系统
+    definition: 将多台计算机通过通信线路和通信设备连接起来的系统
     importance: 核心
   - term: 互联网
-    definition: 全球最大的计算机网络，实现全球信息互联
+    definition: 全球最大的计算机网络，实现全球范围内的信息互联和资源共享
     importance: 核心
-  - term: IP地址与域名
-    definition: 用于标识网络设备的数字地址和便于记忆的字符名称
+  - term: 局域网
+    definition: 覆盖范围较小（如家庭、学校、办公楼）的计算机网络
     importance: 重要
+  - term: 广域网
+    definition: 覆盖范围较大（如城市、国家之间）的计算机网络
+    importance: 重要
+  - term: IP地址
+    definition: 用于标识网络中设备的数字地址，是设备在网络中的唯一标识
+    importance: 核心
+  - term: 域名
+    definition: 便于记忆的字符名称，用于代替数字IP地址访问网络资源
+    importance: 核心
   - term: 网络协议
-    definition: 网络中设备之间通信需要遵循的规则
+    definition: 网络中设备之间通信和数据交换需要遵循的规则和标准
+    importance: 核心
+  - term: 带宽
+    definition: 网络传输数据的能力，通常用每秒传输的比特数来衡量
     importance: 重要
 
 misconceptions:
-  - statement: "互联网和万维网是一回事"
-    correction: "互联网是物理网络基础设施，万维网是基于互联网的信息服务系统"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「互联网和万维网是一回事」
+    correction: 「互联网是物理网络基础设施，万维网（WWW）是基于互联网的信息服务系统，只是互联网众多应用之一」
+  - statement: 「IP地址就是网址」
+    correction: 「IP地址是数字形式的网络地址，网址（URL）是包含域名和路径的完整地址，域名通过DNS解析为IP地址」
+  - statement: 「网络越快越好，不需要考虑安全」
+    correction: 「网络速度和安全同样重要，高速网络也可能带来更大的安全风险」
+  - statement: 「只有电脑才能上网」
+    correction: 「智能手机、平板、智能电视、智能家居设备等多种设备都可以连接互联网」
+  - statement: 「无线网络比有线网络不安全」
+    correction: 「只要采取适当的安全措施（如加密、强密码），无线网络也可以很安全」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore模拟邮局寄信过程类比网络数据传输→Explain理解分组交换和路由原理→Elaborate绘制家庭网络拓扑图
+  - framework: 项目式学习
+    brief: 「家庭网络调查」：调查家庭网络设备连接情况，绘制网络拓扑结构图
+  - framework: 角色扮演
+    brief: 模拟「数据包旅行」：学生扮演数据包，体验从源地址到目的地址的传输过程
+  - framework: 探究式学习
+    brief: 探究「网络延迟的原因」：使用ping命令测试不同网站的响应时间，分析影响因素
 
 cognitive_level:
   min_age: 11
   piaget_stage: 具体运算阶段
   prerequisite_reasoning: 系统思维与类比
 
-activity_suggestions:
-  - framework: 5E
-    brief: Explore模拟邮局寄信过程类比网络数据传输→Explain理解分组交换原理
-  - framework: 项目式学习
-    brief: 调查家庭网络拓扑结构，绘制网络连接图
-
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 科学
     concept: 通信技术与电磁波
     relation: 原理支撑
   - subject: 物理
-    concept: 电信号传输
+    concept: 电信号传输与光纤通信
     relation: 原理支撑
+  - subject: 数学
+    concept: 网络拓扑与图论
+    relation: 原理支撑
+  - subject: 地理
+    concept: 海底电缆与全球网络布局
+    relation: 应用实例
+  - subject: 道德与法治
+    concept: 网络安全法与文明上网
+    relation: 价值引领
+  - subject: 综合实践活动
+    concept: 社会调查与数据分析
+    relation: 方法衔接
 
 exhibits:
   - venue: 中国科技馆
     name: 通信技术展厅
-    relation: 展示网络通信原理与发展
+    relation: 展示网络通信原理与发展历程
+  - venue: 中国科技馆
+    name: 互联网展厅
+    relation: 展示互联网架构和典型应用
+  - venue: 学校
+    name: 网络实验室
+    relation: 开展网络配置与通信实验

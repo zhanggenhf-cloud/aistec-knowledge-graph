@@ -6,10 +6,13 @@ domain: 数据
 grade: 小学五年级
 
 description: |
-  了解编码的基本概念，认识二进制编码在计算机中的应用。
-  体验使用编码对信息进行组织和传输的过程。
-  理解条形码、二维码等常见编码方式的工作原理。
-  了解数据组织的基本方法（排序、分类、索引等）。
+  数据的组织与编码是2022版义务教育信息科技课程标准第二学段「数据与编码」模块的核心内容。学生应理解编码是用预先规定的方法将信息转换为特定格式的过程，是信息数字化处理的基础。认识二进制编码在计算机中的核心作用，了解计算机底层只能处理0和1两个数字。
+
+  在学习过程中，学生应体验使用编码对信息进行组织和传输的过程。了解常见编码方式的工作原理，如条形码、二维码、ISBN编码、邮政编码等。理解编码的基本规则：唯一性（每个编码对应唯一对象）、可读性（便于人或机器识别）、简洁性（尽量简短高效）。
+
+  学生还应了解数据组织的基本方法，包括排序、分类、索引等。体验用表格、数据库等工具对数据进行组织和管理的过程。通过设计简单的编码系统（如班级图书编码、学号编码等），理解编码在现实生活中的广泛应用。
+
+  通过数据组织与编码的学习，学生应形成编码意识，理解数字化世界的基础原理，为后续学习网络通信、人工智能等高级内容奠定基础。
 
 prerequisites:
   - id: IT-DATA-001
@@ -22,6 +25,8 @@ prerequisites:
 postrequisites:
   - id: IT-NET-001
     name: 网络基础
+  - id: IT-IOT-001
+    name: 物联网实践与探索
   - id: IT-AI-001
     name: 人工智能初探
 
@@ -30,36 +35,59 @@ key_concepts:
     definition: 用预先规定的方法将信息转换为特定格式的过程
     importance: 核心
   - term: 二进制
-    definition: 用0和1两个数码表示信息的数制，计算机的基础语言
+    definition: 用0和1两个数码表示信息的数制，是计算机的基础语言
     importance: 核心
-  - term: 条形码/二维码
-    definition: 用黑白条纹或方块矩阵编码信息的图形标识
+  - term: 条形码
+    definition: 用黑白条纹的不同宽度和间距编码信息的图形标识
+    importance: 重要
+  - term: 二维码
+    definition: 用黑白方块矩阵编码信息的二维图形标识，可存储更多信息
     importance: 重要
   - term: 数据组织
-    definition: 按照一定规则对数据进行排列、分类和存储
+    definition: 按照一定规则对数据进行排列、分类和存储，便于检索和使用
+    importance: 核心
+  - term: 排序
+    definition: 按照特定规则将数据按顺序排列的方法
     importance: 重要
+  - term: 分类
+    definition: 根据数据的特征将其归入不同类别的组织方法
+    importance: 重要
+  - term: 编码规则
+    definition: 编码系统遵循的基本原则，包括唯一性、可读性、简洁性等
+    importance: 核心
 
 misconceptions:
-  - statement: "计算机直接处理文字和图像"
-    correction: "计算机底层只能处理二进制数字，所有信息都需要编码转换"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「计算机直接处理文字和图像」
+    correction: 「计算机底层只能处理二进制数字，所有信息（文字、图像、音频等）都需要编码转换后才能被计算机处理」
+  - statement: 「编码就是加密」
+    correction: 「编码是将信息转换为特定格式以便存储和传输，加密是隐藏信息内容使其不可读，目的不同」
+  - statement: 「条形码和二维码只是图形」
+    correction: 「条形码和二维码是用图形方式编码信息，扫描后可以解码出其中存储的数据」
+  - statement: 「编码越复杂越好」
+    correction: 「好的编码应在唯一性、可读性、简洁性之间取得平衡，适合应用场景最重要」
+  - statement: 「二进制很难理解」
+    correction: 「二进制只需理解0和1两个状态，对应开关的关和开，很容易通过实物操作理解」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore设计一套班级图书编码系统→Explain讨论编码的唯一性和可读性→Elaborate改进系统增加分类信息
+  - framework: 项目式学习
+    brief: 「班级物品编码系统」：为班级物品设计编码方案，体验编码规则设计过程
+  - framework: 探究式学习
+    brief: 探究「不同编码的优缺点」：对比条形码、二维码、RFID等不同编码技术的特点
+  - framework: 游戏化学习
+    brief: 用二进制编码设计秘密通信系统，体验信息编码与解码过程
 
 cognitive_level:
   min_age: 10
   piaget_stage: 具体运算阶段
   prerequisite_reasoning: 模式识别与逻辑推理
 
-activity_suggestions:
-  - framework: 5E
-    brief: Explore设计一套班级图书编码系统→Explain讨论编码的唯一性和可读性
-  - framework: 项目式学习
-    brief: 用二进制编码设计秘密通信系统，体验信息加密与解密
-
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 数学
@@ -68,8 +96,23 @@ interdisciplinary:
   - subject: 科学
     concept: 信息传递与通信原理
     relation: 知识衔接
+  - subject: 语文
+    concept: 符号系统与文字编码
+    relation: 知识衔接
+  - subject: 美术
+    concept: 视觉编码与图形设计
+    relation: 应用实例
+  - subject: 综合实践活动
+    concept: 项目设计与方案优化
+    relation: 方法衔接
 
 exhibits:
   - venue: 中国科技馆
     name: 计算机基础展厅
-    relation: 展示二进制工作原理
+    relation: 展示二进制工作原理和编码技术
+  - venue: 中国科技馆
+    name: 信息科学展厅
+    relation: 展示信息的编码、传输和解码过程
+  - venue: 学校
+    name: 创客空间
+    relation: 开展编码设计与编程实践活动

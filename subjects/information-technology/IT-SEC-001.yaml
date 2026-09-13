@@ -6,10 +6,13 @@ domain: 信息安全
 grade: 初中八年级
 
 description: |
-  认识信息安全的重要性，了解常见的网络安全威胁（病毒、木马、钓鱼等）。
-  掌握个人信息保护的基本方法，树立隐私保护意识。
-  了解密码学基本概念，理解加密技术在信息保护中的作用。
-  认识信息社会责任，遵守网络法律法规，文明上网。
+  信息安全与隐私保护是2022版义务教育信息科技课程标准贯穿全学段的重要内容，在第四学段得到深化。学生应认识信息安全的重要性，理解信息安全是保护信息不被未经授权的访问、使用、泄露、破坏或修改的状态。了解常见的网络安全威胁，如计算机病毒、木马程序、网络钓鱼、勒索软件等。
+
+  在学习过程中，学生应掌握个人信息保护的基本方法：使用强密码、定期更换密码、不轻易泄露个人信息、谨慎点击不明链接、安装正版安全软件等。了解密码学的基本概念，理解加密技术在信息保护中的核心作用：对称加密和非对称加密的基本思想。
+
+  学生还应认识信息社会责任，了解《网络安全法》《个人信息保护法》等相关法律法规。培养文明上网的习惯：尊重知识产权、不传播虚假信息、不参与网络欺凌、保护他人隐私。理解技术是一把双刃剑，需要法律和道德的共同约束。
+
+  通过信息安全的学习，学生应形成安全意识和责任意识，能够在享受信息技术带来便利的同时，保护自己和他人的信息安全，成为负责任的数字公民。
 
 prerequisites:
   - id: IT-NET-001
@@ -18,50 +21,77 @@ prerequisites:
   - id: IT-DATA-002
     name: 数据的组织与编码
     required: false
+  - id: IT-AI-001
+    name: 人工智能初探
+    required: false
 
-postrequisites: []
+postrequisites:
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
 
 key_concepts:
   - term: 信息安全
-    definition: 保护信息不被未经授权的访问、使用、泄露、破坏
+    definition: 保护信息不被未经授权的访问、使用、泄露、破坏或修改的状态
     importance: 核心
   - term: 个人隐私
-    definition: 个人不愿意公开的个人信息和生活信息
+    definition: 个人不愿意公开的、与公共利益无关的个人信息和生活信息
     importance: 核心
+  - term: 计算机病毒
+    definition: 能够自我复制、破坏计算机系统正常运行的恶意程序
+    importance: 重要
+  - term: 网络钓鱼
+    definition: 通过伪装成可信实体，诱骗用户泄露敏感信息的网络攻击手段
+    importance: 重要
   - term: 密码安全
-    definition: 使用强密码、定期更换、不重复使用等安全习惯
-    importance: 重要
+    definition: 使用强密码、定期更换、不同账户使用不同密码等安全习惯
+    importance: 核心
   - term: 加密技术
-    definition: 将信息转换为无法直接阅读的形式，只有授权者能解密
-    importance: 重要
+    definition: 将明文信息转换为密文，只有授权者才能解密恢复原文的技术
+    importance: 核心
   - term: 信息社会责任
     definition: 在信息社会中应遵守的道德规范和法律责任
     importance: 核心
+  - term: 网络安全法
+    definition: 规范网络空间行为、保障网络安全的法律法规
+    importance: 重要
+  - term: 数字公民
+    definition: 能够安全、合法、负责任地使用信息技术的公民
+    importance: 重要
 
 misconceptions:
-  - statement: "只要不浏览不良网站就不会中毒"
-    correction: "恶意软件可通过多种途径传播，包括邮件附件、U盘、虚假链接等"
-    source: 义务教育信息科技课程标准（2022年版）
-  - statement: "设置简单密码方便记忆没关系"
-    correction: "简单密码容易被破解，应使用包含大小写字母、数字、符号的复杂密码"
-    source: 义务教育信息科技课程标准（2022年版）
+  - statement: 「只要不浏览不良网站就不会中毒」
+    correction: 「恶意软件可通过多种途径传播，包括邮件附件、U盘、虚假链接、恶意软件捆绑等」
+  - statement: 「设置简单密码方便记忆没关系」
+    correction: 「简单密码容易被破解，应使用包含大小写字母、数字、符号的复杂密码，且不同账户使用不同密码」
+  - statement: 「杀毒软件装一次就够了」
+    correction: 「杀毒软件需要定期更新病毒库，且不能替代安全意识和良好的上网习惯」
+  - statement: 「网上发的信息随时可以删除」
+    correction: 「网络信息一旦发布可能被复制、截图、缓存，很难完全删除，发布前应谨慎」
+  - statement: 「隐私保护是别人的事，与我无关」
+    correction: 「每个人都涉及隐私保护，无论是保护自己的信息还是尊重他人的隐私」
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage分析真实网络安全事件案例→Explore设计个人网络安全策略→Explain讨论技术与法律的平衡→Elaborate制作网络安全宣传海报
+  - framework: 角色扮演
+    brief: 模拟「黑客与防御者」对抗演练，理解常见攻击手段和防御方法
+  - framework: 项目式学习
+    brief: 「班级网络安全手册」：收集整理网络安全知识，制作班级网络安全指南
+  - framework: 辩论赛
+    brief: 辩论「网络安全与隐私保护哪个更重要」，培养辩证思维
+  - framework: 案例分析
+    brief: 分析真实网络诈骗案例，总结识别和防范方法
 
 cognitive_level:
   min_age: 13
   piaget_stage: 形式运算阶段
   prerequisite_reasoning: 风险评估与价值判断
 
-activity_suggestions:
-  - framework: 5E
-    brief: Engage分析真实网络安全事件→Explore设计安全策略→Explain讨论技术与法律的平衡
-  - framework: 角色扮演
-    brief: 模拟"黑客与防御者"对抗，理解攻防原理
-
 verification:
   status: verified
   sources:
     - "义务教育信息科技课程标准（2022年版）"
-  last_verified: '2024-09-13'
+  last_verified: '2024-09-14'
 
 interdisciplinary:
   - subject: 道德与法治
@@ -70,8 +100,26 @@ interdisciplinary:
   - subject: 数学
     concept: 加密算法与数论
     relation: 原理支撑
+  - subject: 语文
+    concept: 信息辨别与论证分析
+    relation: 能力关联
+  - subject: 心理
+    concept: 网络心理与信息判断
+    relation: 知识衔接
+  - subject: 综合实践活动
+    concept: 社会调查与宣传实践
+    relation: 方法衔接
+  - subject: 科学
+    concept: 科学伦理与技术责任
+    relation: 价值引领
 
 exhibits:
   - venue: 中国科技馆
     name: 网络安全展厅
-    relation: 展示信息安全技术与案例
+    relation: 展示信息安全技术与典型案例
+  - venue: 中国科技馆
+    name: 密码学展厅
+    relation: 展示加密技术原理与历史
+  - venue: 学校
+    name: 网络安全实验室
+    relation: 开展信息安全模拟实验
