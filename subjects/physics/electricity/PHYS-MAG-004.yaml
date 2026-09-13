@@ -1,29 +1,119 @@
 id: PHYS-MAG-004
 name: 发电机
-name_en: ''
+name_en: Electric Generator
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 发电机的详细教学内容。
+
+description: |
+  电磁感应现象：闭合电路的一部分导体在磁场中做切割磁感线运动时，
+  导体中就会产生电流，这种现象叫电磁感应，产生的电流叫感应电流。
+  电磁感应现象由英国物理学家法拉第于1831年发现，是发电机的原理基础。
+
+  感应电流的方向与导体运动方向和磁场方向有关。
+  若只改变导体运动方向或只改变磁场方向，感应电流方向改变；
+  若同时改变两者，感应电流方向不变。
+
+  感应电流的大小与以下因素有关：
+  - 磁场强弱：磁场越强，感应电流越大。
+  - 导体切割磁感线的速度：速度越快，感应电流越大。
+  - 线圈匝数：匝数越多，感应电流越大。
+
+  发电机是根据电磁感应原理制成的，将机械能转化为电能的装置。
+  交流发电机：线圈在磁场中转动，产生方向和大小周期性变化的电流（交流电）。
+  我国电网交流电的频率是50 Hz，周期是0.02 s，电流方向每秒改变100次。
+
+  电动机与发电机的比较：
+  - 电动机：通电后在磁场中受力转动，电能→机械能。
+  - 发电机：线圈在磁场中转动切割磁感线产生电流，机械能→电能。
+  实际中直流电动机也可以当作发电机使用（可逆性）。
+
+  学生应能通过实验探究产生感应电流的条件，了解发电机的原理，
+  知道交流电的频率和周期，能区分电动机和发电机的工作原理。
+
 prerequisites:
-- id: PHYS-MAG-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-MAG-002
+    name: 电流的磁场
+    required: true
+  - id: PHYS-MAG-003
+    name: 电动机
+    required: false
+
+postrequisites:
+  - id: PHYS-INFO-001
+    name: 电磁波
+  - id: PHYS-ENERGY-003
+    name: 能源与可持续发展
+
 key_concepts:
-- term: 发电机
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电磁感应
+    definition: 闭合电路的一部分导体在磁场中切割磁感线时产生电流的现象
+    importance: 核心
+  - term: 感应电流
+    definition: 电磁感应现象中产生的电流，方向与导体运动方向和磁场方向有关
+    importance: 核心
+  - term: 产生感应电流的条件
+    definition: 闭合电路、一部分导体、切割磁感线运动，三者缺一不可
+    importance: 核心
+  - term: 发电机
+    definition: 根据电磁感应原理将机械能转化为电能的装置
+    importance: 核心
+  - term: 交流电
+    definition: 方向和大小周期性变化的电流，我国电网频率50Hz
+    importance: 核心
+  - term: 频率与周期
+    definition: 频率f表示每秒变化次数（Hz），周期T表示变化一次的时间（s），f = 1/T
+    importance: 重要
+
+misconceptions:
+  - statement: "发电机是根据通电导体在磁场中受力原理工作的"
+    correction: "发电机是根据电磁感应原理工作；电动机才是通电导体在磁场中受力"
+  - statement: "只要导体在磁场中运动就会产生感应电流"
+    correction: "必须是闭合电路的一部分导体，且做切割磁感线运动才产生感应电流；平行磁感线运动不产生"
+  - statement: "感应电流方向只与导体运动方向有关"
+    correction: "感应电流方向与导体运动方向和磁场方向都有关"
+  - statement: "直流发电机产生直流电，不需要换向器"
+    correction: "直流发电机内部线圈产生的是交流电，通过换向器（铜半环）将交流电转换为直流电输出"
+  - statement: "发电机和电动机是完全相反的装置，不能互换"
+    correction: "直流电动机和直流发电机结构相似，具有可逆性，在一定条件下可以互换使用"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 因果关系与能量转化分析
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 探究产生感应电流的条件：改变导体运动方向、磁场方向、线圈匝数，观察灵敏电流计指针偏转
+  - framework: 5E
+    brief: Engage法拉第的发现故事→Explore用线圈和磁铁探究电磁感应→Explain感应电流产生条件和方向规律→Elaborate比较发电机和电动机的异同
+  - framework: 模型观察
+    brief: 观察手摇发电机的结构，摇动发电机使小灯泡发光，体会机械能转化为电能
+  - framework: 项目式学习
+    brief: 调查当地发电厂的类型（火力、水力、风力、核能），了解能量转化过程和发电原理
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "Michael Faraday. Experimental Researches in Electricity. 1831"
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 历史
+    concept: 第二次工业革命
+    relation: 法拉第的电磁感应发现为发电机和变压器的发明奠定基础，推动了电气化时代
+  - subject: 地理
+    concept: 能源分布与发电方式
+    relation: 不同地区根据资源条件选择火力、水力、风力等发电方式
+  - subject: 工程
+    concept: 电力系统
+    relation: 发电机是电力系统的核心设备
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电磁感应
+    relation: 展示法拉第电磁感应实验和发电机模型
+  - venue: 上海科技馆
+    name: 手摇发电
+    relation: 观众通过手摇发电机产生电能点亮灯泡

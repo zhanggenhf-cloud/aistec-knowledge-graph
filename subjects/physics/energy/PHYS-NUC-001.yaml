@@ -1,26 +1,117 @@
 id: PHYS-NUC-001
 name: 核能
-name_en: ''
+name_en: Nuclear Energy
 subject: 物理
 domain: 信息与能源
 grade: 初中九年级
-description: 核能的详细教学内容。
-prerequisites: []
+
+description: |
+  原子核由质子和中子组成。质子和中子依靠强大的核力紧密结合在一起。
+  当原子核发生结构变化时，会释放出巨大的能量，这种能量称为核能。
+
+  获得核能的两种途径：
+  1. 核裂变：较重的原子核（如铀-235）在中子轰击下分裂成两个较轻的原子核，
+     同时释放出巨大的能量和2~3个中子。这些中子又可能引起其他铀核裂变，
+     形成链式反应。核裂变是核电站和原子弹的原理。
+     核电站利用可控的链式反应释放的能量加热水产生蒸汽，驱动汽轮机发电。
+     原子弹则是不可控的链式反应，在极短时间内释放巨大能量。
+
+  2. 核聚变：较轻的原子核（如氢的同位素氘和氚）在超高温下结合成较重的原子核，
+     同时释放出更大的能量。核聚变是太阳和氢弹的能量来源。
+     目前核聚变还不能实现人工可控，是各国科学家正在攻关的重大课题。
+
+  核电站的优点：能量密度高、燃料运输量小、运行成本低、不排放温室气体。
+  核电站的问题：核废料处理困难、存在核泄漏风险、建设成本高、退役处理复杂。
+
+  学生应能了解原子核的组成，了解核裂变和核聚变的基本原理，
+  了解核电站的工作流程，能辩证看待核能利用的利与弊。
+
+prerequisites:
+  - id: CHEM-ATOM-001
+    name: 原子结构
+    required: false
+  - id: PHYS-ENERGY-003
+    name: 能源与可持续发展
+    required: false
+
 postrequisites: []
+
 key_concepts:
-- term: 核能
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 原子核
+    definition: 由质子和中子组成，位于原子中心，集中了原子的绝大部分质量
+    importance: 核心
+  - term: 核能
+    definition: 原子核结构发生变化时释放的巨大能量
+    importance: 核心
+  - term: 核裂变
+    definition: 重原子核分裂成较轻原子核的过程，可形成链式反应，是核电站原理
+    importance: 核心
+  - term: 链式反应
+    definition: 一个核裂变产生的中子引发更多核裂变，持续进行下去的反应
+    importance: 核心
+  - term: 核聚变
+    definition: 轻原子核结合成较重原子核的过程，释放更大能量，是太阳能量来源
+    importance: 核心
+  - term: 核电站
+    definition: 利用可控核裂变释放的能量发电的设施
+    importance: 核心
+  - term: 核废料
+    definition: 核反应产生的放射性废物，需要特殊处理和长期安全储存
+    importance: 重要
+
+misconceptions:
+  - statement: "核电站的原理和原子弹一样"
+    correction: "二者都利用核裂变，但核电站是可控的慢反应，原子弹是不可控的剧烈爆炸"
+  - statement: "核裂变和核聚变是同一种反应"
+    correction: "核裂变是重核分裂，核聚变是轻核结合；二者是完全不同的核反应"
+  - statement: "核电站会发生核爆炸"
+    correction: "核电站的核燃料浓度低，不可能发生核爆炸；最严重的后果是堆芯熔毁和放射性泄漏"
+  - statement: "核能是化学能的一种"
+    correction: "核能是原子核层面的能量，化学能是原子外层电子参与反应时的能量，二者本质不同"
+  - statement: "核聚变已经实现商业化应用"
+    correction: "目前核聚变只能在实验室条件下短暂实现，尚未达到持续可控的商业化应用"
+  - statement: "所有放射性物质都极其危险"
+    correction: "放射性危害与剂量和种类有关；微量放射性在医疗（如放疗）和工业中有合理应用"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 微观模型与辩证思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage核电站新闻事件→Explore用多米诺骨牌模拟链式反应→Explain核裂变和核聚变的原理→Elaborate讨论核能发展的利与弊
+  - framework: 模型建构
+    brief: 用乒乓球和积木等模拟核裂变链式反应，理解临界质量的概念
+  - framework: 项目式学习
+    brief: 调查世界和我国核电站分布、装机容量，分析核电在能源结构中的地位和前景
+  - framework: 辩论
+    brief: 围绕"是否应该大力发展核电"展开辩论，收集证据支持观点
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 原子结构与放射性
+    relation: 原子核的组成和放射性衰变
+  - subject: 历史
+    concept: 核能发展史
+    relation: 从曼哈顿计划到核电站建设的历史进程
+  - subject: 政治
+    concept: 核安全与国际合作
+    relation: 核不扩散条约与国际原子能机构的监管
+  - subject: 地理
+    concept: 核电站选址
+    relation: 核电站选址需要考虑地质稳定、水源充足、远离人口密集区等因素
+
+exhibits:
+  - venue: 中国科技馆
+    name: 核能世界
+    relation: 展示核裂变链式反应原理和核电站工作流程
+  - venue: 广东科学中心
+    name: 大亚湾核电站模型
+    relation: 展示核电站的整体结构和运行原理

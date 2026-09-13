@@ -1,29 +1,107 @@
 id: PHYS-ELEC-006
 name: 欧姆定律
-name_en: ''
+name_en: Ohm's Law
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 欧姆定律的详细教学内容。
+
+description: |
+  欧姆定律是电学中最基本的定律之一，由德国物理学家欧姆于1827年通过实验发现。
+  定律内容：导体中的电流，跟导体两端的电压成正比，跟导体的电阻成反比。
+  公式表示为：I = U/R，变形公式为 U = IR 和 R = U/I。
+
+  欧姆定律适用于纯电阻电路（电能全部转化为内能的电路），不适用于电动机等非纯电阻电路。
+  在应用欧姆定律时，I、U、R 三个量必须对应同一段导体（或同一个用电器），且单位要统一。
+
+  伏安法测电阻：用电压表测出导体两端的电压 U，用电流表测出通过导体的电流 I，
+  根据 R = U/I 计算出电阻。实验原理简单，但存在系统误差（电流表内接/外接法的选择）。
+
+  I-U 图像（伏安特性曲线）：对于定值电阻，I-U 图像是一条过原点的直线，
+  斜率表示 1/R；对于小灯泡等电阻随温度变化的元件，I-U 图像是一条曲线。
+
+  学生应能理解欧姆定律的内容，会运用公式进行计算，会用伏安法测量电阻，
+  能通过 I-U 图像分析电阻的特性。
+
 prerequisites:
-- id: PHYS-ELEC-005
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-005
+    name: 电阻
+    required: true
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-007
+    name: 电功率
+  - id: PHYS-ELEC-010
+    name: 焦耳定律
+
 key_concepts:
-- term: 欧姆定律
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 欧姆定律
+    definition: 导体中的电流与导体两端电压成正比，与导体电阻成反比，I = U/R
+    importance: 核心
+  - term: 伏安法测电阻
+    definition: 用电压表和电流表分别测量导体两端电压和通过电流，再用 R = U/I 计算电阻
+    importance: 核心
+  - term: I-U图像
+    definition: 电流随电压变化的图像，定值电阻的I-U图像是过原点的直线
+    importance: 核心
+  - term: 对应关系
+    definition: I、U、R必须对应同一段导体，不能混用不同导体的量
+    importance: 核心
+  - term: 纯电阻电路
+    definition: 电能全部转化为内能的电路，欧姆定律适用
+    importance: 重要
+
+misconceptions:
+  - statement: "R = U/I 表示电阻与电压成正比、与电流成反比"
+    correction: "R = U/I 是电阻的计算式不是决定式；电阻由导体本身决定，与U和I无关"
+  - statement: "欧姆定律适用于所有电路"
+    correction: "欧姆定律只适用于纯电阻电路；电动机、电解槽等非纯电阻电路不适用"
+  - statement: "导体两端电压为零时电阻也为零"
+    correction: "电阻是导体本身的属性，U=0时R仍然存在，只是I=0"
+  - statement: "并联电路中电阻越大的支路电流越大"
+    correction: "并联电路各支路电压相等，由 I = U/R 可知，电阻越大电流越小"
+  - statement: "导体的I-U图像斜率越大电阻越大"
+    correction: "I-U图像斜率是1/R，斜率越大表示电阻越小"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 数学建模与函数图像分析
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 探究电流与电压、电阻的关系：保持电阻不变改变电压，保持电压不变改变电阻
+  - framework: 实验
+    brief: 伏安法测电阻：连接电路，测量多组U和I数据，计算电阻并求平均值
+  - framework: 5E
+    brief: Engage欧姆的故事→Explore探究I与U、R的定量关系→Explain欧姆定律的建立→Elaborate用欧姆定律解释串并联电路规律
+  - framework: 数据分析
+    brief: 绘制定值电阻和小灯泡的I-U图像，比较二者差异并解释原因（温度对电阻的影响）
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "Georg Simon Ohm. Die galvanische Kette, mathematisch bearbeitet. 1827"
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 数学
+    concept: 正比例与反比例函数
+    relation: 欧姆定律体现了正比例（I-U）和反比例（I-R）关系
+  - subject: 历史
+    concept: 科学发现史
+    relation: 欧姆通过大量实验发现定律，体现了科学探究的艰辛
+
+exhibits:
+  - venue: 中国科技馆
+    name: 欧姆定律
+    relation: 通过互动装置展示电流、电压、电阻三者的定量关系
+  - venue: 上海科技馆
+    name: 电路实验室
+    relation: 提供欧姆定律的虚拟实验环境

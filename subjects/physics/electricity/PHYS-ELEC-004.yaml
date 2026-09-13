@@ -1,29 +1,107 @@
 id: PHYS-ELEC-004
 name: 电压与电压表
-name_en: ''
+name_en: Voltage and Voltmeter
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电压与电压表的详细教学内容。
+
+description: |
+  电压（U）是使电路中形成电流的原因，电源是提供电压的装置。
+  电压的单位是伏特（V），常用单位还有千伏（kV）、毫伏（mV），1 kV = 1000 V，1 V = 1000 mV。
+  一节干电池的电压约为 1.5 V，家庭电路电压为 220 V，对人体安全的电压不高于 36 V。
+
+  测量电压的仪器是电压表（伏特表），使用规则：
+  1. 电压表必须并联在被测电路（或用电器）两端。
+  2. 电流要从"+"接线柱流入，从"-"接线柱流出。
+  3. 被测电压不能超过电压表的量程。
+
+  串联电路中总电压等于各部分电路电压之和：U = U₁ + U₂ + ... + Uₙ。
+  并联电路中各支路两端的电压相等：U = U₁ = U₂ = ... = Uₙ。
+
+  学生应能理解电压的作用，记住常见电压值，会正确使用电压表测量电压，
+  能运用串并联电路的电压规律进行简单分析，具有安全用电的意识。
+
 prerequisites:
-- id: PHYS-ELEC-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-002
+    name: 电路
+    required: true
+  - id: PHYS-ELEC-001
+    name: 电荷与摩擦起电
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-005
+    name: 电阻
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+  - id: PHYS-ELEC-006
+    name: 欧姆定律
+
 key_concepts:
-- term: 电压与电压表
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电压
+    definition: 使电路中形成电流的原因，是电势差，单位伏特（V）
+    importance: 核心
+  - term: 电压表
+    definition: 测量电路两端电压的仪器，符号为ⓥ，必须并联使用
+    importance: 核心
+  - term: 串联电路电压规律
+    definition: 串联电路总电压等于各部分电压之和，U = U₁ + U₂
+    importance: 核心
+  - term: 并联电路电压规律
+    definition: 并联电路各支路两端电压相等，U = U₁ = U₂
+    importance: 核心
+  - term: 常见电压值
+    definition: 干电池1.5V，铅蓄电池2V，家庭电路220V，安全电压不高于36V
+    importance: 核心
+  - term: 电源
+    definition: 提供电压的装置，将其他形式的能转化为电能
+    importance: 重要
+
+misconceptions:
+  - statement: "电压就是电流"
+    correction: "电压是形成电流的原因，但电压本身不是电流；有电压不一定有电流，还需要闭合回路"
+  - statement: "电压表可以串联在电路中"
+    correction: "电压表内阻很大，串联会造成电路中电流极小，应并联在被测元件两端"
+  - statement: "串联电路中各用电器电压相等"
+    correction: "串联电路中电压按电阻分配，只有电阻相等时电压才相等"
+  - statement: "电源电压就是电路中各点的电压"
+    correction: "电源电压是总电压，电路中各点之间电势不同，元件两端电压取决于其位置和连接方式"
+  - statement: "有电压就有电流，没有电压就没有电流"
+    correction: "有电压且闭合回路才有电流；超导体中可以有电流而无电压降（电阻为零）"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 因果推理与测量技能
+
+activity_suggestions:
+  - framework: 实验探究
+    brief: 探究串联电路中总电压与各部分电压的关系，验证 U = U₁ + U₂
+  - framework: 实验探究
+    brief: 探究并联电路各支路电压的关系，验证各支路电压相等
+  - framework: 5E
+    brief: Engage用水压类比电压（水位差→水流，电压→电流）→Explore测量不同电源电压→Explain电压与电流的关系→Elaborate分析家庭电路中各用电器电压
+  - framework: 安全教育
+    brief: 识别常见电压标识，讨论安全用电常识，模拟触电急救
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 生物
+    concept: 生物电势
+    relation: 细胞膜内外存在电势差（静息电位约-70mV），与神经传导有关
+  - subject: 化学
+    concept: 原电池
+    relation: 化学能转化为电能，产生电压（如伏打电池）
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电压与电流
+    relation: 通过水柱模型类比展示电压与电流的关系
+  - venue: 上海科技馆
+    name: 电力世界
+    relation: 展示不同电压等级的输电和应用

@@ -1,29 +1,115 @@
 id: PHYS-ELEC-007
 name: 电功率
-name_en: ''
+name_en: Electric Power
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电功率的详细教学内容。
+
+description: |
+  电功率（P）表示电流做功的快慢，定义为单位时间内电流所做的功，
+  单位是瓦特（W），常用单位还有千瓦（kW），1 kW = 1000 W。
+  电功率的计算公式：P = UI = I²R = U²/R（纯电阻电路）。
+
+  电功（W）表示电流所做的功，也就是消耗的电能，单位是焦耳（J），
+  日常生活中常用千瓦时（kW·h，度）计量，1 kW·h = 3.6×10⁶ J。
+  电功计算公式：W = UIt = Pt = I²Rt = U²t/R（纯电阻电路）。
+
+  用电器的额定功率和额定电压：用电器在额定电压下工作时的功率叫额定功率，
+  此时用电器正常工作；实际电压下的功率叫实际功率。
+  当实际电压等于额定电压时，实际功率等于额定功率；
+  当实际电压小于额定电压时，实际功率小于额定功率，用电器不能正常工作；
+  当实际电压大于额定电压时，实际功率大于额定功率，用电器可能损坏。
+
+  测量小灯泡电功率的实验：用电压表测灯泡两端电压，电流表测通过灯泡的电流，
+  根据 P = UI 计算电功率。实验中通过滑动变阻器改变灯泡两端电压，
+  观察灯泡在不同电压下的亮度变化。
+
+  学生应能计算电功率和电功，理解额定功率和实际功率的区别，会测量小灯泡的电功率。
+
 prerequisites:
-- id: PHYS-ELEC-006
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-006
+    name: 欧姆定律
+    required: true
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-010
+    name: 焦耳定律
+  - id: PHYS-ELEC-009
+    name: 家庭电路
+  - id: PHYS-ENERGY-003
+    name: 能源与可持续发展
+
 key_concepts:
-- term: 电功率
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电功率
+    definition: 电流做功的快慢，P = UI，单位瓦特（W）
+    importance: 核心
+  - term: 电功
+    definition: 电流所做的功，W = UIt = Pt，单位焦耳（J）或千瓦时（kW·h）
+    importance: 核心
+  - term: 额定电压
+    definition: 用电器正常工作时的电压
+    importance: 核心
+  - term: 额定功率
+    definition: 用电器在额定电压下工作时的功率
+    importance: 核心
+  - term: 实际功率
+    definition: 用电器在实际电压下工作时的功率，决定用电器的实际工作状态
+    importance: 核心
+  - term: 千瓦时
+    definition: 电能的常用单位，俗称"度"，1 kW·h = 3.6×10⁶ J
+    importance: 核心
+
+misconceptions:
+  - statement: "电功率大的用电器消耗的电能一定多"
+    correction: "电能 W = Pt，与时间有关；功率大但工作时间短，消耗的电能可能很少"
+  - statement: "用电器在低于额定电压时更省电"
+    correction: "虽然实际功率降低，但用电器的效率也降低，且可能无法正常工作"
+  - statement: "电功率就是电功"
+    correction: "电功率是做功的快慢（单位时间的功），电功是总共做的功，二者是不同的物理量"
+  - statement: "所有电路都可以用 P = U²/R 计算功率"
+    correction: "P = U²/R 只适用于纯电阻电路；非纯电阻电路只能用 P = UI"
+  - statement: "灯泡的亮度由额定功率决定"
+    correction: "灯泡的亮度由实际功率决定，实际功率越大灯泡越亮"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 能量观念与函数分析
+
+activity_suggestions:
+  - framework: 实验
+    brief: 测量小灯泡的电功率：调节滑动变阻器使灯泡在额定电压、低于和高于额定电压下工作，观察亮度变化
+  - framework: 5E
+    brief: Engage比较不同灯泡亮度→Explore测量不同电压下灯泡功率→Explain额定功率与实际功率→Elaborate计算家庭各用电器月耗电量
+  - framework: 项目式学习
+    brief: 调查家庭用电器的额定功率，计算家庭总功率和月电费，提出节能方案
+  - framework: 计算练习
+    brief: 练习电功率、电功、电能的综合计算，注意单位换算（J与kW·h）
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 数学
+    concept: 函数关系
+    relation: 电功率公式体现了多变量之间的函数关系
+  - subject: 经济
+    concept: 电费计算
+    relation: 理解电功率和电能是理解家庭电费的基础
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电功率测量
+    relation: 提供电功率测量装置，体验不同用电器功率差异
+  - venue: 上海科技馆
+    name: 家庭用电
+    relation: 模拟家庭电路，展示各用电器的功率和电能消耗

@@ -1,29 +1,110 @@
 id: PHYS-MAG-002
 name: 电流的磁场
-name_en: ''
+name_en: Magnetic Field of Electric Current
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电流的磁场的详细教学内容。
+
+description: |
+  1820年，丹麦物理学家奥斯特发现了电流的磁效应：通电导线周围存在磁场，
+  磁场的方向与电流的方向有关。这一发现揭示了电与磁之间的联系，开创了电磁学研究的新纪元。
+
+  通电螺线管的磁场：通电螺线管外部的磁场与条形磁体的磁场相似，
+  其两端的极性跟螺线管中电流的方向有关，可用安培定则（右手螺旋定则）判断：
+  用右手握住螺线管，让四指指向螺线管中电流的方向，则大拇指所指的那端就是螺线管的N极。
+
+  通电螺线管的磁性强弱与以下因素有关：
+  - 线圈匝数：匝数越多，磁性越强。
+  - 电流大小：电流越大，磁性越强。
+  - 有无铁芯：插入铁芯后磁性大大增强（制成电磁铁）。
+
+  电磁铁是带有铁芯的通电螺线管，其优点：磁性有无可由电流通断控制，
+  磁性强弱可由电流大小和线圈匝数控制，磁极方向可由电流方向控制。
+  电磁铁在生产生活中有广泛应用：电磁起重机、电铃、电磁继电器、磁悬浮列车等。
+
+  学生应能通过实验了解电流周围存在磁场，会用安培定则判断通电螺线管的磁极，
+  了解影响电磁铁磁性强弱的因素，知道电磁铁的应用。
+
 prerequisites:
-- id: PHYS-ELEC-003
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+  - id: SCI-MAG-001
+    name: 小学科学：磁铁与磁场
+    required: false
+
+postrequisites:
+  - id: PHYS-MAG-003
+    name: 电动机
+  - id: PHYS-MAG-004
+    name: 发电机
+
 key_concepts:
-- term: 电流的磁场
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电流的磁效应
+    definition: 通电导线周围存在磁场，磁场方向与电流方向有关
+    importance: 核心
+  - term: 奥斯特实验
+    definition: 1820年奥斯特发现通电导线使小磁针偏转，证明电流产生磁场
+    importance: 核心
+  - term: 通电螺线管
+    definition: 将导线绕成螺线管状通电，产生类似条形磁铁的磁场
+    importance: 核心
+  - term: 安培定则
+    definition: 右手握住螺线管，四指指向电流方向，大拇指指向N极
+    importance: 核心
+  - term: 电磁铁
+    definition: 带有铁芯的通电螺线管，磁性强弱可控
+    importance: 核心
+  - term: 影响电磁铁磁性的因素
+    definition: 电流大小、线圈匝数、有无铁芯
+    importance: 核心
+
+misconceptions:
+  - statement: "只有磁体才能产生磁场"
+    correction: "通电导线周围也存在磁场，即电流的磁效应"
+  - statement: "安培定则用左手判断"
+    correction: "安培定则用右手判断；左手定则用于判断通电导体在磁场中的受力方向"
+  - statement: "螺线管中电流方向改变，磁场方向不变"
+    correction: "电流方向改变，螺线管的N、S极会互换"
+  - statement: "电磁铁的磁性永远存在"
+    correction: "电磁铁的磁性由电流通断控制，断电后磁性消失（有少量剩磁）"
+  - statement: "线圈匝数越多磁性一定越强"
+    correction: "磁性强弱还与电流大小有关；匝数多但电流很小时磁性可能很弱"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 空间想象与规律应用
+
+activity_suggestions:
+  - framework: 实验探究
+    brief: 奥斯特实验：将通电直导线平行放置在小磁针上方，观察磁针偏转；改变电流方向观察偏转方向变化
+  - framework: 探究实验
+    brief: 探究影响电磁铁磁性强弱的因素：改变电流大小、线圈匝数、有无铁芯，用吸引大头针数量比较磁性强弱
+  - framework: 5E
+    brief: Engage奥斯特的发现故事→Explore通电螺线管磁场分布→Explain安培定则和磁场方向→Elaborate设计电磁继电器控制电路
+  - framework: 模型制作
+    brief: 制作简易电磁铁，测试其吸起铁钉的数量，探究影响磁性的因素
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "Hans Christian Ørsted. Experiments on the Effect of a Current of Electricity on the Magnetic Needle. 1820"
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 历史
+    concept: 科学发现史
+    relation: 奥斯特的发现开启了电磁学研究时代，推动了第二次工业革命
+  - subject: 工程
+    concept: 电磁装置设计
+    relation: 电磁铁是电磁继电器、电磁起重机等装置的核心部件
+
+exhibits:
+  - venue: 中国科技馆
+    name: 奥斯特实验
+    relation: 重现奥斯特发现电流磁效应的经典实验
+  - venue: 上海科技馆
+    name: 电磁铁
+    relation: 展示电磁铁的磁性控制及其在工业中的应用

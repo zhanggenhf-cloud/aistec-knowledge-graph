@@ -1,29 +1,107 @@
 id: PHYS-HEAT-004
 name: 热机效率
-name_en: ''
+name_en: Heat Engine Efficiency
 subject: 物理
 domain: 热学
 grade: 初中九年级
-description: 热机效率的详细教学内容。
+
+description: |
+  热机效率是指热机用来做有用功的那部分能量与燃料完全燃烧放出的能量之比，
+  用符号 η 表示，计算公式为：η = W有/Q放 × 100%。
+  由于各种能量损失（废气带走大量热量、机械摩擦、散热损失等），
+  热机的效率总是小于 100%，也小于 1。
+
+  汽油机的效率一般为 20%~30%，柴油机的效率一般为 30%~45%。
+  提高效率的途径：使燃料充分燃烧、减少各种热损失、利用废气能量（如涡轮增压）、
+  保持良好的润滑以减少摩擦等。
+
+  从能量守恒的角度看，燃料完全燃烧放出的热量 Q放 = mq（或 Q放 = Vq，气体燃料），
+  其中 m 为燃料质量，q 为燃料热值；热机做的有用功 W有 = Pt（功率×时间），
+  或者通过力与距离计算 W = Fs。
+
+  学生应能计算热机效率，了解提高效率的方法，认识热机对环境的污染（废气、噪声、热污染），
+  具有保护环境和可持续发展的意识。
+
 prerequisites:
-- id: PHYS-HEAT-003
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-HEAT-003
+    name: 热机
+    required: true
+  - id: PHYS-HEAT-001
+    name: 内能
+    required: true
+  - id: PHYS-ELEC-007
+    name: 电功率
+    required: false
+
+postrequisites:
+  - id: PHYS-ENERGY-003
+    name: 能源与可持续发展
+
 key_concepts:
-- term: 热机效率
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 热机效率
+    definition: 有用功与燃料完全燃烧放出热量之比，η = W有/Q放 × 100%
+    importance: 核心
+  - term: 能量损失
+    definition: 废气带走的热量、机械摩擦、散热、不完全燃烧等造成的能量损失
+    importance: 核心
+  - term: 提高效率的途径
+    definition: 充分燃烧、减少热损失、利用废气能量、减少摩擦等
+    importance: 核心
+  - term: 热污染
+    definition: 热机排出的废气和冷却水携带的余热对环境造成的温度升高影响
+    importance: 重要
+  - term: 涡轮增压
+    definition: 利用发动机排出的废气驱动涡轮，压缩进气以提高燃烧效率的技术
+    importance: 拓展
+
+misconceptions:
+  - statement: "热机效率可以达到100%"
+    correction: "由于废气、摩擦、散热等不可避免的能量损失，热机效率永远小于100%"
+  - statement: "热机效率等于1"
+    correction: "热机效率是一个百分比，小于1（或小于100%），不可能等于1"
+  - statement: "柴油机效率一定比汽油机高"
+    correction: "一般情况下柴油机效率（30%~45%）高于汽油机（20%~30%），但具体数值取决于设计和工况"
+  - statement: "燃料燃烧越充分，热机效率就一定越高"
+    correction: "充分燃烧只是提高效率的一个方面，还要减少摩擦、散热等其他损失"
+  - statement: "热机做功越多效率越高"
+    correction: "效率是有用功与总能量的比值，做功多但如果消耗燃料更多，效率可能更低"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 能量守恒分析与比例计算
+
+activity_suggestions:
+  - framework: 计算与分析
+    brief: 根据给定数据计算某汽油机的效率，分析各部分能量损失所占比例
+  - framework: 5E
+    brief: Engage讨论汽车油耗→Explore计算不同热机的效率→Explain能量损失的原因→Elaborate讨论提高效率和环保的措施
+  - framework: 项目式学习
+    brief: 调查当地发电厂或汽车维修站，了解实际热机效率数据，撰写节能建议报告
+  - framework: 辩论
+    brief: 围绕"发展新能源汽车vs改进传统内燃机效率"展开辩论
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 燃料的充分燃烧条件
+    relation: 充分燃烧需要足够的氧气、适当的温度和充分的接触面积
+  - subject: 地理
+    concept: 能源结构与环境污染
+    relation: 热机效率与化石燃料消耗、温室气体排放的关系
+  - subject: 数学
+    concept: 百分比计算
+    relation: 效率计算涉及比例和百分数运算
+
+exhibits:
+  - venue: 中国科技馆
+    name: 能量转化与守恒
+    relation: 展示各种能量转化装置的效率对比
+  - venue: 上海科技馆
+    name: 绿色能源
+    relation: 展示提高能源利用效率的技术和新能源应用

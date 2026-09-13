@@ -1,29 +1,123 @@
 id: PHYS-ENERGY-003
 name: 能源与可持续发展
-name_en: ''
+name_en: Energy and Sustainable Development
 subject: 物理
 domain: 信息与能源
 grade: 初中九年级
-description: 能源与可持续发展的详细教学内容。
+
+description: |
+  能源是能够向人类提供能量的物质资源。按能否从自然界直接获取分为：
+  一次能源（如煤、石油、天然气、风能、水能、太阳能等）和二次能源（如电能、汽油等）。
+  按能否在短期内从自然界得到补充分为：
+  可再生能源（如太阳能、风能、水能、生物质能等）和不可再生能源（如煤、石油、天然气、核能等）。
+
+  人类利用能源的历程：柴薪时代→煤炭时代→石油时代→多元化能源时代。
+  能源革命推动了人类文明的进步，但也带来了能源危机和环境污染问题。
+
+  能源利用中的环境问题：
+  - 空气污染：燃烧化石燃料产生SO₂、NOₓ、CO₂、粉尘等。
+  - 温室效应：CO₂等温室气体导致全球气候变暖。
+  - 酸雨：SO₂和NOₓ溶于雨水形成酸雨，危害生态系统和建筑物。
+  - 热污染：发电厂冷却水排入水体导致水温升高。
+
+  可持续发展要求：在满足当代人能源需求的同时，不损害后代人满足其需求的能力。
+  具体措施：节约能源、提高能源利用效率、开发和利用新能源、减少污染物排放、保护生态环境。
+
+  新能源技术：太阳能光伏发电、风力发电、核能发电、地热能、潮汐能、氢能等。
+
+  学生应能区分不同类型的能源，了解能源利用中的环境问题，具有节约能源和可持续发展的意识。
+
 prerequisites:
-- id: PHYS-ENERGY-002
-  name: ''
-  required: true
+  - id: PHYS-HEAT-004
+    name: 热机效率
+    required: false
+  - id: PHYS-ELEC-007
+    name: 电功率
+    required: false
+  - id: PHYS-MAG-004
+    name: 发电机
+    required: false
+
 postrequisites: []
+
 key_concepts:
-- term: 能源与可持续发展
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 一次能源
+    definition: 可以直接从自然界获取的能源，如煤、石油、天然气、风能、太阳能
+    importance: 核心
+  - term: 二次能源
+    definition: 无法直接从自然界获取，必须通过一次能源消耗才能得到的能源，如电能
+    importance: 核心
+  - term: 可再生能源
+    definition: 可以在自然界中源源不断地得到补充的能源，如太阳能、风能、水能
+    importance: 核心
+  - term: 不可再生能源
+    definition: 在短期内无法从自然界得到补充的能源，如化石能源、核能
+    importance: 核心
+  - term: 温室效应
+    definition: 大气中CO₂等气体吸收地面辐射，使地球表面温度升高的现象
+    importance: 核心
+  - term: 酸雨
+    definition: pH小于5.6的雨水，由SO₂和NOₓ溶于水形成
+    importance: 核心
+  - term: 可持续发展
+    definition: 满足当代人需求而不损害后代人满足其需求能力的发展模式
+    importance: 核心
+  - term: 新能源
+    definition: 太阳能、风能、核能、地热能、潮汐能等清洁、低碳的能源
+    importance: 重要
+
+misconceptions:
+  - statement: "电能是一次能源"
+    correction: "电能是二次能源，必须由其他形式的能（如机械能、化学能）转化而来"
+  - statement: "可再生能源取之不尽，可以随意浪费"
+    correction: "虽然可再生能源可以再生，但利用设备和设施有成本，且过度开发也会破坏生态"
+  - statement: "核能是可再生能源"
+    correction: "核能利用铀等核燃料，核燃料在自然界中储量有限，属于不可再生能源"
+  - statement: "新能源没有任何污染"
+    correction: "新能源相对清洁，但并非零污染，如太阳能电池板制造、风力发电机叶片处理都有环境影响"
+  - statement: "节约能源只是个人的事"
+    correction: "节约能源需要个人、企业、政府共同努力，是全社会共同责任"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统思维与价值判断
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage全球变暖新闻→Explore调查当地能源结构→Explain能源分类和环境影响→Elaborate设计家庭节能方案
+  - framework: 项目式学习
+    brief: 调查家庭每月用电、用气、用水情况，计算碳排放量，提出减少碳足迹的具体措施
+  - framework: 辩论
+    brief: 围绕"发展核能的利与弊"展开辩论，培养辩证思维
+  - framework: 数据分析
+    brief: 分析我国能源消费结构变化数据，讨论能源转型趋势
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+    - "IPCC Sixth Assessment Report. 2021-2023"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 地理
+    concept: 资源分布与能源地理
+    relation: 不同地区能源资源禀赋不同，影响能源结构选择
+  - subject: 化学
+    concept: 燃烧与污染物排放
+    relation: 化石燃料燃烧产生CO₂、SO₂、NOₓ等污染物
+  - subject: 政治
+    concept: 能源政策与国际关系
+    relation: 能源安全是国家安全的重要组成部分
+  - subject: 生物
+    concept: 生态系统与气候变化
+    relation: 温室效应和全球变暖对生物多样性的影响
+
+exhibits:
+  - venue: 中国科技馆
+    name: 能源世界
+    relation: 展示各种能源的开采、转化和利用方式
+  - venue: 上海科技馆
+    name: 地球家园
+    relation: 展示全球能源结构和气候变化的影响

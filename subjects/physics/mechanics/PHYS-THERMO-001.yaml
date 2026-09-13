@@ -1,29 +1,125 @@
 id: PHYS-THERMO-001
 name: 温度与物态变化
-name_en: ''
+name_en: Temperature and Phase Changes
 subject: 物理
-domain: 力学
+domain: 热学
 grade: 初中八年级上
-description: 温度与物态变化的详细教学内容。
+
+description: |
+  温度是表示物体冷热程度的物理量，常用单位是摄氏度（℃）。
+  常用温度计是根据液体热胀冷缩的规律制成的，使用前要观察量程和分度值，
+  测量时玻璃泡要全部浸入被测液体中，不能碰容器底或壁，读数时视线要与液柱上表面相平。
+
+  物质常见的三种状态是固态、液态和气态，在一定条件下可以相互转化。
+  物态变化包括：熔化（固→液，吸热）、凝固（液→固，放热）、
+  汽化（液→气，吸热，包括蒸发和沸腾）、液化（气→液，放热）、
+  升华（固→气，吸热）、凝华（气→固，放热）。
+
+  晶体有固定的熔点和凝固点，熔化时温度保持不变；非晶体没有固定的熔点和凝固点。
+  液体沸腾时的温度叫沸点，沸点与气压有关。
+  蒸发在任何温度下都能发生，只发生在液体表面；沸腾在一定温度下发生，在液体表面和内部同时进行。
+  影响蒸发快慢的因素：液体温度、表面积、表面空气流速。
+
+  学生应能通过实验探究固体熔化时温度的变化规律，探究水沸腾时温度变化的特点，
+  能用物态变化知识解释自然界中的水循环现象，了解我国和当地的水资源状况，有节约用水和保护环境的意识。
+
 prerequisites:
-- id: SCI-HEAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-HEAT-001
+    name: 小学科学：热现象与温度
+    required: true
+
+postrequisites:
+  - id: PHYS-HEAT-001
+    name: 内能
+  - id: CHEM-STAT-001
+    name: 化学中的物质状态
+
 key_concepts:
-- term: 温度与物态变化
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 温度
+    definition: 表示物体冷热程度的物理量，单位为摄氏度（℃）
+    importance: 核心
+  - term: 温度计
+    definition: 根据液体热胀冷缩原理制成的测量温度的仪器
+    importance: 核心
+  - term: 熔化
+    definition: 物质从固态变为液态的过程，需要吸热
+    importance: 核心
+  - term: 凝固
+    definition: 物质从液态变为固态的过程，需要放热
+    importance: 核心
+  - term: 汽化
+    definition: 物质从液态变为气态的过程，包括蒸发和沸腾两种方式
+    importance: 核心
+  - term: 液化
+    definition: 物质从气态变为液态的过程，需要放热
+    importance: 核心
+  - term: 升华
+    definition: 物质从固态直接变为气态的过程，需要吸热
+    importance: 核心
+  - term: 凝华
+    definition: 物质从气态直接变为固态的过程，需要放热
+    importance: 核心
+  - term: 熔点
+    definition: 晶体熔化时的温度，晶体有固定熔点，非晶体没有
+    importance: 核心
+  - term: 沸点
+    definition: 液体沸腾时的温度，与液面上方气压有关
+    importance: 核心
+  - term: 蒸发
+    definition: 在任何温度下发生在液体表面的缓慢汽化现象
+    importance: 重要
+  - term: 沸腾
+    definition: 在一定温度下，液体表面和内部同时发生的剧烈汽化现象
+    importance: 重要
+
+misconceptions:
+  - statement: "0℃的冰比0℃的水冷"
+    correction: "0℃的冰和0℃的水温度相同，冷热程度相同"
+  - statement: "晶体达到熔点就会自动熔化"
+    correction: "晶体达到熔点后还需要继续吸热才能熔化，熔化过程中温度不变"
+  - statement: "水沸腾时温度会一直升高"
+    correction: "水沸腾时温度保持不变，等于沸点，继续吸热但温度不变"
+  - statement: "白气就是水蒸气"
+    correction: "白气不是水蒸气（水蒸气无色透明），而是水蒸气遇冷液化形成的小水珠"
+  - statement: "蒸发和沸腾都是只发生在液体表面的汽化"
+    correction: "蒸发只发生在表面，沸腾在表面和内部同时发生"
+
 cognitive_level:
   min_age: 12
-  piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  piaget_stage: 具体运算阶段向形式运算阶段过渡
+  prerequisite_reasoning: 观察与归纳思维
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 探究固体熔化时温度变化的特点，用图像法分析晶体与非晶体的区别
+  - framework: 探究实验
+    brief: 探究水沸腾前后温度变化的特点，绘制温度-时间图像
+  - framework: 5E
+    brief: Engage用干冰升华演示→Explore观察碘的升华和凝华→Explain物态变化的吸放热规律
+  - framework: POE
+    brief: 预测用纸锅烧水是否会燃烧，解释水的沸点低于纸的着火点
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 地理
+    concept: 水循环
+    relation: 物态变化是自然界水循环的物理基础
+  - subject: 化学
+    concept: 物质的三态
+    relation: 物理状态变化与化学变化的区分
+  - subject: 生物
+    concept: 生物体体温调节
+    relation: 蒸发吸热在生物散热中的应用
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物态变化展项
+    relation: 展示水的三态变化及条件控制
+  - venue: 上海科技馆
+    name: 冰晶世界
+    relation: 展示晶体结构及熔化过程

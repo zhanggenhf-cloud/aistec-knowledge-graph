@@ -1,29 +1,118 @@
 id: PHYS-ELEC-008
 name: 串联与并联电路
-name_en: ''
+name_en: Series and Parallel Circuits
 subject: 物理
-domain: 电学补充
+domain: 电磁学
 grade: 初中九年级
-description: 串联与并联电路的详细教学内容。
+
+description: |
+  串联电路：用电器依次连接，电流只有一条路径。特点是：
+  - 电流处处相等：I = I₁ = I₂ = ... = Iₙ
+  - 总电压等于各部分电压之和：U = U₁ + U₂ + ... + Uₙ
+  - 总电阻等于各电阻之和：R = R₁ + R₂ + ... + Rₙ
+  - 各用电器相互影响，一个断路整个电路断开
+
+  并联电路：用电器并列连接，电流有多条路径。特点是：
+  - 干路电流等于各支路电流之和：I = I₁ + I₂ + ... + Iₙ
+  - 各支路两端电压相等：U = U₁ = U₂ = ... = Uₙ
+  - 总电阻的倒数等于各电阻倒数之和：1/R = 1/R₁ + 1/R₂ + ... + 1/Rₙ
+  - 各用电器互不影响，一条支路断开不影响其他支路
+
+  两个电阻并联的简化公式：R = (R₁R₂)/(R₁+R₂)。
+  并联电路中，支路电阻越小，该支路电流越大。
+
+  混联电路：既有串联又有并联的电路。分析时应先化简局部串联或并联部分，再逐步求总电阻。
+
+  学生应能识别串联和并联电路，掌握它们的电流、电压、电阻规律，能进行简单的串并联电路计算。
+
 prerequisites:
-- id: PHYS-ELEC-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-002
+    name: 电路
+    required: true
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+    required: true
+  - id: PHYS-ELEC-005
+    name: 电阻
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-009
+    name: 家庭电路
+  - id: PHYS-ELEC-006
+    name: 欧姆定律
+
 key_concepts:
-- term: 串联与并联电路
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 串联电路
+    definition: 用电器依次连接，电流只有一条路径
+    importance: 核心
+  - term: 并联电路
+    definition: 用电器并列连接，电流有多条路径
+    importance: 核心
+  - term: 串联电阻规律
+    definition: 总电阻等于各电阻之和，R = R₁ + R₂
+    importance: 核心
+  - term: 并联电阻规律
+    definition: 总电阻倒数等于各电阻倒数之和，1/R = 1/R₁ + 1/R₂
+    importance: 核心
+  - term: 分压原理
+    definition: 串联电路中电压按电阻大小分配，U₁/U₂ = R₁/R₂
+    importance: 重要
+  - term: 分流原理
+    definition: 并联电路中电流按电阻反比分配，I₁/I₂ = R₂/R₁
+    importance: 重要
+  - term: 混联电路
+    definition: 既有串联又有并联的复杂电路
+    importance: 拓展
+
+misconceptions:
+  - statement: "并联电路总电阻等于各电阻之和"
+    correction: "并联总电阻倒数等于各电阻倒数之和，总电阻比任何一个分电阻都小"
+  - statement: "串联电路中电阻大的用电器功率小"
+    correction: "串联电流相等，由 P = I²R 可知，电阻越大功率越大（分压多）"
+  - statement: "并联电路中电阻大的支路电流大"
+    correction: "并联电压相等，由 I = U/R 可知，电阻越大电流越小"
+  - statement: "并联的用电器越多总电阻越大"
+    correction: "并联相当于增加了导体的横截面积，用电器越多总电阻越小"
+  - statement: "串联电路中一个用电器短路，其他用电器也不工作"
+    correction: "串联中一个用电器短路（变成导线），其他用电器仍然工作，且电压增大"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 等效替代与系统分析
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 连接串联和并联电路，用电流表和电压表测量各点电流和各部分电压，验证规律
+  - framework: 5E
+    brief: Engage节日彩灯一个坏了全部不亮 vs 家庭电路各灯独立→Explore搭建串并联电路比较→Explain串并联电路的规律→Elaborate设计电路满足不同需求
+  - framework: 计算练习
+    brief: 给定电源电压和电阻值，计算串并联电路的电流、电压和功率分配
+  - framework: 故障分析
+    brief: 给定电路故障现象（如某灯不亮、电流表示数异常），判断故障位置和类型
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 数学
+    concept: 倒数与分数运算
+    relation: 并联电阻计算涉及倒数求和
+  - subject: 工程
+    concept: 电路设计
+    relation: 串并联是电路设计的基础结构
+
+exhibits:
+  - venue: 中国科技馆
+    name: 串并联电路
+    relation: 提供可自由搭建的串并联电路体验平台
+  - venue: 上海科技馆
+    name: 电流的分配
+    relation: 用可视化方式展示串并联电路中电流的分配规律

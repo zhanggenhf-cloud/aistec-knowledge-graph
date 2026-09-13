@@ -1,29 +1,112 @@
 id: PHYS-HEAT-003
 name: 热机
-name_en: ''
+name_en: Heat Engine
 subject: 物理
 domain: 热学
 grade: 初中九年级
-description: 热机的详细教学内容。
+
+description: |
+  热机是将内能转化为机械能的装置。常见的热机有蒸汽机、内燃机、汽轮机、喷气发动机等。
+  内燃机是燃料在气缸内直接燃烧产生动力的热机，分为汽油机和柴油机两种。
+
+  四冲程内燃机的一个工作循环包括四个冲程：吸气冲程、压缩冲程、做功冲程和排气冲程。
+  - 吸气冲程：进气门打开，排气门关闭，活塞向下运动，吸入汽油和空气的混合物（汽油机）或空气（柴油机）。
+  - 压缩冲程：两气门关闭，活塞向上运动，混合物被压缩，机械能转化为内能，温度升高。
+  - 做功冲程：两气门关闭，火花塞点火（汽油机）或压燃（柴油机），燃气膨胀推动活塞向下运动，内能转化为机械能，是唯一对外做功的冲程。
+  - 排气冲程：排气门打开，进气门关闭，活塞向上运动，排出废气。
+
+  一个工作循环中，活塞往复运动两次，曲轴转动两周，对外做功一次。
+  汽油机与柴油机的主要区别：汽油机顶部有火花塞，吸入的是汽油和空气的混合物，压缩比小，点燃式点火；
+  柴油机顶部有喷油嘴，吸入的是纯空气，压缩比大，压燃式点火。
+
+  内能的利用在人类社会发展史中具有重要意义，从蒸汽机到内燃机推动了工业革命的发展。
+
 prerequisites:
-- id: PHYS-HEAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-HEAT-002
+    name: 比热容
+    required: true
+  - id: PHYS-HEAT-001
+    name: 内能
+    required: true
+
+postrequisites:
+  - id: PHYS-HEAT-004
+    name: 热机效率
+
 key_concepts:
-- term: 热机
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 热机
+    definition: 将燃料燃烧产生的内能转化为机械能的装置
+    importance: 核心
+  - term: 内燃机
+    definition: 燃料在气缸内部直接燃烧的热机，包括汽油机和柴油机
+    importance: 核心
+  - term: 四冲程
+    definition: 吸气、压缩、做功、排气四个冲程构成一个完整的工作循环
+    importance: 核心
+  - term: 做功冲程
+    definition: 燃气膨胀推动活塞做功，内能转化为机械能，是唯一对外做功的冲程
+    importance: 核心
+  - term: 压缩冲程
+    definition: 活塞压缩混合气体，机械能转化为内能
+    importance: 核心
+  - term: 汽油机
+    definition: 以汽油为燃料，顶部有火花塞，点燃式点火，压缩比较小
+    importance: 重要
+  - term: 柴油机
+    definition: 以柴油为燃料，顶部有喷油嘴，压燃式点火，压缩比较大，效率较高
+    importance: 重要
+  - term: 飞轮
+    definition: 利用惯性完成吸气、压缩、排气三个辅助冲程的装置
+    importance: 重要
+
+misconceptions:
+  - statement: "四个冲程都对外做功"
+    correction: "只有做功冲程对外做功，其他三个冲程靠飞轮惯性完成"
+  - statement: "一个工作循环中曲轴转动一周"
+    correction: "一个工作循环活塞往复两次，曲轴转动两周（720°）"
+  - statement: "汽油机和柴油机的工作原理完全相同"
+    correction: "二者在点火方式、吸入物质、压缩比、结构上有显著区别"
+  - statement: "热机工作时所有内能都转化为机械能"
+    correction: "热机工作时大部分能量以废气、散热、摩擦等形式损失，只有部分转化为有用机械能"
+  - statement: "做功冲程是机械能转化为内能"
+    correction: "做功冲程是燃气的内能转化为活塞的机械能"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 能量转化分析与模型建构
+
+activity_suggestions:
+  - framework: 模型建构
+    brief: 用透明塑料瓶、气球等材料制作简易四冲程内燃机模型，模拟各冲程的运动
+  - framework: 5E
+    brief: Engage汽车发动机视频→Explore拆解小型内燃机模型观察结构→Explain四冲程的工作原理和能量转化→Elaborate比较汽油机和柴油机的异同
+  - framework: 实验
+    brief: 用酒精灯加热试管中的水，水蒸气推动橡皮塞飞出，演示内能转化为机械能
+  - framework: 项目式学习
+    brief: 调查生活中各种热机的应用（汽车、轮船、飞机、发电厂），分析其能量转化过程
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 历史
+    concept: 工业革命
+    relation: 蒸汽机的发明推动了第一次工业革命，内燃机推动了第二次工业革命
+  - subject: 化学
+    concept: 燃料的燃烧
+    relation: 汽油和柴油的燃烧是化学反应，释放化学能转化为内能
+  - subject: 地理
+    concept: 能源利用与环境污染
+    relation: 热机大量使用化石燃料导致的环境问题
+
+exhibits:
+  - venue: 中国科技馆
+    name: 内燃机剖面模型
+    relation: 展示四冲程汽油机的内部结构和工作过程
+  - venue: 北京汽车博物馆
+    name: 汽车发动机演变
+    relation: 展示从蒸汽机到现代内燃机的发展历程

@@ -1,29 +1,114 @@
 id: PHYS-HEAT-001
 name: 内能
-name_en: ''
+name_en: Internal Energy
 subject: 物理
 domain: 热学
 grade: 初中九年级
-description: 内能的详细教学内容。
+
+description: |
+  构成物体的所有分子，其热运动的动能与分子势能的总和，叫做物体的内能。
+  一切物体，不论温度高低，都具有内能。同一物体，温度越高，内能越大；
+  温度降低时，内能减小。
+
+  改变物体内能的方式有两种：做功和热传递。
+  热传递是内能从高温物体传到低温物体，或从同一物体的高温部分传到低温部分的过程，
+  其实质是内能的转移。热传递有三种方式：传导、对流和辐射。
+  做功改变物体内能的实质是能量的转化，如摩擦生热是机械能转化为内能。
+
+  热量是在热传递过程中传递能量的多少，单位是焦耳（J）。
+  物体吸收热量，内能增加；放出热量，内能减少。
+  需要注意的是，热量是一个过程量，只能说"吸收"或"放出"热量，不能说物体"含有"热量。
+
+  从能量转化的角度认识燃料的热值：某种燃料完全燃烧放出的热量与其质量之比，叫做这种燃料的热值，
+  单位是 J/kg（固体和液体）或 J/m³（气体）。热值是燃料本身的一种特性，只与燃料种类有关。
+
 prerequisites:
-- id: PHYS-THERMO-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-THERMO-001
+    name: 温度与物态变化
+    required: true
+  - id: SCI-HEAT-001
+    name: 小学科学：热现象与温度
+    required: false
+
+postrequisites:
+  - id: PHYS-HEAT-002
+    name: 比热容
+  - id: PHYS-HEAT-003
+    name: 热机
+
 key_concepts:
-- term: 内能
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 内能
+    definition: 物体内所有分子热运动的动能和分子势能的总和
+    importance: 核心
+  - term: 改变内能的方式
+    definition: 做功和热传递，二者在改变内能上是等效的
+    importance: 核心
+  - term: 热传递
+    definition: 内能从高温物体（或部分）传到低温物体（或部分）的过程，实质是内能的转移
+    importance: 核心
+  - term: 热量
+    definition: 热传递过程中传递内能的多少，单位焦耳（J），是过程量
+    importance: 核心
+  - term: 做功改变内能
+    definition: 通过做功使机械能与内能相互转化，如摩擦生热、压缩气体
+    importance: 核心
+  - term: 热值
+    definition: 某种燃料完全燃烧放出的热量与其质量之比，单位 J/kg 或 J/m³
+    importance: 核心
+  - term: 温度与内能的关系
+    definition: 同一物体温度越高，内能越大；但内能大温度不一定高（还与质量、状态有关）
+    importance: 重要
+
+misconceptions:
+  - statement: "温度高的物体内能一定大"
+    correction: "内能不仅与温度有关，还与物体的质量、材料、状态有关；一杯热水的内能可能小于一桶温水"
+  - statement: "物体含有热量"
+    correction: "热量是过程量，只能说吸收或放出热量，不能说物体含有热量"
+  - statement: "物体吸收热量，温度一定升高"
+    correction: "晶体熔化、液体沸腾时吸收热量但温度保持不变"
+  - statement: "物体内能增加，一定是吸收了热量"
+    correction: "内能增加可能是吸热，也可能是外界对物体做功"
+  - statement: "热传递传递的是温度"
+    correction: "热传递传递的是内能（热量），不是温度"
+  - statement: "0℃的物体内能为零"
+    correction: "一切物体都有内能，0℃的物体分子仍在运动，内能不为零"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与能量观念
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 比较做功和热传递改变物体内能的效果：压缩空气引火仪实验（做功）与热水加热金属块（热传递）
+  - framework: 5E
+    brief: Engage搓手取暖经验→Explore压缩和拉伸铁丝感受温度变化→Explain做功与热传递改变内能的等效性
+  - framework: 实验
+    brief: 探究不同燃料的热值：比较相同质量的酒精和煤油完全燃烧加热等质量水的温升
+  - framework: 项目式学习
+    brief: 调查家庭燃料使用情况，计算每月燃料完全燃烧释放的热量，讨论节能措施
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 燃烧与化学反应中的能量变化
+    relation: 燃料燃烧是化学能转化为内能的过程
+  - subject: 生物
+    concept: 恒温动物的体温调节
+    relation: 生物通过产热和散热维持体温恒定，涉及内能变化
+  - subject: 地理
+    concept: 地热资源
+    relation: 地球内部内能通过热传递到达地表的应用
+
+exhibits:
+  - venue: 中国科技馆
+    name: 热传递演示
+    relation: 展示传导、对流、辐射三种热传递方式
+  - venue: 广东科学中心
+    name: 能量转化
+    relation: 展示机械能与内能的相互转化

@@ -1,29 +1,113 @@
 id: PHYS-ELEC-002
 name: 电路
-name_en: ''
+name_en: Electric Circuit
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电路的详细教学内容。
+
+description: |
+  电路是由电源、用电器、导线和开关等元件组成的电流路径。
+  电源提供电能（如电池、发电机），用电器消耗电能（如灯泡、电动机、电阻器），
+  导线输送电能，开关控制电路的通断。
+
+  电路有三种状态：
+  - 通路（闭合电路）：处处连通，有电流通过，用电器正常工作。
+  - 断路（开路）：某处断开，没有电流通过，用电器不工作。
+  - 短路：电流不经过用电器直接从电源正极回到负极。电源短路时电流很大，会烧坏电源甚至引发火灾，必须避免。
+
+  电路图是用统一规定的电路元件符号表示电路连接的图。常见符号：
+  电池（长线为正极，短线为负极）、灯泡、开关、电阻、电流表、电压表等。
+  画电路图时，元件符号要统一、连线要横平竖直、布局要合理简洁。
+
+  电路的基本连接方式：串联和并联（将在后续知识点中详细学习）。
+
+  学生应能识别常见电路元件，了解它们的作用，会画简单的电路图，能识别通路、断路和短路，
+  具有安全用电的意识。
+
 prerequisites:
-- id: PHYS-ELEC-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-001
+    name: 电荷与摩擦起电
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+
 key_concepts:
-- term: 电路
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电路
+    definition: 由电源、用电器、导线和开关等组成的电流路径
+    importance: 核心
+  - term: 电源
+    definition: 提供电能的装置，如干电池、蓄电池、发电机
+    importance: 核心
+  - term: 用电器
+    definition: 消耗电能工作的装置，如灯泡、电动机、电炉
+    importance: 核心
+  - term: 通路
+    definition: 处处连通的电路，有电流通过，用电器正常工作
+    importance: 核心
+  - term: 断路
+    definition: 某处断开的电路，没有电流通过
+    importance: 核心
+  - term: 短路
+    definition: 电流不经过用电器直接从电源正极回到负极，会损坏电源
+    importance: 核心
+  - term: 电路图
+    definition: 用统一规定的元件符号表示电路连接的图
+    importance: 核心
+  - term: 开关
+    definition: 控制电路通断的元件
+    importance: 重要
+
+misconceptions:
+  - statement: "电路中有电源就一定有电流"
+    correction: "电路中有电源且构成闭合回路（通路）时才有电流，断路时无电流"
+  - statement: "短路时用电器会更亮"
+    correction: "短路时电流不经过用电器，用电器不工作，电流很大会烧坏电源"
+  - statement: "电流从电源负极流出，正极流入"
+    correction: "在电源外部，电流从正极流出，经过用电器回到负极；在电源内部从负极到正极"
+  - statement: "电路图可以随意画，没有规范"
+    correction: "电路图有统一符号和画图规范，要求横平竖直、简洁清晰"
+  - statement: "导线越长电阻越大，所以长导线会阻碍电流"
+    correction: "在初中阶段通常忽略导线电阻，认为导线不影响电路分析"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统建模思维
+
+activity_suggestions:
+  - framework: 动手实验
+    brief: 用电池、灯泡、导线和开关连接简单电路，体验通路、断路和短路的区别
+  - framework: 5E
+    brief: Engage手电筒为什么能亮→Explore连接简单电路使灯泡发光→Explain电路的组成和各元件作用→Elaborate设计一个门铃电路
+  - framework: 绘图练习
+    brief: 根据实物电路画出电路图，再根据电路图连接实物电路
+  - framework: 故障排查
+    brief: 给定有故障的电路（断路或短路），分析原因并提出解决方案
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 工程
+    concept: 电路设计基础
+    relation: 电路是电子工程和电气工程的基础
+  - subject: 数学
+    concept: 逻辑关系
+    relation: 电路的通断可以用逻辑关系描述
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电路实验室
+    relation: 提供多种电路元件供观众自由搭建电路
+  - venue: 上海科技馆
+    name: 电流的旅程
+    relation: 通过互动装置展示电流在电路中的流动路径

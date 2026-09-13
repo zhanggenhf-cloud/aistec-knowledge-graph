@@ -1,26 +1,113 @@
 id: PHYS-INFO-001
 name: 电磁波
-name_en: ''
+name_en: Electromagnetic Waves
 subject: 物理
 domain: 信息与能源
 grade: 初中九年级
-description: 电磁波的详细教学内容。
-prerequisites: []
+
+description: |
+  电磁波是在空间传播的周期性变化的电磁场。迅速变化的电流会在周围空间产生电磁波。
+  电磁波可以在真空中传播，不需要介质，在真空中的传播速度约为 3×10⁸ m/s（光速），
+  在空气中的传播速度近似等于在真空中的速度。
+
+  电磁波的波速（c）、波长（λ）和频率（f）的关系：c = λf。
+  波长是相邻两个波峰（或波谷）之间的距离，单位是米（m）；
+  频率表示每秒振动的次数，单位是赫兹（Hz）。
+  频率越高，波长越短；频率越低，波长越长。
+
+  电磁波是一个大家族，按波长从长到短（频率从低到高）包括：
+  无线电波（用于广播、通信、雷达）、微波（用于微波炉、卫星通信）、
+  红外线（用于遥控、热成像）、可见光（人眼可感知，七种颜色）、
+  紫外线（用于消毒、验钞，过量照射有害）、
+  X射线（用于医学影像）、γ射线（用于医疗杀菌、工业探伤，穿透力极强）。
+
+  电磁波的应用：无线电广播和电视（用无线电波传输信号）、移动通信（手机）、
+  卫星通信、雷达、微波炉、光纤通信（用激光在光导纤维中传输信息）等。
+
+  学生应能了解电磁波的产生和传播特性，知道电磁波的波速、波长和频率的关系，
+  了解电磁波的应用，具有初步的信息安全意识。
+
+prerequisites:
+  - id: PHYS-MAG-004
+    name: 发电机
+    required: false
+  - id: PHYS-WAVE-001
+    name: 波的基础知识
+    required: false
+
 postrequisites: []
+
 key_concepts:
-- term: 电磁波
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电磁波
+    definition: 在空间传播的周期性变化的电磁场，由迅速变化的电流产生
+    importance: 核心
+  - term: 电磁波速
+    definition: 真空中约为3×10⁸ m/s，是宇宙中物质运动的最大速度
+    importance: 核心
+  - term: 波长
+    definition: 相邻两个波峰或波谷之间的距离，单位米（m）
+    importance: 核心
+  - term: 频率
+    definition: 每秒振动的次数，单位赫兹（Hz）
+    importance: 核心
+  - term: 波速公式
+    definition: c = λf，波速等于波长乘以频率
+    importance: 核心
+  - term: 电磁波谱
+    definition: 按波长排列的电磁波家族：无线电波、微波、红外线、可见光、紫外线、X射线、γ射线
+    importance: 核心
+  - term: 光纤通信
+    definition: 利用激光在光导纤维中传输信息的通信方式，容量大、损耗小、抗干扰
+    importance: 重要
+
+misconceptions:
+  - statement: "电磁波传播需要介质"
+    correction: "电磁波可以在真空中传播，不需要介质；机械波（如声波）才需要介质"
+  - statement: "所有电磁波都对人体有害"
+    correction: "电磁波的危害程度与频率有关；无线电波、可见光一般无害，X射线和γ射线过量照射有害"
+  - statement: "光纤通信是利用电流在光纤中传输"
+    correction: "光纤通信是利用激光（光信号）在光导纤维中传输，不是电流"
+  - statement: "电磁波的波速随频率变化"
+    correction: "在同种介质中，所有电磁波的传播速度相同；c = λf，频率越高波长越短，波速不变"
+  - statement: "微波炉利用红外线加热食物"
+    correction: "微波炉利用微波（波长较短的无线电波）使食物中的水分子振动产生热效应"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 类比推理与模型思维
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage手机如何传递信息→Explore观察电磁波存在实验（如收音机靠近工作的手机）→Explain电磁波的产生和传播→Elaborate调查生活中电磁波的应用
+  - framework: 实验
+    brief: 用收音机和变化的电流（如启动电吹风）演示电磁波的存在
+  - framework: 计算练习
+    brief: 根据波速公式计算不同频率电磁波的波长，如广播、电视、手机信号
+  - framework: 项目式学习
+    brief: 调查手机、Wi-Fi、蓝牙等使用的电磁波频段，讨论电磁兼容和辐射安全
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 信息科技
+    concept: 通信技术
+    relation: 电磁波是现代无线通信的物理基础
+  - subject: 生物
+    concept: 光与视觉
+    relation: 可见光是电磁波谱中人眼可感知的部分
+  - subject: 地理
+    concept: 遥感技术
+    relation: 卫星遥感利用不同波段的电磁波探测地表信息
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电磁波谱
+    relation: 展示从无线电波到γ射线的完整电磁波谱及其应用
+  - venue: 上海科技馆
+    name: 信息高速公路
+    relation: 展示光纤通信和无线通信的原理和技术

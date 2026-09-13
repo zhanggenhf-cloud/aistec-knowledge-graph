@@ -1,29 +1,106 @@
 id: PHYS-MAG-003
 name: 电动机
-name_en: ''
+name_en: Electric Motor
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电动机的详细教学内容。
+
+description: |
+  电动机是将电能转化为机械能的装置，其工作原理是：
+  通电导体在磁场中会受到力的作用（安培力），力的方向与电流方向和磁场方向都有关。
+  受力方向可用左手定则判断：伸开左手，使拇指与其余四指垂直，
+  让磁感线垂直穿入手心，四指指向电流方向，则大拇指所指方向就是通电导体的受力方向。
+
+  直流电动机的主要构造：磁极（定子）、线圈（转子）、换向器和电刷。
+  换向器的作用：当线圈转过平衡位置时，自动改变线圈中的电流方向，
+  使线圈能够持续沿同一方向转动。
+
+  电动机不转动（或转动缓慢）的可能原因：线圈处于平衡位置、
+  电流太小（电源电压低或电路电阻大）、磁体磁性太弱、摩擦力太大等。
+
+  电动机的优点：构造简单、控制方便、体积小、效率高、无污染，
+  广泛应用于工业生产、交通运输（电动汽车、地铁）、家用电器等领域。
+
+  学生应能通过实验了解通电导体在磁场中受力，了解直流电动机的工作原理和构造，
+  知道换向器的作用，了解电动机的应用。
+
 prerequisites:
-- id: PHYS-MAG-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-MAG-002
+    name: 电流的磁场
+    required: true
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+
+postrequisites:
+  - id: PHYS-MAG-004
+    name: 发电机
+
 key_concepts:
-- term: 电动机
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 磁场对电流的作用
+    definition: 通电导体在磁场中会受到力的作用，将电能转化为机械能
+    importance: 核心
+  - term: 左手定则
+    definition: 判断通电导体在磁场中受力方向：磁感线穿手心，四指指电流，拇指指受力
+    importance: 核心
+  - term: 换向器
+    definition: 线圈转过平衡位置时自动改变电流方向，保证线圈持续转动
+    importance: 核心
+  - term: 平衡位置
+    definition: 线圈平面与磁感线垂直的位置，此时线圈不受转动力矩
+    importance: 核心
+  - term: 直流电动机
+    definition: 使用直流电源，通过换向器改变线圈电流方向的电动机
+    importance: 核心
+  - term: 转子与定子
+    definition: 转子是转动的线圈部分，定子是固定的磁极部分
+    importance: 重要
+
+misconceptions:
+  - statement: "电动机是根据电磁感应原理工作的"
+    correction: "电动机是根据通电导体在磁场中受力运动的原理工作；发电机才是根据电磁感应原理"
+  - statement: "换向器的作用是改变磁场方向"
+    correction: "换向器的作用是改变线圈中的电流方向，从而改变线圈两边所受力的方向"
+  - statement: "线圈在平衡位置时受力最大"
+    correction: "线圈在平衡位置时两边受力大小相等、方向相反且在同一直线上，不受转动力矩"
+  - statement: "电动机工作时电能全部转化为机械能"
+    correction: "电动机工作时大部分电能转化为机械能，部分因线圈电阻发热转化为内能"
+  - statement: "左手定则和安培定则可以混用"
+    correction: "左手定则判断受力方向，安培定则（右手）判断磁场方向，二者不可混用"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 空间想象与受力分析
+
+activity_suggestions:
+  - framework: 实验探究
+    brief: 将通电导体放入磁场中，观察其运动；改变电流方向或磁场方向，观察运动方向变化
+  - framework: 模型制作
+    brief: 用漆包线、磁铁、电池等材料制作简易直流电动机模型，理解换向器的作用
+  - framework: 5E
+    brief: Engage电动车为什么能跑→Explore通电导体在磁场中受力→Explain电动机工作原理→Elaborate分析电动机不转的原因
+  - framework: 项目式学习
+    brief: 拆解小型直流电动机（如玩具车马达），观察内部结构，绘制构造示意图
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 工程
+    concept: 机电一体化
+    relation: 电动机是现代机械设备和自动化系统的核心动力部件
+  - subject: 历史
+    concept: 第二次工业革命
+    relation: 电动机的发明和应用是第二次工业革命的重要标志
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电动机原理
+    relation: 展示通电导体在磁场中受力和电动机工作原理
+  - venue: 上海科技馆
+    name: 电磁驱动
+    relation: 通过互动装置展示电动机将电能转化为机械能的过程

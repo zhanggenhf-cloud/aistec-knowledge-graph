@@ -1,29 +1,111 @@
 id: PHYS-ELEC-003
 name: 电流与电流表
-name_en: ''
+name_en: Electric Current and Ammeter
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电流与电流表的详细教学内容。
+
+description: |
+  电荷的定向移动形成电流。规定正电荷定向移动的方向为电流的方向。
+  在金属导体中，电流的方向与自由电子定向移动的方向相反。
+  电流（I）表示电流的强弱，定义为单位时间内通过导体横截面的电荷量，
+  单位是安培（A），常用单位还有毫安（mA）和微安（μA），1 A = 1000 mA。
+
+  测量电流的仪器是电流表（安培表），使用规则：
+  1. 电流表必须串联在被测电路中。
+  2. 电流要从"+"接线柱流入，从"-"接线柱流出。
+  3. 被测电流不能超过电流表的量程（一般先试触）。
+  4. 绝对不允许不经过用电器将电流表直接接在电源两极上（相当于短路）。
+
+  串联电路中电流处处相等：I = I₁ = I₂ = ... = Iₙ。
+  并联电路中干路电流等于各支路电流之和：I = I₁ + I₂ + ... + Iₙ。
+
+  学生应能理解电流的形成和方向规定，会正确使用电流表测量电流，
+  能运用串并联电路的电流规律进行简单分析。
+
 prerequisites:
-- id: PHYS-ELEC-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-002
+    name: 电路
+    required: true
+  - id: PHYS-ELEC-001
+    name: 电荷与摩擦起电
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-005
+    name: 电阻
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+  - id: PHYS-MAG-002
+    name: 电流的磁场
+  - id: PHYS-ELEC-006
+    name: 欧姆定律
+
 key_concepts:
-- term: 电流与电流表
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电流
+    definition: 电荷的定向移动形成电流，单位安培（A）
+    importance: 核心
+  - term: 电流方向
+    definition: 规定正电荷定向移动的方向为电流方向，金属中电子移动方向与电流方向相反
+    importance: 核心
+  - term: 电流表
+    definition: 测量电路中电流大小的仪器，符号为ⓐ
+    importance: 核心
+  - term: 串联电路电流规律
+    definition: 串联电路中各处电流相等，I = I₁ = I₂
+    importance: 核心
+  - term: 并联电路电流规律
+    definition: 并联电路中干路电流等于各支路电流之和，I = I₁ + I₂
+    importance: 核心
+  - term: 试触法
+    definition: 选择电表量程时先用大量程快速接触，观察指针偏转再确定合适量程
+    importance: 重要
+
+misconceptions:
+  - statement: "有电压就一定有电流"
+    correction: "有电压且电路闭合（通路）时才有电流，开路时即使有电压也无电流"
+  - statement: "电流表可以并联在电路中"
+    correction: "电流表内阻很小，并联会造成短路，必须串联使用"
+  - statement: "金属导体中电流方向与电子移动方向相同"
+    correction: "金属中电子带负电，其定向移动方向与电流方向相反"
+  - statement: "电流从电源正极流出后会被用电器消耗完"
+    correction: "电流是电荷的定向移动，电荷不会在电路中被消耗，形成闭合回路持续流动"
+  - statement: "并联电路中各支路电流相等"
+    correction: "只有各支路电阻相等时电流才相等；一般情况下支路电流与电阻成反比"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 微观模型与测量技能
+
+activity_suggestions:
+  - framework: 实验探究
+    brief: 探究串联电路中各处电流的关系，用电流表测量不同位置的电流值
+  - framework: 实验探究
+    brief: 探究并联电路中干路和支路电流的关系，验证 I = I₁ + I₂
+  - framework: 5E
+    brief: Engage水流类比引入电流→Explore用电流表测量简单电路的电流→Explain电流的形成和方向→Elaborate分析家庭电路中各用电器电流分配
+  - framework: 技能训练
+    brief: 练习电流表的读数、接线、量程选择，强调试触法和正确接线
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 电解液中的离子导电
+    relation: 酸碱盐溶液中正负离子同时定向移动形成电流
+  - subject: 生物
+    concept: 生物电
+    relation: 神经冲动的传导本质上是生物电信号
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电流的方向
+    relation: 用LED和磁针演示电流方向与电子运动方向的关系
+  - venue: 上海科技馆
+    name: 电路测量
+    relation: 提供电流表、电压表的虚拟测量体验

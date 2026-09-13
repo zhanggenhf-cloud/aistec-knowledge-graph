@@ -1,29 +1,116 @@
 id: PHYS-ELEC-009
 name: 家庭电路
-name_en: ''
+name_en: Household Circuit
 subject: 物理
-domain: 电学补充
+domain: 电磁学
 grade: 初中九年级
-description: 家庭电路的详细教学内容。
+
+description: |
+  我国家庭电路的电压是 220 V，频率是 50 Hz。
+  家庭电路主要由进户线（火线和零线）、电能表、总开关、保险装置（空气开关或保险丝）、
+  用电器和插座等组成。火线与零线之间有 220 V 电压，火线与大地之间也有 220 V 电压，
+  零线与大地之间电压为 0 V。
+
+  家庭电路中各用电器之间是并联的，这样各用电器可以独立工作、互不影响，
+  且都能获得 220 V 的额定电压。开关与所控制的用电器串联，且应接在火线上。
+
+  保险丝（或空气开关）的作用是在电流过大时自动切断电路，保护电路安全。
+  电流过大的原因：短路或过载（用电器总功率过大）。
+  保险丝应选用电阻率大、熔点低的铅锑合金，串联在火线上。
+  空气开关利用电流的磁效应或双金属片热膨胀原理实现过载和短路保护。
+
+  三孔插座的接线原则：左零右火上接地。有金属外壳的用电器必须使用三脚插头，
+  将金属外壳通过地线接地，防止漏电时触电。
+
+  触电与急救：低压触电分为单线触电（接触火线）和双线触电（同时接触火线和零线）；
+  高压触电分为高压电弧触电和跨步电压触电。发现触电应先切断电源再施救。
+
+  学生应了解家庭电路的组成和连接方式，知道安全用电常识，具有安全用电的意识。
+
 prerequisites:
-- id: PHYS-ELEC-008
-  name: ''
-  required: true
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+    required: true
+  - id: PHYS-ELEC-007
+    name: 电功率
+    required: true
+
 postrequisites: []
+
 key_concepts:
-- term: 家庭电路
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 家庭电路电压
+    definition: 220 V，频率50 Hz
+    importance: 核心
+  - term: 火线与零线
+    definition: 火线与零线间电压220V，火线对地有电压，零线对地电压为0
+    importance: 核心
+  - term: 并联连接
+    definition: 家庭电路中各用电器并联，独立工作互不影响
+    importance: 核心
+  - term: 保险丝/空气开关
+    definition: 电流过大时自动切断电路的保护装置
+    importance: 核心
+  - term: 电流过大的原因
+    definition: 短路或用电器总功率过大（过载）
+    importance: 核心
+  - term: 三孔插座
+    definition: 左零右火上接地，金属外壳用电器必须接地
+    importance: 核心
+  - term: 安全用电
+    definition: 不接触低压带电体，不靠近高压带电体；金属外壳接地；湿手不碰开关
+    importance: 核心
+  - term: 触电急救
+    definition: 先切断电源或用绝缘体使触电者脱离电源，再进行急救
+    importance: 重要
+
+misconceptions:
+  - statement: "保险丝越粗越好"
+    correction: "保险丝的额定电流应与电路允许的最大电流匹配；过粗起不到保护作用"
+  - statement: "可以用铜丝或铁丝代替保险丝"
+    correction: "铜丝和铁丝熔点高、电阻率小，电流过大时不会熔断，起不到保护作用，易引发火灾"
+  - statement: "开关可以接在零线上"
+    correction: "开关必须接在火线上，断开时用电器不带电，便于维修和防止触电"
+  - statement: "用电器只要不漏电就不需要接地"
+    correction: "金属外壳用电器必须接地，内部绝缘损坏漏电时地线可将电流导入大地"
+  - statement: "发现有人触电应立即用手拉开他"
+    correction: "应先用干燥的木棍、竹竿等绝缘体使触电者脱离电源，再施救"
+  - statement: "家庭电路中用电器串联可以省电"
+    correction: "串联时用电器分压，都不能正常工作；并联才能保证各用电器在额定电压下工作"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 系统分析与安全意识
+
+activity_suggestions:
+  - framework: 模型搭建
+    brief: 用模拟器材搭建家庭电路模型，练习正确连接火线、零线、地线、开关和用电器
+  - framework: 5E
+    brief: Engage触电事故新闻→Explore分析家庭电路结构→Explain保险丝、接地、开关接火线的原理→Elaborate排查家庭电路安全隐患
+  - framework: 调查
+    brief: 调查家庭电路中各用电器的连接方式、电能表读数、保险装置规格
+  - framework: 角色扮演
+    brief: 模拟触电急救场景，练习正确的急救步骤
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+    - "GB/T 16895 系列国家标准（低压电气装置）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 道德与法治
+    concept: 安全责任
+    relation: 用电安全是公民的基本安全意识和法律责任
+  - subject: 生物
+    concept: 电流对人体的危害
+    relation: 电流通过人体会干扰神经系统和心脏功能
+
+exhibits:
+  - venue: 中国科技馆
+    name: 安全用电
+    relation: 展示家庭电路结构和触电防护知识
+  - venue: 上海科技馆
+    name: 电力与生活
+    relation: 模拟家庭电路，体验正确和错误的接线方式

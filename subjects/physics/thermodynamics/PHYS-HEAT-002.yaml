@@ -1,29 +1,106 @@
 id: PHYS-HEAT-002
 name: 比热容
-name_en: ''
+name_en: Specific Heat Capacity
 subject: 物理
 domain: 热学
 grade: 初中九年级
-description: 比热容的详细教学内容。
+
+description: |
+  一定质量的某种物质，在温度升高时吸收的热量与它的质量和升高的温度乘积之比，
+  叫做这种物质的比热容，用符号 c 表示，单位是 J/(kg·℃)。
+  比热容是反映物质吸热或放热能力的物理量，是物质本身的一种特性，
+  只与物质的种类和状态有关，与物质的质量、温度变化量、吸放热多少无关。
+
+  水的比热容是 4.2×10³ J/(kg·℃)，表示 1 kg 的水温度升高（或降低）1℃时
+  吸收（或放出）的热量是 4.2×10³ J。水的比热容较大，这一特性在生活中有广泛应用：
+  用作冷却剂（汽车发动机用水冷却）、取暖介质（暖气用水）、调节气温（沿海地区昼夜温差小）。
+
+  热量计算公式：Q = cmΔt
+  其中 Q 为热量（J），c 为比热容（J/(kg·℃)），m 为质量（kg），Δt 为温度变化量（℃）。
+  吸热时：Q吸 = cm(t - t₀)；放热时：Q放 = cm(t₀ - t)。
+
+  学生应能通过实验，了解比热容的概念，尝试用比热容说明简单的自然现象，
+  能运用热量计算公式进行简单的计算。
+
 prerequisites:
-- id: PHYS-HEAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-HEAT-001
+    name: 内能
+    required: true
+  - id: MATH-ALG-003
+    name: 比值与比例
+    required: false
+
+postrequisites:
+  - id: PHYS-HEAT-003
+    name: 热机
+  - id: PHYS-HEAT-004
+    name: 热机效率
+
 key_concepts:
-- term: 比热容
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 比热容
+    definition: 单位质量的某种物质温度升高（或降低）1℃所吸收（或放出）的热量，单位 J/(kg·℃)
+    importance: 核心
+  - term: 水的比热容
+    definition: 4.2×10³ J/(kg·℃)，是常见物质中较大的，使水成为优良的冷却剂和储热介质
+    importance: 核心
+  - term: 热量计算公式
+    definition: Q = cmΔt，其中 c 为比热容，m 为质量，Δt 为温度变化量
+    importance: 核心
+  - term: 比热容的特性
+    definition: 比热容是物质的固有属性，与质量、温度变化量无关，只与物质种类和状态有关
+    importance: 核心
+  - term: 温度-时间图像
+    definition: 在加热实验中，通过比较相同加热条件下不同物质的温度-时间曲线来比较比热容
+    importance: 重要
+
+misconceptions:
+  - statement: "比热容与物质的质量有关，质量越大比热容越大"
+    correction: "比热容是物质的特性，与质量无关；1 kg 水和 100 kg 水的比热容相同"
+  - statement: "吸收热量多的物质比热容一定大"
+    correction: "比热容大小与吸热多少无关，还与质量和温度变化有关；Q=cmΔt，三个量相互关联"
+  - statement: "热水比冷水比热容大"
+    correction: "同种物质在同一状态下比热容相同，与温度高低无关"
+  - statement: "比热容大的物质升温一定慢"
+    correction: "只有在质量相同、吸收热量相同的情况下，比热容大的物质升温才慢"
+  - statement: "冰和水的比热容相同"
+    correction: "冰的比热容约为 2.1×10³ J/(kg·℃)，水的比热容为 4.2×10³ J/(kg·℃)，状态不同比热容不同"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 比值定义法与图像分析
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 比较不同物质的吸热情况：用相同加热器加热等质量的水和食用油，比较升温快慢
+  - framework: 数据分析
+    brief: 绘制温度-时间图像，通过图像斜率比较不同物质的比热容大小
+  - framework: 5E
+    brief: Engage海边昼夜温差小的现象→Explore探究水和沙子的吸热能力→Explain比热容概念→Elaborate解释暖气用水、发动机冷却用水的原因
+  - framework: 项目式学习
+    brief: 设计一个简易太阳能热水器，选择储水材料并解释选择依据
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 地理
+    concept: 气候与海洋调节作用
+    relation: 水的比热容大导致沿海地区昼夜温差和年温差较小
+  - subject: 化学
+    concept: 溶液的比热容
+    relation: 不同浓度溶液的比热容差异
+  - subject: 生物
+    concept: 生物体内水的调节作用
+    relation: 人体约70%是水，水的比热容大有助于维持体温稳定
+
+exhibits:
+  - venue: 中国科技馆
+    name: 比热容对比实验
+    relation: 直观展示不同物质在相同加热条件下的温度变化差异
+  - venue: 上海科技馆
+    name: 热学实验室
+    relation: 提供多种物质比热容的测量和对比体验

@@ -1,0 +1,109 @@
+id: PHYS-CROSS-001
+name: 物理跨学科实践
+name_en: Physics Interdisciplinary Practice
+subject: 物理
+domain: 跨学科实践
+grade: 初中八至九年级
+
+description: |
+  物理跨学科实践是2022版义务教育物理课程标准新增的一级主题，强调物理学与日常生活、工程实践、社会发展等的跨学科联系。学生应在真实情境中综合运用物理知识和其他学科知识解决实际问题，发展跨学科运用知识分析和解决问题的综合能力。
+
+  在物理学与日常生活方面，学生应能够从物理视角观察和分析日常生活中的现象，如家庭电路设计、节能措施、交通安全等，运用物理知识解释生活现象并提出改进建议。
+
+  在物理学与工程实践方面，学生应了解物理知识在技术发明和工程实践中的应用，如简单机械的设计、电路的优化、能源利用方案等，初步体验工程设计的过程。
+
+  在物理学与社会发展方面，学生应了解物理学对人类文明进步的推动作用，关注能源、环境、可持续发展等社会热点问题，形成正确的科学态度和社会责任感。
+
+  跨学科实践活动应体现综合性、实践性和开放性，注重项目式学习和主题式学习，让学生在解决真实问题的过程中发展核心素养。
+
+prerequisites:
+  - id: PHYS-EXP-001
+    name: 实验探究
+    required: false
+  - id: PHYS-MOTION-001
+    name: 机械运动
+    required: false
+  - id: PHYS-FORCE-001
+    name: 力的概念
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科实践
+    definition: 综合运用两个或多个学科的知识和方法解决真实问题的学习活动
+    importance: 核心
+  - term: 项目式学习
+    definition: 以真实问题为导向，整合多学科知识进行探究的学习方式
+    importance: 核心
+  - term: 工程思维
+    definition: 运用科学知识和设计方法解决实际问题、创造价值的思维方式
+    importance: 核心
+  - term: 科学态度与责任
+    definition: 认识科学本质、形成科学态度、增强社会责任感
+    importance: 核心
+  - term: STEAM教育
+    definition: 整合科学、技术、工程、艺术、数学的跨学科教育理念
+    importance: 重要
+
+misconceptions:
+  - statement: 「跨学科实践就是多学几门课的知识」
+    correction: 「跨学科实践强调知识的综合应用和解决真实问题，不是简单的知识叠加」
+  - statement: 「物理跨学科实践可以脱离物理知识」
+    correction: 「物理跨学科实践必须以物理知识为基础，跨学科是对物理知识的延伸和应用」
+  - statement: 「工程实践只需要动手能力」
+    correction: 「工程实践需要综合运用科学知识、设计思维、团队合作和创新能力」
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 「设计节能住宅」项目，综合运用热学、光学、电学知识设计节能方案
+  - framework: 项目式学习
+    brief: 「制作简易乐器」项目，运用声学知识设计并制作可演奏的乐器
+  - framework: 主题式学习
+    brief: 「交通安全中的物理」主题，分析汽车刹车距离、安全带原理、安全气囊等
+  - framework: 跨学科实践
+    brief: 「智能农业大棚」项目，整合物理（温度控制、光照调节）、生物（植物生长）、信息科技（传感器与自动化）
+  - framework: 社会实践
+    brief: 「社区能源调查」活动，调查社区能源使用情况，提出节能减排建议
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合思维与问题解决
+
+verification:
+  status: verified
+  sources:
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 数学建模与数据分析
+    relation: 工具支撑
+  - subject: 化学
+    concept: 化学反应与能量转化
+    relation: 知识衔接
+  - subject: 生物
+    concept: 生物体内的能量转换
+    relation: 知识衔接
+  - subject: 地理
+    concept: 能源分布与环境保护
+    relation: 应用实例
+  - subject: 信息科技
+    concept: 智能控制与数据处理
+    relation: 技术应用
+  - subject: 劳动
+    concept: 工程设计与制作
+    relation: 实践衔接
+  - subject: 艺术
+    concept: 设计美学与创意表达
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 科技与生活展厅
+    relation: 展示物理学在日常生活中的应用
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示物理学在工程和社会发展中的应用

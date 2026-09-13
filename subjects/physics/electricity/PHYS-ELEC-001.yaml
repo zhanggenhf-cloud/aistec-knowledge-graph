@@ -1,29 +1,111 @@
 id: PHYS-ELEC-001
 name: 电荷与摩擦起电
-name_en: ''
+name_en: Electric Charge and Triboelectric Effect
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电荷与摩擦起电的详细教学内容。
+
+description: |
+  物体有了吸引轻小物体的性质，我们就说物体带了电，或者说带了电荷。
+  自然界只有两种电荷：正电荷（丝绸摩擦过的玻璃棒所带）和负电荷（毛皮摩擦过的橡胶棒所带）。
+  同种电荷相互排斥，异种电荷相互吸引。
+
+  摩擦起电的实质是电子的转移：两个物体相互摩擦时，束缚电子本领弱的物体失去电子而带正电，
+  束缚电子本领强的物体得到电子而带负电。摩擦起电并没有创造电荷，只是电荷从一个物体转移到另一个物体。
+
+  电荷量（Q）表示电荷的多少，单位是库仑（C）。
+  验电器是检验物体是否带电的仪器，原理是同种电荷相互排斥。
+  导体容易导电（如金属、人体、大地、酸碱盐溶液），绝缘体不容易导电（如橡胶、玻璃、塑料、陶瓷）。
+  金属导电靠的是自由电子的定向移动。
+
+  学生应能通过实验观察摩擦起电现象，了解电荷的种类及相互作用，能用原子结构知识解释摩擦起电，
+  能区分导体和绝缘体。
+
 prerequisites:
-- id: SCI-ELEC-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: SCI-ELEC-001
+    name: 小学科学：简单电路与导体绝缘体
+    required: true
+  - id: CHEM-ATOM-001
+    name: 原子结构
+    required: false
+
+postrequisites:
+  - id: PHYS-ELEC-002
+    name: 电路
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+
 key_concepts:
-- term: 电荷与摩擦起电
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 两种电荷
+    definition: 正电荷和负电荷，同种相斥、异种相吸
+    importance: 核心
+  - term: 摩擦起电
+    definition: 通过摩擦使物体带电，实质是电子的转移
+    importance: 核心
+  - term: 电荷守恒
+    definition: 摩擦起电过程中电荷总量保持不变，只是发生转移
+    importance: 核心
+  - term: 验电器
+    definition: 利用同种电荷相互排斥原理检验物体是否带电的仪器
+    importance: 核心
+  - term: 导体
+    definition: 容易导电的物体，如金属、人体、大地、酸碱盐溶液
+    importance: 核心
+  - term: 绝缘体
+    definition: 不容易导电的物体，如橡胶、玻璃、塑料、陶瓷
+    importance: 核心
+  - term: 电荷量
+    definition: 表示电荷多少的物理量，单位库仑（C）
+    importance: 重要
+  - term: 自由电子
+    definition: 金属中脱离原子核束缚可以在金属内部自由移动的电子，是金属导电的载体
+    importance: 重要
+
+misconceptions:
+  - statement: "摩擦起电创造了电荷"
+    correction: "摩擦起电只是电荷（电子）的转移，没有创造新电荷，遵守电荷守恒定律"
+  - statement: "带电体可以吸引任何物体"
+    correction: "带电体只能吸引轻小物体，对质量较大的物体吸引力不明显"
+  - statement: "玻璃棒一定带正电，橡胶棒一定带负电"
+    correction: "玻璃棒与丝绸摩擦后带正电，橡胶棒与毛皮摩擦后带负电；与不同材料摩擦结果可能不同"
+  - statement: "导体一定可以导电，绝缘体一定不导电"
+    correction: "导体和绝缘体没有绝对界限，在一定条件下绝缘体也可以导电（如潮湿、高压）"
+  - statement: "只有正电荷才能移动"
+    correction: "金属导体中是自由电子（负电荷）定向移动形成电流，电解液中正负离子都可以移动"
+
 cognitive_level:
-  min_age: 12
+  min_age: 13
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 微观模型思维
+
+activity_suggestions:
+  - framework: 实验探究
+    brief: 用丝绸摩擦玻璃棒、毛皮摩擦橡胶棒，分别靠近纸屑、通草球，观察吸引和排斥现象
+  - framework: 5E
+    brief: Engage用塑料梳子梳头发吸引纸屑→Explore摩擦不同材料检验带电→Explain用原子结构模型解释电子转移→Elaborate讨论静电的危害和应用
+  - framework: 实验
+    brief: 用验电器检验物体是否带电，观察金属箔张开角度与带电多少的关系
+  - framework: 分类活动
+    brief: 提供多种材料（金属、塑料、橡胶、铅笔芯、盐水等），让学生分类导体和绝缘体
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 原子结构与电子
+    relation: 摩擦起电的微观解释需要原子结构知识
+  - subject: 历史
+    concept: 电学发展史
+    relation: 富兰克林首先命名正电和负电
+
+exhibits:
+  - venue: 中国科技馆
+    name: 静电发生装置
+    relation: 展示大规模静电现象，如范德格拉夫起电机使人体带电竖起头发
+  - venue: 上海科技馆
+    name: 静电实验台
+    relation: 提供多种摩擦起电和电荷相互作用体验

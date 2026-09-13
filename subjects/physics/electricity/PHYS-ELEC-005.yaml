@@ -1,32 +1,108 @@
 id: PHYS-ELEC-005
 name: 电阻
-name_en: ''
+name_en: Electrical Resistance
 subject: 物理
 domain: 电磁学
 grade: 初中九年级
-description: 电阻的详细教学内容。
+
+description: |
+  电阻（R）表示导体对电流阻碍作用的大小。导体的电阻越大，对电流的阻碍作用越大。
+  电阻的单位是欧姆（Ω），常用单位还有千欧（kΩ）和兆欧（MΩ），1 MΩ = 1000 kΩ = 10⁶ Ω。
+
+  电阻是导体本身的一种性质，其大小取决于导体的材料、长度、横截面积和温度：
+  - 材料：不同材料的导电性能不同（如银 < 铜 < 铝 < 铁 < 镍铬合金）。
+  - 长度：同种材料、相同横截面积时，导体越长，电阻越大（R ∝ L）。
+  - 横截面积：同种材料、相同长度时，横截面积越大，电阻越小（R ∝ 1/S）。
+  - 温度：大多数金属导体的电阻随温度升高而增大；半导体、绝缘体的电阻随温度升高而减小。
+
+  通过实验探究可知，同种材料导体的电阻 R 与长度 L 成正比，与横截面积 S 成反比：R = ρL/S，
+  其中 ρ 为电阻率，由材料本身决定。
+
+  滑动变阻器是通过改变接入电路中电阻丝的长度来改变电阻的装置，
+  使用时采用"一上一下"接法，可以起到调节电路中电流和用电器两端电压的作用。
+  电阻箱是一种可以调节并读出阻值的变阻器。
+
+  学生应能通过实验探究电阻大小与哪些因素有关，了解滑动变阻器的原理和使用方法。
+
 prerequisites:
-- id: PHYS-ELEC-003
-  name: ''
-  required: true
-- id: PHYS-ELEC-004
-  name: ''
-  required: true
-postrequisites: []
+  - id: PHYS-ELEC-003
+    name: 电流与电流表
+    required: true
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+    required: true
+
+postrequisites:
+  - id: PHYS-ELEC-006
+    name: 欧姆定律
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+
 key_concepts:
-- term: 电阻
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 电阻
+    definition: 导体对电流阻碍作用的大小，单位欧姆（Ω）
+    importance: 核心
+  - term: 影响电阻的因素
+    definition: 材料、长度、横截面积和温度；R = ρL/S
+    importance: 核心
+  - term: 滑动变阻器
+    definition: 通过改变接入电路的电阻丝长度来改变电阻，采用"一上一下"接法
+    importance: 核心
+  - term: 电阻箱
+    definition: 可以调节并能直接读出阻值的变阻器
+    importance: 重要
+  - term: 半导体
+    definition: 导电性能介于导体和绝缘体之间的材料，如硅、锗，电阻随温度升高而减小
+    importance: 拓展
+  - term: 超导体
+    definition: 某些材料在极低温度下电阻突然变为零的现象
+    importance: 拓展
+
+misconceptions:
+  - statement: "导体电阻为零"
+    correction: "只有超导体在临界温度下电阻才为零；一般导体都有电阻"
+  - statement: "电阻与电压成正比，与电流成反比"
+    correction: "R = U/I 是电阻的计算式不是决定式；电阻由导体本身因素决定，与电压和电流无关"
+  - statement: "粗导线的电阻一定比细导线小"
+    correction: "电阻还与材料和长度有关；一根很短很粗的导线电阻可能大于一根很长很细的导线"
+  - statement: "滑动变阻器可以任意接线"
+    correction: "滑动变阻器必须采用'一上一下'接法；同上同下接法不能起到变阻作用"
+  - statement: "铁的电阻一定比铜大"
+    correction: "电阻还与长度和横截面积有关；一段很短的铁导线电阻可能小于一段很长的铜导线"
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 控制变量法与比值定义
+
+activity_suggestions:
+  - framework: 探究实验
+    brief: 用控制变量法探究电阻与材料、长度、横截面积的关系，记录数据并分析
+  - framework: 5E
+    brief: Engage为什么同样粗细的铜线和镍铬线导电能力不同→Explore改变导线因素测量电流→Explain电阻的决定因素→Elaborate设计电路利用滑动变阻器调节灯泡亮度
+  - framework: 技能训练
+    brief: 练习滑动变阻器的正确接法，观察滑片移动时灯泡亮度和电流表示数的变化
+  - framework: 项目式学习
+    brief: 用铅笔芯（石墨）制作简易滑动变阻器，探究其电阻变化规律
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: "2024-06-01"
+
+interdisciplinary:
+  - subject: 化学
+    concept: 材料的导电性
+    relation: 金属、半导体、绝缘体的导电性差异与原子结构有关
+  - subject: 数学
+    concept: 反比例关系
+    relation: 电阻与横截面积成反比
+
+exhibits:
+  - venue: 中国科技馆
+    name: 电阻探秘
+    relation: 提供不同材料、长度、粗细的导体，测量其电阻值
+  - venue: 上海科技馆
+    name: 超导磁悬浮
+    relation: 展示超导体零电阻特性及其在磁悬浮中的应用

@@ -1,0 +1,101 @@
+id: PHYS-EXP-001
+name: 实验探究
+name_en: Experimental Inquiry
+subject: 物理
+domain: 实验探究
+grade: 初中八至九年级
+
+description: |
+  实验探究是2022版义务教育物理课程标准新增的一级主题，旨在培养学生科学探究能力和实践能力。学生应掌握测量类学生必做实验和探究类学生必做实验的基本方法，经历完整的科学探究过程。
+
+  在测量类实验中，学生应学会使用基本测量工具（刻度尺、天平、量筒、弹簧测力计、电流表、电压表等），掌握测量方法，理解测量误差的概念，能够正确记录和处理实验数据。
+
+  在探究类实验中，学生应经历提出问题、猜想与假设、设计实验与制定计划、进行实验与收集证据、分析与论证、评估、交流与合作等科学探究环节。能够运用控制变量法、转换法等科学方法进行实验设计。
+
+  通过实验探究的学习，学生应形成科学探究能力，发展科学思维，培养严谨认真的科学态度和实事求是的科学精神。
+
+prerequisites:
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: true
+  - id: SCI-METHOD-001
+    name: 科学探究方法
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 科学探究
+    definition: 基于观察和实验，运用科学方法获取知识、解决问题的过程
+    importance: 核心
+  - term: 控制变量法
+    definition: 在研究多个因素对某一物理量的影响时，只改变其中一个因素，保持其他因素不变
+    importance: 核心
+  - term: 转换法
+    definition: 将不易直接测量的物理量转换为容易测量的物理量进行研究
+    importance: 核心
+  - term: 测量误差
+    definition: 测量值与真实值之间的差异，包括系统误差和偶然误差
+    importance: 核心
+  - term: 实验数据记录
+    definition: 用表格、图像等方式系统记录实验过程中的数据
+    importance: 核心
+  - term: 实验评估
+    definition: 对实验方案的合理性、实验数据的可靠性、实验结论的科学性进行反思和评价
+    importance: 重要
+
+misconceptions:
+  - statement: 「实验就是为了验证课本上的结论」
+    correction: 「实验是科学探究的重要手段，既可以是验证性的，也可以是探究性的，目的不仅是验证已知结论，更是发现新规律」
+  - statement: 「测量误差可以完全消除」
+    correction: 「误差只能减小不能消除，通过改进方法、多次测量取平均值可以减小误差」
+  - statement: 「实验数据必须与理论值完全一致」
+    correction: 「由于存在误差，实验数据与理论值之间允许有合理的偏差」
+  - statement: 「控制变量法就是每次只改变一个变量」
+    correction: 「控制变量法要求在研究某一因素影响时，保持其他所有相关因素不变」
+
+activity_suggestions:
+  - framework: 探究式学习
+    brief: 设计「探究影响滑动摩擦力大小的因素」实验，运用控制变量法进行系统探究
+  - framework: 项目式学习
+    brief: 开展「设计并制作简易密度计」项目，经历完整的科学探究过程
+  - framework: 5E
+    brief: Engage提出探究问题→Explore设计并进行实验→Explain分析数据得出结论→Elaborate评估改进方案
+  - framework: 实验操作
+    brief: 完成课标要求的测量类和探究类学生必做实验清单
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 动手操作与科学思维
+
+verification:
+  status: verified
+  sources:
+    - "义务教育物理课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 数据处理与误差分析
+    relation: 工具支撑
+  - subject: 化学
+    concept: 化学实验方法
+    relation: 方法衔接
+  - subject: 生物
+    concept: 生物实验观察方法
+    relation: 方法衔接
+  - subject: 信息科技
+    concept: 传感器与数据采集
+    relation: 技术应用
+  - subject: 劳动
+    concept: 工具使用与操作规范
+    relation: 技能衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 物理实验互动展区
+    relation: 展示经典物理实验与现代探究方法
+  - venue: 学校实验室
+    name: 物理实验室
+    relation: 开展课标要求的必做实验
