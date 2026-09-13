@@ -1,29 +1,75 @@
 id: CHEM-WATER-001
-name: 水的组成
-name_en: ''
+name: 水的组成与变化
+name_en: Composition and Changes of Water
 subject: 化学
-domain: 基础化学
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 水的组成的详细教学内容。
+
+description: |
+  认识水的物理性质和化学性质。
+  通过实验探究水的组成，了解水是由氢元素和氧元素组成的。
+  了解水的净化方法：沉淀、过滤、吸附、蒸馏等。
+  了解水资源的分布和保护，树立节约用水的意识。
+  认识水是宝贵的自然资源，形成保护和节约资源的可持续发展意识。
+
 prerequisites:
-- id: SCI-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-002
+    name: 纯净物与混合物
+    required: true
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: true
+
+postrequisites:
+  - id: CHEM-SOL-001
+    name: 溶液
+
 key_concepts:
-- term: 水的组成
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 水的组成
+    definition: 水是由氢元素和氧元素组成的化合物，化学式为H₂O
+    importance: 核心
+  - term: 水的净化
+    definition: 通过沉淀、过滤、吸附、蒸馏等方法去除水中的杂质
+    importance: 核心
+  - term: 硬水与软水
+    definition: 含有较多可溶性钙、镁化合物的水是硬水，不含或含较少的是软水
+    importance: 重要
+  - term: 水资源保护
+    definition: 节约用水、防止水污染、合理开发利用水资源
+    importance: 重要
+
+misconceptions:
+  - statement: "水是由氢气和氧气组成的"
+    correction: "水是由氢元素和氧元素组成的化合物，不是氢气和氧气的混合物"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 实验探究与分析
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore进行水的电解实验→Explain分析水的组成→Elaborate讨论水资源的保护
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 物态变化
+    relation: 知识衔接
+  - subject: 生物
+    concept: 水对生物的重要性
+    relation: 应用实例
+  - subject: 地理
+    concept: 水资源的分布
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 水的组成展示
+    relation: 展示水的电解实验

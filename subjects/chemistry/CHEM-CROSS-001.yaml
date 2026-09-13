@@ -1,0 +1,89 @@
+id: CHEM-CROSS-001
+name: 化学跨学科实践活动
+name_en: Interdisciplinary Practical Activities in Chemistry
+subject: 化学
+domain: 化学与社会·跨学科实践
+grade: 初中九年级
+
+description: |
+  2022版化学课程标准规划不少于化学课程总课时10%的课时进行跨学科实践活动。
+  围绕学生核心素养的目标要求，设计了10个跨学科实践活动供选择使用。
+  在跨学科实践活动中，能综合运用化学、技术、工程及跨学科知识，秉承可持续发展观，设计、评估解决实际问题的方案，制作项目作品，并进行改进和优化。
+  具有恪守科学伦理和遵守法律法规的意识，能积极参与小组合作，勇于批判、质疑，自觉反思。
+
+  课标提供的跨学科实践活动包括：
+  1. 基于碳中和理念设计低碳行动方案
+  2. 基于特定需求设计和制作简易供氧器
+  3. 水质检测及自制净水器
+  4. 探究土壤酸碱性对植物生长的影响
+  5. 垃圾的分类与回收利用
+  6. 探究生活中常见的能量转化
+  7. 基于绿色化学观念设计制作某种日用化学品
+  8. 调查家用燃料的变迁与合理使用
+  9. 调查我国航天科技领域中新型材料、新型能源的应用
+  10. 辩论：使用农药、化肥对人类是利大于弊还是弊大于利
+
+prerequisites:
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 跨学科实践
+    definition: 综合运用多学科知识、技术、工程融合解决问题的实践活动
+    importance: 核心
+  - term: 可持续发展
+    definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
+    importance: 核心
+  - term: 科学伦理
+    definition: 科学研究和技术应用中应遵循的道德规范
+    importance: 核心
+  - term: 绿色化学
+    definition: 从源头上减少和消除工业生产对环境的污染
+    importance: 重要
+
+misconceptions:
+  - statement: "跨学科实践就是多做几个实验"
+    correction: "跨学科实践强调综合运用多学科知识解决真实问题，不是简单的实验堆砌"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合思维与协作能力
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 基于碳中和理念设计低碳行动方案，整合化学、物理、地理、生物等学科知识
+  - framework: 5E
+    brief: Engage提出真实问题→Explore调研和设计→Explain分析论证→Elaborate制作和改进→Evaluate评价和反思
+
+verification:
+  status: verified
+  sources:
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 能量转化
+    relation: 原理支撑
+  - subject: 生物
+    concept: 生态系统
+    relation: 知识衔接
+  - subject: 地理
+    concept: 环境保护
+    relation: 应用实例
+  - subject: 信息科技
+    concept: 数据收集与分析
+    relation: 技术应用
+  - subject: 道德与法治
+    concept: 科学伦理
+    relation: 价值引领
+
+exhibits:
+  - venue: 中国科技馆
+    name: 挑战与未来展厅
+    relation: 展示跨学科解决重大问题的案例

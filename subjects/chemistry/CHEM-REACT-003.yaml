@@ -1,32 +1,70 @@
 id: CHEM-REACT-003
-name: 化学方程式
-name_en: ''
+name: 质量守恒定律
+name_en: Law of Conservation of Mass
 subject: 化学
-domain: 基础化学
+domain: 物质的化学变化
 grade: 初中九年级
-description: 化学方程式的详细教学内容。
+
+description: |
+  认识化学反应中的各物质间存在定量关系，化学反应遵守质量守恒定律。
+  理解质量守恒定律的微观本质：化学反应前后，原子的种类、数目和质量都不变。
+  能选取实验证据说明质量守恒定律，并阐释其微观本质。
+  能基于守恒和比例关系推断化学反应的相关信息。
+
 prerequisites:
-- id: CHEM-REACT-002
-  name: ''
-  required: true
-- id: CHEM-MAT-003
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+    required: true
+
+postrequisites:
+  - id: CHEM-REACT-002
+    name: 化学方程式
+
 key_concepts:
-- term: 化学方程式
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 质量守恒定律
+    definition: 参加化学反应的各物质的质量总和等于反应后生成的各物质的质量总和
+    importance: 核心
+  - term: 原子守恒
+    definition: 化学反应前后，原子的种类、数目和质量都不变
+    importance: 核心
+  - term: 微观解释
+    definition: 化学变化的本质是原子的重新组合，原子本身不发生变化
+    importance: 核心
+
+misconceptions:
+  - statement: "蜡烛燃烧后质量减少，说明质量守恒定律不对"
+    correction: "蜡烛燃烧生成的二氧化碳和水蒸气逸散到空气中，如果收集所有产物，总质量不变"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "质量守恒定律适用于所有变化"
+    correction: "质量守恒定律只适用于化学变化，不适用于核反应"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与微观想象
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore进行密闭容器中的化学反应实验→Explain分析反应前后质量关系→Elaborate解释开放容器中质量变化的原因
+  - framework: POE
+    brief: 预测镁条燃烧后质量的变化，然后通过实验验证
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 能量守恒
+    relation: 原理类比
+  - subject: 数学
+    concept: 定量计算
+    relation: 工具支撑
+
+exhibits:
+  - venue: 中国科技馆
+    name: 质量守恒定律演示
+    relation: 演示化学反应中的质量守恒

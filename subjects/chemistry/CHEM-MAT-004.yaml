@@ -1,0 +1,68 @@
+id: CHEM-MAT-004
+name: 氧化物
+name_en: Oxides
+subject: 化学
+domain: 物质的性质与应用
+grade: 初中九年级
+
+description: |
+  认识氧化物的概念，知道氧化物是由两种元素组成，其中一种是氧元素的化合物。
+  了解常见氧化物的性质和用途，如二氧化碳、一氧化碳、氧化钙等。
+  能根据物质的组成判断其是否属于氧化物。
+  认识氧化物在自然界和生产生活中的重要作用。
+
+prerequisites:
+  - id: CHEM-MAT-001
+    name: 物质的多样性
+    required: true
+
+postrequisites:
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+
+key_concepts:
+  - term: 氧化物
+    definition: 由两种元素组成，其中一种是氧元素的化合物
+    importance: 核心
+  - term: 金属氧化物
+    definition: 由金属元素和氧元素组成的氧化物
+    importance: 重要
+  - term: 非金属氧化物
+    definition: 由非金属元素和氧元素组成的氧化物
+    importance: 重要
+  - term: 酸性氧化物与碱性氧化物
+    definition: 能与碱反应生成盐和水的氧化物；能与酸反应生成盐和水的氧化物
+    importance: 拓展
+
+misconceptions:
+  - statement: "含氧元素的化合物就是氧化物"
+    correction: "氧化物必须由两种元素组成，其中一种是氧元素"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 分类与判断
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察常见氧化物的性质→Explain归纳氧化物的特征→Elaborate判断物质是否属于氧化物
+
+verification:
+  status: verified
+  sources:
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 空气中的氧气
+    relation: 前置衔接
+  - subject: 地理
+    concept: 大气成分
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 化学世界展厅
+    relation: 展示氧化物的性质与应用

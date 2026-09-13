@@ -1,29 +1,81 @@
 id: CHEM-ACID-001
 name: 常见的酸和碱
-name_en: ''
+name_en: Common Acids and Bases
 subject: 化学
-domain: 基础化学
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 常见的酸和碱的详细教学内容。
+
+description: |
+  认识常见的酸（盐酸、硫酸）和碱（氢氧化钠、氢氧化钙）的性质。
+  能通过实验说明常见的酸和碱的主要性质，并能用化学方程式表示。
+  学会用酸碱指示剂、pH试纸检验溶液的酸碱性。
+  了解酸碱中和反应及其应用。
+  能举例说明物质性质的广泛应用及性质与用途的关系。
+
 prerequisites:
-- id: CHEM-MAT-003
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-003
+    name: 单质与化合物
+    required: true
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: true
+
+postrequisites:
+  - id: CHEM-ACID-002
+    name: 酸碱中和
+
 key_concepts:
-- term: 常见的酸和碱
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 酸
+    definition: 电离时生成的阳离子全部是氢离子的化合物
+    importance: 核心
+  - term: 碱
+    definition: 电离时生成的阴离子全部是氢氧根离子的化合物
+    importance: 核心
+  - term: 酸碱指示剂
+    definition: 能在酸性或碱性溶液中显示不同颜色的物质
+    importance: 核心
+  - term: pH
+    definition: 表示溶液酸碱性强弱的数值，pH<7为酸性，pH>7为碱性
+    importance: 核心
+  - term: 酸的通性
+    definition: 酸能使指示剂变色、与活泼金属反应、与金属氧化物反应、与碱反应等
+    importance: 重要
+  - term: 碱的通性
+    definition: 碱能使指示剂变色、与非金属氧化物反应、与酸反应等
+    importance: 重要
+
+misconceptions:
+  - statement: "酸性溶液一定是酸溶液"
+    correction: "酸性溶液不一定是酸溶液，某些盐溶液（如氯化铵）也呈酸性"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "pH试纸可以直接浸入溶液中"
+    correction: "pH试纸应该用玻璃棒蘸取溶液滴在试纸上，不能直接浸入"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 实验观察与归纳
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore进行酸碱性质的实验→Explain归纳酸碱的通性→Elaborate用酸碱知识解释生活现象
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 生物
+    concept: 人体体液的pH
+    relation: 应用实例
+  - subject: 地理
+    concept: 酸雨
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 酸碱性质展示
+    relation: 展示酸碱的性质和指示剂变色

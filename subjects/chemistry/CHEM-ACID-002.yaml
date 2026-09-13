@@ -1,29 +1,65 @@
 id: CHEM-ACID-002
-name: 中和反应
-name_en: ''
+name: 酸碱中和
+name_en: Acid-Base Neutralization
 subject: 化学
-domain: 补充
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 中和反应的详细教学内容。
+
+description: |
+  认识酸碱中和反应的概念，知道酸和碱反应生成盐和水。
+  能通过实验探究酸碱中和反应，观察反应现象。
+  了解酸碱中和反应在日常生活和工业生产中的应用。
+  能运用研究物质性质的一般思路与方法，从物质类别的视角，依据中和反应，初步预测酸和碱的主要性质。
+
 prerequisites:
-- id: CHEM-ACID-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-ACID-001
+    name: 常见的酸和碱
+    required: true
+
+postrequisites:
+  - id: CHEM-SALT-001
+    name: 盐
+
 key_concepts:
-- term: 中和反应
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 中和反应
+    definition: 酸和碱作用生成盐和水的反应
+    importance: 核心
+  - term: 盐
+    definition: 由金属离子（或铵根离子）和酸根离子组成的化合物
+    importance: 核心
+  - term: 中和反应的应用
+    definition: 治疗胃酸过多、改良土壤酸性、处理工业废水等
+    importance: 重要
+
+misconceptions:
+  - statement: "中和反应就是pH等于7"
+    correction: "中和反应是酸和碱反应生成盐和水，但生成物的pH不一定等于7"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 实验观察与应用
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore进行酸碱中和实验→Explain归纳中和反应的特征→Elaborate讨论中和反应的应用
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 生物
+    concept: 人体酸碱平衡
+    relation: 应用实例
+  - subject: 地理
+    concept: 土壤改良
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 酸碱中和演示
+    relation: 演示酸碱中和反应

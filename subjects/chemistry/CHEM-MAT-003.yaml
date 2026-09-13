@@ -1,29 +1,73 @@
 id: CHEM-MAT-003
-name: 化学式与化合价
-name_en: ''
+name: 单质与化合物
+name_en: Elements and Compounds
 subject: 化学
-domain: 基础化学
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 化学式与化合价的详细教学内容。
+
+description: |
+  认识单质和化合物的概念，能根据物质的组成判断其属于单质还是化合物。
+  了解常见单质和化合物的性质和用途。
+  初步认识元素周期表，了解元素的分类（金属元素、非金属元素）。
+  能从元素、原子、分子视角初步分析物质的组成及变化。
+
 prerequisites:
-- id: CHEM-MAT-002
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-001
+    name: 物质的多样性
+    required: true
+
+postrequisites:
+  - id: CHEM-REACT-002
+    name: 化学方程式
+  - id: CHEM-OXY-001
+    name: 氧气
+
 key_concepts:
-- term: 化学式与化合价
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 单质
+    definition: 由同种元素组成的纯净物
+    importance: 核心
+  - term: 化合物
+    definition: 由不同种元素组成的纯净物
+    importance: 核心
+  - term: 元素
+    definition: 具有相同质子数的一类原子的总称
+    importance: 核心
+  - term: 元素周期表
+    definition: 按原子序数排列的元素表，反映元素性质的周期性变化
+    importance: 重要
+  - term: 金属元素与非金属元素
+    definition: 根据元素性质分类的两大类元素
+    importance: 重要
+
+misconceptions:
+  - statement: "单质和化合物都含有一种元素"
+    correction: "单质含有一种元素，化合物含有两种或两种以上元素"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 抽象思维与分类
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察不同单质和化合物的性质→Explain归纳单质和化合物的区别→Elaborate对常见物质进行分类
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 物质的组成
+    relation: 知识衔接
+  - subject: 生物
+    concept: 生物体的元素组成
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 元素周期表展示
+    relation: 展示元素周期表和元素性质

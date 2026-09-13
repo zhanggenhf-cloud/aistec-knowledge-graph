@@ -1,0 +1,73 @@
+id: CHEM-ENERGY-001
+name: 能源与化学
+name_en: Energy and Chemistry
+subject: 化学
+domain: 化学与社会·跨学科实践
+grade: 初中九年级
+
+description: |
+  认识化学在解决与资源、能源、材料、环境、人类健康等相关的问题中的作用。
+  了解常见的能源：化石燃料（煤、石油、天然气）和新能源（氢能、太阳能、风能等）。
+  了解化石燃料的综合利用和新能源的开发。
+  认识化学是推动人类社会可持续发展的重要力量。
+  树立建设美丽中国、为全球生态安全作贡献的信念。
+  主动践行节约资源、环境友好的生活方式。
+
+prerequisites:
+  - id: CHEM-REACT-004
+    name: 化学变化中的能量变化
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 化石燃料
+    definition: 煤、石油、天然气等由古代生物遗骸经过漫长地质年代形成的燃料
+    importance: 核心
+  - term: 新能源
+    definition: 氢能、太阳能、风能、地热能等可再生能源
+    importance: 核心
+  - term: 燃烧热
+    definition: 1mol物质完全燃烧时放出的热量
+    importance: 重要
+  - term: 可持续发展
+    definition: 既满足当代人的需求，又不损害后代人满足其需求能力的发展
+    importance: 核心
+
+misconceptions:
+  - statement: "化石燃料取之不尽"
+    correction: "化石燃料是不可再生能源，储量有限，需要节约使用并开发新能源"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 系统思维与价值判断
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 调查当地能源使用情况，设计节能减排方案
+  - framework: 5E
+    brief: Engage讨论能源危机→Explore比较不同能源的优缺点→Explain分析能源转化的化学原理
+
+verification:
+  status: verified
+  sources:
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 能量转化与守恒
+    relation: 原理支撑
+  - subject: 地理
+    concept: 能源分布与环境保护
+    relation: 应用实例
+  - subject: 生物
+    concept: 生物质能
+    relation: 知识衔接
+
+exhibits:
+  - venue: 中国科技馆
+    name: 能源世界展厅
+    relation: 展示能源转化和利用

@@ -1,0 +1,82 @@
+id: CHEM-SCI-001
+name: 科学探究与化学实验
+name_en: Scientific Inquiry and Chemical Experimentation
+subject: 化学
+domain: 科学探究与化学实验
+grade: 初中九年级
+
+description: |
+  知道化学是研究物质的组成、结构、性质、转化及应用的一门基础学科，其特征是从分子层次认识物质，通过化学变化创造物质。
+  初步了解化学科学的发展历程，体会实验探究和模型建构是化学科学研究的基本方法。
+  认识化学科学、技术、社会、环境的相互关系，了解化学科学对社会发展和人类文明进步的重要价值。
+  感悟科学家崇尚真理、严谨求实的科学态度，勇于质疑、批判和创新的精神。
+  学习科学家爱国、奉献的精神，团结协作、攻坚克难的品格。
+
+prerequisites:
+  - id: SCI-MAT-001
+    name: 物质的变化（小学科学）
+    required: true
+
+postrequisites:
+  - id: CHEM-MAT-002
+    name: 纯净物与混合物
+  - id: CHEM-OXY-001
+    name: 氧气
+
+key_concepts:
+  - term: 化学科学本质
+    definition: 研究物质的组成、结构、性质、转化及应用的基础学科
+    importance: 核心
+  - term: 科学探究
+    definition: 收集证据和作出解释，进行发现、创造与应用的科学实践活动
+    importance: 核心
+  - term: 实验探究
+    definition: 通过实验手段获取证据、分析解释数据、形成结论的科学方法
+    importance: 核心
+  - term: 实验室安全
+    definition: 识别安全警示标志，正确使用安全防护设施，遵守实验操作规范
+    importance: 核心
+  - term: 化学实验技能
+    definition: 试剂取用、仪器使用、加热、配制溶液等基本操作技能
+    importance: 重要
+
+misconceptions:
+  - statement: "化学就是做实验"
+    correction: "化学是以实验为基础的科学，但也包括理论分析、模型建构、计算推理等多种研究方法"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "化学实验很危险，应该避免"
+    correction: "在遵守安全规则的前提下，化学实验是安全的，是认识物质世界的重要途径"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 科学探究与实验操作
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage展示化学发展史上的重大发现→Explore进行简单的化学实验→Explain讨论实验现象
+  - framework: 项目式学习
+    brief: 调查我国化学家的先进事迹，撰写"人物传记"
+
+verification:
+  status: verified
+  sources:
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 实验方法与测量
+    relation: 方法共享
+  - subject: 生物
+    concept: 科学探究方法
+    relation: 方法共享
+  - subject: 历史
+    concept: 化学发展史
+    relation: 人文关联
+
+exhibits:
+  - venue: 中国科技馆
+    name: 化学世界展厅
+    relation: 展示化学科学原理与应用

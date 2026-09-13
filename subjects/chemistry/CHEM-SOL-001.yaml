@@ -1,29 +1,77 @@
 id: CHEM-SOL-001
 name: 溶液
-name_en: ''
+name_en: Solutions
 subject: 化学
-domain: 补充
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 溶液的详细教学内容。
+
+description: |
+  认识溶液的概念，知道溶液由溶质和溶剂组成。
+  了解饱和溶液和不饱和溶液的概念，认识溶解度的含义。
+  能进行溶质质量分数的简单计算，能根据需要配制一定溶质质量分数的溶液。
+  了解溶液在自然界和生产生活中的重要作用。
+
 prerequisites:
-- id: CHEM-MAT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-002
+    name: 纯净物与混合物
+    required: true
+
+postrequisites:
+  - id: CHEM-SOL-002
+    name: 溶解度
+
 key_concepts:
-- term: 溶液
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 溶液
+    definition: 一种或几种物质分散到另一种物质里，形成均一、稳定的混合物
+    importance: 核心
+  - term: 溶质
+    definition: 被溶解的物质
+    importance: 核心
+  - term: 溶剂
+    definition: 能溶解其他物质的物质
+    importance: 核心
+  - term: 饱和溶液
+    definition: 在一定温度下，不能再溶解某种溶质的溶液
+    importance: 核心
+  - term: 不饱和溶液
+    definition: 在一定温度下，还能继续溶解某种溶质的溶液
+    importance: 核心
+  - term: 溶质质量分数
+    definition: 溶质质量与溶液质量之比
+    importance: 重要
+
+misconceptions:
+  - statement: "溶液一定是液体"
+    correction: "溶液可以是固体（如合金）、液体（如盐水）或气体（如空气）"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "饱和溶液一定是浓溶液"
+    correction: "饱和溶液不一定是浓溶液，如氢氧化钙的饱和溶液很稀"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 概念理解与计算
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore配制不同浓度的溶液→Explain归纳溶液的组成和特征→Elaborate计算溶质质量分数
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 扩散现象
+    relation: 原理支撑
+  - subject: 生物
+    concept: 细胞液
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 溶液展示
+    relation: 展示溶液的形成和性质

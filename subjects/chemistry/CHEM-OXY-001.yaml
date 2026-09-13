@@ -1,29 +1,71 @@
 id: CHEM-OXY-001
 name: 氧气
-name_en: ''
+name_en: Oxygen
 subject: 化学
-domain: 基础化学
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 氧气的详细教学内容。
+
+description: |
+  认识氧气的物理性质和化学性质。
+  能通过实验说明氧气的主要性质，并能用化学方程式表示。
+  了解氧气在自然界和生产生活中的重要作用。
+  认识氧气性质与用途的关系，形成合理利用物质的意识。
+
 prerequisites:
-- id: CHEM-GAS-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-003
+    name: 单质与化合物
+    required: true
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: true
+
+postrequisites:
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+
 key_concepts:
-- term: 氧气
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 氧气的物理性质
+    definition: 无色、无味、不易溶于水的气体，密度比空气略大
+    importance: 核心
+  - term: 氧气的化学性质
+    definition: 比较活泼，能与许多物质发生氧化反应
+    importance: 核心
+  - term: 氧化反应
+    definition: 物质与氧发生的化学反应
+    importance: 核心
+  - term: 氧气的用途
+    definition: 供给呼吸、支持燃烧、医疗急救、炼钢等
+    importance: 重要
+
+misconceptions:
+  - statement: "氧气可以燃烧"
+    correction: "氧气本身不能燃烧，但能支持燃烧，具有助燃性"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 实验观察与归纳
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore进行氧气性质的实验→Explain归纳氧气的性质→Elaborate讨论氧气的用途
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 生物
+    concept: 呼吸作用
+    relation: 知识衔接
+  - subject: 地理
+    concept: 大气成分
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 氧气性质展示
+    relation: 展示氧气的性质和用途

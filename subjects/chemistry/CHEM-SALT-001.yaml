@@ -1,29 +1,66 @@
 id: CHEM-SALT-001
 name: 盐
-name_en: ''
+name_en: Salts
 subject: 化学
-domain: 基础化学
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 盐的详细教学内容。
+
+description: |
+  认识盐的概念，知道盐是由金属离子（或铵根离子）和酸根离子组成的化合物。
+  了解常见盐的性质和用途，如氯化钠、碳酸钠、碳酸钙等。
+  了解盐的化学性质：与酸反应、与碱反应、与盐反应。
+  能举例说明盐在日常生活和工业生产中的应用。
+
 prerequisites:
-- id: CHEM-ACID-001
-  name: ''
-  required: true
+  - id: CHEM-ACID-002
+    name: 酸碱中和
+    required: true
+
 postrequisites: []
+
 key_concepts:
-- term: 盐
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 盐
+    definition: 由金属离子（或铵根离子）和酸根离子组成的化合物
+    importance: 核心
+  - term: 常见盐
+    definition: 氯化钠（食盐）、碳酸钠（纯碱）、碳酸钙（石灰石）等
+    importance: 核心
+  - term: 盐的化学性质
+    definition: 与酸反应、与碱反应、与盐反应
+    importance: 重要
+  - term: 盐的用途
+    definition: 调味、化工原料、建筑材料、医疗等
+    importance: 重要
+
+misconceptions:
+  - statement: "盐就是食盐"
+    correction: "食盐（氯化钠）是盐的一种，但盐是一类化合物的总称"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 分类与应用
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察常见盐的性质→Explain归纳盐的化学性质→Elaborate讨论盐的用途
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 生物
+    concept: 无机盐
+    relation: 知识衔接
+  - subject: 地理
+    concept: 矿产资源
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 盐的性质展示
+    relation: 展示常见盐的性质和用途

@@ -1,29 +1,77 @@
 id: CHEM-REACT-002
-name: 质量守恒定律
-name_en: ''
+name: 化学方程式
+name_en: Chemical Equations
 subject: 化学
-domain: 基础化学
+domain: 物质的化学变化
 grade: 初中九年级
-description: 质量守恒定律的详细教学内容。
+
+description: |
+  认识化学方程式是表示化学反应的符号语言。
+  能根据实验事实用文字和符号描述、表示化学变化，并正确书写常见的化学方程式。
+  理解化学方程式的意义：表示反应物、生成物和反应条件，以及各物质间的质量关系。
+  能根据化学方程式进行简单的计算，并解决生产生活中的简单问题。
+
 prerequisites:
-- id: CHEM-REACT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+    required: true
+  - id: CHEM-MAT-003
+    name: 单质与化合物
+    required: true
+  - id: CHEM-REACT-003
+    name: 质量守恒定律
+    required: true
+
+postrequisites:
+  - id: CHEM-REACT-004
+    name: 化学变化中的能量变化
+
 key_concepts:
-- term: 质量守恒定律
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 化学方程式
+    definition: 用化学式表示化学反应的式子
+    importance: 核心
+  - term: 质量守恒定律
+    definition: 参加化学反应的各物质的质量总和等于反应后生成的各物质的质量总和
+    importance: 核心
+  - term: 化学计量数
+    definition: 化学方程式中各物质化学式前面的系数，表示物质的量的比例关系
+    importance: 重要
+  - term: 化学方程式的计算
+    definition: 根据化学方程式中各物质的质量比进行计算
+    importance: 重要
+
+misconceptions:
+  - statement: "化学方程式中的等号表示左右两边相等"
+    correction: "化学方程式中的等号表示'生成'，不是数学意义上的相等"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "化学方程式可以随便配平"
+    correction: "化学方程式必须根据质量守恒定律配平，不能改变物质的化学式"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 符号表征与计算
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察化学反应→Explain用化学方程式表示反应→Elaborate进行化学方程式的计算
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 比例计算
+    relation: 工具支撑
+  - subject: 物理
+    concept: 能量守恒
+    relation: 原理类比
+
+exhibits:
+  - venue: 中国科技馆
+    name: 化学方程式展示
+    relation: 展示化学方程式的书写和意义

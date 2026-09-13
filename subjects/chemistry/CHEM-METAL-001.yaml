@@ -1,29 +1,68 @@
 id: CHEM-METAL-001
 name: 金属
-name_en: ''
+name_en: Metals
 subject: 化学
-domain: 补充
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 金属的详细教学内容。
+
+description: |
+  认识金属的物理性质：有金属光泽、良好的导电性、导热性、延展性等。
+  了解常见金属的用途，认识金属性质与用途的关系。
+  了解合金的概念，知道合金比纯金属具有更优良的性能。
+  了解金属资源的利用和保护，树立节约资源的意识。
+
 prerequisites:
-- id: CHEM-REACT-001
-  name: ''
-  required: true
-postrequisites: []
+  - id: CHEM-MAT-003
+    name: 单质与化合物
+    required: true
+
+postrequisites:
+  - id: CHEM-METAL-002
+    name: 金属的化学性质
+
 key_concepts:
-- term: 金属
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 金属的物理性质
+    definition: 有金属光泽、良好的导电性、导热性、延展性等
+    importance: 核心
+  - term: 合金
+    definition: 由一种金属跟其他金属（或非金属）熔合而成的具有金属特性的物质
+    importance: 核心
+  - term: 金属的用途
+    definition: 根据金属的性质决定其用途，如铜做导线、铁做建筑材料等
+    importance: 重要
+  - term: 金属资源保护
+    definition: 防止金属腐蚀、回收利用废旧金属、合理开采矿物等
+    importance: 重要
+
+misconceptions:
+  - statement: "合金是化合物"
+    correction: "合金是混合物，不是化合物"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 观察与归纳
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore观察金属的物理性质→Explain归纳金属性质与用途的关系→Elaborate讨论金属资源的保护
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 导电性、导热性
+    relation: 原理支撑
+  - subject: 地理
+    concept: 矿产资源
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 金属材料展示
+    relation: 展示金属的性质和用途

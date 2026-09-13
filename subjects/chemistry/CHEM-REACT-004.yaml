@@ -1,0 +1,83 @@
+id: CHEM-REACT-004
+name: 化学变化中的能量变化
+name_en: Energy Changes in Chemical Reactions
+subject: 化学
+domain: 物质的化学变化
+grade: 初中九年级
+
+description: |
+  认识物质的变化过程伴随着能量变化，化学变化中常伴随吸热或放热现象。
+  了解化学反应中的能量转化：化学能可以转化为热能、光能、电能等。
+  了解燃烧反应是放热反应，知道燃烧的条件和灭火的原理。
+  通过实验探究认识燃烧的条件，理解燃烧和灭火的原理及其在生活中的应用。
+  初步体会调控化学反应的重要意义。
+
+prerequisites:
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+    required: true
+  - id: CHEM-REACT-002
+    name: 化学方程式
+    required: false
+
+postrequisites:
+  - id: CHEM-ENERGY-001
+    name: 能源与化学
+
+key_concepts:
+  - term: 放热反应
+    definition: 反应过程中放出热量的化学反应
+    importance: 核心
+  - term: 吸热反应
+    definition: 反应过程中吸收热量的化学反应
+    importance: 核心
+  - term: 燃烧
+    definition: 可燃物与氧气发生的发光、发热的剧烈氧化反应
+    importance: 核心
+  - term: 燃烧条件
+    definition: 可燃物、氧气（或空气）、温度达到着火点
+    importance: 核心
+  - term: 灭火原理
+    definition: 清除可燃物、隔绝氧气、降低温度到着火点以下
+    importance: 核心
+
+misconceptions:
+  - statement: "燃烧必须有氧气参与"
+    correction: "燃烧不一定需要氧气，其他氧化剂如氯气也可以支持燃烧"
+    source: 义务教育化学课程标准（2022年版）
+  - statement: "水可以扑灭所有火灾"
+    correction: "电器火灾、油类火灾等不能用水扑灭"
+    source: 义务教育化学课程标准（2022年版）
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 能量概念与因果推理
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore探究燃烧条件→Explain归纳燃烧和灭火原理→Elaborate设计灭火方案
+  - framework: POE
+    brief: 预测不同条件下物质是否能燃烧，然后通过实验验证
+
+verification:
+  status: verified
+  sources:
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 能量转化与守恒
+    relation: 原理支撑
+  - subject: 生物
+    concept: 呼吸作用
+    relation: 知识衔接
+  - subject: 地理
+    concept: 能源利用与环境保护
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 燃烧与灭火展示
+    relation: 演示燃烧条件和灭火原理

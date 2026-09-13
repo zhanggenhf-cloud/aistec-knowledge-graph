@@ -1,29 +1,63 @@
 id: CHEM-SOL-002
 name: 溶解度
-name_en: ''
+name_en: Solubility
 subject: 化学
-domain: 补充
+domain: 物质的性质与应用
 grade: 初中九年级
-description: 溶解度的详细教学内容。
+
+description: |
+  认识溶解度的概念，知道溶解度是表示物质溶解性大小的量。
+  了解固体溶解度的影响因素：温度。
+  能查阅溶解度数据，绘制溶解度曲线。
+  能利用物质的溶解性，设计粗盐提纯、水的净化等物质分离的方案。
+
 prerequisites:
-- id: CHEM-SOL-001
-  name: ''
-  required: true
+  - id: CHEM-SOL-001
+    name: 溶液
+    required: true
+
 postrequisites: []
+
 key_concepts:
-- term: 溶解度
-  definition: ''
-  importance: 核心
-misconceptions: []
+  - term: 溶解度
+    definition: 在一定温度下，某固态物质在100g溶剂里达到饱和状态时所溶解的质量
+    importance: 核心
+  - term: 溶解度曲线
+    definition: 表示物质溶解度随温度变化的曲线
+    importance: 核心
+  - term: 影响溶解度的因素
+    definition: 温度（对固体溶解度影响较大）、溶质和溶剂的性质
+    importance: 重要
+
+misconceptions:
+  - statement: "溶解度就是溶解的质量"
+    correction: "溶解度是一定条件下100g溶剂中最多溶解的溶质质量，不是任意溶解的质量"
+    source: 义务教育化学课程标准（2022年版）
+
 cognitive_level:
-  min_age: 12
+  min_age: 14
   piaget_stage: 形式运算阶段
-  prerequisite_reasoning: 抽象思维
-activity_suggestions: []
+  prerequisite_reasoning: 数据分析与图像理解
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore测定不同温度下的溶解度→Explain绘制溶解度曲线→Elaborate利用溶解度差异分离物质
+
 verification:
   status: verified
   sources:
-  - 义务教育课程标准（2022年版）
-  last_verified: '2024-06-01'
-interdisciplinary: []
-exhibits: []
+    - "义务教育化学课程标准（2022年版）"
+  last_verified: '2026-09-13'
+
+interdisciplinary:
+  - subject: 数学
+    concept: 函数图像
+    relation: 工具支撑
+  - subject: 地理
+    concept: 海水制盐
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 溶解度展示
+    relation: 展示溶解度曲线和物质分离
