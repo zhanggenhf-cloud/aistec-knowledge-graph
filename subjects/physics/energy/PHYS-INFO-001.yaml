@@ -31,9 +31,6 @@ prerequisites:
   - id: PHYS-MAG-004
     name: 发电机
     required: false
-  - id: PHYS-WAVE-001
-    name: 波的基础知识
-    required: false
 
 postrequisites: []
 

@@ -25,9 +25,6 @@ prerequisites:
   - id: SCI-ELEC-001
     name: 小学科学：简单电路与导体绝缘体
     required: true
-  - id: CHEM-ATOM-001
-    name: 原子结构
-    required: false
 
 postrequisites:
   - id: PHYS-ELEC-002

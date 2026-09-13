@@ -14,7 +14,15 @@ key_concepts:
 - term: 声音的产生与传播
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "声音可以在真空中传播"
+    correction: "声音传播需要介质，真空中不能传播声音"
+  - statement: "声音在空气中传播最快"
+    correction: "声音在固体中传播最快，气体中最慢"
+  - statement: "物体振动就一定能听到声音"
+    correction: "还需要介质传播和频率在人耳听觉范围内(20-20000Hz)"
+  - statement: "声音的传播速度只与介质有关"
+    correction: "还与温度有关，同种介质温度越高声速越大"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

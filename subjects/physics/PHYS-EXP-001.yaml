@@ -18,9 +18,6 @@ prerequisites:
   - id: MATH-MEAS-001
     name: 测量与单位
     required: true
-  - id: SCI-METHOD-001
-    name: 科学探究方法
-    required: false
 
 postrequisites: []
 

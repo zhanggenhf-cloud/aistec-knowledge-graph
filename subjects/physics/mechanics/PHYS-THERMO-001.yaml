@@ -31,8 +31,6 @@ prerequisites:
 postrequisites:
   - id: PHYS-HEAT-001
     name: 内能
-  - id: CHEM-STAT-001
-    name: 化学中的物质状态
 
 key_concepts:
   - term: 温度

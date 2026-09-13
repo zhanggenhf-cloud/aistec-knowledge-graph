@@ -19,9 +19,7 @@ prerequisites:
     name: 声音因物体振动而产生
     required: false
 
-postrequisites:
-  - id: ART-DIGI-001
-    name: 数字媒体艺术
+postrequisites: []
 
 key_concepts:
   - term: 音高与频率

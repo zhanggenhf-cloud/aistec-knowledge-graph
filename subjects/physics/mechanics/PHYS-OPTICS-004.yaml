@@ -14,7 +14,15 @@ key_concepts:
 - term: 光的折射
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "光从空气进入水，传播方向一定改变"
+    correction: "垂直入射时传播方向不变"
+  - statement: "折射角总是小于入射角"
+    correction: "光从光密介质射入光疏介质时，折射角大于入射角"
+  - statement: "池水看起来比实际深"
+    correction: "池水看起来比实际浅，因为光从水中射入空气时折射"
+  - statement: "折射和反射不能同时发生"
+    correction: "光在两种介质界面处通常同时发生反射和折射"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

@@ -14,7 +14,15 @@ key_concepts:
 - term: 声音的特性
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "响度大音调一定高"
+    correction: "响度由振幅决定，音调由频率决定，二者独立"
+  - statement: "超声波是人耳能听到的"
+    correction: "超声波频率高于20000Hz，人耳听不到"
+  - statement: "音色与发声体的材料无关"
+    correction: "音色由发声体的材料、结构等决定"
+  - statement: "噪声没有频率"
+    correction: "噪声也有频率，只是频率分布杂乱无序"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

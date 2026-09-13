@@ -18,9 +18,6 @@ prerequisites:
   - id: PHYS-FORCE-002
     name: 重力
     required: true
-  - id: MATH-ALG-002
-    name: 代数方程
-    required: true
 
 postrequisites:
   - id: PHYS-PRESSURE-002

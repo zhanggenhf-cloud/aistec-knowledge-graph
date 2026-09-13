@@ -14,7 +14,15 @@ key_concepts:
 - term: 制取氧气
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "制取氧气只能用高锰酸钾"
+    correction: "实验室还可用过氧化氢溶液、氯酸钾等制取氧气"
+  - statement: "收集氧气只能用排水法"
+    correction: "氧气密度比空气大，也可用向上排空气法收集"
+  - statement: "催化剂能增加氧气产量"
+    correction: "催化剂只加快反应速率，不改变生成物总量"
+  - statement: "制氧时试管口要向上倾斜"
+    correction: "试管口应略向下倾斜，防止冷凝水倒流炸裂试管"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

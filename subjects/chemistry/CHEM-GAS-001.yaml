@@ -14,7 +14,15 @@ key_concepts:
 - term: 空气的组成
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "空气是单一物质"
+    correction: "空气是由氮气、氧气、稀有气体等多种气体组成的混合物"
+  - statement: "空气中氧气含量最高"
+    correction: "空气中氮气约占78%，氧气约占21%，氮气含量最高"
+  - statement: "稀有气体完全没有用"
+    correction: "稀有气体在霓虹灯、焊接保护气、医疗等领域有重要用途"
+  - statement: "空气污染只影响呼吸系统"
+    correction: "空气污染还会影响心血管系统、生态系统，甚至全球气候"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

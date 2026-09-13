@@ -337,10 +337,10 @@ edges:
     note: 四大发明与化学工艺
 
   - from: HIS-ANC-003
-    to: PHYS-MAG-001
+    to: PHYS-MAG-002
     type: related
     strength: strong
-    note: 指南针与磁学
+    note: 指南针与电流的磁场
 
   - from: HIS-WLD-002
     to: CHEM-REACT-001
@@ -775,24 +775,6 @@ edges:
     note: 数学综合实践与项目式学习整合
 
   # 物理力学 ↔ 生物
-  - from: PHYS-SIMPLE-001
-    to: BIO-STRUCT-001
-    type: related
-    strength: strong
-    note: 人体中的杠杆（骨骼、关节、肌肉）
-
-  - from: PHYS-PRESSURE-001
-    to: BIO-STRUCT-001
-    type: related
-    strength: moderate
-    note: 动物身体结构中的压强适应（骆驼脚掌、啄木鸟喙）
-
-  - from: PHYS-BUOY-001
-    to: BIO-STRUCT-001
-    type: related
-    strength: moderate
-    note: 鱼类的鳔与浮沉调节
-
   # 物理力学 ↔ 地理
   - from: PHYS-PRESSURE-003
     to: GEO-EARTH-003
@@ -884,7 +866,7 @@ edges:
     note: 物联网在环境监测与保护中的应用
 
   - from: IT-IOT-001
-    to: BIO-ECO-001
+    to: BIO-ECO-002
     type: application
     strength: strong
     note: 物联网在生态系统监测中的应用

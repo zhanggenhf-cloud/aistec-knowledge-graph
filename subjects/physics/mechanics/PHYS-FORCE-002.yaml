@@ -14,9 +14,6 @@ prerequisites:
   - id: PHYS-FORCE-001
     name: 力的概念
     required: true
-  - id: MATH-ALG-002
-    name: 代数方程
-    required: true
 
 postrequisites:
   - id: PHYS-ENERGY-001

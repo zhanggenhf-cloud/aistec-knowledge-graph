@@ -17,9 +17,6 @@ prerequisites:
   - id: PHYS-MATTER-002
     name: 密度
     required: true
-  - id: MATH-ALG-002
-    name: 代数方程
-    required: true
 
 postrequisites:
   - id: PHYS-BUOY-003

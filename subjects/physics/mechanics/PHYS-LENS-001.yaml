@@ -14,7 +14,15 @@ key_concepts:
 - term: 凸透镜成像规律
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "凸透镜只能成放大的像"
+    correction: "凸透镜根据物距不同可成放大、缩小或等大的像"
+  - statement: "实像和虚像都能用光屏承接"
+    correction: "只有实像能被光屏承接，虚像不能"
+  - statement: "放大镜成的是实像"
+    correction: "放大镜使用时成的是正立放大的虚像"
+  - statement: "投影仪成的是缩小的像"
+    correction: "投影仪成的是倒立放大的实像"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

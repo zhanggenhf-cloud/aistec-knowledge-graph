@@ -21,8 +21,6 @@ prerequisites:
 postrequisites:
   - id: SCI-HOME-001
     name: 生物体的稳态与调节
-  - id: BIO-PHYS-001
-    name: 人体的内环境与稳态
 
 key_concepts:
   - term: 运动系统

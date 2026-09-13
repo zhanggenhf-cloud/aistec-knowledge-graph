@@ -26,9 +26,6 @@ prerequisites:
   - id: PHYS-HEAT-001
     name: 内能
     required: true
-  - id: MATH-ALG-003
-    name: 比值与比例
-    required: false
 
 postrequisites:
   - id: PHYS-HEAT-003

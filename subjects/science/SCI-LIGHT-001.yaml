@@ -19,9 +19,7 @@ prerequisites:
     name: 物体具有一定的特征，材料具有一定的性能
     required: false
 
-postrequisites:
-  - id: PHYS-OPT-001
-    name: 光的传播与反射
+postrequisites: []
 
 key_concepts:
   - term: 光源

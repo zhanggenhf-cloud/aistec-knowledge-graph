@@ -11,7 +11,15 @@ key_concepts:
 - term: 质量
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "质量和重量是同一个概念"
+    correction: "质量是物质的多少，重量是重力大小，二者不同"
+  - statement: "物体的质量会随位置改变"
+    correction: "质量是物体的固有属性，不随位置变化；重量会随重力变化"
+  - statement: "称量质量只能用天平"
+    correction: "还可以用电子秤、弹簧秤（测重量再换算）等"
+  - statement: "1千克铁比1千克棉花重"
+    correction: "质量相同，都是1千克，一样重"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

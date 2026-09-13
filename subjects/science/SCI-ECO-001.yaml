@@ -22,8 +22,6 @@ prerequisites:
 postrequisites:
   - id: SCI-ENV-001
     name: 人类活动与环境
-  - id: BIO-ECO-001
-    name: 生态系统
 
 key_concepts:
   - term: 生态系统

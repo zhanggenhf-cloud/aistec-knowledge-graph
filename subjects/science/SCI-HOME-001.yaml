@@ -21,9 +21,7 @@ prerequisites:
     name: 动物和植物都有基本生存需要
     required: true
 
-postrequisites:
-  - id: BIO-PHYS-001
-    name: 人体的内环境与稳态
+postrequisites: []
 
 key_concepts:
   - term: 稳态

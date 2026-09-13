@@ -17,15 +17,10 @@ prerequisites:
   - id: PHYS-FORCE-004
     name: 摩擦力
     required: true
-  - id: MATH-ALG-003
-    name: 比值与比例
-    required: false
 
 postrequisites:
   - id: PHYS-NEWTON-002
     name: 牛顿第二定律
-  - id: PHYS-NEWTON-003
-    name: 牛顿第三定律
 
 key_concepts:
   - term: 牛顿第一定律

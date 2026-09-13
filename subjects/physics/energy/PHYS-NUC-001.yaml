@@ -27,9 +27,6 @@ description: |
   了解核电站的工作流程，能辩证看待核能利用的利与弊。
 
 prerequisites:
-  - id: CHEM-ATOM-001
-    name: 原子结构
-    required: false
   - id: PHYS-ENERGY-003
     name: 能源与可持续发展
     required: false

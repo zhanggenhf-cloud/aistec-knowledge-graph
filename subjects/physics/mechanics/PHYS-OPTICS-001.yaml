@@ -14,7 +14,15 @@ key_concepts:
 - term: 光的直线传播
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "光在任何介质中都沿直线传播"
+    correction: "光在同种均匀介质中沿直线传播，不均匀介质中会发生弯曲"
+  - statement: "影子是黑色的就是无光"
+    correction: "影子区域有环境光，只是比周围暗，不一定是纯黑"
+  - statement: "光速在任何地方都一样"
+    correction: "光在真空中最快，在介质中速度会减小"
+  - statement: "日食是地球挡住了太阳光"
+    correction: "日食是月球挡住了太阳光，月食是地球挡住了照向月球的阳光"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

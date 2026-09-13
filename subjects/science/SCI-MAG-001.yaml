@@ -15,9 +15,7 @@ description: |
 
 prerequisites: []
 
-postrequisites:
-  - id: PHYS-MAG-001
-    name: 磁场与磁感线
+postrequisites: []
 
 key_concepts:
   - term: 磁性

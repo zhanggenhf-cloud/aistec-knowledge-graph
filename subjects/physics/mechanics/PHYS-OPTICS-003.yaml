@@ -14,7 +14,15 @@ key_concepts:
 - term: 平面镜成像
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "平面镜成的像是实像"
+    correction: "平面镜成的是正立等大的虚像"
+  - statement: "人靠近平面镜，像会变大"
+    correction: "像的大小始终与物体相等，只是视角变大"
+  - statement: "平面镜成像左右颠倒"
+    correction: "平面镜成像是左右互换（镜像），不是简单颠倒"
+  - statement: "物体离平面镜越远，像越小"
+    correction: "像与物始终等大，距离变化不改变像的大小"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

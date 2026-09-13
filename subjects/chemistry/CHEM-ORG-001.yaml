@@ -14,7 +14,15 @@ key_concepts:
 - term: 有机化合物
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "有机化合物都含有机物必须来自生物"
+    correction: "有机化合物可以人工合成，如塑料、合成纤维"
+  - statement: "有机物都容易燃烧"
+    correction: "多数有机物可燃，但四氯化碳等有机物可灭火"
+  - statement: "有机化合物比无机化合物复杂"
+    correction: "复杂程度取决于分子结构，简单的有机物如甲烷很简单"
+  - statement: "有机物都含有碳和氢"
+    correction: "四氯化碳(CCl₄)是有机物但不含氢"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

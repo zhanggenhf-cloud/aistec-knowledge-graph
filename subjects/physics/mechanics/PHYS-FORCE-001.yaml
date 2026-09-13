@@ -14,9 +14,6 @@ prerequisites:
   - id: SCI-MOT-001
     name: 运动与力（小学）
     required: true
-  - id: MATH-VEC-001
-    name: 向量的基本概念
-    required: true
 
 postrequisites:
   - id: PHYS-FORCE-002

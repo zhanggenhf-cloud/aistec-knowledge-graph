@@ -14,7 +14,15 @@ key_concepts:
 - term: 光的反射
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "镜面反射遵循反射定律，漫反射不遵循"
+    correction: "所有反射都遵循反射定律，漫反射只是表面不平整"
+  - statement: "光反射后能量不会损失"
+    correction: "反射时部分光能被吸收，能量有损失"
+  - statement: "入射角是入射光线与镜面的夹角"
+    correction: "入射角是入射光线与法线的夹角"
+  - statement: "反射角可以大于入射角"
+    correction: "反射定律规定反射角等于入射角"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

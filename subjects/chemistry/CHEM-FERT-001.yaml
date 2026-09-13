@@ -14,7 +14,15 @@ key_concepts:
 - term: 化学肥料
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "化肥用得越多越好，庄稼长得越壮"
+    correction: "过量施用化肥会导致土壤板结、水体富营养化，应合理施用"
+  - statement: "化肥和农家肥的作用完全一样"
+    correction: "化肥提供速效营养，农家肥改良土壤结构，二者互补"
+  - statement: "所有化肥都是白色晶体"
+    correction: "化肥有多种形态和颜色，如过磷酸钙是灰色粉末"
+  - statement: "氮肥、磷肥、钾肥可以随便混用"
+    correction: "某些化肥混合会发生反应降低肥效，需注意兼容性"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段

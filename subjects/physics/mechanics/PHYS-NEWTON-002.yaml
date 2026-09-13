@@ -25,8 +25,6 @@ prerequisites:
 postrequisites:
   - id: PHYS-PRESSURE-001
     name: 压强
-  - id: PHYS-FRICTION-001
-    name: 摩擦力应用
 
 key_concepts:
   - term: 二力平衡

@@ -18,9 +18,6 @@ prerequisites:
   - id: PHYS-MOTION-002
     name: 速度
     required: true
-  - id: MATH-ALG-002
-    name: 代数方程
-    required: true
 
 postrequisites:
   - id: PHYS-ENERGY-001

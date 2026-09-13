@@ -14,9 +14,6 @@ prerequisites:
   - id: PHYS-MOTION-001
     name: 机械运动
     required: true
-  - id: MATH-ALG-002
-    name: 代数方程
-    required: true
 
 postrequisites:
   - id: PHYS-WORK-001

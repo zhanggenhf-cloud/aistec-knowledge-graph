@@ -14,7 +14,15 @@ key_concepts:
 - term: 密度
   definition: ''
   importance: 核心
-misconceptions: []
+misconceptions:
+  - statement: "密度大的物体一定重"
+    correction: "密度大但体积小，质量可能不大；重量还与重力有关"
+  - statement: "同一种物质密度一定相同"
+    correction: "同种物质在不同状态（如冰和水）密度不同"
+  - statement: "密度是物质的唯一特性"
+    correction: "密度是特性之一，还有熔点、沸点等多种特性"
+  - statement: "测量密度必须用天平和量筒"
+    correction: "还可以用密度计、浮力法等间接测量"
 cognitive_level:
   min_age: 12
   piaget_stage: 形式运算阶段
