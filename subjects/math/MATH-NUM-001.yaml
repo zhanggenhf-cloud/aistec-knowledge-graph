@@ -1,0 +1,100 @@
+id: MATH-NUM-001
+name: 数与式
+name_en: Numbers and Expressions
+subject: 数学
+domain: 数与代数
+grade: 初中七至九年级
+
+description: |
+  数与式是初中数学数与代数领域的基础内容。学生经历从有理数到实数的扩充过程，理解数域扩充的必要性和意义。掌握有理数、实数的基本运算，理解运算律和运算性质。认识整式、分式、二次根式的概念，掌握它们的运算规则和化简方法。
+
+  在数的认识方面，学生应理解负数的意义，掌握有理数的四则运算；了解无理数和实数的概念，知道实数与数轴上的点一一对应。在式的运算方面，学生应理解用字母表示数的意义，掌握整式的加减乘除运算；理解分式的概念和基本性质，会进行分式的化简和运算；理解二次根式的概念，掌握二次根式的化简和运算。
+
+  通过数与式的学习，学生应感悟运算的一致性——整数、分数、小数的运算具有共同的算理基础，即"计数单位"的表达。形成数感、符号意识和运算能力，为后续学习方程、不等式和函数奠定基础。
+
+prerequisites:
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: false
+
+postrequisites:
+  - id: MATH-ALG-001
+    name: 方程与不等式
+    required: true
+  - id: MATH-FUNC-001
+    name: 函数
+    required: true
+
+key_concepts:
+  - term: 有理数
+    definition: 可以表示为两个整数之比的数，包括整数和分数
+    importance: 核心
+  - term: 实数
+    definition: 有理数和无理数的统称，与数轴上的点一一对应
+    importance: 核心
+  - term: 整式
+    definition: 由数和字母通过有限次加减乘运算构成的代数式
+    importance: 核心
+  - term: 分式
+    definition: 分母中含有字母的代数式
+    importance: 核心
+  - term: 二次根式
+    definition: 形如√a（a≥0）的代数式
+    importance: 核心
+  - term: 运算律
+    definition: 加法交换律、结合律，乘法交换律、结合律、分配律
+    importance: 核心
+  - term: 数感
+    definition: 对数的意义、数的大小关系、运算结果的直观感知
+    importance: 核心
+  - term: 符号意识
+    definition: 能够理解并运用符号表示数、数量关系和变化规律
+    importance: 核心
+
+misconceptions:
+  - statement: "负数比正数小，所以负数的绝对值也比正数小"
+    correction: "绝对值表示数到原点的距离，负数的绝对值越大，这个负数本身越小"
+  - statement: "√a² = a"
+    correction: "√a² = |a|，当a为负数时，√a² = -a"
+  - statement: "分式的分母可以为零"
+    correction: "分式的分母不能为零，否则分式无意义"
+  - statement: "所有的数都是有理数"
+    correction: "实数包括有理数和无理数，如√2、π等都是无理数"
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用温度计量引入负数→Explore探索有理数运算规律→Explain总结运算律→Elaborate解决实际问题
+  - framework: 探究式学习
+    brief: 通过剪拼正方形发现无理数的存在，理解数轴上点的稠密性
+  - framework: 项目式学习
+    brief: 设计"家庭收支记录表"，运用正负数、运算律进行财务计算
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与符号运算
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 物理量的正负与方向
+    relation: 应用支撑
+  - subject: 化学
+    concept: 化学计量中的数值计算
+    relation: 应用支撑
+  - subject: 信息科技
+    concept: 计算机中的数值表示
+    relation: 知识衔接
+  - subject: 地理
+    concept: 海拔高度与温度变化
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数学之美观展厅
+    relation: 展示数与形的和谐关系

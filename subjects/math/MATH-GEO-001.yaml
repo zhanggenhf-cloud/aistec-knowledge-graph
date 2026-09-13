@@ -1,63 +1,84 @@
 id: MATH-GEO-001
-name: 图形与几何
-name_en: Geometry
+name: 图形的性质
+name_en: Properties of Figures
 subject: 数学
 domain: 图形与几何
-grade: 跨学段
+grade: 初中七至九年级
 
 description: |
-  认识基本几何图形（点、线、面、体）及其性质。
-  理解平行、垂直、相交等位置关系。
-  掌握三角形、四边形、圆等基本图形的性质和判定方法。
-  培养几何直观和空间观念，能够进行简单的几何推理。
-  了解几何图形在自然界和人造物品中的广泛应用。
+  图形的性质是初中数学图形与几何领域的核心内容。学生应经历探索图形特征的过程，建立基本的几何概念，理解点、线、面、角等基本元素及其关系。掌握相交线与平行线、三角形、四边形、圆等基本平面图形的性质和判定方法，能够进行简单的几何推理和证明。
+
+  在相交线与平行线学习方面，学生应理解对顶角、邻补角、同位角、内错角、同旁内角等概念，掌握平行线的判定和性质，理解平行线间的距离。
+
+  在三角形学习方面，学生应掌握三角形的边、角关系，理解全等三角形和相似三角形的判定和性质，掌握等腰三角形、直角三角形的特殊性质，了解三角形的内心、外心、重心。
+
+  在四边形学习方面，学生应掌握平行四边形、矩形、菱形、正方形等特殊四边形的性质和判定，理解它们之间的关系。
+
+  在圆的学习方面，学生应理解圆的基本元素（圆心、半径、直径、弦、弧、圆心角、圆周角），掌握垂径定理、圆周角定理，理解直线与圆的位置关系。
+
+  通过图形性质的学习，学生应形成推理能力，发展空间观念和几何直观，能够运用几何图形的基本性质进行推理证明。
 
 prerequisites:
   - id: MATH-MEAS-001
     name: 测量与单位
     required: false
+  - id: MATH-NUM-001
+    name: 数与式
+    required: true
 
 postrequisites:
+  - id: MATH-TRANS-001
+    name: 图形的变化与坐标
+    required: true
   - id: PHYS-OPTICS-001
     name: 光的直线传播
-  - id: PHYS-BUOY-001
-    name: 浮力（涉及体积计算）
+    required: false
 
 key_concepts:
-  - term: 几何直观
-    definition: 利用图表描述和分析问题的意识与习惯
+  - term: 平行线
+    definition: 在同一平面内不相交的两条直线
     importance: 核心
-  - term: 空间观念
-    definition: 对空间物体或图形的形状、大小、位置关系的认识
+  - term: 全等三角形
+    definition: 能够完全重合的两个三角形，对应边相等、对应角相等
     importance: 核心
-  - term: 三角形稳定性
-    definition: 三角形具有固定形状的特性，广泛应用于建筑结构
-    importance: 重要
+  - term: 相似三角形
+    definition: 形状相同但大小不一定相同的两个三角形，对应角相等、对应边成比例
+    importance: 核心
+  - term: 勾股定理
+    definition: 直角三角形两直角边的平方和等于斜边的平方
+    importance: 核心
   - term: 圆的性质
     definition: 圆是到定点距离等于定长的点的集合
-    importance: 重要
-  - term: 尺规作图
-    definition: 用无刻度直尺和圆规进行几何作图
-    importance: 重要
+    importance: 核心
+  - term: 圆周角定理
+    definition: 同弧所对的圆周角等于圆心角的一半
+    importance: 核心
+  - term: 几何证明
+    definition: 根据已知条件和几何公理、定理，通过逻辑推理得出结论的过程
+    importance: 核心
 
 misconceptions:
   - statement: "面积大的图形周长一定长"
     correction: "面积和周长没有必然的对应关系，如细长的长方形面积小但周长可以很大"
-    source: 义务教育数学课程标准（2022年版）
-  - statement: "所有三角形都是稳定的"
-    correction: "三角形结构稳定是指形状不易改变，但材料本身可能变形"
-    source: 义务教育数学课程标准（2022年版）
-
-cognitive_level:
-  min_age: 9
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 空间想象与逻辑推理
+  - statement: "两边及一角对应相等的两个三角形全等"
+    correction: "两边及夹角对应相等（SAS）才能判定全等，两边及其中一边的对角相等（SSA）不一定全等"
+  - statement: "所有正方形都是相似图形"
+    correction: "所有正方形确实都相似，因为对应角相等且对应边成比例"
+  - statement: "圆心角等于圆周角"
+    correction: "同弧所对的圆心角等于圆周角的两倍，不是相等"
 
 activity_suggestions:
   - framework: 5E
     brief: Explore用纸条搭建不同多边形→Explain发现三角形稳定性→Elaborate设计最稳固的桥梁结构
+  - framework: 探究式学习
+    brief: 通过剪拼活动探索勾股定理的证明
   - framework: 项目式学习
     brief: 设计并制作几何模型，探索几何在建筑和工程设计中的应用
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象与逻辑推理
 
 verification:
   status: verified
@@ -75,7 +96,7 @@ interdisciplinary:
   - subject: 艺术
     concept: 构图与透视
     relation: 应用实例
-  - subject: 工程/劳动
+  - subject: 劳动
     concept: 结构设计与稳定性
     relation: 应用支撑
 

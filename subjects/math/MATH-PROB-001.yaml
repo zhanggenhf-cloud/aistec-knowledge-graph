@@ -1,0 +1,96 @@
+id: MATH-PROB-001
+name: 随机事件的概率
+name_en: Probability of Random Events
+subject: 数学
+domain: 统计与概率
+grade: 初中九年级
+
+description: |
+  随机事件的概率是初中数学统计与概率领域的核心内容。学生应理解随机事件、必然事件、不可能事件的概念，掌握用列表法、画树状图等方法求简单随机事件的概率，理解频率与概率的关系，能够用频率估计概率。
+
+  在概率概念学习方面，学生应理解概率是对随机事件发生可能性大小的度量，必然事件的概率为1，不可能事件的概率为0，随机事件的概率在0到1之间。掌握简单随机事件概率的计算方法：P(A)=事件A发生的可能结果数/所有可能结果数。
+
+  在频率与概率关系方面，学生应通过大量重复试验，发现随机事件发生的频率具有稳定性，理解用频率估计概率的道理。了解概率在日常生活、科学研究、经济决策等领域的广泛应用。
+
+  通过概率的学习，学生应形成数据观念和推理能力，能够用概率思维分析和解释现实世界中的随机现象，理解随机性与规律性的辩证关系。
+
+prerequisites:
+  - id: MATH-STAT-001
+    name: 统计与数据分析
+    required: true
+  - id: MATH-NUM-001
+    name: 数与式
+    required: true
+
+postrequisites: []
+
+key_concepts:
+  - term: 随机事件
+    definition: 在一定条件下，可能发生也可能不发生的事件
+    importance: 核心
+  - term: 概率
+    definition: 表示随机事件发生可能性大小的数值，取值范围在0到1之间
+    importance: 核心
+  - term: 频率
+    definition: 在多次重复试验中，事件发生的次数与总试验次数的比值
+    importance: 核心
+  - term: 等可能事件
+    definition: 每个结果发生的可能性都相等的随机事件
+    importance: 核心
+  - term: 树状图
+    definition: 用树形结构表示所有可能结果的图示方法
+    importance: 重要
+  - term: 列表法
+    definition: 用表格列举所有可能结果的方法
+    importance: 重要
+  - term: 用频率估计概率
+    definition: 通过大量重复试验，用稳定的频率值估计概率
+    importance: 核心
+
+misconceptions:
+  - statement: "概率为0.5的事件一定发生一半"
+    correction: "概率是理论值，只有在大量重复试验中频率才接近概率，少量试验中不一定"
+  - statement: "连续抛硬币10次正面朝上，第11次反面朝上的概率更大"
+    correction: "每次抛硬币都是独立事件，正面和反面朝上的概率始终各为0.5"
+  - statement: "所有随机事件的概率都可以用公式计算"
+    correction: "只有等可能事件才能用古典概型计算，一般事件需要通过试验估计概率"
+  - statement: "频率就是概率"
+    correction: "频率是试验结果，概率是理论值，大量重复试验时频率稳定在概率附近"
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用抽奖活动引入→Explore进行抛硬币试验→Explain分析频率稳定性→Elaborate估计复杂事件概率
+  - framework: 探究式学习
+    brief: 通过大量重复试验验证硬币正面朝上的概率是否为0.5
+  - framework: 项目式学习
+    brief: 设计"公平游戏规则"，用概率知识分析不同规则的公平性
+
+cognitive_level:
+  min_age: 14
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与统计推理
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 科学实验中的随机误差
+    relation: 知识衔接
+  - subject: 信息科技
+    concept: 随机数生成与模拟
+    relation: 技术应用
+  - subject: 生物
+    concept: 遗传概率
+    relation: 应用实例
+  - subject: 地理
+    concept: 气象预报的概率表述
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 概率与统计展厅
+    relation: 展示随机现象与概率规律

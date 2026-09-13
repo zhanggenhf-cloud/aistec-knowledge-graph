@@ -1,0 +1,99 @@
+id: MATH-TRANS-001
+name: 图形的变化与坐标
+name_en: Transformations and Coordinates
+subject: 数学
+domain: 图形与几何
+grade: 初中七至九年级
+
+description: |
+  图形的变化与坐标是初中数学图形与几何领域的重要内容。学生应理解平移、旋转、轴对称、相似等图形变化的基本特征，掌握平面直角坐标系的基本概念，能够用坐标描述图形的位置和运动，理解数形结合的思想。
+
+  在图形的变化方面，学生应理解平移、旋转、轴对称是刚体变换，保持图形的形状和大小不变；相似变换保持形状不变但大小可以改变。能够利用这些变换进行图案设计，理解变换在艺术创作和工程设计中的应用。
+
+  在平面直角坐标系方面，学生应理解用有序数对表示平面内点的位置，掌握坐标轴上点的坐标特征，能够根据坐标描点、根据点写坐标。理解图形在坐标系中的平移规律，能够用坐标变化描述图形的运动。
+
+  通过图形的变化与坐标的学习，学生应发展空间观念和几何直观，感悟数形结合的思想方法，为后续学习解析几何奠定基础。
+
+prerequisites:
+  - id: MATH-GEO-001
+    name: 图形的性质
+    required: true
+
+postrequisites:
+  - id: PHYS-MOTION-001
+    name: 机械运动
+    required: false
+  - id: ART-VISUAL-001
+    name: 光与色彩
+    required: false
+
+key_concepts:
+  - term: 平移
+    definition: 图形沿某一方向移动一定的距离，形状和大小不变
+    importance: 核心
+  - term: 旋转
+    definition: 图形绕某一点转动一定的角度，形状和大小不变
+    importance: 核心
+  - term: 轴对称
+    definition: 图形沿某条直线折叠后，直线两旁的部分能够完全重合
+    importance: 核心
+  - term: 相似
+    definition: 形状相同但大小不一定相同的两个图形
+    importance: 核心
+  - term: 平面直角坐标系
+    definition: 由两条互相垂直、原点重合的数轴组成的坐标系
+    importance: 核心
+  - term: 坐标
+    definition: 用有序数对(x,y)表示平面内点的位置
+    importance: 核心
+  - term: 位似
+    definition: 一种特殊的相似，对应点连线交于一点
+    importance: 重要
+
+misconceptions:
+  - statement: "平移和旋转都会改变图形的形状"
+    correction: "平移和旋转是刚体变换，只改变图形的位置或方向，不改变形状和大小"
+  - statement: "相似图形的面积比等于相似比"
+    correction: "相似图形的面积比等于相似比的平方，周长比等于相似比"
+  - statement: "坐标系中x轴和y轴的单位长度必须相同"
+    correction: "坐标系中x轴和y轴的单位长度可以根据实际需要选择，不一定相同"
+  - statement: "轴对称图形只有一条对称轴"
+    correction: "轴对称图形可以有一条或多条对称轴，如圆有无数条对称轴"
+
+activity_suggestions:
+  - framework: 5E
+    brief: Explore用纸片进行平移、旋转、折叠操作→Explain总结变换的性质→Elaborate设计对称图案
+  - framework: 项目式学习
+    brief: 设计"校园导览图"，用坐标系表示各建筑位置
+  - framework: 探究式学习
+    brief: 利用几何画板探索相似图形的性质
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 空间想象与逻辑推理
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 机械运动与参照物
+    relation: 知识衔接
+  - subject: 艺术
+    concept: 图案设计与对称美学
+    relation: 应用实例
+  - subject: 信息科技
+    concept: 计算机图形学中的变换
+    relation: 知识衔接
+  - subject: 地理
+    concept: 地图坐标与定位
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数学之美观展厅
+    relation: 展示几何变换与对称美

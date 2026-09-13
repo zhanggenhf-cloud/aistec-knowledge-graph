@@ -1,0 +1,102 @@
+id: MATH-FUNC-001
+name: 函数
+name_en: Functions
+subject: 数学
+domain: 数与代数
+grade: 初中八至九年级
+
+description: |
+  函数是初中数学数与代数领域的核心内容，是描述变量之间对应关系的重要数学模型。学生应理解函数的概念，掌握一次函数、反比例函数、二次函数的图像和性质，能够用函数描述现实世界中的变化规律，解决实际问题。
+
+  在函数概念学习方面，学生应理解函数是刻画变化规律的数学模型，在一个变化过程中，如果有两个变量x和y，并且对于x的每一个确定的值，y都有唯一确定的值与其对应，那么y就是x的函数。掌握函数的三种表示方法：解析法、列表法、图像法。
+
+  在具体函数学习方面，学生应掌握一次函数y=kx+b（k≠0）的图像是一条直线，理解k和b的几何意义；掌握反比例函数y=k/x（k≠0）的图像是双曲线；掌握二次函数y=ax²+bx+c（a≠0）的图像是抛物线，理解开口方向、顶点、对称轴等性质。
+
+  通过函数的学习，学生应形成函数观念，能够用函数视角观察和分析现实世界中的变化现象，发展抽象能力和模型观念。
+
+prerequisites:
+  - id: MATH-NUM-001
+    name: 数与式
+    required: true
+  - id: MATH-EQU-001
+    name: 方程与不等式
+    required: true
+
+postrequisites:
+  - id: PHYS-MOTION-002
+    name: 速度
+    required: false
+  - id: PHYS-ENERGY-001
+    name: 能量
+    required: false
+
+key_concepts:
+  - term: 函数
+    definition: 两个变量之间的一种对应关系，对于自变量的每一个确定值，因变量都有唯一确定的值与之对应
+    importance: 核心
+  - term: 一次函数
+    definition: 形如y=kx+b（k≠0）的函数，图像是一条直线
+    importance: 核心
+  - term: 反比例函数
+    definition: 形如y=k/x（k≠0）的函数，图像是双曲线
+    importance: 核心
+  - term: 二次函数
+    definition: 形如y=ax²+bx+c（a≠0）的函数，图像是抛物线
+    importance: 核心
+  - term: 自变量与因变量
+    definition: 自变量是主动变化的量，因变量是随自变量变化而变化的量
+    importance: 核心
+  - term: 函数的图像
+    definition: 在平面直角坐标系中，用点的集合表示函数关系
+    importance: 核心
+  - term: 函数的性质
+    definition: 包括单调性、最值、对称性等
+    importance: 重要
+
+misconceptions:
+  - statement: "函数就是公式"
+    correction: "函数是一种对应关系，可以用公式、图像、表格等多种方式表示"
+  - statement: "所有的函数图像都是直线"
+    correction: "只有一次函数的图像是直线，反比例函数的图像是双曲线，二次函数的图像是抛物线"
+  - statement: "函数中一个x只能对应一个y，但一个y可以对应多个x"
+    correction: "函数要求对于每一个x有唯一的y与之对应，但不同的x可以对应相同的y"
+  - statement: "二次函数的图像开口方向只与a的正负有关"
+    correction: "开口方向确实只与a的正负有关（a>0向上，a<0向下），但开口大小与|a|有关"
+
+activity_suggestions:
+  - framework: 5E
+    brief: Engage用手机套餐计费引入→Explore建立函数模型→Explain分析不同方案的优劣→Elaborate设计最优方案
+  - framework: 项目式学习
+    brief: 设计"最优上学路线"，用函数模型比较时间、距离、费用
+  - framework: 探究式学习
+    brief: 利用几何画板探索二次函数系数对图像的影响
+
+cognitive_level:
+  min_age: 13
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 抽象思维与变量分析
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 物理
+    concept: 物理公式与变量关系
+    relation: 应用支撑
+  - subject: 化学
+    concept: 化学反应速率与浓度关系
+    relation: 应用支撑
+  - subject: 信息科技
+    concept: 编程中的函数与变量
+    relation: 概念衔接
+  - subject: 地理
+    concept: 人口增长模型
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数学之美观展厅
+    relation: 展示函数图像与变化规律

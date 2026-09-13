@@ -1,0 +1,96 @@
+id: MATH-PRAC-001
+name: 数学综合与实践
+name_en: Mathematical Comprehensive Practice
+subject: 数学
+domain: 综合与实践
+grade: 初中七至九年级
+
+description: |
+  数学综合与实践是2022版义务教育数学课程标准的重要组成部分，旨在培养学生综合运用所学知识和方法解决实际问题的能力。初中阶段以项目式学习为主，设计情境真实、较为复杂的问题，引导学生综合运用数学学科和跨学科的知识与方法解决问题。
+
+  综合与实践的学习内容应关注学生的现实（生活现实、数学现实、其他学科现实），选择具有真实背景的问题，让学生经历发现问题、提出问题、分析问题、解决问题的完整过程。活动形式包括主题式学习和项目式学习，强调跨学科主题学习。
+
+  在综合与实践活动中，学生应能够：从数学的角度观察与分析现实问题；用数学的思维思考与表达问题；用数学的语言描述与解释问题。综合运用数与代数、图形与几何、统计与概率等领域的知识和方法，积累数学活动经验，发展应用意识、创新意识和实践能力。
+
+  典型的综合与实践活动包括：设计最优方案、进行调查研究、建立数学模型、开展数学实验等。活动过程应体现「问题情境—建立模型—求解验证」的数学建模过程。
+
+prerequisites:
+  - id: MATH-NUM-001
+    name: 数与式
+    required: true
+  - id: MATH-ALG-001
+    name: 方程与不等式
+    required: false
+  - id: MATH-FUNC-001
+    name: 函数
+    required: false
+
+postrequisites: []
+
+key_concepts:
+  - term: 项目式学习
+    definition: 以真实问题为导向，整合多学科知识进行探究的学习方式
+    importance: 核心
+  - term: 数学建模
+    definition: 用数学语言描述现实问题并求解的过程
+    importance: 核心
+  - term: 应用意识
+    definition: 有意识地用数学概念、方法解释现实世界中的现象与规律
+    importance: 核心
+  - term: 创新意识
+    definition: 主动从数学角度发现问题、提出问题并探索新知
+    importance: 核心
+  - term: 跨学科主题学习
+    definition: 围绕一个主题，整合两个或多个学科的知识和方法进行学习
+    importance: 核心
+
+misconceptions:
+  - statement: 「综合与实践就是做数学游戏」
+    correction: 「综合与实践是运用数学知识解决真实问题的学习活动，强调数学的应用价值」
+  - statement: 「综合实践活动不需要数学知识」
+    correction: 「综合实践活动需要综合运用数学和其他学科的知识，数学是核心工具」
+  - statement: 「数学建模就是把数字代入公式」
+    correction: 「数学建模是从实际问题抽象出数学问题、建立模型、求解并验证的完整过程」
+
+activity_suggestions:
+  - framework: 项目式学习
+    brief: 设计「校园节能方案」，调查校园用电量，建立函数模型，提出节能建议
+  - framework: 项目式学习
+    brief: 开展「社区交通调查」，收集数据，用统计方法分析，提出改善建议
+  - framework: 主题式学习
+    brief: 「数学与建筑」主题，探索几何图形在建筑中的应用，设计建筑模型
+  - framework: 跨学科实践
+    brief: 与科学、信息科技合作，开展「智能农业」项目，用数学方法优化种植方案
+
+cognitive_level:
+  min_age: 12
+  piaget_stage: 形式运算阶段
+  prerequisite_reasoning: 综合思维与问题解决
+
+verification:
+  status: verified
+  sources:
+    - "义务教育数学课程标准（2022年版）"
+  last_verified: '2024-09-13'
+
+interdisciplinary:
+  - subject: 科学
+    concept: 科学探究与数据分析
+    relation: 方法衔接
+  - subject: 信息科技
+    concept: 数据处理与编程
+    relation: 技术应用
+  - subject: 地理
+    concept: 地理调查与空间分析
+    relation: 应用实例
+  - subject: 物理
+    concept: 物理实验与数据分析
+    relation: 方法衔接
+  - subject: 艺术
+    concept: 设计思维与美学
+    relation: 应用实例
+
+exhibits:
+  - venue: 中国科技馆
+    name: 数学之美观展厅
+    relation: 展示数学在现实生活中的应用

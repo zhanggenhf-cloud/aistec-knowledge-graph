@@ -6,23 +6,28 @@ domain: 数与代数
 grade: 跨学段
 
 description: |
-  理解测量的意义，认识常用计量单位（长度、质量、时间、角度等）。
-  掌握单位换算的基本方法，能够在实际情境中选择合适的单位。
-  了解国际单位制（SI）的基本思想。
-  培养量感，能够对物理量进行合理估计。
+  测量与单位是数学学习的基础内容，贯穿整个义务教育阶段。学生应理解测量的意义，认识常用计量单位（长度、质量、时间、角度、面积、体积等），掌握单位换算的基本方法，能够在实际情境中选择合适的单位。培养量感，能够对物理量进行合理估计。
 
-prerequisites:
-  - id: MATH-NUM-001
-    name: 数与运算
-    required: false
+  在长度测量方面，学生应掌握毫米、厘米、分米、米、千米等单位的换算，能够使用直尺、卷尺等工具进行测量。在质量测量方面，学生应掌握克、千克、吨等单位的换算。在时间测量方面，学生应掌握秒、分、时、日等单位的换算。
+
+  在面积和体积测量方面，学生应理解面积单位和体积单位的含义，掌握平方米、平方分米、平方厘米以及立方米、立方分米、立方厘米、升、毫升等单位的换算。
+
+  在角度测量方面，学生应认识度、分、秒等角度单位，能够使用量角器测量角度。
+
+  通过测量与单位的学习，学生应形成量感——对事物的可测量属性及大小关系的直观感知，理解国际单位制的基本思想，知道任何测量都存在误差。
+
+prerequisites: []
 
 postrequisites:
+  - id: MATH-NUM-001
+    name: 数与式
+    required: false
+  - id: MATH-GEO-001
+    name: 图形的性质
+    required: false
   - id: PHYS-MOTION-002
     name: 速度
-  - id: PHYS-MATTER-001
-    name: 质量
-  - id: CHEM-MAT-001
-    name: 物质的量
+    required: false
 
 key_concepts:
   - term: 量感
@@ -34,31 +39,35 @@ key_concepts:
   - term: 国际单位制
     definition: 国际通用的计量单位体系，包括米、千克、秒等基本单位
     importance: 重要
-  - term: 误差
+  - term: 测量误差
     definition: 测量值与真实值之间的差异
     importance: 重要
-  - term: 有效数字
-    definition: 测量中实际有意义的数字位数
-    importance: 拓展
+  - term: 估测
+    definition: 不借助测量工具，通过感官或经验对量的大小进行估计
+    importance: 重要
 
 misconceptions:
   - statement: "测量可以完全精确"
     correction: "任何测量都存在误差，误差只能通过改进方法减小，不能完全消除"
-    source: 义务教育数学课程标准（2022年版）
   - statement: "单位换算就是乘以或除以10"
     correction: "不同物理量的进率不同，如时间60进制、角度360进制等"
-    source: 义务教育数学课程标准（2022年版）
-
-cognitive_level:
-  min_age: 8
-  piaget_stage: 具体运算阶段
-  prerequisite_reasoning: 数感与空间感知
+  - statement: "面积单位和长度单位可以互相换算"
+    correction: "面积单位和长度单位属于不同的量纲，不能直接换算"
+  - statement: "1立方米等于1000立方厘米"
+    correction: "1立方米=1,000,000立方厘米，因为1米=100厘米，所以1立方米=(100)³立方厘米"
 
 activity_suggestions:
   - framework: 5E
     brief: Explore用不同工具测量同一物体→Explain讨论测量误差来源→Elaborate设计更精确的测量方案
   - framework: POE
     brief: 估计教室长度，然后用工具测量验证，对比估计值与测量值
+  - framework: 项目式学习
+    brief: 设计"我的房间平面图"，测量房间尺寸并计算面积
+
+cognitive_level:
+  min_age: 8
+  piaget_stage: 具体运算阶段
+  prerequisite_reasoning: 数感与空间感知
 
 verification:
   status: verified
@@ -76,6 +85,9 @@ interdisciplinary:
   - subject: 化学
     concept: 化学实验中的定量操作
     relation: 应用支撑
+  - subject: 地理
+    concept: 地图比例尺与实地测量
+    relation: 应用实例
 
 exhibits:
   - venue: 中国科技馆

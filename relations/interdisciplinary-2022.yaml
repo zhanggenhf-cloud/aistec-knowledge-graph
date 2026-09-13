@@ -613,3 +613,163 @@ edges:
     type: prerequisite
     strength: strong
     note: 遗传变异是生物进化的基础
+
+  # 数学内部关系
+  - from: MATH-MEAS-001
+    to: MATH-NUM-001
+    type: prerequisite
+    strength: moderate
+    note: 测量与单位是数与式应用的基础
+
+  - from: MATH-NUM-001
+    to: MATH-ALG-001
+    type: prerequisite
+    strength: strong
+    note: 数与式是方程与不等式的基础
+
+  - from: MATH-NUM-001
+    to: MATH-FUNC-001
+    type: prerequisite
+    strength: strong
+    note: 数与式是函数学习的基础
+
+  - from: MATH-ALG-001
+    to: MATH-FUNC-001
+    type: prerequisite
+    strength: strong
+    note: 方程与不等式是理解函数零点的基础
+
+  - from: MATH-NUM-001
+    to: MATH-GEO-001
+    type: prerequisite
+    strength: strong
+    note: 数是几何度量的基础
+
+  - from: MATH-GEO-001
+    to: MATH-TRANS-001
+    type: prerequisite
+    strength: strong
+    note: 图形性质是理解图形变化的基础
+
+  - from: MATH-NUM-001
+    to: MATH-STAT-001
+    type: prerequisite
+    strength: strong
+    note: 数是统计分析的基础
+
+  - from: MATH-STAT-001
+    to: MATH-PROB-001
+    type: prerequisite
+    strength: strong
+    note: 数据分析是概率学习的基础
+
+  # 数学 ↔ 物理（补充）
+  - from: MATH-NUM-001
+    to: PHYS-MOTION-002
+    type: related
+    strength: strong
+    note: 数值计算与物理公式应用
+
+  - from: MATH-FUNC-001
+    to: PHYS-MOTION-001
+    type: related
+    strength: strong
+    note: 函数描述运动规律
+
+  - from: MATH-GEO-001
+    to: PHYS-OPTICS-001
+    type: related
+    strength: moderate
+    note: 几何光学中的图形分析
+
+  # 数学 ↔ 化学（补充）
+  - from: MATH-ALG-001
+    to: CHEM-REACT-002
+    type: prerequisite
+    strength: strong
+    note: 化学方程式计算需要代数运算
+
+  - from: MATH-FUNC-001
+    to: CHEM-REACT-004
+    type: related
+    strength: moderate
+    note: 化学反应中的变量关系
+
+  # 数学 ↔ 生物（补充）
+  - from: MATH-STAT-001
+    to: BIO-DIV-001
+    type: related
+    strength: strong
+    note: 生物多样性调查需要统计分析
+
+  - from: MATH-PROB-001
+    to: BIO-REPRO-002
+    type: related
+    strength: strong
+    note: 遗传概率计算
+
+  # 数学 ↔ 地理（补充）
+  - from: MATH-STAT-001
+    to: GEO-EARTH-003
+    type: related
+    strength: strong
+    note: 气候数据统计与分析
+
+  - from: MATH-MEAS-001
+    to: GEO-TOOL-001
+    type: related
+    strength: strong
+    note: 地图测量与比例尺计算
+
+  # 数学 ↔ 信息科技
+  - from: MATH-ALG-001
+    to: IT-ALGO-001
+    type: related
+    strength: strong
+    note: 算法思维与代数推理
+
+  - from: MATH-FUNC-001
+    to: IT-ALGO-001
+    type: related
+    strength: strong
+    note: 函数与编程中的方法
+
+  - from: MATH-STAT-001
+    to: IT-DATA-001
+    type: related
+    strength: strong
+    note: 数据分析与信息处理
+
+  # 数学 ↔ 艺术
+  - from: MATH-GEO-001
+    to: ART-VISUAL-001
+    type: related
+    strength: moderate
+    note: 几何图形与美术构图
+
+  - from: MATH-TRANS-001
+    to: ART-VISUAL-001
+    type: related
+    strength: moderate
+    note: 对称变换与艺术设计
+
+  # 数学 ↔ 劳动
+  - from: MATH-MEAS-001
+    to: LAB-DAILY-001
+    type: related
+    strength: moderate
+    note: 测量技术在劳动中的应用
+
+  # 数学 ↔ 历史
+  - from: MATH-STAT-001
+    to: HIS-ANC-003
+    type: related
+    strength: moderate
+    note: 历史数据的统计分析
+
+  # 数学 ↔ 综合实践活动
+  - from: MATH-PRAC-001
+    to: COMP-PROJ-001
+    type: application
+    strength: strong
+    note: 数学综合实践与项目式学习整合
