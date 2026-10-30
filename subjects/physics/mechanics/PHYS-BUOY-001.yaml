@@ -21,6 +21,9 @@ prerequisites:
   - id: PHYS-FORCE-001
     name: 力的概念
     required: true
+  - id: PHYS-PRESSURE-003
+    name: 大气压强与流体压强
+    required: false
 
 postrequisites:
   - id: PHYS-BUOY-002

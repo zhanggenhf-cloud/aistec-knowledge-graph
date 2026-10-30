@@ -16,7 +16,10 @@ prerequisites:
     name: 酸碱中和
     required: true
 
-postrequisites: []
+postrequisites:
+  - id: CHEM-FERT-001
+    name: 化学肥料
+    required: true
 
 key_concepts:
   - term: 盐

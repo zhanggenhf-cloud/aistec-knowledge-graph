@@ -22,6 +22,9 @@ prerequisites:
 postrequisites:
   - id: SCI-ENV-001
     name: 人类活动与环境
+  - id: GEO-ENV-001
+    name: 自然资源与环境保护
+    required: false
 
 key_concepts:
   - term: 生态系统

@@ -24,6 +24,9 @@ postrequisites:
     name: 动能和势能
   - id: PHYS-SIMPLE-003
     name: 机械效率
+  - id: PHYS-ENERGY-002
+    name: 机械能及其转化
+    required: true
 
 key_concepts:
   - term: 功

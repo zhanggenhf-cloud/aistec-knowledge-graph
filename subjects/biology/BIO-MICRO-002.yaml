@@ -17,6 +17,9 @@ prerequisites:
 - id: BIO-BODY-004
   name: 人体内物质的运输
   required: false
+- id: BIO-ANIMAL-001
+  name: 动物的运动
+  required: false
 postrequisites:
 - id: BIO-IMMUN-001
   name: 免疫

@@ -23,6 +23,9 @@ postrequisites:
     name: 单质与化合物
   - id: CHEM-MAT-004
     name: 氧化物
+  - id: CHEM-REACT-001
+    name: 化学变化与物理变化
+    required: true
 
 key_concepts:
   - term: 纯净物

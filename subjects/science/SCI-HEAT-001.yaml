@@ -17,10 +17,19 @@ prerequisites:
   - id: SCI-MAT-001
     name: 物体具有一定的特征，材料具有一定的性能
     required: false
+  - id: SCI-MAT-005
+    name: 物质的状态变化与温度
+    required: false
 
 postrequisites:
   - id: PHYS-HEAT-001
     name: 温度与物态变化
+  - id: PHYS-THERMO-001
+    name: 温度与物态变化
+    required: true
+  - id: SCI-WATER-001
+    name: 水在自然界的循环
+    required: false
 
 key_concepts:
   - term: 温度

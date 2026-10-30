@@ -24,6 +24,15 @@ prerequisites:
   - id: IT-NET-001
     name: 网络基础
     required: false
+  - id: MATH-STAT-001
+    name: 抽样与数据分析
+    required: false
+  - id: IT-IOT-001
+    name: 物联网实践与探索
+    required: false
+  - id: LAB-TECH-001
+    name: 新技术体验与应用
+    required: false
 
 postrequisites:
   - id: IT-SEC-001

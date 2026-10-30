@@ -23,12 +23,21 @@ prerequisites:
   - id: GEO-EARTH-004
     name: 地球的运动
     required: false
+  - id: SCI-WATER-001
+    name: 水在自然界的循环
+    required: false
 
 postrequisites:
   - id: GEO-ENV-001
     name: 自然资源与环境保护
   - id: SCI-EARTH-003
     name: 地球上的水
+  - id: GEO-REGION-001
+    name: 认识世界
+    required: true
+  - id: GEO-REGION-002
+    name: 认识中国
+    required: true
 
 key_concepts:
   - term: 天气

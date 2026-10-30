@@ -14,11 +14,17 @@ description: |
   能对自己和他人的作品进行评价，并提出改进建议。
   了解技术与科学的关系：科学发现推动技术进步，技术应用促进科学发展。
 
-prerequisites: []
+prerequisites:
+  - id: SCI-TECH-003
+    name: 技术与生活
+    required: false
 
 postrequisites:
   - id: SCI-ENG-001
     name: 工程设计与物化
+  - id: IT-DATA-001
+    name: 数据与信息
+    required: false
 
 key_concepts:
   - term: 工程设计

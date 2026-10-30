@@ -17,6 +17,12 @@ prerequisites:
 - id: BIO-PLANT-001
   name: 植物的光合作用
   required: false
+- id: BIO-PLANT-002
+  name: 植物的呼吸作用
+  required: false
+- id: BIO-PLANT-003
+  name: 植物的结构层次
+  required: false
 postrequisites:
 - id: BIO-DIV-002
   name: 生物的多样性

@@ -15,12 +15,21 @@ prerequisites:
   - id: CHEM-MAT-001
     name: 物质的多样性
     required: true
+  - id: CHEM-MAT-004
+    name: 氧化物
+    required: false
+  - id: CHEM-OXY-001
+    name: 氧气
+    required: false
 
 postrequisites:
   - id: CHEM-REACT-003
     name: 质量守恒定律
   - id: CHEM-REACT-002
     name: 化学方程式
+  - id: CHEM-REACT-004
+    name: 化学变化中的能量变化
+    required: true
 
 key_concepts:
   - term: 物理变化

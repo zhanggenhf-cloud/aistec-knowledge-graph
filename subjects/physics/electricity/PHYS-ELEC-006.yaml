@@ -32,6 +32,9 @@ prerequisites:
   - id: PHYS-ELEC-004
     name: 电压与电压表
     required: true
+  - id: PHYS-ELEC-008
+    name: 串联与并联电路
+    required: false
 
 postrequisites:
   - id: PHYS-ELEC-007

@@ -16,6 +16,9 @@ prerequisites:
   - id: GEO-EARTH-001
     name: 地球在宇宙中
     required: true
+  - id: GEO-EARTH-004
+    name: 地球的运动
+    required: false
 
 postrequisites:
   - id: GEO-REGION-001

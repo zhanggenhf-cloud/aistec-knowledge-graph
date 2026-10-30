@@ -21,6 +21,9 @@ prerequisites:
   - id: PHYS-MOTION-002
     name: 速度
     required: true
+  - id: MATH-FUNC-001
+    name: 函数
+    required: false
 
 postrequisites:
   - id: PHYS-ENERGY-002

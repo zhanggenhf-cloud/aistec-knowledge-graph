@@ -29,6 +29,9 @@ postrequisites:
   - id: CHEM-REACT-002
     name: 化学方程式计算
     required: false
+  - id: MATH-PRAC-001
+    name: 数学综合与实践
+    required: false
 
 key_concepts:
   - term: 方程

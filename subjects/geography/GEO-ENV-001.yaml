@@ -22,6 +22,12 @@ prerequisites:
   - id: SCI-ECO-001
     name: 生态系统与环境保护（小学）
     required: false
+  - id: GEO-EARTH-003
+    name: 天气与气候
+    required: false
+  - id: SCI-ENV-001
+    name: 人类活动与环境
+    required: false
 
 postrequisites: []
 

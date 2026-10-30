@@ -16,6 +16,12 @@ prerequisites:
   - id: GEO-EARTH-001
     name: 地球在宇宙中
     required: true
+  - id: SCI-MOON-001
+    name: 月相变化
+    required: false
+  - id: SCI-SEAS-001
+    name: 季节变化与地球公转
+    required: false
 
 postrequisites:
   - id: GEO-EARTH-002

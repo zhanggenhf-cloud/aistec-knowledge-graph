@@ -17,12 +17,18 @@ prerequisites:
 - id: BIO-PLANT-003
   name: 植物的结构层次
   required: false
+- id: BIO-CELL-003
+  name: 细胞的生活
+  required: false
 postrequisites:
 - id: BIO-PLANT-002
   name: 植物的呼吸作用
   required: false
 - id: BIO-ECO-002
   name: 生态系统
+  required: false
+- id: BIO-CROSS-001
+  name: 生物学与社会·跨学科实践
   required: false
 key_concepts:
 - term: 光合作用

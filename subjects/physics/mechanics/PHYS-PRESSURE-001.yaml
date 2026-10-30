@@ -18,6 +18,9 @@ prerequisites:
   - id: PHYS-FORCE-002
     name: 重力
     required: true
+  - id: PHYS-NEWTON-002
+    name: 二力平衡
+    required: false
 
 postrequisites:
   - id: PHYS-PRESSURE-002

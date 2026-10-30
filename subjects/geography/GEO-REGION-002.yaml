@@ -29,6 +29,9 @@ prerequisites:
   - id: GEO-TOOL-001
     name: 地理工具
     required: true
+  - id: GEO-EARTH-002
+    name: 地图的阅读与使用
+    required: false
 
 postrequisites:
   - id: GEO-ENV-001

@@ -20,6 +20,9 @@ prerequisites:
   - id: SCI-LIFE-004
     name: 动物和植物都有基本生存需要
     required: true
+  - id: SCI-BODY-001
+    name: 人体由多个系统组成
+    required: false
 
 postrequisites: []
 

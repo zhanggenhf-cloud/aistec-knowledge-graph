@@ -18,6 +18,9 @@ prerequisites:
   - id: SCI-LIGHT-001
     name: 光与颜色（小学）
     required: false
+  - id: MATH-TRANS-001
+    name: 图形的变化与坐标
+    required: false
 
 postrequisites: []
 

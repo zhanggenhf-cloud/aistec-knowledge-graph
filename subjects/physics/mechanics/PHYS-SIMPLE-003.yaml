@@ -19,6 +19,15 @@ prerequisites:
   - id: PHYS-SIMPLE-001
     name: 杠杆
     required: true
+  - id: PHYS-ENERGY-002
+    name: 机械能及其转化
+    required: false
+  - id: PHYS-SIMPLE-002
+    name: 滑轮
+    required: false
+  - id: PHYS-BUOY-003
+    name: 物体的浮沉条件
+    required: false
 
 postrequisites: []
 

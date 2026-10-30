@@ -21,6 +21,9 @@ prerequisites:
 postrequisites:
   - id: SCI-WATER-001
     name: 水在自然界的循环
+  - id: SCI-DISS-001
+    name: 溶解与溶液
+    required: false
 
 key_concepts:
   - term: 水的性质

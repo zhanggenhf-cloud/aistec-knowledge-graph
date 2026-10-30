@@ -6,7 +6,10 @@ domain: 力学
 grade: 初中八年级上
 description: 质量的详细教学内容。
 prerequisites: []
-postrequisites: []
+postrequisites:
+  - id: PHYS-MATTER-002
+    name: 密度
+    required: true
 key_concepts:
 - term: 质量
   definition: ''

@@ -21,6 +21,24 @@ postrequisites:
 - id: BIO-PLANT-001
   name: 植物的光合作用
   required: false
+- id: BIO-PLANT-002
+  name: 植物的呼吸作用
+  required: true
+- id: BIO-MICRO-001
+  name: 微生物
+  required: true
+- id: BIO-BODY-002
+  name: 人体的营养
+  required: true
+- id: BIO-CROSS-001
+  name: 生物学与社会·跨学科实践
+  required: true
+- id: BIO-NERVE-001
+  name: 神经系统
+  required: true
+- id: BIO-BODY-003
+  name: 人体的呼吸
+  required: true
 key_concepts:
 - term: 细胞膜
   definition: 包围在细胞质外层的薄膜，具有控制物质进出、保护细胞的作用

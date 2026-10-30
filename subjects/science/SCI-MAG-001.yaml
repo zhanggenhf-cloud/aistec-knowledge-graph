@@ -15,7 +15,10 @@ description: |
 
 prerequisites: []
 
-postrequisites: []
+postrequisites:
+  - id: PHYS-MAG-002
+    name: 电流的磁场
+    required: false
 
 key_concepts:
   - term: 磁性

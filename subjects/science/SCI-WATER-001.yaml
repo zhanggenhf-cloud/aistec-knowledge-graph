@@ -17,10 +17,19 @@ prerequisites:
   - id: SCI-HEAT-001
     name: 热可以改变物质的状态
     required: false
+  - id: SCI-MAT-002
+    name: 水是一种常见而重要的单一物质
+    required: false
 
 postrequisites:
   - id: GEO-EARTH-003
     name: 天气与气候
+  - id: SCI-ENV-001
+    name: 人类活动与环境
+    required: false
+  - id: SCI-EARTH-002
+    name: 地球上有大气、水、生物、土壤和岩石
+    required: false
 
 key_concepts:
   - term: 蒸发

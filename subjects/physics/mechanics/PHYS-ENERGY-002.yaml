@@ -18,6 +18,9 @@ prerequisites:
   - id: PHYS-WORK-001
     name: 功与功率
     required: true
+  - id: PHYS-FORCE-004
+    name: 摩擦力
+    required: false
 
 postrequisites:
   - id: PHYS-SIMPLE-003

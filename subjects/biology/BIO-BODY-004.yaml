@@ -24,6 +24,15 @@ postrequisites:
 - id: BIO-ENDO-001
   name: 内分泌系统
   required: false
+- id: BIO-IMMUN-001
+  name: 免疫
+  required: true
+- id: BIO-MICRO-002
+  name: 传染病与免疫
+  required: false
+- id: BIO-ANIMAL-001
+  name: 动物的运动
+  required: false
 key_concepts:
 - term: 血液循环系统
   definition: 由血液、血管和心脏组成，负责体内物质运输的系统

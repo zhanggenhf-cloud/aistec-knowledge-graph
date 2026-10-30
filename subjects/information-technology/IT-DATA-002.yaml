@@ -29,6 +29,12 @@ postrequisites:
     name: 物联网实践与探索
   - id: IT-AI-001
     name: 人工智能初探
+  - id: IT-PROC-001
+    name: 过程与控制
+    required: false
+  - id: IT-SEC-001
+    name: 信息安全与隐私保护
+    required: false
 
 key_concepts:
   - term: 编码

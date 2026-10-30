@@ -17,6 +17,9 @@ prerequisites:
   - id: SCI-EARTH-002
     name: 地球上有大气、水、生物、土壤和岩石
     required: false
+  - id: GEO-EARTH-003
+    name: 天气与气候
+    required: false
 
 postrequisites:
   - id: SCI-ENV-001

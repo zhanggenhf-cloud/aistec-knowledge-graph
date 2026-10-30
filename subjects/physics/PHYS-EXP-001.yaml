@@ -19,7 +19,10 @@ prerequisites:
     name: 测量与单位
     required: true
 
-postrequisites: []
+postrequisites:
+  - id: PHYS-CROSS-001
+    name: 物理跨学科实践
+    required: false
 
 key_concepts:
   - term: 科学探究

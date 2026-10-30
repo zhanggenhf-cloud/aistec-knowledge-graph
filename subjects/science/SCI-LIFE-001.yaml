@@ -21,6 +21,24 @@ postrequisites:
     name: 动物和植物都有基本生存需要
   - id: SCI-BODY-001
     name: 人体由多个系统组成
+  - id: BIO-DIV-001
+    name: 生物的分类
+    required: true
+  - id: BIO-ECO-002
+    name: 生态系统
+    required: true
+  - id: BIO-CELL-001
+    name: 细胞是生命活动的基本单位
+    required: true
+  - id: SCI-HOME-001
+    name: 生物体的稳态与调节
+    required: true
+  - id: SCI-LIFE-002
+    name: 生物能适应其生存环境
+    required: false
+  - id: SCI-LIFE-003
+    name: 生物能生长、发育和繁殖后代
+    required: false
 
 key_concepts:
   - term: 细胞

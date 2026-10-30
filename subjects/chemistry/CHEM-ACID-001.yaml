@@ -23,6 +23,9 @@ prerequisites:
 postrequisites:
   - id: CHEM-ACID-002
     name: 酸碱中和
+  - id: CHEM-METAL-002
+    name: 金属的化学性质
+    required: true
 
 key_concepts:
   - term: 酸

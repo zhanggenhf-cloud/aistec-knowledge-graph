@@ -9,7 +9,13 @@ prerequisites:
 - id: PHYS-MATTER-001
   name: ''
   required: true
-postrequisites: []
+postrequisites:
+  - id: PHYS-PRESSURE-002
+    name: 液体压强
+    required: true
+  - id: PHYS-BUOY-002
+    name: 阿基米德原理
+    required: true
 key_concepts:
 - term: 密度
   definition: ''

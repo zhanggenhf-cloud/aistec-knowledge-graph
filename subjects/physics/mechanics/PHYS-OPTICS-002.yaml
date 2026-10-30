@@ -9,7 +9,10 @@ prerequisites:
 - id: PHYS-OPTICS-001
   name: ''
   required: true
-postrequisites: []
+postrequisites:
+  - id: PHYS-OPTICS-003
+    name: 平面镜成像
+    required: true
 key_concepts:
 - term: 光的反射
   definition: ''

@@ -14,6 +14,18 @@ prerequisites:
   - id: PHYS-MOTION-001
     name: 机械运动
     required: true
+  - id: MATH-MEAS-001
+    name: 测量与单位
+    required: false
+  - id: MATH-FUNC-001
+    name: 函数
+    required: false
+  - id: MATH-EQU-001
+    name: 方程与不等式
+    required: false
+  - id: MATH-ALG-001
+    name: 方程与不等式
+    required: false
 
 postrequisites:
   - id: PHYS-WORK-001

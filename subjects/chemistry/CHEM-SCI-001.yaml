@@ -22,6 +22,18 @@ postrequisites:
     name: 纯净物与混合物
   - id: CHEM-OXY-001
     name: 氧气
+  - id: CHEM-WATER-001
+    name: 水的组成与变化
+    required: true
+  - id: CHEM-CROSS-001
+    name: 化学跨学科实践活动
+    required: true
+  - id: CHEM-MAT-001
+    name: 物质的多样性
+    required: true
+  - id: CHEM-ACID-001
+    name: 常见的酸和碱
+    required: true
 
 key_concepts:
   - term: 化学科学本质

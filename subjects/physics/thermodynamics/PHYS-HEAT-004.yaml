@@ -32,6 +32,9 @@ prerequisites:
   - id: PHYS-ELEC-007
     name: 电功率
     required: false
+  - id: PHYS-HEAT-002
+    name: 比热容
+    required: false
 
 postrequisites:
   - id: PHYS-ENERGY-003

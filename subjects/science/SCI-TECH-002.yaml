@@ -19,7 +19,10 @@ prerequisites:
     name: 力作用于物体，可以改变物体的形状和运动状态
     required: false
 
-postrequisites: []
+postrequisites:
+  - id: LAB-TECH-001
+    name: 新技术体验与应用
+    required: false
 
 key_concepts:
   - term: 杠杆

@@ -21,6 +21,12 @@ prerequisites:
 postrequisites:
   - id: CHEM-MAT-003
     name: 单质与化合物
+  - id: CHEM-GAS-001
+    name: 空气的组成
+    required: true
+  - id: SCI-WEATHER-001
+    name: 天气现象有阴、晴、雨、雪、风等
+    required: false
 
 key_concepts:
   - term: 空气的成分

@@ -15,6 +15,12 @@ prerequisites:
   - id: CHEM-MAT-002
     name: 纯净物与混合物
     required: true
+  - id: CHEM-WATER-001
+    name: 水的组成与变化
+    required: false
+  - id: SCI-DISS-001
+    name: 溶解与溶液
+    required: false
 
 postrequisites:
   - id: CHEM-SOL-002

@@ -21,6 +21,12 @@ prerequisites:
   - id: CHEM-REACT-003
     name: 质量守恒定律
     required: true
+  - id: MATH-EQU-001
+    name: 方程与不等式
+    required: false
+  - id: MATH-ALG-001
+    name: 方程与不等式
+    required: false
 
 postrequisites:
   - id: CHEM-REACT-004

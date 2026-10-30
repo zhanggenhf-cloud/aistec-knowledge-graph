@@ -17,7 +17,10 @@ prerequisites:
     name: 地理工具
     required: true
 
-postrequisites: []
+postrequisites:
+  - id: GEO-CROSS-001
+    name: 地理跨学科主题学习
+    required: true
 
 key_concepts:
   - term: 地理实验

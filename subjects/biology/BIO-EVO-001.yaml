@@ -17,6 +17,9 @@ prerequisites:
 - id: BIO-DIV-001
   name: 生物的分类
   required: false
+- id: BIO-DIV-002
+  name: 生物的多样性
+  required: false
 postrequisites: []
 key_concepts:
 - term: 生物进化

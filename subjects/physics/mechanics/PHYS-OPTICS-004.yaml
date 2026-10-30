@@ -9,7 +9,10 @@ prerequisites:
 - id: PHYS-OPTICS-001
   name: ''
   required: true
-postrequisites: []
+postrequisites:
+  - id: PHYS-LENS-001
+    name: 凸透镜成像规律
+    required: true
 key_concepts:
 - term: 光的折射
   definition: ''

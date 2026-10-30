@@ -44,6 +44,9 @@ postrequisites:
     name: 家庭电路
   - id: PHYS-ENERGY-003
     name: 能源与可持续发展
+  - id: PHYS-HEAT-004
+    name: 热机效率
+    required: false
 
 key_concepts:
   - term: 电功率

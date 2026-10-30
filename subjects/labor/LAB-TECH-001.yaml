@@ -18,6 +18,9 @@ prerequisites:
   - id: SCI-TECH-002
     name: 技术与工程（小学）
     required: false
+  - id: LAB-DAILY-001
+    name: 日常生活劳动
+    required: false
 
 postrequisites:
   - id: IT-AI-001

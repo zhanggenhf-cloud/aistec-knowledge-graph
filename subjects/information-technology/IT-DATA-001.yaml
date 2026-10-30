@@ -26,6 +26,12 @@ postrequisites:
     name: 算法基础
   - id: MATH-STAT-001
     name: 统计与数据分析
+  - id: IT-CROSS-001
+    name: 信息科技跨学科实践
+    required: false
+  - id: IT-NET-001
+    name: 网络基础
+    required: false
 
 key_concepts:
   - term: 数据

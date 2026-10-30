@@ -21,10 +21,16 @@ prerequisites:
   - id: PHYS-FORCE-003
     name: 弹力
     required: true
+  - id: PHYS-NEWTON-001
+    name: 牛顿第一定律
+    required: false
 
 postrequisites:
   - id: PHYS-PRESSURE-001
     name: 压强
+  - id: PHYS-SIMPLE-001
+    name: 杠杆
+    required: true
 
 key_concepts:
   - term: 二力平衡

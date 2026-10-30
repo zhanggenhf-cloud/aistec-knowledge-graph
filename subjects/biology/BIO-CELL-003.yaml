@@ -24,6 +24,15 @@ postrequisites:
 - id: BIO-PLANT-002
   name: 植物的呼吸作用
   required: false
+- id: BIO-REPRO-002
+  name: 生物的遗传与变异
+  required: true
+- id: BIO-REPRO-001
+  name: 生物的生殖
+  required: true
+- id: BIO-PLANT-003
+  name: 植物的结构层次
+  required: true
 key_concepts:
 - term: 细胞的生活
   definition: 细胞内发生的各种生命活动，包括物质运输、能量转换和信息传递

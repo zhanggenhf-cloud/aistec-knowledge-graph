@@ -35,6 +35,12 @@ postrequisites:
     name: 比热容
   - id: PHYS-HEAT-003
     name: 热机
+  - id: PHYS-HEAT-004
+    name: 热机效率
+    required: true
+  - id: PHYS-ELEC-010
+    name: 焦耳定律
+    required: false
 
 key_concepts:
   - term: 内能

@@ -17,6 +17,9 @@ prerequisites:
 - id: BIO-NERVE-001
   name: 神经系统
   required: false
+- id: BIO-BODY-003
+  name: 人体的呼吸
+  required: false
 postrequisites:
 - id: BIO-MICRO-002
   name: 传染病与免疫

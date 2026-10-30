@@ -9,7 +9,19 @@ prerequisites:
 - id: SCI-LIGHT-001
   name: ''
   required: true
-postrequisites: []
+- id: MATH-GEO-001
+  name: 图形的性质
+  required: false
+postrequisites:
+  - id: PHYS-OPTICS-002
+    name: 光的反射
+    required: true
+  - id: PHYS-OPTICS-004
+    name: 光的折射
+    required: true
+  - id: ART-VISUAL-001
+    name: 光与色彩
+    required: false
 key_concepts:
 - term: 光的直线传播
   definition: ''

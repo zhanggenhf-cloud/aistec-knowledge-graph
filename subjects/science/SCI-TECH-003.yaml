@@ -18,6 +18,9 @@ prerequisites: []
 postrequisites:
   - id: SCI-TECH-001
     name: 工程设计过程
+  - id: COMP-PROJ-001
+    name: 跨学科项目式学习
+    required: false
 
 key_concepts:
   - term: 技术产品

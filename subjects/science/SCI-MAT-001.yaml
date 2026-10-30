@@ -20,6 +20,27 @@ postrequisites:
     name: 导体与绝缘体
   - id: SCI-MAT-002
     name: 水是一种常见而重要的单一物质
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: true
+  - id: SCI-MAT-003
+    name: 空气是一种常见而重要的混合物质
+    required: false
+  - id: SCI-FORCE-001
+    name: 声音因物体振动而产生
+    required: false
+  - id: SCI-LIGHT-001
+    name: 光在空气中沿直线传播
+    required: false
+  - id: SCI-MAT-005
+    name: 物质的状态变化与温度
+    required: false
+  - id: SCI-HEAT-001
+    name: 热可以改变物质的状态
+    required: false
+  - id: SCI-MAT-004
+    name: 物体的运动可以用位置、快慢和方向来描述
+    required: false
 
 key_concepts:
   - term: 物体的特征

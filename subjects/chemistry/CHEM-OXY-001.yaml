@@ -22,6 +22,9 @@ prerequisites:
 postrequisites:
   - id: CHEM-REACT-001
     name: 化学变化与物理变化
+  - id: CHEM-OXY-002
+    name: 制取氧气
+    required: true
 
 key_concepts:
   - term: 氧气的物理性质

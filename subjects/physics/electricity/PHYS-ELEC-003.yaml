@@ -40,6 +40,12 @@ postrequisites:
     name: 电流的磁场
   - id: PHYS-ELEC-006
     name: 欧姆定律
+  - id: PHYS-MAG-003
+    name: 电动机
+    required: true
+  - id: PHYS-ELEC-007
+    name: 电功率
+    required: true
 
 key_concepts:
   - term: 电流

@@ -13,14 +13,21 @@ description: |
   知道日食和月食的成因。
   了解人类探索太空的历程和成就，激发探索宇宙的兴趣。
 
-prerequisites:
-  - id: SCI-MOON-001
-    name: 月相变化
-    required: false
+prerequisites: []
+root_reason: "学习者已通过日常观察太阳东升西落、月相圆缺、四季更替等天文现象积累了朴素的宇宙运行经验"
 
 postrequisites:
   - id: GEO-EARTH-001
     name: 地球在宇宙中
+  - id: SCI-MOON-001
+    name: 月相变化
+    required: false
+  - id: SCI-STARS-001
+    name: 星座与星系
+    required: false
+  - id: SCI-SEAS-001
+    name: 季节变化与地球公转
+    required: false
 
 key_concepts:
   - term: 太阳系

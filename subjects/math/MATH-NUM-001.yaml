@@ -24,6 +24,27 @@ postrequisites:
   - id: MATH-FUNC-001
     name: 函数
     required: true
+  - id: MATH-STAT-001
+    name: 抽样与数据分析
+    required: true
+  - id: MATH-GEO-001
+    name: 图形的性质
+    required: true
+  - id: MATH-PROB-001
+    name: 随机事件的概率
+    required: true
+  - id: MATH-EQU-001
+    name: 方程与不等式
+    required: true
+  - id: MATH-PRAC-001
+    name: 数学综合与实践
+    required: true
+  - id: IT-ALGO-001
+    name: 算法基础
+    required: false
+  - id: IT-DATA-002
+    name: 数据的组织与编码
+    required: false
 
 key_concepts:
   - term: 有理数

@@ -31,6 +31,9 @@ postrequisites:
     name: 电路
   - id: PHYS-ELEC-003
     name: 电流与电流表
+  - id: PHYS-ELEC-004
+    name: 电压与电压表
+    required: true
 
 key_concepts:
   - term: 两种电荷

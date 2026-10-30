@@ -28,6 +28,15 @@ postrequisites:
   - id: PHYS-MOTION-002
     name: 速度
     required: false
+  - id: PHYS-EXP-001
+    name: 实验探究
+    required: true
+  - id: PHYS-FORCE-003
+    name: 弹力
+    required: true
+  - id: PHYS-MOTION-001
+    name: 机械运动
+    required: true
 
 key_concepts:
   - term: 量感

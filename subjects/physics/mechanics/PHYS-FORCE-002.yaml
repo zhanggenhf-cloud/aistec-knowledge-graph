@@ -20,6 +20,12 @@ postrequisites:
     name: 重力势能
   - id: PHYS-NEWTON-002
     name: 牛顿第二定律
+  - id: PHYS-BUOY-003
+    name: 物体的浮沉条件
+    required: true
+  - id: PHYS-PRESSURE-001
+    name: 压强
+    required: true
 
 key_concepts:
   - term: 重力定义

@@ -21,6 +21,9 @@ postrequisites:
 - id: BIO-MICRO-002
   name: 传染病与免疫
   required: false
+- id: BIO-CROSS-001
+  name: 生物学与社会·跨学科实践
+  required: false
 key_concepts:
 - term: 微生物
   definition: 形体微小、结构简单的生物，包括细菌、真菌、病毒等

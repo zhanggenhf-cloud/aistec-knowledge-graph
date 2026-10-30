@@ -28,6 +28,15 @@ prerequisites:
   - id: IT-IOT-001
     name: 物联网实践与探索
     required: false
+  - id: IT-ALGO-001
+    name: 算法基础
+    required: false
+  - id: IT-AI-001
+    name: 人工智能初探
+    required: false
+  - id: IT-SEC-001
+    name: 信息安全与隐私保护
+    required: false
 
 postrequisites: []
 

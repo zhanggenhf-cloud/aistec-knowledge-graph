@@ -15,12 +15,21 @@ prerequisites:
   - id: CHEM-MAT-001
     name: 物质的多样性
     required: true
+  - id: SCI-MAT-003
+    name: 空气是一种常见而重要的混合物质
+    required: false
 
 postrequisites:
   - id: CHEM-REACT-002
     name: 化学方程式
   - id: CHEM-OXY-001
     name: 氧气
+  - id: CHEM-METAL-001
+    name: 金属
+    required: true
+  - id: CHEM-ACID-001
+    name: 常见的酸和碱
+    required: true
 
 key_concepts:
   - term: 单质

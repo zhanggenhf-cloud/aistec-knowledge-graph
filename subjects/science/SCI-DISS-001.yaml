@@ -21,6 +21,9 @@ prerequisites:
 postrequisites:
   - id: CHEM-SOL-001
     name: 溶液
+  - id: SCI-MIX-001
+    name: 混合物与分离
+    required: false
 
 key_concepts:
   - term: 溶解

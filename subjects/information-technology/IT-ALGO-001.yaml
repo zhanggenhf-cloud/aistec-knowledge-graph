@@ -29,6 +29,9 @@ postrequisites:
     name: 人工智能初探
   - id: IT-CROSS-001
     name: 信息科技跨学科实践
+  - id: LAB-TECH-001
+    name: 新技术体验与应用
+    required: false
 
 key_concepts:
   - term: 算法

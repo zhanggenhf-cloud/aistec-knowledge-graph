@@ -15,6 +15,9 @@ prerequisites:
   - id: PHYS-FORCE-001
     name: 力的概念
     required: true
+  - id: PHYS-FORCE-003
+    name: 弹力
+    required: false
 
 postrequisites:
   - id: PHYS-NEWTON-001

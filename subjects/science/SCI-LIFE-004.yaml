@@ -21,6 +21,9 @@ prerequisites:
 postrequisites:
   - id: SCI-LIFE-002
     name: 生物能适应其生存环境
+  - id: SCI-HOME-001
+    name: 生物体的稳态与调节
+    required: true
 
 key_concepts:
   - term: 生存需要

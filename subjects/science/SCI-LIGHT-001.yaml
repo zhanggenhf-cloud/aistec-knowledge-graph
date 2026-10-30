@@ -19,7 +19,13 @@ prerequisites:
     name: 物体具有一定的特征，材料具有一定的性能
     required: false
 
-postrequisites: []
+postrequisites:
+  - id: PHYS-OPTICS-001
+    name: 光的直线传播
+    required: true
+  - id: ART-VISUAL-001
+    name: 光与色彩
+    required: false
 
 key_concepts:
   - term: 光源

@@ -14,6 +14,9 @@ prerequisites:
   - id: SCI-MOT-001
     name: 运动与力（小学）
     required: true
+  - id: PHYS-MOTION-001
+    name: 机械运动
+    required: false
 
 postrequisites:
   - id: PHYS-FORCE-002
@@ -24,6 +27,27 @@ postrequisites:
     name: 摩擦力
   - id: PHYS-NEWTON-001
     name: 牛顿第一定律
+  - id: PHYS-CROSS-001
+    name: 物理跨学科实践
+    required: false
+  - id: PHYS-BUOY-001
+    name: 浮力
+    required: true
+  - id: PHYS-SIMPLE-002
+    name: 滑轮
+    required: true
+  - id: PHYS-NEWTON-002
+    name: 二力平衡
+    required: true
+  - id: PHYS-SIMPLE-001
+    name: 杠杆
+    required: true
+  - id: PHYS-WORK-001
+    name: 功与功率
+    required: true
+  - id: PHYS-PRESSURE-001
+    name: 压强
+    required: true
 
 key_concepts:
   - term: 力的定义

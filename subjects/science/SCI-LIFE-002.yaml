@@ -17,6 +17,9 @@ prerequisites:
   - id: SCI-LIFE-001
     name: 生物体具有一定的结构层次
     required: false
+  - id: SCI-LIFE-004
+    name: 动物和植物都有基本生存需要
+    required: false
 
 postrequisites:
   - id: SCI-ECO-001

@@ -22,6 +22,12 @@ prerequisites:
 postrequisites:
   - id: GEO-EARTH-005
     name: 陆地和海洋
+  - id: SCI-EARTH-003
+    name: 地球是人类生存的家园
+    required: false
+  - id: SCI-ROCK-001
+    name: 岩石与土壤
+    required: false
 
 key_concepts:
   - term: 大气层

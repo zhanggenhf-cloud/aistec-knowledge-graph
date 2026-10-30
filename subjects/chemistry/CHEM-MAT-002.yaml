@@ -15,10 +15,22 @@ prerequisites:
   - id: CHEM-MAT-001
     name: 物质的多样性
     required: true
+  - id: CHEM-SCI-001
+    name: 科学探究与化学实验
+    required: false
+  - id: SCI-MIX-001
+    name: 混合物与分离
+    required: false
 
 postrequisites:
   - id: CHEM-SOL-001
     name: 溶液
+  - id: CHEM-WATER-001
+    name: 水的组成与变化
+    required: true
+  - id: CHEM-ORG-001
+    name: 有机化合物
+    required: true
 
 key_concepts:
   - term: 纯净物

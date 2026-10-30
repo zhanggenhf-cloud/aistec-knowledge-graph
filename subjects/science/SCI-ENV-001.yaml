@@ -20,6 +20,9 @@ prerequisites:
   - id: SCI-WATER-001
     name: 水在自然界的循环
     required: false
+  - id: SCI-EARTH-003
+    name: 地球是人类生存的家园
+    required: false
 
 postrequisites:
   - id: GEO-ENV-001

@@ -91,28 +91,48 @@ def build_graph(nodes):
     return graph
 
 
-def check_dag(graph, all_ids):
-    """R3: 拓扑排序检测环"""
+def check_dag(graph, all_ids, nodes=None):
+    """R3: 强连通分量（SCC）定位真实成环节点；未入拓扑序的下游阻塞节点仅作提示"""
     errors = []
-    indeg = {nid: 0 for nid in all_ids}
-    adj = defaultdict(set)
-    for u in graph:
-        for v in graph[u]:
-            if u in all_ids and v in all_ids and v not in adj[u]:
-                adj[u].add(v)
-                indeg[v] = indeg.get(v, 0) + 1
-    from collections import deque
-    q = deque([n for n in indeg if indeg[n] == 0])
-    seen = 0
-    while q:
-        u = q.popleft()
-        seen += 1
-        for v in adj[u]:
-            indeg[v] -= 1
-            if indeg[v] == 0:
-                q.append(v)
-    if seen < len([n for n in indeg if n in all_ids]):
-        errors.append((Path("relations"), "R3", f"依赖图存在环（{len(all_ids) - seen} 个节点未入拓扑序）"))
+    adj = {u: sorted(v for v in graph[u] if v in all_ids) for u in all_ids if u in graph}
+    index_of, lowlink, on_stk = {}, {}, set()
+    stk, cnt, sccs = [], [0], []
+    for start in all_ids:
+        if start in index_of or start not in adj:
+            continue
+        work = [(start, 0)]
+        index_of[start] = lowlink[start] = cnt[0]; cnt[0] += 1
+        stk.append(start); on_stk.add(start)
+        while work:
+            v, ci = work[-1]
+            if ci < len(adj.get(v, [])):
+                w = adj.get(v, [])[ci]
+                work[-1] = (v, ci + 1)
+                if w not in index_of:
+                    index_of[w] = lowlink[w] = cnt[0]; cnt[0] += 1
+                    stk.append(w); on_stk.add(w)
+                    work.append((w, 0))
+                elif w in on_stk:
+                    lowlink[v] = min(lowlink[v], index_of[w])
+            else:
+                work.pop()
+                if work:
+                    lowlink[work[-1][0]] = min(lowlink[work[-1][0]], lowlink[v])
+                if lowlink[v] == index_of[v]:
+                    comp = []
+                    while True:
+                        w = stk.pop(); on_stk.discard(w)
+                        comp.append(w)
+                        if w == v:
+                            break
+                    if len(comp) > 1 or comp[0] in adj.get(comp[0], []):
+                        sccs.append(sorted(comp))
+    for comp in sccs:
+        if nodes:
+            names = '、'.join(f"{nid}({nodes.get(nid, {}).get('name', '?')})" for nid in comp)
+        else:
+            names = '、'.join(comp)
+        errors.append((Path("relations"), "R3", f"依赖图存在环: {names}"))
     return errors
 
 
@@ -215,7 +235,7 @@ def validate_all(base_path=None, emit_report=False):
     graph = build_graph(nodes)
 
     # R3: DAG
-    errors.extend(check_dag(graph, set(nodes)))
+    errors.extend(check_dag(graph, set(nodes), nodes))
 
     # R4: 年级单调性
     for u, targets in graph.items():

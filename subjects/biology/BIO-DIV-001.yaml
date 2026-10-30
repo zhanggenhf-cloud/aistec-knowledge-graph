@@ -18,11 +18,11 @@ prerequisites:
   name: 生物的多样性
   required: false
 postrequisites:
-- id: BIO-DIV-002
-  name: 生物的多样性
-  required: false
 - id: BIO-EVO-001
   name: 生物的进化
+  required: false
+- id: BIO-MICRO-001
+  name: 微生物
   required: false
 key_concepts:
 - term: 生物分类

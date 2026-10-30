@@ -11,15 +11,15 @@ description: |
 
   学生应了解生物多样性与人类生活的密切关系，认识到生物多样性的价值包括直接使用价值、间接使用价值和潜在使用价值。同时，学生应关注生物多样性面临的威胁及其原因，如栖息地丧失、过度开发利用、环境污染和外来物种入侵等，理解保护生物多样性的主要措施，包括就地保护（建立自然保护区）、迁地保护、建立种质库和加强法制教育与管理等，形成保护生物多样性的态度责任意识。
 prerequisites:
-- id: BIO-DIV-001
-  name: 生物的分类
-  required: false
 - id: BIO-ECO-002
   name: 生态系统
   required: false
 postrequisites:
 - id: BIO-EVO-001
   name: 生物的进化
+  required: false
+- id: BIO-DIV-001
+  name: 生物的分类
   required: false
 key_concepts:
 - term: 生物多样性

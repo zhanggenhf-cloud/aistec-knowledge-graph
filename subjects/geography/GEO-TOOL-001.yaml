@@ -23,6 +23,9 @@ postrequisites:
     name: 认识世界
   - id: GEO-REGION-002
     name: 认识中国
+  - id: GEO-PRAC-001
+    name: 地理实践
+    required: true
 
 key_concepts:
   - term: 经纬线

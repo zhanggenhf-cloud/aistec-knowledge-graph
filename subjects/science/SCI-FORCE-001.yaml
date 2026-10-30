@@ -22,6 +22,9 @@ prerequisites:
 postrequisites:
   - id: PHYS-SOUND-001
     name: 声音的产生与传播
+  - id: ART-SOUND-001
+    name: 声音与音乐
+    required: false
 
 key_concepts:
   - term: 振动

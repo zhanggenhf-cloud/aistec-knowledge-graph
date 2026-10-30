@@ -9,7 +9,13 @@ prerequisites:
 - id: SCI-FORCE-001
   name: ''
   required: true
-postrequisites: []
+postrequisites:
+  - id: PHYS-SOUND-002
+    name: 声音的特性
+    required: true
+  - id: ART-SOUND-001
+    name: 声音与音乐
+    required: false
 key_concepts:
 - term: 声音的产生与传播
   definition: ''
