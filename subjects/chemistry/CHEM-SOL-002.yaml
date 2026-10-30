@@ -61,3 +61,12 @@ exhibits:
   - venue: 中国科技馆
     name: 溶解度展示
     relation: 展示溶解度曲线和物质分离
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出溶解度的定义"
+  - "能查阅溶解度数据并绘制溶解度曲线"
+diagnostic_question:
+  question: "溶解度是物质溶解的质量吗？为什么？"
+  answer: "不是，是100g溶剂中最多溶解的溶质质量"

@@ -120,3 +120,13 @@ exhibits:
   - venue: 学校
     name: STEM创客实验室
     relation: 开展信息科技跨学科实践活动
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能设计简单的编码系统解决实际问题"
+  - "能搭建并测试小型控制系统模型"
+  - "能综合运用多学科知识完成智能系统设计"
+diagnostic_question:
+  question: "设计自动浇花系统需要经历哪些基本环节？"
+  answer: "需求分析、方案设计、制作、测试改进"

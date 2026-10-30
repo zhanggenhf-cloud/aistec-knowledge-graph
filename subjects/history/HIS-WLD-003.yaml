@@ -85,3 +85,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示现代科技与未来发展
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能概述两次世界大战对世界格局的影响"
+  - "能说明冷战的实质和表现"
+  - "能描述经济全球化和世界多极化的趋势"
+diagnostic_question:
+  question: "为什么说冷战不是真正的战争？"
+  answer: "冷战是对抗但不是美苏直接军事冲突"

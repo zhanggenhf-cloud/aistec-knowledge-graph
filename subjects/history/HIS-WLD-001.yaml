@@ -78,3 +78,14 @@ exhibits:
   - venue: 中国国家博物馆
     name: 古代世界文明展
     relation: 展示世界古代文明成就
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能列举世界四大文明古国的主要成就"
+  - "能描述古代文明多元发展的特点"
+  - "能举例说明古代文明之间的交流互鉴"
+diagnostic_question:
+  question: "为什么说世界古代文明具有多元发展的特征？"
+  answer: "各文明产生于不同环境，多元发展又相互交流"
+root_reason: "学习者在小学阶段已通过语文、道德与法治等课程接触过金字塔、四大文明古国等常识，具备初步的世界历史背景知识"

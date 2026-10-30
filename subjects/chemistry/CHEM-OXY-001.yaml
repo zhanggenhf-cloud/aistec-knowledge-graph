@@ -69,3 +69,13 @@ exhibits:
   - venue: 中国科技馆
     name: 氧气性质展示
     relation: 展示氧气的性质和用途
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出氧气的主要物理和化学性质"
+  - "能解释氧气具有助燃性而非可燃性"
+  - "能举例说明氧气的用途"
+diagnostic_question:
+  question: "氧气能使带火星的木条复燃，说明氧气能燃烧吗？"
+  answer: "不能，氧气支持燃烧但本身不能燃烧"

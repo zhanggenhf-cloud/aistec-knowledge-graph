@@ -1,5 +1,6 @@
-# 知识点模板
+# 知识点模板（Schema 1.1）
 # 复制此文件，修改内容后重命名为 {subject}/{concept-id}.yaml
+# 字段说明见 SCHEMA.md；带 [1.1] 为新增可选字段
 
 id: SUBJ-TOPIC-000
 name: 概念名称
@@ -8,31 +9,56 @@ subject: 物理
 domain: 力学
 grade: 初中八年级
 
+# ---- 基本描述 ----
 description: |
   在此用1-2段话描述核心概念。
   注意：描述应准确但不过于学术化，适合教师理解。
 
+# ---- 结构关系 ----
 prerequisites:
   - id: PREREQ-001
     name: 前置概念名称
     required: true
-
 postrequisites:
   - id: POSTREQ-001
     name: 后续概念名称
 
+# ---- Schema 1.1 新增（全部可选）----
+type: conceptual                # [1.1] conceptual（概念性）/ procedural（程序性）
+semester: 下                    # [1.1] 上 / 下
+chapter: 人教版·八年级下册 第8章 运动和力   # [1.1] 教材锚定
+
+mastery_criteria:               # [1.1] 2-4条可观测判据，"能做X"句式
+  - "能复述核心规律的表述"
+  - "能用规律解释生活中的实例"
+
+diagnostic_question:            # [1.1] 守门诊断题（每节点1道）
+  question: "汽车急刹车时，乘客为什么会向前倾？"
+  answer: "乘客由于惯性保持原来的运动状态"
+  acceptable_answers: ["惯性"]    # 可接受的其他表述（可选）
+  criteria_map: ["能用惯性解释生活中的实例"]   # 考察哪条判据（可选）
+
+standards:                      # [1.1] 课标对齐
+  - id: cs-2022-phy:8.MO.03
+    confidence: exact           # exact / partial / unverified
+
+root_reason: 仅根节点填写        # [1.1] 无先修边时必填：为什么这是图的起点
+math_links: []                  # [1.1] 用到的数学工具（用法引用，非先修边）
+elective: false                 # [1.1] 选学内容 true 时不进入诊断回溯链
+
+# ---- 内容细节 ----
 key_concepts:
   - term: 核心术语1
     definition: 定义
-    importance: 核心  # 核心/重要/拓展
-  - term: 核心术语2
-    definition: 定义
-    importance: 核心
+    importance: 核心            # 核心/重要/拓展
 
 misconceptions:
   - statement: "常见误解1"
     correction: "正确理解"
     source: 可选文献来源
+    prevalence: high            # [1.1] very_high / high / medium / low
+    distractor: "由本误解派生的干扰项"   # [1.1] 题库干扰项必须可溯源
+    targeted_activity: "针对性微活动"     # [1.1] 供 POE 预测环节取用
 
 cognitive_level:
   min_age: 12
@@ -52,5 +78,4 @@ verification:
   last_verified: 2024-01-01
 
 interdisciplinary: []
-
 exhibits: []

@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出音调、响度、音色的定义"
+  - "能说明影响音调和响度的因素"
+  - "能区分音调、响度和音色"
+diagnostic_question:
+  question: "用更大的力敲同一面鼓，鼓声的什么特性会变大？"
+  answer: "响度"

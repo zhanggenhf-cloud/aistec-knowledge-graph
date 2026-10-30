@@ -91,3 +91,13 @@ exhibits:
   - venue: 北京天文馆
     name: 天象厅
     relation: 沉浸式体验宇宙环境
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能描述地球在太阳系中的位置"
+  - "能说出人类认识地球形状的过程"
+  - "能辨认地球是两极稍扁赤道略鼓的不规则球体"
+diagnostic_question:
+  question: "地球是宇宙的中心吗？为什么？"
+  answer: "不是，地球只是绕太阳运行的一颗普通行星"

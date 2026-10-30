@@ -119,3 +119,13 @@ exhibits:
   - venue: 学校
     name: 网络实验室
     relation: 开展网络配置与通信实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出IP地址和域名的作用及关系"
+  - "能区分局域网、广域网和互联网"
+  - "能描述DNS域名解析的基本过程"
+diagnostic_question:
+  question: "为什么在浏览器输入域名就能访问网站？"
+  answer: "DNS将域名解析为IP地址找到对应服务器"

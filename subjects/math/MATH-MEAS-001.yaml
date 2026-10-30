@@ -93,3 +93,14 @@ exhibits:
   - venue: 中国科技馆
     name: 计量科学展厅
     relation: 展示精密测量技术与发展
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能正确使用常用工具测量长度、质量和角度"
+  - "能熟练进行常用计量单位之间的换算"
+  - "能正确辨析测量可以完全精确"
+diagnostic_question:
+  question: "1立方米等于多少立方厘米？"
+  answer: "1立方米等于1000000立方厘米"
+root_reason: "学习者在小学阶段已通过日常测量活动（用尺量长度、看表计时、称重）积累了基本量感，为规范学习测量与单位奠定了基础。"

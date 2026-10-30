@@ -69,3 +69,12 @@ exhibits:
   - venue: 中国科技馆
     name: 化学实验室
     relation: 展示物质分离实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能判断常见物质属于纯净物还是混合物"
+  - "能说明过滤、蒸发、蒸馏的适用场景"
+diagnostic_question:
+  question: "矿泉水是纯净物还是混合物？为什么？"
+  answer: "混合物，矿泉水中含有水和多种矿物质"

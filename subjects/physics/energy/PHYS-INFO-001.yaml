@@ -108,3 +108,13 @@ exhibits:
   - venue: 上海科技馆
     name: 信息高速公路
     relation: 展示光纤通信和无线通信的原理和技术
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电磁波的产生条件和传播特点"
+  - "能运用c=λf计算波长、频率或波速"
+  - "能按波长顺序说出电磁波谱的主要成员"
+diagnostic_question:
+  question: "电磁波的传播需要介质吗？"
+  answer: "不需要，电磁波可以在真空中传播，如阳光"

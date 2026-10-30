@@ -105,3 +105,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电力世界
     relation: 展示不同电压等级的输电和应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电压的作用及常见电压值"
+  - "能按规则正确使用电压表测电压"
+  - "能运用串并联电路的电压规律分析电路"
+diagnostic_question:
+  question: "电路两端有电压，电路中就一定有电流吗？"
+  answer: "不一定，电路还必须闭合构成通路才有电流"

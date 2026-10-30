@@ -84,3 +84,14 @@ exhibits:
   - venue: 中国科技馆
     name: 华夏之光展厅
     relation: 展示古代科技文明起源
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出旧石器时代与新石器时代的区别"
+  - "能描述河姆渡和半坡原始农耕生活的特点"
+  - "能辨认中华文明起源多元一体的特征"
+diagnostic_question:
+  question: "为什么说中华文明的起源具有多元一体的特征？"
+  answer: "各区域文化多元起源又相互交融"
+root_reason: "学习者在小学阶段已通过品德与社会等课程和博物馆参观接触过远古人类与文物，具备初步的时序观念和实物证据意识"

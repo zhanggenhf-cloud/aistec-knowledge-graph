@@ -123,3 +123,13 @@ exhibits:
   - venue: 学校
     name: 网络安全实验室
     relation: 开展信息安全模拟实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能列举常见的网络安全威胁"
+  - "能说出保护个人信息的基本方法"
+  - "能说明设置强密码的原则"
+diagnostic_question:
+  question: "为什么不同网站不能使用相同的简单密码？"
+  answer: "一处泄露会导致其他账户被破解盗用"

@@ -97,3 +97,13 @@ exhibits:
   - venue: 中国科技馆
     name: 华夏之光展厅
     relation: 展示中国古代四大发明等科技成就
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能概述统一多民族国家建立和发展的历程"
+  - "能说出分封制、科举制等制度的作用"
+  - "能评价少数民族政权对统一多民族国家的贡献"
+diagnostic_question:
+  question: "为什么说统一是中国历史发展的主流？"
+  answer: "分裂时期最终都重新走向统一"

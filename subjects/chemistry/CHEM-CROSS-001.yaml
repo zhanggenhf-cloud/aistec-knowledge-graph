@@ -87,3 +87,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示跨学科解决重大问题的案例
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能设计解决真实问题的跨学科方案"
+  - "能按流程制作项目作品并改进"
+  - "能说明跨学科实践与实验堆砌的区别"
+diagnostic_question:
+  question: "跨学科实践活动与连续做几个化学实验有什么不同？"
+  answer: "跨学科实践围绕真实问题整合多学科知识"

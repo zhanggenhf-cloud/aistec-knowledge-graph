@@ -100,3 +100,13 @@ exhibits:
   - venue: 各地环保科普馆
     name: 生态环境展览
     relation: 展示环境问题和保护措施
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能区分可再生资源与不可再生资源"
+  - "能说出碳达峰与碳中和的含义"
+  - "能针对某一环境问题提出防治建议"
+diagnostic_question:
+  question: "碳中和的含义是什么？"
+  answer: "通过节能减排和植树造林抵消自身碳排放"

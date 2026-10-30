@@ -106,3 +106,13 @@ exhibits:
   - venue: 上海科技馆
     name: 超导磁悬浮
     relation: 展示超导体零电阻特性及其在磁悬浮中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电阻的概念和单位"
+  - "能探究并说出影响电阻大小的因素"
+  - "能辨析电阻是导体本身的性质，与电压电流无关"
+diagnostic_question:
+  question: "通过导体的电流越大，导体的电阻就越小吗？"
+  answer: "不是，电阻由导体本身决定，与电流无关"

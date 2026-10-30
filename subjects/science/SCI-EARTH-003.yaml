@@ -71,3 +71,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示地球的独特性和保护
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出地球适合生命存在的条件"
+  - "能举例人类活动对地球的影响"
+  - "能说出三条保护地球的具体做法"
+diagnostic_question:
+  question: "为什么火星上目前不能住人？"
+  answer: "缺少适宜温度、液态水和可呼吸的大气"
+

@@ -100,3 +100,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数学之美观展厅
     relation: 展示函数图像与变化规律
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能判断两个变量之间是否存在函数关系"
+  - "能绘制一次函数、反比例函数和二次函数的图像"
+  - "能运用函数性质解决简单的实际问题"
+diagnostic_question:
+  question: "y等于2x加3是一次函数吗？它的图像是什么形状？"
+  answer: "是，图像是一条直线"

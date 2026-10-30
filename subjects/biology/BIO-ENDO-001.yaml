@@ -112,3 +112,13 @@ exhibits:
 - name: 健康生活展厅
   location: 上海科技馆
   relevance: 展示激素与健康的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出人体主要内分泌腺及其分泌的激素"
+  - "能举例说明激素分泌异常引起的疾病"
+  - "能正确辨析激素分泌越多越好"
+diagnostic_question:
+  question: "糖尿病患者缺乏哪种激素？这种激素有什么作用？"
+  answer: "胰岛素，能降低血糖浓度"

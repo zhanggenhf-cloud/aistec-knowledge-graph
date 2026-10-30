@@ -105,3 +105,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电路实验室
     relation: 提供欧姆定律的虚拟实验环境
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出欧姆定律的内容和公式"
+  - "能运用欧姆定律进行简单计算"
+  - "能辨析欧姆定律只适用于纯电阻电路"
+diagnostic_question:
+  question: "欧姆定律适用于所有电路吗？"
+  answer: "不适用，只适用于纯电阻电路，如电动机"

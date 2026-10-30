@@ -101,3 +101,13 @@ exhibits:
   - venue: 上海科技馆
     name: 热学实验室
     relation: 提供多种物质比热容的测量和对比体验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出比热容的概念和水的比热容数值"
+  - "能用比热容解释简单的自然现象"
+  - "能运用Q=cmΔt进行热量计算"
+diagnostic_question:
+  question: "一杯水比一桶水的比热容小吗？为什么？"
+  answer: "不是，比热容是物质特性，与质量多少无关"

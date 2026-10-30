@@ -116,3 +116,13 @@ exhibits:
   - venue: 学校
     name: 数字化学习空间
     relation: 开展数据收集与信息处理实践活动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出数据与信息的区别和联系"
+  - "能列举数据的多种表现形式"
+  - "能通过来源分析辨别信息真伪"
+diagnostic_question:
+  question: "数据和信息有什么区别？"
+  answer: "数据是原始记录，信息是加工后有用的数据"

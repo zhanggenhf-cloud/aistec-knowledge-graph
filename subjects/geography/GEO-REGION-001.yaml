@@ -94,3 +94,13 @@ exhibits:
   - venue: 中国科技馆
     name: 世界地理沙盘
     relation: 直观展示世界地形地貌
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能描述大洲的地理位置和自然特征"
+  - "能归纳认识区域地理特征的基本方法"
+  - "能举例说明因地制宜发展经济的途径"
+diagnostic_question:
+  question: "认识一个地区应从哪些方面分析其地理特征？"
+  answer: "从位置、地形、气候、人口、经济等方面"

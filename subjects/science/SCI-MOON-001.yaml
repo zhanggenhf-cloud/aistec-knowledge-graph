@@ -76,3 +76,14 @@ exhibits:
   - venue: 中国科技馆
     name: 宇宙之奇展厅
     relation: 展示月相变化
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出月相变化的周期"
+  - "能辨认新月和满月"
+  - "能解释月相变化的原因"
+diagnostic_question:
+  question: "为什么月亮有时候圆、有时候弯？"
+  answer: "月球绕地球公转，我们看到被照亮的位置不同"
+

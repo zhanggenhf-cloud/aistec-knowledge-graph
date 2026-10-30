@@ -88,3 +88,13 @@ exhibits:
   - venue: 中国科技馆
     name: 过山车模型
     relation: 展示动能与重力势能的转化
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出动能、重力势能、弹性势能的定义"
+  - "能举例说明影响动能和势能大小的因素"
+  - "能辨析速度大动能不一定大"
+diagnostic_question:
+  question: "静止在高处的物体有没有能量？为什么？"
+  answer: "有，物体由于被举高而具有重力势能"

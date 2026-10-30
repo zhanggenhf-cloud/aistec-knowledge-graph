@@ -120,3 +120,13 @@ exhibits:
 - name: 基因世界
   location: 上海科技馆
   relevance: 通过互动展项了解基因与性状的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出性状、基因、DNA和染色体的关系"
+  - "能区分可遗传变异和不可遗传变异"
+  - "能正确辨析性状相同的个体基因组成一定相同"
+diagnostic_question:
+  question: "由环境引起的变异能否遗传给后代？"
+  answer: "不能，只有遗传物质改变的变异才能遗传"

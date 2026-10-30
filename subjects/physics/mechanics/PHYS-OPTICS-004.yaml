@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出光的折射现象和规律"
+  - "能举例说明生活中的折射现象"
+  - "能画简单的折射光路图"
+diagnostic_question:
+  question: "插入水中的筷子看起来向上弯折，这是为什么？"
+  answer: "光从水中射入空气时发生折射"

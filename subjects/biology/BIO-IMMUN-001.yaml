@@ -110,3 +110,13 @@ exhibits:
 - name: 微观世界
   location: 上海科技馆
   relevance: 展示免疫细胞与病原体的相互作用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出人体三道防线的组成及功能"
+  - "能区分非特异性免疫和特异性免疫"
+  - "能正确辨析免疫越强越好"
+diagnostic_question:
+  question: "非特异性免疫和特异性免疫的主要区别是什么？"
+  answer: "非特异性生来就有、对多种病原体起作用"

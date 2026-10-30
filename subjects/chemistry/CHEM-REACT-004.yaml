@@ -81,3 +81,13 @@ exhibits:
   - venue: 中国科技馆
     name: 燃烧与灭火展示
     relation: 演示燃烧条件和灭火原理
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出燃烧的三个条件"
+  - "能说出灭火的原理"
+  - "能举例说明化学反应中的能量转化"
+diagnostic_question:
+  question: "用水一定能扑灭所有火灾吗？举例说明。"
+  answer: "不是，电器火灾和油类火灾不能用水扑灭"

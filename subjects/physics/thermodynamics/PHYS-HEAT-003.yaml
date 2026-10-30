@@ -110,3 +110,13 @@ exhibits:
   - venue: 北京汽车博物馆
     name: 汽车发动机演变
     relation: 展示从蒸汽机到现代内燃机的发展历程
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出四冲程内燃机的工作原理"
+  - "能辨析各冲程中的能量转化"
+  - "能比较汽油机与柴油机的异同"
+diagnostic_question:
+  question: "四冲程内燃机的四个冲程都对外做功吗？"
+  answer: "不是，只有做功冲程对外做功"

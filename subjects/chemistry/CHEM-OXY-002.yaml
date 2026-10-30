@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出实验室制取氧气的原理"
+  - "能按步骤组装装置并收集氧气"
+  - "能说明催化剂只改变反应速率"
+diagnostic_question:
+  question: "加热高锰酸钾制氧气时，试管口为什么要略向下倾斜？"
+  answer: "防止冷凝水倒流炸裂试管"

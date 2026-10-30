@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出密度的定义和公式ρ=m/V"
+  - "能说明密度是物质的一种特性"
+  - "能测量固体和液体的密度"
+diagnostic_question:
+  question: "一杯水喝掉一半后，剩余水的密度如何变化？"
+  answer: "不变，密度是物质的特性"

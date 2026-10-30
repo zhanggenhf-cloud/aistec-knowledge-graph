@@ -88,3 +88,13 @@ exhibits:
   - venue: 中国科技馆
     name: 潜水艇模型
     relation: 展示浮沉原理在深海探测中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出物体的浮沉条件"
+  - "能根据密度关系判断物体的浮沉状态"
+  - "能解释潜水艇的浮沉原理"
+diagnostic_question:
+  question: "钢铁的密度比水大，为什么钢铁造的轮船能浮在水面上？"
+  answer: "轮船做成空心，平均密度小于水"

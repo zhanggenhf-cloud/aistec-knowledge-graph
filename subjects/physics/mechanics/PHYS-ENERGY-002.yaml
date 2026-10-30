@@ -82,3 +82,13 @@ exhibits:
   - venue: 中国科技馆
     name: 古代水磨模型
     relation: 展示中国古代机械能的利用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例说明动能和势能可以相互转化"
+  - "能说出机械能守恒的条件"
+  - "能分析生活实例中的能量转化过程"
+diagnostic_question:
+  question: "单摆在摆动过程中，动能和势能是怎样转化的？"
+  answer: "动能和重力势能相互转化"

@@ -88,3 +88,13 @@ exhibits:
   - venue: 中国国家博物馆
     name: 古代中国基本陈列
     relation: 展示民族交融的历史见证
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出孝文帝改革促进民族交融的史实"
+  - "能列举四大发明及其对世界文明的贡献"
+  - "能辨析民族交融不是单向的同化"
+diagnostic_question:
+  question: "北魏孝文帝改革对民族交融有什么作用？"
+  answer: "推行汉化措施，促进了北方民族交融"

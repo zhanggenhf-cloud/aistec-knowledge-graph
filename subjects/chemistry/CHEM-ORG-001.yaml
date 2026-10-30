@@ -35,3 +35,12 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出有机化合物的共同特征"
+  - "能举例说明有机化合物可人工合成"
+diagnostic_question:
+  question: "有机化合物一定来自生物体吗？举例说明。"
+  answer: "不是，塑料、合成纤维等有机物可人工合成"

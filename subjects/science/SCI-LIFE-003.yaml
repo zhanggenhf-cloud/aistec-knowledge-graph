@@ -80,3 +80,14 @@ exhibits:
   - venue: 中国科技馆
     name: 生命奥秘展厅
     relation: 展示生物的生命周期
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出植物生命周期的各阶段"
+  - "能举例动物和植物的不同繁殖方式"
+  - "能区分遗传和变异"
+diagnostic_question:
+  question: "种下蚕豆种子后，它会经历哪些生长阶段？"
+  answer: "发芽、生长、开花、结果、产生新种子"
+

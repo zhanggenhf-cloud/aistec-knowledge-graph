@@ -75,3 +75,13 @@ exhibits:
   - venue: 中国科技馆
     name: 溶液展示
     relation: 展示溶液的形成和性质
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出溶液、溶质、溶剂的定义"
+  - "能判断溶液是否饱和"
+  - "能进行溶质质量分数的简单计算"
+diagnostic_question:
+  question: "溶液一定是液体吗？举例说明。"
+  answer: "不一定，如合金是固体溶液，空气是气体溶液"

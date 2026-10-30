@@ -89,3 +89,15 @@ exhibits:
   - venue: 中国国家博物馆
     name: 古代中国基本陈列
     relation: 展示中华文明发展历程
+
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能围绕主题搜集和整理历史资料"
+  - "能通过采访长辈收集口述史资料"
+  - "能绘制历史地图展示历史变迁"
+diagnostic_question:
+  question: "研究「小钱币，大历史」主题，可以怎样收集资料？"
+  answer: "查阅文献、参观博物馆、采访专家等"
+root_reason: "学习者已具备基本的历史时序概念和文献阅读能力，通过日常生活和小学阶段的综合实践积累了初步的探究经验"

@@ -107,3 +107,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示物理学在工程和社会发展中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能从物理视角观察和分析日常生活中的现象"
+  - "能综合运用物理与其他学科知识解决真实问题"
+  - "能辨析跨学科实践不是多门课知识的简单叠加"
+diagnostic_question:
+  question: "跨学科实践就是把几门课的知识加起来学习吗？为什么？"
+  answer: "不是，跨学科实践强调综合运用知识解决问题"

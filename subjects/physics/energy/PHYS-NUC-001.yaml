@@ -112,3 +112,13 @@ exhibits:
   - venue: 广东科学中心
     name: 大亚湾核电站模型
     relation: 展示核电站的整体结构和运行原理
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出获得核能的两种途径"
+  - "能说出核电站的基本工作流程"
+  - "能辩证说出核能利用的优点和问题"
+diagnostic_question:
+  question: "核电站和原子弹利用核裂变的方式完全相同吗？"
+  answer: "不同，核电站可控而原子弹不可控"

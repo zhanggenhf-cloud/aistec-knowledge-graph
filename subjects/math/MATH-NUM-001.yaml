@@ -98,3 +98,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数学之美观展厅
     relation: 展示数与形的和谐关系
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能进行有理数和实数的四则运算"
+  - "能进行整式、分式和二次根式的化简与运算"
+  - "能正确辨析所有数都是有理数"
+diagnostic_question:
+  question: "根号下负3的平方等于多少？"
+  answer: "3"

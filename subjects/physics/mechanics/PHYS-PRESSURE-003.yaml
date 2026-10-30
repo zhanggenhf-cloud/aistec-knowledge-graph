@@ -84,3 +84,13 @@ exhibits:
   - venue: 中国科技馆
     name: 伯努利原理演示器
     relation: 演示流体压强与流速的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例说明大气压强的存在"
+  - "能说出流体流速与压强的关系"
+  - "能解释飞机升力的产生原因"
+diagnostic_question:
+  question: "用吸管吸饮料时，是什么把饮料压入口中的？"
+  answer: "大气压强"

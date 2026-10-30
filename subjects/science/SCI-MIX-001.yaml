@@ -71,3 +71,14 @@ exhibits:
   - venue: 中国科技馆
     name: 物质之妙展厅
     relation: 展示混合物分离
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出混合物的定义"
+  - "能根据混合物性质选择合适的分离方法"
+  - "能完成简单的过滤和蒸发操作"
+diagnostic_question:
+  question: "要把混在水里的沙子分离出来，应该用什么方法？"
+  answer: "过滤，因为沙子不溶于水"
+

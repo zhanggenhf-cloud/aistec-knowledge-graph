@@ -80,3 +80,14 @@ exhibits:
   - venue: 中国科技馆
     name: 人体奥秘展厅
     relation: 展示人体各系统协调工作
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例说明人体各系统协调工作的现象"
+  - "能说出人体主要感觉器官的作用"
+  - "能解释植物向光生长的原因"
+diagnostic_question:
+  question: "跑步时心跳加快，这说明了什么？"
+  answer: "人体各系统协调工作来满足运动需要"
+

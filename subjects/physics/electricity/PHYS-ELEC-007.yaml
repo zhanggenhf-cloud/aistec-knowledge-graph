@@ -113,3 +113,13 @@ exhibits:
   - venue: 上海科技馆
     name: 家庭用电
     relation: 模拟家庭电路，展示各用电器的功率和电能消耗
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电功率和电功的概念及单位"
+  - "能运用电功率公式进行简单计算"
+  - "能辨析额定功率与实际功率的区别"
+diagnostic_question:
+  question: "电功率大的用电器消耗的电能一定更多吗？"
+  answer: "不一定，消耗电能还与通电时间长短有关"

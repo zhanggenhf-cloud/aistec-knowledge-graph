@@ -71,3 +71,12 @@ exhibits:
   - venue: 中国科技馆
     name: 元素周期表展示
     relation: 展示元素周期表和元素性质
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出单质和化合物的定义"
+  - "能根据元素组成判断单质或化合物"
+diagnostic_question:
+  question: "由同种元素组成的物质一定是单质吗？"
+  answer: "不一定，如氧气与臭氧混合只含一种元素"

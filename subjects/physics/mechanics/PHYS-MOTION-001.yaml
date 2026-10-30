@@ -87,3 +87,13 @@ exhibits:
   - venue: 中国科技馆
     name: 古代计时器
     relation: 展示中国古代测量时间的智慧
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出机械运动的定义"
+  - "能根据所选参照物判断物体的运动状态"
+  - "能举例说明运动的相对性"
+diagnostic_question:
+  question: "坐在行驶汽车里的乘客，相对于座位是运动还是静止？相对于地面呢？"
+  answer: "相对座位静止，相对地面运动"

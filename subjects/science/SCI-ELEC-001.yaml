@@ -80,3 +80,14 @@ exhibits:
   - venue: 中国科技馆
     name: 电磁之奥展厅
     relation: 展示电路原理和电的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出简单电路的四个组成部分"
+  - "能判断一个电路是否闭合"
+  - "能正确辨析开关断开时电路中仍有电流的说法"
+diagnostic_question:
+  question: "小灯泡不亮，可能是什么原因？"
+  answer: "电路没有闭合，电流无法通过"
+

@@ -81,3 +81,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数字地球
     relation: 展示电子地图与遥感技术
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出比例尺、方向、图例的含义"
+  - "能在等高线地形图上识别山脊和山谷"
+  - "能辨析比例尺大小与表示范围的关系"
+diagnostic_question:
+  question: "大比例尺地图和小比例尺地图表示的范围有何不同？"
+  answer: "大比例尺表示范围小、内容详细"

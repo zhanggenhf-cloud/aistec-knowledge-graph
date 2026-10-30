@@ -71,3 +71,14 @@ exhibits:
   - venue: 中国科技馆
     name: 电磁之奥展厅
     relation: 展示导体和绝缘体的特性
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出导体和绝缘体的区别"
+  - "能判断常见材料的导电性"
+  - "能举例导体和绝缘体在生活中的应用"
+diagnostic_question:
+  question: "电线为什么里面用铜丝、外面包塑料？"
+  answer: "铜丝导电，塑料防触电"
+

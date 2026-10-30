@@ -66,3 +66,13 @@ exhibits:
   - venue: 中国科技馆
     name: 金属材料展示
     relation: 展示金属的性质和用途
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出金属的主要物理性质"
+  - "能举例说明金属性质与用途的关系"
+  - "能正确判断合金的物质类别"
+diagnostic_question:
+  question: "合金是化合物吗？为什么？"
+  answer: "不是，合金是由多种物质熔合而成的混合物"

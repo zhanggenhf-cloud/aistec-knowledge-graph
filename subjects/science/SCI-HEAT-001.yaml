@@ -82,3 +82,14 @@ exhibits:
   - venue: 中国科技馆
     name: 物质之妙展厅
     relation: 展示物态变化的现象
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出物质常见的三种状态"
+  - "能举例生活中热改变物质状态的现象"
+  - "能正确辨析冰融化后质量会减少的说法"
+diagnostic_question:
+  question: "冰融化成水后，质量会变少吗？"
+  answer: "不会，质量不变，只是状态变了"
+

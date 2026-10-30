@@ -68,3 +68,12 @@ exhibits:
   - venue: 中国科技馆
     name: 化学变化展示
     relation: 展示化学变化的奇妙现象
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出物理变化和化学变化的本质区别"
+  - "能判断日常生活中的变化类型"
+diagnostic_question:
+  question: "灯泡发光发热是化学变化吗？为什么？"
+  answer: "不是，灯泡发光没有新物质生成，是物理变化"

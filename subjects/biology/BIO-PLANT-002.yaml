@@ -111,3 +111,13 @@ exhibits:
 - name: 微观生命
   location: 上海科技馆
   relevance: 展示细胞内线粒体的结构和呼吸作用机制
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出呼吸作用的概念、场所和意义"
+  - "能比较光合作用和呼吸作用的区别与联系"
+  - "能正确辨析植物只进行光合作用不进行呼吸作用"
+diagnostic_question:
+  question: "植物白天进行光合作用，晚上才进行呼吸作用，对吗？"
+  answer: "不对，活细胞时刻都在进行呼吸作用"

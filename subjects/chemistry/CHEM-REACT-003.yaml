@@ -68,3 +68,13 @@ exhibits:
   - venue: 中国科技馆
     name: 质量守恒定律演示
     relation: 演示化学反应中的质量守恒
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出质量守恒定律的内容"
+  - "能从原子角度解释质量守恒"
+  - "能解释开放容器中质量变化的原因"
+diagnostic_question:
+  question: "蜡烛燃烧后质量减轻，是否违背质量守恒定律？"
+  answer: "不违背，生成的气体逸散到空气中"

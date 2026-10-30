@@ -35,3 +35,12 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出空气的主要成分及体积分数"
+  - "能举例说明空气中各成分的用途"
+diagnostic_question:
+  question: "空气中含量最多的气体是什么？约占多少？"
+  answer: "氮气，约占78%"

@@ -83,3 +83,13 @@ exhibits:
   - venue: 中国科技馆
     name: 中国空间站模型
     relation: 展示航天器飞行速度
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出速度的定义和公式v=s/t"
+  - "能进行速度的简单计算"
+  - "能测量物体运动的平均速度"
+diagnostic_question:
+  question: "速度大的物体通过的路程一定长吗？"
+  answer: "不一定，路程还与运动时间有关"

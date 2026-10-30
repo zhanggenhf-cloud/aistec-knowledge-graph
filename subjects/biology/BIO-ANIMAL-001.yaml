@@ -119,3 +119,13 @@ exhibits:
 - name: 骨骼与肌肉
   location: 上海科技馆
   relevance: 通过互动模型展示骨、关节和肌肉的协调配合
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出运动系统的组成及各部分作用"
+  - "能解释骨、关节、肌肉在完成运动中的协调配合"
+  - "能正确辨析运动仅靠运动系统即可完成"
+diagnostic_question:
+  question: "骨骼肌收缩就能单独完成运动吗？说明理由。"
+  answer: "不能，还需骨、关节和神经系统的配合"

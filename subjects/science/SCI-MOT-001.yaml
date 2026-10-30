@@ -79,3 +79,14 @@ exhibits:
   - venue: 中国科技馆
     name: 运动之律展厅
     relation: 展示力的作用效果
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出力的两种作用效果"
+  - "能举例生活中常见的力"
+  - "能正确辨析不接触就没有力的说法"
+diagnostic_question:
+  question: "用手捏橡皮泥，橡皮泥变扁了，这说明什么？"
+  answer: "力可以改变物体的形状"
+

@@ -74,3 +74,14 @@ exhibits:
   - venue: 中国科技馆
     name: 物质之妙展厅
     relation: 展示溶解现象
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出溶解的特征"
+  - "能举例影响溶解快慢的因素"
+  - "能正确辨析溶解后物质就消失了的说法"
+diagnostic_question:
+  question: "把盐放进水里搅拌后，盐消失了吗？"
+  answer: "没有，盐溶解分散到水中了"
+

@@ -117,3 +117,13 @@ exhibits:
   - venue: 学校创客空间
     name: 开源硬件实验室
     relation: 开展过程与控制编程实践活动
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能描述控制系统的输入、计算、输出三个环节"
+  - "能区分开环控制和闭环控制"
+  - "能设计简单的自动控制系统方案"
+diagnostic_question:
+  question: "自动温控风扇系统中温度传感器起什么作用？"
+  answer: "作为输入环节采集温度数据"

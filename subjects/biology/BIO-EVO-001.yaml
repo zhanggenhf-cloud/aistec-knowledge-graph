@@ -125,3 +125,13 @@ exhibits:
 - name: 人类起源
   location: 各地自然博物馆
   relevance: 展示人类进化各阶段的化石和复原模型
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出生物进化的主要证据"
+  - "能解释自然选择学说的主要内容"
+  - "能正确辨析人类是由现代类人猿进化来的"
+diagnostic_question:
+  question: "用自然选择学说解释长颈鹿长颈的形成原因。"
+  answer: "长颈变异个体在生存斗争中占优势，适者生存"

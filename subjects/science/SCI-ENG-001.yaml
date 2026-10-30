@@ -78,3 +78,14 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示工程设计的实际案例
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能按步骤完成一个简单的工程设计"
+  - "能根据测试结果改进自己的作品"
+  - "能说出工程设计需要考虑的因素"
+diagnostic_question:
+  question: "设计一个能浮在水面上的小船，第一步做什么？"
+  answer: "明确问题：船要能浮起来"
+

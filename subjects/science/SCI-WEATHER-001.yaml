@@ -77,3 +77,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示天气现象和气象观测
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出常见的天气现象"
+  - "能区分天气和气候"
+  - "能使用气温计正确测量气温"
+diagnostic_question:
+  question: "今天下雨和南方气候湿润，这两句话有什么不同？"
+  answer: "前者说天气，后者说气候"
+

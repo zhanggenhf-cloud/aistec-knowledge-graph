@@ -116,3 +116,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电流的分配
     relation: 用可视化方式展示串并联电路中电流的分配规律
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能识别串联和并联电路"
+  - "能说出串并联电路的电流、电压、电阻规律"
+  - "能进行简单的串并联电路计算"
+diagnostic_question:
+  question: "并联电路中，支路电阻越大该支路电流越大吗？"
+  answer: "不是，各支路电压相等，电阻越大电流越小"

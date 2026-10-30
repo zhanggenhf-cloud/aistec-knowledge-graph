@@ -73,3 +73,13 @@ exhibits:
   - venue: 中国科技馆
     name: 金属化学性质展示
     relation: 展示金属与酸、盐溶液的反应
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能背诵金属活动性顺序"
+  - "能根据活动性顺序判断金属能否反应"
+  - "能说出铁生锈的条件"
+diagnostic_question:
+  question: "铜能与稀盐酸反应生成氢气吗？为什么？"
+  answer: "不能，铜排在氢后面，活动性较弱"

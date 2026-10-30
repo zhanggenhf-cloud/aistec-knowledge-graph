@@ -77,3 +77,15 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示工程设计案例
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出工程设计的基本步骤"
+  - "能针对一个需求提出简单的设计方案"
+  - "能根据测试结果改进自己的作品"
+diagnostic_question:
+  question: "要设计一个装20支铅笔的笔筒，第一步做什么？"
+  answer: "明确需求：要能装下20支铅笔"
+root_reason: "学生已通过手工活动和积木拼搭积累了解决问题和动手制作的经验，具备初步的设计意识"
+

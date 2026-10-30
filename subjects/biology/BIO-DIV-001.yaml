@@ -110,3 +110,13 @@ exhibits:
 - name: 生命长河
   location: 上海自然博物馆
   relevance: 按进化关系展示各类生物标本
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出生物分类的七个等级及基本单位"
+  - "能运用检索表对常见生物进行简单分类"
+  - "能正确辨析分类单位越大共同特征越多"
+diagnostic_question:
+  question: "分类单位越大，生物间的共同特征是越多还是越少？"
+  answer: "越少，因为分类单位越大包含的生物种类越多"

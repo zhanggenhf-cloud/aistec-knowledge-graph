@@ -100,3 +100,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数据可视化装置
     relation: 展示大数据分析与可视化
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能选择合适的抽样方法收集数据"
+  - "能根据数据特点选择合适的统计图表"
+  - "能计算平均数、中位数、众数和方差并解释其意义"
+diagnostic_question:
+  question: "一组数据中有极端值时，用平均数还是中位数代表一般水平更好？"
+  answer: "中位数"

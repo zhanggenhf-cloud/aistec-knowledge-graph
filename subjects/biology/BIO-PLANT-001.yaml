@@ -119,3 +119,13 @@ exhibits:
 - name: 植物工厂
   location: 上海科技馆
   relevance: 展示人工光照条件下植物的光合作用应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出光合作用的原料、条件和产物"
+  - "能解释光合作用在生物圈碳氧平衡中的作用"
+  - "能正确辨析光合作用的产物只有氧气"
+diagnostic_question:
+  question: "光合作用的实质是什么？"
+  answer: "将光能转化为化学能储存在有机物中"

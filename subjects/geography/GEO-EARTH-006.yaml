@@ -77,3 +77,13 @@ exhibits:
   - venue: 中国科技馆
     name: 世界地理沙盘
     relation: 直观展示世界人口分布
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能描述世界人口分布的特点"
+  - "能描述城镇与乡村景观的差异"
+  - "能列举世界文化多样性的具体表现"
+diagnostic_question:
+  question: "世界人口主要分布在哪些地区？"
+  answer: "北半球中低纬度的沿海和平原地区"

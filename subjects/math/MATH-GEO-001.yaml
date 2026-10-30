@@ -104,3 +104,13 @@ exhibits:
   - venue: 中国科技馆
     name: 几何与建筑展厅
     relation: 展示几何原理在建筑中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能运用平行线的性质和判定进行简单推理"
+  - "能运用全等三角形和相似三角形的判定与性质证明"
+  - "能正确辨析两边及一角对应相等即可判定全等"
+diagnostic_question:
+  question: "两边及一角对应相等的两个三角形一定全等吗？"
+  answer: "不一定，必须是两边及夹角对应相等"

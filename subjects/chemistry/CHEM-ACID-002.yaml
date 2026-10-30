@@ -63,3 +63,13 @@ exhibits:
   - venue: 中国科技馆
     name: 酸碱中和演示
     relation: 演示酸碱中和反应
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出中和反应的定义"
+  - "能举例说明中和反应的应用"
+  - "能正确辨析中和反应与pH等于7"
+diagnostic_question:
+  question: "有盐和水生成的反应一定是中和反应吗？"
+  answer: "不一定，金属氧化物与酸反应也生成盐和水"

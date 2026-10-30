@@ -75,3 +75,12 @@ exhibits:
   - venue: 中国科技馆
     name: 化学方程式展示
     relation: 展示化学方程式的书写和意义
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能正确书写常见化学方程式"
+  - "能根据化学方程式进行简单计算"
+diagnostic_question:
+  question: "配平化学方程式时，可以改动物质的化学式吗？"
+  answer: "不可以，只能改变化学式前面的化学计量数"

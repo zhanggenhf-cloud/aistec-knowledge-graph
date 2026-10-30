@@ -71,3 +71,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示水资源保护
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出水的基本性质"
+  - "能说出水的三种状态"
+  - "能举例水在生活中的用途"
+diagnostic_question:
+  question: "冬天河里的水结冰了，冰还是水吗？"
+  answer: "是，冰是水的固态形式"
+

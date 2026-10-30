@@ -89,3 +89,13 @@ exhibits:
   - venue: 各地青少年科技馆
     name: 创客工坊
     relation: 提供新技术体验与制作
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出3D打印、激光切割的基本原理"
+  - "能按设计制作测试改进流程完成作品"
+  - "能编程控制简单硬件设备"
+diagnostic_question:
+  question: "3D打印适合大批量生产同一零件吗？为什么？"
+  answer: "不适合，大批量生产传统制造更有优势"

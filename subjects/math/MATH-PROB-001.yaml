@@ -94,3 +94,13 @@ exhibits:
   - venue: 中国科技馆
     name: 概率与统计展厅
     relation: 展示随机现象与概率规律
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能计算简单等可能事件的概率"
+  - "能用列表法或画树状图求事件的概率"
+  - "能用频率估计概率并解释试验结果"
+diagnostic_question:
+  question: "连续抛5次硬币都正面朝上，第6次正面朝上的概率是多少？"
+  answer: "0.5"

@@ -77,3 +77,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示生态系统与食物链
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能画出一条完整的食物链"
+  - "能举例生物之间的相互关系"
+  - "能解释生态平衡的含义"
+diagnostic_question:
+  question: "如果草原上狼被大量捕杀，羊会怎样？"
+  answer: "先增多，后因草不够而减少"
+

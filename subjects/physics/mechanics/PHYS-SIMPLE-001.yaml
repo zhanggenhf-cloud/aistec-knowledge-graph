@@ -87,3 +87,13 @@ exhibits:
   - venue: 中国科技馆
     name: 人体杠杆模型
     relation: 展示人体运动中的杠杆结构
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出杠杆的五要素"
+  - "能说出杠杆的平衡条件"
+  - "能区分省力、费力和等臂杠杆"
+diagnostic_question:
+  question: "力臂是支点到力的作用点的距离，对吗？"
+  answer: "不对，是支点到力的作用线的垂直距离"

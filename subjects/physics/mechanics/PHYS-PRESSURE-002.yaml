@@ -84,3 +84,13 @@ exhibits:
   - venue: 中国科技馆
     name: 三峡船闸模型
     relation: 展示连通器原理的工程应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出液体内部压强的规律"
+  - "能用公式p=ρgh进行简单计算"
+  - "能解释连通器的原理和应用"
+diagnostic_question:
+  question: "液体压强的大小与容器的形状有关吗？"
+  answer: "无关，只与液体密度和深度有关"

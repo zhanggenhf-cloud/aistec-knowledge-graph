@@ -86,3 +86,13 @@ exhibits:
   - venue: 中国科技馆
     name: 人体功率测量
     relation: 测量人体做功的功率
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出做功的两个必要因素"
+  - "能用公式W=Fs进行简单计算"
+  - "能说出功率的物理意义和公式"
+diagnostic_question:
+  question: "提着水桶在水平地面匀速行走，手的提力对水桶做功吗？"
+  answer: "不做功，力的方向与移动方向垂直"

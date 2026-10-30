@@ -75,3 +75,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示地球表层系统
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出地球表面的主要组成"
+  - "能说出三种岩石的类型"
+  - "能举例大气层对地球的作用"
+diagnostic_question:
+  question: "地球表面大部分是陆地还是海洋？"
+  answer: "大部分是海洋"
+

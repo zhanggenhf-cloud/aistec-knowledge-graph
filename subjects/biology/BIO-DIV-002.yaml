@@ -115,3 +115,13 @@ exhibits:
 - name: 濒危动物展区
   location: 各地自然博物馆
   relevance: 展示濒危物种及其保护现状
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出生物多样性的三个层次"
+  - "能列举保护生物多样性的主要措施"
+  - "能正确辨析保护生物多样性就是禁止开发"
+diagnostic_question:
+  question: "生物多样性包括哪三个层次？"
+  answer: "种类多样性、基因多样性和生态系统多样性"

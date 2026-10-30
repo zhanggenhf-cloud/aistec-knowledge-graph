@@ -121,3 +121,13 @@ exhibits:
   - venue: 上海科技馆
     name: 冰晶世界
     relation: 展示晶体结构及熔化过程
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出温度的定义和单位"
+  - "能正确使用温度计测量液体温度"
+  - "能说出六种物态变化及吸放热情况"
+diagnostic_question:
+  question: "0℃的冰和0℃的水，哪一个更冷？"
+  answer: "冷热程度相同，温度相同"

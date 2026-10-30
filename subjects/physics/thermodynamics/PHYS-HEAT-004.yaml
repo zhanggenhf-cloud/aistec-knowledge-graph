@@ -105,3 +105,13 @@ exhibits:
   - venue: 上海科技馆
     name: 绿色能源
     relation: 展示提高能源利用效率的技术和新能源应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出热机效率的含义并计算简单效率"
+  - "能说出提高热机效率的途径"
+  - "能辨析热机效率永远小于100%"
+diagnostic_question:
+  question: "随着技术进步，热机效率有可能达到100%吗？"
+  answer: "不可能，废气、摩擦等能量损失不可避免"

@@ -96,3 +96,13 @@ exhibits:
   - venue: 学校实验室
     name: 物理实验室
     relation: 开展课标要求的必做实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出科学探究的基本环节"
+  - "能用控制变量法设计探究实验"
+  - "能辨析误差只能减小而不能消除"
+diagnostic_question:
+  question: "测量误差可以完全消除吗？为什么？"
+  answer: "不能，误差只能减小，错误才可以避免"

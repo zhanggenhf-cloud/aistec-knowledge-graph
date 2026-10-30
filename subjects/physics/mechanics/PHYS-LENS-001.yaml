@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出凸透镜成像的规律"
+  - "能区分实像和虚像"
+  - "能说明照相机、投影仪、放大镜的成像原理"
+diagnostic_question:
+  question: "物体放在凸透镜二倍焦距以外时，成什么样的像？"
+  answer: "倒立、缩小的实像"

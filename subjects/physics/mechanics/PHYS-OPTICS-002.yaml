@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出光的反射定律"
+  - "能区分镜面反射和漫反射"
+  - "能画光的反射光路图"
+diagnostic_question:
+  question: "入射光线与镜面的夹角是30°，入射角是多少度？"
+  answer: "60°"

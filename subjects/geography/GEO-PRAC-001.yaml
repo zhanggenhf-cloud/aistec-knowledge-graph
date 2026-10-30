@@ -81,3 +81,13 @@ exhibits:
   - venue: 各地科技馆
     name: 地理实验室
     relation: 提供地理实验与调查工具
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能设计简单的地理实验方案"
+  - "能设计问卷并进行社会调查"
+  - "能使用工具开展野外考察并记录"
+diagnostic_question:
+  question: "调查校园植物分布应该先做什么？"
+  answer: "明确调查目的，设计调查方案和记录表"

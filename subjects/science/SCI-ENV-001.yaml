@@ -82,3 +82,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示人类活动对环境的影响
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例身边的环境污染现象"
+  - "能说出三种保护环境的具体做法"
+  - "能正确辨析保护环境是成年人的事的错误"
+diagnostic_question:
+  question: "废电池应该扔进哪个垃圾桶？为什么？"
+  answer: "有害垃圾桶，电池会污染土壤和水源"
+

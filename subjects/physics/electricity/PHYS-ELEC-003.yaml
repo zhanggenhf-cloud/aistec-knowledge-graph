@@ -109,3 +109,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电路测量
     relation: 提供电流表、电压表的虚拟测量体验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电流的形成原因和方向规定"
+  - "能按规则正确使用电流表测电流"
+  - "能运用串并联电路的电流规律分析电路"
+diagnostic_question:
+  question: "金属导体中电流方向与自由电子定向移动方向相同吗？"
+  answer: "相反，电流方向是正电荷定向移动的方向"

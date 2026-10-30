@@ -85,3 +85,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示跨学科解决重大问题的案例
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出项目式学习的完整流程"
+  - "能围绕真实问题整合多学科知识"
+  - "能按探究循环开展项目并反思"
+diagnostic_question:
+  question: "跨学科学习就是把不同学科内容简单加在一起吗？"
+  answer: "不是，跨学科学习强调围绕真实问题的有机融合"

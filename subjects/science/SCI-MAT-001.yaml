@@ -72,3 +72,15 @@ exhibits:
   - venue: 中国科技馆
     name: 物质世界展厅
     relation: 展示各种材料的特性
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能用感官描述物体的外部特征"
+  - "能说出常见材料的性能"
+  - "能按特征给物体分类"
+diagnostic_question:
+  question: "同样大小的铁球和木球，哪个更重？"
+  answer: "铁球更重，轻重和大小没有必然关系"
+root_reason: "学前儿童已通过感官游戏积累了观察物体的经验，能辨别颜色、形状、大小等外部特征"
+
