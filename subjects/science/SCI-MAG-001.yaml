@@ -69,3 +69,15 @@ exhibits:
   - venue: 中国科技馆
     name: 电磁之奥展厅
     relation: 展示磁铁的特性和应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出磁铁能吸引哪些物质"
+  - "能说出磁铁有两个磁极"
+  - "能制作简易指南针并用来辨别方向"
+diagnostic_question:
+  question: "用磁铁的N极靠近另一个磁铁的N极会怎样？"
+  answer: "相互排斥，因为同极相斥"
+root_reason: "学生在日常生活中经常接触磁铁玩具、冰箱贴等，已有磁铁能吸铁的朴素经验"
+

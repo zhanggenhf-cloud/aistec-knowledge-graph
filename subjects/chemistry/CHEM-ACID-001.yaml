@@ -79,3 +79,13 @@ exhibits:
   - venue: 中国科技馆
     name: 酸碱性质展示
     relation: 展示酸碱的性质和指示剂变色
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出酸和碱的定义"
+  - "能举例说明常见酸和碱的性质"
+  - "能正确辨析酸性溶液与酸溶液"
+diagnostic_question:
+  question: "氯化铵溶液呈酸性，它是酸吗？为什么？"
+  answer: "不是，氯化铵是由铵根和酸根组成的盐"

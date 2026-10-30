@@ -139,3 +139,13 @@ exhibits:
 - name: 血液循环模拟
   location: 上海科技馆
   relevance: 通过动态模型展示体循环和肺循环
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出血液的组成及各成分的功能"
+  - "能区分动脉、静脉和毛细血管的结构特点与功能"
+  - "能正确辨析动脉中流的都是动脉血"
+diagnostic_question:
+  question: "为什么肺动脉中流的是静脉血？"
+  answer: "肺动脉将全身回流的静脉血送往肺部"

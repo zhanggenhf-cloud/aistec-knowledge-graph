@@ -165,3 +165,13 @@ exhibits:
 - name: 生物实验室
   location: 各地科技馆
   relevance: 提供发酵技术、植物栽培等实践体验
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能根据特定生物学问题设计并制作模型"
+  - "能独立完成发酵食品制作并控制关键条件"
+  - "能在实践中运用变量控制方法设计对照"
+diagnostic_question:
+  question: "制作酸奶时最关键的操作条件是什么？"
+  answer: "保持适宜温度约40℃使乳酸菌发酵"

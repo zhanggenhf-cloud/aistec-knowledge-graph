@@ -85,3 +85,13 @@ exhibits:
   - venue: 中国科技馆
     name: 力的相互作用装置
     relation: 演示作用力与反作用力
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出力的定义和力的三要素"
+  - "能说明物体间力的作用是相互的"
+  - "能画出力的示意图"
+diagnostic_question:
+  question: "磁铁吸引铁钉时，铁钉是否也吸引磁铁？这说明什么？"
+  answer: "是，说明物体间力的作用是相互的"

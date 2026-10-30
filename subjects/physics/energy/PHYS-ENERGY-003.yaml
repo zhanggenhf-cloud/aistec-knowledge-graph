@@ -121,3 +121,13 @@ exhibits:
   - venue: 上海科技馆
     name: 地球家园
     relation: 展示全球能源结构和气候变化的影响
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能按不同标准对能源进行分类"
+  - "能说出能源利用中的主要环境问题"
+  - "能说出可持续发展的基本措施"
+diagnostic_question:
+  question: "电能是一次能源还是二次能源？为什么？"
+  answer: "二次能源，电能必须由一次能源转化而来"

@@ -109,3 +109,13 @@ exhibits:
   - venue: 各地自然博物馆
     name: 中国自然资源展
     relation: 展示矿产、生物、水资源等
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能识别34个省级行政区及其简称"
+  - "能描述中国地形和气候的主要特征"
+  - "能说明秦岭—淮河线的地理意义"
+diagnostic_question:
+  question: "秦岭—淮河一线为什么是重要的地理分界线？"
+  answer: "其南北两侧自然环境和人文景观差异显著"

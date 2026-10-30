@@ -79,3 +79,14 @@ exhibits:
   - venue: 中国科技馆
     name: 宇宙之奇展厅
     relation: 展示太阳系和天体运动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出地球自转和公转产生的现象"
+  - "能解释昼夜交替的原因"
+  - "能正确辨析四季变化是地球离太阳远近造成的"
+diagnostic_question:
+  question: "为什么我们每天都有白天和黑夜？"
+  answer: "地球自转，面向太阳是白天"
+

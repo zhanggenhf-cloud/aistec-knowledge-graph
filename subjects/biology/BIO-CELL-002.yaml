@@ -110,3 +110,13 @@ exhibits:
 - name: 微观世界
   location: 上海自然博物馆
   relevance: 通过高倍显微镜和电子显微镜图像展示细胞内部结构
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出动植物细胞的基本结构及各结构功能"
+  - "能比较动植物细胞结构的异同"
+  - "能正确辨析所有植物细胞都有叶绿体"
+diagnostic_question:
+  question: "植物细胞和动物细胞的主要区别是什么？"
+  answer: "植物细胞有细胞壁、液泡和叶绿体"

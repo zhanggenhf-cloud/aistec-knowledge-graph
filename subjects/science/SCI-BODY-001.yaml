@@ -74,3 +74,14 @@ exhibits:
   - venue: 中国科技馆
     name: 人体奥秘展厅
     relation: 展示人体各系统的结构和功能
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出人体五个主要系统的名称"
+  - "能举例说明各系统如何协调工作"
+  - "能正确辨析人体各系统是独立工作的说法"
+diagnostic_question:
+  question: "为什么跑步时呼吸和心跳都会加快？"
+  answer: "运动时身体需要更多氧气和营养"
+

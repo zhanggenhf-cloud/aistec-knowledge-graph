@@ -76,3 +76,15 @@ exhibits:
   - venue: 中国科技馆
     name: 生命奥秘展厅
     relation: 展示生物体的结构层次
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出细胞是生物体结构和功能的基本单位"
+  - "能说出植物的六大器官"
+  - "能正确使用放大镜观察生物结构"
+diagnostic_question:
+  question: "为什么洋葱表皮要用显微镜才能看清？"
+  answer: "洋葱表皮由许多微小细胞组成"
+root_reason: "学生已通过日常观察花草树木和小动物，积累了辨认常见生物和描述外部特征的经验"
+

@@ -86,3 +86,13 @@ exhibits:
   - venue: 中国科技馆
     name: 钉床
     relation: 演示压强与受力面积的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出压强的定义和公式p=F/S"
+  - "能举例说明增大和减小压强的方法"
+  - "能估测自己站立时对地面的压强"
+diagnostic_question:
+  question: "同一块砖平放和竖放在水平地面上，哪种放法对地面的压强大？"
+  answer: "竖放，受力面积小压强大"

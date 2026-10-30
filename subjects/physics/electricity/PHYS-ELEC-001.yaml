@@ -106,3 +106,13 @@ exhibits:
   - venue: 上海科技馆
     name: 静电实验台
     relation: 提供多种摩擦起电和电荷相互作用体验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出正、负两种电荷及其相互作用规律"
+  - "能用电子转移解释摩擦起电现象"
+  - "能正确举例区分导体和绝缘体"
+diagnostic_question:
+  question: "摩擦起电是创造了新的电荷吗？为什么？"
+  answer: "不是，摩擦起电是电子的转移，电荷总量不变"

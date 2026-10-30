@@ -32,3 +32,14 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出质量的定义和单位"
+  - "能说明质量是物体的固有属性"
+  - "能用天平测量物体的质量"
+diagnostic_question:
+  question: "把一块铁从地球带到月球，它的质量会不会改变？"
+  answer: "不会，质量不随位置改变"
+root_reason: "学习者在小学数学中已认识千克、克等质量单位，并在生活中有购物称重等日常经验，已具备物体有轻重的朴素认识。"

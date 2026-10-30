@@ -116,3 +116,13 @@ exhibits:
 - name: 健康生活展厅
   location: 上海科技馆
   relevance: 通过互动展项了解呼吸系统保健知识
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出呼吸系统的组成及呼吸道的作用"
+  - "能解释呼吸运动中膈肌变化与气体进出的关系"
+  - "能正确辨析呼出的气体全是二氧化碳"
+diagnostic_question:
+  question: "吸气时膈肌如何变化，肺内气压怎样改变？"
+  answer: "膈肌收缩、膈顶下降，肺内气压低于外界"

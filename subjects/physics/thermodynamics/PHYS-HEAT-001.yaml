@@ -112,3 +112,13 @@ exhibits:
   - venue: 广东科学中心
     name: 能量转化
     relation: 展示机械能与内能的相互转化
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出内能的概念及一切物体都有内能"
+  - "能举例说明做功和热传递改变内能"
+  - "能辨析物体不含有热量，只能说吸放热"
+diagnostic_question:
+  question: "物体吸收热量，温度一定升高吗？"
+  answer: "不一定，如晶体熔化时吸热但温度不变"

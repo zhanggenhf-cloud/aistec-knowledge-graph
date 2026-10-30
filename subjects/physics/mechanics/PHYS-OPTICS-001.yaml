@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出光沿直线传播的条件"
+  - "能举例说明光的直线传播现象"
+  - "能说出光在真空中的传播速度"
+diagnostic_question:
+  question: "日食是怎样形成的？"
+  answer: "月球挡住了射向地球的太阳光"

@@ -104,3 +104,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电磁驱动
     relation: 通过互动装置展示电动机将电能转化为机械能的过程
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出磁场对通电导体有力的作用及其方向规律"
+  - "能说出直流电动机的工作原理和各部件作用"
+  - "能辨析换向器的作用是改变线圈中电流方向"
+diagnostic_question:
+  question: "电动机是根据电磁感应原理工作的吗？"
+  answer: "不是，是通电线圈在磁场中受力转动"

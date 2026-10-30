@@ -83,3 +83,13 @@ exhibits:
   - venue: 各地地质博物馆
     name: 地震模拟体验
     relation: 演示地震成因与避险
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出七大洲和四大洋的名称及分布"
+  - "能辨认五种基本地形的形态特征"
+  - "能运用板块构造学说解释火山地震带的分布"
+diagnostic_question:
+  question: "为什么火山和地震多分布在板块交界地带？"
+  answer: "板块交界地带地壳运动活跃"

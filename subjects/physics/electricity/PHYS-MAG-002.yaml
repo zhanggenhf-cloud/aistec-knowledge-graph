@@ -108,3 +108,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电磁铁
     relation: 展示电磁铁的磁性控制及其在工业中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出奥斯特实验的现象和结论"
+  - "能用安培定则判断通电螺线管的磁极"
+  - "能说出影响电磁铁磁性强弱的因素"
+diagnostic_question:
+  question: "判断通电螺线管的N、S极应该用左手还是右手？"
+  answer: "用右手，安培定则（右手螺旋定则）"

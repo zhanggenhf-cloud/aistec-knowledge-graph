@@ -82,3 +82,13 @@ exhibits:
   - venue: 中国科技馆
     name: 力的平衡互动装置
     relation: 演示二力平衡与多力平衡
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出二力平衡的四个条件"
+  - "能区分平衡力与相互作用力"
+  - "能用二力平衡条件分析简单受力问题"
+diagnostic_question:
+  question: "静止在水平桌面上的杯子，重力和桌面的支持力是一对什么力？"
+  answer: "一对平衡力"

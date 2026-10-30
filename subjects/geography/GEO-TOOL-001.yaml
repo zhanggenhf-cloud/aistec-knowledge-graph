@@ -91,3 +91,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数字地球
     relation: 展示电子地图与遥感技术
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能用经纬度描述地理事物的位置"
+  - "能在地图上辨别方向、量算距离"
+  - "能识别等高线地形图表示的地形"
+diagnostic_question:
+  question: "要描述北京在地球表面的位置，需要使用什么？"
+  answer: "经度和纬度"

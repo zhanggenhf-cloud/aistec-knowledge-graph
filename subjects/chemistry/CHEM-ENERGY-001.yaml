@@ -71,3 +71,13 @@ exhibits:
   - venue: 中国科技馆
     name: 能源世界展厅
     relation: 展示能源转化和利用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能列举常见化石燃料和新能源"
+  - "能说明化石燃料综合利用的意义"
+  - "能解释化石燃料不可再生的原因"
+diagnostic_question:
+  question: "为什么说化石燃料是不可再生能源？"
+  answer: "化石燃料形成需漫长地质年代，储量有限"

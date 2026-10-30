@@ -85,3 +85,13 @@ exhibits:
   - venue: 各地美术馆
     name: 色彩与绘画展
     relation: 展示色彩在艺术中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能区分色光三原色和颜料三原色"
+  - "能解释物体颜色与反射光的关系"
+  - "能说明加色法与减色法的区别"
+diagnostic_question:
+  question: "颜料混合和色光混合的原理相同吗？为什么？"
+  answer: "不同，色光混合是加色法，颜料混合是减色法"

@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出平面镜成像的特点"
+  - "能区分实像和虚像"
+  - "能用平面镜成像特点解释相关现象"
+diagnostic_question:
+  question: "人向平面镜走近时，镜中的像会变大吗？"
+  answer: "不会，像始终与物体等大"

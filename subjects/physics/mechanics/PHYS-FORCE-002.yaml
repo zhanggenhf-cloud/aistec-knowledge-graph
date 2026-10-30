@@ -76,3 +76,13 @@ exhibits:
   - venue: 中国科技馆
     name: 万有引力展品
     relation: 演示重力与质量的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出重力的定义、方向和作用点"
+  - "能用公式G=mg计算重力的大小"
+  - "能区分重力与质量的物理意义"
+diagnostic_question:
+  question: "重力的方向是竖直向下还是垂直向下？"
+  answer: "竖直向下"

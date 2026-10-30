@@ -77,3 +77,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示空气的性质和大气污染
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出空气的主要成分"
+  - "能举例证明空气占据空间"
+  - "能说出空气在生活中的作用"
+diagnostic_question:
+  question: "把杯子倒扣按进水里，杯子里会进水吗？"
+  answer: "不会，杯里的空气占着空间"
+

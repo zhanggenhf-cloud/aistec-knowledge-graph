@@ -79,3 +79,14 @@ exhibits:
   - venue: 中国科技馆
     name: 宇宙之奇展厅
     relation: 展示地球公转与四季变化
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出四季变化的原因"
+  - "能解释昼夜长短变化的原因"
+  - "能正确辨析夏天热是因为离太阳近的说法"
+diagnostic_question:
+  question: "夏天为什么比冬天热？"
+  answer: "地轴倾斜使太阳直射角度大，获得热量多"
+

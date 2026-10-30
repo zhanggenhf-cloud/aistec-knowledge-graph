@@ -68,3 +68,15 @@ exhibits:
   - venue: 中国科技馆
     name: 科技与生活展厅
     relation: 展示技术产品在生活中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例常见技术产品及其功能"
+  - "能说出使用技术产品的安全规则"
+  - "能对技术产品提出自己的改进建议"
+diagnostic_question:
+  question: "边充电边玩手机安全吗？为什么？"
+  answer: "不安全，可能因过热引发电池起火"
+root_reason: "学生在日常生活中已熟练使用铅笔、剪刀、水杯等简单工具，具备初步的使用和评价经验"
+

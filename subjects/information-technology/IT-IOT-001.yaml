@@ -127,3 +127,13 @@ exhibits:
   - venue: 学校创客空间
     name: 物联网实验套件
     relation: 开展物联网编程与传感器实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出物联网的三层架构及各层功能"
+  - "能列举物联网在生活中的典型应用"
+  - "能说明物联网带来的隐私和安全挑战"
+diagnostic_question:
+  question: "物联网的感知层、网络层、应用层各负责什么？"
+  answer: "分别负责采集数据、传输数据、处理应用"

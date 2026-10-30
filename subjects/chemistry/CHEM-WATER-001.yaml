@@ -73,3 +73,13 @@ exhibits:
   - venue: 中国科技馆
     name: 水的组成展示
     relation: 展示水的电解实验
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出水的元素组成"
+  - "能说出水的净化方法"
+  - "能正确辨析水的组成与氢气氧气的关系"
+diagnostic_question:
+  question: "水是由氢气和氧气组成的吗？为什么？"
+  answer: "不是，水是由氢元素和氧元素组成的化合物"

@@ -71,3 +71,14 @@ exhibits:
   - venue: 中国科技馆
     name: 生命奥秘展厅
     relation: 展示生物的生存需要
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出植物生长需要的基本条件"
+  - "能说出动物生存需要的基本条件"
+  - "能按食性给常见动物分类"
+diagnostic_question:
+  question: "两盆同样的植物，一盆放阳光下，一盆放黑暗处，会怎样？"
+  answer: "黑暗处的会枯萎，说明植物生长需要阳光"
+

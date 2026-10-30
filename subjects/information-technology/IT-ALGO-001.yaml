@@ -116,3 +116,13 @@ exhibits:
   - venue: 学校
     name: 编程实验室
     relation: 开展算法设计与编程实践活动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出算法的基本特征"
+  - "能用流程图描述简单算法"
+  - "能辨析算法与程序的区别"
+diagnostic_question:
+  question: "算法和计算机程序是一回事吗？"
+  answer: "不是，算法是步骤描述，程序是具体实现"

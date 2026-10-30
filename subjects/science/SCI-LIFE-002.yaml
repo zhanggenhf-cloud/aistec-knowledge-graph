@@ -74,3 +74,14 @@ exhibits:
   - venue: 中国科技馆
     name: 生命奥秘展厅
     relation: 展示生物对环境的适应
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能举例生物适应环境的不同方式"
+  - "能区分保护色和拟态"
+  - "能正确辨析生物只能被动适应环境的说法"
+diagnostic_question:
+  question: "变色龙的颜色随环境变化，这说明了什么？"
+  answer: "生物有适应环境的能力，保护色利于生存"
+

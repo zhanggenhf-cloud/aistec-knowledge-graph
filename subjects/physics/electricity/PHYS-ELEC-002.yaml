@@ -111,3 +111,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电流的旅程
     relation: 通过互动装置展示电流在电路中的流动路径
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出电路的组成及各元件的作用"
+  - "能识别通路、断路和短路三种状态"
+  - "能按规范画出简单的电路图"
+diagnostic_question:
+  question: "电路中有电源，灯泡就一定发光吗？为什么？"
+  answer: "不一定，电路必须构成闭合通路才有电流"

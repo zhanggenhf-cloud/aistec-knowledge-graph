@@ -35,3 +35,12 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能列举常见化肥的种类"
+  - "能说明合理施用化肥的必要性"
+diagnostic_question:
+  question: "化肥施用得越多越好吗？为什么？"
+  answer: "不是，过量会导致土壤板结和水体污染"

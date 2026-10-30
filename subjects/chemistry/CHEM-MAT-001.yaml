@@ -76,3 +76,13 @@ exhibits:
   - venue: 中国科技馆
     name: 物质世界展厅
     relation: 展示物质的多样性
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能依据组成对物质进行简单分类"
+  - "能正确区分纯净物、混合物、单质、化合物"
+  - "能判断物质是否属于氧化物"
+diagnostic_question:
+  question: "高锰酸钾含有氧元素，它是氧化物吗？为什么？"
+  answer: "不是，氧化物只含两种元素且其中一种是氧"

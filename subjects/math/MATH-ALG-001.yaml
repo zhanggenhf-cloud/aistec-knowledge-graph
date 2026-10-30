@@ -103,3 +103,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数学之美观展厅
     relation: 展示方程在科学中的应用
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能解一元一次方程、二元一次方程组和一元二次方程"
+  - "能解一元一次不等式（组）并在数轴上表示解集"
+  - "能根据实际问题建立方程或不等式模型求解"
+diagnostic_question:
+  question: "解不等式-2x大于4时，不等号方向要改变吗？解集是什么？"
+  answer: "要改变，解集为x小于-2"

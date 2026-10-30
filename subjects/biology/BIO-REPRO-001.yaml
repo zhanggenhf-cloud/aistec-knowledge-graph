@@ -115,3 +115,13 @@ exhibits:
 - name: 昆虫世界
   location: 上海自然博物馆
   relevance: 展示昆虫变态发育的完整过程
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能区分有性生殖和无性生殖的特点"
+  - "能举例说明昆虫完全变态和不完全变态发育的区别"
+  - "能正确辨析无性生殖产生的后代一定更差"
+diagnostic_question:
+  question: "蝗虫和家蚕的发育过程有什么不同？"
+  answer: "蝗虫三个时期无蛹期，家蚕四个时期有蛹期"

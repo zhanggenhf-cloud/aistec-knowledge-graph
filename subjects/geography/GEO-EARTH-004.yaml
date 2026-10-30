@@ -93,3 +93,13 @@ exhibits:
   - venue: 北京天文馆
     name: 天象厅
     relation: 沉浸式体验天体运动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能演示地球自转和公转的方向与周期"
+  - "能解释昼夜交替和四季变化的成因"
+  - "能辨析季节变化与地球离太阳远近无关"
+diagnostic_question:
+  question: "四季变化是地球离太阳远近不同造成的吗？"
+  answer: "不是，是地轴倾斜使太阳直射点变化造成的"

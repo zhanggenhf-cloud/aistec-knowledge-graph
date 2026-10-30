@@ -128,3 +128,13 @@ exhibits:
 - name: 微观世界
   location: 上海科技馆
   relevance: 展示病原体形态和传播途径
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出传染病流行的三个基本环节"
+  - "能针对传染病流行环节提出预防措施"
+  - "能正确辨析疫苗就是抗体"
+diagnostic_question:
+  question: "预防传染病可以从哪三个方面采取措施？"
+  answer: "控制传染源、切断传播途径、保护易感人群"

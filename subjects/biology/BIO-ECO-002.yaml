@@ -116,3 +116,13 @@ exhibits:
 - name: 生物多样性展厅
   location: 上海科技馆
   relevance: 展示不同类型的生态系统及其生物组成
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出生态系统的组成及各成分的作用"
+  - "能写出食物链并分析食物网中物质和能量流动"
+  - "能正确辨析分解者可有可无"
+diagnostic_question:
+  question: "为什么说分解者是生态系统中不可缺少的成分？"
+  answer: "分解者将有机物分解为无机物供生产者利用"

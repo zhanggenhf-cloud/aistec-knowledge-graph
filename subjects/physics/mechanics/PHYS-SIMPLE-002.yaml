@@ -82,3 +82,13 @@ exhibits:
   - venue: 中国科技馆
     name: 起重机模型
     relation: 展示滑轮在工程中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出定滑轮和动滑轮的特点"
+  - "能分析简单滑轮组的省力情况"
+  - "能举例说明滑轮的应用"
+diagnostic_question:
+  question: "使用定滑轮提升重物能省力吗？它起什么作用？"
+  answer: "不能省力，但能改变力的方向"

@@ -114,3 +114,13 @@ exhibits:
 - name: 微生物实验室
   location: 上海科技馆
   relevance: 通过互动展项了解微生物的培养和应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出细菌、真菌和病毒的主要结构特点"
+  - "能举例说明微生物与人类生活的关系"
+  - "能正确辨析抗生素可以杀死病毒"
+diagnostic_question:
+  question: "为什么不能使用抗生素治疗流感？"
+  answer: "流感由病毒引起，抗生素只对细菌有效"

@@ -116,3 +116,13 @@ exhibits:
   - venue: 学校
     name: 创客空间
     relation: 开展编码设计与编程实践活动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出编码的含义和基本规则"
+  - "能说明二进制在计算机中的作用"
+  - "能辨析编码与加密的区别"
+diagnostic_question:
+  question: "编码和加密有什么区别？"
+  answer: "编码便于存储传输，加密是隐藏内容"

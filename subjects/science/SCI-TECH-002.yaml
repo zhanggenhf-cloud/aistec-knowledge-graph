@@ -73,3 +73,14 @@ exhibits:
   - venue: 中国科技馆
     name: 运动之律展厅
     relation: 展示简单机械的原理和应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出常见简单机械的名称"
+  - "能举例杠杆在生活中的应用"
+  - "能正确辨析杠杆越长越省力的说法"
+diagnostic_question:
+  question: "用撬棍撬石头，手握的地方离支点越远越省力，为什么？"
+  answer: "动力臂越长越省力"
+

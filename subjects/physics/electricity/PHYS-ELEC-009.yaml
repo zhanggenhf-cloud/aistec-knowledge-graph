@@ -114,3 +114,13 @@ exhibits:
   - venue: 上海科技馆
     name: 电力与生活
     relation: 模拟家庭电路，体验正确和错误的接线方式
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出家庭电路的组成和连接方式"
+  - "能说出安全用电的基本常识"
+  - "能辨析保险丝不能用铜丝、铁丝代替"
+diagnostic_question:
+  question: "发现有人触电时，应立即用手把他拉开吗？"
+  answer: "不能，先切断电源或用绝缘体使其脱离电源"

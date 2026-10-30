@@ -97,3 +97,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数学之美观展厅
     relation: 展示几何变换与对称美
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出平移、旋转、轴对称的基本特征"
+  - "能在平面直角坐标系中用坐标描述图形位置和运动"
+  - "能正确辨析相似图形面积比等于相似比"
+diagnostic_question:
+  question: "相似比为2的两个相似三角形，面积比是多少？"
+  answer: "4"

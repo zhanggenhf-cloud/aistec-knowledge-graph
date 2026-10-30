@@ -80,3 +80,13 @@ exhibits:
   - venue: 中国科技馆
     name: 磁悬浮列车模型
     relation: 展示减小摩擦的先进技术
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出摩擦力的定义和产生条件"
+  - "能区分滑动摩擦、静摩擦和滚动摩擦"
+  - "能举例说明增大和减小摩擦的方法"
+diagnostic_question:
+  question: "人走路时脚受到地面的摩擦力方向向哪？它是动力还是阻力？"
+  answer: "方向向前，是动力"

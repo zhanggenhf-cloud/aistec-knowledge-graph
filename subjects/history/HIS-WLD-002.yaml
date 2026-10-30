@@ -86,3 +86,13 @@ exhibits:
   - venue: 中国科技馆
     name: 探索与发现展厅
     relation: 展示近代科技发展
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能概述新航路开辟的影响"
+  - "能说明工业革命对人类社会发展的深远影响"
+  - "能辨析殖民扩张给殖民地带来的灾难"
+diagnostic_question:
+  question: "为什么说工业革命是一把双刃剑？"
+  answer: "它推动生产力发展也带来污染和社会分化"

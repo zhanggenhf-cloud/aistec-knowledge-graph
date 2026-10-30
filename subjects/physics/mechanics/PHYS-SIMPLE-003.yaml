@@ -86,3 +86,13 @@ exhibits:
   - venue: 中国科技馆
     name: 古代机械模型
     relation: 展示中国古代水磨、水碓等机械的能效设计
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出有用功、额外功和总功的概念"
+  - "能计算简单机械的机械效率"
+  - "能说出提高机械效率的途径"
+diagnostic_question:
+  question: "使用机械时机械效率有可能大于100%吗？"
+  answer: "不可能，因为额外功总是存在"

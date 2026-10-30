@@ -76,3 +76,14 @@ exhibits:
   - venue: 中国科技馆
     name: 物质之妙展厅
     relation: 展示物质的三态变化
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出物质三种状态的名称"
+  - "能正确读出温度计的示数"
+  - "能举例水的三态变化现象"
+diagnostic_question:
+  question: "烧水时冒出的白气是什么？"
+  answer: "水蒸气遇冷液化成的小水滴"
+

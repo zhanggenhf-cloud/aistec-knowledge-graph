@@ -80,3 +80,14 @@ exhibits:
   - venue: 各地科技馆
     name: 生活科学展厅
     relation: 展示日常生活中的科学原理
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能完成清洁、整理等基本家务"
+  - "能按说明烹饪简单营养餐食"
+  - "能正确使用和维护家用器具"
+diagnostic_question:
+  question: "使用清洁剂时放得越多越干净吗？为什么？"
+  answer: "不是，应按说明适量使用，过量污染环境"
+root_reason: 学生在家庭生活中已积累模仿家务的日常经验，入学前已具备初步生活自理能力

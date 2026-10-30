@@ -88,3 +88,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示新中国科技成就
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能概述中华人民共和国成立以来发展的主要阶段"
+  - "能说明改革开放的历史意义"
+  - "能列举改革开放以来取得的主要成就"
+diagnostic_question:
+  question: "为什么说十一届三中全会是伟大的历史转折？"
+  answer: "它作出了实行改革开放的历史性决策"

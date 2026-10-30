@@ -76,3 +76,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示水循环过程
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能按顺序说出水循环的各个环节"
+  - "能解释水循环的动力来自太阳"
+  - "能举例生活中的水循环现象"
+diagnostic_question:
+  question: "地上的水晒干了会跑到哪里去？"
+  answer: "蒸发成水蒸气进入大气，之后凝结成云再降水"
+

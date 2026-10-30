@@ -121,3 +121,13 @@ exhibits:
 - name: 大脑探索
   location: 上海科技馆
   relevance: 通过互动展项了解大脑各区域的功能
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出神经系统的组成及脑各部分的功能"
+  - "能描述反射弧的五个组成部分"
+  - "能正确辨析反射弧可以缺少某个环节"
+diagnostic_question:
+  question: "如果传出神经受损，缩手反射能否完成？为什么？"
+  answer: "不能，反射弧五个环节缺一不可"

@@ -108,3 +108,13 @@ exhibits:
   - venue: 上海科技馆
     name: 能量转化
     relation: 展示电能转化为内能的过程和效率
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出焦耳定律的内容和公式"
+  - "能运用焦耳定律计算电热"
+  - "能辨析纯电阻电路与非纯电阻电路的电功电热关系"
+diagnostic_question:
+  question: "计算电动机线圈发热能用Q=U²t/R吗？"
+  answer: "不能，电动机是非纯电阻电路，只能用Q=I²Rt"

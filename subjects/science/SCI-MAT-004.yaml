@@ -74,3 +74,14 @@ exhibits:
   - venue: 中国科技馆
     name: 运动与力展厅
     relation: 展示物体运动的规律
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能用位置、快慢和方向描述物体运动"
+  - "能比较两个物体运动的快慢"
+  - "能说出常见的运动形式"
+diagnostic_question:
+  question: "小兔子1分钟跑100米，乌龟5分钟爬10米，谁更快？"
+  answer: "小兔子更快"
+

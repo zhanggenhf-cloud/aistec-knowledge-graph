@@ -78,3 +78,14 @@ exhibits:
   - venue: 中国科技馆
     name: 宇宙之奇展厅
     relation: 展示恒星、星座和星系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能区分恒星和行星"
+  - "能说出北斗七星和北极星的作用"
+  - "能说出银河系的主要组成"
+diagnostic_question:
+  question: "太阳是恒星还是行星？它们有什么不同？"
+  answer: "恒星，恒星能自己发光，行星不能"
+

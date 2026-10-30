@@ -114,3 +114,13 @@ exhibits:
 - name: 植物世界
   location: 上海科技馆
   relevance: 展示植物从细胞到个体的结构层次
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出植物体的结构层次"
+  - "能识别植物的主要组织及其功能"
+  - "能正确辨析果实就是种子"
+diagnostic_question:
+  question: "绿色开花植物的六大器官是什么？"
+  answer: "根、茎、叶、花、果实、种子"

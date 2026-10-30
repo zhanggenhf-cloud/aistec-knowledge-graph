@@ -104,3 +104,13 @@ exhibits:
 - name: 细胞世界
   location: 上海科技馆
   relevance: 通过多媒体展示细胞的微观世界
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出细胞是生物体结构和功能的基本单位"
+  - "能正确使用显微镜观察细胞并制作临时装片"
+  - "能正确辨析病毒不是细胞生物"
+diagnostic_question:
+  question: "为什么说细胞是生命活动的基本单位？"
+  answer: "生物由细胞构成，生命活动在细胞中进行"

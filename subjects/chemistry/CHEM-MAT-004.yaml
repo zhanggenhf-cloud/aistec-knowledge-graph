@@ -66,3 +66,12 @@ exhibits:
   - venue: 中国科技馆
     name: 化学世界展厅
     relation: 展示氧化物的性质与应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出氧化物的定义"
+  - "能判断物质是否属于氧化物"
+diagnostic_question:
+  question: "含有氧元素的化合物一定是氧化物吗？举例说明。"
+  answer: "不一定，如高锰酸钾含氧但不是氧化物"

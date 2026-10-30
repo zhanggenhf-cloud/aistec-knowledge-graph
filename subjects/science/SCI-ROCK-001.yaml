@@ -75,3 +75,14 @@ exhibits:
   - venue: 中国科技馆
     name: 地球家园展厅
     relation: 展示岩石和土壤的形成
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出三种岩石类型及各自的特点"
+  - "能说出土壤的主要组成"
+  - "能举例岩石和土壤的用途"
+diagnostic_question:
+  question: "花岗岩、砂岩、大理岩各属于哪类岩石？"
+  answer: "岩浆岩、沉积岩、变质岩"
+

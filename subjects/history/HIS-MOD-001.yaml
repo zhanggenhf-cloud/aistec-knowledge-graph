@@ -90,3 +90,13 @@ exhibits:
   - venue: 中国人民抗日战争纪念馆
     name: 全民族抗战展厅
     relation: 展示抗日战争历史
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能列举近代中国各阶级探索救国道路的主要史实"
+  - "能说明辛亥革命的历史意义和局限性"
+  - "能正确评价正面战场和敌后战场的抗战贡献"
+diagnostic_question:
+  question: "为什么说辛亥革命既有重大历史意义又有局限性？"
+  answer: "推翻了帝制但未改变半殖民地半封建社会性质"

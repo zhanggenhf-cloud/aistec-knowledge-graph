@@ -80,3 +80,13 @@ exhibits:
   - venue: 中国科技馆
     name: 化学世界展厅
     relation: 展示化学科学原理与应用
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能说出科学探究的基本环节"
+  - "能进行试剂取用、加热等基本操作"
+  - "能识别常见安全警示标志"
+diagnostic_question:
+  question: "化学就是做实验吗？说明理由。"
+  answer: "不是，化学还包括理论分析、模型建构等方法"

@@ -110,3 +110,13 @@ exhibits:
 - name: 人体组织切片
   location: 上海自然博物馆
   relevance: 展示不同组织的细胞形态差异
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能解释细胞的生活需要物质和能量"
+  - "能说出细胞分裂和分化的过程及意义"
+  - "能正确辨析细胞分裂就是细胞长大"
+diagnostic_question:
+  question: "细胞分裂和细胞生长有什么不同？"
+  answer: "分裂使细胞数目增多，生长使细胞体积增大"

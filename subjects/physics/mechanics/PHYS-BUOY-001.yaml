@@ -87,3 +87,13 @@ exhibits:
   - venue: 中国科技馆
     name: 潜水艇模型
     relation: 展示浮力原理在工程中的应用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出浮力的定义及产生原因"
+  - "能用称重法测量浮力的大小"
+  - "能辨析沉底物体同样受到浮力"
+diagnostic_question:
+  question: "沉在水底的石块是否受到浮力？为什么？"
+  answer: "受到浮力，因为水对石块上下表面有压力差"

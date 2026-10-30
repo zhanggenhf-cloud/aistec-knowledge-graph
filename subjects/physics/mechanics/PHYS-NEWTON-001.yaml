@@ -70,3 +70,15 @@ interdisciplinary:
   - subject: 工程
     concept: 惯性导航与航天器控制
     relation: 应用实例
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出牛顿第一定律的内容"
+  - "能说出惯性的概念"
+  - "能解释生活中的惯性现象"
+diagnostic_question:
+  question: "汽车急刹车时，乘客为什么会向前倾？"
+  answer: "乘客由于惯性保持原来的运动状态"
+  acceptable_answers:
+    - "惯性"

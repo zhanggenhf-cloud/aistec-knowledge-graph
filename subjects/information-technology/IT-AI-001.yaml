@@ -125,3 +125,13 @@ exhibits:
   - venue: 学校
     name: AI实验室
     relation: 开展AI体验和编程实践活动
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出人工智能的基本概念和主要应用领域"
+  - "能描述机器学习的基本思想"
+  - "能辨析当前AI不具备人类的意识和理解"
+diagnostic_question:
+  question: "为什么说当前的人工智能不会像人一样真正思考？"
+  answer: "AI基于数据算法进行模式匹配，没有意识"

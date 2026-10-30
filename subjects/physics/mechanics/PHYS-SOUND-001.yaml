@@ -35,3 +35,13 @@ verification:
   last_verified: '2024-06-01'
 interdisciplinary: []
 exhibits: []
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出声音是由物体振动产生的"
+  - "能说出声音传播需要介质"
+  - "能比较声音在不同介质中的传播快慢"
+diagnostic_question:
+  question: "宇航员在月球表面能不借助设备直接对话吗？为什么？"
+  answer: "不能，真空不能传声"

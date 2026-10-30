@@ -81,3 +81,13 @@ exhibits:
   - venue: 中国科技馆
     name: 古代浮力应用
     relation: 展示中国古代造船与浮力利用
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出阿基米德原理的内容"
+  - "能运用公式F浮=ρ液gV排进行简单计算"
+  - "能辨析浮力等于排开液体的重力"
+diagnostic_question:
+  question: "体积相同的铁块和铝块浸没在水中，受到的浮力哪个大？"
+  answer: "一样大，排开液体的体积相同"

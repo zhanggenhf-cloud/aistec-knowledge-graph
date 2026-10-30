@@ -94,3 +94,13 @@ exhibits:
   - venue: 中国科技馆
     name: 数学之美观展厅
     relation: 展示数学在现实生活中的应用
+
+# ---- Schema 1.1 ----
+type: procedural
+mastery_criteria:
+  - "能从现实情境中发现并提出数学问题"
+  - "能经历建立模型、求解验证的完整建模过程"
+  - "能综合运用多个数学领域的知识解决实际问题"
+diagnostic_question:
+  question: "解决设计校园节能方案问题应经历哪些步骤？"
+  answer: "发现问题、收集数据、建立模型、求解验证"

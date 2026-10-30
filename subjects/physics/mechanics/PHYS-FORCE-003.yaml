@@ -80,3 +80,13 @@ exhibits:
   - venue: 中国科技馆
     name: 弹力与形变互动装置
     relation: 演示不同材料的弹性形变与弹力
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出弹力产生的条件"
+  - "能说出弹簧测力计的工作原理"
+  - "能用弹簧测力计测量力的大小"
+diagnostic_question:
+  question: "弹簧的总长度与所受拉力成正比，这个说法对吗？"
+  answer: "不对，是伸长量与拉力成正比"

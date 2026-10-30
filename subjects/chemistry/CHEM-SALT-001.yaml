@@ -64,3 +64,13 @@ exhibits:
   - venue: 中国科技馆
     name: 盐的性质展示
     relation: 展示常见盐的性质和用途
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出盐的定义"
+  - "能列举常见盐的名称和用途"
+  - "能正确辨析盐与食盐的关系"
+diagnostic_question:
+  question: "盐就是食盐吗？为什么？"
+  answer: "不是，食盐只是盐类中的一种（氯化钠）"

@@ -121,3 +121,13 @@ exhibits:
 - name: 健康生活展厅
   location: 上海科技馆
   relevance: 通过互动展项了解营养与健康的关系
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出人体所需的六类营养物质"
+  - "能解释小肠适于消化和吸收的结构特点"
+  - "能正确辨析脂肪应完全拒绝摄入"
+diagnostic_question:
+  question: "小肠为什么是消化和吸收的主要场所？"
+  answer: "小肠长且有皱襞绒毛，大大增加了吸收面积"

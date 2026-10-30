@@ -85,3 +85,13 @@ exhibits:
   - venue: 各地音乐厅
     name: 声学建筑
     relation: 展示声学设计原理
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能辨析音高、响度、音色三个属性"
+  - "能说出乐器发声的基本原理"
+  - "能用频率和振幅解释音高与响度"
+diagnostic_question:
+  question: "唱歌时音量越大音高就越高吗？为什么？"
+  answer: "不是，音量是响度由振幅决定，音高由频率决定"

@@ -93,3 +93,13 @@ exhibits:
   - venue: 中国科技馆
     name: 挑战与未来展厅
     relation: 展示跨学科解决重大问题的案例
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出跨学科主题学习的含义"
+  - "能举例说明地理与其他学科融合的方式"
+  - "能辨析跨学科融合与多学科简单叠加的区别"
+diagnostic_question:
+  question: "跨学科主题学习与多学科简单叠加有什么区别？"
+  answer: "跨学科强调围绕真实问题有机融合各学科知识"

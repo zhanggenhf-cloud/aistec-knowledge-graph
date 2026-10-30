@@ -75,3 +75,14 @@ exhibits:
   - venue: 中国科技馆
     name: 光学展厅
     relation: 展示光的传播、反射、折射现象
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出光在空气中沿直线传播"
+  - "能举例光的反射现象"
+  - "能解释人眼能看到物体的原因"
+diagnostic_question:
+  question: "在漆黑的房间里我们能看到书吗？为什么？"
+  answer: "不能，因为没有光进入眼睛"
+

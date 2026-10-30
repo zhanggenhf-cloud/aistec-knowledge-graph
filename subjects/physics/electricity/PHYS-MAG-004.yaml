@@ -117,3 +117,13 @@ exhibits:
   - venue: 上海科技馆
     name: 手摇发电
     relation: 观众通过手摇发电机产生电能点亮灯泡
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出产生感应电流的条件"
+  - "能说出影响感应电流方向和大小的因素"
+  - "能辨析发电机与电动机工作原理的区别"
+diagnostic_question:
+  question: "导体在磁场中运动就一定会产生感应电流吗？"
+  answer: "不一定，要闭合电路的一部分导体切割磁感线"

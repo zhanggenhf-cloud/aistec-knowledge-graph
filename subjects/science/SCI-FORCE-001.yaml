@@ -77,3 +77,14 @@ exhibits:
   - venue: 中国科技馆
     name: 声音之韵展厅
     relation: 展示声音的产生和传播
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能说出声音产生的原因"
+  - "能举例声音传播需要的介质"
+  - "能正确辨析声音能在真空中传播的说法"
+diagnostic_question:
+  question: "把响着的闹钟放进抽成真空的玻璃罩里，还能听到声音吗？"
+  answer: "不能，真空不能传声"
+

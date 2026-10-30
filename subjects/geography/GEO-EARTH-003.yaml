@@ -100,3 +100,13 @@ exhibits:
   - venue: 各地气象馆
     name: 气候模拟装置
     relation: 演示不同气候类型成因
+
+# ---- Schema 1.1 ----
+type: conceptual
+mastery_criteria:
+  - "能区分天气与气候的概念"
+  - "能归纳世界气温和降水的分布特点"
+  - "能解释纬度、海陆和地形对气候的影响"
+diagnostic_question:
+  question: "怎样区分天气和气候？"
+  answer: "天气是短时间状况，气候是多年平均状况"
